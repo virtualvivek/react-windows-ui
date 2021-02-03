@@ -30,11 +30,34 @@
   <img src="markdown/md_img_promo.png" width="652" /> 
 </h2>
 
+## Installation
+```
+npm install --save react-windows-ui
+```
+
+## Getting Started
+```js
+
+import { NavBar,NavPageContainer, ..} from 'react-windows-ui'
+
+//Use default app config or can use your own
+import 'react-windows-ui/config/app-config.css'
+
+// Be sure to include styles at some point, probably during your bootstraping
+import 'react-windows-ui/dist/react-windows-ui.css'
+// OR
+// You can use the minified version using
+import 'react-windows-ui/dist/react-windows-ui.min.css'
+
+// Import font icon using
+import 'react-windows-ui/icons/fonts/fonts.min.css'
+
+```
+
 
 ## Find this library useful? :heart:
 Support it by joining [stargazers](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
 
-<br>
 
 ## License
 
