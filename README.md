@@ -20,7 +20,12 @@
   </a> -->
   
   <a href="https://virtualvivek.github.io/react-windows-ui/">
-    <img src="https://img.shields.io/badge/⚡ live Demo-here-green.svg?style=flat-square"
+    <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui?color=%2331b57e&style=flat-square"
+      alt="Version" />
+  </a>
+  
+  <a href="https://virtualvivek.github.io/react-windows-ui/">
+    <img src="https://img.shields.io/badge/⚡ Live Demo-here-green.svg?color=%236a31b5&style=flat-square"
       alt="Live Demo" />
   </a>
    
@@ -35,7 +40,7 @@ https://virtualvivek.github.io/react-windows-ui/
 
 ## Installation
 ```
-npm install --save react-windows-ui
+npm install react-windows-ui --save
 ```
 
 ## Getting Started
