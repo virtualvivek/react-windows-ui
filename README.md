@@ -19,7 +19,7 @@
       alt="Release" />
   </a> -->
   
-  <a href="https://windows10framework.netlify.app">
+  <a href="https://virtualvivek.github.io/react-windows-ui/">
     <img src="https://img.shields.io/badge/⚡ live Demo-here-green.svg?style=flat-square"
       alt="Live Demo" />
   </a>
@@ -29,6 +29,9 @@
 <h2 align="center">
   <img src="markdown/md_img_promo.png" width="652" /> 
 </h2>
+
+## Demo ⚡
+https://virtualvivek.github.io/react-windows-ui/
 
 ## Installation
 ```
