@@ -1,18 +1,18 @@
-.app-avatar{   
+.app-avatar {   
     border-radius: 50%;
     background: #DDDDDD77;
     text-align: center;
     z-index: 1;
 
-    &.large{
+    &.large {
         width: 164px;
         height: 164px;
     }
-    &.medium{
+    &.medium {
         width: 124px;
         height: 124px;
     }
-    &.small{
+    &.small {
         width: 84px;
         height: 84px;
     }

@@ -4,7 +4,7 @@
     height: 30px;
     top: -2px;
 
-    &.medium{
+    &.medium {
         top: 2.5px;
 
         .w-ball-wrapper {
@@ -18,7 +18,7 @@
           }
     }
 
-    &.small{
+    &.small {
         top: 7px;
 
         .w-ball-wrapper {
@@ -58,19 +58,19 @@
         }
       }
 
-      .ball-1{
+      .ball-1 {
         animation-delay: 0.96s;
       }
-      .ball-2{
+      .ball-2 {
         animation-delay: 0.19s;
       }
-      .ball-3{
+      .ball-3 {
         animation-delay: 0.38s;
       }
-      .ball-4{
+      .ball-4 {
         animation-delay: 0.58s;
       }
-      .ball-5{
+      .ball-5 {
         animation-delay: 0.77s;
       }
 
@@ -131,7 +131,7 @@
       transform: scale(1);
       visibility: visible;
       transition: 0.4s;
-  }
+    }
 
     .app-loader-busy {
       margin: 0px auto;

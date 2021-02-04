@@ -39,53 +39,53 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     align-items: center;
 }
-.app-flex{
+.app-flex {
     display: flex;
 }
 .app-grid {
     display: grid;
 }
-.app-inline{
+.app-inline {
     display:inline;
 }
-.app-fit-content{
+.app-fit-content {
     width:fit-content !important;
 }
 
-.app-hr-space[s="10"]{width: 10px}
-.app-hr-space[s="15"]{width: 15px}
-.app-hr-space[s="20"]{width: 20px}
-.app-hr-space[s="25"]{width: 25px}
-.app-hr-space[s="30"]{width: 30px}
-.app-hr-space[s="35"]{width: 35px}
-.app-hr-space[s="40"]{width: 40px}
-.app-hr-space[s="45"]{width: 45px}
+.app-hr-space[s="10"] {width: 10px}
+.app-hr-space[s="15"] {width: 15px}
+.app-hr-space[s="20"] {width: 20px}
+.app-hr-space[s="25"] {width: 25px}
+.app-hr-space[s="30"] {width: 30px}
+.app-hr-space[s="35"] {width: 35px}
+.app-hr-space[s="40"] {width: 40px}
+.app-hr-space[s="45"] {width: 45px}
 
-.m-0{
+.m-0 {
     margin: 0;
 }
-.m-tb-10{
+.m-tb-10 {
     margin-top: 10px;
     margin-bottom: 10px
 }
-.m-tb-15{
+.m-tb-15 {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.m-tb-20{
+.m-tb-20 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.m-b-5{ 
+.m-b-5 { 
     margin-bottom: 5px
 }
-.m-b-10{ 
+.m-b-10 { 
     margin-bottom: 10px
 }
-.m-b-15{ 
+.m-b-15 { 
     margin-bottom: 15px
 }
-.m-b-20{ 
+.m-b-20 { 
     margin-bottom: 20px
 }
 

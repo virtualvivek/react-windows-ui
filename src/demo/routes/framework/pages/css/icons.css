@@ -6,7 +6,7 @@
     display: flex;
 }
 
-.preview-glyphs{
+.preview-glyphs {
     width: 168px;
     text-align: center;
 }
@@ -36,17 +36,17 @@ pre {
 }
 
 @media only screen and (max-width: 760px) {
-    pre{
+    pre {
         font-size: 6px;
     }
     .preview-glyphs{
         width: 90px;
     }
-    .size-60{
+    .size-60 {
         font-size:40px;
         width: 90px;
     }
-    .container{
+    .container {
         padding-bottom: 80px;
     }
 }

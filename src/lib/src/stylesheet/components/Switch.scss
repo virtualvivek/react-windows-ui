@@ -65,7 +65,7 @@
                 @extend .cursor-not-allowed;
                 border-color:var(--color_link_bg_hover);
 
-                &:before{
+                &:before {
                     background: var(--color_dark_text) !important; 
                     filter: contrast(0);
                 }
