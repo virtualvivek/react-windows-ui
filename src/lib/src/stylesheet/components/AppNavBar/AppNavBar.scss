@@ -1,0 +1,196 @@
+@import "./subcomponents/NavBack.scss";
+@import "./subcomponents/NavMobile.scss";
+@import "./subcomponents/NavUser.scss";
+
+#app-nav-wrap {
+    height:100%;
+    width:280px;
+    z-index: 2; 
+
+    &.toggled {
+        height: 100%;
+        width: 74px;
+        position: fixed;
+        top: 0;
+        overflow-x: hidden; 
+        display:inline-block; 
+         
+
+        .app-name, .app-switch, nav a span, nav ul h1 {
+            @extend .display-none;
+        }
+
+        nav {
+            .app-hr {
+                width: 56px;
+                margin-left: 8px;
+            }
+            > div:first-child, nav > div:nth-child(2) {
+                width: auto;
+            }
+        }
+
+    }
+
+    nav {
+        @extend .transition-background-400ms;
+        @extend .background-color-nav;
+        height:inherit;
+        width:inherit;
+        position: fixed;
+        left:0;
+        top:0; 
+        padding: 0;
+        display:block; 
+        overflow-x: hidden;       
+        overflow-y: scroll;
+        z-index: inherit;
+
+        &::-webkit-scrollbar { 
+            width: 2px !important 
+        }
+
+        &.animate {
+            ul li {
+                & :active {
+                    @extend .transition-scale-0_95;
+                }
+                a {
+                    @extend .transition-all-400ms;
+                }
+            }
+        }
+
+        a {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            line-height: 2.4;
+            padding: 8px 25px;
+            font-weight: 400;
+            color: var(--color_dark_text);
+
+            &:focus {
+                @extend .outline-none;
+            }
+            span {
+                @extend .user-select-none;
+                font-size: 16px;
+                margin: 0 8px;
+                position: relative;
+            }
+        }
+
+        ul {
+            position: relative;
+            top:115px;
+            display: block;
+            margin: 0 auto;
+            padding: 0 0 40px 0;
+            list-style: none;
+            flex-flow: row wrap;
+            justify-content: left;
+
+            li {
+                &:hover {
+                    @extend .background-color-link-bg-hover;
+                }
+                &:active {
+                    @extend .background-color-link-bg-active;
+                }
+
+                a {
+                    text-overflow: unset;
+                    background: none;
+
+                    &:before {
+                        position: relative;
+                        right: 5px;
+                        font-size: 24px;
+                        vertical-align: middle;
+                    }
+                    &::after {
+                        position: absolute;
+                        left: 0;
+                        width: 5px;
+                        height: 41px;
+                        background: var(--AppColor);
+                        content: '';   
+                        transition: transform 0.1s;
+                        transform: translate3d(-150%,0,0); 
+                    }
+                    &.active {
+                        @extend .font-weight-500;
+                        
+                        &::after {
+                            transform: translate3d(0,0,0);
+                        }
+                    }
+                    i::before {
+                        font-size: 24px;
+                        vertical-align: middle;
+                        text-overflow: unset;
+                    }
+                } 
+        
+                span::after {
+                    @extend .color-accent;
+                } 
+                
+            }
+
+            h1 {
+                font-weight: 700;
+                margin: 0;
+                padding: 8px 0 8px 24px;
+                font-size: 15px;
+            }
+    
+            .app-hr {
+                margin: 10px 15px;
+            }
+        }
+
+        .app-switch {
+            margin: 15px 0 0 20px;
+        } 
+
+    }
+    
+    nav > div:first-child, nav > div:nth-child(2) {
+        @extend .background-color-nav;
+        width: inherit;
+        display: flex;
+        position: fixed;
+        z-index: 2;
+        transition: inherit;
+    }
+
+    nav > div:first-child {
+        padding-bottom: 8px;
+    }
+    nav > div:nth-child(2) {
+        top: 50px; 
+    }
+
+    .app-nav-toggle {
+        @extend .transition-all-400ms;
+        padding: 0 25px;
+
+        &:hover {
+            @extend .background-color-link-bg-hover;
+        }
+        &:active {
+            @extend .background-color-link-bg-active;
+        }
+        &:after{
+            @extend .font-icon-dark;
+            content:"\f106";
+            font-size: 24px 
+        }
+    }    
+   
+}
+

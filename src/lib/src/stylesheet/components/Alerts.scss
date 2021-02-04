@@ -1,0 +1,70 @@
+.app-alert {
+    @extend .color-white;
+    width:55%;
+    position:fixed;	
+    top: 0;
+    margin-top:30vh;
+    left: 24vw;
+    z-index: 11;
+    background: var(--alpha_c);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);
+
+    h1 {
+        margin:0;
+        padding: 0;
+        font-size: 1.7em;
+        background-color: transparent;
+        padding: 25px 32px 10px 32px;
+    }
+    .alert-message {
+        font-size: 1em;
+        text-align:justify;
+        min-height: 80px;
+        padding: 0 32px;
+    }
+    .btn-container {
+        display:block ;
+        text-align: right ;
+        padding: 0 15px 10px 15px;
+    }
+    .app-alert-button {
+        display: inline;
+        padding: 7px 3.4vw;
+        margin: 10px;
+        border: 2px solid #fff;
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+
+        &:hover {
+            opacity: 0.62;  
+        }
+        &:active {
+            background: #fff !important;
+            opacity: 1;
+            color: var(--AppColor);
+        }
+    }
+
+    h1,.btn-container,.alert-message,.app-alert-button {
+    background-color:transparent !important;	 
+    }
+}
+
+@mixin alert-mobile() {
+    .app-alert {
+        width:100% !important;
+        left: 0 !important;
+        margin: 0;
+        background:var(--AppColor) !important;
+
+        .app-alert-button {
+            padding: 3px 30px;
+            margin: 15px 15px 15px 0;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,31 @@
+.app-select-styled {
+    @extend .input-field-primary;
+    @extend .transition-background-400ms;
+    width: 280px;
+    padding-left: 0;
+
+    select {
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        border: none;
+        @extend .background-color-light-bg;
+        @extend .color-dark-text;
+        @extend .transition-background-400ms;
+        -webkit-appearance: none;
+
+        &:focus {
+            outline: none;
+        }
+        option {
+            @extend .background-color-light-bg;
+        }
+    }
+    &:after {
+        @extend .font-icon-dark;
+        content: "\f10c";
+        font-size: 18px;
+        margin-left: -25px;
+        position: relative;
+    }
+}

@@ -1,0 +1,45 @@
+
+.app-section-container {
+    padding-left: 280px;
+    &.has-padding {
+        padding-left: 310px;  
+    }
+}
+
+#app-nav-wrap.toggled + .app-section-container {
+    padding-left: 74px;
+    &.has-padding {
+        padding-left: 104px;  
+    }
+}
+
+
+.app-section-container-right{
+    float:right;
+    position:absolute;
+    right:25px;
+    max-width:264px;
+    top: 105px;
+}
+@media screen and (max-width: 70em) {
+    
+    .app-section-container-right {
+            max-width: fit-content;
+            right: auto;
+            position: relative;
+            margin-bottom: 85px;
+            float: left;
+            top: 25px;
+    }
+}
+
+@mixin app-content-wrap-mobile() {
+    .app-section-container {
+        margin: 0 !important;
+        padding: 90px 0 0 0 !important;
+        &.has-padding {
+            margin: 0 15px !important;
+        }
+    }
+}
+

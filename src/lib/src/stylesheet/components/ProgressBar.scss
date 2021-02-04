@@ -1,0 +1,56 @@
+.app-progress-container {
+    display: flex;
+    align-items: center;
+
+    i {      
+        color: var(--color_dark_text);
+        font-size: 30px;
+    }
+
+    .title,.subtitle {
+        font-weight: 500;
+    }
+    .title {
+        line-height: 2;
+    }
+    .subtitle {
+        font-size: 14px;
+        opacity: 0.8;
+    }
+   
+    .app-progress {
+        @extend .transition-background-400ms;
+        position: relative;
+        width: 400px;
+        height: 5px;
+        overflow: hidden;
+        background: var(--color_button);
+    
+        span {
+            @extend .background-color-accent;
+            position:absolute;
+            height:100%;
+            &::after,&::before {
+                display: none !important;
+            }
+        }
+    
+        &.withIcon {
+            overflow: visible;
+            width: 355px;  
+        }
+    }
+    
+}
+
+@mixin progress-bar-mobile() {
+    .app-progress-container {
+        .app-progress {
+            width:80vw;
+            
+            &.withIcon {
+                width:calc(80vw - 45px);
+            }
+        }
+    }
+}

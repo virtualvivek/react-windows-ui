@@ -1,0 +1,34 @@
+.app-command-bar {
+    @extend .background-color-nav;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: end;
+
+    .app-button {
+        display: inline-grid;
+        height: 60px;
+        align-content: center;
+        
+        &:not(:active) {
+            background-color: transparent;
+        }
+        i {
+            font-size: 30px;
+        }
+        span {
+            font-size: 12px;
+        }
+    }
+}
+
+
+@mixin command-bar-mobile() {
+    .app-command-bar {
+        top: unset;
+        bottom: 0;
+        z-index: 2;
+    }
+}

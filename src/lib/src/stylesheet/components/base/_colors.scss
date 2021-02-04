@@ -1,0 +1,35 @@
+:root {
+    --alpha_c : #EEE;
+    
+/*    Day Mode */
+    --color_light_bg: #FFF;
+    --color_dark_text: #222;
+    --color_nav: #EEE;
+    --color_light_grey: #EEE;
+    --color_link_bg_hover: #CFCFCF;
+    --color_link_bg_active: #B8B8B8;
+    --color_button: #d9d9d9;
+    --color_button_hover: #666;
+    --color_button_active: #999;
+    --color_button_active_border: #888;
+    --color_accent_light: var(--AppColor);
+    --color_accent_dark: var(--AppColor);    
+}
+
+.color-danger{
+    color:#C50500 
+}
+.color-success{
+    color:#2C8B2C 
+}
+
+.bg-danger{
+    background:#C50500 !important
+}
+.bg-success{
+    background:#2C8B2C !important
+}
+.bg-danger,
+.bg-success {
+    color: #fff !important
+}

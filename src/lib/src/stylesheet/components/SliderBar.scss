@@ -1,0 +1,106 @@
+.app-range-slider {
+
+    width:360px;
+    display:block;
+
+    input[type="range"] {
+        appearance: none;
+        width: calc(100% - (73px));
+        height: 2px;
+        background: #999999;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: -5px;
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 8px;
+            height: 26px;
+            border-radius: 100px;
+            background: var(--AppColor);
+            cursor: pointer;
+            transition: background .15s ease-in-out;
+            user-select: none;
+
+            &:hover {
+                background: #555;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.26);
+            }
+            &:active {
+                background: #999;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.46);
+            }
+        }
+        &::-moz-range-thumb {
+            width: 8px;
+            height: 26px;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+            transition: background .15s ease-in-out;
+            user-select: none;
+        }
+        &::-moz-range-thumb:hover,&:active::-moz-range-thumb,&::-moz-range-thumb {
+            background: var(--AppColor);
+        }
+        
+    }
+    &.round {
+
+        input[type="range"] {
+
+            &::-webkit-slider-thumb{
+                width: 20px !important;
+                height: 20px;
+            }
+            &::-moz-range-thumb {
+                width: 20px;
+                height: 20px;
+            }
+        }        
+    }
+    &.round-border {
+
+        input[type="range"] {
+            &::-webkit-slider-thumb{
+                width: 20px !important;
+                height: 20px;
+                border:3px solid var(--AppColor);
+                background:var(--color_light_bg);
+            }
+            &::-moz-range-thumb {
+                width: 14px;
+                height: 14px;
+                border:3px solid var(--AppColor);
+                background:var(--color_light_bg);
+            }
+        }
+    }
+
+    span {
+        @extend .color-dark-text;
+        display: contents; 
+        font-size: 20px; 
+    }
+}
+
+@mixin slider-bar-mobile() {
+    .app-range-slider {
+        height: 35px;
+        flex-flow: column-reverse;
+        padding-bottom: 15px;
+        display: flex;
+        padding: 10px 0px;
+
+        input[type="range"] {
+            top: 0;
+        }
+
+        span {
+            line-height: 2.4;
+        }
+    }
+}

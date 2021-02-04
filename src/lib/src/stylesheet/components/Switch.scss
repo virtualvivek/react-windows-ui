@@ -1,0 +1,83 @@
+.app-switch {
+    display:table;
+    margin-right: 70px;
+
+    > div {
+        cursor: pointer;
+        border-radius: 50px;
+        width: 42px;
+        height: 19px;
+        border: 2px solid var(--color_dark_text);
+        position: relative;
+        transition: 200ms ease-out;
+
+        &:hover {
+            opacity: 0.65;
+        }
+        &:before {
+            will-change: translate;
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            content: '';
+            width: 13px;
+            height: 13px;
+            background: var(--color_dark_text);
+            border-radius: 50%;
+            transition: 200ms;
+        }
+        &:after {
+            font-size: 16px;
+            transform: translateY(-50%);
+            content: attr(dataoff);
+            pointer-events: none;
+            position: relative;
+            right: -128%;
+            display: flex;
+            width: 100px;
+            top: 10px;
+        }
+    }
+
+    input {
+        @extend .display-none;
+        
+        &:checked {
+            +div {
+                @extend .background-color-accent;
+                border-color: var(--AppColor);
+
+                &:before {
+                    color: var(--AppColor);
+                    transform: translateX(280%);
+                    transform: translateX(calc(2*100% - 3px));
+                    background: #fff;
+                }
+                &:after { 
+                    content: attr(dataon); 
+                }
+            }
+        }
+        &:disabled {
+            +div {
+                @extend .background-color-link-bg-hover;
+                @extend .cursor-not-allowed;
+                border-color:var(--color_link_bg_hover);
+
+                &:before{
+                    background: var(--color_dark_text) !important; 
+                    filter: contrast(0);
+                }
+            }
+        }
+    }
+}
+
+@mixin switch-mobile() {
+    .app-switch {
+        > div:hover {
+            opacity: 1;
+        }
+    }
+}

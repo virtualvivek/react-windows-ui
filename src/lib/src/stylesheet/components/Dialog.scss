@@ -1,0 +1,40 @@
+.app-dialog {
+    // background: #FFFFFF99;
+    background-color: var(--color_light_grey);
+    width:440px;
+    max-height: 54vh;
+    position:fixed;	
+    top: 0;
+    margin-top:22vh;
+    left: 32vw;
+    // backdrop-filter: blur(24px);
+    border: 1px solid #999;
+    box-shadow: 0 0 7vh rgba(0, 0, 0, 0.14);
+    overflow-y: scroll;
+    z-index: 11;
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: #99999945;
+    }
+    &::-webkit-scrollbar { width: 7px; }
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    transform: translateY(50px);
+    &.show {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+    
+}
+
+@mixin dialog-mobile() {
+    .app-dialog {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        top: initial;
+    }
+}

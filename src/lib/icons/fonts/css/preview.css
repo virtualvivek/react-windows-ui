@@ -1,0 +1,74 @@
+/* Page Styles */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #444;
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.glyph {
+    border-bottom: 1px dotted #ccc;
+    padding: 0;
+    margin-bottom: 20px;
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.preview-glyphs{
+    width: 168px;
+    text-align: center;
+}
+
+.size-60 { 
+    font-size: 42px;
+    width: 160px;
+    text-align: center; 
+    display: inline-block;
+    line-height: 1;
+    position: relative;
+}
+
+pre {
+    background-color: #fafafa;
+    padding: 4px 2px 4px 2px;
+    display: block;
+    margin: 2px;
+    font-size: 10.62px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333333;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 760px) {
+    pre{
+        font-size: 6px;
+    }
+    .preview-glyphs{
+        width: 90px;
+    }
+    .size-60{
+        font-size:40px;
+        width: 90px;
+    }
+    .container{
+        padding-bottom: 80px;
+    }
+}

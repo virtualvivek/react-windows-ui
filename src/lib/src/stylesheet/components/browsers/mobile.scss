@@ -1,0 +1,39 @@
+@media only screen and (max-width: 760px) {
+    
+    ::-webkit-scrollbar { 
+        width:2.4px 
+    }
+    
+    .index-box-header .app-link-compound {
+        display: none !important
+    }
+    
+    
+    
+    .index-box-header img {
+        margin-left: 5%;
+    }
+    
+    
+    .app-button:hover {
+        border-color:transparent;
+        filter:none;
+    }
+    
+    @include app-content-wrap-mobile();
+    @include app-navbar-mobile();
+    @include alert-mobile();
+    @include avatar-view-mobile();
+    @include command-bar-mobile();
+    @include dialog-mobile();
+    @include input-text-mobile();
+    @include input-search-mobile();
+    @include links-mobile();
+    @include list-item-mobile();
+    @include loader-bar-mobile();
+    @include progress-bar-mobile();
+    @include progress-bar-indeterminate-mobile();
+    @include switch-mobile();
+    @include slider-bar-mobile();
+
+}

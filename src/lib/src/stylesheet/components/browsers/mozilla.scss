@@ -1,0 +1,19 @@
+@-moz-document url-prefix() {
+      
+    .app-content-wrap section {  
+        scrollbar-color:#999 transparent;
+    }
+    #app-nav-wrap nav{
+        scrollbar-width:thin
+    }
+    
+    .app-select-options {
+        background-color: #F9FBF9 !important;
+    }
+    
+    .app-alert {
+        background-color: var(--AppColor) !important
+    }
+  
+    
+}

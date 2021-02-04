@@ -1,0 +1,58 @@
+.app-button {
+    @extend .user-select-none;
+    @extend .color-dark-text;
+ 
+    height: 35px;
+    background: var(--color_button);
+    padding: 5px 15px; 
+    font-size: 15px;
+    border: 2px solid transparent;
+    transition: all ease 0.2s;
+    vertical-align: middle;
+
+    &:hover {
+        border-color:var(--color_button_hover);
+        filter: opacity(0.8);
+    }
+    &:active {
+        @extend .background-color-button-active;
+        border-color:var(--color_button_active_border);
+        transition: 0.04s ease;
+    }
+    &.accent {
+        @extend .background-color-accent;
+        @extend .color-light-bg;
+
+        &:active {
+            background: var(--alpha_c); 
+        }
+    }
+    &.animate:active {
+        transform: scale(0.950,0.950);
+    }
+    &[disabled] {
+        @extend .input-field-primary-disabled;
+        span {
+            pointer-events: none;
+        }
+        &:active,&:hover {
+            @extend .input-field-primary-disabled;
+        }
+    }
+
+    .app-loader-busy{
+        left: 40%;
+        display: inline;
+        top: 0 !important;
+    }
+    span{
+        transition: all ease 0.2s;
+    }
+
+}
+button,.app-button {
+    @extend .user-select-none;
+    &:focus,&:active,&:focus:active {
+        outline: none !important;
+    }
+}
