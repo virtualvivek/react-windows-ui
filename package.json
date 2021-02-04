@@ -1,8 +1,23 @@
 {
-  "name": "my-app",
+  "name": "react-windows-ui-app",
   "version": "0.1.0",
   "private": true,
+  "description": "Build full featured Windows fluent UI apps using reactjs.",
+  "keywords": [
+    "react",
+    "fluentui",
+    "react-component",
+    "windows10"
+  ],
   "homepage": "https://virtualvivek.github.io/react-windows-ui/",
+  "bugs": {
+    "url": "https://github.com/virtualvivek/react-windows-ui/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Vivek Verma",
+    "email": "virtualiz.me@gmail.com"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
@@ -13,6 +28,10 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virtualvivek/react-windows-ui.git"
   },
   "scripts": {
     "start": "react-scripts start",

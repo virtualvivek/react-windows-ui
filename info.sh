@@ -1,3 +1,4 @@
+#!/bin/bash
 
 VERSION="1.0"
 LICENSE_URL="github.com/virtualvivek/react-windows-ui/blob/master/LICENSE"

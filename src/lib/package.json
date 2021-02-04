@@ -1,0 +1,25 @@
+{
+  "name": "react-windows-ui",
+  "version": "1.0.0",
+  "description": "Build full featured Windows fluent UI apps using reactjs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/virtualvivek/react-windows-ui"
+  },
+  "keywords": [
+    "react",
+    "fluentui",
+    "windows10",
+    "user-interface"
+  ],
+  "author": "Vivek Verma",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
