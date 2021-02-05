@@ -1,4 +1,5 @@
 .app-switch {
+    @extend .tap-highlight-none;
     display:table;
     margin-right: 70px;
 

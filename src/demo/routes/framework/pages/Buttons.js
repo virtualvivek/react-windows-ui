@@ -21,7 +21,7 @@ const Buttons = () => {
         <br/><br/>
         <Button
           disabled
-          value="Default Button"/>
+          value="Disabled Button"/>
         &nbsp;&nbsp;
         <Button
           isLoading
@@ -41,7 +41,7 @@ const Buttons = () => {
         <Button
           disabled
           type="primary"
-          value="Primary Button"/>
+          value="Disabled Button"/>
         &nbsp;&nbsp;
         <Button
           type="primary"

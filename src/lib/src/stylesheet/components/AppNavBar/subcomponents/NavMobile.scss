@@ -17,10 +17,10 @@
         li {
             display:inline-flex;
             a {
+                @extend .tap-highlight-none;
                 padding: 0;
                 opacity: 0.6;
                 user-select:none;
-                -webkit-tap-highlight-color:transparent;
                 &::after {
                     height: 3px;
                     width: 90%;

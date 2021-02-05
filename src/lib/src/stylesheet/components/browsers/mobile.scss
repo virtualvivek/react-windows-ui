@@ -1,29 +1,12 @@
 @media only screen and (max-width: 760px) {
     
-    ::-webkit-scrollbar { 
-        width:2.4px 
-    }
-    
-    .index-box-header .app-link-compound {
-        display: none !important
-    }
-    
-    
-    
-    .index-box-header img {
-        margin-left: 5%;
-    }
-    
-    
-    .app-button:hover {
-        border-color:transparent;
-        filter:none;
-    }
+    @include body-mobile();
     
     @include app-content-wrap-mobile();
     @include app-navbar-mobile();
     @include alert-mobile();
     @include avatar-view-mobile();
+    @include button-mobile();
     @include command-bar-mobile();
     @include dialog-mobile();
     @include input-text-mobile();

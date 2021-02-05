@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
 const AvatarView = (props) => {
+
+  const [didLoad, setLoad] = useState(false);
 
     const renderLoader = () => {
           return <div className="app-avatar-loader">
@@ -48,10 +50,12 @@ const AvatarView = (props) => {
             width: props.width,
             height: props.height,
           }}
+          onLoad={() => setLoad(true)}
           />
 
           {props.showDropShadow ? renderDropShadow() : ""}
           {props.isLoading ? renderLoader() : ""} 
+          {didLoad ? "" : renderLoader()} 
             
     </div>
   )

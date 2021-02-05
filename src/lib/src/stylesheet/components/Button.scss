@@ -35,7 +35,8 @@
         span {
             pointer-events: none;
         }
-        &:active,&:hover {
+        &:active,
+        &:hover {
             @extend .input-field-primary-disabled;
         }
     }
@@ -53,7 +54,18 @@
 button,
 .app-button {
     @extend .user-select-none;
-    &:focus,&:active,&:focus:active {
+    &:focus,
+    &:active,
+    &:focus:active {
         outline: none !important;
+    }
+}
+
+@mixin button-mobile() {
+    .app-button{
+        &:hover {
+            border-color:transparent;
+            filter:none;
+        }
     }
 }

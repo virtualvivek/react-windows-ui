@@ -10,7 +10,8 @@
     &:focus {
         @extend .outline-none; 
     }
-    &:hover,&:active {
+    &:hover,
+    &:active {
         color: #888;
         background: none !important;
     }
@@ -49,7 +50,9 @@
         font-size: 36px;
         top: 16px;
         line-height: 0 !important;
-        &.bg-accent::before,&.bg-grey::before {
+
+        &.bg-accent::before,
+        &.bg-grey::before {
             font-size: 30px;
             padding: 3px; 
         }
@@ -103,6 +106,7 @@
         display: inline-flex;
         align-items: center;
         padding: 0 0 12px 10px;
+
         .app-switch {
             position: relative;
             left: 20px;
@@ -127,7 +131,8 @@ i.bg-grey::before {
     }
 
     .app-link-compound {
-        &:hover,.accent:hover {
+        &:hover,
+        .accent:hover {
             background:transparent;
             border-color:transparent;
         }

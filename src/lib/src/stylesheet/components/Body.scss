@@ -104,3 +104,21 @@ p.light {
     font-weight: 100;
 }
 
+@mixin body-mobile() {
+
+    ::-webkit-scrollbar { 
+        width:2.4px 
+    }
+    
+    .index-box-header {
+
+        .app-link-compound {
+            display: none !important
+        }
+        img {
+            margin-left: 5%;
+        }
+
+    } 
+}
+
