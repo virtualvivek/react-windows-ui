@@ -8,7 +8,11 @@ const Switch = (props) => {
           className="app-input-text app-input-search" 
           type="search" 
           placeholder={props.placeholder}/>
-        <button type="submit" onClick={props.onClick}></button>
+        <button 
+          type="submit" 
+          onClick={props.onClick}
+        >
+        </button>
     </div>
   )
 }

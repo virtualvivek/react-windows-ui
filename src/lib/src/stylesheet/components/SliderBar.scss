@@ -43,7 +43,9 @@
             transition: background .15s ease-in-out;
             user-select: none;
         }
-        &::-moz-range-thumb:hover,&:active::-moz-range-thumb,&::-moz-range-thumb {
+        &::-moz-range-thumb:hover,
+        &:active::-moz-range-thumb,
+        &::-moz-range-thumb {
             background: var(--AppColor);
         }
         
@@ -90,6 +92,7 @@
 @mixin slider-bar-mobile() {
     .app-range-slider {
         height: 35px;
+        width: calc(280px + 5%);
         flex-flow: column-reverse;
         padding-bottom: 15px;
         display: flex;
@@ -97,6 +100,7 @@
 
         input[type="range"] {
             top: 0;
+            width: 100%;
         }
 
         span {

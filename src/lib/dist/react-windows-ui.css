@@ -39,7 +39,8 @@
 .background-color-dark-text, .app-radio:checked {
   background-color: var(--color_dark_text); }
 
-.background-color-nav, #app-nav-wrap nav, #app-nav-wrap nav > div:first-child, #app-nav-wrap nav > div:nth-child(2), .app-command-bar, .app-search-bar button {
+.background-color-nav, #app-nav-wrap nav, #app-nav-wrap nav > div:first-child,
+#app-nav-wrap nav > div:nth-child(2), .app-command-bar, .app-search-bar button {
   background-color: var(--color_nav); }
 
 .background-color-accent, .app-button.accent, .app-search-bar button:hover, .app-search-bar button:active, i.bg-accent::before, .app-progress-container .app-progress span, .app-switch input:checked + div {
@@ -97,7 +98,10 @@
 .display-block {
   display: block; }
 
-.display-none, #app-nav-wrap.toggled .app-name, #app-nav-wrap.toggled .app-switch, #app-nav-wrap.toggled nav a span, #app-nav-wrap.toggled nav ul h1, .app-switch input {
+.display-none, #app-nav-wrap.toggled .app-name,
+#app-nav-wrap.toggled .app-switch,
+#app-nav-wrap.toggled nav a span,
+#app-nav-wrap.toggled nav ul h1, .app-switch input {
   display: none; }
 
 .outline-none, #app-nav-wrap nav a:focus, .app-input-text:focus, .app-link:focus {
@@ -307,7 +311,7 @@ p.light {
 #app-nav-wrap {
   height: 100%;
   width: 280px;
-  z-index: 2; }
+  z-index: 5; }
   #app-nav-wrap.toggled {
     height: 100%;
     width: 74px;
@@ -318,7 +322,8 @@ p.light {
     #app-nav-wrap.toggled nav .app-hr {
       width: 56px;
       margin-left: 8px; }
-    #app-nav-wrap.toggled nav > div:first-child, #app-nav-wrap.toggled nav nav > div:nth-child(2) {
+    #app-nav-wrap.toggled nav > div:first-child,
+    #app-nav-wrap.toggled nav nav > div:nth-child(2) {
       width: auto; }
   #app-nav-wrap nav {
     height: inherit;
@@ -388,7 +393,8 @@ p.light {
         margin: 10px 15px; }
     #app-nav-wrap nav .app-switch {
       margin: 15px 0 0 20px; }
-  #app-nav-wrap nav > div:first-child, #app-nav-wrap nav > div:nth-child(2) {
+  #app-nav-wrap nav > div:first-child,
+  #app-nav-wrap nav > div:nth-child(2) {
     width: inherit;
     display: flex;
     position: fixed;
@@ -506,7 +512,9 @@ p.light {
       background: #fff !important;
       opacity: 1;
       color: var(--AppColor); }
-  .app-alert h1, .app-alert .btn-container, .app-alert .alert-message, .app-alert .app-alert-button {
+  .app-alert h1, .app-alert .btn-container,
+  .app-alert .alert-message,
+  .app-alert .app-alert-button {
     background-color: transparent !important; }
 
 .app-button {
@@ -536,7 +544,10 @@ p.light {
   .app-button span {
     transition: all ease 0.2s; }
 
-button:focus, button:active, button:focus:active, .app-button:focus, .app-button:active, .app-button:focus:active {
+button:focus, button:active, button:focus:active,
+.app-button:focus,
+.app-button:active,
+.app-button:focus:active {
   outline: none !important; }
 
 label.app-checkbox {
@@ -576,12 +587,13 @@ label.app-checkbox {
       border-width: 0 2px 2px 0; }
 
 .app-command-bar {
-  width: 100vw;
+  width: 100%;
   height: 60px;
   position: fixed;
   left: 0;
   top: 0;
-  text-align: end; }
+  text-align: end;
+  z-index: 2; }
   .app-command-bar .app-button {
     display: inline-grid;
     height: 60px;
@@ -930,7 +942,8 @@ button.unmask {
     line-height: 1.2;
     text-overflow: ellipsis;
     height: fit-content; }
-  .app-link-compound span, .app-link-compound i {
+  .app-link-compound i,
+  .app-link-compound span {
     position: relative;
     line-height: 1; }
   .app-link-compound.accent:hover {
@@ -1004,7 +1017,8 @@ li.app-list-item a {
   .app-progress-container i {
     color: var(--color_dark_text);
     font-size: 30px; }
-  .app-progress-container .title, .app-progress-container .subtitle {
+  .app-progress-container .title,
+  .app-progress-container .subtitle {
     font-weight: 500; }
   .app-progress-container .title {
     line-height: 2; }
@@ -1222,8 +1236,6 @@ li.app-list-item a {
     scrollbar-color: #999 transparent; }
   #app-nav-wrap nav {
     scrollbar-width: thin; }
-  .app-select-options {
-    background-color: #F9FBF9 !important; }
   .app-alert {
     background-color: var(--AppColor) !important; } }
 
@@ -1336,8 +1348,7 @@ li.app-list-item a {
     height: 64px; }
   .app-command-bar {
     top: unset;
-    bottom: 0;
-    z-index: 2; }
+    bottom: 0; }
   .app-dialog {
     width: 100%;
     left: 0;
@@ -1386,11 +1397,13 @@ li.app-list-item a {
     opacity: 1; }
   .app-range-slider {
     height: 35px;
+    width: calc(280px + 5%);
     flex-flow: column-reverse;
     padding-bottom: 15px;
     display: flex;
     padding: 10px 0px; }
     .app-range-slider input[type="range"] {
-      top: 0; }
+      top: 0;
+      width: 100%; }
     .app-range-slider span {
       line-height: 2.4; } }

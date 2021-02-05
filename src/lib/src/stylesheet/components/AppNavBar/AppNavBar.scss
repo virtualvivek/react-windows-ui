@@ -5,7 +5,7 @@
 #app-nav-wrap {
     height:100%;
     width:280px;
-    z-index: 2; 
+    z-index: 5; 
 
     &.toggled {
         height: 100%;
@@ -16,7 +16,10 @@
         display:inline-block; 
          
 
-        .app-name, .app-switch, nav a span, nav ul h1 {
+        .app-name, 
+        .app-switch, 
+        nav a span, 
+        nav ul h1 {
             @extend .display-none;
         }
 
@@ -25,7 +28,8 @@
                 width: 56px;
                 margin-left: 8px;
             }
-            > div:first-child, nav > div:nth-child(2) {
+            > div:first-child, 
+            nav > div:nth-child(2) {
                 width: auto;
             }
         }
@@ -159,7 +163,8 @@
 
     }
     
-    nav > div:first-child, nav > div:nth-child(2) {
+    nav > div:first-child, 
+    nav > div:nth-child(2) {
         @extend .background-color-nav;
         width: inherit;
         display: flex;

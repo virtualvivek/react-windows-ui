@@ -17,7 +17,7 @@
         cursor: pointer;
     }
 
-    &::-webkit-calendar-picker-indicator{
+    &::-webkit-calendar-picker-indicator {
         padding-right: 5px;
         width: 24px;
         height: 24px;
@@ -30,7 +30,7 @@
 input[type="password"].app-input-text + .unmask:after {
     content:"\f1db";
 }
-button.unmask{ 
+button.unmask { 
     margin-left:-40px;
     background:transparent;
     border:none;

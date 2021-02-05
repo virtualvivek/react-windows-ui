@@ -76,7 +76,8 @@
         text-overflow: ellipsis;
         height: fit-content;
     }
-    span,i {
+    i,
+    span {
         position: relative;
         line-height: 1;
     }

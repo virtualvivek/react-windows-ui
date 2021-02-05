@@ -50,7 +50,8 @@
     }
 
 }
-button,.app-button {
+button,
+.app-button {
     @extend .user-select-none;
     &:focus,&:active,&:focus:active {
         outline: none !important;
