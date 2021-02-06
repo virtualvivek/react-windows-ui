@@ -17,7 +17,7 @@
         li {
             display:inline-flex;
             a {
-                @extend .tap-highlight-none;
+                -webkit-tap-highlight-color:transparent;
                 padding: 0;
                 opacity: 0.6;
                 user-select:none;
@@ -87,7 +87,7 @@
     scrollbar-width:none; /* Mozilla ScrollBar */
 }
 
-.app-back{
+.app-back {
     padding: 5px 0px 0px 12px !important;
 }
 

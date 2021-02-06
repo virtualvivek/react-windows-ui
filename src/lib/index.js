@@ -5,6 +5,7 @@ import Checkbox from './src/components/Checkbox'
 import CommandBar from './src/components/CommandBar'
 import Dropdown from './src/components/DropDown'
 import Dialog from './src/components/Dialog'
+import Gauge from './src/components/Gauge'
 import LinkCoumpound from './src/components/LinkCompound'
 import ImageView from './src/components/ImageView'
 import InputText from './src/components/InputText'
@@ -33,6 +34,7 @@ export {
     CommandBar,
     Dropdown,
     Dialog,
+    Gauge,
     LinkCoumpound,
     ImageView,
     InputText,

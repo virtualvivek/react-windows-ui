@@ -1,0 +1,16 @@
+#app-nav-wrap .app-nav-toggle {
+    @extend .transition-all-400ms;
+    padding: 0 25px;
+
+    &:hover {
+        @extend .background-color-link-bg-hover;
+    }
+    &:active {
+        @extend .background-color-link-bg-active;
+    }
+    &:after{
+        @extend .font-icon-dark;
+        content:"\f106";
+        font-size: 24px 
+    }
+}    

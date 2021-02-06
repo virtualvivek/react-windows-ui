@@ -1,40 +1,13 @@
 @import "./subcomponents/NavBack.scss";
+@import "./subcomponents/NavToggled.scss";
 @import "./subcomponents/NavMobile.scss";
 @import "./subcomponents/NavUser.scss";
+@import "./subcomponents/NavToggleButton.scss";
 
 #app-nav-wrap {
     height:100%;
     width:280px;
     z-index: 5; 
-
-    &.toggled {
-        height: 100%;
-        width: 74px;
-        position: fixed;
-        top: 0;
-        overflow-x: hidden; 
-        display:inline-block; 
-         
-
-        .app-name, 
-        .app-switch, 
-        nav a span, 
-        nav ul h1 {
-            @extend .display-none;
-        }
-
-        nav {
-            .app-hr {
-                width: 56px;
-                margin-left: 8px;
-            }
-            > div:first-child, 
-            nav > div:nth-child(2) {
-                width: auto;
-            }
-        }
-
-    }
 
     nav {
         @extend .transition-background-400ms;
@@ -174,28 +147,12 @@
     }
 
     nav > div:first-child {
-        padding-bottom: 8px;
+        padding-bottom: 10px;
     }
     nav > div:nth-child(2) {
         top: 50px; 
     }
 
-    .app-nav-toggle {
-        @extend .transition-all-400ms;
-        padding: 0 25px;
-
-        &:hover {
-            @extend .background-color-link-bg-hover;
-        }
-        &:active {
-            @extend .background-color-link-bg-active;
-        }
-        &:after{
-            @extend .font-icon-dark;
-            content:"\f106";
-            font-size: 24px 
-        }
-    }    
    
 }
 

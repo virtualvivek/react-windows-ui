@@ -124,11 +124,9 @@
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    transform: scale(0);
     transition: 0.4s;
     &.show {
       opacity: 1;
-      transform: scale(1);
       visibility: visible;
       transition: 0.4s;
     }

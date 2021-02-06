@@ -1,0 +1,30 @@
+#app-nav-wrap.toggled {
+    height: 100%;
+    width: 74px;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden; 
+    display:inline-block; 
+     
+    .app-name, 
+    .app-switch, 
+    nav a span, 
+    nav ul h1 {
+        @extend .display-none;
+    }
+
+    nav {
+        .app-hr {
+            width: 56px;
+            margin-left: 8px;
+        }
+        > div:first-child {
+            width: 74px;
+            height: 42px;
+        } 
+        > div:nth-child(2) {
+            width: auto;
+        }
+    }
+
+}

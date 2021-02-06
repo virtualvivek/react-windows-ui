@@ -1,10 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import {NavBar,NavBarLink,ThemeManager} from '../../../lib'
+import {NavBar,NavBarLink} from '../../../lib'
 import Home from './pages/Home'
 import Texts from './pages/Texts'
 import Buttons from './pages/Buttons'
 import ProgressControls from './pages/ProgressControls'
+import Gauges from './pages/Gauges'
 import Lists from './pages/Lists'
 import Icons from './pages/Icons'
 import Images from './pages/Images'
@@ -15,7 +16,6 @@ import _404Layout from './layouts/404Layout'
 const Framework = () => {
   return (
     <>
-    <ThemeManager />
      <Router basename="framework">
         <NavBar 
           title="React Windows UI"
@@ -43,6 +43,12 @@ const Framework = () => {
           <NavBarLink 
             to="/progress" 
             text="Progress Controls"
+            icon={<i className="icons10-bar-chart"></i>}
+          />
+
+          <NavBarLink 
+            to="/gauges" 
+            text="Gauges"
             icon={<i className="icons10-bar-chart"></i>}
           />
                     
@@ -86,6 +92,7 @@ const Framework = () => {
           <Route path='/texts' component={Texts} />
           <Route path='/buttons' component={Buttons} />
           <Route path='/progress' component={ProgressControls} />
+          <Route path='/gauges' component={Gauges} />
           <Route path='/lists' component={Lists} />
           <Route path='/icons' component={Icons} />
           <Route path='/images' component={Images} />

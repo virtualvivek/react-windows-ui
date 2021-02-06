@@ -1,6 +1,9 @@
 import React from 'react'
+var createAlphaAccentColor = require('./utils/ThemeManager').createAlphaAccentColor
 
 const Dialog = (props) => {
+  
+  createAlphaAccentColor()
 
   return (
     <>

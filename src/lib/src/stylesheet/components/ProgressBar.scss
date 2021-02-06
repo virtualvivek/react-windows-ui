@@ -31,7 +31,9 @@
             @extend .background-color-accent;
             position:absolute;
             height:100%;
-            &::after,&::before {
+            transition: width 1s ease-in-out;
+            &::after,
+            &::before {
                 display: none !important;
             }
         }

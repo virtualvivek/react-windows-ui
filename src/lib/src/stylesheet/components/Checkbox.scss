@@ -57,7 +57,8 @@ label.app-checkbox {
 label{
     &.app-checkbox {
         input[type="checkbox"]{
-            &:checked:disabled:before,&:disabled:before {
+            &:checked:disabled:before,
+            &:disabled:before {
                 @extend .cursor-not-allowed;
             }
         }
