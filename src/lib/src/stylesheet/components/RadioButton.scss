@@ -22,8 +22,9 @@
     }
     &:disabled {
         cursor: not-allowed;
-        border-color: var(--color_button_active);
-        background-color: var(--color_button_active);
+        border-color: var(--color_button_hover);
+        background-color: var(--color_button_hover);
+        filter: opacity(0.7);
     }
 }
 

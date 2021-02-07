@@ -3,6 +3,7 @@ import Alert from './src/components/Alert'
 import Button from './src/components/Button'
 import Checkbox from './src/components/Checkbox'
 import CommandBar from './src/components/CommandBar'
+import ColorPickerItem from './src/components/ColorPickerItem'
 import Dropdown from './src/components/DropDown'
 import Dialog from './src/components/Dialog'
 import Gauge from './src/components/Gauge'
@@ -32,6 +33,7 @@ export {
     Button,
     Checkbox,
     CommandBar,
+    ColorPickerItem,
     Dropdown,
     Dialog,
     Gauge,

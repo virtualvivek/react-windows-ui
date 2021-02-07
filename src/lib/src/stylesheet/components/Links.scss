@@ -96,21 +96,11 @@
             background: var(--color_light_grey) !important;
             border: 2px solid var(--color_link_bg_active);
         }
-        i {
-            @extend .color-accent;
-        }
+        
     }
-
-    &.withSwitch { 
-        width: auto;
-        display: inline-flex;
-        align-items: center;
-        padding: 0 0 12px 10px;
-
-        .app-switch {
-            position: relative;
-            left: 20px;
-        }
+    &.accent i,
+    i.accent {
+        @extend .color-accent;
     }
     
 }
@@ -136,17 +126,6 @@ i.bg-grey::before {
             background:transparent;
             border-color:transparent;
         }
-        &.withSwitch {
-            display: block;
-            padding: 0 0 20px 10px;
-
-            .app-switch {
-                left: 0;
-                top: 10px
-            }
-            span {
-                width:calc(100% - 60px);
-            }
-        }
+        
     }
 }

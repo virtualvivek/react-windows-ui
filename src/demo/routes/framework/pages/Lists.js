@@ -14,18 +14,19 @@ const Lists = () => {
         img={Img1}
         title="User 1"
         subtitle="Web Developer"
+        info="online"
       />
       <ListItem 
         img={Img2}
         title="User 2"
         subtitle="Data Anylist"
-        info="Online"
+        info="online"
       />
       <ListItem 
         img={Img3}
         title="User 3"
         subtitle="iOS Developer"
-        info="Recent Logins"
+        info="offline"
       />
 
     <br/>

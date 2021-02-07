@@ -17,10 +17,14 @@
         li {
             display:inline-flex;
             a {
+                span,i { 
+                    opacity: 0.6; 
+                }
                 -webkit-tap-highlight-color:transparent;
                 padding: 0;
-                opacity: 0.6;
+                
                 user-select:none;
+                
                 &::after {
                     height: 3px;
                     width: 90%;
@@ -28,7 +32,9 @@
                     left: 6.5px;
                 }
                 &.active {
-                    opacity: 1;
+                    span,i {
+                        opacity: 1;
+                    }
                 }
                 span {
                     font-size: 20px;
@@ -36,7 +42,9 @@
                     bottom: 5px;
                     right: 0;
                 }
-            } 
+                
+            }
+            
             &:first-child span {
                 margin-left:10px;
             } 
@@ -77,10 +85,10 @@
 
     ul h1,
     ul .app-hr,
-    ul:not(.app-mobile-has-icons) li a i::before,
-    ul.app-mobile-has-icons li a span ,
     .app-nav-toggle,
-    .app-nav-user span {
+    .app-nav-user span,
+    ul.app-mobile-has-icons li a span ,
+    ul:not(.app-mobile-has-icons) li a i::before {
         display: none !important
     }
     

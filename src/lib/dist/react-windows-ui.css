@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --alpha_c: #EEE;
   /*    Day Mode */
@@ -9,8 +10,6 @@
   --color_link_bg_active: #B8B8B8;
   --color_button: #d9d9d9;
   --color_button_hover: #666;
-  --color_button_active: #999;
-  --color_button_active_border: #888;
   --color_accent_light: var(--AppColor);
   --color_accent_dark: var(--AppColor); }
 
@@ -58,9 +57,6 @@
 .background-color-link-bg-active, .app-back:active, #app-nav-wrap .app-nav-toggle:active, #app-nav-wrap nav ul li:active, i.bg-grey::before {
   background-color: var(--color_link_bg_active); }
 
-.background-color-button-active, .app-button:active {
-  background-color: var(--color_button_active); }
-
 .border-color-accent, .app-input-text.app-input-search:active, .app-input-text.app-input-search:focus {
   border-color: var(--AppColor); }
 
@@ -73,7 +69,8 @@
 .color-button-hover {
   color: var(--color_button_hover); }
 
-.color-accent, #app-nav-wrap nav ul li span::after, .app-link, .app-link-compound.accent i, li.app-list-item i.accent {
+.color-accent, #app-nav-wrap nav ul li span::after, .app-link, .app-link-compound.accent i,
+.app-link-compound i.accent, li.app-list-item i.accent {
   color: var(--AppColor); }
 
 .color-accent-light {
@@ -116,7 +113,7 @@
 .transition-background-400ms, body, .app-hr, .app-name, #app-nav-wrap nav, label.app-checkbox input[type="checkbox"]:before, .app-input-text, .app-search-bar, .app-search-bar button, .app-progress-container .app-progress, .app-radio, .app-select-styled, .app-select-styled select {
   transition: background 0.4s; }
 
-.transition-all-400ms, .app-back, #app-nav-wrap .app-nav-toggle, #app-nav-wrap nav.animate ul li a, .app-link-compound, li.app-list-item a {
+.transition-all-400ms, .app-back, #app-nav-wrap .app-nav-toggle, #app-nav-wrap nav.animate ul li a, .app-button, .app-link-compound, li.app-list-item a {
   transition-property: background, transform, border;
   transition-duration: 0.4s;
   transition-timing-function: ease; }
@@ -333,6 +330,21 @@ p.light {
     content: "\f106";
     font-size: 24px; }
 
+#app-nav-wrap nav .app-badge {
+  height: 18px;
+  width: auto;
+  color: white;
+  background: #ff3b30;
+  padding: 0 5px;
+  position: relative;
+  top: -8px;
+  margin-left: -8px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 50px;
+  line-height: initial; }
+
 #app-nav-wrap {
   height: 100%;
   width: 280px;
@@ -530,16 +542,14 @@ p.light {
   padding: 5px 15px;
   font-size: 15px;
   border: 2px solid transparent;
-  transition: all ease 0.2s;
-  vertical-align: middle; }
+  vertical-align: middle;
+  transition-duration: 0.2s; }
   .app-button:hover {
     border-color: var(--color_button_hover);
     filter: opacity(0.8); }
   .app-button:active {
-    border-color: var(--color_button_active_border);
+    filter: opacity(0.6);
     transition: 0.04s ease; }
-  .app-button.accent:active {
-    background: var(--alpha_c); }
   .app-button.animate:active {
     transform: scale(0.95, 0.95); }
   .app-button[disabled] span {
@@ -590,7 +600,7 @@ label.app-checkbox {
       background: var(--color_link_bg_hover);
       border: 2px solid var(--color_button_hover); }
     label.app-checkbox input[type="checkbox"]:checked:disabled::after {
-      border: solid var(--color_button_active_border);
+      border: solid var(--color_button_hover);
       border-width: 0 2px 2px 0; }
 
 .app-command-bar {
@@ -611,6 +621,37 @@ label.app-checkbox {
       font-size: 30px; }
     .app-command-bar .app-button span {
       font-size: 12px; }
+
+.app-color-picker-item {
+  padding: 0 2px 2px 0; }
+  .app-color-picker-item div {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border: 2px solid transparent; }
+    .app-color-picker-item div:hover {
+      border: 2px solid var(--color_dark_text); }
+    .app-color-picker-item div:before {
+      content: '✔';
+      position: relative;
+      float: right;
+      font-size: 12px;
+      padding: 4px;
+      line-height: 1;
+      color: var(--color_light_bg);
+      background: var(--color_dark_text);
+      transition: all .2s; }
+  .app-color-picker-item .item:not(:checked) + div:before {
+    opacity: 0;
+    transform: scale(0); }
+  .app-color-picker-item .item:checked + div:before {
+    opacity: 1;
+    transform: scale(1); }
+  .app-color-picker-item .item {
+    display: none; }
+  .app-color-picker-item .item:checked + div,
+  .app-color-picker-item div:hover {
+    border: 2px solid var(--color_dark_text); }
 
 .app-dialog {
   background-color: var(--color_light_grey);
@@ -957,14 +998,6 @@ button.unmask {
   .app-link-compound.accent:active {
     background: var(--color_light_grey) !important;
     border: 2px solid var(--color_link_bg_active); }
-  .app-link-compound.withSwitch {
-    width: auto;
-    display: inline-flex;
-    align-items: center;
-    padding: 0 0 12px 10px; }
-    .app-link-compound.withSwitch .app-switch {
-      position: relative;
-      left: 20px; }
 
 li.app-list-item {
   margin: 0;
@@ -1038,7 +1071,8 @@ li.app-list-item a {
     background: var(--color_button); }
     .app-progress-container .app-progress span {
       position: absolute;
-      height: 100%; }
+      height: 100%;
+      transition: width 1s ease-in-out; }
       .app-progress-container .app-progress span::after, .app-progress-container .app-progress span::before {
         display: none !important; }
     .app-progress-container .app-progress.withIcon {
@@ -1089,8 +1123,9 @@ li.app-list-item a {
     box-shadow: inset 0 0 0 2.8px var(--color_light_bg); }
   .app-radio:disabled {
     cursor: not-allowed;
-    border-color: var(--color_button_active);
-    background-color: var(--color_button_active); }
+    border-color: var(--color_button_hover);
+    background-color: var(--color_button_hover);
+    filter: opacity(0.7); }
 
 .app-label .app-radio + span {
   cursor: pointer; }
@@ -1275,14 +1310,15 @@ li.app-list-item a {
         #app-nav-wrap nav ul li a {
           -webkit-tap-highlight-color: transparent;
           padding: 0;
-          opacity: 0.6;
           user-select: none; }
+          #app-nav-wrap nav ul li a span, #app-nav-wrap nav ul li a i {
+            opacity: 0.6; }
           #app-nav-wrap nav ul li a::after {
             height: 3px;
             width: 90%;
             bottom: 0;
             left: 6.5px; }
-          #app-nav-wrap nav ul li a.active {
+          #app-nav-wrap nav ul li a.active span, #app-nav-wrap nav ul li a.active i {
             opacity: 1; }
           #app-nav-wrap nav ul li a span {
             font-size: 20px;
@@ -1312,10 +1348,10 @@ li.app-list-item a {
       height: 0 !important; }
     #app-nav-wrap nav ul h1,
     #app-nav-wrap nav ul .app-hr,
-    #app-nav-wrap nav ul:not(.app-mobile-has-icons) li a i::before,
-    #app-nav-wrap nav ul.app-mobile-has-icons li a span,
     #app-nav-wrap nav .app-nav-toggle,
-    #app-nav-wrap nav .app-nav-user span {
+    #app-nav-wrap nav .app-nav-user span,
+    #app-nav-wrap nav ul.app-mobile-has-icons li a span,
+    #app-nav-wrap nav ul:not(.app-mobile-has-icons) li a i::before {
       display: none !important; }
   .app-back {
     padding: 5px 0px 0px 12px !important; }
@@ -1376,14 +1412,6 @@ li.app-list-item a {
   .app-link-compound .accent:hover {
     background: transparent;
     border-color: transparent; }
-  .app-link-compound.withSwitch {
-    display: block;
-    padding: 0 0 20px 10px; }
-    .app-link-compound.withSwitch .app-switch {
-      left: 0;
-      top: 10px; }
-    .app-link-compound.withSwitch span {
-      width: calc(100% - 60px); }
   .app-list li a:hover {
     background: transparent;
     border-color: transparent; }

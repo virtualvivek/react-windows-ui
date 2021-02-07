@@ -23,8 +23,7 @@ const Images = () => {
         <div className="app-flex-center">
           <AvatarView 
               src={IronMan}
-              size="large"
-              
+              size="large"    
               showDropShadow/>
               &nbsp;&nbsp;
           <div className="app-grid">
@@ -36,8 +35,7 @@ const Images = () => {
             &nbsp;
             <AvatarView 
                 size="small"
-                src={Img2}
-                
+                src={Img2}      
                 showDropShadow/>
                 </div>  
         </div>

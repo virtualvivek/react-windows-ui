@@ -4,6 +4,7 @@ import {NavBar,NavBarLink} from '../../../lib'
 import Home from './pages/Home'
 import Texts from './pages/Texts'
 import Buttons from './pages/Buttons'
+import Links from './pages/Links'
 import ProgressControls from './pages/ProgressControls'
 import Gauges from './pages/Gauges'
 import Lists from './pages/Lists'
@@ -37,7 +38,14 @@ const Framework = () => {
           <NavBarLink 
             to="/buttons" 
             text="Buttons"
+            showBadge={5}
             icon={<i className="icons10-controller"></i>}
+          />
+
+          <NavBarLink 
+            to="/links" 
+            text="Links"
+            icon={<i className="icons10-clip"></i>}
           />
                     
           <NavBarLink 
@@ -49,7 +57,7 @@ const Framework = () => {
           <NavBarLink 
             to="/gauges" 
             text="Gauges"
-            icon={<i className="icons10-bar-chart"></i>}
+            icon={<i className="icons10-chevron-up-round"></i>}
           />
                     
           <NavBarLink 
@@ -91,6 +99,7 @@ const Framework = () => {
           <Route path="/home" component={Home}  exact />
           <Route path='/texts' component={Texts} />
           <Route path='/buttons' component={Buttons} />
+          <Route path='/links' component={Links} />
           <Route path='/progress' component={ProgressControls} />
           <Route path='/gauges' component={Gauges} />
           <Route path='/lists' component={Lists} />

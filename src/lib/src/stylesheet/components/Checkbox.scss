@@ -43,7 +43,7 @@ label.app-checkbox {
                     border: 2px solid var(--color_button_hover);
                 }
                 &::after {
-                    border: solid var(--color_button_active_border);
+                    border: solid var(--color_button_hover);
                     border-width: 0 2px 2px 0; 
                 }
             }
