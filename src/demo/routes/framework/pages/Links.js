@@ -26,7 +26,7 @@ const Links = () => {
 
       <LinkCoumpound 
         to="#"
-        icon={<i className="icons10-timeline accent"></i>}
+        icon={<i className="icons10-area-chart accent"></i>}
       />
         
       <br/><br/>

@@ -343,7 +343,7 @@ p.light {
   font-size: 12px;
   font-weight: 500;
   border-radius: 50px;
-  line-height: initial; }
+  line-height: 1.4; }
 
 #app-nav-wrap {
   height: 100%;
