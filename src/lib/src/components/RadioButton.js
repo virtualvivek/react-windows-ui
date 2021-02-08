@@ -8,7 +8,7 @@ const RadioButton = (props) => {
             type="radio"
             className="app-radio" 
             name={props.name}  
-            checked={props.checked} 
+            defaultChecked={props.checked}
             disabled={props.disabled}
             onChange={props.onChange}
         /> <span>{props.text}</span>

@@ -6,6 +6,7 @@ import Texts from './pages/Texts'
 import Buttons from './pages/Buttons'
 import Links from './pages/Links'
 import ProgressControls from './pages/ProgressControls'
+import Themes from './pages/Themes'
 import Gauges from './pages/Gauges'
 import Lists from './pages/Lists'
 import Icons from './pages/Icons'
@@ -55,6 +56,12 @@ const Framework = () => {
           />
 
           <NavBarLink 
+            to="/themes" 
+            text="Themes"
+            icon={<i className="icons10-personalize"></i>}
+          />
+
+          <NavBarLink 
             to="/gauges" 
             text="Gauges"
             icon={<i className="icons10-chevron-up-round"></i>}
@@ -101,6 +108,7 @@ const Framework = () => {
           <Route path='/buttons' component={Buttons} />
           <Route path='/links' component={Links} />
           <Route path='/progress' component={ProgressControls} />
+          <Route path='/themes' component={Themes} />
           <Route path='/gauges' component={Gauges} />
           <Route path='/lists' component={Lists} />
           <Route path='/icons' component={Icons} />

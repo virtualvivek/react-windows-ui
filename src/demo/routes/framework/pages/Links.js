@@ -19,6 +19,8 @@ const Links = () => {
 
       <LinkCoumpound 
         to="#"
+        title="System Settings and preferences"
+        subtitle="Customize system controls and more"
         icon={<i className="icons10-timeline"></i>}
       />
 
@@ -26,6 +28,8 @@ const Links = () => {
 
       <LinkCoumpound 
         to="#"
+        title="Network usage by individual apps"
+        subtitle="Display data consumes by installed apps"
         icon={<i className="icons10-area-chart accent"></i>}
       />
         
@@ -33,6 +37,8 @@ const Links = () => {
 
       <LinkCoumpound  
         to="#"
+        title="Notification settings and DND"
+        subtitle="Control which app push notification"
         iconStyle="accent"
         icon={<i className="icons10-notification"></i>} 
       />
@@ -41,6 +47,8 @@ const Links = () => {
 
       <LinkCoumpound 
         to="#"
+        title="Camera settings and preferences"
+        subtitle="Modify saturation, filters for the physical camera device"
         icon={<i className="icons10-camera bg-accent"></i>}
       />
         
@@ -48,6 +56,8 @@ const Links = () => {
 
       <LinkCoumpound 
         to="#"
+        title="Add more devices to system"
+        subtitle="creating digital utilities for system"
         icon={<i className="icons10-plus bg-grey"></i>}
       />
         

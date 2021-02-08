@@ -4,7 +4,7 @@ const Checkbox = (props) => {
   return (
     <label className="app-checkbox">
       <input type="checkbox"
-        defaultChecked={props.defaultChecked} 
+        defaultChecked={props.checked} 
         disabled={props.disabled}
         onChange={props.onChange}/> {props.text}
     </label>

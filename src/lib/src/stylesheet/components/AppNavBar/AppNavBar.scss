@@ -6,20 +6,20 @@
 @import "./subcomponents/NavBadge.scss";
 
 #app-nav-wrap {
-    height:100%;
-    width:280px;
+    height: 100%;
+    width: 280px;
     z-index: 5; 
 
     nav {
         @extend .transition-background-400ms;
         @extend .background-color-nav;
-        height:inherit;
-        width:inherit;
+        height: inherit;
+        width: inherit;
         position: fixed;
-        left:0;
-        top:0; 
+        left: 0;
+        top: 0; 
         padding: 0;
-        display:block; 
+        display: block; 
         overflow-x: hidden;       
         overflow-y: scroll;
         z-index: inherit;
@@ -63,7 +63,7 @@
 
         ul {
             position: relative;
-            top:115px;
+            top: 115px;
             display: block;
             margin: 0 auto;
             padding: 0 0 40px 0;
@@ -75,6 +75,7 @@
                 &:hover {
                     @extend .background-color-link-bg-hover;
                 }
+
                 &:active {
                     @extend .background-color-link-bg-active;
                 }
@@ -95,7 +96,7 @@
                         width: 5px;
                         height: 41px;
                         background: var(--AppColor);
-                        content: '';   
+                        content: '';
                         transition: transform 0.1s;
                         transform: translate3d(-150%,0,0); 
                     }

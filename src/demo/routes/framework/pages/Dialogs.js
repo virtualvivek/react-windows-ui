@@ -47,9 +47,15 @@ class Lists extends React.Component {
             showDropShadow/>
             &nbsp;&nbsp;
             <div className="app-grid">
-                <img className="app-avatar small" src={Img2} alt="a"/>
+                <AvatarView
+                    size="small" 
+                    src={Img2}
+                    showDropShadow/>
                 &nbsp;
-                <img className="app-avatar small" src={Img3} alt="a"/>
+                <AvatarView
+                    size="small" 
+                    src={Img3}
+                    showDropShadow/>
             </div>
         </div>
 
@@ -62,9 +68,9 @@ class Lists extends React.Component {
         <br></br>
 
         <h3 className="m-b-15">Dialog</h3>
-        <Button value="Open Dialog" 
-            onClick={this.toggleDialog}
-        />
+        <Button 
+            value="Open Dialog" 
+            onClick={this.toggleDialog}/>
   
         <Dialog 
           isVisible={this.state.showDialog}
@@ -72,18 +78,15 @@ class Lists extends React.Component {
             <ListItem 
                 icon={<i className="icons10-contact-book bg-accent"></i>}
                 title="Contacts"
-                subtitle="5.6 MB"
-            />
+                subtitle="5.6 MB"/>
             <ListItem 
                 icon={<i className="icons10-news bg-accent"></i>}
                 title="News"
-                subtitle="12.0 MB"
-            />
+                subtitle="12.0 MB"/>
             <ListItem 
                 icon={<i className="icons10-paypal bg-accent"></i>}
                 title="Payments"
-                subtitle="24 MB"
-            />
+                subtitle="24 MB"/>
                
             <div style={{padding:'10px',float:'right'}}>
                 <button className="app-button" 

@@ -1,0 +1,84 @@
+.windows-view {
+    width: 300px;
+    height: 180px;
+    background-color: var(--color_link_bg_hover);
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.start-view {
+    height: 120px;
+    width: 150px;
+    bottom: 20px;
+    filter: drop-shadow(4px -4px 15px #999);
+}
+.start-view .white-line {
+    background-color: #fff;
+    height: 2px;
+    width: 50px;
+}
+.tiles-view {
+    width: 80px;
+    height: 80px;
+    filter: brightness(1.2);
+    bottom: 0;
+    left: 60px;
+
+}
+.tiles-view .white-line,
+.tiles-view-right .white-line {
+    margin-top: -10px;
+}
+.tiles-view-right .white-line {
+    width: 25px;
+}
+.tiles-view-right p {
+    width: 10px;
+    height: 10px;
+    margin: 0 0 3px 0;
+    filter: brightness(1.2);
+}
+.tiles-view-right p:after {
+    width: 15px;
+    height: 2px;
+    content: '';
+    margin-left: 20px;
+    background-color: #fff;
+    display: block;
+}
+.tiles-view-right {
+    width: 25px;
+    height: 80px;
+    bottom: 0;
+    left: 10px;
+}
+.taskbar-view {
+    width: 300px;
+    height: 20px;
+    opacity: 0.7;
+    bottom: 0;
+}
+
+.start-view,
+.start-view .white-line,
+.tiles-view,
+.tiles-view-right,
+.taskbar-view {
+    position: absolute;
+}
+
+.start-view,
+.tiles-view,
+.tiles-view-right p,
+.taskbar-view {
+    background-color: var(--AppColor);
+}
+
+.start-view,
+.tiles-view,
+.tiles-view-right p,
+.taskbar-view {
+    transition-property: background, transform, border;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}

@@ -31,9 +31,9 @@ input[type="password"].app-input-text + .unmask:after {
     content:"\f1db";
 }
 button.unmask { 
-    margin-left:-40px;
-    background:transparent;
-    border:none;
+    margin-left: -40px;
+    background: transparent;
+    border: none;
     position: relative;
     vertical-align: middle;
 }
@@ -42,6 +42,6 @@ button.unmask {
 
     input[type="date"].app-input-text:before {
         content: attr(placeholder);
-        padding-right:5px;
+        padding-right: 5px;
     }
 }

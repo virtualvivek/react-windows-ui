@@ -16,13 +16,15 @@ const SwitchDayNight = () => {
     else{
       setAppLight()
     }
-}
+  }
 
 
   return (
     <label className="app-switch">
-        <input type="checkbox"
-          onChange={toggleDayNight} ref={inputRef} 
+        <input 
+          type="checkbox"
+          onChange={toggleDayNight} 
+          ref={inputRef} 
          />
         <div dataoff="Day" dataon="Night"></div>
     </label>

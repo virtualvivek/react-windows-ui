@@ -1,9 +1,9 @@
 .app-alert {
     @extend .color-white;
-    width:55%;
-    position:fixed;	
+    width: 55%;
+    position: fixed;	
     top: 0;
-    margin-top:30vh;
+    margin-top: 30vh;
     left: 24vw;
     z-index: 11;
     background: var(--alpha_c);
@@ -50,7 +50,7 @@
     h1,.btn-container,
     .alert-message,
     .app-alert-button {
-        background-color:transparent !important;	 
+        background-color:transparent !important;
     }
 }
 

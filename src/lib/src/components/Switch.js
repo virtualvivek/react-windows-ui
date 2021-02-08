@@ -6,7 +6,7 @@ const Switch = (props) => {
     <label className="app-switch">
         <input 
           type="checkbox" 
-          defaultChecked={props.defaultChecked} 
+          defaultChecked={props.checked} 
           onChange={props.onChange} 
           disabled={props.disabled} 
         />

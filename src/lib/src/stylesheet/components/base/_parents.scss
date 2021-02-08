@@ -1,44 +1,44 @@
 
 .background-color-light-grey {
-    background-color:var(--color_light_grey); 
+    background-color: var(--color_light_grey);
 }
 
 .background-color-light-bg {
-    background-color:var(--color_light_bg); 
+    background-color: var(--color_light_bg);
 }
 
 .background-color-dark-text {
-    background-color:var(--color_dark_text); 
+    background-color: var(--color_dark_text);
 }
 
 .background-color-nav {
-    background-color:var(--color_nav); 
+    background-color: var(--color_nav);
 }
 
 .background-color-accent {
-    background-color:var(--AppColor); 
+    background-color: var(--AppColor);
 }
 
 .background-color-accent-light {
-    background-color:var(--color_accent_light); 
+    background-color: var(--color_accent_light);
 }
 
 .background-color-accent-dark {
-    background-color:var(--color_accent_dark); 
+    background-color: var(--color_accent_dark);
 }
 
 
 .background-color-link-bg-hover {
-    background-color:var(--color_link_bg_hover); 
+    background-color: var(--color_link_bg_hover);
 }
 
 .background-color-link-bg-active {
-    background-color:var(--color_link_bg_active); 
+    background-color: var(--color_link_bg_active);
 }
 
 
 .border-color-accent {
-    border-color: var(--AppColor); 
+    border-color: var(--AppColor);
 }
 
 .color-dark-text {
@@ -101,18 +101,18 @@
 }
 
 .transition-background-400ms {
-    transition: background 0.4s; 
+    transition: background 0.4s;
 }
 .transition-all-400ms {
     transition-property: background, transform, border;
     transition-duration: 0.4s;
-    transition-timing-function: ease
+    transition-timing-function: ease;
 }
 .transition-scale-0_95 {
     transition-property: background, transform;
     transition-duration: 0.09s;
     transition-timing-function: ease;
-    transform: scale(0.965,0.965); 
+    transform: scale(0.965,0.965);
 }
 
 .user-select-none {
@@ -153,7 +153,7 @@
         visibility: visible;
     }
     &.light {
-        background:#EEEEEED1; 
+        background:#EEEEEED1;
     }
 }
 

@@ -15,10 +15,10 @@ const Home = () => {
           <div className="app-flex">
                 
             <Switch
-              defaultChecked/>
+              checked/>
 
             <Switch
-              defaultChecked
+              checked
               disabled
               textOn="Disabled On"
               textOff="Disabled Off" /> 
@@ -29,11 +29,9 @@ const Home = () => {
 
             <div className="app-flex">
                 
-              <Switch
-                defaultChecked={false}/>
+              <Switch/>
 
               <Switch
-                defaultChecked={false}
                 disabled
                 textOn="Disabled On"
                 textOff="Disabled Off" /> 
@@ -59,11 +57,11 @@ const Home = () => {
             <div className="app-flex">
 
               <Checkbox
-                defaultChecked={true} />
+                checked />
               <div className="app-hr-space" s='40'></div>
               <Checkbox 
-                disabled={true}
-                defaultChecked={true}
+                disabled
+                checked
                 text="Disabled Checked"/>
 
             </div>
@@ -73,12 +71,11 @@ const Home = () => {
             <div className="app-flex">
 
               <Checkbox
-                defaultChecked={false}
+                checked
                 text="Unchecked" />
               <div className="app-hr-space" s='20'></div>
               <Checkbox 
-                disabled={true}
-                defaultChecked={false}
+                disabled
                 text="Disabled Unchecked"/>
 
             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
-import './css/icons.css'
 import {NavPageContainer} from '../../../../lib'
+import './css/icons.css'
 
 const Icons = () => {
   return (

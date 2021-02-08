@@ -85,7 +85,7 @@
 .font-weight-500, .app-name, #app-nav-wrap nav ul li a.active {
   font-weight: 500; }
 
-.font-icon-dark, .font-icon-light, .app-back:after, #app-nav-wrap .app-nav-toggle:after, .app-input-text + .unmask:after, .app-search-bar button::after, .app-search-box::after, .app-select-styled:after {
+.font-icon-dark, .font-icon-light, .app-back::after, #app-nav-wrap .app-nav-toggle:after, .app-input-text + .unmask:after, .app-search-bar button::after, .app-search-box::after, .app-select-styled:after {
   font-family: icons10;
   color: var(--color_dark_text); }
 
@@ -289,7 +289,7 @@ p.light {
   line-height: 1 !important;
   font-size: 30px;
   padding: 7px 22px !important; }
-  .app-back:after {
+  .app-back::after {
     content: "\f113";
     position: relative; }
   .app-back.fixed {
@@ -915,18 +915,6 @@ button.unmask {
     top: -18px;
     animation: move 2s 450ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23); }
 
-@-webkit-keyframes move {
-  0% {
-    left: 0%; }
-  100% {
-    left: 100%; } }
-
-@-moz-keyframes move {
-  0% {
-    left: 0%; }
-  100% {
-    left: 100%; } }
-
 @keyframes move {
   0% {
     left: 0%; }
@@ -1296,7 +1284,7 @@ li.app-list-item a {
     overflow-y: hidden;
     height: 93px;
     overflow-x: scroll;
-    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
     scrollbar-width: none;
     /* Mozilla ScrollBar */ }
     #app-nav-wrap nav ul {
@@ -1308,9 +1296,9 @@ li.app-list-item a {
       #app-nav-wrap nav ul li {
         display: inline-flex; }
         #app-nav-wrap nav ul li a {
-          -webkit-tap-highlight-color: transparent;
           padding: 0;
-          user-select: none; }
+          user-select: none;
+          -webkit-tap-highlight-color: transparent; }
           #app-nav-wrap nav ul li a span, #app-nav-wrap nav ul li a i {
             opacity: 0.6; }
           #app-nav-wrap nav ul li a::after {
@@ -1388,8 +1376,11 @@ li.app-list-item a {
     border-color: transparent;
     filter: none; }
   .app-command-bar {
+    text-align: center;
     top: unset;
     bottom: 0; }
+    .app-command-bar .app-search-box {
+      width: 45vw; }
   .app-dialog {
     width: 100%;
     left: 0;
@@ -1408,16 +1399,15 @@ li.app-list-item a {
       color: var(--color_light_bg) !important; }
   .app-link:hover {
     color: var(--AppColor); }
-  .app-link-compound:hover,
-  .app-link-compound .accent:hover {
+  .app-link-compound:hover, .app-link-compound.accent:hover {
     background: transparent;
     border-color: transparent; }
-  .app-list li a:hover {
+  li.app-list-item a:hover {
     background: transparent;
     border-color: transparent; }
-  .app-list li a:active {
+  li.app-list-item a:active {
     background: var(--color_link_bg_hover); }
-  .app-list li a:active, .app-list li afocus {
+  li.app-list-item a:active, li.app-list-item afocus {
     border-bottom: 1px solid var(--color_light_grey); }
   .app-loader-bar {
     width: 90%; }

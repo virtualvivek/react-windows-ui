@@ -2,14 +2,14 @@
 .app-section-container {
     padding-left: 280px;
     &.has-padding {
-        padding-left: 310px;  
+        padding-left: 310px;
     }
 }
 
 #app-nav-wrap.toggled + .app-section-container {
     padding-left: 74px;
     &.has-padding {
-        padding-left: 104px;  
+        padding-left: 104px;
     }
 }
 

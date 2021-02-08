@@ -23,7 +23,7 @@ label.app-checkbox {
         &:checked {
             &::before {
                 background: var(--AppColor);
-                border: 2px solid var(--AppColor); 
+                border: 2px solid var(--AppColor);
             }
             &::after {
                 content: "";

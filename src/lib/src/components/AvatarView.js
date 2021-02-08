@@ -33,7 +33,7 @@ const AvatarView = (props) => {
       : props.size === "large" ? "app-avatar large drop-shadow"
       : "app-avatar medium drop-shadow"}
       src={props.src}
-      alt="a"
+      alt={props.alt}
       />    
       }  
 
@@ -64,6 +64,7 @@ const AvatarView = (props) => {
 AvatarView.defaultProps = {
     isLoading: false,
     objectFit: 'cover',
+    alt: "image"
     
   }
 

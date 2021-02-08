@@ -5,7 +5,7 @@
     overflow-y: hidden;
     height: 93px;
     overflow-x: scroll;
-    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
 
     ul {
         width: 100%;
@@ -17,13 +17,13 @@
         li {
             display:inline-flex;
             a {
-                span,i { 
-                    opacity: 0.6; 
+                span,i {
+                    opacity: 0.6;
                 }
-                -webkit-tap-highlight-color:transparent;
+
                 padding: 0;
-                
                 user-select:none;
+                -webkit-tap-highlight-color:transparent;
                 
                 &::after {
                     height: 3px;
@@ -47,10 +47,10 @@
             
             &:first-child span {
                 margin-left:10px;
-            } 
+            }
             &:last-child {
                 padding-right:30px;
-            }               
+            }
         }
         &.app-mobile-has-icons {
             li {
@@ -89,7 +89,7 @@
     .app-nav-user span,
     ul.app-mobile-has-icons li a span ,
     ul:not(.app-mobile-has-icons) li a i::before {
-        display: none !important
+        display: none !important;
     }
     
     scrollbar-width:none; /* Mozilla ScrollBar */

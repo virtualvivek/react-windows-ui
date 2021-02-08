@@ -29,7 +29,7 @@
     
         span {
             @extend .background-color-accent;
-            position:absolute;
+            position: absolute;
             height:100%;
             transition: width 1s ease-in-out;
             &::after,

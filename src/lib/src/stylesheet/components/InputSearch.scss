@@ -27,7 +27,8 @@
         margin-left: -33px;
         border: none;
         
-        &:hover,&:active {
+        &:hover,
+        &:active {
             @extend .background-color-accent;
         }
         &:active {
@@ -40,7 +41,7 @@
             font-weight: 600;
         }
         &:hover::after {
-            color:var(--color_light_bg) !important;
+            color: var(--color_light_bg) !important;
         }
         
     }
@@ -62,17 +63,17 @@
 
 .app-search-bar,
 .app-search-box {
-    width:285px;
-    height:35px;
-    display:inline-flex;
+    width: 285px;
+    height: 35px;
+    display: inline-flex;
     vertical-align: middle; 
 }
 
 .index-search {
-    width:fit-content;
-    margin:auto;
-    position:relative;
-    top:24px;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: 24px;
     display: table;
 }
 

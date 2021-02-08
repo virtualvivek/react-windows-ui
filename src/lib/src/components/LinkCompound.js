@@ -9,8 +9,8 @@ const LinkCoumpound = (props) => {
       "app-link-compound accent" : "app-link-compound" } 
       onMouseOver={props.onMouseOver}>
           {props.icon}
-          <span>App Volume and device preference</span>
-          <p>Customise app volumes or devices they use</p>
+          <span>{props.title}</span>
+          <p>{props.subtitle}</p>
     </Link>
   )
 }

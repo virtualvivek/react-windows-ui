@@ -11,7 +11,7 @@ li.app-list-item {
         }
         &:active {
             @extend .background-color-link-bg-hover;
-            transform: scale(0.99,0.99);
+            transform: scale(0.99, 0.99);
             transition: 0.04s ease;
         }
     }
@@ -76,16 +76,17 @@ li.app-list-item a {
 }
 
 @mixin list-item-mobile() {
-    .app-list {
-        li a {
+    li.app-list-item {
+        a {
             &:hover {
                 background:transparent;
                 border-color:transparent;
             }
-            &:active{
+            &:active {
                 background: var(--color_link_bg_hover);
             }
-            &:active,&focus {
+            &:active,
+            &focus {
                 border-bottom: 1px solid var(--color_light_grey);
             }
         }

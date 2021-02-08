@@ -15,7 +15,7 @@
 .app-back {
     @extend .transition-all-400ms;
     @extend .color-dark-text;
-    width:fit-content;            
+    width:fit-content;
     line-height: 1 !important;
     font-size: 30px;
     padding: 7px 22px !important;
@@ -26,7 +26,7 @@
         &:active {
             @extend .background-color-link-bg-active;
         }
-        &:after {
+        &::after {
             @extend .font-icon-dark;
             content: "\f113";
             position: relative;

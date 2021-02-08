@@ -122,10 +122,9 @@ i.bg-grey::before {
 
     .app-link-compound {
         &:hover,
-        .accent:hover {
-            background:transparent;
-            border-color:transparent;
+        &.accent:hover {
+            background: transparent;
+            border-color: transparent;
         }
-        
     }
 }
