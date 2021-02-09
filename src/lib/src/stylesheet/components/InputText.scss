@@ -10,7 +10,7 @@
         border-color:#666; 
     }
 
-    + .unmask:after {
+    + .unmask::after {
         @extend .font-icon-dark;
         content: "\f189";
         font-size: 24px; 
@@ -27,7 +27,7 @@
         @extend .input-field-primary-disabled;
     }
 }
-input[type="password"].app-input-text + .unmask:after {
+input[type="password"].app-input-text + .unmask::after {
     content:"\f1db";
 }
 button.unmask { 

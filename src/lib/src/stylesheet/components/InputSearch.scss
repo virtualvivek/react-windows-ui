@@ -48,8 +48,6 @@
 }
 
 .app-search-box {
-    display:inline-flex;
-
     &::after {
         @extend .font-icon-dark;
         content: "\f1b9";
@@ -88,6 +86,7 @@
             }
             &:active {
                 opacity: 1;
+                background-color: var(--AppColor);
                 &::after {
                     color: var(--color_light_bg) !important;
                 }

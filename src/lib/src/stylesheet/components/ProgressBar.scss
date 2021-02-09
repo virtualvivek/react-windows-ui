@@ -9,7 +9,7 @@
 
     .title,
     .subtitle {
-        font-weight: 500;
+        @extend .font-weight-500
     }
     .title {
         line-height: 2;
@@ -29,8 +29,8 @@
     
         span {
             @extend .background-color-accent;
-            position: absolute;
             height:100%;
+            position: absolute;
             transition: width 1s ease-in-out;
             &::after,
             &::before {

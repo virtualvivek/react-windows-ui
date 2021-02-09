@@ -9,8 +9,8 @@
     z-index: 2;
 
     .app-button {
-        display: inline-grid;
         height: 60px;
+        display: inline-grid;
         align-content: center;
         
         &:not(:active) {

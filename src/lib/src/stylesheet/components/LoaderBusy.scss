@@ -1,20 +1,21 @@
 .app-loader-busy {
-    position: relative;
+
     width: 30px;
     height: 30px;
+    position: relative;
     top: -2px;
 
     &.medium {
         top: 2.5px;
 
         .w-ball-wrapper {
-            width: 25px;
-            height: 25px;
+          width: 25px;
+          height: 25px;
 
-            .w-ball {
-                width: 4.4px;
-                height: 4.4px;
-              }
+          .w-ball {
+              width: 4.4px;
+              height: 4.4px;
+            }
           }
     }
 
@@ -33,18 +34,20 @@
     }
 
     .w-ball-wrapper {
-        position: absolute;
-        width: 34px;
-        height: 34px;
-        opacity: 0;
-        transform: rotate(225deg);
-        animation: orbit 4.8s infinite;
+
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      opacity: 0;
+      transform: rotate(225deg);
+      animation: orbit 4.8s infinite;
 
         .w-ball {
             @extend .background-color-accent-light;
-            position: absolute;
+
             width: 4.8px;
             height: 4.8px;
+            position: absolute;
             left: 0;
             top: 0;
             border-radius: 50%;
@@ -116,9 +119,10 @@
 }
 
 .app-loader-busy-fullscreen {
-    position: fixed;
+  
     width: 100vw;
     height: 100vh;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 99;

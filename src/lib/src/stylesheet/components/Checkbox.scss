@@ -1,7 +1,7 @@
 label.app-checkbox {
     @extend .user-select-none;
     @extend .tap-highlight-none;
-    cursor: pointer;
+    @extend .cursor-pointer;
 
     input[type="checkbox"] {
         cursor: pointer;

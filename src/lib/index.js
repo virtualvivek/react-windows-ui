@@ -23,6 +23,7 @@ import SliderBar from './src/components/SliderBar'
 import SelectBox from './src/components/SelectBox'
 import Switch from './src/components/Switch'
 import SwitchDayNight from './src/components/SwitchDayNight'
+import SystemThemeFollower from './src/components/utils/SystemThemeFollower'
 import ThemeManager from './src/components/utils/ThemeManager'
 
 
@@ -53,5 +54,6 @@ export {
     SelectBox,
     Switch,
     SwitchDayNight,
+    SystemThemeFollower,
     ThemeManager
 }

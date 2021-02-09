@@ -1,5 +1,5 @@
 .app-color-picker-item {
-    padding: 0 2px 2px 0;
+    padding: 0 4px 2px 0;
     div {
         height: 40px;
         width: 40px;
@@ -8,7 +8,7 @@
         &:hover {
             border: 2px solid var(--color_dark_text);
         }
-        &:before {
+        &::before {
             content: '✔';
             position: relative;
             float: right;
@@ -20,18 +20,18 @@
             transition: all .2s;
           }
     }
-    .item:not(:checked) + div:before {
+    .item:not(:checked) + div::before {
         opacity: 0;
         transform: scale(0);
       }
       
-    .item:checked + div:before {
+    .item:checked + div::before {
         opacity: 1;
         transform: scale(1);
     }
 
     .item {
-        display: none;
+        @extend .display-none;
     }
     .item:checked + div,
     div:hover {

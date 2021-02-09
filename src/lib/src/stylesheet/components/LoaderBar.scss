@@ -10,7 +10,7 @@
         height: 6px;
         position: relative;
         border-radius: 50%;
-        left: -10px
+        left: -10px;
     }
 
     &.light {
@@ -48,6 +48,6 @@
 
 @mixin loader-bar-mobile() {
     .app-loader-bar {
-        width:90%
+        width: 90%;
     }
   }

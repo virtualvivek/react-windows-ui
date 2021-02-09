@@ -21,7 +21,7 @@
             @extend .background-color-light-bg;
         }
     }
-    &:after {
+    &::after {
         @extend .font-icon-dark;
         content: "\f10c";
         font-size: 18px;
