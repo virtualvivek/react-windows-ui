@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import {NavBar,NavBarLink} from '../../../lib'
+import { NavBar,NavBarLink, SystemThemeFollower} from '../../../lib'
 import Home from './pages/Home'
 import Texts from './pages/Texts'
 import Buttons from './pages/Buttons'
@@ -19,6 +19,7 @@ const Framework = () => {
   return (
     <>
      <Router basename="framework">
+     <SystemThemeFollower/>
         <NavBar 
           title="React Windows UI"
           mobileHasIcons={true}>
