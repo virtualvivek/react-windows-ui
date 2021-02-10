@@ -169,6 +169,16 @@ body {
   margin: 0;
   padding: 0; }
 
+::selection {
+  background-color: var(--AppColor);
+  color: white; }
+
+::-webkit-scrollbar {
+  width: 0.85em; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #999; }
+
 .app-container-screen {
   height: 100vh; }
 
@@ -192,6 +202,14 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
+
+a {
+  color: #444;
+  text-decoration: none;
+  outline: none;
+  font-weight: 500; }
+  a:hover {
+    background-color: #DDD; }
 
 .app-hr {
   height: 1px;
@@ -1150,6 +1168,7 @@ li.app-list-item a {
     height: 100%;
     padding-left: 10px;
     border: none;
+    font-size: 15px;
     -webkit-appearance: none; }
     .app-select-styled select:focus {
       outline: none; }
@@ -1284,6 +1303,9 @@ li.app-list-item a {
     margin: 5px; }
 
 @-moz-document url-prefix() {
+  ::-moz-selection {
+    background-color: var(--AppColor);
+    color: white; }
   .app-content-wrap section {
     scrollbar-color: #999 transparent; }
   #app-nav-wrap nav {

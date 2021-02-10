@@ -5,6 +5,15 @@ body {
     margin: 0;
     padding: 0;
 }
+
+::selection {
+    background-color: var(--AppColor);
+    color: white;
+}
+
+::-webkit-scrollbar { width: 0.85em }
+::-webkit-scrollbar-thumb { background-color: #999 }
+
 .app-container-screen {
     @extend .background-color-light-bg;
     height: 100vh;
@@ -21,6 +30,16 @@ h6 { font-size: .75em; }
 
 h1,h2,h3,h4,h5,h6 {
     font-weight: 400
+}
+
+a {
+    color: #444;
+	text-decoration: none;
+	outline: none;
+	font-weight: 500;
+    &:hover {
+        background-color: #DDD; 
+    }
 }
 
 

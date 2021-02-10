@@ -1,5 +1,10 @@
 @-moz-document url-prefix() {
-      
+    
+    ::-moz-selection {   
+        background-color: var(--AppColor);
+        color: white;
+    }
+
     .app-content-wrap section {  
         scrollbar-color:#999 transparent;
     }
