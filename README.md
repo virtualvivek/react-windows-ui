@@ -44,24 +44,37 @@ npm install react-windows-ui --save
 ```
 
 ## Getting Started
+
 ```js
-
 import { NavBar,NavPageContainer, ..} from 'react-windows-ui'
-
-//Use default app config or can use your own
-import 'react-windows-ui/config/app-config.css'
-
-// Be sure to include styles at some point, probably during your bootstraping
-import 'react-windows-ui/dist/react-windows-ui.css'
-// OR
-// You can use the minified version using
-import 'react-windows-ui/dist/react-windows-ui.min.css'
-
-// Import font icon using
-import 'react-windows-ui/icons/fonts/fonts.min.css'
-
 ```
 
+```js
+// Be sure to include styles at some point, probably during your bootstraping
+import 'react-windows-ui/config/app-config.css'
+import 'react-windows-ui/dist/react-windows-ui.min.css'
+import 'react-windows-ui/icons/fonts/fonts.min.css'
+```
+### app-config
+You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a><br>
+OR <br>
+Create your own like this
+
+```css
+:root {
+    --AppColor: #6632a8;
+ /*   Change of your choice */
+}
+body {
+    font-weight: 400;
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+    text-shadow: rgba(0,0,0,0.01) 0 0 1px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+```
 
 ## Find this library useful? :heart:
 Support it by joining [stargazers](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
