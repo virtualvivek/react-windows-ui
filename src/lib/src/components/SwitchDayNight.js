@@ -25,6 +25,7 @@ const SwitchDayNight = () => {
           type="checkbox"
           onChange={toggleDayNight} 
           ref={inputRef} 
+          id="app-day-night-switch"
          />
         <div dataoff="Day" dataon="Night"></div>
     </label>

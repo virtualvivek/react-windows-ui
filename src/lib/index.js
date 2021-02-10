@@ -4,7 +4,6 @@ import Button from './src/components/Button'
 import Checkbox from './src/components/Checkbox'
 import CommandBar from './src/components/CommandBar'
 import ColorPickerItem from './src/components/ColorPickerItem'
-import Dropdown from './src/components/DropDown'
 import Dialog from './src/components/Dialog'
 import Gauge from './src/components/Gauge'
 import LinkCoumpound from './src/components/LinkCompound'
@@ -15,6 +14,7 @@ import InputSearchBox from './src/components/InputSearchBox'
 import LoaderBar from './src/components/LoaderBar'
 import LoaderBusy from './src/components/LoaderBusy'
 import ListItem from './src/components/ListItem'
+import MenuBar from './src/components/MenuBar'
 import {NavBar,NavBarLink,NavBarLinkUser,NavPageContainer,NavPageContainerRight,NavPageContainerInner} from './src/components/NavBar'
 import ProgressBar from './src/components/ProgressBar'
 import ProgressBarIndeterminate from './src/components/ProgressBarIndeterminate'
@@ -35,7 +35,6 @@ export {
     Checkbox,
     CommandBar,
     ColorPickerItem,
-    Dropdown,
     Dialog,
     Gauge,
     LinkCoumpound,
@@ -46,6 +45,7 @@ export {
     LoaderBar,
     LoaderBusy,
     ListItem,
+    MenuBar,
     NavBar,NavBarLink,NavBarLinkUser,NavPageContainer,NavPageContainerRight,NavPageContainerInner,
     ProgressBar,
     ProgressBarIndeterminate,

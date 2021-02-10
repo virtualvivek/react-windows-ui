@@ -11,6 +11,7 @@ const SliderBar = (props) => {
           min={props.min} 
           max={props.max} 
           onChange={props.onChange}
+          step={props.step}
           style={{background:"linear-gradient(90deg, var(--AppColor)"+(props.value/props.max) * 100+"%, #999999 20.1%)"}}
         />
         <span> {props.value}</span>
@@ -21,7 +22,8 @@ const SliderBar = (props) => {
 SliderBar.defaultProps = {
   min: 0,
   max: 500,
-  value: 0
+  value: 0,
+  step: 1,
 }
 
 export default SliderBar

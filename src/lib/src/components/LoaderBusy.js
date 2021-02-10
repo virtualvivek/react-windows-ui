@@ -24,12 +24,20 @@ const LoaderBusy = (props) => {
   }
 
   const renderLoaderFullScreen = () => {
+
+    let alphaColor = window.getComputedStyle(document.documentElement).getPropertyValue('--color_light_grey');
+    alphaColor = alphaColor.trim();
+    alphaColor = alphaColor+'D1';
+    
     return <>
     <div  
       className={
       props.isVisible ? 
-      "app-dim-overlay light show" 
-      : "app-dim-overlay"}></div>
+      "app-dim-overlay show" 
+      : "app-dim-overlay"}
+      style={{
+        backgroundColor:alphaColor
+      }}></div>
     <div
       onClick={props.onBackdropPress} 
       className={props.isVisible ?
@@ -50,6 +58,7 @@ const LoaderBusy = (props) => {
     </>
   )
 }
+
 
 
 export default LoaderBusy

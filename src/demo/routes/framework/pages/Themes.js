@@ -34,6 +34,7 @@ class Themes extends React.Component {
                 </div>
                 <div className="tiles-view">
                     <div className="white-line"></div>
+                    <p>Aa</p>
                 </div>
             </div>
             <div className="taskbar-view"></div>

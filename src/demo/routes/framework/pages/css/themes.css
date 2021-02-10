@@ -1,33 +1,47 @@
 .windows-view {
-    width: 300px;
+    width: 320px;
     height: 180px;
-    background-color: var(--color_link_bg_hover);
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
+    background-color: var(--color_link_bg_hover);
 }
 .start-view {
     height: 120px;
     width: 150px;
     bottom: 20px;
-    filter: drop-shadow(4px -4px 15px #999);
+    filter: drop-shadow(4px -4px 15px #55555577);
 }
 .start-view .white-line {
-    background-color: #fff;
     height: 2px;
     width: 50px;
 }
 .tiles-view {
     width: 80px;
     height: 80px;
-    filter: brightness(1.2);
     bottom: 0;
     left: 60px;
-
 }
-.tiles-view .white-line,
-.tiles-view-right .white-line {
-    margin-top: -10px;
+.tiles-view p{
+    margin: 0;
+    padding: 0;
+    line-height: 2.5;
+    color: #fff;
+    text-align: center;
+    width: 50px;
+}
+.tiles-view p::before {
+    height: 60%;
+    width: 3px;
+    margin-left: 50px;
+    top: 0;
+    filter: brightness(0.8);
+}
+.tiles-view p::after {
+    height: 3px;
+    width: 100%;
+    bottom: 40%;
+    filter: brightness(0.8);
 }
 .tiles-view-right .white-line {
     width: 25px;
@@ -36,15 +50,14 @@
     width: 10px;
     height: 10px;
     margin: 0 0 3px 0;
-    filter: brightness(1.2);
+    
 }
 .tiles-view-right p:after {
-    width: 15px;
+    width: 14px;
     height: 2px;
-    content: '';
-    margin-left: 20px;
-    background-color: #fff;
-    display: block;
+    position: relative;
+    left: 15px;
+    top: 4px;
 }
 .tiles-view-right {
     width: 25px;
@@ -53,31 +66,49 @@
     left: 10px;
 }
 .taskbar-view {
-    width: 300px;
+    width: 100%;
     height: 20px;
-    opacity: 0.7;
+    opacity: 0.6;
     bottom: 0;
 }
-
+.tiles-view p::before,
+.tiles-view p::after,
+.tiles-view-right p:after {
+    content: '';
+    display: block;
+}
+.tiles-view .white-line,
+.tiles-view-right .white-line {
+    margin-top: -10px;
+}
+.tiles-view,
+.tiles-view-right p {
+    filter: brightness(1.2);
+}
+.start-view .white-line,
+.tiles-view-right p:after {
+    background-color: #fff;
+}
 .start-view,
 .start-view .white-line,
-.tiles-view,
+.taskbar-view,
 .tiles-view-right,
-.taskbar-view {
+.tiles-view,
+.tiles-view p::before,
+.tiles-view p::after {
     position: absolute;
 }
-
 .start-view,
+.taskbar-view,
 .tiles-view,
-.tiles-view-right p,
-.taskbar-view {
+.tiles-view p::before,
+.tiles-view p::after,
+.tiles-view-right p {
     background-color: var(--AppColor);
 }
-
-.start-view,
-.tiles-view,
-.tiles-view-right p,
-.taskbar-view {
+div.windows-view *,
+.tiles-view p::before,
+.tiles-view p::after {
     transition-property: background, transform, border;
     transition-duration: 0.5s;
     transition-timing-function: ease;

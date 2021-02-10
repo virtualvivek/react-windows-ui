@@ -2,9 +2,30 @@ import React from 'react'
 import {NavPageContainer,Checkbox,Switch,
         InputText,InputSearchBar,
         InputSearchBox,SliderBar,
-        RadioButton,SelectBox} from '../../../../lib'
+        RadioButton,SelectBox,MenuBar} from '../../../../lib'
 
-const Home = () => {
+class Home extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+        Slider1:50,
+        Slider2:140,
+        Slider3:256,
+    }
+  }
+
+  onChangeSlider1 = (e) => {   
+    this.setState({Slider1:e.target.value})
+  }
+  onChangeSlider2 = (e) => {   
+    this.setState({Slider2:e.target.value})
+  }
+  onChangeSlider3 = (e) => {   
+    this.setState({Slider3:e.target.value})
+  }
+  
+  render() {
   return (
     <NavPageContainer hasPadding>
 
@@ -41,15 +62,19 @@ const Home = () => {
           <h3 className="m-b-15">SliderBar</h3>
 
             <SliderBar 
-              value={50} />
+              value={this.state.Slider1}
+              onChange={(e) => {this.onChangeSlider1(e)}} />
             
             <SliderBar 
-              value={140}
-              thumbStyle="round"/>
+              value={this.state.Slider2}
+              thumbStyle="round"
+              step={4}
+              onChange={(e) => {this.onChangeSlider2(e)}} />
 
             <SliderBar 
-              value={256}
-              thumbStyle="round-border"/>
+              value={this.state.Slider3}
+              thumbStyle="round-border"
+              onChange={(e) => {this.onChangeSlider3(e)}} />
 
 
           <h3 className="m-b-15">Checkbox</h3>
@@ -58,7 +83,7 @@ const Home = () => {
 
               <Checkbox
                 checked />
-              <div className="app-hr-space" s='40'></div>
+              <div className="app-hr-space" s="40"></div>
               <Checkbox 
                 disabled
                 checked
@@ -81,7 +106,7 @@ const Home = () => {
             </div>
 
             <br></br>
-            <h2 className="m-b-15">Inputs</h2>
+            <h3 className="m-b-15">Inputs</h3>
                
               <InputText 
                 placeholder="Enter a text"/>
@@ -92,24 +117,35 @@ const Home = () => {
                 type="password"
                 placeholder="Enter a password"/>
 
-              <br/><br/>
+            <h3 className="m-b-15">SearchBar</h3>
 
               <InputSearchBar 
                 placeholder="Search here"/>
 
-              <br/><br/>
+            <h3 className="m-b-15">SearchBox</h3>
 
               <InputSearchBox 
                 placeholder="Enter to Search"/>
 
-              <br/><br/>
 
+              <h3 className="m-b-15">SelectBox</h3>
                 <SelectBox
                   data={[
-                    {label: '1', value: 'red'},
-                    {label: '2', value: 'blue'},
-                    {label: '3', value: 'green'},
-                    {label: '4', value: 'pink'},
+                    {label: 'red', value: 'red'},
+                    {label: 'blue', value: 'blue'},
+                    {label: 'green', value: 'green'},
+                    {label: 'pink', value: 'pink'},
+                    ]}
+                />
+
+              <h3 className="m-b-15">MenuBar</h3>
+                <MenuBar
+                  label="Select a fruit"
+                  data={[
+                    {label: 'apple', link: '#', icon:<i className="icons10-camera"></i>},
+                    {label: 'orange', link: '#'},
+                    {label: 'banana', link: '#'},
+                    {label: 'peach', link: '#'},
                     ]}
                 />
 
@@ -132,10 +168,10 @@ const Home = () => {
                 checked/>
 
             <br/><br/><br/><br/>
-     
             
     </NavPageContainer>
   )
+  }
 }
 
 export default Home;
