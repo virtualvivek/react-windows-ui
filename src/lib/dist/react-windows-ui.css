@@ -51,10 +51,10 @@
 .background-color-accent-dark, .app-container-screen.accent {
   background-color: var(--color_accent_dark); }
 
-.background-color-link-bg-hover, .app-back:hover, #app-nav-wrap .app-nav-toggle:hover, #app-nav-wrap nav ul li:hover, .app-custom-dropdown-ul li a:hover, .app-search-suggestion ul li a:hover, .app-select-styled.menubar ul li a:hover, li.app-list-item a:active, .app-switch input:disabled + div {
+.background-color-link-bg-hover, .app-custom-dropdown-ul li a:hover, .app-search-suggestion ul li a:hover, .app-select-styled.menubar ul li a:hover, .app-back:hover, #app-nav-wrap .app-nav-toggle:hover, #app-nav-wrap nav ul li:hover, li.app-list-item a:active, .app-switch input:disabled + div {
   background-color: var(--color_link_bg_hover); }
 
-.background-color-link-bg-active, .app-back:active, #app-nav-wrap .app-nav-toggle:active, #app-nav-wrap nav ul li:active, .app-custom-dropdown-ul li a:active, .app-search-suggestion ul li a:active, .app-select-styled.menubar ul li a:active, i.bg-grey::before {
+.background-color-link-bg-active, .app-custom-dropdown-ul li a:active, .app-search-suggestion ul li a:active, .app-select-styled.menubar ul li a:active, .app-back:active, #app-nav-wrap .app-nav-toggle:active, #app-nav-wrap nav ul li:active, i.bg-grey::before {
   background-color: var(--color_link_bg_active); }
 
 .border-color-accent, .app-input-text.app-input-search:active, .app-input-text.app-input-search:focus {
@@ -163,6 +163,30 @@
   .app-dim-overlay.show {
     opacity: 1;
     visibility: visible; }
+
+.app-custom-dropdown-ul, .app-search-suggestion ul, .app-select-styled.menubar ul {
+  list-style: none;
+  width: inherit;
+  padding: 0;
+  margin: 2px 0 0 0;
+  position: absolute;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 5px 8px var(--color_button);
+  z-index: 999;
+  visibility: hidden; }
+  .app-custom-dropdown-ul.show, .app-search-suggestion ul.show, .app-select-styled.menubar ul.show {
+    visibility: visible; }
+  .app-custom-dropdown-ul li a, .app-search-suggestion ul li a, .app-select-styled.menubar ul li a {
+    height: 35px;
+    color: var(--color_dark_text);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: background 0.2s; }
+    .app-custom-dropdown-ul li a i, .app-search-suggestion ul li a i, .app-select-styled.menubar ul li a i {
+      font-size: 21px;
+      padding-right: 8px; }
 
 body {
   margin: 0;
@@ -466,30 +490,6 @@ p.light {
     margin-bottom: 85px;
     float: left;
     top: 25px; } }
-
-.app-custom-dropdown-ul, .app-search-suggestion ul, .app-select-styled.menubar ul {
-  list-style: none;
-  width: inherit;
-  padding: 0;
-  margin: 2px 0 0 0;
-  position: absolute;
-  background: transparent;
-  backdrop-filter: blur(30px);
-  box-shadow: 0px 5px 8px var(--color_button);
-  z-index: 999;
-  visibility: hidden; }
-  .app-custom-dropdown-ul.show, .app-search-suggestion ul.show, .app-select-styled.menubar ul.show {
-    visibility: visible; }
-  .app-custom-dropdown-ul li a, .app-search-suggestion ul li a, .app-select-styled.menubar ul li a {
-    height: 35px;
-    color: var(--color_dark_text);
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    transition: background 0.2s; }
-    .app-custom-dropdown-ul li a i, .app-search-suggestion ul li a i, .app-select-styled.menubar ul li a i {
-      font-size: 21px;
-      padding-right: 8px; }
 
 .app-avatar {
   border-radius: 50%;

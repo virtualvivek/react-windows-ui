@@ -1,54 +1,16 @@
-const TerserPlugin = require('terser-webpack-plugin');
-
-const path = require('path');
-
-const config = {
-  entry: {
-    index: ['./src/lib/src/index.js'],
-  },
+const path = require("path");
+module.exports = {
+  entry: "./src/lib/index.js",
+  mode: 'production',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
-    libraryTarget: 'umd',
-    library: 'react-windows-ui',
-    globalObject: 'this',
+      filename: 'index.js',
+      path: path.resolve(__dirname, './src/lib/dist'),
   },
-  externals: {
-    react: {
-      root: 'React',
-      commonjs2: 'react',
-      commonjs: 'react',
-      amd: 'react',
-    },
-    'prop-types': {
-      root: 'PropTypes',
-      commonjs: 'prop-types',
-      commonjs2: 'prop-types',
-      amd: 'prop-types',
-    },
+  module:{
+      rules:[{
+          loader: 'babel-loader',
+          test: /\.js$|jsx/,
+          exclude: /node_modules/
+      }]
   },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        options: {
-          presets: ['es2015', 'react', 'stage-0'],
-        },
-      },
-    ],
-  },
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new TerserPlugin({
-        terserOptions: {
-          keep_fnames: true,
-        },
-      }),
-    ],
-  },
-};
-
-module.exports = config;
+}
