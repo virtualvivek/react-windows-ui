@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "https://virtualvivek.github.io/react-windows-ui/",
   "repository": {
     "type": "git",
-    "url": "github.com/virtualvivek/react-windows-ui"
+    "url": "github.com/virtualvivek/react-windows-ui.git"
   },
   "keywords": [
     "react",
@@ -20,6 +21,7 @@
   "license": "MIT",
   "peerDependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
   }
 }
