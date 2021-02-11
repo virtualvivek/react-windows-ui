@@ -1,6 +1,6 @@
 .app-dialog {
     // background: #FFFFFF99;
-    background-color: var(--color_light_grey);
+    @extend .background-color-light-grey;
     width:440px;
     max-height: 54vh;
     position:fixed;	

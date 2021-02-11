@@ -29,7 +29,7 @@
 .bg-success {
   color: #fff !important; }
 
-.background-color-light-grey, .app-link-compound:hover, li.app-list-item a:hover {
+.background-color-light-grey, .app-dialog, .app-link-compound:hover, li.app-list-item a:hover {
   background-color: var(--color_light_grey); }
 
 .background-color-light-bg, body, .app-container-screen, .app-select-styled select, .app-select-styled select option {
@@ -51,10 +51,10 @@
 .background-color-accent-dark, .app-container-screen.accent {
   background-color: var(--color_accent_dark); }
 
-.background-color-link-bg-hover, .app-back:hover, #app-nav-wrap .app-nav-toggle:hover, #app-nav-wrap nav ul li:hover, li.app-list-item a:active, .app-switch input:disabled + div {
+.background-color-link-bg-hover, .app-back:hover, #app-nav-wrap .app-nav-toggle:hover, #app-nav-wrap nav ul li:hover, .app-custom-dropdown-ul li a:hover, .app-search-suggestion ul li a:hover, .app-select-styled.menubar ul li a:hover, li.app-list-item a:active, .app-switch input:disabled + div {
   background-color: var(--color_link_bg_hover); }
 
-.background-color-link-bg-active, .app-back:active, #app-nav-wrap .app-nav-toggle:active, #app-nav-wrap nav ul li:active, i.bg-grey::before {
+.background-color-link-bg-active, .app-back:active, #app-nav-wrap .app-nav-toggle:active, #app-nav-wrap nav ul li:active, .app-custom-dropdown-ul li a:active, .app-search-suggestion ul li a:active, .app-select-styled.menubar ul li a:active, i.bg-grey::before {
   background-color: var(--color_link_bg_active); }
 
 .border-color-accent, .app-input-text.app-input-search:active, .app-input-text.app-input-search:focus {
@@ -129,8 +129,7 @@
   transform: scale(0.965, 0.965); }
 
 .user-select-none, #app-nav-wrap nav a span, .app-button, button, label.app-checkbox, li.app-list-item a, .app-select-styled.menubar {
-  -webkit-user-select: none;
-  -moz-user-select: none; }
+  user-select: none; }
 
 .input-field-primary, .app-input-text, .app-select-styled {
   height: 28px;
@@ -148,22 +147,22 @@
   filter: contrast(0.6);
   cursor: not-allowed !important; }
 
-.app-dim-overlay {
-  transition: visibility 0.4s, opacity 0.4s linear;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  background: #77777777;
+.app-overlay, .app-dim-overlay, .app-loader-busy-fullscreen {
   height: 100vh;
   width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.app-dim-overlay {
+  z-index: 10;
+  background: #77777777;
+  transition: visibility 0.4s, opacity 0.4s linear;
   opacity: 0;
   visibility: hidden; }
   .app-dim-overlay.show {
     opacity: 1;
     visibility: visible; }
-  .app-dim-overlay.light {
-    background: #EEEEEED1; }
 
 body {
   margin: 0;
@@ -468,6 +467,30 @@ p.light {
     float: left;
     top: 25px; } }
 
+.app-custom-dropdown-ul, .app-search-suggestion ul, .app-select-styled.menubar ul {
+  list-style: none;
+  width: inherit;
+  padding: 0;
+  margin: 2px 0 0 0;
+  position: absolute;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 5px 8px var(--color_button);
+  z-index: 999;
+  visibility: hidden; }
+  .app-custom-dropdown-ul.show, .app-search-suggestion ul.show, .app-select-styled.menubar ul.show {
+    visibility: visible; }
+  .app-custom-dropdown-ul li a, .app-search-suggestion ul li a, .app-select-styled.menubar ul li a {
+    height: 35px;
+    color: var(--color_dark_text);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: background 0.2s; }
+    .app-custom-dropdown-ul li a i, .app-search-suggestion ul li a i, .app-select-styled.menubar ul li a i {
+      font-size: 21px;
+      padding-right: 8px; }
+
 .app-avatar {
   border-radius: 50%;
   background: #DDDDDD77;
@@ -663,7 +686,6 @@ label.app-checkbox input[type="checkbox"] {
     border: 2px solid var(--color_dark_text); }
 
 .app-dialog {
-  background-color: var(--color_light_grey);
   width: 440px;
   max-height: 54vh;
   position: fixed;
@@ -798,6 +820,10 @@ button.unmask {
   top: 24px;
   display: table; }
 
+.app-search-suggestion {
+  display: inline-block;
+  width: 285px; }
+
 .app-loader-busy {
   width: 30px;
   height: 30px;
@@ -878,11 +904,6 @@ button.unmask {
     opacity: 0; } }
 
 .app-loader-busy-fullscreen {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
@@ -1053,38 +1074,11 @@ li.app-list-item a {
   padding: 7px 0 7px 10px;
   display: inline-block; }
 
-.app-select-styled.menubar ul {
-  list-style: none;
+.app-select-styled.menubar ul .app-search-box {
   width: inherit;
-  padding: 0;
-  margin: 2px 0 0 0;
-  position: absolute;
-  background: transparent;
-  backdrop-filter: blur(30px);
-  box-shadow: 0px 5px 8px var(--color_button);
-  z-index: 999;
-  visibility: hidden; }
-  .app-select-styled.menubar ul.show {
-    visibility: visible; }
-  .app-select-styled.menubar ul li a {
-    height: 35px;
-    color: var(--color_dark_text);
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    transition: background 0.2s; }
-    .app-select-styled.menubar ul li a:hover {
-      background-color: var(--color_link_bg_hover); }
-    .app-select-styled.menubar ul li a:active {
-      background-color: var(--color_link_bg_active); }
-    .app-select-styled.menubar ul li a i {
-      font-size: 21px;
-      padding-right: 8px; }
-  .app-select-styled.menubar ul .app-search-box {
-    width: inherit;
-    border-bottom: 2.4px solid var(--color_light_grey); }
-    .app-select-styled.menubar ul .app-search-box .app-input-search {
-      border: none; }
+  border-bottom: 2.4px solid var(--color_light_grey); }
+  .app-select-styled.menubar ul .app-search-box .app-input-search {
+    border: none; }
 
 .app-progress-container {
   display: flex;
@@ -1300,7 +1294,8 @@ li.app-list-item a {
   ._404-container .app-flex-center i {
     font-size: 65px; }
   ._404-container .app-flex-center p {
-    margin: 5px; }
+    margin: 5px;
+    font-size: 0.85em; }
 
 @-moz-document url-prefix() {
   ::-moz-selection {

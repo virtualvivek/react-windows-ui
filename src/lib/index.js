@@ -11,6 +11,7 @@ import ImageView from './src/components/ImageView'
 import InputText from './src/components/InputText'
 import InputSearchBar from './src/components/InputSearchBar'
 import InputSearchBox from './src/components/InputSearchBox'
+import InputSearchSuggestion from './src/components/InputSearchSuggestion'
 import LoaderBar from './src/components/LoaderBar'
 import LoaderBusy from './src/components/LoaderBusy'
 import ListItem from './src/components/ListItem'
@@ -42,6 +43,7 @@ export {
     InputText,
     InputSearchBar,
     InputSearchBox,
+    InputSearchSuggestion,
     LoaderBar,
     LoaderBusy,
     ListItem,

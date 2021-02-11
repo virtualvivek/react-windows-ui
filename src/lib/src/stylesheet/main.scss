@@ -5,7 +5,7 @@
 @import "./components/Body.scss";
 @import "./components/AppNavBar/AppNavBar.scss";
 @import "./components/AppContentWrap.scss";
-
+@import "./components/base/dropdown";
 
 @import "./components/AvatarView.scss";
 @import "./components/Alerts.scss";
@@ -17,6 +17,7 @@
 @import "./components/ImageView.scss";
 @import "./components/InputText.scss";
 @import "./components/InputSearch.scss";
+@import "./components/InputSearchSuggestion.scss";
 @import "./components/LoaderBusy.scss";
 @import "./components/LoaderBar.scss";
 @import "./components/Links.scss";

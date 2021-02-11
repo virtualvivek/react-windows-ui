@@ -119,12 +119,8 @@
 }
 
 .app-loader-busy-fullscreen {
-  
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+    @extend .app-overlay;
+    
     z-index: 99;
     opacity: 0;
     visibility: hidden;

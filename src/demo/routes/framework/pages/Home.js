@@ -2,7 +2,7 @@ import React from 'react'
 import {NavPageContainer,Checkbox,Switch,
         InputText,InputSearchBar,
         InputSearchBox,SliderBar,
-        RadioButton,SelectBox,MenuBar} from '../../../../lib'
+        RadioButton,SelectBox,MenuBar,InputSearchSuggestion} from '../../../../lib'
 
 class Home extends React.Component {
 
@@ -127,8 +127,20 @@ class Home extends React.Component {
               <InputSearchBox 
                 placeholder="Enter to Search"/>
 
+            <h3 className="m-b-15">Search Suggestion</h3>
+
+              <InputSearchSuggestion 
+                data={[
+                  {label: 'apple', link: '#', icon:<i className="icons10-camera"></i>},
+                  {label: 'orange', link: '#'},
+                  {label: 'banana', link: '#'},
+                  {label: 'peach', link: '#'},
+                  ]}
+                />
+
 
               <h3 className="m-b-15">SelectBox</h3>
+              
                 <SelectBox
                   data={[
                     {label: 'red', value: 'red'},

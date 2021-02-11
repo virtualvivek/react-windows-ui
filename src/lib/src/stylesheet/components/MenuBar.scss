@@ -12,40 +12,8 @@
     }
 
     ul {
-        list-style: none;
-        width: inherit;
-        padding: 0;
-        margin: 2px 0 0 0;
-        position: absolute;
-        background: transparent;
-        backdrop-filter: blur(30px);
-        box-shadow: 0px 5px 8px var(--color_button);
-        z-index: 999;
-        visibility:hidden;
-        &.show {
-            visibility: visible;
-        }
+        @extend .app-custom-dropdown-ul;
 
-        li {
-            a { 
-                height: 35px;
-                color: var(--color_dark_text);
-                display: flex;
-                align-items: center;
-                padding-left: 10px;
-                transition: background 0.2s;
-                &:hover {
-                    background-color: var(--color_link_bg_hover);
-                }
-                &:active {
-                    background-color: var(--color_link_bg_active);
-                }
-                i {
-                    font-size: 21px;
-                    padding-right: 8px;
-                }
-            }
-        }
         .app-search-box {
             width: inherit;
             border-bottom: 2.4px solid var(--color_light_grey);
