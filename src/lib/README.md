@@ -5,19 +5,12 @@
 
 <p align="center">Build full featured Windows fluent UI apps using reactjs.</p>
 
-
-
 <p align="center">
 	
   <a href="https://github.com/virtualvivek/react-windows-ui/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
       alt="License: MIT" />
   </a>
-
-  <!-- <a href="https://github.com/virtualvivek/react-windows-ui/releases">
-    <img src="https://img.shields.io/github/v/release/virtualvivek/react-windows-ui?label=Release&style=flat-square&color=darklime"
-      alt="Release" />
-  </a> -->
   
   <a href="https://virtualvivek.github.io/react-windows-ui/">
     <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui?color=%2331b57e&style=flat-square"
@@ -56,7 +49,7 @@ import 'react-windows-ui/dist/react-windows-ui.min.css'
 import 'react-windows-ui/icons/fonts/fonts.min.css'
 ```
 ### app-config
-You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a><br>
+You can import default `app-config` using this file <a href="config/app-config.css">app-config.css</a><br>
 OR <br>
 Create your own like this
 
