@@ -25,7 +25,7 @@ const Framework = () => {
           mobileHasIcons={true}>
 
           <NavBarLink 
-            to="/" 
+            to="/home" 
             exact={true} 
             text="Form Elements"
             icon={<i className="icons10-grid-3"></i>}
@@ -104,7 +104,7 @@ const Framework = () => {
         </NavBar>
 
         <Switch>
-          <Route path="/" component={Home}  exact />
+          <Route path="/home" component={Home}  exact />
           <Route path='/texts' component={Texts} />
           <Route path='/buttons' component={Buttons} />
           <Route path='/links' component={Links} />
