@@ -102,6 +102,9 @@
 #app-nav-wrap.toggled nav ul h1, .app-color-picker-item .item, .app-switch input {
   display: none; }
 
+.vertical-align-middle, .app-button, button.unmask, .app-label .app-radio + span {
+  vertical-align: middle; }
+
 .outline-none, #app-nav-wrap nav a:focus, .app-input-text:focus, .app-link:focus {
   outline: none; }
 
@@ -578,7 +581,6 @@ p.light {
   padding: 5px 15px;
   font-size: 15px;
   border: 2px solid transparent;
-  vertical-align: middle;
   transition-duration: 0.2s; }
   .app-button:hover {
     border-color: var(--color_button_hover);
@@ -775,8 +777,7 @@ button.unmask {
   margin-left: -40px;
   background: transparent;
   border: none;
-  position: relative;
-  vertical-align: middle; }
+  position: relative; }
 
 .app-input-search {
   height: inherit;

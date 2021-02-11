@@ -29,5 +29,6 @@
 .app-label {
     .app-radio + span {
         @extend .cursor-pointer;
+        @extend .vertical-align-middle;
     }
 }

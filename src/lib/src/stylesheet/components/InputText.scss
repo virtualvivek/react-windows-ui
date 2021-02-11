@@ -30,12 +30,12 @@
 input[type="password"].app-input-text + .unmask::after {
     content:"\f1db";
 }
-button.unmask { 
+button.unmask {
+    @extend .vertical-align-middle; 
     margin-left: -40px;
     background: transparent;
     border: none;
     position: relative;
-    vertical-align: middle;
 }
 
 @mixin input-text-mobile() {

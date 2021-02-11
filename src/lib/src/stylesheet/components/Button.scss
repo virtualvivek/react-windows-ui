@@ -2,13 +2,13 @@
     @extend .user-select-none;
     @extend .color-dark-text;
     @extend .transition-all-400ms;
+    @extend .vertical-align-middle;
  
     height: 35px;
     background: var(--color_button);
     padding: 5px 15px; 
     font-size: 15px;
     border: 2px solid transparent;
-    vertical-align: middle;
     transition-duration: 0.2s;
 
     &:hover {
