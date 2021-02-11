@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const SliderBar = (props) => {
   return (
     <div className={props.thumbStyle === 'round' ? 
@@ -14,7 +13,7 @@ const SliderBar = (props) => {
           step={props.step}
           style={{background:"linear-gradient(90deg, var(--AppColor)"+(props.value/props.max) * 100+"%, #999999 20.1%)"}}
         />
-        <span> {props.value}</span>
+        {props.showValue ? <span> {props.value}</span> : ""}
     </div>
   )
 }
@@ -24,6 +23,7 @@ SliderBar.defaultProps = {
   max: 500,
   value: 0,
   step: 1,
+  showValue: true
 }
 
 export default SliderBar

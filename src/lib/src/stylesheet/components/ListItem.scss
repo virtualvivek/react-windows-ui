@@ -38,6 +38,8 @@ li.app-list-item {
     }
     p {
         &.app-list-subtitle{
+            font-size: 14px;
+            line-height: 2;
             opacity: 0.8;
             margin: 0;
             padding: 0;
@@ -58,10 +60,6 @@ li.app-list-item {
     span.app-list-title {
         font-size: 16px;
     }
-    p.app-list-subtitle {
-        font-size: 14px;
-        line-height: 2;
-    }
     span.app-list-title,
     p.app-list-subtitle {
         display: inline-block;
@@ -79,8 +77,8 @@ li.app-list-item a {
     li.app-list-item {
         a {
             &:hover {
-                background:transparent;
-                border-color:transparent;
+                background: transparent;
+                border-color: transparent;
             }
             &:active {
                 background: var(--color_link_bg_hover);
@@ -91,5 +89,4 @@ li.app-list-item a {
             }
         }
     }
-
 }

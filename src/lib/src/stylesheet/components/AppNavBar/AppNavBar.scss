@@ -98,13 +98,13 @@
                         background: var(--AppColor);
                         content: '';
                         transition: transform 0.1s;
-                        transform: translate3d(-150%,0,0); 
+                        transform: translate3d(-150%, 0, 0); 
                     }
                     &.active {
                         @extend .font-weight-500;
                         
                         &::after {
-                            transform: translate3d(0,0,0);
+                            transform: translate3d(0, 0, 0);
                         }
                     }
                     i::before {

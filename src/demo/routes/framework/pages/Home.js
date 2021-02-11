@@ -63,6 +63,7 @@ class Home extends React.Component {
 
             <SliderBar 
               value={this.state.Slider1}
+              showValue={false}
               onChange={(e) => {this.onChangeSlider1(e)}} />
             
             <SliderBar 

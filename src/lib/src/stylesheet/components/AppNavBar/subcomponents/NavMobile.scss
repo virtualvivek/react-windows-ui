@@ -47,10 +47,10 @@
             }
             
             &:first-child span {
-                margin-left:10px;
+                margin-left: 10px;
             }
             &:last-child {
-                padding-right:30px;
+                padding-right: 30px;
             }
         }
         &.app-mobile-has-icons {
@@ -80,8 +80,8 @@
         margin-top: -40px;
         left: 70%;
     }
-    &::-webkit-scrollbar { 
-        height: 0 !important 
+    &::-webkit-scrollbar {
+        height: 0 !important;
     }
 
     ul h1,
@@ -97,7 +97,7 @@
 }
 
 .app-back {
-    padding: 5px 0px 0px 12px !important;
+    padding: 5px 0 0 12px !important;
 }
 
 .app-back:hover,
@@ -106,7 +106,7 @@
     li:hover,
     li a:hover,
     .app-nav-user:hover {
-        background:transparent !important;
+        background: transparent !important;
     }
 }
 .app-name {
