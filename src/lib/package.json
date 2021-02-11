@@ -1,6 +1,6 @@
 {
   "name": "react-windows-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build full featured Windows fluent UI apps using reactjs.",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "homepage": "https://virtualvivek.github.io/react-windows-ui/",
   "repository": {
     "type": "git",
-    "url": "github.com/virtualvivek/react-windows-ui.git"
+    "url": "git+https://github.com/virtualvivek/react-windows-ui.git"
   },
   "keywords": [
     "react",

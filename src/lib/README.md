@@ -1,5 +1,5 @@
 <h2 align="center"> 
-  <img src="markdown/md_img_header.png" width="402" /> 
+  <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="402" /> 
 </h2>
 <h1 align="center">react-windows-ui</h1>
 
@@ -7,7 +7,7 @@
 
 <p align="center">
 	
-  <a href="https://github.com/virtualvivek/react-windows-ui/blob/master/LICENSE">
+  <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
       alt="License: MIT" />
   </a>
@@ -25,7 +25,7 @@
 </p>
 
 <h2 align="center">
-  <img src="markdown/md_img_promo.png" width="652" /> 
+  <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="652" /> 
 </h2>
 
 ## Demo ⚡
@@ -49,7 +49,7 @@ import 'react-windows-ui/dist/react-windows-ui.min.css'
 import 'react-windows-ui/icons/fonts/fonts.min.css'
 ```
 ### app-config
-You can import default `app-config` using this file <a href="config/app-config.css">app-config.css</a><br>
+You can import default `app-config` using this file <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/config/app-config.css">app-config.css</a><br>
 OR <br>
 Create your own like this
 
