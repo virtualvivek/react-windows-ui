@@ -7,7 +7,7 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path={["/","/home"]} component={Framework}  exact />
+          <Route path={["/","/home"]} component={Framework}  exact/>
         </Switch>
       </Router>
     </>
