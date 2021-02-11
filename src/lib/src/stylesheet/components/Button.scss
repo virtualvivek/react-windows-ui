@@ -1,3 +1,12 @@
+button,
+.app-button {
+    @extend .user-select-none;
+    &:focus,
+    &:active,
+    &:focus:active {
+        outline: none !important;
+    }
+}
 .app-button {
     @extend .user-select-none;
     @extend .color-dark-text;
@@ -15,7 +24,7 @@
         border-color:var(--color_button_hover);
         filter: opacity(0.8);
     }
-    &:active { 
+    &:active {
         filter: opacity(0.6);
         transition: 0.04s ease;
     }
@@ -46,15 +55,6 @@
         transition: all ease 0.2s;
     }
 
-}
-button,
-.app-button {
-    @extend .user-select-none;
-    &:focus,
-    &:active,
-    &:focus:active {
-        outline: none !important;
-    }
 }
 
 @mixin button-mobile() {

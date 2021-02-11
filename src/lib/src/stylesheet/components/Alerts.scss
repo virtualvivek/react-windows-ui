@@ -19,12 +19,12 @@
     }
     .alert-message {
         font-size: 1em;
-        text-align:justify;
+        text-align: justify;
         min-height: 80px;
         padding: 0 32px;
     }
     .btn-container {
-        display:block ;
+        display: block ;
         text-align: right ;
         padding: 0 15px 10px 15px;
     }
@@ -38,7 +38,7 @@
         font-size: 14px;
 
         &:hover {
-            opacity: 0.62;  
+            opacity: 0.62;
         }
         &:active {
             background: #fff !important;
@@ -56,10 +56,10 @@
 
 @mixin alert-mobile() {
     .app-alert {
-        width:100% !important;
+        width: 100% !important;
         left: 0 !important;
         margin: 0;
-        background:var(--AppColor) !important;
+        background: var(--AppColor) !important;
 
         .app-alert-button {
             padding: 3px 30px;

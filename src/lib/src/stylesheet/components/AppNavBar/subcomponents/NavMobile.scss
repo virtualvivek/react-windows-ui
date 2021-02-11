@@ -17,13 +17,14 @@
         li {
             display:inline-flex;
             a {
-                span,i {
+                i,
+                span {
                     opacity: 0.6;
                 }
 
                 padding: 0;
-                user-select:none;
-                -webkit-tap-highlight-color:transparent;
+                user-select: none;
+                -webkit-tap-highlight-color: transparent;
                 
                 &::after {
                     height: 3px;

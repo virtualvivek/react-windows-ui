@@ -3,12 +3,12 @@
     width: 74px;
     position: fixed;
     top: 0;
-    overflow-x: hidden; 
-    display: inline-block; 
+    overflow-x: hidden;
+    display: inline-block;
      
-    .app-name, 
-    .app-switch, 
-    nav a span, 
+    .app-name,
+    .app-switch,
+    nav a span,
     nav ul h1 {
         @extend .display-none;
     }
@@ -21,7 +21,7 @@
         > div:first-child {
             width: 74px;
             height: 42px;
-        } 
+        }
         > div:nth-child(2) {
             width: auto;
         }

@@ -28,7 +28,12 @@ h4 { font-size: 1.12em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 400
 }
 
@@ -94,17 +99,17 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.m-b-5 { 
-    margin-bottom: 5px
+.m-b-5 {
+    margin-bottom: 5px;
 }
 .m-b-10 { 
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
-.m-b-15 { 
-    margin-bottom: 15px
+.m-b-15 {
+    margin-bottom: 15px;
 }
-.m-b-20 { 
-    margin-bottom: 20px
+.m-b-20 {
+    margin-bottom: 20px;
 }
 
 p.light {
@@ -113,19 +118,17 @@ p.light {
 
 @mixin body-mobile() {
 
-    ::-webkit-scrollbar { 
-        width:2.4px 
+    ::-webkit-scrollbar {
+        width: 2.4px;
     }
     
     .index-box-header {
-
         .app-link-compound {
-            display: none !important
+            display: none !important;
         }
         img {
             margin-left: 5%;
         }
-
     } 
 }
 
