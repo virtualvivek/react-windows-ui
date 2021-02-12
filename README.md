@@ -30,7 +30,7 @@
   </a>
   
   <a href="https://www.npmjs.com/package/react-windows-ui">
-    <img src="markdown/md_npm.png" alt="npmjs" width="50"
+    <img src="markdown/md_npmjs.png" alt="npmjs" width="50"
       alt="Live Demo" />
   </a>
    
