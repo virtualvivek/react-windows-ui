@@ -52,7 +52,7 @@
                 &::before {
                     color: var(--AppColor);
                     transform: translateX(280%);
-                    transform: translateX(calc(2 *100% - 3px));
+                    transform: translateX(calc(2 * 100% - 3px));
                     background: #fff;
                 }
                 &::after {
