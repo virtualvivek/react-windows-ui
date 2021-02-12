@@ -76,7 +76,7 @@
 .color-accent-light {
   color: var(--color_accent_light); }
 
-.color-white, .app-back.fixed.light:after, .app-alert, i.bg-accent::before, ._404-container {
+.color-white, .app-back.fixed.light::after, .app-alert, i.bg-accent::before, ._404-container {
   color: #fff; }
 
 .font-size-16px, .app-name {
@@ -86,7 +86,7 @@
 .app-progress-container .subtitle {
   font-weight: 500; }
 
-.font-icon-dark, .font-icon-light, .app-back::after, #app-nav-wrap .app-nav-toggle:after, .app-input-text + .unmask::after, .app-search-bar button::after, .app-search-box::after, .app-select-styled::after {
+.font-icon-dark, .font-icon-light, .app-back::after, #app-nav-wrap .app-nav-toggle::after, .app-input-text + .unmask::after, .app-search-bar button::after, .app-search-box::after, .app-select-styled::after {
   font-family: icons10;
   color: var(--color_dark_text); }
 
@@ -388,7 +388,7 @@ p.light {
 
 #app-nav-wrap .app-nav-toggle {
   padding: 0 25px; }
-  #app-nav-wrap .app-nav-toggle:after {
+  #app-nav-wrap .app-nav-toggle::after {
     content: "\f106";
     font-size: 24px; }
 
@@ -1026,7 +1026,7 @@ li.app-list-item {
   li.app-list-item i {
     font-size: 50px;
     line-height: 0; }
-    li.app-list-item i.bg-accent:before {
+    li.app-list-item i.bg-accent::before {
       font-size: 34px;
       padding: 8px; }
   li.app-list-item img {
@@ -1474,9 +1474,8 @@ li.app-list-item a {
     height: 35px;
     width: calc(280px + 5%);
     flex-flow: column-reverse;
-    padding-bottom: 15px;
     display: flex;
-    padding: 10px 0; }
+    padding: 10px 0 15px 0; }
     .app-range-slider input[type="range"] {
       top: 0;
       width: 100%; }
