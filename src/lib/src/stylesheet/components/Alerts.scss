@@ -1,7 +1,7 @@
 .app-alert {
     @extend .color-white;
     width: 55%;
-    position: fixed;	
+    position: fixed;
     top: 0;
     left: 24vw;
     margin-top: 30vh;
@@ -23,7 +23,7 @@
         padding: 0 32px;
     }
     .btn-container {
-        display: block ;
+        display: block;
         text-align: right;
         padding: 0 15px 10px 15px;
     }

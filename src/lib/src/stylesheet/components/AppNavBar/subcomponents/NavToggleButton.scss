@@ -8,7 +8,7 @@
     &:active {
         @extend .background-color-link-bg-active;
     }
-    &:after {
+    &::after {
         @extend .font-icon-dark;
         content: "\f106";
         font-size: 24px;

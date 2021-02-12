@@ -39,9 +39,9 @@
                 vertical-align: middle;
                 text-overflow: unset;
             }
-        }        
+        }
         span::after {
             @extend .color-accent;
-        }                
+        }
     }
 }

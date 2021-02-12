@@ -4,7 +4,7 @@
     max-height: 54vh;
     position: fixed;
     top: 0;
-    margin-top:22vh;
+    margin-top: 22vh;
     left: 32vw;
     border: 1px solid #999;
     box-shadow: 0 0 7vh rgba(0, 0, 0, 0.14);
@@ -28,7 +28,6 @@
         transform: translateY(0);
         visibility: visible;
     }
-    
 }
 
 @mixin dialog-mobile() {

@@ -42,7 +42,7 @@
                 &:hover {
                     background: #EEEEEE44 !important;
                 }
-                &:after {
+                &::after {
                     @extend .color-white;
                 }
             }
