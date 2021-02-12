@@ -15,7 +15,7 @@
         z-index: 2;
 
         li {
-            display:inline-flex;
+            display: inline-flex;
             a {
                 i,
                 span {
@@ -33,7 +33,8 @@
                     left: 6.5px;
                 }
                 &.active {
-                    span,i {
+                    i,
+                    span {
                         opacity: 1;
                     }
                 }
@@ -93,7 +94,7 @@
         display: none !important;
     }
     
-    scrollbar-width:none; /* Mozilla ScrollBar */
+    scrollbar-width: none; /* Mozilla ScrollBar */
 }
 
 .app-back {

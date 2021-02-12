@@ -1,0 +1,47 @@
+#app-nav-wrap nav ul {
+    li {
+        &:hover {
+            @extend .background-color-link-bg-hover;
+        }
+        &:active {
+            @extend .background-color-link-bg-active;
+        }
+
+        a {
+            text-overflow: unset;
+            background: none;
+
+            &::before {
+                position: relative;
+                right: 5px;
+                font-size: 24px;
+                vertical-align: middle;
+            }
+            &::after {
+                width: 5px;
+                height: 41px;
+                position: absolute;
+                left: 0;
+                background: var(--AppColor);
+                content: '';
+                transition: transform 0.1s;
+                transform: translate3d(-150%, 0, 0); 
+            }
+            &.active {
+                @extend .font-weight-500;
+                
+                &::after {
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+            i::before {
+                font-size: 24px;
+                vertical-align: middle;
+                text-overflow: unset;
+            }
+        }        
+        span::after {
+            @extend .color-accent;
+        }                
+    }
+}

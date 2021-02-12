@@ -1,6 +1,6 @@
 .app-range-slider {
-    width:360px;
-    display:block;
+    width: 360px;
+    display: block;
 
     input[type="range"] {
         appearance: none;
@@ -14,10 +14,10 @@
         top: -5px;
 
         &::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
             width: 8px;
             height: 26px;
+            -webkit-appearance: none;
+            appearance: none;
             border-radius: 100px;
             background: var(--AppColor);
             cursor: pointer;
@@ -30,7 +30,7 @@
             }
             &:active {
                 background: #999;
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.46);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.46);
             }
         }
         &::-moz-range-thumb {
@@ -39,7 +39,7 @@
             border-radius: 100px;
             border: none;
             cursor: pointer;
-            transition: background .15s ease-in-out;
+            transition: background 0.15s ease-in-out;
             user-select: none;
         }
         &::-moz-range-thumb:hover,
@@ -50,10 +50,9 @@
         
     }
     &.round {
-
         input[type="range"] {
 
-            &::-webkit-slider-thumb{
+            &::-webkit-slider-thumb {
                 width: 20px !important;
                 height: 20px;
             }
@@ -61,30 +60,30 @@
                 width: 20px;
                 height: 20px;
             }
-        }        
+        }
     }
     &.round-border {
 
         input[type="range"] {
-            &::-webkit-slider-thumb{
+            &::-webkit-slider-thumb {
                 width: 20px !important;
                 height: 20px;
-                border:3px solid var(--AppColor);
-                background:var(--color_light_bg);
+                border: 3px solid var(--AppColor);
+                background: var(--color_light_bg);
             }
             &::-moz-range-thumb {
                 width: 14px;
                 height: 14px;
-                border:3px solid var(--AppColor);
-                background:var(--color_light_bg);
+                border: 3px solid var(--AppColor);
+                background: var(--color_light_bg);
             }
         }
     }
 
     span {
         @extend .color-dark-text;
-        display: contents; 
-        font-size: 20px; 
+        display: contents;
+        font-size: 20px;
     }
 }
 
@@ -95,13 +94,12 @@
         flex-flow: column-reverse;
         padding-bottom: 15px;
         display: flex;
-        padding: 10px 0px;
+        padding: 10px 0;
 
         input[type="range"] {
             top: 0;
             width: 100%;
         }
-
         span {
             line-height: 2.4;
         }

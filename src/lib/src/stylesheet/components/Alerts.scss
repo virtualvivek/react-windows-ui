@@ -3,8 +3,8 @@
     width: 55%;
     position: fixed;	
     top: 0;
-    margin-top: 30vh;
     left: 24vw;
+    margin-top: 30vh;
     z-index: 11;
     background: var(--alpha_c);
     backdrop-filter: blur(30px);
@@ -12,10 +12,9 @@
 
     h1 {
         margin:0;
-        padding: 0;
+        padding: 25px 32px 10px 32px;
         font-size: 1.7em;
         background-color: transparent;
-        padding: 25px 32px 10px 32px;
     }
     .alert-message {
         font-size: 1em;
@@ -25,7 +24,7 @@
     }
     .btn-container {
         display: block ;
-        text-align: right ;
+        text-align: right;
         padding: 0 15px 10px 15px;
     }
     .app-alert-button {

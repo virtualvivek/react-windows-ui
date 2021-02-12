@@ -15,7 +15,7 @@
         &:hover {
             opacity: 0.65;
         }
-        &:before {
+        &::before {
             will-change: translate;
             display: block;
             position: absolute;
@@ -28,7 +28,7 @@
             border-radius: 50%;
             transition: 200ms;
         }
-        &:after {
+        &::after {
             font-size: 16px;
             transform: translateY(-50%);
             content: attr(dataoff);
@@ -45,28 +45,28 @@
         @extend .display-none;
         
         &:checked {
-            +div {
+            + div {
                 @extend .background-color-accent;
                 border-color: var(--AppColor);
 
-                &:before {
+                &::before {
                     color: var(--AppColor);
                     transform: translateX(280%);
                     transform: translateX(calc(2*100% - 3px));
                     background: #fff;
                 }
-                &:after { 
+                &::after {
                     content: attr(dataon); 
                 }
             }
         }
         &:disabled {
-            +div {
+            + div {
                 @extend .background-color-link-bg-hover;
                 @extend .cursor-not-allowed;
-                border-color:var(--color_link_bg_hover);
+                border-color: var(--color_link_bg_hover);
 
-                &:before {
+                &::before {
                     background: var(--color_dark_text) !important; 
                     filter: contrast(0);
                 }

@@ -1,4 +1,3 @@
-
 .app-section-container {
     padding-left: 280px;
     &.has-padding {
@@ -13,23 +12,22 @@
     }
 }
 
-
 .app-section-container-right {
-    float:right;
-    position:absolute;
-    right:25px;
-    max-width:264px;
+    position: absolute;
     top: 105px;
+    right: 25px;
+    float: right;
+    max-width: 264px;
 }
-@media screen and (max-width: 70em) {
-    
+
+@media screen and (max-width: 70em) { 
     .app-section-container-right {
             max-width: fit-content;
-            right: auto;
             position: relative;
-            margin-bottom: 85px;
-            float: left;
             top: 25px;
+            right: auto;
+            float: left;
+            margin-bottom: 85px;
     }
 }
 

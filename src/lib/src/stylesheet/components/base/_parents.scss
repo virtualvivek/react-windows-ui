@@ -1,4 +1,3 @@
-
 .background-color-light-grey {
     background-color: var(--color_light_grey);
 }
@@ -81,7 +80,6 @@
     color: var(--color_light_bg);
 }
 
-
 .display-block {
     display: block;
 }
@@ -152,7 +150,7 @@
 }
 .app-dim-overlay {
     @extend .app-overlay;
-    z-index:10;
+    z-index: 10;
     background: #77777777;
     transition: visibility 0.4s, opacity 0.4s linear;
     opacity: 0;
@@ -171,7 +169,7 @@
     position: absolute;
     background: transparent;
     backdrop-filter: blur(30px);
-    box-shadow: 0px 5px 8px var(--color_button);
+    box-shadow: 0 5px 8px var(--color_button);
     z-index: 999;
     visibility: hidden;
     &.show {

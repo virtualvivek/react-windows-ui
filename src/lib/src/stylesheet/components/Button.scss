@@ -33,7 +33,7 @@ button,
         @extend .color-light-bg;
     }
     &.animate:active {
-        transform: scale(0.950,0.950);
+        transform: scale(0.950, 0.950);
     }
     &[disabled] {
         @extend .input-field-primary-disabled;

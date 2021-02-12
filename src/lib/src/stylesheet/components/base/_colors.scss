@@ -1,5 +1,5 @@
 :root {
-    --alpha_c : #EEEEEE;
+    --alpha_c: #EEEEEE;
     
 /*    Day Mode */
     --color_light_bg: #FFFFFF;
@@ -11,21 +11,20 @@
     --color_button: #d9d9d9;
     --color_button_hover: #666666;
     --color_accent_light: var(--AppColor);
-    --color_accent_dark: var(--AppColor);    
+    --color_accent_dark: var(--AppColor);
 }
 
-.color-danger{
-    color:#C50500;
+.color-danger {
+    color: #C50500;
 }
-.color-success{
-    color:#2C8B2C;
+.color-success {
+    color: #2C8B2C;
 }
-
-.bg-danger{
-    background:#C50500 !important;
+.bg-danger {
+    background: #C50500 !important;
 }
-.bg-success{
-    background:#2C8B2C !important;
+.bg-success {
+    background: #2C8B2C !important;
 }
 .bg-danger,
 .bg-success {

@@ -1,7 +1,6 @@
 @media only screen and (max-width: 760px) {
-    
+    @include webkit-mobile();
     @include body-mobile();
-    
     @include app-content-wrap-mobile();
     @include app-navbar-mobile();
     @include alert-mobile();

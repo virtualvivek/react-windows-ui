@@ -1,5 +1,6 @@
 @import "./subcomponents/NavBack.scss";
 @import "./subcomponents/NavToggled.scss";
+@import "./subcomponents/Nav_li.scss";
 @import "./subcomponents/NavMobile.scss";
 @import "./subcomponents/NavUser.scss";
 @import "./subcomponents/NavToggleButton.scss";
@@ -8,7 +9,7 @@
 #app-nav-wrap {
     height: 100%;
     width: 280px;
-    z-index: 5; 
+    z-index: 5;
 
     nav {
         @extend .transition-background-400ms;
@@ -23,10 +24,6 @@
         overflow-x: hidden;
         overflow-y: scroll;
         z-index: inherit;
-
-        &::-webkit-scrollbar { 
-            width: 2px !important 
-        }
 
         &.animate {
             ul li {
@@ -71,55 +68,6 @@
             flex-flow: row wrap;
             justify-content: left;
 
-            li {
-                &:hover {
-                    @extend .background-color-link-bg-hover;
-                }
-
-                &:active {
-                    @extend .background-color-link-bg-active;
-                }
-
-                a {
-                    text-overflow: unset;
-                    background: none;
-
-                    &:before {
-                        position: relative;
-                        right: 5px;
-                        font-size: 24px;
-                        vertical-align: middle;
-                    }
-                    &::after {
-                        position: absolute;
-                        left: 0;
-                        width: 5px;
-                        height: 41px;
-                        background: var(--AppColor);
-                        content: '';
-                        transition: transform 0.1s;
-                        transform: translate3d(-150%, 0, 0); 
-                    }
-                    &.active {
-                        @extend .font-weight-500;
-                        
-                        &::after {
-                            transform: translate3d(0, 0, 0);
-                        }
-                    }
-                    i::before {
-                        font-size: 24px;
-                        vertical-align: middle;
-                        text-overflow: unset;
-                    }
-                } 
-        
-                span::after {
-                    @extend .color-accent;
-                } 
-                
-            }
-
             h1 {
                 font-weight: 700;
                 margin: 0;
@@ -134,11 +82,10 @@
 
         .app-switch {
             margin: 15px 0 0 20px;
-        } 
-
+        }
     }
     
-    nav > div:first-child, 
+    nav > div:first-child,
     nav > div:nth-child(2) {
         @extend .background-color-nav;
         width: inherit;
@@ -152,9 +99,7 @@
         padding-bottom: 10px;
     }
     nav > div:nth-child(2) {
-        top: 50px; 
-    }
-
-   
+        top: 50px;
+    }   
 }
 

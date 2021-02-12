@@ -1,6 +1,7 @@
 .app-input-text {
     &.app-input-search {
-        &:active,&:focus {
+        &:active,
+        &:focus {
             @extend .border-color-accent;
         }
     }
@@ -51,7 +52,7 @@
     &::after {
         @extend .font-icon-dark;
         content: "\f1b9";
-        z-index:2;
+        z-index: 2;
         font-weight: 600;
         font-size: 19px;
         margin-left: -29px;
@@ -81,7 +82,7 @@
             &:hover {
                 background: var(--color_nav);
                 &::after {
-                    color:var(--color_dark_text) !important;
+                    color: var(--color_dark_text) !important;
                 }
             }
             &:active {

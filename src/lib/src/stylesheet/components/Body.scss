@@ -11,9 +11,6 @@ body {
     color: white;
 }
 
-::-webkit-scrollbar { width: 0.85em }
-::-webkit-scrollbar-thumb { background-color: #999 }
-
 .app-container-screen {
     @extend .background-color-light-bg;
     height: 100vh;
@@ -25,8 +22,8 @@ h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
+h5 { font-size: 0.83em; }
+h6 { font-size: 0.75em; }
 
 h1,
 h2,
@@ -34,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 400
+    font-weight: 400;
 }
 
 a {
@@ -47,12 +44,11 @@ a {
     }
 }
 
-
 .app-hr {
     @extend .transition-background-400ms;
     height: 1px;
-    background:var(--color_button);
     width: 95%;
+    background: var(--color_button);
     margin: 10px 10px 10px 0;
 }
 
@@ -69,10 +65,10 @@ a {
     display: grid;
 }
 .app-inline {
-    display:inline;
+    display: inline;
 }
 .app-fit-content {
-    width:fit-content !important;
+    width: fit-content !important;
 }
 
 .app-hr-space[s="10"] { width: 10px; }
@@ -89,7 +85,7 @@ a {
 }
 .m-tb-10 {
     margin-top: 10px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 .m-tb-15 {
     margin-top: 15px;
@@ -117,10 +113,6 @@ p.light {
 }
 
 @mixin body-mobile() {
-
-    ::-webkit-scrollbar {
-        width: 2.4px;
-    }
     
     .index-box-header {
         .app-link-compound {

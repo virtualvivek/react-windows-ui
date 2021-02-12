@@ -14,7 +14,7 @@
     }
 
     &.light {
-        .app-loaderBar{
+        .app-loaderBar {
             background-color:#fff;
         }
     }
@@ -43,7 +43,6 @@
             left:100%;
         }
     }
-
 }
 
 @mixin loader-bar-mobile() {

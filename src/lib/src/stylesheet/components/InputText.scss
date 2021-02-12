@@ -3,11 +3,11 @@
     @extend .transition-background-400ms;
 
     &:hover {
-        border-color:#777; 
+        border-color: #777;
     }
     &:focus {
         @extend .outline-none;
-        border-color:#666; 
+        border-color: #666;
     }
 
     + .unmask::after {
@@ -21,14 +21,14 @@
         padding-right: 5px;
         width: 24px;
         height: 24px;
-        opacity: 1
+        opacity: 1;
     }
     &[disabled] {
         @extend .input-field-primary-disabled;
     }
 }
 input[type="password"].app-input-text + .unmask::after {
-    content:"\f1db";
+    content: "\f1db";
 }
 button.unmask {
     @extend .vertical-align-middle; 
@@ -39,8 +39,7 @@ button.unmask {
 }
 
 @mixin input-text-mobile() {
-
-    input[type="date"].app-input-text:before {
+    input[type="date"].app-input-text::before {
         content: attr(placeholder);
         padding-right: 5px;
     }

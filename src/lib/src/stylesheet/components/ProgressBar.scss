@@ -2,14 +2,14 @@
     display: flex;
     align-items: center;
 
-    i {      
+    i {
         color: var(--color_dark_text);
         font-size: 30px;
     }
 
     .title,
     .subtitle {
-        @extend .font-weight-500
+        @extend .font-weight-500;
     }
     .title {
         line-height: 2;
@@ -29,7 +29,7 @@
     
         span {
             @extend .background-color-accent;
-            height:100%;
+            height: 100%;
             position: absolute;
             transition: width 1s ease-in-out;
             &::after,
@@ -43,16 +43,15 @@
             width: 355px;  
         }
     }
-    
 }
 
 @mixin progress-bar-mobile() {
     .app-progress-container {
         .app-progress {
-            width:80vw;
+            width: 80vw;
             
             &.withIcon {
-                width:calc(80vw - 45px);
+                width: calc(80vw - 45px);
             }
         }
     }

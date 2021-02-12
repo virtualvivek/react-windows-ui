@@ -32,7 +32,7 @@
 https://virtualvivek.github.io/react-windows-ui/
 
 ## Installation
-```
+```js
 npm install react-windows-ui --save
 ```
 
