@@ -28,6 +28,11 @@
     <img src="https://img.shields.io/badge/⚡ Live Demo-here-green.svg?color=%236a31b5&style=flat-square"
       alt="Live Demo" />
   </a>
+  
+  <a href="https://www.npmjs.com/package/react-windows-ui">
+    <img src="markdown/md_npm.png" alt="npmjs" width="50"
+      alt="Live Demo" />
+  </a>
    
 </p>
 
@@ -37,6 +42,7 @@
 
 ## Demo ⚡
 https://virtualvivek.github.io/react-windows-ui/
+
 
 ## Installation
 ```
@@ -67,7 +73,6 @@ Create your own like this
 }
 body {
     font-weight: 400;
-    font-size: 1em;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
