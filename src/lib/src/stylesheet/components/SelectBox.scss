@@ -5,14 +5,14 @@
     padding-left: 0;
 
     select {
+        @extend .background-color-light-bg;
+        @extend .color-dark-text;
+        @extend .transition-background-400ms;
         width: 100%;
         height: 100%;
         padding-left: 10px;
         border: none;
         font-size: 15px;
-        @extend .background-color-light-bg;
-        @extend .color-dark-text;
-        @extend .transition-background-400ms;
         -webkit-appearance: none;
 
         &:focus {

@@ -31,7 +31,7 @@ input[type="password"].app-input-text + .unmask::after {
     content: "\f1db";
 }
 button.unmask {
-    @extend .vertical-align-middle; 
+    @extend .vertical-align-middle;
     margin-left: -40px;
     background: transparent;
     border: none;

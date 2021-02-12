@@ -15,7 +15,7 @@ label.app-checkbox {
             width: 16px;
             height: 16px;
             border: 2px solid var(--color_button_hover);
-            background-color:var(--color_light_bg);
+            background-color: var(--color_light_bg);
             border-radius: 0;
             margin-top: -3px;
             margin-left: -3px;
@@ -47,12 +47,11 @@ label.app-checkbox {
                     border-width: 0 2px 2px 0; 
                 }
             }
-    
         }
     }
 }
 
-label{
+label {
     &.app-checkbox {
         input[type="checkbox"] {
             &:checked:disabled::before,

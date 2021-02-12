@@ -18,13 +18,13 @@
 }
 @keyframes indeterminateAnimation {
   0% {
-    transform:  translateX(0) scaleX(0);
+    transform: translateX(0) scaleX(0);
   }
   40% {
-    transform:  translateX(0) scaleX(0.5);
+    transform: translateX(0) scaleX(0.5);
   }
   100% {
-    transform:  translateX(100%) scaleX(0.6);
+    transform: translateX(100%) scaleX(0.6);
   }
 }
 

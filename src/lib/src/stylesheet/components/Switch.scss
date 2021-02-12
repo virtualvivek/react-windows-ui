@@ -52,11 +52,11 @@
                 &::before {
                     color: var(--AppColor);
                     transform: translateX(280%);
-                    transform: translateX(calc(2*100% - 3px));
+                    transform: translateX(calc(2 *100% - 3px));
                     background: #fff;
                 }
                 &::after {
-                    content: attr(dataon); 
+                    content: attr(dataon);
                 }
             }
         }
@@ -67,7 +67,7 @@
                 border-color: var(--color_link_bg_hover);
 
                 &::before {
-                    background: var(--color_dark_text) !important; 
+                    background: var(--color_dark_text) !important;
                     filter: contrast(0);
                 }
             }

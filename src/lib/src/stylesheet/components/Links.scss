@@ -16,14 +16,14 @@
         background: none !important;
     }
     &:active {
-        color: var(--color_dark_text)
+        color: var(--color_dark_text);
     }
 
     i {
         font-size: 24px;
         padding-right: 8px;
         line-height: 0;
-    }    
+    }
 }
 
 .app-link-compound {
@@ -103,7 +103,6 @@
     i.accent {
         @extend .color-accent;
     }
-    
 }
 i.bg-accent::before {
     @extend .color-white;

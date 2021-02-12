@@ -1,13 +1,11 @@
 .app-dialog {
-    // background: #FFFFFF99;
     @extend .background-color-light-grey;
-    width:440px;
+    width: 440px;
     max-height: 54vh;
-    position:fixed;	
+    position: fixed;
     top: 0;
     margin-top:22vh;
     left: 32vw;
-    // backdrop-filter: blur(24px);
     border: 1px solid #999;
     box-shadow: 0 0 7vh rgba(0, 0, 0, 0.14);
     overflow-y: scroll;

@@ -15,13 +15,13 @@ button,
  
     height: 35px;
     background: var(--color_button);
-    padding: 5px 15px; 
+    padding: 5px 15px;
     font-size: 15px;
     border: 2px solid transparent;
     transition-duration: 0.2s;
 
     &:hover {
-        border-color:var(--color_button_hover);
+        border-color: var(--color_button_hover);
         filter: opacity(0.8);
     }
     &:active {
@@ -54,7 +54,6 @@ button,
     span {
         transition: all ease 0.2s;
     }
-
 }
 
 @mixin button-mobile() {

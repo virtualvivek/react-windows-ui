@@ -15,7 +15,7 @@
 .app-back {
     @extend .transition-all-400ms;
     @extend .color-dark-text;
-    width:fit-content;
+    width: fit-content;
     line-height: 1 !important;
     font-size: 30px;
     padding: 7px 22px !important;
@@ -40,7 +40,7 @@
 
             &.light {
                 &:hover {
-                    background:#EEEEEE44 !important;
+                    background: #EEEEEE44 !important;
                 }
                 &:after {
                     @extend .color-white;
