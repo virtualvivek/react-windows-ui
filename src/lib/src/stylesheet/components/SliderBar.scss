@@ -91,9 +91,8 @@
         height: 35px;
         width: calc(280px + 5%);
         flex-flow: column-reverse;
-        padding-bottom: 15px;
         display: flex;
-        padding: 10px 0;
+        padding: 10px 0 15px 0;
 
         input[type="range"] {
             top: 0;
