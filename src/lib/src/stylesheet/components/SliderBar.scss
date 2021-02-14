@@ -1,6 +1,7 @@
 .app-range-slider {
     width: 360px;
     display: block;
+    position: relative;
 
     input[type="range"] {
         appearance: none;
@@ -62,7 +63,6 @@
         }
     }
     &.round-border {
-
         input[type="range"] {
             &::-webkit-slider-thumb {
                 width: 20px !important;
@@ -83,6 +83,19 @@
         @extend .color-dark-text;
         display: contents;
         font-size: 20px;
+    }
+    .popup {
+        background: var(--color_button);
+        display: inline-block;
+        position: absolute;
+        top: -30px;
+        border-radius: 7px;
+        font-size: 12px;
+        padding: 5px;
+        box-shadow: 0 0 4px var(--color_button);
+        transition: 0.08s ease;
+        visibility: hidden;
+        opacity: 0;
     }
 }
 

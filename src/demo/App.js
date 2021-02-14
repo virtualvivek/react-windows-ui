@@ -7,8 +7,8 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path="/home" component={Framework}  exact />
-          <Redirect to='/home'/>
+          <Route path="/react-windows-ui/home" component={Framework}  exact />
+          <Redirect to='/react-windows-ui/home'/>
         </Switch>
       </Router>
     </>

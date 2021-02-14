@@ -19,6 +19,9 @@
     "email": "virtualiz.me@gmail.com"
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^5.11.8",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.6.0",
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

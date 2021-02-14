@@ -82,7 +82,7 @@
 .font-size-16px, .app-name {
   font-size: 16px; }
 
-.font-weight-500, .app-name, #app-nav-wrap nav ul li a.active, .app-progress-container .title,
+.font-weight-500, .app-name, .app-name-short, #app-nav-wrap nav ul li a.active, .app-progress-container .title,
 .app-progress-container .subtitle {
   font-weight: 500; }
 
@@ -314,10 +314,13 @@ p.light {
   font-weight: 100; }
 
 .app-name {
-  padding: 10px 25px;
+  padding: 12px 25px;
   display: inline-block;
   white-space: nowrap;
   text-overflow: ellipsis; }
+
+.app-name-short {
+  display: none; }
 
 .app-back + .app-name {
   padding: 12px 10px; }
@@ -346,6 +349,12 @@ p.light {
   top: 0;
   overflow-x: hidden;
   display: inline-block; }
+  #app-nav-wrap.toggled .app-name-short {
+    display: inline-block;
+    font-size: 20px;
+    width: 74px;
+    text-align: center;
+    padding: 10px; }
   #app-nav-wrap.toggled nav .app-hr {
     width: 56px;
     margin-left: 8px; }
@@ -467,7 +476,8 @@ p.light {
     top: 50px; }
 
 .app-section-container {
-  padding-left: 280px; }
+  padding-left: 280px;
+  transition: width 0.4s linear; }
   .app-section-container.has-padding {
     padding-left: 310px; }
 
@@ -1222,7 +1232,8 @@ li.app-list-item a {
 
 .app-range-slider {
   width: 360px;
-  display: block; }
+  display: block;
+  position: relative; }
   .app-range-slider input[type="range"] {
     appearance: none;
     width: calc(100% - (73px));
@@ -1278,6 +1289,18 @@ li.app-list-item a {
   .app-range-slider span {
     display: contents;
     font-size: 20px; }
+  .app-range-slider .popup {
+    background: var(--color_button);
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    border-radius: 7px;
+    font-size: 12px;
+    padding: 5px;
+    box-shadow: 0 0 4px var(--color_button);
+    transition: 0.08s ease;
+    visibility: hidden;
+    opacity: 0; }
 
 ._404-container {
   margin: 0 auto;

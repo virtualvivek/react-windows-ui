@@ -12,6 +12,13 @@
     nav ul h1 {
         @extend .display-none;
     }
+    .app-name-short {
+        display: inline-block;
+        font-size: 20px;
+        width: 74px;
+        text-align: center;
+        padding: 10px;
+    }
 
     nav {
         .app-hr {

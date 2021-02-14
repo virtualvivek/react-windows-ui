@@ -18,70 +18,72 @@ import _404Layout from './layouts/404Layout'
 const Framework = () => {
   return (
     <>
-     <Router>
+     <Router basename="react-windows-ui">
      <SystemThemeFollower/>
         <NavBar 
           title="React Windows UI"
+          titleShort={<i className="icons10-responsive"></i>}
+       // titleShort="R" render text or icons
           mobileHasIcons={true}>
 
-          <NavBarLink 
-            to="/home" 
-            exact={true} 
+          <NavBarLink
+            to="/home"
+            exact={true}
             text="Form Elements"
             icon={<i className="icons10-grid-3"></i>}
-          /> 
+          />
 
-          <NavBarLink 
-            to="/texts" 
+          <NavBarLink
+            to="/texts"
             text="Texts"
             icon={<i className="icons10-keyboard"></i>}
-          />           
+          />
          
-          <NavBarLink 
-            to="/buttons" 
+          <NavBarLink
+            to="/buttons"
             text="Buttons"
             showBadge={5}
             icon={<i className="icons10-controller"></i>}
           />
 
-          <NavBarLink 
-            to="/links" 
+          <NavBarLink
+            to="/links"
             text="Links"
             icon={<i className="icons10-clip"></i>}
           />
                     
-          <NavBarLink 
-            to="/progress" 
+          <NavBarLink
+            to="/progress"
             text="Progress Controls"
             icon={<i className="icons10-bar-chart"></i>}
           />
 
-          <NavBarLink 
-            to="/themes" 
+          <NavBarLink
+            to="/themes"
             text="Themes"
             icon={<i className="icons10-personalize"></i>}
           />
 
-          <NavBarLink 
-            to="/gauges" 
+          <NavBarLink
+            to="/gauges"
             text="Gauges"
             icon={<i className="icons10-chevron-up-round"></i>}
           />
                     
-          <NavBarLink 
-            to="/icons" 
+          <NavBarLink
+            to="/icons"
             text="Icons"
             icon={<i className="icons10-deathly-hallows"></i>}
           />
                     
-          <NavBarLink 
-            to="/images" 
+          <NavBarLink
+            to="/images"
             text="Images"
             icon={<i className="icons10-picture"></i>}
           />
                     
-          <NavBarLink 
-            to="/dialogs" 
+          <NavBarLink
+            to="/dialogs"
             text="Dialogs"
             icon={<i className="icons10-notification-image"></i>}
           />
@@ -89,14 +91,14 @@ const Framework = () => {
           <h1>Layouts</h1>
           <div className="app-hr"></div>
 
-          <NavBarLink 
-            to="/lists" 
+          <NavBarLink
+            to="/lists"
             text="Lists"
             icon={<i className="icons10-list"></i>}
           />
 
-          <NavBarLink 
-            to="/404layout" 
+          <NavBarLink
+            to="/404layout"
             text="404Layout"
             icon={<i className="icons10-terminal"></i>}
           />

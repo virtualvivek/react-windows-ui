@@ -19,6 +19,7 @@ const NavBar = (props) => {
             : 
             ''}
             <span className="app-name">{props.title}</span>
+            <span className="app-name-short">{props.titleShort}</span>
           </div>
           <div>
             <Link to="#" className="app-nav-toggle" onClick={showSidebar}></Link>

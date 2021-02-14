@@ -1,5 +1,6 @@
 .app-section-container {
     padding-left: 280px;
+    transition: width 0.4s linear;
     &.has-padding {
         padding-left: 310px;
     }
