@@ -47,7 +47,7 @@ https://virtualvivek.github.io/react-windows-ui/
 
 ## Installation
 ```
-npm install react-windows-ui --save
+npm install react-windows-ui
 ```
 
 ## Getting Started
