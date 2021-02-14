@@ -32,11 +32,6 @@
       alt="Live Demo" />
   </a>
   
-  <!-- <a href="https://www.npmjs.com/package/react-windows-ui">
-    <img src="markdown/md_npmjs.png" alt="npmjs" width="50"
-      alt="Live Demo" />
-  </a> --!>
-  
   <a href="https://www.npmjs.com/package/react-windows-ui">
     <img src="https://img.shields.io/badge/npm-package-green.svg?style=flat-square&logo=npm&color=f55a42"
       alt="NPMJS" />
