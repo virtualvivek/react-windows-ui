@@ -10,15 +10,17 @@
 
 <p align="center">
 	
+	 
+  <a href="https://virtualvivek.github.io/react-windows-ui/">
+    <img src="https://img.shields.io/circleci/build/github/virtualvivek/react-windows-ui?style=flat-square&logo=circleci&token=346e79ab71a8d9c3bad22bacbebc7d7c50dae520"
+      alt="Build" />
+  </a>
+	
   <a href="https://github.com/virtualvivek/react-windows-ui/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
       alt="License: MIT" />
   </a>
 
-  <!-- <a href="https://github.com/virtualvivek/react-windows-ui/releases">
-    <img src="https://img.shields.io/github/v/release/virtualvivek/react-windows-ui?label=Release&style=flat-square&color=darklime"
-      alt="Release" />
-  </a> -->
   
   <a href="https://virtualvivek.github.io/react-windows-ui/">
     <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui?color=%2331b57e&style=flat-square"
@@ -31,8 +33,8 @@
   </a>
   
   <a href="https://www.npmjs.com/package/react-windows-ui">
-    <img src="markdown/md_npmjs.png" alt="npmjs" width="50"
-      alt="Live Demo" />
+    <img src="https://img.shields.io/badge/npm-package-green.svg?style=flat-square&logo=npm&color=f55a42"
+      alt="NPMJS" />
   </a>
    
 </p>
