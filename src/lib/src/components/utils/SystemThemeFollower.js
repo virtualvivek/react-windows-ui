@@ -1,7 +1,7 @@
 var setAppDark = require('./ThemeManager').setAppDark
 var setAppLight = require('./ThemeManager').setAppLight
 
-const SystemThemeFollower = () => { 
+const SystemThemeFollower = () => {
 
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
     {

@@ -1,6 +1,7 @@
 import AvatarView from './src/components/AvatarView'
 import Alert from './src/components/Alert'
 import Button from './src/components/Button'
+import Card from './src/components/Card'
 import Checkbox from './src/components/Checkbox'
 import CommandBar from './src/components/CommandBar'
 import ColorPickerItem from './src/components/ColorPickerItem'
@@ -16,7 +17,13 @@ import LoaderBar from './src/components/LoaderBar'
 import LoaderBusy from './src/components/LoaderBusy'
 import ListItem from './src/components/ListItem'
 import MenuBar from './src/components/MenuBar'
-import {NavBar,NavBarLink,NavBarLinkUser,NavPageContainer,NavPageContainerRight,NavPageContainerInner} from './src/components/NavBar'
+import {
+    NavBar,
+    NavBarLink,
+    NavBarLinkUser,
+    NavPageContainer,
+    NavPageContainerRight,
+    NavPageContainerInner} from './src/components/NavBar'
 import ProgressBar from './src/components/ProgressBar'
 import ProgressBarIndeterminate from './src/components/ProgressBarIndeterminate'
 import RadioButton from './src/components/RadioButton'
@@ -33,6 +40,7 @@ export {
     AvatarView,
     Alert,
     Button,
+    Card,
     Checkbox,
     CommandBar,
     ColorPickerItem,
@@ -48,7 +56,12 @@ export {
     LoaderBusy,
     ListItem,
     MenuBar,
-    NavBar,NavBarLink,NavBarLinkUser,NavPageContainer,NavPageContainerRight,NavPageContainerInner,
+    NavBar,
+    NavBarLink,
+    NavBarLinkUser,
+    NavPageContainer,
+    NavPageContainerRight,
+    NavPageContainerInner,
     ProgressBar,
     ProgressBarIndeterminate,
     RadioButton,

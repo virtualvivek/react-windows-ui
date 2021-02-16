@@ -12,18 +12,21 @@ const Lists = () => {
       <h3 className="m-b-15">Users</h3>
       <ListItem 
         img={Img1}
+        imgAlt="avatar1"
         title="User 1"
         subtitle="Web Developer"
         info="online"
       />
       <ListItem 
         img={Img2}
+        imgAlt="avatar2"
         title="User 2"
         subtitle="Data Anylist"
         info="online"
       />
       <ListItem 
         img={Img3}
+        imgAlt="avatar3"
         title="User 3"
         subtitle="iOS Developer"
         info="offline"

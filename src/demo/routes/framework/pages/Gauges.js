@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavPageContainer,Gauge,Button } from '../../../../lib'
 
-  class Gauges extends React.Component {
+class Gauges extends React.Component {
 
     constructor(props) {
         super(props);

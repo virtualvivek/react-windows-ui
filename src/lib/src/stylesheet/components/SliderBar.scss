@@ -101,7 +101,6 @@
 
 @mixin slider-bar-mobile() {
     .app-range-slider {
-        height: 35px;
         width: calc(280px + 5%);
         flex-flow: column-reverse;
         display: flex;

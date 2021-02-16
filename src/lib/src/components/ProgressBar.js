@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const ProgressBar = (props) => {
   return (
     <div className="app-progress-container">

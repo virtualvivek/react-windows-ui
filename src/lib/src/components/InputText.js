@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const InputText = (props) => {
 
   const inputRef = React.useRef()
@@ -13,17 +12,17 @@ const InputText = (props) => {
   return (
     <>
     <input className="app-input-text"
-      type={props.type} 
-      ref={inputRef} 
-      placeholder={props.placeholder} 
-      onChange={props.onChange} /> 
+      type={props.type}
+      ref={inputRef}
+      placeholder={props.placeholder}
+      onChange={props.onChange}
+    /> 
       
     <button 
-      className="unmask" 
-      type="button" 
+      className="unmask"
+      type="button"
       onClick={toggleInput}
       style={props.type==="password" ? { display:'inline-block'} : {display : 'none'}}>
-        
     </button>
     </>
   )

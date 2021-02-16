@@ -19,10 +19,11 @@ const SliderBar = (props) => {
     <div className={props.thumbStyle === 'round' ? 
       "app-range-slider round" : props.thumbStyle === 'round-border' ? 
       "app-range-slider round-border" : "app-range-slider" }>
-        <input type="range" 
-          defaultValue={props.value} 
-          min={props.min} 
-          max={props.max} 
+        <input
+          type="range"
+          defaultValue={props.value}
+          min={props.min}
+          max={props.max}
           onChange={props.onChange}
           onMouseEnter={() => toggleVisible()}
           onMouseLeave={() => toggleHidden()}
@@ -30,7 +31,7 @@ const SliderBar = (props) => {
           style={{background:"linear-gradient(90deg, var(--AppColor)"+(props.value/props.max) * 100+"%, #999999 20.1%)"}}
         />
         {props.showValue ? <span> {props.value}</span> : ""}
-        <span 
+        <span
           className="popup"
           ref={inputRef}
           style={{left: (props.value/props.max) *72+"%"}}>

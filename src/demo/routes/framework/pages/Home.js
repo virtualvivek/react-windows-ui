@@ -9,9 +9,9 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        Slider1:50,
+        Slider1:256,
         Slider2:140,
-        Slider3:256,
+        Slider3:58,
     }
   }
 
@@ -61,6 +61,7 @@ class Home extends React.Component {
 
           <h3 className="m-b-15">SliderBar</h3>
 
+            <h1 className="m-0 color-accent" style={{fontSize:46}}>{this.state.Slider1}%</h1>
             <SliderBar 
               value={this.state.Slider1}
               showValue={false}

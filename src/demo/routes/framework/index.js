@@ -13,6 +13,7 @@ import Icons from './pages/Icons'
 import Images from './pages/Images'
 import Dialogs from './pages/Dialogs'
 
+import CardLayout from './layouts/cardLayout'
 import _404Layout from './layouts/404Layout'
 
 const Framework = () => {
@@ -98,6 +99,12 @@ const Framework = () => {
           />
 
           <NavBarLink
+            to="/cardlayout"
+            text="Cards"
+            icon={<i className="icons10-film"></i>}
+          />
+
+          <NavBarLink
             to="/404layout"
             text="404Layout"
             icon={<i className="icons10-terminal"></i>}
@@ -118,6 +125,7 @@ const Framework = () => {
           <Route path='/images' component={Images} />
           <Route path='/dialogs' component={Dialogs} />
 
+          <Route path='/cardlayout' component={CardLayout} />
           <Route path='/404layout' component={_404Layout} />
         </Switch>
       </Router> 

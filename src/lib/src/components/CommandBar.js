@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const CommandBar = (props) => {
   return (
     <div className="app-command-bar">

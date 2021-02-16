@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
 const LinkCoumpound = (props) => {
   return (
-    <Link to={props.to} 
-      className={props.iconStyle === 'accent' ? 
+    <Link
+      to={props.to}
+      className={props.linkStyle === 'border' ?
       "app-link-compound accent" : "app-link-compound" } 
       onMouseOver={props.onMouseOver}>
           {props.icon}

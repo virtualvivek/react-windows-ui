@@ -1,6 +1,5 @@
-@import "./components/base/colors";
-@import "./components/base/parents";
-
+@import "./components/_base/colors";
+@import "./components/_base/parents";
 
 @import "./components/Body.scss";
 @import "./components/AppNavBar/AppNavBar.scss";
@@ -9,6 +8,7 @@
 @import "./components/AvatarView.scss";
 @import "./components/Alerts.scss";
 @import "./components/Button.scss";
+@import "./components/Card.scss";
 @import "./components/Checkbox.scss";
 @import "./components/CommandBar.scss";
 @import "./components/ColorPickerItem.scss";
@@ -29,9 +29,8 @@
 @import "./components/Switch.scss";
 @import "./components/SliderBar.scss";
 
-
-@import "./components/layouts/_404PageLayout.scss";
-@import "./components/browsers/webkit.scss";
-@import "./components/browsers/mozilla.scss";
-@import "./components/browsers/mobile.scss";
+@import "./components/_layouts/_404PageLayout.scss";
+@import "./components/_browsers/webkit.scss";
+@import "./components/_browsers/mozilla.scss";
+@import "./components/_browsers/mobile.scss";
 

@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const Switch = (props) => {
   return (
     <label className="app-switch">

@@ -22,26 +22,26 @@ const InputSearchSuggestion = (props) => {
     return (
         <div className="app-search-suggestion">
         <div className="app-search-box">
-            <input 
-            className="app-input-text app-input-search" 
-            type="search" 
-            placeholder={props.placeholder}
-            value={search}
-            onChange={e => {
-                toggleVisible(e)
-                const test = teams_data.filter(team => {
-                return team.label.toLowerCase().includes(e.target.value.toLowerCase());
-                });          
-                setTeams(test);
-                setSearch(e.target.value);
-            }} 
+            <input
+                className="app-input-text app-input-search"
+                type="search"
+                placeholder={props.placeholder}
+                value={search}
+                onChange={e => {
+                    toggleVisible(e)
+                    const test = teams_data.filter(team => {
+                    return team.label.toLowerCase().includes(e.target.value.toLowerCase());
+                    });
+                    setTeams(test);
+                    setSearch(e.target.value);
+                }} 
             />
         </div>
 
         <ul ref={inputRef}>
             {teams.map(item => (
             <li 
-            className="option" 
+            className="option"
             key={item.label}>
                 <Link to={item.link}>
                 {item.icon}{item.label}

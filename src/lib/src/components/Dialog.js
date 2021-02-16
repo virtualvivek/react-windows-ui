@@ -7,14 +7,14 @@ const Dialog = (props) => {
 
   return (
     <>
-    <div 
+    <div
       onClick={props.onBackdropPress}
       className={props.isVisible ? 
       "app-dim-overlay show" : "app-dim-overlay"}>       
     </div>
-    <div 
-      className={props.isVisible ? 
-      "app-dialog show" : "app-dialog"}> 
+    <div
+      className={props.isVisible ?
+      "app-dialog show" : "app-dialog"}>
        {props.children}
     </div>
     </>

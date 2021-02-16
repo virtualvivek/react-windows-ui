@@ -1,7 +1,6 @@
 import React from 'react'
 var createAlphaAccentColor = require('./utils/ThemeManager').createAlphaAccentColor
 
-
 const ColorPickerItem = (props) => {
 
 const inputRef = React.useRef()
@@ -12,25 +11,24 @@ const inputRef = React.useRef()
         document.documentElement.style.setProperty('--AppColor', color)
         createAlphaAccentColor()
       }
-    
-  } 
+  }
 
   return (
     <label className="app-color-picker-item">
-        <input 
+        <input
             type="radio"
-            className="item" 
-            ref={inputRef} 
-            name={props.name}  
+            className="item"
+            ref={inputRef}
+            name={props.name}
             defaultChecked={props.checked}
             disabled={props.disabled}
-            onChange={() => setThemeColor(props.color)} 
+            onChange={() => setThemeColor(props.color)}
         />
         <div
         style={{
             backgroundColor:props.color
         }}>
-        </div> 
+        </div>
     </label>
   )
 }

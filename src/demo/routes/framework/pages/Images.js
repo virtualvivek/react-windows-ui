@@ -8,13 +8,14 @@ import Img3 from '../../../img/illustration/3.jpg'
 const Images = () => {
   return (
     <NavPageContainer>
-
-      
    
-    <ImageView 
-        src={IronMan}
-        width={'100%'}
-        height={'280px'}
+    <ImageView
+      src={IronMan}
+      width={'100%'}
+      height={'280px'}
+      insetShadow
+      title="IronMan"
+      subtitle="Mark 50 suit is a fifty'th combat exo-armor"
     />
 
       <NavPageContainerInner>
@@ -46,6 +47,5 @@ const Images = () => {
     </NavPageContainer>
   );
 }
-
 
 export default Images

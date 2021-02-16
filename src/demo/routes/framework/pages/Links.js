@@ -37,9 +37,9 @@ const Links = () => {
 
       <LinkCoumpound  
         to="#"
+        linkStyle="border"
         title="Notification settings and DND"
         subtitle="Control which app push notification"
-        iconStyle="accent"
         icon={<i className="icons10-notification"></i>} 
       />
      

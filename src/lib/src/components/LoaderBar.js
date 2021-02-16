@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const LoaderBar = () => {
   return (
     <div className="app-loader-bar">

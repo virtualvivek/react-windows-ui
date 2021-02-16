@@ -1,4 +1,4 @@
-li.app-list-item {
+.app-list-item {
     margin: 0;
     padding: 0;
     a {
@@ -66,15 +66,15 @@ li.app-list-item {
     }
 }
 
-li.app-list-item,
-li.app-list-item a {
+.app-list-item,
+.app-list-item a {
     display: flex;
     width: 100%;
     color: var(--color_dark_text);
 }
 
 @mixin list-item-mobile() {
-    li.app-list-item {
+    .app-list-item {
         a {
             &:hover {
                 background: transparent;
