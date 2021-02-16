@@ -29,7 +29,7 @@
 .app-link-compound {
     @extend .color-dark-text;
     @extend .transition-all-400ms;
-    width: 310px;
+    max-width: 310px;
     height: fit-content;
     display: inline-block;
     font-size: 15px;
@@ -59,7 +59,6 @@
     }
     span {
         @extend .color-dark-text;
-        
         height: 20px;
         width: 250px;
         display: inline-block;

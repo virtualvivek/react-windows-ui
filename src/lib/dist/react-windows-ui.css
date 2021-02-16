@@ -976,7 +976,7 @@ button.unmask {
     line-height: 0; }
 
 .app-link-compound {
-  width: 310px;
+  max-width: 310px;
   height: fit-content;
   display: inline-block;
   font-size: 15px;
