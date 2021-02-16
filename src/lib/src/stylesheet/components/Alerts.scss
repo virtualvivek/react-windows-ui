@@ -27,7 +27,7 @@
         text-align: right;
         padding: 0 15px 10px 15px;
     }
-    .app-alert-button {
+    button {
         display: inline;
         padding: 7px 3.4vw;
         margin: 10px;
@@ -47,9 +47,9 @@
     }
 
     h1,
+    button,
     .btn-container,
-    .alert-message,
-    .app-alert-button {
+    .alert-message {
         background-color: transparent !important;
     }
 }
@@ -61,7 +61,7 @@
         margin: 0;
         background: var(--AppColor) !important;
 
-        .app-alert-button {
+        button {
             padding: 3px 30px;
             margin: 15px 15px 15px 0;
         }

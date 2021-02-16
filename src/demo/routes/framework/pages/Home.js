@@ -67,13 +67,13 @@ class Home extends React.Component {
               showValue={false}
               onChange={(e) => {this.onChangeSlider1(e)}} />
             
-            <SliderBar 
+            <SliderBar
               value={this.state.Slider2}
               thumbStyle="round"
               step={4}
               onChange={(e) => {this.onChangeSlider2(e)}} />
 
-            <SliderBar 
+            <SliderBar
               value={this.state.Slider3}
               thumbStyle="round-border"
               onChange={(e) => {this.onChangeSlider3(e)}} />
@@ -86,7 +86,7 @@ class Home extends React.Component {
               <Checkbox
                 checked />
               <div className="app-hr-space" s="40"></div>
-              <Checkbox 
+              <Checkbox
                 disabled
                 checked
                 text="Disabled Checked"/>
@@ -101,7 +101,7 @@ class Home extends React.Component {
                 checked
                 text="Unchecked" />
               <div className="app-hr-space" s='20'></div>
-              <Checkbox 
+              <Checkbox
                 disabled
                 text="Disabled Unchecked"/>
 
@@ -110,30 +110,31 @@ class Home extends React.Component {
             <br></br>
             <h3 className="m-b-15">Inputs</h3>
                
-              <InputText 
+              <InputText
                 placeholder="Enter a text"/>
 
               <br/><br/>
 
-              <InputText 
+              <InputText
                 type="password"
                 placeholder="Enter a password"/>
 
             <h3 className="m-b-15">SearchBar</h3>
 
-              <InputSearchBar 
+              <InputSearchBar
                 placeholder="Search here"/>
 
             <h3 className="m-b-15">SearchBox</h3>
 
-              <InputSearchBox 
+              <InputSearchBox
                 placeholder="Enter to Search"/>
 
             <h3 className="m-b-15">Search Suggestion</h3>
 
-              <InputSearchSuggestion 
+              <InputSearchSuggestion
+                placeholder="Type 'a' .."
                 data={[
-                  {label: 'apple', link: '#', icon:<i className="icons10-camera"></i>},
+                  {label: 'apple', link: '#', icon:<i className="icons10-baby"></i>},
                   {label: 'orange', link: '#'},
                   {label: 'banana', link: '#'},
                   {label: 'peach', link: '#'},
@@ -170,11 +171,15 @@ class Home extends React.Component {
                 name="1"
                 text="Checked"
                 checked/>
+
                 <br></br>
+
               <RadioButton
                 name="1"
                 text="Unchecked"/>
+                
                 <br></br>
+
               <RadioButton
                 name="2"
                 text="Disabled"

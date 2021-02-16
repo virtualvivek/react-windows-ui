@@ -563,7 +563,7 @@ p.light {
     display: block;
     text-align: right;
     padding: 0 15px 10px 15px; }
-  .app-alert .app-alert-button {
+  .app-alert button {
     display: inline;
     padding: 7px 3.4vw;
     margin: 10px;
@@ -571,16 +571,16 @@ p.light {
     color: #fff;
     font-weight: 700;
     font-size: 14px; }
-    .app-alert .app-alert-button:hover {
+    .app-alert button:hover {
       opacity: 0.62; }
-    .app-alert .app-alert-button:active {
+    .app-alert button:active {
       background: #fff !important;
       opacity: 1;
       color: var(--AppColor); }
   .app-alert h1,
+  .app-alert button,
   .app-alert .btn-container,
-  .app-alert .alert-message,
-  .app-alert .app-alert-button {
+  .app-alert .alert-message {
     background-color: transparent !important; }
 
 button:focus, button:active, button:focus:active,
@@ -1433,7 +1433,7 @@ button.unmask {
     left: 0 !important;
     margin: 0;
     background: var(--AppColor) !important; }
-    .app-alert .app-alert-button {
+    .app-alert button {
       padding: 3px 30px;
       margin: 15px 15px 15px 0; }
   .app-avatar.large {

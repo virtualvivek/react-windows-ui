@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const ListItem = (props) => {
   return (
     <li className="app-list-item">
-        <Link 
+        <Link
           to={props.to}
           style={
             props.borderBottom ? {borderBottom:''} : {borderBottom:'0px'}}>

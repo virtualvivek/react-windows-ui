@@ -9,6 +9,24 @@ class CardLayout extends React.Component {
       <h1>Cards</h1>
 
         <h3 className="m-b-15">Default</h3>
+
+        <Card
+            display="flow-root"
+            maxWidth={400}
+            padding={10}>
+            <ListItem 
+                icon={<i className="icons10-headphone bg-grey"></i>}
+                title="Realtek audio settings"
+                subtitle="Manage devices audio preferences"
+                borderBottom={true}
+            />
+            <div style={{float:'right'}}>
+                <Button value="Manage"/>
+                &nbsp;   
+            </div>
+        </Card>
+
+        <h3 className="m-b-15">Hoverable</h3>
           
         <Card
             display="flow-root"

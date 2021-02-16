@@ -52,7 +52,9 @@ import { ProgressBarIndeterminate,ProgressBar,
         <h3 className="m-b-15">LoadeBusy</h3>
 
           <br/>
+
             <LoaderBusy/>
+
           <br/>
 
         <h3 className="m-b-15">LoadeBusy Fullscreen</h3>
@@ -63,7 +65,7 @@ import { ProgressBarIndeterminate,ProgressBar,
               display="fullscreen"
             />
 
-            <Button 
+            <Button
               value="Open Loader fullscreen" 
               onClick={this.toggleLoaderBusyFull}
             />

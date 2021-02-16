@@ -51,7 +51,7 @@ const MenuBar = (props) => {
         <ul className={menubar ? 'show' : ''}>
             <div className="app-search-box"
                 onClick={(e)=> {e.stopPropagation()}}>
-                <input 
+                <input
                   className="app-input-text app-input-search"
                   type="search"
                   placeholder={props.searchPlaceholder}
@@ -66,7 +66,7 @@ const MenuBar = (props) => {
                 />
             </div>
             {teams.map(item => (
-            <li 
+            <li
               className="option"
               key={item.label}>
                 <Link to={item.link}>

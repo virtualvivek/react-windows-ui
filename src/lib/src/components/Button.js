@@ -18,12 +18,12 @@ const Button = (props) => {
 
   
   return (
-    <button 
+    <button
       className={
-        props.type ==="primary" ?  "app-button animate accent" 
+        props.type ==="primary" ?  "app-button animate accent"
       : props.type ==="danger" ? "app-button animate bg-danger"
       : props.type ==="success" ? "app-button animate bg-success"
-      : "app-button animate"  
+      : "app-button animate"
       }
       type="button"
       onSubmit={props.onSubmit}
@@ -33,7 +33,8 @@ const Button = (props) => {
       <span style={
           props.isLoading ? { display:'none'}
         : props.value === "" ? { paddingRight: '0'}
-        : {display : 'inline-flex',paddingRight: '5px'}
+        : props.icon ? {display : 'inline-flex',paddingRight: '5px'}
+        : {paddingRight: '0'}
         }>
 
       {props.icon}

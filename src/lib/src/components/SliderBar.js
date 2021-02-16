@@ -16,8 +16,8 @@ const SliderBar = (props) => {
   }
 
   return (
-    <div className={props.thumbStyle === 'round' ? 
-      "app-range-slider round" : props.thumbStyle === 'round-border' ? 
+    <div className={props.thumbStyle === 'round' ?
+      "app-range-slider round" : props.thumbStyle === 'round-border' ?
       "app-range-slider round-border" : "app-range-slider" }>
         <input
           type="range"

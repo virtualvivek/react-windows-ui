@@ -11,4 +11,4 @@ const CommandBar = (props) => {
 }
 
 
-export default CommandBar;
+export default CommandBar

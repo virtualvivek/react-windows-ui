@@ -8,9 +8,9 @@ const ProgressBar = (props) => {
         {props.icon}
       </div>
       
-      <div style={props.showIcon ? { marginLeft:'15px'} : {marginLeft:''}}> 
+      <div style={props.showIcon ? { marginLeft:'15px'} : {marginLeft:''}}>
         <span className="title">{props.title}</span>
-        <div className={props.showIcon ? 
+        <div className={props.showIcon ?
           "app-progress withIcon" : "app-progress"}>
           <span style={{width: props.setProgress+'%'}}></span>
         </div>

@@ -34,7 +34,7 @@ class Lists extends React.Component {
     }
     render() {
       return (
-        <NavPageContainer 
+        <NavPageContainer
             hasPadding>
                 
         <h1>Dialogs</h1>
@@ -68,42 +68,40 @@ class Lists extends React.Component {
         <br></br>
 
         <h3 className="m-b-15">Dialog</h3>
-        <Button 
+        <Button
             value="Open Dialog" 
             onClick={this.toggleDialog}/>
   
-        <Dialog 
+        <Dialog
           isVisible={this.state.showDialog}
           onBackdropPress={this.toggleDialog}>
-            <ListItem 
+            <ListItem
                 icon={<i className="icons10-contact-book bg-accent"></i>}
                 title="Contacts"
                 subtitle="5.6 MB"/>
-            <ListItem 
+            <ListItem
                 icon={<i className="icons10-news bg-accent"></i>}
                 title="News"
                 subtitle="12.0 MB"/>
-            <ListItem 
+            <ListItem
                 icon={<i className="icons10-paypal bg-accent"></i>}
                 title="Payments"
                 subtitle="24 MB"/>
                
             <div style={{padding:'10px',float:'right'}}>
-                <button className="app-button" 
-                    onClick={this.toggleDialog}>
-                    <span>Close</span>
-                </button>    
+                <Button
+                    value="Close"
+                    onClick={this.toggleDialog}
+                />
             </div>
         </Dialog>
   
-        <Alert 
+        <Alert
           isVisible={this.state.showAlert}
           onBackdropPress={this.toggleAlert}
           title="Alert"
           message="This is alert demo">
-            <button className="app-alert-button" 
-                onClick={this.toggleAlert}>OK
-            </button>
+            <button onClick={this.toggleAlert}>OK</button>
         </Alert>
 
         <br/><br/>

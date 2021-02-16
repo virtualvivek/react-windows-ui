@@ -10,21 +10,21 @@ const Lists = () => {
       <h1>Lists</h1>
 
       <h3 className="m-b-15">Users</h3>
-      <ListItem 
+      <ListItem
         img={Img1}
         imgAlt="avatar1"
         title="User 1"
         subtitle="Web Developer"
         info="online"
       />
-      <ListItem 
+      <ListItem
         img={Img2}
         imgAlt="avatar2"
         title="User 2"
         subtitle="Data Anylist"
         info="online"
       />
-      <ListItem 
+      <ListItem
         img={Img3}
         imgAlt="avatar3"
         title="User 3"
@@ -37,19 +37,20 @@ const Lists = () => {
       <div className="app-hr"></div>
 
       <h3 className="m-b-15">Icon Box</h3>
-      <ListItem 
+
+      <ListItem
         icon={<i className="icons10-contact-book bg-accent"></i>}
         title="Contacts"
         subtitle="5.6 MB"
         info="installed"
       />
-      <ListItem 
+      <ListItem
         icon={<i className="icons10-news bg-accent"></i>}
         title="News"
         subtitle="12.0 MB"
         info="install"
       />
-      <ListItem 
+      <ListItem
         icon={<i className="icons10-paypal bg-accent"></i>}
         title="Payments"
         subtitle="24 MB"
@@ -61,19 +62,19 @@ const Lists = () => {
     <div className="app-hr"></div>
 
       <h3 className="m-b-15">Icon</h3>
-      <ListItem 
+      <ListItem
         icon={<i className="icons10-printer accent"></i>}
         title="Printer"
         subtitle="5.6 MB"
         info="installed"
       />
-      <ListItem 
+      <ListItem
         icon={<i className="icons10-music accent"></i>}
         title="Music"
         subtitle="12.0 MB"
         info="install"
       />
-      <ListItem 
+      <ListItem
         icon={<i className="icons10-usb accent"></i>}
         title="Drivers"
         subtitle="24 MB"
