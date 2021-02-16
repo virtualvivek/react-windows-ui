@@ -74,5 +74,5 @@ Support it by joining [stargazers](https://github.com/virtualvivek/react-windows
 
 ## License
 
-`react-windows-ui` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/react-windows-ui/blob/master/LICENSE).<br>
+`react-windows-ui` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE).<br>
 Copyright (c) 2021 ` Vivek Verma `
