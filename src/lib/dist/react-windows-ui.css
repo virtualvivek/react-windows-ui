@@ -1355,7 +1355,7 @@ button.unmask {
     overflow-y: hidden;
     height: 93px;
     overflow-x: scroll;
-    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.25);
     scrollbar-width: none;
     /* Mozilla ScrollBar */ }
     #app-nav-wrap nav ul {
