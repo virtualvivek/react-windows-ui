@@ -40,7 +40,7 @@
 </p>
 
 <h2 align="center">
-  <img src="markdown/md_img_promo.png" width="652" /> 
+  <img src="markdown/md_img_promo.png" width="652" />
 </h2>
 
 ## Demo ⚡
@@ -82,6 +82,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 ```
+
+<img src="markdown/md_npm_.png" width="75" />
+https://www.npmjs.com/package/react-windows-ui
+
 
 ## Find this library useful? :heart:
 Support it by joining [stargazers](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
