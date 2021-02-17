@@ -40,7 +40,7 @@
 </p>
 
 <h2 align="center">
-  <img src="markdown/md_img_promo.png" width="652" /> 
+  <img src="markdown/md_img_promo.png" width="652" />
 </h2>
 
 ## Demo ⚡
@@ -65,6 +65,8 @@ import 'react-windows-ui/dist/react-windows-ui.min.css'
 import 'react-windows-ui/icons/fonts/fonts.min.css'
 ```
 ### app-config
+
+‣ `app-config` file contains the primary `AppColor`, `Fontfamily` used by the app <br>
 You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a><br>
 OR <br>
 Create your own like this
@@ -82,6 +84,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 ```
+
+<img src="markdown/md_npm_.png" width="75" />
+https://www.npmjs.com/package/react-windows-ui
+
 
 ## Find this library useful? :heart:
 Support it by joining [stargazers](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
