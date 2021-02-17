@@ -10,10 +10,6 @@ const LoaderBusy = (props) => {
   }
 
   const renderLoaderFullScreen = () => {
-
-    let alphaColor = window.getComputedStyle(document.documentElement).getPropertyValue('--color_light_grey')
-    alphaColor = alphaColor.trim()
-    alphaColor = alphaColor+'D1'
     
   return <>
     <div
@@ -22,7 +18,7 @@ const LoaderBusy = (props) => {
       "app-dim-overlay show"
       : "app-dim-overlay"}
       style={{
-        backgroundColor:alphaColor
+        backgroundColor: props.backgroundColor
       }}>
     </div>
     <div
@@ -46,6 +42,8 @@ const LoaderBusy = (props) => {
   )
 }
 
-
+LoaderBusy.defaultProps = {
+  backgroundColor: 'var(--color_light_grey_alpha)'
+}
 
 export default LoaderBusy

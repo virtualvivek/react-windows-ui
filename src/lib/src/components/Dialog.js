@@ -14,7 +14,13 @@ const Dialog = (props) => {
     </div>
     <div
       className={props.isVisible ?
-      "app-dialog show" : "app-dialog"}>
+      "app-dialog show" : "app-dialog"}
+      style={
+        props.showDropShadow ? 
+        {backgroundColor: 'var(--color_light_grey_alpha)',backdropFilter:'blur(24px)'}
+        : {backgroundColor:''}
+      }
+    >
        {props.children}
     </div>
     </>

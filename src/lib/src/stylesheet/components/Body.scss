@@ -53,8 +53,7 @@ a {
 }
 
 
-.app-flex-center,
-.index-box-header {
+.app-flex-center {
     display: flex;
     align-items: center;
 }
@@ -111,16 +110,3 @@ a {
 p.light {
     font-weight: 100;
 }
-
-@mixin body-mobile() {
-    
-    .index-box-header {
-        .app-link-compound {
-            display: none !important;
-        }
-        img {
-            margin-left: 5%;
-        }
-    }
-}
-

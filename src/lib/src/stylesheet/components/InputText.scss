@@ -17,12 +17,6 @@
         cursor: pointer;
     }
 
-    &::-webkit-calendar-picker-indicator {
-        padding-right: 5px;
-        width: 24px;
-        height: 24px;
-        opacity: 1;
-    }
     &[disabled] {
         @extend .input-field-primary-disabled;
     }
@@ -36,11 +30,4 @@ button.unmask {
     background: transparent;
     border: none;
     position: relative;
-}
-
-@mixin input-text-mobile() {
-    input[type="date"].app-input-text::before {
-        content: attr(placeholder);
-        padding-right: 5px;
-    }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import {NavPageContainer,Checkbox,Switch,
-        InputText,InputSearchBar,
+        InputText,InputDate,InputSearchBar,
         InputSearchBox,SliderBar,
         RadioButton,SelectBox,MenuBar,InputSearchSuggestion} from '../../../../lib'
 
@@ -119,6 +119,11 @@ class Home extends React.Component {
                 type="password"
                 placeholder="Enter a password"/>
 
+              <br/><br/>
+
+              <InputDate
+                placeholder="Select Date" />
+
             <h3 className="m-b-15">SearchBar</h3>
 
               <InputSearchBar
@@ -185,6 +190,7 @@ class Home extends React.Component {
                 text="Disabled"
                 disabled
                 checked/>
+
 
             <br/><br/><br/><br/>
             

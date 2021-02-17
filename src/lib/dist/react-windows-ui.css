@@ -6,6 +6,7 @@
   --color_dark_text: #222222;
   --color_nav: #EEEEEE;
   --color_light_grey: #EEEEEE;
+  --color_light_grey_alpha: #EEEEEED1;
   --color_link_bg_hover: #CFCFCF;
   --color_link_bg_active: #B8B8B8;
   --color_button: #d9d9d9;
@@ -117,7 +118,7 @@
 .tap-highlight-none, label.app-checkbox, .app-switch {
   -webkit-tap-highlight-color: transparent; }
 
-.transition-background-400ms, body, .app-hr, .app-name, #app-nav-wrap nav, label.app-checkbox input[type="checkbox"]::before, .app-input-text, .app-search-bar, .app-search-bar button, .app-progress-container .app-progress, .app-radio, .app-select-styled, .app-select-styled select {
+.transition-background-400ms, body, .app-hr, .app-name, #app-nav-wrap nav, label.app-checkbox input[type="checkbox"]::before, .app-header-fixed-container, .app-input-text, .app-search-bar, .app-search-bar button, .app-progress-container .app-progress, .app-radio, .app-select-styled, .app-select-styled select, .app-sticky-header {
   transition: background 0.4s; }
 
 .transition-all-400ms, .app-back, #app-nav-wrap .app-nav-toggle, #app-nav-wrap nav.animate ul li a, .app-button, .app-card-default, .app-link-compound, .app-list-item a {
@@ -242,8 +243,7 @@ a {
   background: var(--color_button);
   margin: 10px 10px 10px 0; }
 
-.app-flex-center,
-.index-box-header {
+.app-flex-center {
   display: flex;
   align-items: center; }
 
@@ -419,7 +419,8 @@ p.light {
 #app-nav-wrap {
   height: 100%;
   width: 280px;
-  z-index: 5; }
+  z-index: 5;
+  transition: 0.2s ease; }
   #app-nav-wrap nav {
     height: inherit;
     width: inherit;
@@ -443,8 +444,9 @@ p.light {
       color: var(--color_dark_text); }
       #app-nav-wrap nav a span {
         font-size: 16px;
-        margin: 0 8px;
-        position: relative; }
+        margin: 0 10px;
+        position: relative;
+        top: 1px; }
     #app-nav-wrap nav ul {
       position: relative;
       top: 115px;
@@ -462,7 +464,7 @@ p.light {
       #app-nav-wrap nav ul .app-hr {
         margin: 10px 15px; }
     #app-nav-wrap nav .app-switch {
-      margin: 15px 0 0 20px; }
+      margin: 16px 0 0 20px; }
   #app-nav-wrap nav > div:first-child,
   #app-nav-wrap nav > div:nth-child(2) {
     width: inherit;
@@ -477,7 +479,7 @@ p.light {
 
 .app-section-container {
   padding-left: 280px;
-  transition: width 0.4s linear; }
+  transition: 0.2s ease; }
   .app-section-container.has-padding {
     padding-left: 310px; }
 
@@ -719,6 +721,11 @@ label.app-checkbox input[type="checkbox"] {
     transform: translateY(0);
     visibility: visible; }
 
+.app-header-fixed-container {
+  position: fixed;
+  background-color: var(--color_light_bg);
+  top: 0; }
+
 .app-image-view {
   width: inherit;
   height: inherit;
@@ -761,6 +768,24 @@ label.app-checkbox input[type="checkbox"] {
     .app-image-view-container .app-image-words h1 {
       margin: 0; }
 
+.app-input-text::-webkit-calendar-picker-indicator {
+  margin-right: -25px;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  z-index: 1;
+  -webkit-appearance: none; }
+
+input[type="date"].app-input-text::after {
+  display: block;
+  font-family: icons10;
+  content: "\f1cb";
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  position: relative;
+  right: 5px; }
+
 .app-input-text:hover {
   border-color: #777; }
 
@@ -771,12 +796,6 @@ label.app-checkbox input[type="checkbox"] {
   content: "\f189";
   font-size: 24px;
   cursor: pointer; }
-
-.app-input-text::-webkit-calendar-picker-indicator {
-  padding-right: 5px;
-  width: 24px;
-  height: 24px;
-  opacity: 1; }
 
 input[type="password"].app-input-text + .unmask::after {
   content: "\f1db"; }
@@ -1180,6 +1199,11 @@ button.unmask {
     margin-left: -25px;
     position: relative; }
 
+.app-sticky-header {
+  position: sticky;
+  background-color: var(--color_light_bg);
+  padding: 10px 0; }
+
 .app-switch {
   display: table;
   margin-right: 70px; }
@@ -1341,15 +1365,13 @@ button.unmask {
 @media only screen and (max-width: 760px) {
   ::-webkit-scrollbar {
     width: 2.4px; }
-  .index-box-header .app-link-compound {
-    display: none !important; }
-  .index-box-header img {
-    margin-left: 5%; }
   .app-section-container {
     margin: 0 !important;
     padding: 90px 0 0 0 !important; }
     .app-section-container.has-padding {
       margin: 0 15px !important; }
+  .app-section-container .app-header-fixed-container {
+    top: 90px; }
   #app-nav-wrap nav {
     width: 100%;
     overflow-y: hidden;

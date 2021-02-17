@@ -15,7 +15,7 @@ class _404Layout extends React.Component {
   render() {  
   return (
     <div className="app-container-screen accent">
-        <Link to="../home" className="app-back fixed light"/>
+        <Link to="../" className="app-back fixed light"/>
       
         <div className="_404-container">
             <div className="_404-sad-face">

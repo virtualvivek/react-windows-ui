@@ -22,19 +22,19 @@ const Images = () => {
         <h3 className="m-b-15">AvatarView</h3>
 
         <div className="app-flex-center">
-          <AvatarView 
+          <AvatarView
               src={IronMan}
               size="large"    
               showDropShadow/>
               &nbsp;&nbsp;
           <div className="app-grid">
-            <AvatarView 
+            <AvatarView
                 src={Img3}
                 size="medium"
                 isLoading
                 showDropShadow/>
             &nbsp;
-            <AvatarView 
+            <AvatarView
                 size="small"
                 src={Img2}      
                 showDropShadow/>

@@ -1,0 +1,28 @@
+.app-input-text {
+    &::-webkit-calendar-picker-indicator {
+        margin-right: -25px;
+        width: 24px;
+        height: 24px;
+        opacity: 0;
+        z-index: 1;
+        -webkit-appearance: none;
+    }
+    
+}
+input[type="date"].app-input-text::after {
+    display: block;
+    font-family: icons10;
+    content: "\f1cb";
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    position: relative;
+    right: 5px;
+}
+
+@mixin input-date-mobile() {
+    input[type="date"].app-input-text::before {
+        content: attr(placeholder);
+        padding-right: 5px;
+    }
+}

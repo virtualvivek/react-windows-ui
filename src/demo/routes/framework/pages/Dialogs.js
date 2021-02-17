@@ -69,12 +69,13 @@ class Lists extends React.Component {
 
         <h3 className="m-b-15">Dialog</h3>
         <Button
-            value="Open Dialog" 
+            value="Open Dialog"
             onClick={this.toggleDialog}/>
   
         <Dialog
           isVisible={this.state.showDialog}
-          onBackdropPress={this.toggleDialog}>
+          onBackdropPress={this.toggleDialog}
+          showDropShadow>
             <ListItem
                 icon={<i className="icons10-contact-book bg-accent"></i>}
                 title="Contacts"

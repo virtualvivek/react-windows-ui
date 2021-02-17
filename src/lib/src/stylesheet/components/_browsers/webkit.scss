@@ -11,7 +11,7 @@
     }
 }
 
-@mixin webkit-mobile() {
+@mixin browser-webkit-mobile() {
     ::-webkit-scrollbar {
         width: 2.4px;
     }
