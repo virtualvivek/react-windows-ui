@@ -1,14 +1,17 @@
+import {useEffect} from 'react'
 var setAppDark = require('./ThemeManager').setAppDark
 var setAppLight = require('./ThemeManager').setAppLight
 
 const SystemThemeFollower = () => {
 
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    {
+    useEffect(()=>{
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        {
         setAppDark();
         let navSwitch = document.getElementById("app-day-night-switch");
         navSwitch.checked = true;
-    }
+        }
+    })
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
         
