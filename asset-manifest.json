@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-windows-ui/static/css/main.e0c0346a.chunk.css",
-    "main.js": "/react-windows-ui/static/js/main.c990f083.chunk.js",
-    "main.js.map": "/react-windows-ui/static/js/main.c990f083.chunk.js.map",
+    "main.js": "/react-windows-ui/static/js/main.cba93bbc.chunk.js",
+    "main.js.map": "/react-windows-ui/static/js/main.cba93bbc.chunk.js.map",
     "runtime-main.js": "/react-windows-ui/static/js/runtime-main.f20d92f6.js",
     "runtime-main.js.map": "/react-windows-ui/static/js/runtime-main.f20d92f6.js.map",
     "static/js/2.873de6e7.chunk.js": "/react-windows-ui/static/js/2.873de6e7.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f20d92f6.js",
     "static/js/2.873de6e7.chunk.js",
     "static/css/main.e0c0346a.chunk.css",
-    "static/js/main.c990f083.chunk.js"
+    "static/js/main.cba93bbc.chunk.js"
   ]
 }
