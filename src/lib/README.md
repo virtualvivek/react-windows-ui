@@ -33,7 +33,7 @@ https://virtualvivek.github.io/react-windows-ui/
 
 ## Installation
 ```js
-npm install react-windows-ui --save
+npm install react-windows-ui
 ```
 
 ## Getting Started
@@ -49,7 +49,9 @@ import 'react-windows-ui/dist/react-windows-ui.min.css'
 import 'react-windows-ui/icons/fonts/fonts.min.css'
 ```
 ### app-config
-You can import default `app-config` using this file <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/config/app-config.css">app-config.css</a><br>
+
+‣ `app-config` file contains the primary `AppColor`, `Fontfamily` used by the app <br>
+‣ You can import default `app-config` using this file <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/config/app-config.css">app-config.css</a><br>
 OR <br>
 Create your own like this
 
