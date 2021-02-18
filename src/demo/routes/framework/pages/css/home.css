@@ -69,3 +69,9 @@
 .home-footer-group .group {
     transition: 0.5s ease;
 }
+
+@media only screen and (max-width: 760px) {
+    .home-header {
+        width: 280px;
+    }
+}
