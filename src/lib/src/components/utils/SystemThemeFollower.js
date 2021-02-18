@@ -5,23 +5,23 @@ const SystemThemeFollower = () => {
 
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
     {
-        setAppDark()
-        let navSwitch = document.getElementById("app-day-night-switch")
-        navSwitch.checked = true
+        setAppDark();
+        let navSwitch = document.getElementById("app-day-night-switch");
+        navSwitch.checked = true;
     }
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
         
         const newColorScheme = e.matches ? "dark" : "light";
-        let navSwitch = document.getElementById("app-day-night-switch")
+        let navSwitch = document.getElementById("app-day-night-switch");
 
         if(newColorScheme === "dark") {
-            setAppDark()
-            navSwitch.checked = true
+            setAppDark();
+            navSwitch.checked = true;
         }
         else {
-            setAppLight()
-            navSwitch.checked = false
+            setAppLight();
+            navSwitch.checked = false;
         }
     })
 
