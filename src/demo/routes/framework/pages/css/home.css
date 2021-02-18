@@ -1,0 +1,71 @@
+.home-header {
+    background-color: #222;
+    border-radius: 28px;
+    font-size: 50px;
+    width: 360px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 10px;
+    box-shadow: 0 8px 8px #222;
+}
+.home-header i {
+    color: var(--AppColor);
+    font-size: 60px;
+}
+.home-header span {
+    position: relative;
+    top: -5px;
+}
+.home-text {
+    text-align: center;
+    font-weight: 500;
+    display: block;
+}
+.home-color-picker {
+    text-align: center;
+    margin: auto;
+}
+.link-container {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+}
+.link-container a:hover {
+    background-color: transparent;
+}
+.home-footer-group {
+    position: absolute;
+    left: 0;
+    height: 125px;
+    width: 100%;
+    bottom: 0px;
+}
+.home-footer-group .group {
+    width: inherit;
+    height: 25px;
+    background-color: var(--AppColor);
+}
+.group.a {
+    opacity: 0.1;
+}
+.group.b {
+    opacity: 0.3;
+}
+.group.c {
+    opacity: 0.5;
+}
+.group.d {
+    opacity: 0.7;
+}
+.group.e {
+    opacity: 0.9;
+}
+
+.home-header *,
+.home-footer-group .group {
+    transition: 0.5s ease;
+}

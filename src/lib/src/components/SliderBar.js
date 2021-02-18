@@ -5,9 +5,9 @@ const SliderBar = (props) => {
   const inputRef = React.useRef()
 
     const toggleVisible = () => {
-        let iswitch = inputRef.current
-            iswitch.style.visibility="visible"
-            iswitch.style.opacity="1"
+      let iswitch = inputRef.current
+          iswitch.style.visibility="visible"
+          iswitch.style.opacity="1"
     }
     const toggleHidden = () => {
       let iswitch = inputRef.current

@@ -40,7 +40,7 @@ const Button = (props) => {
       {props.icon}
       </span>
 
-      {props.isLoading ? renderLoader() : ""}
+      { props.isLoading ? renderLoader() : "" }
       
       <span style={props.isLoading ? { opacity:'0'} : {opacity : '1'}}>
         {props.value}

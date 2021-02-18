@@ -7,11 +7,11 @@ const AvatarView = (props) => {
   const [didLoad, setLoad] = useState(false)
 
   const renderLoader = () => {
-        return <div className="app-image-view-loader">
-          <div className="app-loader-busy light">
-            <LoaderBusyWrapper/>
-          </div>
-        </div>
+        return  <div className="app-image-view-loader">
+                  <div className="app-loader-busy light">
+                    <LoaderBusyWrapper/>
+                  </div>
+                </div>
   }
 
   const renderShadow = () => {
@@ -33,15 +33,15 @@ const AvatarView = (props) => {
             objectFit : props.objectFit
           }}
           onLoad={() => setLoad(true)}
-          />
-          <div className="app-image-words">
+        />
+        <div className="app-image-words">
           <h1>{props.title}</h1>
           <span>{props.subtitle}</span>
-          </div>
-          
-          {props.insetShadow ? renderShadow() : ""}
-          {props.isLoading ? renderLoader() : ""}
-          {didLoad ? "" : renderLoader()}
+        </div>
+        
+        {props.insetShadow ? renderShadow() : ""}
+        {props.isLoading ? renderLoader() : ""}
+        {didLoad ? "" : renderLoader()}
     </div>
   )
 }
@@ -51,7 +51,7 @@ AvatarView.defaultProps = {
     width: 124,
     height: 124,
     alt : "image",
-    objectFit : 'cover',
+    objectFit : 'cover'
   }
 
 export default AvatarView

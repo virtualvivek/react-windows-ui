@@ -6,7 +6,8 @@ const Switch = (props) => {
         <input
           className="app-input-text app-input-search"
           type="search"
-          placeholder={props.placeholder}/>
+          placeholder={props.placeholder}
+        />
         <button
           type="submit"
           onClick={props.onClick}

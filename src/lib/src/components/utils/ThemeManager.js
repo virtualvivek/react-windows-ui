@@ -1,4 +1,3 @@
-
 var createAlphaAccentColor = function() {
     let alphaColor = window.getComputedStyle(document.documentElement).getPropertyValue('--AppColor')
     alphaColor = alphaColor.trim()

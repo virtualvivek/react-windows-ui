@@ -5,14 +5,14 @@ const StickyHeader = (props) => {
     <div
       className="app-sticky-header"
       style={{
-          top: props.stickOffset,
-          fontSize: props.fontSize,
-          color: props.color,
-          zIndex: props.zIndex,
-          lineHeight: 1,
-          fontWeight: 500
+        top: props.stickOffset,
+        fontSize: props.fontSize,
+        color: props.color,
+        zIndex: props.zIndex,
+        lineHeight: 1,
+        fontWeight: 500
       }}>
-        <span>{props.title}</span>
+      <span>{props.title}</span>
     </div>
   )
 }

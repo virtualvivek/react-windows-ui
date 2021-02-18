@@ -4,15 +4,15 @@ import { NavLink } from 'react-router-dom'
 const NavBarLinkUser = (props) => {
   return (
     <li>
-        <NavLink 
-          className="app-nav-user"
-          to={props.to} 
-          exact={props.exact}>
-            <img 
-              src={props.img}
-              alt={props.imgAlt} />
-            <span>{props.text}</span>
-        </NavLink>
+      <NavLink
+        className="app-nav-user"
+        to={props.to} 
+        exact={props.exact}>
+          <img
+            src={props.img}
+            alt={props.imgAlt} />
+          <span>{props.text}</span>
+      </NavLink>
     </li>
   )
 }

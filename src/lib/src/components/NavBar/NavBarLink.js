@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const NavBarLink = (props) => {
 
   const renderBadge = () => {
-    return <div className="app-badge">5</div>
+    return <div className="app-badge">{props.showBadge}</div>
   }
 
   return (

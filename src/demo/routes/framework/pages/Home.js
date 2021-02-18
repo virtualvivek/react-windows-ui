@@ -1,202 +1,65 @@
 import React from 'react'
-import {NavPageContainer,Checkbox,Switch,
-        InputText,InputDate,InputSearchBar,
-        InputSearchBox,SliderBar,
-        RadioButton,SelectBox,MenuBar,InputSearchSuggestion} from '../../../../lib'
+import { NavPageContainer, ColorPickerItem } from '../../../../lib'
+import ReactIcon from './css/home/ReactIcon'
+import NpmIcon from './css/home/npmIcon'
+import GithuIcon from './css/home/githubIcon'
+import './css/home.css'
 
 class Home extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-        Slider1:256,
-        Slider2:140,
-        Slider3:58,
-    }
-  }
-
-  onChangeSlider1 = (e) => {   
-    this.setState({Slider1:e.target.value})
-  }
-  onChangeSlider2 = (e) => {   
-    this.setState({Slider2:e.target.value})
-  }
-  onChangeSlider3 = (e) => {   
-    this.setState({Slider3:e.target.value})
-  }
   
   render() {
   return (
     <NavPageContainer hasPadding>
 
-      <h1 className="m-b-15">Form Elements</h1>
+      <div className="home-header">
+        <ReactIcon/>
+        <span>&nbsp;   +   &nbsp;</span>
+        <i className="icons10-windows"></i>
+      </div>
+      <h2 className="home-text">react-windows-ui</h2>
 
-        <h3 className="m-b-15">Switch</h3>
-            
-          <div className="app-flex">
-                
-            <Switch
-              checked/>
+      <div className="home-color-picker">
+        <ColorPickerItem
+          name="1"
+          color="#0078D7"
+          checked/>
+        <ColorPickerItem
+          name="1"
+          color="#F7630C"/>
+        <ColorPickerItem
+          name="1"
+          color="#06A156"/>
+        <ColorPickerItem
+          name="1"
+          color="#D13438"/>
+        <ColorPickerItem
+          name="1"
+          color="#4A5459"/>
+        <ColorPickerItem
+          name="1"
+          color="#018574"/>
+      </div>
 
-            <Switch
-              checked
-              disabled
-              textOn="Disabled On"
-              textOff="Disabled Off" /> 
-                
-            </div>
+      <br/><span className="home-text">Build windows fluent ui apps on the go!</span>
 
-            <p className="m-b-15"></p>
+      <div className="link-container">
+        <a href="https://www.npmjs.com/package/react-windows-ui" target="_blank" rel="noreferrer"><NpmIcon /></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/virtualvivek/react-windows-ui" target="_blank" rel="noreferrer"><GithuIcon /></a>
+      </div>
 
-            <div className="app-flex">
-                
-              <Switch/>
-
-              <Switch
-                disabled
-                textOn="Disabled On"
-                textOff="Disabled Off" /> 
-                
-            </div>
-
-          <h3 className="m-b-15">SliderBar</h3>
-
-            <h1 className="m-0 color-accent" style={{fontSize:46}}>{this.state.Slider1}%</h1>
-            <SliderBar 
-              value={this.state.Slider1}
-              showValue={false}
-              onChange={(e) => {this.onChangeSlider1(e)}} />
-            
-            <SliderBar
-              value={this.state.Slider2}
-              thumbStyle="round"
-              step={4}
-              onChange={(e) => {this.onChangeSlider2(e)}} />
-
-            <SliderBar
-              value={this.state.Slider3}
-              thumbStyle="round-border"
-              onChange={(e) => {this.onChangeSlider3(e)}} />
-
-
-          <h3 className="m-b-15">Checkbox</h3>
-
-            <div className="app-flex">
-
-              <Checkbox
-                checked />
-              <div className="app-hr-space" s="40"></div>
-              <Checkbox
-                disabled
-                checked
-                text="Disabled Checked"/>
-
-            </div>
-
-            <p className="m-b-20"></p>
-
-            <div className="app-flex">
-
-              <Checkbox
-                checked
-                text="Unchecked" />
-              <div className="app-hr-space" s='20'></div>
-              <Checkbox
-                disabled
-                text="Disabled Unchecked"/>
-
-            </div>
-
-            <br></br>
-            <h3 className="m-b-15">Inputs</h3>
-               
-              <InputText
-                placeholder="Enter a text"/>
-
-              <br/><br/>
-
-              <InputText
-                type="password"
-                placeholder="Enter a password"/>
-
-              <br/><br/>
-
-              <InputDate
-                placeholder="Select Date" />
-
-            <h3 className="m-b-15">SearchBar</h3>
-
-              <InputSearchBar
-                placeholder="Search here"/>
-
-            <h3 className="m-b-15">SearchBox</h3>
-
-              <InputSearchBox
-                placeholder="Enter to Search"/>
-
-            <h3 className="m-b-15">Search Suggestion</h3>
-
-              <InputSearchSuggestion
-                placeholder="Type 'a' .."
-                data={[
-                  {label: 'apple', link: '#', icon:<i className="icons10-baby"></i>},
-                  {label: 'orange', link: '#'},
-                  {label: 'banana', link: '#'},
-                  {label: 'peach', link: '#'},
-                  ]}
-                />
-
-
-              <h3 className="m-b-15">SelectBox</h3>
-              
-                <SelectBox
-                  data={[
-                    {label: 'red', value: 'red'},
-                    {label: 'blue', value: 'blue'},
-                    {label: 'green', value: 'green'},
-                    {label: 'pink', value: 'pink'},
-                    ]}
-                />
-
-              <h3 className="m-b-15">MenuBar</h3>
-                <MenuBar
-                  label="Select a fruit"
-                  data={[
-                    {label: 'apple', link: '#', icon:<i className="icons10-camera"></i>},
-                    {label: 'orange', link: '#'},
-                    {label: 'banana', link: '#'},
-                    {label: 'peach', link: '#'},
-                    ]}
-                />
-
-              
-            <h3 className="m-b-15">Radio Button</h3>
-
-              <RadioButton
-                name="1"
-                text="Checked"
-                checked/>
-
-                <br></br>
-
-              <RadioButton
-                name="1"
-                text="Unchecked"/>
-                
-                <br></br>
-
-              <RadioButton
-                name="2"
-                text="Disabled"
-                disabled
-                checked/>
-
-
-            <br/><br/><br/><br/>
+      <div className="home-footer-group">
+        <div className="group a"></div>
+        <div className="group b"></div>
+        <div className="group c"></div>
+        <div className="group d"></div>
+        <div className="group e"></div>
+      </div>
             
     </NavPageContainer>
-  )
+    )
   }
 }
 
-export default Home;
+export default Home

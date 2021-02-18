@@ -3,20 +3,21 @@ import { Link } from 'react-router-dom'
 import SwitchDayNight from '../SwitchDayNight'
 
 const NavBar = (props) => {
-  const [sidebar, setSidebar] = useState(false);
+  
+  const [sidebar, setSidebar] = useState(false)
 
-  const showSidebar = () => setSidebar(!sidebar);
+  const showSidebar = () => setSidebar(!sidebar)
 
   return (
-    <div 
-      id="app-nav-wrap" 
+    <div
+      id="app-nav-wrap"
       className={sidebar ? 'toggled' : ''}
-      ref={props.ref}>           
-        <nav className="animate">       
+      ref={props.ref}> 
+        <nav className="animate">
           <div>
-            {props.goBack ? 
-            <Link to={props.goBack} className="app-back"></Link> 
-            : 
+            {props.goBack ?
+            <Link to={props.goBack} className="app-back"></Link>
+            :
             ''}
             <span className="app-name">{props.title}</span>
             <span className="app-name-short">{props.titleShort}</span>
@@ -27,7 +28,7 @@ const NavBar = (props) => {
           </div>
           <ul
             className={props.mobileHasIcons ?  "app-mobile-has-icons" : ""  }>
-           {props.children}
+            {props.children}
           </ul>
         </nav>
       </div>	 

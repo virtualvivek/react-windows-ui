@@ -5,10 +5,9 @@ const CommandBar = (props) => {
     <div className="app-command-bar">
         <div className="app-command-items">
           {props.children}
-        </div> 
+        </div>
     </div>
   )
 }
-
 
 export default CommandBar

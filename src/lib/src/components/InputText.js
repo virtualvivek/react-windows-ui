@@ -4,7 +4,7 @@ const InputText = (props) => {
 
   const inputRef = React.useRef()
 
-  const toggleInput = () =>{
+  const toggleInput = () => {
     let input = inputRef.current
     input.type === "text" ? input.type = "password" : input.type = "text"
   }
@@ -16,7 +16,7 @@ const InputText = (props) => {
       ref={inputRef}
       placeholder={props.placeholder}
       onChange={props.onChange}
-    /> 
+    />
       
     <button
       className="unmask"

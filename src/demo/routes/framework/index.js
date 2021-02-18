@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { NavBar,NavBarLink, SystemThemeFollower} from '../../../lib'
 import Home from './pages/Home'
+import Inputs from './pages/Inputs'
 import Texts from './pages/Texts'
 import Buttons from './pages/Buttons'
 import Links from './pages/Links'
@@ -31,20 +32,26 @@ const Framework = () => {
           <NavBarLink
             to="/"
             exact={true}
-            text="Form Elements"
-            icon={<i className="icons10-grid-3"></i>}
+            text="Home"
+            icon={<i className="icons10-home"></i>}
+          />
+
+          <NavBarLink
+            to="/inputs"
+            text="Inputs"
+            icon={<i className="icons10-keyboard"></i>}
           />
 
           <NavBarLink
             to="/texts"
             text="Texts"
-            icon={<i className="icons10-keyboard"></i>}
+            icon={<i className="icons10-align-left"></i>}
           />
          
           <NavBarLink
             to="/buttons"
             text="Buttons"
-            showBadge={5}
+            showBadge={7}
             icon={<i className="icons10-controller"></i>}
           />
 
@@ -121,6 +128,7 @@ const Framework = () => {
 
         <Switch>
           <Route path="/" component={Home}  exact />
+          <Route path='/inputs' component={Inputs} />
           <Route path='/texts' component={Texts} />
           <Route path='/buttons' component={Buttons} />
           <Route path='/links' component={Links} />

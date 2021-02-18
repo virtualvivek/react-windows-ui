@@ -25,7 +25,7 @@ const AvatarView = (props) => {
 
   return (
     <div className="app-avatar-container">
-        <img 
+        <img
           className={props.size === "small" ? "app-avatar small"
           : props.size === "large" ? "app-avatar large"
           : "app-avatar medium"}
@@ -42,7 +42,6 @@ const AvatarView = (props) => {
           {props.showDropShadow ? renderDropShadow() : ""}
           {props.isLoading ? renderLoader() : ""}
           {didLoad ? "" : renderLoader()}
-            
     </div>
   )
 }
@@ -51,7 +50,6 @@ AvatarView.defaultProps = {
     isLoading: false,
     objectFit: 'cover',
     alt: "avatar image"
-    
   }
 
 export default AvatarView

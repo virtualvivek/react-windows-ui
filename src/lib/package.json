@@ -16,7 +16,11 @@
     "fluentui",
     "windows10",
     "user-interface",
-    "react-component"
+    "react-component",
+    "responsive",
+    "uwp",
+    "electron",
+    "mobile"
   ],
   "author": "Vivek Verma",
   "license": "MIT",

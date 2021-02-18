@@ -10,8 +10,7 @@ const ProgressBar = (props) => {
       
       <div style={props.showIcon ? { marginLeft:'15px'} : {marginLeft:''}}>
         <span className="title">{props.title}</span>
-        <div className={props.showIcon ?
-          "app-progress withIcon" : "app-progress"}>
+        <div className={props.showIcon ? "app-progress withIcon" : "app-progress"}>
           <span style={{width: props.setProgress+'%'}}></span>
         </div>
         <span className="subtitle">{props.subtitle}</span>
@@ -22,7 +21,7 @@ const ProgressBar = (props) => {
 
 ProgressBar.defaultProps = {
   showIcon: false,
-  setProgress: 0,
+  setProgress: 0
 }
 
 export default ProgressBar

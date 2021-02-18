@@ -35,46 +35,45 @@ const MenuBar = (props) => {
   //--------------------------------------------------------------------
 
 
-  const teams_data = props.data;
-  const [teams, setTeams] = React.useState(teams_data);
-  const [search, setSearch] = React.useState("");
+  const teams_data = props.data
+  const [teams, setTeams] = React.useState(teams_data)
+  const [search, setSearch] = React.useState("")
 
-  
 
 
   return (
     <div
-        className="app-select-styled menubar"
-        onClick={showMenuBar}
-        ref={wrapperRef}>
+      className="app-select-styled menubar"
+      onClick={showMenuBar}
+      ref={wrapperRef}>
         <span>{props.label}</span>
         <ul className={menubar ? 'show' : ''}>
-            <div className="app-search-box"
-                onClick={(e)=> {e.stopPropagation()}}>
-                <input
-                  className="app-input-text app-input-search"
-                  type="search"
-                  placeholder={props.searchPlaceholder}
-                  value={search}
-                  onChange={e => {
-                    const test = teams_data.filter(team => {
-                      return team.label.toLowerCase().includes(e.target.value.toLowerCase());
-                    })
-                    setTeams(test);
-                    setSearch(e.target.value);
-                  }}
-                />
-            </div>
-            {teams.map(item => (
-            <li
-              className="option"
-              key={item.label}>
-                <Link to={item.link}>
-                  {item.icon}{item.label}
-                </Link>
-            </li>
-            ))}
-        </ul>
+          <div className="app-search-box"
+            onClick={(e)=> {e.stopPropagation()}}>
+              <input
+                className="app-input-text app-input-search"
+                type="search"
+                placeholder={props.searchPlaceholder}
+                value={search}
+                onChange={e => {
+                  const test = teams_data.filter(team => {
+                    return team.label.toLowerCase().includes(e.target.value.toLowerCase())
+                  })
+                  setTeams(test)
+                  setSearch(e.target.value)
+                }}
+              />
+          </div>
+          {teams.map(item => (
+          <li
+            className="option"
+            key={item.label}>
+              <Link to={item.link}>
+                {item.icon}{item.label}
+              </Link>
+          </li>
+          ))}
+      </ul>
     </div>
   )
 }
