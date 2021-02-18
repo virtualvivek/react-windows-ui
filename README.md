@@ -67,7 +67,7 @@ import 'react-windows-ui/icons/fonts/fonts.min.css'
 ### app-config
 
 ‣ `app-config` file contains the primary `AppColor`, `Fontfamily` used by the app <br>
-You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a><br>
+‣ You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a><br>
 OR <br>
 Create your own like this
 
