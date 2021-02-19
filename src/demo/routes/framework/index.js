@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { NavBar,NavBarLink, SystemThemeFollower} from '../../../lib'
 import Home from './pages/Home'
+import Layouts from './layouts/Layouts'
 import Inputs from './pages/Inputs'
 import Texts from './pages/Texts'
 import Buttons from './pages/Buttons'
@@ -14,9 +15,11 @@ import Icons from './pages/Icons'
 import Images from './pages/Images'
 import Dialogs from './pages/Dialogs'
 
-import ContactsLayout from './layouts/contactsLayout'
 import CardLayout from './layouts/cardLayout'
 import _404Layout from './layouts/404Layout'
+import AboutLayout from './layouts/childs/AboutLayout'
+import LoginLayout from './layouts/childs/LoginLayout'
+import ContactsLayout from './layouts/childs/ContactsLayout'
 
 const Framework = () => {
   return (
@@ -34,6 +37,12 @@ const Framework = () => {
             exact={true}
             text="Home"
             icon={<i className="icons10-home"></i>}
+          />
+
+          <NavBarLink
+            to="/layouts"
+            text="Layouts"
+            icon={<i className="icons10-parallel-tasks"></i>}
           />
 
           <NavBarLink
@@ -107,12 +116,6 @@ const Framework = () => {
           />
 
           <NavBarLink
-            to="/contactsLayout"
-            text="Contacts"
-            icon={<i className="icons10-contact-book"></i>}
-          />
-
-          <NavBarLink
             to="/cardlayout"
             text="Cards"
             icon={<i className="icons10-film"></i>}
@@ -128,6 +131,7 @@ const Framework = () => {
 
         <Switch>
           <Route path="/" component={Home}  exact />
+          <Route path='/layouts' component={Layouts} />
           <Route path='/inputs' component={Inputs} />
           <Route path='/texts' component={Texts} />
           <Route path='/buttons' component={Buttons} />
@@ -143,6 +147,8 @@ const Framework = () => {
           <Route path='/contactslayout' component={ContactsLayout} />
           <Route path='/cardlayout' component={CardLayout} />
           <Route path='/404layout' component={_404Layout} />
+          <Route path='/AboutLayout' component={AboutLayout} />
+          <Route path='/LoginLayout' component={LoginLayout} />
         </Switch>
       </Router> 
     </>

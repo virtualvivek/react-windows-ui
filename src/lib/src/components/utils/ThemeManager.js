@@ -9,7 +9,7 @@ exports.createAlphaAccentColor = createAlphaAccentColor
 var setAppDark = function() {
     // var meta = document.getElementById('statusBarColor')
     // meta.parentNode.removeChild(meta)
-    document.head.innerHTML += '<meta name="theme-color" content="#403E41" id="statusBarColor" />'
+    // document.head.innerHTML += '<meta name="theme-color" content="#403E41" id="statusBarColor" />'
     document.documentElement.style.setProperty('--color_light_bg','#111111')
     document.documentElement.style.setProperty('--color_dark_text','#FFFFFF')
     document.documentElement.style.setProperty('--color_nav','#403E41')
@@ -30,7 +30,7 @@ exports.setAppDark = setAppDark
 var setAppLight = function() {
     // var meta = document.getElementById('statusBarColor')
     // meta.parentNode.removeChild(meta)
-    document.head.innerHTML += '<meta name="theme-color" content="#EEE" id="statusBarColor" />'
+    // document.head.innerHTML += '<meta name="theme-color" content="#EEE" id="statusBarColor" />'
     document.documentElement.style.setProperty('--color_light_bg','')
     document.documentElement.style.setProperty('--color_dark_text','')
     document.documentElement.style.setProperty('--color_nav','')

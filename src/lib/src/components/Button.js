@@ -25,6 +25,9 @@ const Button = (props) => {
       : props.type ==="success" ? "app-button animate bg-success"
       : "app-button animate"
       }
+      style={{
+        width: props.width
+      }}
       type="button"
       onSubmit={props.onSubmit}
       onClick={props.onClick}

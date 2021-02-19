@@ -86,7 +86,7 @@ class Inputs extends React.Component {
             <Checkbox
               checked />
 
-            <div className="app-hr-space" s="40"></div>
+            <div className="app-space-35"></div>
 
             <Checkbox
               disabled
@@ -103,7 +103,7 @@ class Inputs extends React.Component {
               checked
               text="Unchecked" />
 
-            <div className="app-hr-space" s='20'></div>
+            <div className="app-space-20"></div>
 
             <Checkbox
               disabled
