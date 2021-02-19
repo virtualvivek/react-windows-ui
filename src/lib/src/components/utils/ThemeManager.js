@@ -23,6 +23,7 @@ var setAppDark = function() {
     document.documentElement.style.setProperty('--color_button_active_border','#EEEEEE')
     document.documentElement.style.setProperty('--color_accent_light','#FFFFFF')
     document.documentElement.style.setProperty('--color_accent_dark','#403E41')
+    return ''
 }
 exports.setAppDark = setAppDark
 
@@ -43,5 +44,6 @@ var setAppLight = function() {
     document.documentElement.style.setProperty('--color_button_active_border','')
     document.documentElement.style.setProperty('--color_accent_light','')
     document.documentElement.style.setProperty('--color_accent_dark','')
+    return ''
 }
 exports.setAppLight = setAppLight
