@@ -16,3 +16,9 @@
         background-color: var(--AppColor) !important;
     }
 }
+@mixin browser-mozilla-mobile() {
+    
+    #app-nav-wrap nav {
+        scrollbar-width: none;
+    }
+}

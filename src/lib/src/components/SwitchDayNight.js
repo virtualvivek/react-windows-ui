@@ -1,6 +1,6 @@
 import React from 'react'
-var setAppDark = require('./utils/ThemeManager').setAppDark
-var setAppLight = require('./utils/ThemeManager').setAppLight
+import setAppDark from './utils/setAppDark'
+import setAppLight from './utils/setAppLight'
 
 
 const SwitchDayNight = () => {

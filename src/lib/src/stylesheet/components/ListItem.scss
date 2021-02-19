@@ -78,14 +78,9 @@
         a {
             &:hover {
                 background: transparent;
-                border-color: transparent;
             }
             &:active {
                 background: var(--color_link_bg_hover);
-            }
-            &:active,
-            &focus {
-                border-bottom: 1px solid var(--color_light_grey);
             }
         }
     }

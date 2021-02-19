@@ -15,4 +15,9 @@
     ::-webkit-scrollbar {
         width: 2.4px;
     }
+    #app-nav-wrap nav {
+        &::-webkit-scrollbar {
+            height: 0 !important;
+        }
+    }
 }

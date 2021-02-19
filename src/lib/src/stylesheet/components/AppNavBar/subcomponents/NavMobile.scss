@@ -2,8 +2,8 @@
 
 #app-nav-wrap nav {
     width: 100%;
-    overflow-y: hidden;
     height: 93px;
+    overflow-y: hidden;
     overflow-x: scroll;
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.25);
 
@@ -53,6 +53,14 @@
                 padding-right: 30px;
             }
         }
+        .app-hr {
+            height: 20px;
+            width: 2px;
+            margin: 0 5px;
+            display: inline-flex;
+            position: relative;
+            top: 5px;
+        }
         &.app-mobile-has-icons {
             li {
                 a {
@@ -61,8 +69,8 @@
                         font-size: 28px;
                     }
                     &::after {
-                        left: 0;
                         width: 100%;
+                        left: 0;
                     }
                 }
             }
@@ -80,36 +88,31 @@
         margin-top: -40px;
         left: 70%;
     }
-    &::-webkit-scrollbar {
-        height: 0 !important;
-    }
 
     ul h1,
-    ul .app-hr,
     .app-nav-toggle,
     .app-nav-user span,
     ul.app-mobile-has-icons li a span,
     ul:not(.app-mobile-has-icons) li a i::before {
         display: none !important;
     }
-    
-    scrollbar-width: none; /* Mozilla ScrollBar */
 }
 
 .app-back {
     padding: 5px 0 0 12px !important;
 }
+.app-name {
+    padding: 10px;
+}
 
 .app-back:hover,
-.app-back.fixed.light:hover,
-#app-nav-wrap nav ul {
+#app-nav-wrap nav ul,
+.app-back.fixed.light:hover {
     li:hover,
     li a:hover,
     .app-nav-user:hover {
         background: transparent !important;
     }
 }
-.app-name {
-    padding: 10px;
-}
+
 }

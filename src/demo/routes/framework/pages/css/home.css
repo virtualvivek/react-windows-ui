@@ -9,7 +9,7 @@
     margin-top: 50px;
     margin-bottom: 25px;
     padding: 10px;
-    box-shadow: 0 8px 8px #222;
+    box-shadow: 0 4px 8px #222;
 }
 .home-header i {
     color: var(--AppColor);
@@ -64,7 +64,6 @@
 .group.e {
     opacity: 0.9;
 }
-
 .home-header *,
 .home-footer-group .group {
     transition: 0.5s ease;
