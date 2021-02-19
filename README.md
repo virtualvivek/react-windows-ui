@@ -4,7 +4,7 @@
 
 <h1 align="center">react-windows-ui</h1>
 
-<p align="center">Build full featured Windows fluent UI apps using reactjs.</p>
+<p align="center">Build full featured Windows fluent UI apps using ReactJS.</p>
 
 
 
