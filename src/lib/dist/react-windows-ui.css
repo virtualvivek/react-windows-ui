@@ -1062,18 +1062,18 @@ button.unmask {
     border-radius: 50px;
     background: #777;
     font-size: 10px;
-    text-align: center; }
+    text-align: center;
+    margin-right: 20px; }
   .app-list-item p.app-list-subtitle {
     font-size: 14px;
     line-height: 2;
-    opacity: 0.8;
+    opacity: 0.7;
     margin: 0;
     padding: 0; }
   .app-list-item p.app-list-info {
     font-size: 15px;
     flex: none; }
   .app-list-item div {
-    margin-left: 20px;
     display: inline-grid;
     align-items: center;
     height: fit-content;
@@ -1474,6 +1474,8 @@ button.unmask {
   .app-button:hover {
     border-color: transparent;
     filter: none; }
+  .app-button:active {
+    filter: opacity(0.6); }
   .app-command-bar {
     text-align: center;
     top: unset;

@@ -10,9 +10,12 @@ const ListItem = (props) => {
           props.borderBottom ? {borderBottom:''} : {borderBottom:'0px'}}>
           {props.icon}
           <img
-            src={props.img}
-            alt={props.imgAlt}
-            style={props.img ? { display:''} : {display : 'none'}}>
+            src={ props.img }
+            alt={ props.imgAlt }
+            style={ props.img ? 
+                  { display:'', borderRadius: props.imgBorderRadius } :
+                  { display : 'none'}
+                  }>
           </img>
           <div>
             <span className="app-list-title">{props.title}</span>

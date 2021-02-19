@@ -36,12 +36,13 @@
         background: #777;
         font-size: 10px;
         text-align: center;
+        margin-right: 20px;
     }
     p {
         &.app-list-subtitle {
             font-size: 14px;
             line-height: 2;
-            opacity: 0.8;
+            opacity: 0.7;
             margin: 0;
             padding: 0;
         }
@@ -51,7 +52,6 @@
         }
     }
     div {
-        margin-left: 20px;
         display: inline-grid;
         align-items: center;
         height: fit-content;

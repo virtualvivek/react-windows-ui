@@ -3,6 +3,7 @@ import {ListItem,NavPageContainer} from '../../../../lib'
 import Img1 from '../../../img/illustration/1.jpg'
 import Img2 from '../../../img/illustration/2.jpg'
 import Img3 from '../../../img/illustration/3.jpg'
+import Img4 from '../../../img/illustration/4.jpg'
 
 const Lists = () => {
   return (
@@ -30,6 +31,34 @@ const Lists = () => {
         title="User 3"
         subtitle="iOS Developer"
         info="offline"
+      />
+
+    <br/>
+
+    <h3 className="m-b-15">Users - <i>BorderRadius</i></h3>
+      <ListItem
+        img={Img4}
+        imgBorderRadius={8}
+        imgAlt="avatar1"
+        title="Magenta Riddim"
+        subtitle="5.6 MB"
+        info="stream now"
+      />
+      <ListItem
+        img={Img3}
+        imgBorderRadius={8}
+        imgAlt="avatar2"
+        title="Different World"
+        subtitle="12.0 MB"
+        info="stream now"
+      />
+      <ListItem
+        img={Img1}
+        imgBorderRadius={8}
+        imgAlt="avatar3"
+        title="La Familia"
+        subtitle="24 MB"
+        info="stream now"
       />
 
     <br/>

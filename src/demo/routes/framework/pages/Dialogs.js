@@ -2,8 +2,10 @@ import React from 'react'
 import {NavPageContainer,AvatarView,
     Dialog,Alert,Button,ListItem} from '../../../../lib'
 import AvatarImg from '../../../img/anim_avatar.jpeg'
-import Img3 from '../../../img/illustration/3.jpg'
 import Img2 from '../../../img/illustration/2.jpg'
+import Img3 from '../../../img/illustration/3.jpg'
+import Img4 from '../../../img/illustration/4.jpg'
+
 
 class Lists extends React.Component {
 
@@ -77,16 +79,19 @@ class Lists extends React.Component {
           onBackdropPress={this.toggleDialog}
           showDropShadow>
             <ListItem
-                icon={<i className="icons10-contact-book bg-accent"></i>}
-                title="Contacts"
+                img={Img4}
+                imgBorderRadius={8}
+                title="Magenta Riddim"
                 subtitle="5.6 MB"/>
             <ListItem
-                icon={<i className="icons10-news bg-accent"></i>}
-                title="News"
+                img={Img3}
+                imgBorderRadius={8}
+                title="Different World"
                 subtitle="12.0 MB"/>
             <ListItem
-                icon={<i className="icons10-paypal bg-accent"></i>}
-                title="Payments"
+                img={Img2}
+                imgBorderRadius={8}
+                title="La Familia"
                 subtitle="24 MB"/>
                
             <div style={{padding:'10px',float:'right'}}>
