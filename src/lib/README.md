@@ -3,9 +3,14 @@
 </h2>
 <h1 align="center">react-windows-ui</h1>
 
-<p align="center">Build full featured Windows fluent UI apps using reactjs.</p>
+<p align="center">Build full featured Windows fluent UI apps using ReactJS.</p>
 
 <p align="center">
+	
+  <a href="https://virtualvivek.github.io/react-windows-ui/">
+    <img src="https://img.shields.io/circleci/build/github/virtualvivek/react-windows-ui?style=flat-square&logo=circleci&token=346e79ab71a8d9c3bad22bacbebc7d7c50dae520"
+      alt="Build" />
+  </a>
 	
   <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
