@@ -77,13 +77,18 @@ Create your own like this
  /*   Change of your choice */
 }
 body {
-    font-weight: 400;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 ```
+
+## ‣ Example Code
+https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo
+
+## ‣ Library Source Code
+https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib
 
 <img src="markdown/md_npm_.png" width="75" />
 https://www.npmjs.com/package/react-windows-ui
