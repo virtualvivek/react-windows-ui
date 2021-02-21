@@ -11,9 +11,9 @@ const NavBarLink = (props) => {
     <li>
       <NavLink to={props.to} exact={props.exact}>
         {props.icon}
-        {props.showBadge ? renderBadge() : ""}
-        <span>{props.text}</span>
         
+        <span>{props.text}</span>
+        {props.showBadge ? renderBadge() : ""}
       </NavLink>
     </li>
   )

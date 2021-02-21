@@ -11,6 +11,7 @@
     box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);
     opacity: 0;
     visibility: hidden;
+    transition: opacity 0.3s ease;
 
     &.show {
         opacity: 1;
@@ -67,11 +68,11 @@
         left: 0 !important;
         margin: 0;
         background: var(--AppColor) !important;
-        transition: all 0.3s;
-        transform: translateY(-150px);
+        transition: all 0.3s ease;
+        transform: translateY(-100%);
 
         &.show {
-            transform: translateY(0);
+            transform: translateY(0%);
         }
 
         button {

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="1.0"
+VERSION="1.0.5"
 LICENSE_URL="github.com/virtualvivek/react-windows-ui/blob/master/LICENSE"
 FRAMEWORK_RESOURCE="https://github.com/virtualvivek/react-windows-ui/releases/latest"
 CREATE_ISSUE="https://github.com/virtualvivek/react-windows-ui/issues/new"

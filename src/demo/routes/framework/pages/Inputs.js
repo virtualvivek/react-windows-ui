@@ -15,15 +15,9 @@ class Inputs extends React.Component {
     }
   }
 
-  onChangeSlider1 = (e) => {   
-    this.setState({Slider1:e.target.value})
-  }
-  onChangeSlider2 = (e) => {   
-    this.setState({Slider2:e.target.value})
-  }
-  onChangeSlider3 = (e) => {   
-    this.setState({Slider3:e.target.value})
-  }
+  onChangeSlider1 = (e) => { this.setState({Slider1:e.target.value}) }
+  onChangeSlider2 = (e) => { this.setState({Slider2:e.target.value}) }
+  onChangeSlider3 = (e) => { this.setState({Slider3:e.target.value}) }
   
   render() {
   return (
@@ -61,7 +55,10 @@ class Inputs extends React.Component {
 
         <h3 className="m-b-15">SliderBar</h3>
 
-        <h1 className="m-0 color-accent" style={{fontSize:46}}>{this.state.Slider1}%</h1>
+          <h1 className="m-0 color-accent"
+            style={{fontSize:46}}>
+              {this.state.Slider1}%
+          </h1>
           <SliderBar 
             value={this.state.Slider1}
             showValue={false}

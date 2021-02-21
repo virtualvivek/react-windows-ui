@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { NavBar,NavBarLink, SystemThemeFollower} from '../../../lib'
 import Home from './pages/Home'
-import Layouts from './layouts/Layouts'
+import Layouts from './pages/Layouts'
 import Inputs from './pages/Inputs'
 import Texts from './pages/Texts'
 import Buttons from './pages/Buttons'
@@ -16,11 +16,11 @@ import Images from './pages/Images'
 import Dialogs from './pages/Dialogs'
 
 import _404Layout from './layouts/404Layout'
-import CardLayout from './layouts/cardLayout'
-import AboutLayout from './layouts/childs/AboutLayout'
-import LoginLayout from './layouts/childs/LoginLayout'
-import ContactsLayout from './layouts/childs/ContactsLayout'
-import ListLayout from './layouts/childs/ListLayout'
+import CardLayout from './layouts/CardLayout'
+import AboutLayout from './layouts/AboutLayout'
+import LoginLayout from './layouts/LoginLayout'
+import ContactsLayout from './layouts/ContactsLayout'
+import ListLayout from './layouts/ListLayout'
 
 const Framework = () => {
   return (
@@ -31,7 +31,8 @@ const Framework = () => {
           title="React Windows UI"
           titleShort={<i className="icons10-responsive"></i>}
        // titleShort="R" render text or icons
-          mobileHasIcons={true}>
+       // mobileHasIcons={true}
+          >
 
           <NavBarLink
             to="/"

@@ -11,15 +11,9 @@ class Buttons extends React.Component {
     }
   }
 
-  setDisabled = () => {
-    this.setState({stateLoading: false,stateDisabled: true})
-  }
-  setLoading = () => {
-    this.setState({stateLoading: true,stateDisabled: false})
-  }
-  setRegular = () => {
-    this.setState({stateLoading: false,stateDisabled: false})
-  }
+  setDisabled = () => { this.setState({stateLoading: false,stateDisabled: true}) }
+  setLoading = () => { this.setState({stateLoading: true,stateDisabled: false}) }
+  setRegular = () => { this.setState({stateLoading: false,stateDisabled: false}) }
 
   render() {
 
