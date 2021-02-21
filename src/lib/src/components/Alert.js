@@ -9,8 +9,8 @@ const Alert = (props) => {
       onClick={props.onBackdropPress}>       
     </div>
     <div
-      className="app-alert"
-      style={props.isVisible ? { visibility:'visible'} : {visibility : 'hidden'}}> 
+      className={props.isVisible ?
+        "app-alert show" : "app-alert"}> 
         <h1>{props.title}</h1>
         <div className="alert-message">{props.message}</div>
         <div className="btn-container">

@@ -15,11 +15,12 @@ import Icons from './pages/Icons'
 import Images from './pages/Images'
 import Dialogs from './pages/Dialogs'
 
-import CardLayout from './layouts/cardLayout'
 import _404Layout from './layouts/404Layout'
+import CardLayout from './layouts/cardLayout'
 import AboutLayout from './layouts/childs/AboutLayout'
 import LoginLayout from './layouts/childs/LoginLayout'
 import ContactsLayout from './layouts/childs/ContactsLayout'
+import ListLayout from './layouts/childs/ListLayout'
 
 const Framework = () => {
   return (
@@ -65,6 +66,18 @@ const Framework = () => {
           />
 
           <NavBarLink
+            to="/images"
+            text="Images"
+            icon={<i className="icons10-picture"></i>}
+          />
+                    
+          <NavBarLink
+            to="/dialogs"
+            text="Dialogs"
+            icon={<i className="icons10-notification-image"></i>}
+          />
+
+          <NavBarLink
             to="/links"
             text="Links"
             icon={<i className="icons10-clip"></i>}
@@ -93,18 +106,7 @@ const Framework = () => {
             text="Icons"
             icon={<i className="icons10-deathly-hallows"></i>}
           />
-                    
-          <NavBarLink
-            to="/images"
-            text="Images"
-            icon={<i className="icons10-picture"></i>}
-          />
-                    
-          <NavBarLink
-            to="/dialogs"
-            text="Dialogs"
-            icon={<i className="icons10-notification-image"></i>}
-          />
+                
                    
           <h1>Layouts</h1>
           <div className="app-hr"></div>
@@ -135,20 +137,21 @@ const Framework = () => {
           <Route path='/inputs' component={Inputs} />
           <Route path='/texts' component={Texts} />
           <Route path='/buttons' component={Buttons} />
+          <Route path='/images' component={Images} />
+          <Route path='/dialogs' component={Dialogs} />
           <Route path='/links' component={Links} />
           <Route path='/progress' component={ProgressControls} />
           <Route path='/themes' component={Themes} />
           <Route path='/gauges' component={Gauges} />
           <Route path='/lists' component={Lists} />
           <Route path='/icons' component={Icons} />
-          <Route path='/images' component={Images} />
-          <Route path='/dialogs' component={Dialogs} />
-
+          
           <Route path='/contactslayout' component={ContactsLayout} />
           <Route path='/cardlayout' component={CardLayout} />
           <Route path='/404layout' component={_404Layout} />
           <Route path='/AboutLayout' component={AboutLayout} />
           <Route path='/LoginLayout' component={LoginLayout} />
+          <Route path='/ListLayout' component={ListLayout} />
         </Switch>
       </Router> 
     </>

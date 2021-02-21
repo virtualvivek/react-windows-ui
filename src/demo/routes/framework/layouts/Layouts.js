@@ -42,6 +42,17 @@ const Layouts = () => {
                 icon={<i className="icons10-contact-book"></i>} 
             />
         </Card>
+        <Card
+            display="inline-block"
+            focused
+            margin="5px 5px 5px 0">
+            <LinkCoumpound  
+                to="/ListLayout"
+                title="Lists"
+                subtitle="List illustrations"
+                icon={<i className="icons10-list"></i>} 
+            />
+        </Card>
         </div>
 
     <br/><br/><br/><br/><br/><br/>

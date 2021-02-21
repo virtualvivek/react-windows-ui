@@ -10,7 +10,7 @@
         border-color: #666;
     }
 
-    + .unmask::after {
+    + div button.unmask::after {
         @extend .font-icon-dark;
         content: "\f189";
         font-size: 24px;
@@ -21,13 +21,25 @@
         @extend .input-field-primary-disabled;
     }
 }
-input[type="password"].app-input-text + .unmask::after {
-    content: "\f1db";
-}
-button.unmask {
-    @extend .vertical-align-middle;
-    margin-left: -40px;
-    background: transparent;
-    border: none;
+.app-input-text-container {
+    display: inline-block;
+    .app-input-status-container {
+        position: absolute;
+        top: 4px;
+        right: 5px;
+        i {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    }
+    width: min-content;
     position: relative;
+    input[type="password"].app-input-text + div button.unmask::after {
+        content: "\f1db";
+    }
+    button.unmask {
+        @extend .vertical-align-middle;
+        background: transparent;
+        border: none;
+    }
 }

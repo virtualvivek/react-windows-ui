@@ -71,7 +71,7 @@
   color: var(--color_button_hover); }
 
 .color-accent, #app-nav-wrap nav ul li span::after, .app-link, .app-link-compound.accent i,
-.app-link-compound i.accent, .app-list-item i.accent {
+.app-link-compound i.accent {
   color: var(--AppColor); }
 
 .color-accent-light {
@@ -90,7 +90,7 @@
 .app-progress-container .subtitle {
   font-weight: 500; }
 
-.font-icon-dark, .font-icon-light, .app-back::after, #app-nav-wrap .app-nav-toggle::after, .app-input-text + .unmask::after, .app-search-bar button::after, .app-search-box::after, .app-select-styled::after {
+.font-icon-dark, .font-icon-light, .app-back::after, #app-nav-wrap .app-nav-toggle::after, .app-input-text + div button.unmask::after, .app-search-bar button::after, .app-search-box::after, .app-select-styled::after {
   font-family: icons10;
   color: var(--color_dark_text); }
 
@@ -106,7 +106,7 @@
 #app-nav-wrap.toggled nav ul h1, .app-color-picker-item .item, .app-switch input {
   display: none; }
 
-.vertical-align-middle, .app-button, button.unmask, .app-label .app-radio + span {
+.vertical-align-middle, .app-button, .app-input-text-container button.unmask, .app-label .app-radio + span {
   vertical-align: middle; }
 
 .outline-none, #app-nav-wrap nav a:focus, .app-input-text:focus, .app-link:focus {
@@ -561,7 +561,12 @@ p.light {
   z-index: 11;
   background: var(--alpha_c);
   backdrop-filter: blur(30px);
-  box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25); }
+  box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden; }
+  .app-alert.show {
+    opacity: 1;
+    visibility: visible; }
   .app-alert h1 {
     margin: 0;
     padding: 25px 32px 10px 32px;
@@ -791,19 +796,27 @@ label.app-checkbox input[type="checkbox"] {
 .app-input-text:focus {
   border-color: #666; }
 
-.app-input-text + .unmask::after {
+.app-input-text + div button.unmask::after {
   content: "\f189";
   font-size: 24px;
   cursor: pointer; }
 
-input[type="password"].app-input-text + .unmask::after {
-  content: "\f1db"; }
-
-button.unmask {
-  margin-left: -40px;
-  background: transparent;
-  border: none;
+.app-input-text-container {
+  display: inline-block;
+  width: min-content;
   position: relative; }
+  .app-input-text-container .app-input-status-container {
+    position: absolute;
+    top: 4px;
+    right: 5px; }
+    .app-input-text-container .app-input-status-container i {
+      vertical-align: middle;
+      margin-right: 10px; }
+  .app-input-text-container input[type="password"].app-input-text + div button.unmask::after {
+    content: "\f1db"; }
+  .app-input-text-container button.unmask {
+    background: transparent;
+    border: none; }
 
 .app-input-search {
   height: inherit;
@@ -1050,12 +1063,6 @@ button.unmask {
     .app-list-item a:active {
       transform: scale(0.99, 0.99);
       transition: 0.04s ease; }
-  .app-list-item i {
-    font-size: 50px;
-    line-height: 0; }
-    .app-list-item i.bg-accent::before {
-      font-size: 34px;
-      padding: 8px; }
   .app-list-item img {
     width: 50px;
     height: 50px;
@@ -1347,7 +1354,22 @@ button.unmask {
   background-color: #999; }
 
 #app-nav-wrap nav::-webkit-scrollbar {
-  width: 2px !important; }
+  width: 2px; }
+
+#app-nav-wrap nav:hover::-webkit-scrollbar {
+  width: 14px; }
+
+#app-nav-wrap nav::-webkit-scrollbar-thumb {
+  background-color: #99999933; }
+
+#app-nav-wrap nav::-webkit-scrollbar-thumb:hover {
+  background-color: #99999966; }
+
+#app-nav-wrap nav::-webkit-scrollbar-thumb:active {
+  background-color: #999999; }
+
+#app-nav-wrap.toggled nav:hover::-webkit-scrollbar {
+  width: 2px; }
 
 @-moz-document url-prefix() {
   ::-moz-selection {
@@ -1458,7 +1480,11 @@ button.unmask {
     width: 100% !important;
     left: 0 !important;
     margin: 0;
-    background: var(--AppColor) !important; }
+    background: var(--AppColor) !important;
+    transition: all 0.3s;
+    transform: translateY(-150px); }
+    .app-alert.show {
+      transform: translateY(0); }
     .app-alert button {
       padding: 3px 30px;
       margin: 15px 15px 15px 0; }
@@ -1486,7 +1512,11 @@ button.unmask {
     width: 100%;
     left: 0;
     bottom: 0;
-    top: initial; }
+    top: initial;
+    border-top: 1px solid #999;
+    border-left: none;
+    border-right: none;
+    transform: translateY(150px); }
   input[type="date"].app-input-text::before {
     content: attr(placeholder);
     padding-right: 5px; }

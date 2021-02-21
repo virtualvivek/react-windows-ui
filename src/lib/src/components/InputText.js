@@ -1,4 +1,5 @@
 import React from 'react'
+import LoaderBusyWrapper from './_common/LoaderBusyWrapper'
 
 const InputText = (props) => {
 
@@ -9,22 +10,44 @@ const InputText = (props) => {
     input.type === "text" ? input.type = "password" : input.type = "text"
   }
 
+  const renderStatusSuccess = () => {
+    return <i className="icons10-checkmark color-success font-size-18px"></i>
+  }
+  const renderStatusDanger = () => {
+    return <i className="icons10-cross color-danger font-size-18px"></i>
+  }
+  const renderLoader = () => {
+    return  <div className="app-loader-busy small" style={{top:'5px'}}>
+              <LoaderBusyWrapper/>
+            </div>
+  }
+
   return (
-    <>
-    <input className="app-input-text"
-      type={props.type}
-      ref={inputRef}
-      placeholder={props.placeholder}
-      onChange={props.onChange}
-    />
-      
-    <button
-      className="unmask"
-      type="button"
-      onClick={toggleInput}
-      style={props.type==="password" ? { display:'inline-block'} : {display : 'none'}}>
-    </button>
-    </>
+    <div className="app-input-text-container">
+      <input
+        className="app-input-text"
+        type={props.type}
+        ref={inputRef}
+        placeholder={props.placeholder}
+        onChange={props.onChange}
+      />
+        
+      <div className="app-input-status-container">
+
+        { props.setStatus === "success" ? renderStatusSuccess() : '' }
+        { props.setStatus === "danger" ? renderStatusDanger() : '' }
+        { props.setStatus === "loading" ? renderLoader() : '' }
+
+        <button
+          className="unmask"
+          type="button"
+          onClick={toggleInput}
+          style={props.type==="password" ?
+                { display:'inline-block'} : {display : 'none'
+                }}>
+        </button>
+      </div>
+    </div>
   )
 }
 

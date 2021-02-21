@@ -36,5 +36,9 @@
         left: 0;
         bottom: 0;
         top: initial;
+        border-top: 1px solid #999;
+        border-left: none;
+        border-right: none;
+        transform: translateY(150px); //adding more 100px to animate like bottomsheet
     }
 }

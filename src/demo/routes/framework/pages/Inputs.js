@@ -111,11 +111,29 @@ class Inputs extends React.Component {
 
           </div>
 
-          <br></br>
+          <br/>
           <h3 className="m-b-15">Inputs</h3>
                
             <InputText
               placeholder="Enter a text"/>
+
+            <br/><br/>
+
+            <InputText
+              placeholder="Enter a text success"
+              setStatus="success"/>
+
+            <br/><br/>
+
+            <InputText
+              placeholder="Enter a text danger"
+              setStatus="danger"/>
+
+            <br/><br/>
+
+            <InputText
+              placeholder="Enter a text loading"
+              setStatus="loading"/>
 
             <br/><br/>
 
