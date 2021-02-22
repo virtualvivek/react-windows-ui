@@ -1,9 +1,25 @@
 import React from 'react'
-import { NavPageContainer,CommandBar,Button,InputSearchBox,ImageView } from '../../../../lib'
+import { NavPageContainer,CommandBar,Button,InputSearchBox,ImageView,Dialog } from '../../../../lib'
 import Img from '../../../img/illustration/macos.jpg'
 
 
 class CommandBarLayout extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            showDialog :false
+        }
+    }
+
+    toggleDialog = () => {
+        if(this.state.showDialog){
+            this.setState({showDialog: false});
+        }
+        else {
+            this.setState({showDialog: true}); 
+        } 
+    }
 
   render() {
     return (
@@ -34,8 +50,8 @@ class CommandBarLayout extends React.Component {
 
         <div className="app-flex-center" style={{marginTop:-280,marginLeft:-20}}>
             <CommandBar
-            position="relative"
-            showDropShadow>
+                position="relative"
+                showDropShadow>
                 <Button
                     icon={<i className="icons10-share"></i>}
                     value="Share"/>
@@ -50,9 +66,41 @@ class CommandBarLayout extends React.Component {
                     value="Save"/>
                 <Button
                     icon={<i className="icons10-more"></i>}
-                    value=""/>
+                    value=""
+                    onClick={this.toggleDialog}/>
             </CommandBar>
         </div>
+
+        <Dialog
+          isVisible={this.state.showDialog}
+          onBackdropPress={this.toggleDialog}
+          padding={5}
+          showDropShadow>
+              <Button
+                width={'100%'}
+                icon={<i className="icons10-share"></i>}
+                value="Share"/>
+            <Button
+                width={'100%'}
+                icon={<i className="icons10-pencil"></i>}
+                value="Edit"/>
+            <Button
+                width={'100%'}
+                icon={<i className="icons10-trash"></i>}
+                value="Delete"/>    
+            <Button
+                width={'100%'}
+                type="primary"
+                icon={<i className="icons10-save"></i>}
+                value="Save"/>
+               
+            <div style={{float:'right'}}>
+                <Button
+                    value="Close"
+                    onClick={this.toggleDialog}
+                />
+            </div>
+        </Dialog>
 
         
 

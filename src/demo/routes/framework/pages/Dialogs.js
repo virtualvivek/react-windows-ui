@@ -15,7 +15,7 @@ class Lists extends React.Component {
             showDialog :false,
             showAlert :false
         }
-      }
+    }
 
     toggleDialog = () => {
         if(this.state.showDialog){

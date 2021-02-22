@@ -8,17 +8,26 @@ const Dialog = (props) => {
   return (
     <>
     <div
-      onClick={props.onBackdropPress}
-      className={props.isVisible ?
-      "app-dim-overlay show" : "app-dim-overlay"}>
+      onClick = { props.onBackdropPress }
+      className = {
+        props.isVisible ?
+        "app-dim-overlay show" : "app-dim-overlay"
+        }>
     </div>
     <div
-      className={props.isVisible ?
-      "app-dialog show" : "app-dialog"}
-      style={
+      className = { props.isVisible ? "app-dialog show" : "app-dialog" }
+      style = {
         props.showDropShadow ?
-        {backgroundColor: 'var(--color_light_grey_alpha)',backdropFilter:'blur(24px)'}
-        : {backgroundColor:''}
+        {
+          backgroundColor: 'var(--color_light_grey_alpha)',
+          backdropFilter:'blur(24px)',
+          padding: props.padding
+        }
+        : 
+        {
+          backgroundColor:'',
+          padding: props.padding
+        }
       }
     >
        {props.children}

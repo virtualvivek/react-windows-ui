@@ -24,7 +24,7 @@ const Images = () => {
         <div className="app-flex">
           <AvatarView
               src={IronMan}
-              size="large"    
+              size="large"
               showDropShadow/>
               &nbsp;&nbsp;
           <div className="app-grid">

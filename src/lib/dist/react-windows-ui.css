@@ -675,7 +675,7 @@ label.app-checkbox input[type="checkbox"] {
   height: 60px;
   text-align: center;
   z-index: 2;
-  box-shadow: 0 0 2vh rgba(0, 0, 0, 0.25); }
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.38); }
   .app-command-bar.fixed {
     width: 100%;
     position: fixed;
