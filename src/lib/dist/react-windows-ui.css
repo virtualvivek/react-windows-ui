@@ -737,16 +737,12 @@ label.app-checkbox input[type="checkbox"] {
   left: 32vw;
   border: 1px solid #999;
   box-shadow: 0 0 7vh rgba(0, 0, 0, 0.14);
-  overflow-y: scroll;
+  overflow-y: auto;
   z-index: 11;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
   transform: translateY(50px); }
-  .app-dialog::-webkit-scrollbar-thumb {
-    background-color: #99999945; }
-  .app-dialog::-webkit-scrollbar {
-    width: 7px; }
   .app-dialog.show {
     opacity: 1;
     transform: translateY(0);

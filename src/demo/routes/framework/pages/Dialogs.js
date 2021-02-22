@@ -42,7 +42,7 @@ class Lists extends React.Component {
         <h1>Dialogs</h1>
 
         <br/>
-        <div className="app-flex">
+        <div className="app-flex app-align-center">
         <AvatarView
             size="large" 
             src={AvatarImg}
@@ -113,7 +113,7 @@ class Lists extends React.Component {
         <br/><br/>
   
         </NavPageContainer>
-      );
+      )
     }
   }
 

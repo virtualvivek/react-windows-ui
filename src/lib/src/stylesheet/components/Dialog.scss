@@ -8,15 +8,8 @@
     left: 32vw;
     border: 1px solid #999;
     box-shadow: 0 0 7vh rgba(0, 0, 0, 0.14);
-    overflow-y: scroll;
+    overflow-y: auto;
     z-index: 11;
-    
-    &::-webkit-scrollbar-thumb {
-        background-color: #99999945;
-    }
-    &::-webkit-scrollbar {
-        width: 7px;
-    }
 
     opacity: 0;
     visibility: hidden;

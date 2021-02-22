@@ -1,27 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { NavPageContainer,NavPageContainerRight,CommandBar,InputSearchBox,Button } from '../../../../lib'
+import { NavPageContainer,NavPageContainerRight } from '../../../../lib'
 
 const Texts = () => {
   return (
     <NavPageContainer hasPadding>
         <h1>Texts</h1>
-
-        <CommandBar>
-            <Button
-                icon={<i className="icons10-share"></i>}
-                value="Share"/>
-            <Button
-                icon={<i className="icons10-save"></i>}
-                value="Save"/>
-            <Button
-                icon={<i className="icons10-more"></i>}
-                value=""/>
-            &nbsp;&nbsp; 
-            <InputSearchBox 
-                placeholder="Enter to Search"/>
-            &nbsp;&nbsp;
-        </CommandBar>
 
             <h1>Heading1</h1>
             <h2>Heading2</h2>

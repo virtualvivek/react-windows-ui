@@ -21,7 +21,7 @@ const Images = () => {
       <NavPageContainerInner>
         <h3 className="m-b-15">AvatarView</h3>
 
-        <div className="app-flex">
+        <div className="app-flex app-align-center">
           <AvatarView
               src={IronMan}
               size="large"
