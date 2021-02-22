@@ -64,7 +64,7 @@
 .color-dark-text, body, .app-name, .app-back, .app-button, .app-link-compound, .app-link-compound span, .app-select-styled select, .app-range-slider span {
   color: var(--color_dark_text); }
 
-.color-light-bg, .app-button.accent {
+.color-light-bg {
   color: var(--color_light_bg); }
 
 .color-button-hover {
@@ -625,6 +625,8 @@ button:focus, button:active, button:focus:active,
   .app-button:active {
     filter: opacity(0.6);
     transition: 0.04s ease; }
+  .app-button.accent {
+    color: #fff; }
   .app-button.animate:active {
     transform: scale(0.95, 0.95); }
   .app-button[disabled] span {

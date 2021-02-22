@@ -74,9 +74,9 @@ class CommandBarLayout extends React.Component {
         <Dialog
           isVisible={this.state.showDialog}
           onBackdropPress={this.toggleDialog}
-          padding={5}
+          padding="0 0 10px 0"
           showDropShadow>
-              <Button
+            <Button
                 width={'100%'}
                 icon={<i className="icons10-share"></i>}
                 value="Share"/>
@@ -93,13 +93,12 @@ class CommandBarLayout extends React.Component {
                 type="primary"
                 icon={<i className="icons10-save"></i>}
                 value="Save"/>
-               
-            <div style={{float:'right'}}>
-                <Button
-                    value="Close"
-                    onClick={this.toggleDialog}
-                />
-            </div>
+            <div className="app-hr"></div>
+            <Button
+                width={'100%'}
+                value="Close"
+                onClick={this.toggleDialog}/>
+            <br/>
         </Dialog>
 
         

@@ -30,7 +30,7 @@ button,
     }
     &.accent {
         @extend .background-color-accent;
-        @extend .color-light-bg;
+        color: #fff;
     }
     &.animate:active {
         transform: scale(0.950, 0.950);
