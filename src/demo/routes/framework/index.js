@@ -16,10 +16,13 @@ import Images from './pages/Images'
 import Dialogs from './pages/Dialogs'
 
 import _404Layout from './layouts/404Layout'
-import CardLayout from './layouts/CardLayout'
+
 import AboutLayout from './layouts/AboutLayout'
-import LoginLayout from './layouts/LoginLayout'
+import CardLayout from './layouts/CardLayout'
+import CommanBarLayout from './layouts/CommandBarLayout'
 import ContactsLayout from './layouts/ContactsLayout'
+import LoginLayout from './layouts/LoginLayout'
+
 import ListLayout from './layouts/ListLayout'
 
 const Framework = () => {
@@ -147,10 +150,11 @@ const Framework = () => {
           <Route path='/lists' component={Lists} />
           <Route path='/icons' component={Icons} />
           
+          <Route path='/AboutLayout' component={AboutLayout} />
+          <Route path='/CommandBarLayout' component={CommanBarLayout} />
           <Route path='/contactslayout' component={ContactsLayout} />
           <Route path='/cardlayout' component={CardLayout} />
           <Route path='/404layout' component={_404Layout} />
-          <Route path='/AboutLayout' component={AboutLayout} />
           <Route path='/LoginLayout' component={LoginLayout} />
           <Route path='/ListLayout' component={ListLayout} />
         </Switch>

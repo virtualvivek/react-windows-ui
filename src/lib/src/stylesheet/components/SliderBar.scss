@@ -86,13 +86,13 @@
     }
     .popup {
         background: var(--color_button);
+        box-shadow: 0 0 4px var(--color_button);
         display: inline-block;
         position: absolute;
         top: -30px;
         border-radius: 7px;
         font-size: 12px;
         padding: 5px;
-        box-shadow: 0 0 4px var(--color_button);
         transition: 0.08s ease;
         visibility: hidden;
         opacity: 0;
@@ -107,8 +107,8 @@
         padding: 10px 0 15px 0;
 
         input[type="range"] {
-            top: 0;
             width: 100%;
+            top: 0;
         }
         span {
             line-height: 2.4;

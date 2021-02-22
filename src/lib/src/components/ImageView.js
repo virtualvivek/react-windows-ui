@@ -23,14 +23,16 @@ const AvatarView = (props) => {
         style={{
             width: props.width,
             height: props.height,
-            borderRadius : props.borderRadius
+            padding: props.padding,
+            margin: props.margin
         }}>
         <img
           className="app-image-view"
           src={props.src}
           alt={props.alt}
           style={{
-            objectFit : props.objectFit
+            objectFit : props.objectFit,
+            borderRadius: props.borderRadius
           }}
           onLoad={() => setLoad(true)}
         />

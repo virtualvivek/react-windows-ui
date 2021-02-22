@@ -17,7 +17,7 @@ const LoginLayout = () => {
                 placeholder="Enter Password"
             />
             <br/>
-            <div className="app-flex-center">
+            <div className="app-flex app-align-center">
                 <p>Remember Me</p>
                 <div className="app-space-45"></div>
                 <Switch checked/>
@@ -30,7 +30,7 @@ const LoginLayout = () => {
 
         <br/>
 
-        <div className="app-flex-center">
+        <div className="app-flex app-align-center">
             <h4 className="light m-tb-10 font-size-16px">Don't have an account &nbsp;</h4>
             <Link to="#" className="app-link">SignUp</Link>
         </div>

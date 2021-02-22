@@ -63,12 +63,9 @@
 
 @mixin list-item-mobile() {
     .app-list-item {
-        a {
+        a:not(:active) {
             &:hover {
                 background: transparent;
-            }
-            &:active {
-                background: var(--color_link_bg_hover);
             }
         }
     }

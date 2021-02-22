@@ -5,26 +5,26 @@ import Contacts from './data/contactsData.json'
 
 class ContactsLayout extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {   
-            data: Contacts,
-            filteredData: Contacts
-        }
+  constructor() {
+      super();
+      this.state = {   
+          data: Contacts,
+          filteredData: Contacts
       }
+    }
 
-      handleInputChange = event => {
-        const query = event.target.value
-        this.setState(prevState => {
-          const filteredData = prevState.data.filter(element => {
-            return element.name.toLowerCase().includes(query.toLowerCase())
-          })
-          return {
-            query,
-            filteredData
-          }
+    handleInputChange = event => {
+      const query = event.target.value
+      this.setState(prevState => {
+        const filteredData = prevState.data.filter(element => {
+          return element.name.toLowerCase().includes(query.toLowerCase())
         })
-      }
+        return {
+          query,
+          filteredData
+        }
+      })
+    }
 
   render() {
     return (
@@ -72,7 +72,7 @@ class ContactsLayout extends React.Component {
     <br/><br/><br/><br/><br/><br/>
 
     </NavPageContainer>
-  );
+    )
   }
 }
 

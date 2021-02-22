@@ -121,7 +121,7 @@
 .tap-highlight-none, label.app-checkbox, .app-link-compound, .app-list-item a, .app-switch {
   -webkit-tap-highlight-color: transparent; }
 
-.transition-background-400ms, body, .app-hr, .app-name, #app-nav-wrap nav, label.app-checkbox input[type="checkbox"]::before, .app-header-fixed-container, .app-input-text, .app-search-bar, .app-search-bar button, .app-progress-container .app-progress, .app-radio, .app-select-styled, .app-select-styled select, .app-sticky-header {
+.transition-background-400ms, body, .app-hr, .app-name, #app-nav-wrap nav, label.app-checkbox input[type="checkbox"]::before, .app-command-bar, .app-header-fixed-container, .app-input-text, .app-search-bar, .app-search-bar button, .app-progress-container .app-progress, .app-radio, .app-select-styled, .app-select-styled select, .app-sticky-header {
   transition: background 0.4s; }
 
 .transition-all-400ms, .app-back, #app-nav-wrap .app-nav-toggle, #app-nav-wrap nav.animate ul li a, .app-button, .app-card-default, .app-link-compound, .app-list-item a {
@@ -256,6 +256,10 @@ a {
 
 .app-flex-center {
   display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.app-align-center {
   align-items: center; }
 
 .app-flex {
@@ -667,23 +671,31 @@ label.app-checkbox input[type="checkbox"] {
     border-width: 0 2px 2px 0; }
 
 .app-command-bar {
-  width: 100%;
+  width: max-content;
   height: 60px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  text-align: end;
-  z-index: 2; }
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 0 2vh rgba(0, 0, 0, 0.25); }
+  .app-command-bar.fixed {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: end;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25); }
   .app-command-bar .app-button {
     height: 60px;
     display: inline-grid;
     align-content: center; }
-    .app-command-bar .app-button:not(:active) {
+    .app-command-bar .app-button:not(:hover) {
       background-color: transparent; }
+    .app-command-bar .app-button:hover {
+      border-color: transparent; }
     .app-command-bar .app-button i {
       font-size: 30px; }
     .app-command-bar .app-button span {
-      font-size: 12px; }
+      font-size: 12px;
+      padding: 0 !important; }
 
 .app-color-picker-item {
   padding: 0 4px 2px 0; }
@@ -1321,13 +1333,13 @@ label.app-checkbox input[type="checkbox"] {
     font-size: 20px; }
   .app-range-slider .popup {
     background: var(--color_button);
+    box-shadow: 0 0 4px var(--color_button);
     display: inline-block;
     position: absolute;
     top: -30px;
     border-radius: 7px;
     font-size: 12px;
     padding: 5px;
-    box-shadow: 0 0 4px var(--color_button);
     transition: 0.08s ease;
     visibility: hidden;
     opacity: 0; }
@@ -1342,9 +1354,9 @@ label.app-checkbox input[type="checkbox"] {
     font-size: 28px; }
   ._404-container ._404-lower {
     font-size: 16px; }
-  ._404-container .app-flex-center i {
+  ._404-container .app-flex i {
     font-size: 65px; }
-  ._404-container .app-flex-center p {
+  ._404-container .app-flex p {
     margin: 5px;
     font-size: 0.85em; }
 
@@ -1507,11 +1519,14 @@ label.app-checkbox input[type="checkbox"] {
     filter: none; }
   .app-button:active {
     filter: opacity(0.6); }
-  .app-command-bar {
+  .app-command-bar .app-button:not(:active):hover {
+    background-color: transparent;
+    filter: none; }
+  .app-command-bar.fixed {
     text-align: center;
     top: unset;
     bottom: 0; }
-    .app-command-bar .app-search-box {
+    .app-command-bar.fixed .app-search-box {
       width: 45vw; }
   .app-dialog {
     width: 100%;
@@ -1525,24 +1540,17 @@ label.app-checkbox input[type="checkbox"] {
   input[type="date"].app-input-text::before {
     content: attr(placeholder);
     padding-right: 5px; }
-  .app-search-bar button:hover {
+  .app-search-bar button:not(:active):hover {
     background: var(--color_nav); }
-    .app-search-bar button:hover::after {
+    .app-search-bar button:not(:active):hover::after {
       color: var(--color_dark_text) !important; }
-  .app-search-bar button:active {
-    opacity: 1;
-    background-color: var(--AppColor); }
-    .app-search-bar button:active::after {
-      color: var(--color_light_bg) !important; }
   .app-link:hover {
     color: var(--AppColor); }
   .app-link-compound:hover, .app-link-compound.accent:hover {
     background: transparent;
     border-color: transparent; }
-  .app-list-item a:hover {
+  .app-list-item a:not(:active):hover {
     background: transparent; }
-  .app-list-item a:active {
-    background: var(--color_link_bg_hover); }
   .app-loader-bar {
     width: 90%; }
   .app-progress-container .app-progress {
@@ -1559,7 +1567,7 @@ label.app-checkbox input[type="checkbox"] {
     display: flex;
     padding: 10px 0 15px 0; }
     .app-range-slider input[type="range"] {
-      top: 0;
-      width: 100%; }
+      width: 100%;
+      top: 0; }
     .app-range-slider span {
       line-height: 2.4; } }

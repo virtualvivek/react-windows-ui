@@ -88,8 +88,8 @@ const ListLayout = () => {
 
     <br/><br/><br/><br/>
 
-</NavPageContainer>
-  );
+  </NavPageContainer>
+  )
 }
 
 

@@ -77,18 +77,11 @@
 
 @mixin input-search-mobile() {
     .app-search-bar {
-        button {
+        button:not(:active) {
             &:hover {
                 background: var(--color_nav);
                 &::after {
                     color: var(--color_dark_text) !important;
-                }
-            }
-            &:active {
-                opacity: 1;
-                background-color: var(--AppColor);
-                &::after {
-                    color: var(--color_light_bg) !important;
                 }
             }
         }
