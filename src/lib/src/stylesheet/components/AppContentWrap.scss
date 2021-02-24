@@ -6,7 +6,7 @@
     }
 }
 
-#app-nav-wrap.toggled + .app-section-container {
+.app-nav-wrap.toggled + .app-section-container {
     padding-left: 74px;
     &.has-padding {
         padding-left: 104px;

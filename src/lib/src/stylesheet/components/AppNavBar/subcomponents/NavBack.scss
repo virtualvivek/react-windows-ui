@@ -23,31 +23,31 @@
     font-size: 30px;
     padding: 7px 22px !important;
 
-        &:hover {
-            @extend .background-color-link-bg-hover;
-        }
-        &:active {
-            @extend .background-color-link-bg-active;
-        }
-        &::after {
-            @extend .font-icon-dark;
-            content: "\f113";
-            position: relative;
-        }
-        &.fixed {
-            height: auto;
-            text-align: center;
-            font-size: 40px;
-            position: absolute;
-            padding: 10px 20px !important;
+    &:hover {
+        @extend .background-color-link-bg-hover;
+    }
+    &:active {
+        @extend .background-color-link-bg-active;
+    }
+    &::after {
+        @extend .font-icon-dark;
+        content: "\f113";
+        position: relative;
+    }
+    &.fixed {
+        height: auto;
+        text-align: center;
+        font-size: 40px;
+        position: absolute;
+        padding: 10px 20px !important;
 
-            &.light {
-                &:hover {
-                    background: #EEEEEE44 !important;
-                }
-                &::after {
-                    @extend .color-white;
-                }
+        &.light {
+            &:hover {
+                background: #EEEEEE44 !important;
+            }
+            &::after {
+                @extend .color-white;
             }
         }
+    }
 }

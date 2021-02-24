@@ -498,9 +498,9 @@ p.light {
   .app-section-container.has-padding {
     padding-left: 310px; }
 
-#app-nav-wrap.toggled + .app-section-container {
+.app-nav-wrap.toggled + .app-section-container {
   padding-left: 74px; }
-  #app-nav-wrap.toggled + .app-section-container.has-padding {
+  .app-nav-wrap.toggled + .app-section-container.has-padding {
     padding-left: 104px; }
 
 .app-section-container-right {
