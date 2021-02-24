@@ -676,7 +676,6 @@ label.app-checkbox input[type="checkbox"] {
   width: max-content;
   height: 60px;
   text-align: center;
-  z-index: 2;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.38); }
   .app-command-bar.fixed {
     width: 100%;
@@ -834,7 +833,9 @@ label.app-checkbox input[type="checkbox"] {
     right: 5px; }
     .app-input-text-container .app-input-status-container i {
       margin-right: 10px;
-      vertical-align: middle; }
+      position: relative;
+      top: 2.5px;
+      line-height: 0; }
   .app-input-text-container input[type="password"].app-input-text + div button.unmask::after {
     content: "\f1db"; }
   .app-input-text-container button.unmask {
