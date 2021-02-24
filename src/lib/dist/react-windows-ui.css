@@ -833,7 +833,8 @@ label.app-checkbox input[type="checkbox"] {
     right: 5px; }
     .app-input-text-container .app-input-status-container i {
       margin-right: 5px;
-      padding: 4px; }
+      padding: 4px;
+      line-height: 1.5; }
   .app-input-text-container input[type="password"].app-input-text + div button.unmask::after {
     content: "\f1db"; }
   .app-input-text-container button.unmask {
