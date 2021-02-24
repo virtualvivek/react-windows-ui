@@ -39,8 +39,8 @@
 .background-color-dark-text, .app-radio:checked {
   background-color: var(--color_dark_text); }
 
-.background-color-nav, #app-nav-wrap nav, #app-nav-wrap nav > div:first-child,
-#app-nav-wrap nav > div:nth-child(2), .app-command-bar, .app-search-bar button {
+.background-color-nav, .app-nav-wrap nav, .app-nav-wrap nav > div:first-child,
+.app-nav-wrap nav > div:nth-child(2), .app-command-bar, .app-search-bar button {
   background-color: var(--color_nav); }
 
 .background-color-accent, .app-button.accent, .app-search-bar button:hover, .app-search-bar button:active, i.bg-accent::before, .app-progress-container .app-progress span, .app-switch input:checked + div {
@@ -52,10 +52,10 @@
 .background-color-accent-dark, .app-container-screen.accent {
   background-color: var(--color_accent_dark); }
 
-.background-color-link-bg-hover, .app-custom-dropdown-ul li a:hover, .app-search-suggestion ul li a:hover, .app-select-styled.menubar ul li a:hover, .app-back:hover, #app-nav-wrap nav ul li:hover, #app-nav-wrap .app-nav-toggle:hover, .app-list-item a:active, .app-switch input:disabled + div {
+.background-color-link-bg-hover, .app-custom-dropdown-ul li a:hover, .app-search-suggestion ul li a:hover, .app-select-styled.menubar ul li a:hover, .app-back:hover, .app-nav-wrap nav ul li:hover, .app-nav-wrap .app-nav-toggle:hover, .app-list-item a:active, .app-switch input:disabled + div {
   background-color: var(--color_link_bg_hover); }
 
-.background-color-link-bg-active, .app-custom-dropdown-ul li a:active, .app-search-suggestion ul li a:active, .app-select-styled.menubar ul li a:active, .app-back:active, #app-nav-wrap nav ul li:active, #app-nav-wrap .app-nav-toggle:active, i.bg-grey::before {
+.background-color-link-bg-active, .app-custom-dropdown-ul li a:active, .app-search-suggestion ul li a:active, .app-select-styled.menubar ul li a:active, .app-back:active, .app-nav-wrap nav ul li:active, .app-nav-wrap .app-nav-toggle:active, i.bg-grey::before {
   background-color: var(--color_link_bg_active); }
 
 .border-color-accent, .app-input-text.app-input-search:active, .app-input-text.app-input-search:focus {
@@ -70,7 +70,7 @@
 .color-button-hover {
   color: var(--color_button_hover); }
 
-.color-accent, #app-nav-wrap nav ul li span::after, .app-link, .app-link-compound.accent i,
+.color-accent, .app-nav-wrap nav ul li span::after, .app-button i.accent, .app-link, .app-link-compound.accent i,
 .app-link-compound i.accent {
   color: var(--AppColor); }
 
@@ -86,11 +86,11 @@
 .font-size-18px {
   font-size: 18px !important; }
 
-.font-weight-500, .app-name, .app-name-short, #app-nav-wrap nav ul li a.active, .app-progress-container .title,
+.font-weight-500, .app-name, .app-name-short, .app-nav-wrap nav ul li a.active, .app-progress-container .title,
 .app-progress-container .subtitle {
   font-weight: 500; }
 
-.font-icon-dark, .font-icon-light, .app-back::after, #app-nav-wrap .app-nav-toggle::after, .app-input-text + div button.unmask::after, .app-search-bar button::after, .app-search-box::after, .app-select-styled::after {
+.font-icon-dark, .font-icon-light, .app-back::after, .app-nav-wrap .app-nav-toggle::after, .app-input-text + div button.unmask::after, .app-search-bar button::after, .app-search-box::after, .app-select-styled::after {
   font-family: icons10;
   color: var(--color_dark_text); }
 
@@ -100,16 +100,16 @@
 .display-block {
   display: block; }
 
-.display-none, #app-nav-wrap.toggled .app-name,
-#app-nav-wrap.toggled .app-switch,
-#app-nav-wrap.toggled nav a span,
-#app-nav-wrap.toggled nav ul h1, .app-color-picker-item .item, .app-switch input {
+.display-none, .app-nav-wrap.toggled .app-name,
+.app-nav-wrap.toggled .app-switch,
+.app-nav-wrap.toggled nav a span,
+.app-nav-wrap.toggled nav ul h1, .app-color-picker-item .item, .app-switch input {
   display: none; }
 
 .vertical-align-middle, .app-button, .app-input-text-container button.unmask, .app-label .app-radio + span {
   vertical-align: middle; }
 
-.outline-none, #app-nav-wrap nav a:focus, .app-input-text:focus, .app-link:focus {
+.outline-none, .app-nav-wrap nav a:focus, .app-input-text:focus, .app-link:focus {
   outline: none; }
 
 .cursor-not-allowed, label.app-checkbox input[type="checkbox"]:checked:disabled::before, label.app-checkbox input[type="checkbox"]:disabled::before, .app-switch input:disabled + div {
@@ -121,21 +121,21 @@
 .tap-highlight-none, label.app-checkbox, .app-link-compound, .app-list-item a, .app-switch {
   -webkit-tap-highlight-color: transparent; }
 
-.transition-background-400ms, body, .app-hr, .app-name, #app-nav-wrap nav, label.app-checkbox input[type="checkbox"]::before, .app-command-bar, .app-header-fixed-container, .app-input-text, .app-search-bar, .app-search-bar button, .app-progress-container .app-progress, .app-radio, .app-select-styled, .app-select-styled select, .app-sticky-header {
+.transition-background-400ms, body, .app-hr, .app-name, .app-nav-wrap nav, label.app-checkbox input[type="checkbox"]::before, .app-command-bar, .app-header-fixed-container, .app-input-text, .app-input-text-container .app-input-label, .app-search-bar, .app-search-bar button, .app-progress-container .app-progress, .app-radio, .app-select-styled, .app-select-styled select, .app-sticky-header {
   transition: background 0.4s; }
 
-.transition-all-400ms, .app-back, #app-nav-wrap .app-nav-toggle, #app-nav-wrap nav.animate ul li a, .app-button, .app-card-default, .app-link-compound, .app-list-item a {
+.transition-all-400ms, .app-back, .app-nav-wrap .app-nav-toggle, .app-nav-wrap nav.animate ul li a, .app-button, .app-card-default, .app-link-compound, .app-list-item a {
   transition-property: background, transform, border;
   transition-duration: 0.4s;
   transition-timing-function: ease; }
 
-.transition-scale-0_95, #app-nav-wrap nav.animate ul li :active, .app-link-compound:active {
+.transition-scale-0_95, .app-nav-wrap nav.animate ul li :active, .app-link-compound:active {
   transition-property: background, transform;
   transition-duration: 0.09s;
   transition-timing-function: ease;
   transform: scale(0.965, 0.965); }
 
-.user-select-none, #app-nav-wrap nav a span, button, .app-button, label.app-checkbox, .app-list-item a, .app-select-styled.menubar {
+.user-select-none, .app-nav-wrap nav a span, button, .app-button, label.app-checkbox, .app-list-item a, .app-select-styled.menubar {
   user-select: none; }
 
 .input-field-primary, .app-input-text, .app-select-styled {
@@ -357,37 +357,37 @@ p.light {
     .app-back.fixed.light:hover {
       background: #EEEEEE44 !important; }
 
-#app-nav-wrap.toggled {
+.app-nav-wrap.toggled {
   height: 100%;
   width: 74px;
   position: fixed;
   top: 0;
   overflow-x: hidden;
   display: inline-block; }
-  #app-nav-wrap.toggled .app-name-short {
+  .app-nav-wrap.toggled .app-name-short {
     display: inline-block;
     font-size: 20px;
     width: 74px;
     text-align: center;
     padding: 10px; }
-  #app-nav-wrap.toggled nav .app-hr {
+  .app-nav-wrap.toggled nav .app-hr {
     width: 56px;
     margin-left: 8px; }
-  #app-nav-wrap.toggled nav > div:first-child {
+  .app-nav-wrap.toggled nav > div:first-child {
     width: 74px;
     height: 42px; }
-  #app-nav-wrap.toggled nav > div:nth-child(2) {
+  .app-nav-wrap.toggled nav > div:nth-child(2) {
     width: auto; }
 
-#app-nav-wrap nav ul li a {
+.app-nav-wrap nav ul li a {
   text-overflow: unset;
   background: none; }
-  #app-nav-wrap nav ul li a::before {
+  .app-nav-wrap nav ul li a::before {
     position: relative;
     right: 5px;
     font-size: 24px;
     vertical-align: middle; }
-  #app-nav-wrap nav ul li a::after {
+  .app-nav-wrap nav ul li a::after {
     width: 5px;
     height: 41px;
     position: absolute;
@@ -396,27 +396,27 @@ p.light {
     content: '';
     transition: transform 0.5s;
     transform: translate3d(-100%, 0, 0); }
-  #app-nav-wrap nav ul li a.active::after {
+  .app-nav-wrap nav ul li a.active::after {
     transform: translate3d(0, 0, 0); }
-  #app-nav-wrap nav ul li a i::before {
+  .app-nav-wrap nav ul li a i::before {
     font-size: 24px;
     vertical-align: middle;
     text-overflow: unset; }
 
-#app-nav-wrap nav .app-nav-user img {
+.app-nav-wrap nav .app-nav-user img {
   width: 35px;
   left: -5px;
   position: relative;
   vertical-align: middle;
   border-radius: 50%; }
 
-#app-nav-wrap .app-nav-toggle {
+.app-nav-wrap .app-nav-toggle {
   padding: 0 25px; }
-  #app-nav-wrap .app-nav-toggle::after {
+  .app-nav-wrap .app-nav-toggle::after {
     content: "\f106";
     font-size: 24px; }
 
-#app-nav-wrap nav .app-badge {
+.app-nav-wrap nav .app-badge {
   height: 18px;
   width: auto;
   color: white;
@@ -431,12 +431,12 @@ p.light {
   border-radius: 50px;
   line-height: 1; }
 
-#app-nav-wrap {
+.app-nav-wrap {
   height: 100%;
   width: 280px;
   z-index: 5;
   transition: 0.2s ease; }
-  #app-nav-wrap nav {
+  .app-nav-wrap nav {
     height: inherit;
     width: inherit;
     position: fixed;
@@ -447,7 +447,7 @@ p.light {
     overflow-x: hidden;
     overflow-y: scroll;
     z-index: inherit; }
-    #app-nav-wrap nav a {
+    .app-nav-wrap nav a {
       position: relative;
       display: block;
       overflow: hidden;
@@ -457,12 +457,12 @@ p.light {
       padding: 8px 25px;
       font-weight: 400;
       color: var(--color_dark_text); }
-      #app-nav-wrap nav a span {
+      .app-nav-wrap nav a span {
         font-size: 16px;
         margin: 0 10px;
         position: relative;
         top: 1px; }
-    #app-nav-wrap nav ul {
+    .app-nav-wrap nav ul {
       position: relative;
       top: 115px;
       display: block;
@@ -471,25 +471,25 @@ p.light {
       list-style: none;
       flex-flow: row wrap;
       justify-content: left; }
-      #app-nav-wrap nav ul h1 {
+      .app-nav-wrap nav ul h1 {
         font-weight: 700;
         margin: 0;
         padding: 8px 0 8px 24px;
         font-size: 15px; }
-      #app-nav-wrap nav ul .app-hr {
+      .app-nav-wrap nav ul .app-hr {
         margin: 10px 15px; }
-    #app-nav-wrap nav .app-switch {
+    .app-nav-wrap nav .app-switch {
       margin: 16px 0 0 20px; }
-  #app-nav-wrap nav > div:first-child,
-  #app-nav-wrap nav > div:nth-child(2) {
+  .app-nav-wrap nav > div:first-child,
+  .app-nav-wrap nav > div:nth-child(2) {
     width: inherit;
     display: flex;
     position: fixed;
     z-index: 2;
     transition: inherit; }
-  #app-nav-wrap nav > div:first-child {
+  .app-nav-wrap nav > div:first-child {
     padding-bottom: 10px; }
-  #app-nav-wrap nav > div:nth-child(2) {
+  .app-nav-wrap nav > div:nth-child(2) {
     top: 50px; }
 
 .app-section-container {
@@ -807,22 +807,34 @@ label.app-checkbox input[type="checkbox"] {
 .app-input-text:focus {
   border-color: #666; }
 
+.app-input-text.success {
+  border-color: #2C8B2C; }
+
+.app-input-text.danger {
+  border-color: #C50500; }
+
 .app-input-text + div button.unmask::after {
   content: "\f189";
   font-size: 24px;
   cursor: pointer; }
 
 .app-input-text-container {
-  display: inline-block;
+  display: inline-flex;
   width: min-content;
   position: relative; }
+  .app-input-text-container .app-input-label {
+    padding: 5px;
+    border: 2px solid #999;
+    border-right: none;
+    background-color: var(--color_light_grey_alpha); }
   .app-input-text-container .app-input-status-container {
     position: absolute;
     top: 4px;
     right: 5px; }
     .app-input-text-container .app-input-status-container i {
       margin-right: 10px;
-      line-height: 1.5; }
+      position: relative;
+      top: 1px; }
   .app-input-text-container input[type="password"].app-input-text + div button.unmask::after {
     content: "\f1db"; }
   .app-input-text-container button.unmask {
@@ -1364,22 +1376,22 @@ label.app-checkbox input[type="checkbox"] {
 ::-webkit-scrollbar-thumb {
   background-color: #999; }
 
-#app-nav-wrap nav::-webkit-scrollbar {
+.app-nav-wrap nav::-webkit-scrollbar {
   width: 2px; }
 
-#app-nav-wrap nav:hover::-webkit-scrollbar {
+.app-nav-wrap nav:hover::-webkit-scrollbar {
   width: 14px; }
 
-#app-nav-wrap nav::-webkit-scrollbar-thumb {
+.app-nav-wrap nav::-webkit-scrollbar-thumb {
   background-color: #99999933; }
 
-#app-nav-wrap nav::-webkit-scrollbar-thumb:hover {
+.app-nav-wrap nav::-webkit-scrollbar-thumb:hover {
   background-color: #99999966; }
 
-#app-nav-wrap nav::-webkit-scrollbar-thumb:active {
+.app-nav-wrap nav::-webkit-scrollbar-thumb:active {
   background-color: #999999; }
 
-#app-nav-wrap.toggled nav:hover::-webkit-scrollbar {
+.app-nav-wrap.toggled nav:hover::-webkit-scrollbar {
   width: 2px; }
 
 @-moz-document url-prefix() {
@@ -1388,7 +1400,7 @@ label.app-checkbox input[type="checkbox"] {
     color: white; }
   .app-content-wrap section {
     scrollbar-color: #999 transparent; }
-  #app-nav-wrap nav {
+  .app-nav-wrap nav {
     scrollbar-width: thin; }
   .app-alert {
     background-color: var(--AppColor) !important; } }
@@ -1396,9 +1408,9 @@ label.app-checkbox input[type="checkbox"] {
 @media only screen and (max-width: 760px) {
   ::-webkit-scrollbar {
     width: 2.4px; }
-  #app-nav-wrap nav::-webkit-scrollbar {
+  .app-nav-wrap nav::-webkit-scrollbar {
     height: 0 !important; }
-  #app-nav-wrap nav {
+  .app-nav-wrap nav {
     scrollbar-width: none; }
   .app-section-container {
     margin: 0 !important;
@@ -1407,75 +1419,75 @@ label.app-checkbox input[type="checkbox"] {
       margin: 0 15px !important; }
   .app-section-container .app-header-fixed-container {
     top: 90px; }
-  #app-nav-wrap nav {
+  .app-nav-wrap nav {
     width: 100%;
     height: 93px;
     overflow-y: hidden;
     overflow-x: scroll;
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.25); }
-    #app-nav-wrap nav ul {
+    .app-nav-wrap nav ul {
       width: 100%;
       display: inline;
       white-space: nowrap;
       top: 45px;
       z-index: 2; }
-      #app-nav-wrap nav ul li {
+      .app-nav-wrap nav ul li {
         display: inline-flex; }
-        #app-nav-wrap nav ul li a {
+        .app-nav-wrap nav ul li a {
           padding: 0;
           user-select: none;
           -webkit-tap-highlight-color: transparent; }
-          #app-nav-wrap nav ul li a i,
-          #app-nav-wrap nav ul li a span {
+          .app-nav-wrap nav ul li a i,
+          .app-nav-wrap nav ul li a span {
             opacity: 0.6; }
-          #app-nav-wrap nav ul li a::after {
+          .app-nav-wrap nav ul li a::after {
             height: 3px;
             width: 90%;
             bottom: 0;
             left: 6.5px;
             transition: transform 0.4s;
             transform: translate3d(0, 100%, 0); }
-          #app-nav-wrap nav ul li a.active i,
-          #app-nav-wrap nav ul li a.active span {
+          .app-nav-wrap nav ul li a.active i,
+          .app-nav-wrap nav ul li a.active span {
             opacity: 1; }
-          #app-nav-wrap nav ul li a.active::after {
+          .app-nav-wrap nav ul li a.active::after {
             transform: translate3d(0, 0, 0); }
-          #app-nav-wrap nav ul li a span {
+          .app-nav-wrap nav ul li a span {
             font-size: 20px;
             margin: 0 7px;
             bottom: 5px;
             right: 0; }
-        #app-nav-wrap nav ul li:first-child span {
+        .app-nav-wrap nav ul li:first-child span {
           margin-left: 10px; }
-        #app-nav-wrap nav ul li:last-child {
+        .app-nav-wrap nav ul li:last-child {
           padding-right: 30px; }
-      #app-nav-wrap nav ul .app-hr {
+      .app-nav-wrap nav ul .app-hr {
         height: 20px;
         width: 2px;
         margin: 0 5px;
         display: inline-flex;
         position: relative;
         top: 5px; }
-      #app-nav-wrap nav ul.app-mobile-has-icons li a {
+      .app-nav-wrap nav ul.app-mobile-has-icons li a {
         padding: 5px 8px; }
-        #app-nav-wrap nav ul.app-mobile-has-icons li a i::before {
+        .app-nav-wrap nav ul.app-mobile-has-icons li a i::before {
           font-size: 28px; }
-        #app-nav-wrap nav ul.app-mobile-has-icons li a::after {
+        .app-nav-wrap nav ul.app-mobile-has-icons li a::after {
           width: 100%;
           left: 0; }
-    #app-nav-wrap nav .app-nav-user img {
+    .app-nav-wrap nav .app-nav-user img {
       left: 0; }
-    #app-nav-wrap nav .app-switch {
+    .app-nav-wrap nav .app-switch {
       margin: 0;
       position: fixed;
       display: block;
       margin-top: -40px;
       left: 70%; }
-    #app-nav-wrap nav ul h1,
-    #app-nav-wrap nav .app-nav-toggle,
-    #app-nav-wrap nav .app-nav-user span,
-    #app-nav-wrap nav ul.app-mobile-has-icons li a span,
-    #app-nav-wrap nav ul:not(.app-mobile-has-icons) li a i::before {
+    .app-nav-wrap nav ul h1,
+    .app-nav-wrap nav .app-nav-toggle,
+    .app-nav-wrap nav .app-nav-user span,
+    .app-nav-wrap nav ul.app-mobile-has-icons li a span,
+    .app-nav-wrap nav ul:not(.app-mobile-has-icons) li a i::before {
       display: none !important; }
   .app-back {
     padding: 5px 0 0 12px !important; }
@@ -1484,9 +1496,9 @@ label.app-checkbox input[type="checkbox"] {
   .app-back:hover li:hover,
   .app-back:hover li a:hover,
   .app-back:hover .app-nav-user:hover,
-  #app-nav-wrap nav ul li:hover,
-  #app-nav-wrap nav ul li a:hover,
-  #app-nav-wrap nav ul .app-nav-user:hover,
+  .app-nav-wrap nav ul li:hover,
+  .app-nav-wrap nav ul li a:hover,
+  .app-nav-wrap nav ul .app-nav-user:hover,
   .app-back.fixed.light:hover li:hover,
   .app-back.fixed.light:hover li a:hover,
   .app-back.fixed.light:hover .app-nav-user:hover {

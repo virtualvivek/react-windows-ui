@@ -5,7 +5,7 @@
     background-color: #999;
 }
 
-#app-nav-wrap nav {
+.app-nav-wrap nav {
     &::-webkit-scrollbar {
         width: 2px;
     }
@@ -22,7 +22,7 @@
         background-color: #999999;
     }
 }
-#app-nav-wrap.toggled nav {
+.app-nav-wrap.toggled nav {
     &:hover::-webkit-scrollbar {
         width: 2px;
     }
@@ -32,7 +32,7 @@
     ::-webkit-scrollbar {
         width: 2.4px;
     }
-    #app-nav-wrap nav {
+    .app-nav-wrap nav {
         &::-webkit-scrollbar {
             height: 0 !important;
         }

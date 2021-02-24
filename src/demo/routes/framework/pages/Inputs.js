@@ -140,6 +140,12 @@ class Inputs extends React.Component {
 
             <br/><br/>
 
+            <InputText
+              label="label"
+              placeholder="Enter a text"/>
+
+            <br/><br/>
+
             <InputDate
               placeholder="Select Date" />
 

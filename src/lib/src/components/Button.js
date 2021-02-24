@@ -26,7 +26,8 @@ const Button = (props) => {
       : "app-button animate"
       }
       style={{
-        width: props.width
+        width: props.width,
+        textAlign: props.textAlign
       }}
       type="button"
       onSubmit={props.onSubmit}

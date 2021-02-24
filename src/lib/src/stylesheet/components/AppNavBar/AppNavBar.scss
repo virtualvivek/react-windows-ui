@@ -6,7 +6,7 @@
 @import "./subcomponents/NavToggleButton.scss";
 @import "./subcomponents/NavBadge.scss";
 
-#app-nav-wrap {
+.app-nav-wrap {
     height: 100%;
     width: 280px;
     z-index: 5;
@@ -104,4 +104,3 @@
         top: 50px;
     }
 }
-

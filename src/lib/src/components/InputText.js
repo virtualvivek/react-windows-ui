@@ -10,6 +10,9 @@ const InputText = (props) => {
     input.type === "text" ? input.type = "password" : input.type = "text"
   }
 
+  const renderLabel = () => {
+    return <span className="app-input-label">{props.label}</span>
+  }
   const renderStatusSuccess = () => {
     return <i className="icons10-checkmark color-success font-size-18px"></i>
   }
@@ -23,9 +26,18 @@ const InputText = (props) => {
   }
 
   return (
+    <>
+    
     <div className="app-input-text-container">
+    { props.label? renderLabel() : '' }
       <input
-        className="app-input-text"
+        className = {
+          props.setStatus === "success" ?
+          "app-input-text success" :
+          props.setStatus === "danger" ?
+          "app-input-text danger" :
+          "app-input-text"
+        }
         type={props.type}
         ref={inputRef}
         placeholder={props.placeholder}
@@ -48,6 +60,7 @@ const InputText = (props) => {
         </button>
       </div>
     </div>
+    </>
   )
 }
 

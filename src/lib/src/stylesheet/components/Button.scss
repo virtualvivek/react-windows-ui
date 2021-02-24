@@ -54,6 +54,9 @@ button,
     span {
         transition: all ease 0.2s;
     }
+    i.accent {
+        @extend .color-accent;
+    }
 }
 
 @mixin button-mobile() {

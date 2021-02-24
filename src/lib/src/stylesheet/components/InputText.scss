@@ -9,6 +9,12 @@
         @extend .outline-none;
         border-color: #666;
     }
+    &.success {
+        border-color: #2C8B2C;
+    }
+    &.danger {
+        border-color: #C50500;
+    }
 
     + div button.unmask::after {
         @extend .font-icon-dark;
@@ -22,18 +28,29 @@
     }
 }
 .app-input-text-container {
-    display: inline-block;
+    display: inline-flex;
+    width: min-content;
+    position: relative;
+
+    .app-input-label {
+        @extend .transition-background-400ms;
+        padding: 5px;
+        border: 2px solid #999;
+        border-right: none;
+        background-color: var(--color_light_grey_alpha);
+    }
     .app-input-status-container {
         position: absolute;
         top: 4px;
         right: 5px;
+
         i {
             margin-right: 10px;
-            line-height: 1.5;
+            position: relative;
+            top: 1px;
         }
     }
-    width: min-content;
-    position: relative;
+    
     input[type="password"].app-input-text + div button.unmask::after {
         content: "\f1db";
     }
