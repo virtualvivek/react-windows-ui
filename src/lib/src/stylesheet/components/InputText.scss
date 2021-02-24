@@ -45,10 +45,9 @@
         right: 5px;
 
         i {
-            margin-right: 10px;
-            position: relative;
-            top: 2.5px;
-            line-height: 0;
+            @extend .vertical-align-middle;
+            margin-right: 5px;
+            padding: 4px;
         }
     }
     
