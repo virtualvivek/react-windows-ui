@@ -17,6 +17,9 @@ const AvatarView = (props) => {
   const renderShadow = () => {
     return <div className="shadow"></div>
   }
+  const handleOnLoad = () => {
+    setLoad(true)
+  }
 
   return (
     <div className="app-image-view-container"
@@ -24,17 +27,18 @@ const AvatarView = (props) => {
             width: props.width,
             height: props.height,
             padding: props.padding,
-            margin: props.margin
+            margin: props.margin,
+            borderRadius: props.borderRadius
         }}>
         <img
           className="app-image-view"
           src={props.src}
           alt={props.alt}
           style={{
-            objectFit : props.objectFit,
-            borderRadius: props.borderRadius
+            objectFit : props.objectFit
           }}
-          onLoad={() => setLoad(true)}
+          // onLoad={() => setLoad(true)}
+          onLoad={() => { handleOnLoad(); props.onLoad() }}
         />
         <div className="app-image-words">
           <h1>{props.title}</h1>
@@ -53,7 +57,8 @@ AvatarView.defaultProps = {
     width: 124,
     height: 124,
     alt : "image",
-    objectFit : 'cover'
+    objectFit : 'cover',
+    onLoad: () => {},
   }
 
 export default AvatarView

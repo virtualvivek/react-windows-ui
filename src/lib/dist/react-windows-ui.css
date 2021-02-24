@@ -754,8 +754,8 @@ label.app-checkbox input[type="checkbox"] {
   top: 0; }
 
 .app-image-view {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   background: #DDDDDD77;
   text-align: center;
   z-index: 1; }
@@ -763,7 +763,8 @@ label.app-checkbox input[type="checkbox"] {
 .app-image-view-container {
   position: relative;
   display: inline-flex;
-  justify-content: center; }
+  justify-content: center;
+  overflow: hidden; }
   .app-image-view-container .app-image-view-loader {
     position: absolute;
     align-items: center;
@@ -833,8 +834,7 @@ label.app-checkbox input[type="checkbox"] {
     right: 5px; }
     .app-input-text-container .app-input-status-container i {
       margin-right: 10px;
-      position: relative;
-      top: 1px; }
+      vertical-align: middle; }
   .app-input-text-container input[type="password"].app-input-text + div button.unmask::after {
     content: "\f1db"; }
   .app-input-text-container button.unmask {
@@ -1353,6 +1353,15 @@ label.app-checkbox input[type="checkbox"] {
     transition: 0.08s ease;
     visibility: hidden;
     opacity: 0; }
+
+.app-view-default {
+  transition: opacity 0.4s;
+  position: relative;
+  opacity: 0;
+  visibility: hidden; }
+  .app-view-default.show {
+    opacity: 1;
+    visibility: visible; }
 
 ._404-container {
   margin: 0 auto;

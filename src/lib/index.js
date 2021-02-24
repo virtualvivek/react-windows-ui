@@ -36,6 +36,7 @@ import Switch from './src/components/Switch'
 import SwitchDayNight from './src/components/SwitchDayNight'
 import SystemThemeFollower from './src/components/utils/SystemThemeFollower'
 import ThemeManager from './src/components/utils/ThemeManager'
+import View from "./src/components/View"
 
 
 
@@ -76,5 +77,6 @@ export {
     Switch,
     SwitchDayNight,
     SystemThemeFollower,
-    ThemeManager
+    ThemeManager,
+    View
 }

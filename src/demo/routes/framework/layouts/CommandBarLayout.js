@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavPageContainer,CommandBar,Button,InputSearchBox,ImageView,Dialog } from '../../../../lib'
+import { NavPageContainer,CommandBar,Button,
+    InputSearchBox,ImageView,Dialog,View } from '../../../../lib'
 import Img from '../../../img/illustration/macos.jpg'
 
 
@@ -8,17 +9,21 @@ class CommandBarLayout extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showDialog :false
+            showDialog: false,
+            CommandBarVisivle: false
         }
     }
 
     toggleDialog = () => {
         if(this.state.showDialog){
-            this.setState({showDialog: false});
+            this.setState({showDialog: false})
         }
         else {
-            this.setState({showDialog: true}); 
+            this.setState({showDialog: true})
         } 
+    }
+    showCommandBar = () => {
+        this.setState({CommandBarVisivle: true})
     }
 
   render() {
@@ -41,13 +46,16 @@ class CommandBarLayout extends React.Component {
                 placeholder="Enter to Search"/>
             &nbsp;&nbsp;
         </CommandBar>
+        
 
         <ImageView
           width={'95%'}
           height={'65vh'}
           borderRadius={18}
+          onLoad={this.showCommandBar}
           src={Img}/>
 
+        <View isVisible={this.state.CommandBarVisivle}>
         <div className="app-flex-center" style={{marginTop:-280,marginLeft:-20}}>
             <CommandBar
                 position="relative"
@@ -70,6 +78,7 @@ class CommandBarLayout extends React.Component {
                     onClick={this.toggleDialog}/>
             </CommandBar>
         </div>
+        </View>
 
         <Dialog
           isVisible={this.state.showDialog}
