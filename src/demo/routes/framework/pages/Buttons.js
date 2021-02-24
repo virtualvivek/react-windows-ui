@@ -31,16 +31,21 @@ class Buttons extends React.Component {
 
         <span>&nbsp; &nbsp;  set states</span>
         <br/><br/>
+
         <Button
           value="loading"
           type="primary"
           onClick={this.setLoading}/>
+
           &nbsp;
+
         <Button
           value="disabled"
           type="primary"
           onClick={this.setDisabled}/>
+
           &nbsp;
+
         <Button
           value="regular"
           type="primary"
@@ -51,27 +56,39 @@ class Buttons extends React.Component {
 
         <Button
           value="Default Button"/>
+
         <br/><br/>
+
         <Button
           icon={<i className="icons10-plus"></i>}
           value="Default Button"/>
+
         &nbsp;&nbsp;
+
         <Button
           icon={<i className="icons10-plus"></i>}
           value=""/>
+
         <br/><br/>
+
         <Button
           disabled
           value="Disabled Button"/>
+
         &nbsp;&nbsp;
+
         <Button
           isLoading
           value="Loading Button"/>
+
         <br/><br/>
+
         <Button
           icon={<i className="icons10-plus accent"></i>}
           value="Accent Icon"/>
+
         &nbsp;&nbsp;
+
         <Button
           width={155}
           textAlign={'start'}
@@ -84,17 +101,23 @@ class Buttons extends React.Component {
         <Button
           type="primary"
           value="Primary Button"/>
+
         &nbsp;&nbsp;
+
         <Button
           type="primary"
           icon={<i className="icons10-fantasy"></i>}
-          value="Primary Button"/> 
+          value="Primary Button"/>
+
         <br/><br/>
+
         <Button
           disabled
           type="primary"
           value="Disabled Button"/>
+
         &nbsp;&nbsp;
+
         <Button
           type="primary"
           isLoading
@@ -107,7 +130,9 @@ class Buttons extends React.Component {
         <Button
           type="success"
           value="Success Button"/>
+
         &nbsp;&nbsp;
+
         <Button
           type="success"
           icon={<i className="icons10-checkmark"></i>}
@@ -119,7 +144,9 @@ class Buttons extends React.Component {
         <Button
           type="danger"
           value="Danger Button"/>
+
         &nbsp;&nbsp;
+
         <Button
           type="danger"
           icon={<i className="icons10-cancel-2"></i>}

@@ -36,7 +36,7 @@ class Inputs extends React.Component {
             checked
             disabled
             textOn="Disabled On"
-            textOff="Disabled Off" /> 
+            textOff="Disabled Off" />
                 
         </div>
 
@@ -46,178 +46,179 @@ class Inputs extends React.Component {
                 
           <Switch/>
 
-            <Switch
-              disabled
-              textOn="Disabled On"
-              textOff="Disabled Off" /> 
+          <Switch
+            disabled
+            textOn="Disabled On"
+            textOff="Disabled Off" />
                 
         </div>
 
-        <h3 className="m-b-15">SliderBar</h3>
+      <h3 className="m-b-15">SliderBar</h3>
 
-          <h1 className="m-0 color-accent"
-            style={{fontSize:46}}>
-              {this.state.Slider1}%
-          </h1>
-          <SliderBar 
-            value={this.state.Slider1}
-            showValue={false}
-            onChange={(e) => {this.onChangeSlider1(e)}} />
-            
-          <SliderBar
-            value={this.state.Slider2}
-            thumbStyle="round"
-            step={4}
-            onChange={(e) => {this.onChangeSlider2(e)}} />
+        <h1 className="m-0 color-accent"
+          style={{fontSize:46}}>
+            {this.state.Slider1}%
+        </h1>
 
-          <SliderBar
-            value={this.state.Slider3}
-            thumbStyle="round-border"
-            onChange={(e) => {this.onChangeSlider3(e)}} />
+        <SliderBar
+          value={this.state.Slider1}
+          showValue={false}
+          onChange={(e) => {this.onChangeSlider1(e)}} />
+          
+        <SliderBar
+          value={this.state.Slider2}
+          thumbStyle="round"
+          step={4}
+          onChange={(e) => {this.onChangeSlider2(e)}} />
+
+        <SliderBar
+          value={this.state.Slider3}
+          thumbStyle="round-border"
+          onChange={(e) => {this.onChangeSlider3(e)}} />
 
 
-          <h3 className="m-b-15">Checkbox</h3>
+      <h3 className="m-b-15">Checkbox</h3>
 
-          <div className="app-flex">
+        <div className="app-flex">
 
-            <Checkbox
-              checked />
+          <Checkbox
+            checked />
 
-            <div className="app-space-35"></div>
+          <div className="app-space-35"></div>
 
-            <Checkbox
-              disabled
-              checked
-              text="Disabled Checked"/>
+          <Checkbox
+            disabled
+            checked
+            text="Disabled Checked"/>
 
-          </div>
+        </div>
 
-          <p className="m-b-20"></p>
+        <p className="m-b-20"></p>
 
-          <div className="app-flex">
+        <div className="app-flex">
 
-            <Checkbox
-              checked
-              text="Unchecked" />
+          <Checkbox
+            checked
+            text="Unchecked" />
 
-            <div className="app-space-20"></div>
+          <div className="app-space-20"></div>
 
-            <Checkbox
-              disabled
-              text="Disabled Unchecked"/>
+          <Checkbox
+            disabled
+            text="Disabled Unchecked"/>
 
-          </div>
+        </div>
 
           <br/>
-          <h3 className="m-b-15">Inputs</h3>
+      <h3 className="m-b-15">Inputs</h3>
                
-            <InputText
-              placeholder="Enter a text"/>
+        <InputText
+          placeholder="Enter a text"/>
 
-            <br/><br/>
+        <br/><br/>
 
-            <InputText
-              placeholder="Enter a text success"
-              setStatus="success"/>
+        <InputText
+          placeholder="Enter a text success"
+          setStatus="success"/>
 
-            <br/><br/>
+        <br/><br/>
 
-            <InputText
-              placeholder="Enter a text danger"
-              setStatus="danger"/>
+        <InputText
+          placeholder="Enter a text danger"
+          setStatus="danger"/>
 
-            <br/><br/>
+        <br/><br/>
 
-            <InputText
-              placeholder="Enter a text loading"
-              setStatus="loading"/>
+        <InputText
+          placeholder="Enter a text loading"
+          setStatus="loading"/>
 
-            <br/><br/>
+        <br/><br/>
 
-            <InputText
-              type="password"
-              placeholder="Enter a password"/>
+        <InputText
+          type="password"
+          placeholder="Enter a password"/>
 
-            <br/><br/>
+        <br/><br/>
 
-            <InputText
-              label="label"
-              placeholder="Enter a text"/>
+        <InputText
+          label="label"
+          placeholder="Enter a text"/>
 
-            <br/><br/>
+        <br/><br/>
 
-            <InputDate
-              placeholder="Select Date" />
+        <InputDate
+          placeholder="Select Date" />
 
-            <h3 className="m-b-15">SearchBar</h3>
+      <h3 className="m-b-15">SearchBar</h3>
 
-              <InputSearchBar
-                placeholder="Search here"/>
+        <InputSearchBar
+          placeholder="Search here"/>
 
-            <h3 className="m-b-15">SearchBox</h3>
+        <h3 className="m-b-15">SearchBox</h3>
 
-              <InputSearchBox
-                placeholder="Enter to Search"/>
+        <InputSearchBox
+          placeholder="Enter to Search"/>
 
-            <h3 className="m-b-15">Search Suggestion</h3>
+      <h3 className="m-b-15">Search Suggestion</h3>
 
-              <InputSearchSuggestion
-                placeholder="Type 'a' .."
-                data={[
-                  {label: 'apple', link: '#', icon:<i className="icons10-baby"></i>},
-                  {label: 'orange', link: '#'},
-                  {label: 'banana', link: '#'},
-                  {label: 'peach', link: '#'},
-                  ]}
-                />
+        <InputSearchSuggestion
+          placeholder="Type 'a' .."
+          data={[
+            {label: 'apple', link: '#', icon:<i className="icons10-baby"></i>},
+            {label: 'orange', link: '#'},
+            {label: 'banana', link: '#'},
+            {label: 'peach', link: '#'},
+            ]}
+          />
 
 
-            <h3 className="m-b-15">SelectBox</h3>
+      <h3 className="m-b-15">SelectBox</h3>
+          
+        <SelectBox
+          data={[
+            {label: 'red', value: 'red'},
+            {label: 'blue', value: 'blue'},
+            {label: 'green', value: 'green'},
+            {label: 'pink', value: 'pink'},
+            ]}
+        />
+
+      <h3 className="m-b-15">MenuBar</h3>
+
+        <MenuBar
+          label="Select a fruit"
+          data={[
+            {label: 'apple', link: '#', icon:<i className="icons10-camera"></i>},
+            {label: 'orange', link: '#'},
+            {label: 'banana', link: '#'},
+            {label: 'peach', link: '#'},
+            ]}
+        />
+
               
-              <SelectBox
-                data={[
-                  {label: 'red', value: 'red'},
-                  {label: 'blue', value: 'blue'},
-                  {label: 'green', value: 'green'},
-                  {label: 'pink', value: 'pink'},
-                  ]}
-              />
+      <h3 className="m-b-15">Radio Button</h3>
 
-            <h3 className="m-b-15">MenuBar</h3>
+        <RadioButton
+          name="1"
+          text="Checked"
+          checked/>
 
-              <MenuBar
-                label="Select a fruit"
-                data={[
-                  {label: 'apple', link: '#', icon:<i className="icons10-camera"></i>},
-                  {label: 'orange', link: '#'},
-                  {label: 'banana', link: '#'},
-                  {label: 'peach', link: '#'},
-                  ]}
-              />
+        <br></br>
 
-              
-            <h3 className="m-b-15">Radio Button</h3>
+        <RadioButton
+          name="1"
+          text="Unchecked"/>
+          
+        <br></br>
 
-              <RadioButton
-                name="1"
-                text="Checked"
-                checked/>
+        <RadioButton
+          name="2"
+          text="Disabled"
+          disabled
+          checked/>
 
-              <br></br>
-
-              <RadioButton
-                name="1"
-                text="Unchecked"/>
-                
-              <br></br>
-
-              <RadioButton
-                name="2"
-                text="Disabled"
-                disabled
-                checked/>
-
-            <br/><br/><br/><br/>
+        <br/><br/><br/><br/>
             
     </NavPageContainer>
   )

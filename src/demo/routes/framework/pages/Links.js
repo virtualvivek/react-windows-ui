@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {NavPageContainer,LinkCoumpound } from '../../../../lib'
+import { NavPageContainer,LinkCoumpound } from '../../../../lib'
 
 const Links = () => {
   return (
@@ -13,11 +13,11 @@ const Links = () => {
       
       <br/><br/>
 
-
       <Link to="#" className="app-link"><b>Default Bold App Link</b></Link>
+      
       <br/><br/>
 
-      <LinkCoumpound 
+      <LinkCoumpound
         to="#"
         title="System Settings and preferences"
         subtitle="Customize system controls and more"
@@ -26,7 +26,7 @@ const Links = () => {
 
       <br/><br/>
 
-      <LinkCoumpound 
+      <LinkCoumpound
         to="#"
         title="Network usage by individual apps"
         subtitle="Display data consumes by installed apps"
@@ -35,17 +35,17 @@ const Links = () => {
         
       <br/><br/>
 
-      <LinkCoumpound  
+      <LinkCoumpound
         to="#"
         linkStyle="border"
         title="Notification settings and DND"
         subtitle="Control which app push notification"
-        icon={<i className="icons10-notification"></i>} 
+        icon={<i className="icons10-notification"></i>}
       />
      
       <br/><br/>
 
-      <LinkCoumpound 
+      <LinkCoumpound
         to="#"
         title="Camera settings and preferences"
         subtitle="Modify saturation, filters for the physical camera device"
@@ -54,7 +54,7 @@ const Links = () => {
         
       <br/><br/>
 
-      <LinkCoumpound 
+      <LinkCoumpound
         to="#"
         title="Add more devices to system"
         subtitle="creating digital utilities for system"
@@ -64,7 +64,7 @@ const Links = () => {
       <br/><br/>
 
 
-    </NavPageContainer> 
+    </NavPageContainer>
   )
 }
 

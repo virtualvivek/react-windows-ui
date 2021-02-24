@@ -36,17 +36,16 @@ class Lists extends React.Component {
     }
     render() {
       return (
-        <NavPageContainer
-            hasPadding>
+        <NavPageContainer hasPadding>
                 
         <h1>Dialogs</h1>
 
         <br/>
         <div className="app-flex app-align-center">
-        <AvatarView
-            size="large" 
-            src={AvatarImg}
-            showDropShadow/>
+            <AvatarView
+                size="large" 
+                src={AvatarImg}
+                showDropShadow/>
             &nbsp;&nbsp;
             <div className="app-grid">
                 <AvatarView

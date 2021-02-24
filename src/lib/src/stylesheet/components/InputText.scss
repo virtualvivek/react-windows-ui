@@ -45,10 +45,12 @@
         right: 5px;
 
         i {
-            @extend .vertical-align-middle;
-            margin-right: 5px;
-            padding: 4px;
-            line-height: 1.5;
+            line-height: 1;
+            &::before {
+                @extend .vertical-align-middle;
+                margin-right: 5px;
+                padding: 4px;
+            }
         }
     }
     

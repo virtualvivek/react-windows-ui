@@ -9,43 +9,52 @@ const Images = () => {
   return (
     <NavPageContainer>
    
-    <ImageView
-      src={IronMan}
-      width={'100%'}
-      height={'280px'}
-      insetShadow
-      title="IronMan"
-      subtitle="Mark 50 suit is a fifty'th combat exo-armor"
-    />
+      <ImageView
+        src={IronMan}
+        width={'100%'}
+        height={'280px'}
+        insetShadow
+        title="IronMan"
+        subtitle="Mark 50 suit is a fifty'th combat exo-armor"
+      />
 
       <NavPageContainerInner>
+
         <h3 className="m-b-15">AvatarView</h3>
 
         <div className="app-flex app-align-center">
+
           <AvatarView
               src={IronMan}
               size="large"
               showDropShadow/>
+
               &nbsp;&nbsp;
+
           <div className="app-grid">
+
             <AvatarView
                 src={Img3}
                 size="medium"
                 isLoading
                 showDropShadow/>
+
             &nbsp;
+
             <AvatarView
                 size="small"
                 src={Img2}      
                 showDropShadow/>
-                </div>  
+
+            </div>
         </div>
 
       </NavPageContainerInner>
 
       <br/><br/><br/><br/>
+
     </NavPageContainer>
-  );
+  )
 }
 
 export default Images

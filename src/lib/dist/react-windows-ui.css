@@ -106,7 +106,7 @@
 .app-nav-wrap.toggled nav ul h1, .app-color-picker-item .item, .app-switch input {
   display: none; }
 
-.vertical-align-middle, .app-button, .app-input-text-container .app-input-status-container i, .app-input-text-container button.unmask, .app-label .app-radio + span {
+.vertical-align-middle, .app-button, .app-input-text-container .app-input-status-container i::before, .app-input-text-container button.unmask, .app-label .app-radio + span {
   vertical-align: middle; }
 
 .outline-none, .app-nav-wrap nav a:focus, .app-input-text:focus, .app-link:focus {
@@ -832,9 +832,10 @@ label.app-checkbox input[type="checkbox"] {
     top: 4px;
     right: 5px; }
     .app-input-text-container .app-input-status-container i {
-      margin-right: 5px;
-      padding: 4px;
-      line-height: 1.5; }
+      line-height: 1; }
+      .app-input-text-container .app-input-status-container i::before {
+        margin-right: 5px;
+        padding: 4px; }
   .app-input-text-container input[type="password"].app-input-text + div button.unmask::after {
     content: "\f1db"; }
   .app-input-text-container button.unmask {

@@ -7,7 +7,6 @@ const Icons = () => {
     <NavPageContainer hasPadding>
       <h1 className="m-b-15">Icons</h1>
 
-
       <div className="glyph">
           
           
