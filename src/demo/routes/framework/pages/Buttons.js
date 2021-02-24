@@ -69,15 +69,14 @@ class Buttons extends React.Component {
           value="Loading Button"/>
         <br/><br/>
         <Button
-          width={200}
           icon={<i className="icons10-plus accent"></i>}
-          value="Accent Icon Button"/>
+          value="Accent Icon"/>
         &nbsp;&nbsp;
         <Button
-          width={200}
+          width={155}
           textAlign={'start'}
           icon={<i className="icons10-plus accent"></i>}
-          value="Align Start Button"/>
+          value="Align Start"/>
        
 
       <h3 className="m-b-15">Primary</h3>
