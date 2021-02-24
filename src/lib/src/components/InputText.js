@@ -26,8 +26,6 @@ const InputText = (props) => {
   }
 
   return (
-    <>
-    
     <div className="app-input-text-container">
     { props.label? renderLabel() : '' }
       <input
@@ -60,7 +58,6 @@ const InputText = (props) => {
         </button>
       </div>
     </div>
-    </>
   )
 }
 

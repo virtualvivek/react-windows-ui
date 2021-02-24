@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import LoaderBusyWrapper from './_common/LoaderBusyWrapper'
 
-
 const AvatarView = (props) => {
 
   const [didLoad, setLoad] = useState(false)

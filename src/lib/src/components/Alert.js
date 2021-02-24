@@ -6,7 +6,7 @@ const Alert = (props) => {
     <div
       className={props.isVisible ? "app-dim-overlay show" : "app-dim-overlay"}
       style={props.isVisible ? { visibility:'visible'} : {visibility : 'hidden'}}
-      onClick={props.onBackdropPress}>       
+      onClick={props.onBackdropPress}>
     </div>
     <div
       className={props.isVisible ?

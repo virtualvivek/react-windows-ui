@@ -6,12 +6,12 @@ const AvatarView = (props) => {
   const [didLoad, setLoad] = useState(false)
 
     const renderLoader = () => {
-          return  <div className="app-avatar-loader">
-                    <div className="app-loader-busy light">
-                      <LoaderBusyWrapper/>
-                    </div>
-                  </div>
-          }
+      return  <div className="app-avatar-loader">
+                <div className="app-loader-busy light">
+                  <LoaderBusyWrapper/>
+                </div>
+              </div>
+      }
 
     const renderDropShadow = () => {
       return <img

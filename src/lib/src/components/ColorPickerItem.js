@@ -34,7 +34,7 @@ const inputRef = React.useRef()
 }
 
 ColorPickerItem.defaultProps = {
-    color: "#eee"
-  }
+  color: "#eee"
+}
 
 export default ColorPickerItem

@@ -12,14 +12,16 @@ const CommandBar = (props) => {
           backdropFilter:'blur(24px)',
           position: props.position,
           top: props.top,
-          margin: props.margin
+          margin: props.margin,
+          zIndex: props.zIndex
         }
         : 
         {
           backgroundColor:'',
           position: props.position,
           top: props.top,
-          margin: props.margin
+          margin: props.margin,
+          zIndex: props.zIndex
         }
       }
       >
@@ -28,6 +30,10 @@ const CommandBar = (props) => {
         </div>
     </div>
   )
+}
+
+CommandBar.defaultProps = {
+  zIndex: 4
 }
 
 export default CommandBar

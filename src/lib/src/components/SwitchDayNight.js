@@ -2,7 +2,6 @@ import React from 'react'
 var setAppDark = require('./utils/ThemeManager').setAppDark
 var setAppLight = require('./utils/ThemeManager').setAppLight
 
-
 const SwitchDayNight = () => {
 
   const inputRef = React.useRef()
@@ -34,6 +33,5 @@ const SwitchDayNight = () => {
     </label>
   )
 }
-
 
 export default SwitchDayNight

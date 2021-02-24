@@ -5,21 +5,21 @@ const Button = (props) => {
 
   const renderLoader = () => {
     return <div
-    className={
-      props.type ==="primary" ?  "app-loader-busy small light"
-    : props.type ==="danger" ? "app-loader-busy small light"
-    : props.type ==="success" ? "app-loader-busy small light"
-    : "app-loader-busy small"
-    }
-    style={props.isLoading ? { display:'inline'} : {display : 'none'}}>
-    <LoaderBusyWrapper/>
-  </div>
+        className = {
+            props.type ==="primary" ?  "app-loader-busy small light"
+          : props.type ==="danger" ? "app-loader-busy small light"
+          : props.type ==="success" ? "app-loader-busy small light"
+          : "app-loader-busy small"
+          }
+        style={props.isLoading ? { display:'inline'} : {display : 'none'}}>
+      <LoaderBusyWrapper/>
+    </div>
   }
 
   
   return (
     <button
-      className={
+      className = {
         props.type ==="primary" ?  "app-button animate accent"
       : props.type ==="danger" ? "app-button animate bg-danger"
       : props.type ==="success" ? "app-button animate bg-success"

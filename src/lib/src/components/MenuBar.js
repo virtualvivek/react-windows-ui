@@ -29,7 +29,7 @@ const MenuBar = (props) => {
         };
     }, [ref]);
   }
-  // Step 2. Out Side click detector register
+  // Step 2. Out Side click Register
   const wrapperRef = useRef(null)
   useOutsideAlerter(wrapperRef)
   //--------------------------------------------------------------------
