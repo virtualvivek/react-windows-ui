@@ -142,6 +142,7 @@ class Inputs extends React.Component {
         <br/><br/>
 
         <InputText
+          width={225}
           label="label"
           placeholder="Enter a text"/>
 

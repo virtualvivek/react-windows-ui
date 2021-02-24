@@ -36,6 +36,9 @@ const InputText = (props) => {
           "app-input-text danger" :
           "app-input-text"
         }
+        style={{
+          width: props.width
+        }}
         type={props.type}
         ref={inputRef}
         placeholder={props.placeholder}
