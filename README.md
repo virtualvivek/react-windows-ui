@@ -74,13 +74,11 @@ Create your own like this
 ```css
 :root {
     --AppColor: #6632a8;
- /*   Change of your choice */
+    /* Change color you like */
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
-    text-rendering: optimizeLegibility;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
+    /* Change fontfamily for your app */
 }
 ```
 
