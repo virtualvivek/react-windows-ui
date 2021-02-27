@@ -84,7 +84,7 @@ const Framework = () => {
           <NavBarLink
             to="/links"
             text="Links"
-            icon={<i className="icons10-clip"></i>}
+            icon={<i className="icons10-link"></i>}
           />
                     
           <NavBarLink
