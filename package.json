@@ -38,7 +38,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "compile:sass": "node-sass src/lib/src/stylesheet/main.scss src/lib/dist/react-windows-ui.css",
+    "compile:sass": "node-sass src/stylesheet/main.scss src/lib/dist/react-windows-ui.css",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"

@@ -102,7 +102,7 @@ const Framework = () => {
           <NavBarLink
             to="/gauges"
             text="Gauges"
-            icon={<i className="icons10-chevron-up-round"></i>}
+            icon={<i className="icons10-pie-chart"></i>}
           />
                     
           <NavBarLink

@@ -46,9 +46,6 @@ const Icons = () => {
           <pre className="inline"><code>icons10-alphabet-sorting-2</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-amex"></i></span> 
-          <pre className="inline"><code>icons10-amex</code></pre> 
-        </div> 
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-angle-down"></i></span> 
           <pre className="inline"><code>icons10-angle-down</code></pre> 
@@ -74,20 +71,20 @@ const Icons = () => {
           <pre className="inline"><code>icons10-area-chart</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-arrows-long-down"></i></span> 
-          <pre className="inline"><code>icons10-arrows-long-down</code></pre> 
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-arrows-down"></i></span> 
+          <pre className="inline"><code>icons10-arrows-down</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-arrows-long-left"></i></span> 
-          <pre className="inline"><code>icons10-arrows-long-left</code></pre> 
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-arrows-left"></i></span> 
+          <pre className="inline"><code>icons10-arrows-left</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-arrows-long-right"></i></span> 
-          <pre className="inline"><code>icons10-arrows-long-right</code></pre> 
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-arrows-right"></i></span> 
+          <pre className="inline"><code>icons10-arrows-right</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-arrows-long-up"></i></span> 
-          <pre className="inline"><code>icons10-arrows-long-up</code></pre> 
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-arrows-up"></i></span> 
+          <pre className="inline"><code>icons10-arrows-up</code></pre> 
         </div> 
 
        
@@ -117,16 +114,25 @@ const Icons = () => {
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-bed"></i></span> 
           <pre className="inline"><code>icons10-bed</code></pre> 
+        </div>
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-bell"></i></span> 
+          <pre className="inline"><code>icons10-bell</code></pre> 
+        </div>
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-bell-disabled"></i></span> 
+          <pre className="inline"><code>icons10-bell-disabled</code></pre> 
         </div> 
+
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-binoculars"></i></span> 
           <pre className="inline"><code>icons10-binoculars</code></pre> 
-        </div> 
+        </div>
 
-       
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-bold"></i></span> 
-          <pre className="inline"><code>icons10-bold</code></pre> 
-        </div> 
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-bluetooth"></i></span> 
+          <pre className="inline"><code>icons10-bluetooth</code></pre> 
+        </div>
+
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-bookmark"></i></span> 
           <pre className="inline"><code>icons10-bookmark</code></pre> 
@@ -153,7 +159,15 @@ const Icons = () => {
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-calculator"></i></span> 
           <pre className="inline"><code>icons10-calculator</code></pre> 
-        </div> 
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-car"></i></span> 
+          <pre className="inline"><code>icons10-car</code></pre> 
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-car-taxi"></i></span> 
+          <pre className="inline"><code>icons10-car-taxi</code></pre> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-camera"></i></span> 
           <pre className="inline"><code>icons10-camera</code></pre> 
@@ -185,7 +199,11 @@ const Icons = () => {
           
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-cast"></i></span> 
           <pre className="inline"><code>icons10-cast</code></pre> 
-        </div> 
+        </div>
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-color-palette"></i></span> 
+          <pre className="inline"><code>icons10-color-palette</code></pre> 
+        </div>
           
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-cross"></i></span> 
           <pre className="inline"><code>icons10-cross</code></pre> 
@@ -208,41 +226,6 @@ const Icons = () => {
           <pre className="inline"><code>icons10-checkmark</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-chevron-down"></i></span> 
-          <pre className="inline"><code>icons10-chevron-down</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-chevron-down-round"></i></span> 
-          <pre className="inline"><code>icons10-chevron-down-round</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-chevron-left"></i></span> 
-          <pre className="inline"><code>icons10-chevron-left</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-chevron-left-round"></i></span> 
-          <pre className="inline"><code>icons10-chevron-left-round</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-chevron-right"></i></span> 
-          <pre className="inline"><code>icons10-chevron-right</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-chevron-right-round"></i></span> 
-          <pre className="inline"><code>icons10-chevron-right-round</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-chevron-up"></i></span> 
-          <pre className="inline"><code>icons10-chevron-up</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-chevron-up-round"></i></span> 
-          <pre className="inline"><code>icons10-chevron-up-round</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-circle"></i></span> 
-          <pre className="inline"><code>icons10-circle</code></pre> 
-        </div> 
 
       
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-clipboard"></i></span> 
@@ -289,9 +272,6 @@ const Icons = () => {
           <pre className="inline"><code>icons10-copy</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-copyright"></i></span> 
-          <pre className="inline"><code>icons10-copyright</code></pre> 
-        </div> 
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-create-new"></i></span> 
           <pre className="inline"><code>icons10-create-new</code></pre> 
@@ -321,13 +301,7 @@ const Icons = () => {
           <pre className="inline"><code>icons10-dining-room</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-diploma"></i></span> 
-          <pre className="inline"><code>icons10-diploma</code></pre> 
-        </div> 
-          
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-disk"></i></span> 
-          <pre className="inline"><code>icons10-disk</code></pre> 
-        </div>   
+
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-doctor"></i></span> 
           <pre className="inline"><code>icons10-doctor</code></pre> 
@@ -347,7 +321,11 @@ const Icons = () => {
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-double-up"></i></span> 
           <pre className="inline"><code>icons10-double-up</code></pre> 
-        </div> 
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-double-down"></i></span> 
+          <pre className="inline"><code>icons10-double-down</code></pre> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-down-arrow"></i></span> 
           <pre className="inline"><code>icons10-down-arrow</code></pre> 
@@ -379,7 +357,11 @@ const Icons = () => {
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-eraser"></i></span> 
           <pre className="inline"><code>icons10-eraser</code></pre> 
-        </div> 
+        </div>
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-emoji-smile"></i></span> 
+          <pre className="inline"><code>icons10-emoji-smile</code></pre> 
+        </div>
           
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-eye"></i></span> 
           <pre className="inline"><code>icons10-eye</code></pre> 
@@ -415,6 +397,10 @@ const Icons = () => {
           <pre className="inline"><code>icons10-file</code></pre> 
         </div> 
 
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-file-explorer"></i></span> 
+          <pre className="inline"><code>icons10-file-explorer</code></pre> 
+        </div> 
+
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-film"></i></span> 
           <pre className="inline"><code>icons10-film</code></pre> 
         </div> 
@@ -425,11 +411,12 @@ const Icons = () => {
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-finish-flag"></i></span> 
           <pre className="inline"><code>icons10-finish-flag</code></pre> 
-        </div> 
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-fingerprint"></i></span> 
+          <pre className="inline"><code>icons10-fingerprint</code></pre> 
+        </div>
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-fire-extinguisher"></i></span> 
-          <pre className="inline"><code>icons10-fire-extinguisher</code></pre> 
-        </div> 
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-folder"></i></span> 
           <pre className="inline"><code>icons10-folder</code></pre> 
@@ -448,9 +435,7 @@ const Icons = () => {
           <pre className="inline"><code>icons10-generic-sorting-2</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-generic-text"></i></span> 
-          <pre className="inline"><code>icons10-generic-text</code></pre> 
-        </div> 
+  
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-gift"></i></span> 
           <pre className="inline"><code>icons10-gift</code></pre> 
@@ -477,9 +462,6 @@ const Icons = () => {
           <pre className="inline"><code>icons10-hdd</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-header"></i></span> 
-          <pre className="inline"><code>icons10-header</code></pre> 
-        </div> 
           
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-headphone"></i></span> 
           <pre className="inline"><code>icons10-headphone</code></pre> 
@@ -487,15 +469,23 @@ const Icons = () => {
           
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-heart"></i></span> 
           <pre className="inline"><code>icons10-heart</code></pre> 
-        </div>   
+        </div>
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-health"></i></span> 
+          <pre className="inline"><code>icons10-health</code></pre> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-home"></i></span> 
           <pre className="inline"><code>icons10-home</code></pre> 
-        </div> 
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-history"></i></span> 
+          <pre className="inline"><code>icons10-history</code></pre> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-hospital"></i></span> 
           <pre className="inline"><code>icons10-hospital</code></pre> 
-        </div> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-idea"></i></span> 
           <pre className="inline"><code>icons10-idea</code></pre> 
@@ -533,10 +523,6 @@ const Icons = () => {
           <pre className="inline"><code>icons10-iphone</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-italic"></i></span> 
-          <pre className="inline"><code>icons10-italic</code></pre> 
-        </div> 
-
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-key"></i></span> 
           <pre className="inline"><code>icons10-key</code></pre> 
@@ -546,9 +532,6 @@ const Icons = () => {
           <pre className="inline"><code>icons10-keyboard</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-last-quarter"></i></span> 
-          <pre className="inline"><code>icons10-last-quarter</code></pre> 
-        </div> 
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-left-arrow"></i></span> 
           <pre className="inline"><code>icons10-left-arrow</code></pre> 
@@ -601,15 +584,27 @@ const Icons = () => {
           
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-map"></i></span> 
           <pre className="inline"><code>icons10-map</code></pre> 
-        </div>   
+        </div> 
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-mail"></i></span> 
+          <pre className="inline"><code>icons10-mail</code></pre> 
+        </div>
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-messages"></i></span> 
+          <pre className="inline"><code>icons10-messages</code></pre> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-minus"></i></span> 
           <pre className="inline"><code>icons10-minus</code></pre> 
         </div>
           
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-microphone"></i></span> 
-          <pre className="inline"><code>icons10-microphone</code></pre> 
-        </div> 
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-mic"></i></span> 
+          <pre className="inline"><code>icons10-mic</code></pre> 
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-mic-disabled"></i></span> 
+          <pre className="inline"><code>icons10-mic-disabled</code></pre> 
+        </div>
   
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-monitor"></i></span> 
@@ -631,10 +626,35 @@ const Icons = () => {
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-music"></i></span> 
           <pre className="inline"><code>icons10-music</code></pre> 
         </div>
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-music-playlist"></i></span> 
+          <pre className="inline"><code>icons10-music-playlist</code></pre> 
+        </div>
+                  
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-music-record"></i></span> 
+          <pre className="inline"><code>icons10-music-record</code></pre> 
+        </div>
           
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-navigation"></i></span> 
           <pre className="inline"><code>icons10-navigation</code></pre> 
-        </div> 
+        </div>
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-network-hotspot"></i></span> 
+          <pre className="inline"><code>icons10-network-hotspot</code></pre> 
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-network-connected"></i></span> 
+          <pre className="inline"><code>icons10-network-connected</code></pre> 
+        </div>
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-network-disconnected"></i></span> 
+          <pre className="inline"><code>icons10-network-disconnected</code></pre> 
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-network-tower"></i></span> 
+          <pre className="inline"><code>icons10-network-tower</code></pre> 
+        </div>
+
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-news"></i></span> 
           <pre className="inline"><code>icons10-news</code></pre> 
@@ -652,16 +672,17 @@ const Icons = () => {
           <pre className="inline"><code>icons10-notification-image</code></pre> 
         </div>
 
+
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-numbered-list"></i></span> 
           <pre className="inline"><code>icons10-numbered-list</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-numerical-sorting-12"></i></span> 
-          <pre className="inline"><code>icons10-numerical-sorting-12</code></pre> 
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-numerical-sorting"></i></span> 
+          <pre className="inline"><code>icons10-numerical-sorting</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-numerical-sorting-21"></i></span> 
-          <pre className="inline"><code>icons10-numerical-sorting-21</code></pre> 
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-numerical-sorting-2"></i></span> 
+          <pre className="inline"><code>icons10-numerical-sorting-2</code></pre> 
         </div> 
 
 
@@ -686,13 +707,6 @@ const Icons = () => {
           <pre className="inline"><code>icons10-paste</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-paypal"></i></span> 
-          <pre className="inline"><code>icons10-paypal</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-pdf"></i></span> 
-          <pre className="inline"><code>icons10-pdf</code></pre> 
-        </div> 
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-pencil"></i></span> 
           <pre className="inline"><code>icons10-pencil</code></pre> 
@@ -705,6 +719,14 @@ const Icons = () => {
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-phone"></i></span> 
           <pre className="inline"><code>icons10-phone</code></pre> 
         </div> 
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-phone-book"></i></span> 
+          <pre className="inline"><code>icons10-phone-book</code></pre> 
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-phone-dial"></i></span> 
+          <pre className="inline"><code>icons10-phone-dial</code></pre> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-picture"></i></span> 
           <pre className="inline"><code>icons10-picture</code></pre> 
@@ -723,9 +745,6 @@ const Icons = () => {
           <pre className="inline"><code>icons10-plus</code></pre> 
         </div>   
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-powerpoint"></i></span> 
-          <pre className="inline"><code>icons10-powerpoint</code></pre> 
-        </div> 
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-price-tag"></i></span> 
           <pre className="inline"><code>icons10-price-tag</code></pre> 
@@ -734,7 +753,11 @@ const Icons = () => {
         
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-printer"></i></span> 
           <pre className="inline"><code>icons10-printer</code></pre> 
-        </div>   
+        </div>
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-printer-cloud"></i></span> 
+          <pre className="inline"><code>icons10-printer-cloud</code></pre> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-puzzle"></i></span> 
           <pre className="inline"><code>icons10-puzzle</code></pre> 
@@ -797,13 +820,6 @@ const Icons = () => {
           <pre className="inline"><code>icons10-rotate-right</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-rectangle"></i></span> 
-          <pre className="inline"><code>icons10-rectangle</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-rectangle-filled"></i></span> 
-          <pre className="inline"><code>icons10-rectangle-filled</code></pre> 
-        </div> 
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-rupee"></i></span> 
           <pre className="inline"><code>icons10-rupee</code></pre> 
@@ -816,22 +832,32 @@ const Icons = () => {
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-scan"></i></span> 
           <pre className="inline"><code>icons10-scan</code></pre> 
         </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-scanner"></i></span> 
+          <pre className="inline"><code>icons10-scanner</code></pre> 
+        </div> 
           
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-scale"></i></span> 
           <pre className="inline"><code>icons10-scale</code></pre> 
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-sdcard"></i></span> 
+          <pre className="inline"><code>icons10-sdcard</code></pre> 
         </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-search"></i></span> 
           <pre className="inline"><code>icons10-search</code></pre> 
         </div> 
           
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-security"></i></span> 
-          <pre className="inline"><code>icons10-security</code></pre> 
-        </div>   
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-security-user"></i></span> 
+          <pre className="inline"><code>icons10-security-user</code></pre> 
+        </div>
+        
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-sensor"></i></span> 
-          <pre className="inline"><code>icons10-sensor</code></pre> 
-        </div> 
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-security-issue"></i></span> 
+          <pre className="inline"><code>icons10-security-issue</code></pre> 
+        </div>
+
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-services"></i></span> 
           <pre className="inline"><code>icons10-services</code></pre> 
@@ -861,35 +887,29 @@ const Icons = () => {
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-sort"></i></span> 
           <pre className="inline"><code>icons10-sort</code></pre> 
-        </div> 
+        </div>
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-sort-down"></i></span> 
-          <pre className="inline"><code>icons10-sort-down</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-sort-left"></i></span> 
-          <pre className="inline"><code>icons10-sort-left</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-sort-right"></i></span> 
-          <pre className="inline"><code>icons10-sort-right</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-sort-up"></i></span> 
-          <pre className="inline"><code>icons10-sort-up</code></pre> 
-        </div> 
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-spy"></i></span> 
           <pre className="inline"><code>icons10-spy</code></pre> 
         </div>
-          
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-speaker-on"></i></span> 
-          <pre className="inline"><code>icons10-speaker-on</code></pre> 
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-speaker-0"></i></span> 
+          <pre className="inline"><code>icons10-speaker-0</code></pre> 
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-speaker-1"></i></span> 
+          <pre className="inline"><code>icons10-speaker-1</code></pre> 
+        </div>
+                  
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-speaker-2"></i></span> 
+          <pre className="inline"><code>icons10-speaker-2</code></pre> 
         </div>
           
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-speaker-off"></i></span> 
-          <pre className="inline"><code>icons10-speaker-off</code></pre> 
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-speaker-3"></i></span> 
+          <pre className="inline"><code>icons10-speaker-3</code></pre> 
         </div>
+
           
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-star"></i></span> 
           <pre className="inline"><code>icons10-star</code></pre> 
@@ -902,7 +922,11 @@ const Icons = () => {
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-support"></i></span> 
           <pre className="inline"><code>icons10-support</code></pre> 
-        </div> 
+        </div>
+               
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-sun"></i></span> 
+          <pre className="inline"><code>icons10-sun</code></pre> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-tags"></i></span> 
           <pre className="inline"><code>icons10-tags</code></pre> 
@@ -912,9 +936,6 @@ const Icons = () => {
           <pre className="inline"><code>icons10-tasks</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-text-height"></i></span> 
-          <pre className="inline"><code>icons10-text-height</code></pre> 
-        </div> 
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-text-width"></i></span> 
           <pre className="inline"><code>icons10-text-width</code></pre> 
@@ -930,37 +951,41 @@ const Icons = () => {
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-todo-list"></i></span> 
           <pre className="inline"><code>icons10-todo-list</code></pre> 
-        </div> 
+        </div>
+
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-touch"></i></span> 
+          <pre className="inline"><code>icons10-touch</code></pre> 
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-thermometer"></i></span> 
+          <pre className="inline"><code>icons10-thermometer</code></pre> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-translation"></i></span> 
           <pre className="inline"><code>icons10-translation</code></pre> 
-        </div> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-trash"></i></span> 
           <pre className="inline"><code>icons10-trash</code></pre> 
-        </div> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-trophy"></i></span> 
           <pre className="inline"><code>icons10-trophy</code></pre> 
-        </div> 
-
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-umbrella"></i></span> 
-          <pre className="inline"><code>icons10-umbrella</code></pre> 
-        </div> 
+        </div>
 
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-undo"></i></span> 
           <pre className="inline"><code>icons10-undo</code></pre> 
-        </div> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-up-arrow"></i></span> 
           <pre className="inline"><code>icons10-up-arrow</code></pre> 
-        </div> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-up-round"></i></span> 
           <pre className="inline"><code>icons10-up-round</code></pre> 
-        </div> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-up-squared"></i></span> 
           <pre className="inline"><code>icons10-up-squared</code></pre> 
@@ -972,7 +997,7 @@ const Icons = () => {
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-upload-2"></i></span> 
           <pre className="inline"><code>icons10-upload-2</code></pre> 
-        </div> 
+        </div>
 
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-us-dollar"></i></span> 
           <pre className="inline"><code>icons10-us-dollar</code></pre> 
@@ -1028,25 +1053,24 @@ const Icons = () => {
           <pre className="inline"><code>icons10-video-file</code></pre> 
         </div> 
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-visa"></i></span> 
-          <pre className="inline"><code>icons10-visa</code></pre> 
-        </div> 
+
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-web-cam"></i></span> 
+          <pre className="inline"><code>icons10-web-cam</code></pre> 
+        </div>
           
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-window"></i></span> 
           <pre className="inline"><code>icons10-window</code></pre> 
-        </div> 
+        </div>
           
         <div className="preview-glyphs"> <span className="size-60"><i className="icons10-windows"></i></span> 
           <pre className="inline"><code>icons10-windows</code></pre> 
-        </div>   
+        </div>
+        
+        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-wifi"></i></span> 
+          <pre className="inline"><code>icons10-wifi</code></pre> 
+        </div>
 
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-word"></i></span> 
-          <pre className="inline"><code>icons10-word</code></pre> 
-        </div> 
-
-        <div className="preview-glyphs"> <span className="size-60"><i className="icons10-xls"></i></span> 
-          <pre className="inline"><code>icons10-xls</code></pre> 
-        </div> 
+ 
      
           
       </div>
