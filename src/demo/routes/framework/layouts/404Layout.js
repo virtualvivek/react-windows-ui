@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 class _404Layout extends React.Component {
 
   componentDidMount() {
-    document.getElementById("app-nav-wrap").style.display="none";
+    document.getElementById("app-nav-wrap-id").style.display="none";
   }
       
   componentWillUnmount() {
-    document.getElementById("app-nav-wrap").style.display="";
+    document.getElementById("app-nav-wrap-id").style.display="";
   }
 
 

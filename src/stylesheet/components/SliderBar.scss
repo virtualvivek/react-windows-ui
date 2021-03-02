@@ -2,6 +2,7 @@
     width: 360px;
     display: block;
     position: relative;
+    padding: 5px 0;
 
     input[type="range"] {
         appearance: none;
@@ -43,10 +44,12 @@
             transition: background 0.15s ease-in-out;
             user-select: none;
         }
-        &::-moz-range-thumb:hover,
-        &:active::-moz-range-thumb,
         &::-moz-range-thumb {
             background: var(--AppColor);
+        }
+        &::-moz-range-thumb:hover,
+        &:active::-moz-range-thumb {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
         }
     }
     &.round {
@@ -82,7 +85,7 @@
     span {
         @extend .color-dark-text;
         display: contents;
-        font-size: 20px;
+        font-size: 18px;
     }
     .popup {
         background: var(--color_button);
@@ -104,14 +107,13 @@
         width: calc(280px + 5%);
         flex-flow: column-reverse;
         display: flex;
-        padding: 10px 0 15px 0;
 
         input[type="range"] {
             width: 100%;
             top: 0;
         }
         span {
-            line-height: 2.4;
+            line-height: 2.2;
         }
     }
 }

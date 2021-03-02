@@ -11,7 +11,8 @@ const NavBar = (props) => {
   return (
     <div
       className={sidebar ? 'app-nav-wrap toggled' : 'app-nav-wrap'}
-      ref={props.ref}> 
+      ref={props.ref}
+      id="app-nav-wrap-id"> 
         <nav className="animate">
           <div>
             {props.goBack ?

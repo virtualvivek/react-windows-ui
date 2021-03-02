@@ -34,7 +34,7 @@
 
     .app-input-label {
         @extend .transition-background-400ms;
-        padding: 5px;
+        padding: 4px 5px;
         border: 2px solid #999;
         border-right: none;
         background-color: var(--color_light_grey_alpha);
@@ -45,7 +45,6 @@
         right: 5px;
 
         i {
-            line-height: 1;
             &::before {
                 @extend .vertical-align-middle;
                 margin-right: 5px;

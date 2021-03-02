@@ -823,7 +823,7 @@ label.app-checkbox input[type="checkbox"] {
   width: min-content;
   position: relative; }
   .app-input-text-container .app-input-label {
-    padding: 5px;
+    padding: 4px 5px;
     border: 2px solid #999;
     border-right: none;
     background-color: var(--color_light_grey_alpha); }
@@ -831,11 +831,9 @@ label.app-checkbox input[type="checkbox"] {
     position: absolute;
     top: 4px;
     right: 5px; }
-    .app-input-text-container .app-input-status-container i {
-      line-height: 1; }
-      .app-input-text-container .app-input-status-container i::before {
-        margin-right: 5px;
-        padding: 4px; }
+    .app-input-text-container .app-input-status-container i::before {
+      margin-right: 5px;
+      padding: 4px; }
   .app-input-text-container input[type="password"].app-input-text + div button.unmask::after {
     content: "\f1db"; }
   .app-input-text-container button.unmask {
@@ -1286,7 +1284,8 @@ label.app-checkbox input[type="checkbox"] {
 .app-range-slider {
   width: 360px;
   display: block;
-  position: relative; }
+  position: relative;
+  padding: 5px 0; }
   .app-range-slider input[type="range"] {
     appearance: none;
     width: calc(100% - (73px));
@@ -1321,8 +1320,10 @@ label.app-checkbox input[type="checkbox"] {
       cursor: pointer;
       transition: background 0.15s ease-in-out;
       user-select: none; }
-    .app-range-slider input[type="range"]::-moz-range-thumb:hover, .app-range-slider input[type="range"]:active::-moz-range-thumb, .app-range-slider input[type="range"]::-moz-range-thumb {
+    .app-range-slider input[type="range"]::-moz-range-thumb {
       background: var(--AppColor); }
+    .app-range-slider input[type="range"]::-moz-range-thumb:hover, .app-range-slider input[type="range"]:active::-moz-range-thumb {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26); }
   .app-range-slider.round input[type="range"]::-webkit-slider-thumb {
     width: 20px !important;
     height: 20px; }
@@ -1341,7 +1342,7 @@ label.app-checkbox input[type="checkbox"] {
     background: var(--color_light_bg); }
   .app-range-slider span {
     display: contents;
-    font-size: 20px; }
+    font-size: 18px; }
   .app-range-slider .popup {
     background: var(--color_button);
     box-shadow: 0 0 4px var(--color_button);
@@ -1413,7 +1414,11 @@ label.app-checkbox input[type="checkbox"] {
   .app-nav-wrap nav {
     scrollbar-width: thin; }
   .app-alert {
-    background-color: var(--AppColor) !important; } }
+    background-color: var(--AppColor) !important; }
+  .app-custom-dropdown-ul, .app-search-suggestion ul, .app-select-styled.menubar ul,
+  .app-search-suggestion ul,
+  .app-select-styled.menubar ul {
+    background-color: var(--color_light_grey); } }
 
 @media only screen and (max-width: 760px) {
   ::-webkit-scrollbar {
@@ -1584,10 +1589,9 @@ label.app-checkbox input[type="checkbox"] {
   .app-range-slider {
     width: calc(280px + 5%);
     flex-flow: column-reverse;
-    display: flex;
-    padding: 10px 0 15px 0; }
+    display: flex; }
     .app-range-slider input[type="range"] {
       width: 100%;
       top: 0; }
     .app-range-slider span {
-      line-height: 2.4; } }
+      line-height: 2.2; } }
