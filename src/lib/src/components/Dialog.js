@@ -5,6 +5,13 @@ const Dialog = (props) => {
   
   createAlphaAccentColor()
 
+  const isDropShadow = () => {
+    if(props.showDropShadow)
+      return "dropShadow"
+    else
+      return ""
+  }
+
   return (
     <>
     <div
@@ -15,20 +22,10 @@ const Dialog = (props) => {
         }>
     </div>
     <div
-      className = { props.isVisible ? "app-dialog show" : "app-dialog" }
-      style = {
-        props.showDropShadow ?
-        {
-          backgroundColor: 'var(--color_light_grey_alpha)',
-          backdropFilter:'blur(24px)',
-          padding: props.padding
-        }
-        : 
-        {
-          backgroundColor:'',
-          padding: props.padding
-        }
-      }
+      className = { props.isVisible ? "app-dialog "+ isDropShadow() + " show" : "app-dialog" }
+      style = {{
+                padding: props.padding
+              }}
     >
        {props.children}
     </div>

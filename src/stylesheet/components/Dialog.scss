@@ -16,6 +16,11 @@
     transition: all 0.3s;
     transform: translateY(50px);
 
+    &.dropShadow {
+        background-color: var(--color_light_grey_alpha);
+        backdrop-filter: blur(24px);
+    }
+
     &.show {
         opacity: 1;
         transform: translateY(0);

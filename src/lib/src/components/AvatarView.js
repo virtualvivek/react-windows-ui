@@ -11,7 +11,7 @@ const AvatarView = (props) => {
                   <LoaderBusyWrapper/>
                 </div>
               </div>
-      }
+    }
 
     const renderDropShadow = () => {
       return <img
@@ -26,7 +26,10 @@ const AvatarView = (props) => {
         src={props.src}
         alt={props.alt}
       />
-      }
+    }
+    const handleOnLoad = () => {
+      setLoad(true)
+    }
 
   return (
     <div className="app-avatar-container">
@@ -41,7 +44,8 @@ const AvatarView = (props) => {
             width: props.width,
             height: props.height,
           }}
-          onLoad={() => setLoad(true)}
+          // onLoad={() => setLoad(true)}
+          onLoad={() => { handleOnLoad(); props.onLoad() }}
           />
 
           {props.showDropShadow ? renderDropShadow() : ""}

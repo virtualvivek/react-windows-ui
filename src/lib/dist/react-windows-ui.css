@@ -742,6 +742,9 @@ label.app-checkbox input[type="checkbox"] {
   visibility: hidden;
   transition: all 0.3s;
   transform: translateY(50px); }
+  .app-dialog.dropShadow {
+    background-color: var(--color_light_grey_alpha);
+    backdrop-filter: blur(24px); }
   .app-dialog.show {
     opacity: 1;
     transform: translateY(0);
@@ -1413,6 +1416,8 @@ label.app-checkbox input[type="checkbox"] {
     scrollbar-color: #999 transparent; }
   .app-nav-wrap nav {
     scrollbar-width: thin; }
+  .app-dialog.dropShadow {
+    background-color: var(--color_light_grey); }
   .app-alert {
     background-color: var(--AppColor) !important; }
   .app-custom-dropdown-ul, .app-search-suggestion ul, .app-select-styled.menubar ul,

@@ -12,6 +12,9 @@
         scrollbar-width: thin;
     }
     
+    .app-dialog.dropShadow {
+        background-color: var(--color_light_grey);
+    }
     .app-alert {
         background-color: var(--AppColor) !important;
     }
