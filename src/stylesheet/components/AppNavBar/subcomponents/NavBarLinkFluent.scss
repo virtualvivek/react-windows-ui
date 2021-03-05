@@ -1,0 +1,14 @@
+.app-fluent-navlink {
+    @extend .transition-background-400ms;
+    padding: 0 0 2px 0;
+    overflow: hidden;
+    border: none;
+    background: var(--color_nav) content-box !important;
+    position: relative;
+    &:hover {
+        background: var(--color_button) content-box !important;
+    }
+    a {
+        z-index: 1;
+    }
+}

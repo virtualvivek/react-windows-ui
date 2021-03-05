@@ -8,6 +8,7 @@ import { ProgressBarIndeterminate,ProgressBar,
         super(props);
         this.state = {
             showLoaderBusyFull :false,
+            showLoaderBusyFullCustom :false,
             ProgressBar1:46,
         }
       }
@@ -18,8 +19,17 @@ import { ProgressBarIndeterminate,ProgressBar,
         }
         else {
             this.setState({showLoaderBusyFull: true}); 
-        } 
+        }
     }
+    toggleLoaderBusyFullCustom = () => {
+      if(this.state.showLoaderBusyFullCustom){
+          this.setState({showLoaderBusyFullCustom: false});
+      }
+      else {
+          this.setState({showLoaderBusyFullCustom: true}); 
+      }
+    }
+
     setProgress2 = () => { this.setState({ProgressBar1:2}) }
     setProgress50 = () => { this.setState({ProgressBar1:50}) }
     setProgress99 = () => { this.setState({ProgressBar1:99}) }
@@ -27,6 +37,7 @@ import { ProgressBarIndeterminate,ProgressBar,
   render() {
     return (
     <NavPageContainer hasPadding>
+
       <h1>ProgressControls</h1>
 
       <h1 className="m-0 color-accent"
@@ -64,13 +75,19 @@ import { ProgressBarIndeterminate,ProgressBar,
               showIcon={true}
               icon={<i className="icons10-hdd" ></i>}
             />
+        <h3 className="m-b-15">Progress Custom Height</h3>
+            <ProgressBar
+              title="Storage D:/"
+              setProgress={50}
+              height={15}
+            />   
            
         <h3 className="m-b-15">Progress Indeterminate</h3>
             <ProgressBarIndeterminate
               isLoading={true}
             />
 
-        <h3 className="m-b-15">LoaderBar</h3>
+        <h2 className="m-b-15">LoaderBars</h2>
             <LoaderBar/>
 
         <h3 className="m-b-15">LoadeBusy</h3>
@@ -90,8 +107,39 @@ import { ProgressBarIndeterminate,ProgressBar,
             />
 
             <Button
-              value="Open Loader fullscreen" 
+              value="Open fullscreen Loader" 
               onClick={this.toggleLoaderBusyFull}
+            />
+        <h3 className="m-b-15">Custom Background</h3>
+
+            <LoaderBusy
+              isVisible={this.state.showLoaderBusyFullCustom}
+              onBackdropPress={this.toggleLoaderBusyFullCustom}
+              display="fullscreen"
+              backgroundColor="var(--AppColor)"
+              setTheme="light"
+              title="loading title"
+            />
+
+            <Button
+              value="Open Custom fullscreen Loader" 
+              onClick={this.toggleLoaderBusyFullCustom}
+            />
+
+        <h2 className="m-b-15">Progress Status</h2>
+
+          <h2 className="m-b-15">Danger</h2>
+            <ProgressBar
+              title="Copying files.."
+              setProgress={40}
+              setStatus="danger"
+            />
+
+          <h2 className="m-b-15">Success</h2>
+            <ProgressBar
+              title="Downloaded imageres.dll ✅"
+              setProgress={99}
+              setStatus="success"
             />
 
 

@@ -10,7 +10,9 @@
             width: 100%;
             display: inline;
             white-space: nowrap;
+            position: relative;
             top: 45px;
+            margin: 0 auto;
             z-index: 2;
 
             li {
@@ -29,7 +31,7 @@
                         height: 3px;
                         width: 90%;
                         bottom: 0;
-                        left: 6.5px;
+                        left: 6%;
                         transition: transform 0.4s;
                         transform: translate3d(0, 100%, 0);
                     }
@@ -48,13 +50,6 @@
                         bottom: 5px;
                         right: 0;
                     }
-                }
-                
-                &:first-child span {
-                    margin-left: 10px;
-                }
-                &:last-child {
-                    padding-right: 30px;
                 }
             }
             .app-hr {

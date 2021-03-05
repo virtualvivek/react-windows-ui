@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button,NavPageContainer } from '../../../../lib'
+import { Button,ButtonFluent,NavPageContainer,RegisterFluentEffect } from '../../../../lib'
 
 class Buttons extends React.Component {
 
@@ -19,10 +19,11 @@ class Buttons extends React.Component {
 
   return (
     <NavPageContainer hasPadding>
-
+      <RegisterFluentEffect/>
       <h1>Buttons</h1>
 
       <h3>States</h3>
+
 
         <Button
           value="Button Regular"
@@ -54,8 +55,17 @@ class Buttons extends React.Component {
 
         <div className="app-hr"></div>
 
+        <h3>Fluent Hover Effect</h3>
+        
+        <ButtonFluent
+          value="Fluent Button"/>
+
+
+        <div className="app-hr"></div>
+        
         <Button
           value="Default Button"/>
+        
 
         <br/><br/>
 

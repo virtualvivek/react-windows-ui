@@ -1,6 +1,7 @@
 @import "./subcomponents/NavBack.scss";
 @import "./subcomponents/NavToggled.scss";
 @import "./subcomponents/Nav_li.scss";
+@import "./subcomponents/NavPositions.scss";
 @import "./subcomponents/NavMobile.scss";
 @import "./subcomponents/NavUser.scss";
 @import "./subcomponents/NavToggleButton.scss";
@@ -61,10 +62,7 @@
         }
 
         ul {
-            position: relative;
-            top: 115px;
             display: block;
-            margin: 0 auto;
             padding: 0 0 40px 0;
             list-style: none;
             flex-flow: row wrap;
@@ -85,22 +83,5 @@
         .app-switch {
             margin: 16px 0 0 20px;
         }
-    }
-    
-    nav > div:first-child,
-    nav > div:nth-child(2) {
-        @extend .background-color-nav;
-        width: inherit;
-        display: flex;
-        position: fixed;
-        z-index: 2;
-        transition: inherit;
-    }
-
-    nav > div:first-child {
-        padding-bottom: 10px;
-    }
-    nav > div:nth-child(2) {
-        top: 50px;
     }
 }

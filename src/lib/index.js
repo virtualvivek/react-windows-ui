@@ -1,6 +1,7 @@
 import AvatarView from './src/components/AvatarView'
 import Alert from './src/components/Alert'
 import Button from './src/components/Button'
+import ButtonFluent from './src/components/ButtonFluent'
 import Card from './src/components/Card'
 import Checkbox from './src/components/Checkbox'
 import CommandBar from './src/components/CommandBar'
@@ -22,6 +23,7 @@ import MenuBar from './src/components/MenuBar'
 import {
     NavBar,
     NavBarLink,
+    NavBarLinkFluent,
     NavBarLinkUser,
     NavPageContainer,
     NavPageContainerRight,
@@ -29,6 +31,7 @@ import {
 import ProgressBar from './src/components/ProgressBar'
 import ProgressBarIndeterminate from './src/components/ProgressBarIndeterminate'
 import RadioButton from './src/components/RadioButton'
+import RegisterFluentEffect from './src/components/utils/RegisterFluentEffect'
 import SliderBar from './src/components/SliderBar'
 import SelectBox from './src/components/SelectBox'
 import StickyHeader from './src/components/StickyHeader'
@@ -44,6 +47,7 @@ export {
     AvatarView,
     Alert,
     Button,
+    ButtonFluent,
     Card,
     Checkbox,
     CommandBar,
@@ -64,6 +68,7 @@ export {
     MenuBar,
     NavBar,
     NavBarLink,
+    NavBarLinkFluent,
     NavBarLinkUser,
     NavPageContainer,
     NavPageContainerRight,
@@ -71,6 +76,7 @@ export {
     ProgressBar,
     ProgressBarIndeterminate,
     RadioButton,
+    RegisterFluentEffect,
     SliderBar,
     SelectBox,
     StickyHeader,

@@ -4,7 +4,11 @@ import LoaderBusyWrapper from './_common/LoaderBusyWrapper'
 const LoaderBusy = (props) => {
 
   const renderLoader = () => {
-    return  <div className="app-loader-busy">
+    return  <div
+              className={
+                props.setTheme === "light" ?
+                "app-loader-busy light"
+                : "app-loader-busy"}>
               <LoaderBusyWrapper/>
             </div>
   }
@@ -27,6 +31,11 @@ const LoaderBusy = (props) => {
       "app-loader-busy-fullscreen show"
       : "app-loader-busy-fullscreen"}>
       {renderLoader()}
+      <span className={
+        props.setTheme === "light" ?
+        "title text-light" : "title"}>
+        {props.title}
+      </span>
     </div>
     </>
   }

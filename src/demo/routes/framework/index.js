@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { NavBar,NavBarLink, SystemThemeFollower} from '../../../lib'
+import { NavBar, NavBarLink, NavBarLinkFluent,
+  SystemThemeFollower, RegisterFluentEffect } from '../../../lib'
 import Home from './pages/Home'
 import Layouts from './pages/Layouts'
 import Inputs from './pages/Inputs'
@@ -29,34 +30,40 @@ const Framework = () => {
   return (
     <>
      <Router basename="react-windows-ui">
+
      <SystemThemeFollower/>
+
+     {/* Register the fluent effect before using NavBarLinkFluent */}
+     <RegisterFluentEffect/>
+
         <NavBar 
           title="React Windows UI"
           titleShort={<i className="icons10-responsive"></i>}
        // titleShort="R" render text or icons
        // mobileHasIcons={true}
+          shadowOnScroll
           >
 
-          <NavBarLink
+          <NavBarLinkFluent
             to="/"
             exact={true}
             text="Home"
             icon={<i className="icons10-home"></i>}
           />
 
-          <NavBarLink
+          <NavBarLinkFluent
             to="/layouts"
             text="Layouts"
             icon={<i className="icons10-parallel-tasks"></i>}
           />
 
-          <NavBarLink
+          <NavBarLinkFluent
             to="/inputs"
             text="Inputs"
             icon={<i className="icons10-keyboard"></i>}
           />
 
-          <NavBarLink
+          <NavBarLinkFluent
             to="/texts"
             text="Texts"
             icon={<i className="icons10-align-left"></i>}

@@ -1,0 +1,27 @@
+.app-fluent-btn {
+    position: relative;
+    overflow: hidden;
+    /* The padding acts as border, background-clip is set to
+            content-box so the padding becomes transparent, then
+            a pseudo element moves in the back for the reveal. */
+    padding: 2px;
+    border: none;
+    background: var(--color_button) content-box !important;
+    &:hover {
+        filter: none;
+    }
+    &.app-fluent-effect {
+        &::before {
+            background: inherit;
+        }
+    }
+}
+.app-fluent-btn-container {
+    @extend .transition-all-400ms;
+    transition-duration: 0.2s;
+    display: inline-block;
+    &:active {
+        transform: scale(0.950, 0.950);
+        transition: 0.04s ease;
+    }
+}
