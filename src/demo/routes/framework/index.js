@@ -103,7 +103,7 @@ const Framework = () => {
           <NavBarLink
             to="/themes"
             text="Themes"
-            icon={<i className="icons10-personalize"></i>}
+            icon={<i className="icons10-color-palette"></i>}
           />
 
           <NavBarLink

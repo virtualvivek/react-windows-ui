@@ -1,9 +1,6 @@
 import React from 'react'
-var createAlphaAccentColor = require('./utils/ThemeManager').createAlphaAccentColor
 
 const Dialog = (props) => {
-  
-  createAlphaAccentColor()
 
   const isDropShadow = () => {
     if(props.showDropShadow)
@@ -22,12 +19,15 @@ const Dialog = (props) => {
         }>
     </div>
     <div
-      className = { props.isVisible ? "app-dialog "+ isDropShadow() + " show" : "app-dialog" }
+      className = { props.isVisible ?
+        "app-dialog "+ isDropShadow() + " show" :
+        "app-dialog "+ isDropShadow()
+        }
       style = {{
                 padding: props.padding
               }}
     >
-       {props.children}
+        {props.children}
     </div>
     </>
   )

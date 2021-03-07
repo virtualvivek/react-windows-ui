@@ -24,7 +24,7 @@
         padding: 0;
         display: block;
         overflow-x: hidden;
-        overflow-y: scroll;
+        overflow-y: auto;
         z-index: inherit;
 
         &.animate {
