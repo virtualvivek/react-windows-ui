@@ -27,8 +27,8 @@
         transform: translate(-50%, -50%) translate(var(--x), var(--y));
     }
     &:hover::after {
-        width: 150%;
-        height: 150%;
+        width: 200%;
+        height: 200%;
     }
 }
 .app-fluent--reveal .app-fluent-effect::before,
