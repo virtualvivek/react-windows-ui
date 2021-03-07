@@ -9,7 +9,8 @@ import ColorPickerItem from './src/components/ColorPickerItem'
 import Dialog from './src/components/Dialog'
 import Gauge from './src/components/Gauge'
 import HeaderFixedContainer from './src/components/HeaderFixedContainer'
-import LinkCoumpound from './src/components/LinkCompound'
+import LinkCompound from './src/components/LinkCompound'
+import LinkCompoundFluent from './src/components/LinkCompoundFluent'
 import ImageView from './src/components/ImageView'
 import InputDate from './src/components/InputDate'
 import InputText from './src/components/InputText'
@@ -55,7 +56,8 @@ export {
     Dialog,
     Gauge,
     HeaderFixedContainer,
-    LinkCoumpound,
+    LinkCompound,
+    LinkCompoundFluent,
     ImageView,
     InputDate,
     InputText,

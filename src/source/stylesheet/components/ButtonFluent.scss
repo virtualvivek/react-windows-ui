@@ -1,9 +1,9 @@
 .app-fluent-btn {
     position: relative;
     overflow: hidden;
-    /* The padding acts as border, background-clip is set to
-            content-box so the padding becomes transparent, then
-            a pseudo element moves in the back for the reveal. */
+    /*  The padding acts as border, background-clip is set to
+        content-box so the padding becomes transparent, then
+        a pseudo element moves in the back for the reveal. */
     padding: 2px;
     border: none;
     background: var(--color_button) content-box !important;

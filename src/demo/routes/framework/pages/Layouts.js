@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer,Card,LinkCoumpound } from '../../../../lib'
+import { NavPageContainer,Card,LinkCompound } from '../../../../lib'
 
 const Layouts = () => {
 
@@ -13,7 +13,7 @@ const Layouts = () => {
                 display="inline-block"
                 focused
                 margin="5px 5px 0 0">
-                <LinkCoumpound  
+                <LinkCompound  
                     to="/AboutLayout"
                     title="About"
                     subtitle="App installed information"
@@ -25,7 +25,7 @@ const Layouts = () => {
                 display="inline-block"
                 focused
                 margin="5px 5px 0 0">
-                <LinkCoumpound  
+                <LinkCompound  
                     to="/CommandBarLayout"
                     title="Command Bar"
                     subtitle="Command UI Pallete"
@@ -37,7 +37,7 @@ const Layouts = () => {
                 display="inline-block"
                 focused
                 margin="5px 5px 0 0">
-                <LinkCoumpound  
+                <LinkCompound  
                     to="/ContactsLayout"
                     title="Contact Book"
                     subtitle="ListView of users"
@@ -49,7 +49,7 @@ const Layouts = () => {
                 display="inline-block"
                 focused
                 margin="5px 5px 0 0">
-                <LinkCoumpound  
+                <LinkCompound  
                     to="/LoginLayout"
                     title="Login"
                     subtitle="User Login in interface"
@@ -61,7 +61,7 @@ const Layouts = () => {
                 display="inline-block"
                 focused
                 margin="5px 5px 0 0">
-                <LinkCoumpound  
+                <LinkCompound  
                     to="/ListLayout"
                     title="Lists"
                     subtitle="List illustrations"

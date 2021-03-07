@@ -1,12 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { NavPageContainer,LinkCoumpound } from '../../../../lib'
+import { NavPageContainer,LinkCompound,LinkCompoundFluent,RegisterFluentEffect } from '../../../../lib'
 
 const Links = () => {
   return (
     <NavPageContainer hasPadding>
 
     <h1>Links</h1>
+
+    {/* Register the fluent effect before using LinkCompoundFluent */}
+    <RegisterFluentEffect/>
 
 
       <Link to="#" className="app-link">Default App Link</Link> 
@@ -17,7 +20,7 @@ const Links = () => {
       
       <br/><br/>
 
-      <LinkCoumpound
+      <LinkCompound
         to="#"
         title="System Settings and preferences"
         subtitle="Customize system controls and more"
@@ -26,35 +29,45 @@ const Links = () => {
 
       <br/><br/>
 
-      <LinkCoumpound
+      <LinkCompound
         to="#"
         title="Network usage by individual apps"
         subtitle="Display data consumes by installed apps"
         icon={<i className="icons10-area-chart accent"></i>}
       />
         
-      <br/><br/>
+      <h3>Link Style border</h3>
 
-      <LinkCoumpound
+      <LinkCompound
         to="#"
         linkStyle="border"
         title="Notification settings and DND"
         subtitle="Control which app push notification"
         icon={<i className="icons10-notification"></i>}
       />
-     
-      <br/><br/>
 
-      <LinkCoumpound
+
+      <h3>Fluent Effect</h3>
+
+      <LinkCompoundFluent
+        to="#"
+        title="Personalization settings and Colors"
+        subtitle="Change theme and colors"
+        icon={<i className="icons10-color-palette"></i>}
+      />
+     
+      <h3>Link icon accent</h3>
+
+      <LinkCompound
         to="#"
         title="Camera settings and preferences"
         subtitle="Modify saturation, filters for the physical camera device"
         icon={<i className="icons10-camera bg-accent"></i>}
       />
         
-      <br/><br/>
+      <h3>Link icon grey</h3>
 
-      <LinkCoumpound
+      <LinkCompound
         to="#"
         title="Add more devices to system"
         subtitle="creating digital utilities for system"

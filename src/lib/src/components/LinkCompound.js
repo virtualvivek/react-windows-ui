@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const LinkCoumpound = (props) => {
+const LinkCompound = (props) => {
   return (
     <Link
       to={props.to}
@@ -15,10 +15,8 @@ const LinkCoumpound = (props) => {
   )
 }
 
-LinkCoumpound.defaultProps = {
-  dataOff: "Off",
-  dataOn: "On",
+LinkCompound.defaultProps = {
   to: "#"
 }
 
-export default LinkCoumpound
+export default LinkCompound

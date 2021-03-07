@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer,Card,ListItem,Button,LinkCoumpound } from '../../../../lib'
+import { NavPageContainer,Card,ListItem,Button,LinkCompound } from '../../../../lib'
 
 class CardLayout extends React.Component {
 
@@ -54,7 +54,7 @@ class CardLayout extends React.Component {
             focused
             maxWidth={400}
             padding={10}>
-            <LinkCoumpound  
+            <LinkCompound  
                 to="#"
                 title="Notification settings and DND"
                 subtitle="Control which app sends you push notification, adjusts timing according to clock"
