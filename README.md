@@ -42,17 +42,21 @@
 <h2 align="center">
   <img src="markdown/md_img_promo.png" width="652" />
 </h2>
+<h1 align="center">Adaptive UI</h1>
+<h2 align="center">
+  <img src="markdown/md_img_adaptive.gif" width="652" />
+</h2>
 
-## Demo ⚡
+# Demo ⚡
 https://virtualvivek.github.io/react-windows-ui/
 
 
-## Installation
+# Installation
 ```
 npm install react-windows-ui
 ```
 
-## Getting Started
+# Getting Started
 
 ```js
 import { NavBar,NavPageContainer, ..} from 'react-windows-ui'
