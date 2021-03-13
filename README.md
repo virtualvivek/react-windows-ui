@@ -42,6 +42,7 @@
 <h2 align="center">
   <img src="markdown/md_img_promo.png" width="652" />
 </h2>
+
 <h1 align="center">Adaptive UI</h1>
 <h2 align="center">
   <img src="markdown/md_img_adaptive.gif" width="652" />
@@ -82,7 +83,7 @@ Create your own like this
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
-    /* Change fontfamily for your app */
+    /* Change fontfamily you like */
 }
 ```
 
