@@ -38,15 +38,15 @@
   <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_adaptive.gif" width="652" />
 </h2>
 
-## Demo ⚡
+# Demo ⚡
 https://virtualvivek.github.io/react-windows-ui/
 
-## Installation
+# Installation
 ```js
 npm install react-windows-ui
 ```
 
-## Getting Started
+# Getting Started
 
 ```js
 import { NavBar,NavPageContainer, ..} from 'react-windows-ui'
