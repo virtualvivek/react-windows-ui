@@ -79,7 +79,7 @@ Create your own like this
 
 ```css
 :root {
-    --AppColor: #6632a8;
+    --PrimaryColor: #6632a8;
     /* Change color you like */
 }
 body {
