@@ -1,5 +1,5 @@
 import React from 'react'
-var createAlphaAccentColor = require('./utils/ThemeManager').createAlphaAccentColor
+var createAlphaPrimaryColor = require('./utils/ThemeManager').createAlphaPrimaryColor
 
 const ColorPickerItem = (props) => {
 
@@ -8,8 +8,8 @@ const inputRef = React.useRef()
   const setThemeColor = (color) =>{
     let radio = inputRef.current
       if(radio.checked){
-        document.documentElement.style.setProperty('--AppColor', color)
-        createAlphaAccentColor()
+        document.documentElement.style.setProperty('--PrimaryColor', color)
+        createAlphaPrimaryColor()
       }
   }
 

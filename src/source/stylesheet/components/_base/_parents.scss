@@ -14,16 +14,16 @@
     background-color: var(--color_nav);
 }
 
-.background-color-accent {
-    background-color: var(--AppColor);
+.background-color-primary {
+    background-color: var(--PrimaryColor);
 }
 
-.background-color-accent-light {
-    background-color: var(--color_accent_light);
+.background-color-primary-light {
+    background-color: var(--color_primary_light);
 }
 
-.background-color-accent-dark {
-    background-color: var(--color_accent_dark);
+.background-color-primary-dark {
+    background-color: var(--color_primary_dark);
 }
 
 
@@ -36,8 +36,8 @@
 }
 
 
-.border-color-accent {
-    border-color: var(--AppColor);
+.border-color-primary {
+    border-color: var(--PrimaryColor);
 }
 
 .color-dark-text {
@@ -52,12 +52,12 @@
     color: var(--color_button_hover);
 }
 
-.color-accent {
-    color: var(--AppColor);
+.color-primary {
+    color: var(--PrimaryColor);
 }
 
-.color-accent-light {
-    color: var(--color_accent_light);
+.color-primary-light {
+    color: var(--color_primary_light);
 }
 
 .color-white {

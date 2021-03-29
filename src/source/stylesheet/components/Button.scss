@@ -28,8 +28,8 @@ button,
         filter: opacity(0.6);
         transition: 0.04s ease;
     }
-    &.accent {
-        @extend .background-color-accent;
+    &.primary {
+        @extend .background-color-primary;
         color: #fff;
     }
     &.animate:active {
@@ -54,8 +54,8 @@ button,
     span {
         transition: all ease 0.2s;
     }
-    i.accent {
-        @extend .color-accent;
+    i.color-primary {
+        @extend .color-primary;
     }
 }
 

@@ -1,7 +1,7 @@
 @-moz-document url-prefix() {
     
     ::-moz-selection {
-        background-color: var(--AppColor);
+        background-color: var(--PrimaryColor);
         color: white;
     }
 
@@ -16,7 +16,7 @@
         background-color: var(--color_light_grey);
     }
     .app-alert {
-        background-color: var(--AppColor) !important;
+        background-color: var(--PrimaryColor) !important;
     }
     .app-custom-dropdown-ul,
     .app-search-suggestion ul,

@@ -20,7 +20,7 @@ const Button = (props) => {
   return (
     <button
       className = {
-        props.type ==="primary" ?  "app-button animate accent"
+        props.type ==="primary" ?  "app-button animate primary"
       : props.type ==="danger" ? "app-button animate bg-danger"
       : props.type ==="success" ? "app-button animate bg-success"
       : "app-button animate"

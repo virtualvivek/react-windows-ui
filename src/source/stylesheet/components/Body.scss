@@ -7,15 +7,15 @@ body {
 }
 
 ::selection {
-    background-color: var(--AppColor);
+    background-color: var(--PrimaryColor);
     color: white;
 }
 
 .app-container-screen {
     @extend .background-color-light-bg;
     height: 100vh;
-    &.accent {
-        @extend .background-color-accent-dark;
+    &.primary {
+        @extend .background-color-primary-dark;
     }
 }
 h1 { font-size: 2em; }

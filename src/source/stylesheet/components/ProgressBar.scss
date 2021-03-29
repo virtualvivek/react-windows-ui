@@ -28,7 +28,7 @@
         background: var(--color_button);
     
         span {
-            @extend .background-color-accent;
+            @extend .background-color-primary;
             height: 100%;
             position: absolute;
             transition: width 1s ease-in-out;

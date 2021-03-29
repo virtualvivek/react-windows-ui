@@ -38,7 +38,7 @@ const Framework = () => {
 
         <NavBar 
           title="React Windows UI"
-          titleShort={<i className="icons10-responsive"></i>}
+          titleShort={<i className="icons10-windows"></i>}
        // titleShort="R" render text or icons
        // mobileHasIcons={true}
           shadowOnScroll

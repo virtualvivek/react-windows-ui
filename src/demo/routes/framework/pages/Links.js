@@ -33,7 +33,7 @@ const Links = () => {
         to="#"
         title="Network usage by individual apps"
         subtitle="Display data consumes by installed apps"
-        icon={<i className="icons10-area-chart accent"></i>}
+        icon={<i className="icons10-area-chart color-primary"></i>}
       />
         
       <h3>Link Style border</h3>
@@ -56,13 +56,13 @@ const Links = () => {
         icon={<i className="icons10-color-palette"></i>}
       />
      
-      <h3>Link icon accent</h3>
+      <h3>Link icon bg primary</h3>
 
       <LinkCompound
         to="#"
         title="Camera settings and preferences"
         subtitle="Modify saturation, filters for the physical camera device"
-        icon={<i className="icons10-camera bg-accent"></i>}
+        icon={<i className="icons10-camera bg-primary"></i>}
       />
         
       <h3>Link icon grey</h3>

@@ -21,7 +21,7 @@
             -webkit-appearance: none;
             appearance: none;
             border-radius: 100px;
-            background: var(--AppColor);
+            background: var(--PrimaryColor);
             cursor: pointer;
             transition: background 0.15s ease-in-out;
             user-select: none;
@@ -45,7 +45,7 @@
             user-select: none;
         }
         &::-moz-range-thumb {
-            background: var(--AppColor);
+            background: var(--PrimaryColor);
         }
         &::-moz-range-thumb:hover,
         &:active::-moz-range-thumb {
@@ -70,13 +70,13 @@
             &::-webkit-slider-thumb {
                 width: 20px !important;
                 height: 20px;
-                border: 3px solid var(--AppColor);
+                border: 3px solid var(--PrimaryColor);
                 background: var(--color_light_bg);
             }
             &::-moz-range-thumb {
                 width: 14px;
                 height: 14px;
-                border: 3px solid var(--AppColor);
+                border: 3px solid var(--PrimaryColor);
                 background: var(--color_light_bg);
             }
         }

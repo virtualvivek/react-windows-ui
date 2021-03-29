@@ -1,10 +1,10 @@
-var createAlphaAccentColor = function() {
-    let alphaColor = window.getComputedStyle(document.documentElement).getPropertyValue('--AppColor')
+var createAlphaPrimaryColor = function() {
+    let alphaColor = window.getComputedStyle(document.documentElement).getPropertyValue('--PrimaryColor')
     alphaColor = alphaColor.trim()
     alphaColor = alphaColor+'9C'
-    document.documentElement.style.setProperty('--alpha_c', alphaColor)
+    document.documentElement.style.setProperty('--color_primary_alpha', alphaColor)
 }
-exports.createAlphaAccentColor = createAlphaAccentColor
+exports.createAlphaPrimaryColor = createAlphaPrimaryColor
 
 var setAppDark = function() {
     // var meta = document.getElementById('statusBarColor')
@@ -21,8 +21,8 @@ var setAppDark = function() {
     document.documentElement.style.setProperty('--color_button_hover','#999999')
     document.documentElement.style.setProperty('--color_button_active','#222222')
     document.documentElement.style.setProperty('--color_button_active_border','#EEEEEE')
-    document.documentElement.style.setProperty('--color_accent_light','#FFFFFF')
-    document.documentElement.style.setProperty('--color_accent_dark','#403E41')
+    document.documentElement.style.setProperty('--color_primary_light','#FFFFFF')
+    document.documentElement.style.setProperty('--color_primary_dark','#403E41')
     return ''
 }
 exports.setAppDark = setAppDark
@@ -42,8 +42,8 @@ var setAppLight = function() {
     document.documentElement.style.setProperty('--color_button_hover','')
     document.documentElement.style.setProperty('--color_button_active','')
     document.documentElement.style.setProperty('--color_button_active_border','')
-    document.documentElement.style.setProperty('--color_accent_light','')
-    document.documentElement.style.setProperty('--color_accent_dark','')
+    document.documentElement.style.setProperty('--color_primary_light','')
+    document.documentElement.style.setProperty('--color_primary_dark','')
     return ''
 }
 exports.setAppLight = setAppLight

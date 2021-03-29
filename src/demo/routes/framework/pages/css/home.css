@@ -12,7 +12,7 @@
     box-shadow: 0 4px 4px #222;
 }
 .home-header i {
-    color: var(--AppColor);
+    color: var(--PrimaryColor);
     font-size: 60px;
 }
 .home-header span {
@@ -47,7 +47,7 @@
 .home-footer-group .group {
     width: inherit;
     height: 25px;
-    background-color: var(--AppColor);
+    background-color: var(--PrimaryColor);
 }
 .group.a {
     opacity: 0.1;

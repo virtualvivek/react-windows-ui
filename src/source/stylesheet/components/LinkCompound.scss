@@ -24,7 +24,7 @@
         top: 16px;
         line-height: 0 !important;
 
-        &.bg-accent::before,
+        &.bg-primary::before,
         &.bg-grey::before {
             font-size: 30px;
             padding: 3px;
@@ -59,7 +59,7 @@
     }
 
 
-    &.accent {
+    &.primary {
         &:hover {
             border: 2px solid var(--color_link_bg_hover);
             background: transparent !important;
@@ -69,16 +69,16 @@
             border: 2px solid var(--color_link_bg_active);
         }
     }
-    &.accent i,
-    i.accent {
-        @extend .color-accent;
+    &.primary i,
+    i.color-primary {
+        @extend .color-primary;
     }
 }
 
 @mixin link-compound-mobile() {
     .app-link-compound {
         &:hover,
-        &.accent:hover {
+        &.primary:hover {
             background: transparent;
             border-color: transparent;
         }

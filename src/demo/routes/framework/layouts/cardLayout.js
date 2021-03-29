@@ -34,7 +34,7 @@ class CardLayout extends React.Component {
             maxWidth={400}
             padding={10}>
             <ListItem 
-                icon={<i className="icons10-news bg-accent"></i>}
+                icon={<i className="icons10-news bg-primary"></i>}
                 title="News"
                 subtitle="12.4 MB"
                 info="installed"
@@ -58,7 +58,7 @@ class CardLayout extends React.Component {
                 to="#"
                 title="Notification settings and DND"
                 subtitle="Control which app sends you push notification, adjusts timing according to clock"
-                icon={<i className="icons10-notification accent"></i>} 
+                icon={<i className="icons10-notification color-primary"></i>} 
             />
             <div style={{float:'right'}}>
                 <Button value="Edit"/>

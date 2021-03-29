@@ -22,7 +22,7 @@
                 height: 41px;
                 position: absolute;
                 left: 0;
-                background: var(--AppColor);
+                background: var(--PrimaryColor);
                 content: '';
                 transition: transform 0.5s;
                 transform: translate3d(-100%, 0, 0);
@@ -41,7 +41,7 @@
             }
         }
         span::after {
-            @extend .color-accent;
+            @extend .color-primary;
         }
     }
 }

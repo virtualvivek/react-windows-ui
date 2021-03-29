@@ -28,7 +28,7 @@ const SliderBar = (props) => {
           onMouseEnter={() => toggleVisible()}
           onMouseLeave={() => toggleHidden()}
           step={props.step}
-          style={{background:"linear-gradient(90deg, var(--AppColor)"+(props.value/props.max) * 100+"%, #999999 20.1%)"}}
+          style={{background:"linear-gradient(90deg, var(--PrimaryColor)"+(props.value/props.max) * 100+"%, #999999 20.1%)"}}
         />
         {props.showValue ? <span> {props.value}</span> : ""}
         <span

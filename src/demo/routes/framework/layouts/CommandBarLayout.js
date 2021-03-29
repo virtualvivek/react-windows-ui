@@ -87,15 +87,15 @@ class CommandBarLayout extends React.Component {
           showDropShadow>
             <Button
                 width={'100%'}
-                icon={<i className="icons10-share accent"></i>}
+                icon={<i className="icons10-share color-primary"></i>}
                 value="Share"/>
             <Button
                 width={'100%'}
-                icon={<i className="icons10-pencil accent"></i>}
+                icon={<i className="icons10-pencil color-primary"></i>}
                 value="Edit"/>
             <Button
                 width={'100%'}
-                icon={<i className="icons10-trash accent"></i>}
+                icon={<i className="icons10-trash color-primary"></i>}
                 value="Delete"/>    
             <Button
                 width={'100%'}

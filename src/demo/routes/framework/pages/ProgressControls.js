@@ -40,7 +40,7 @@ import { ProgressBarIndeterminate,ProgressBar,
 
       <h1>ProgressControls</h1>
 
-      <h1 className="m-0 color-accent"
+      <h1 className="m-0 color-primary"
           style={{fontSize:56}}>
             {this.state.ProgressBar1}%
       </h1>
@@ -116,7 +116,7 @@ import { ProgressBarIndeterminate,ProgressBar,
               isVisible={this.state.showLoaderBusyFullCustom}
               onBackdropPress={this.toggleLoaderBusyFullCustom}
               display="fullscreen"
-              backgroundColor="var(--AppColor)"
+              backgroundColor="var(--PrimaryColor)"
               setTheme="light"
               title="loading title"
             />

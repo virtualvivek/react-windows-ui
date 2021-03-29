@@ -15,7 +15,7 @@
 
     &:checked {
         @extend .background-color-dark-text;
-        border: 2px solid var(--AppColor);
+        border: 2px solid var(--PrimaryColor);
         box-shadow: inset 0 0 0 2.8px var(--color_light_bg);
     }
     &:disabled {

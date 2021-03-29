@@ -2,7 +2,7 @@
     &.app-input-search {
         &:active,
         &:focus {
-            @extend .border-color-accent;
+            @extend .border-color-primary;
         }
     }
 }
@@ -30,7 +30,7 @@
         
         &:hover,
         &:active {
-            @extend .background-color-accent;
+            @extend .background-color-primary;
         }
         &:active {
             opacity: 0.65;

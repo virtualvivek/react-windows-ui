@@ -7,7 +7,7 @@ const AboutLayout = () => {
     <NavPageContainer hasPadding>
 
     <h1 className="m-b-10">About</h1>
-    <i className="icons10-groove color-accent" style={{fontSize:60}}></i>
+    <i className="icons10-groove color-primary" style={{fontSize:60}}></i>
 
     <h2 className="m-tb-10">Specification</h2>
     <div className="app-flex">

@@ -55,7 +55,7 @@ class Inputs extends React.Component {
 
       <h3 className="m-b-15">SliderBar</h3>
 
-        <h1 className="m-0 color-accent"
+        <h1 className="m-0 color-primary"
           style={{fontSize:46}}>
             {this.state.Slider1}%
         </h1>

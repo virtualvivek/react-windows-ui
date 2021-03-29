@@ -104,7 +104,7 @@
 .tiles-view p::before,
 .tiles-view p::after,
 .tiles-view-right p {
-    background-color: var(--AppColor);
+    background-color: var(--PrimaryColor);
 }
 div.windows-view *,
 .tiles-view p::before,

@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react'
-var createAlphaAccentColor = require('./utils/ThemeManager').createAlphaAccentColor
+var createAlphaPrimaryColor = require('./utils/ThemeManager').createAlphaPrimaryColor
 
 const Alert = (props) => {
 
   useEffect(()=>{
-    createAlphaAccentColor()
+    createAlphaPrimaryColor()
   })
 
   return (

@@ -13,7 +13,7 @@ const LinkCompoundFluent = (props) => {
         <Link
         to={props.to}
         className={props.linkStyle === 'border' ?
-        "app-link-compound accent" : "app-link-compound" }
+        "app-link-compound primary" : "app-link-compound" }
         onMouseOver={props.onMouseOver}>
             {props.icon}
             <span>{props.title}</span>

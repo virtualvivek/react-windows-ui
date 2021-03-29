@@ -53,7 +53,7 @@ const Gauge = (props) => {
 
 Gauge.defaultProps = {
   backgroundColor: "var(--color_light_grey)",
-  strokeColor: 'var(--AppColor)',
+  strokeColor: 'var(--PrimaryColor)',
   strokeWidth: 5,
   scale: 1,
   setProgress: 0,

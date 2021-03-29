@@ -5,7 +5,7 @@
     overflow: hidden;
 
     .app-loaderBar {
-        @extend .background-color-accent-light;
+        @extend .background-color-primary-light;
         width: 6px;
         height: 6px;
         position: relative;
