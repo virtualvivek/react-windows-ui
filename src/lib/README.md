@@ -33,15 +33,20 @@
   <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="652" /> 
 </h2>
 
-## Demo ⚡
+<h1 align="center">Adaptive UI</h1>
+<h2 align="center">
+  <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_adaptive.gif" width="652" />
+</h2>
+
+# Demo ⚡
 https://virtualvivek.github.io/react-windows-ui/
 
-## Installation
+# Installation
 ```js
 npm install react-windows-ui
 ```
 
-## Getting Started
+# Getting Started
 
 ```js
 import { NavBar,NavPageContainer, ..} from 'react-windows-ui'
@@ -67,7 +72,7 @@ Create your own like this
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
-    /* Change fontfamily for your app */
+    /* Change fontfamily you like */
 }
 ```
 

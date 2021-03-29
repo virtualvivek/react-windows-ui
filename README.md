@@ -8,6 +8,7 @@
 
 
 
+
 <p align="center">
 	
 	 
@@ -42,6 +43,7 @@
 <h2 align="center">
   <img src="markdown/md_img_promo.png" width="652" />
 </h2>
+
 <h1 align="center">Adaptive UI</h1>
 <h2 align="center">
   <img src="markdown/md_img_adaptive.gif" width="652" />
@@ -70,19 +72,19 @@ import 'react-windows-ui/icons/fonts/fonts.min.css'
 ```
 ### app-config
 
-‣ `app-config` file contains the primary `AppColor`, `Fontfamily` used by the app <br>
+‣ `app-config` file contains the app `PrimaryColor`, `Fontfamily` used by the app <br>
 ‣ You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a><br>
 OR <br>
 Create your own like this
 
 ```css
 :root {
-    --AppColor: #6632a8;
+    --PrimaryColor: #6632a8;
     /* Change color you like */
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
-    /* Change fontfamily for your app */
+    /* Change fontfamily you like */
 }
 ```
 
