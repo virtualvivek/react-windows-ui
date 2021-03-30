@@ -44,9 +44,9 @@ const AvatarView = (props) => {
           <span>{props.subtitle}</span>
         </div>
         
-        {props.insetShadow ? renderShadow() : ""}
-        {props.isLoading ? renderLoader() : ""}
-        {didLoad ? "" : renderLoader()}
+        { props.insetShadow ? renderShadow() : "" }
+        { props.isLoading ? renderLoader() : "" }
+        { didLoad ? "" : renderLoader() }
     </div>
   )
 }

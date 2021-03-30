@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {NavPageContainer,Button } from '../../../../lib'
+import { NavPageContainer,Button } from '../../../lib'
 
 const AboutLayout = () => {
   return (

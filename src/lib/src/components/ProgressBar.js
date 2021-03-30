@@ -4,11 +4,11 @@ const ProgressBar = (props) => {
   return (
     <div className="app-progress-container">
 
-      <div style={props.showIcon ? { display:'block'} : {display : 'none'}}>
+      <div style={ props.showIcon ? { display:'block'} : { display : 'none' }}>
         {props.icon}
       </div>
       
-      <div style={props.showIcon ? { marginLeft:'15px'} : {marginLeft:''}}>
+      <div style={ props.showIcon ? { marginLeft: '15px' } : { marginLeft: '' }}>
         <span className="title">{props.title}</span>
         <div
           className={props.showIcon ? "app-progress withIcon" : "app-progress"}

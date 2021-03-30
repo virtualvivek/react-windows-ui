@@ -19,20 +19,22 @@
         }
     }
 
-    #first {
-        animation: move 2s infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
-    }
-    #second {
-        top: -6px;
-        animation: move 2s 150ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
-    }
-    #third {
-        top: -12px;
-        animation: move 2s 300ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
-    }
-    #fourth {
-        top: -18px;
-        animation: move 2s 450ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
+    &.animate {
+        #first {
+            animation: move 2s infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
+        }
+        #second {
+            top: -6px;
+            animation: move 2s 150ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
+        }
+        #third {
+            top: -12px;
+            animation: move 2s 300ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
+        }
+        #fourth {
+            top: -18px;
+            animation: move 2s 450ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
+        }
     }
       
     @keyframes move {

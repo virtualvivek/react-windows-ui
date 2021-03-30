@@ -27,14 +27,12 @@ const InputText = (props) => {
 
   return (
     <div className="app-input-text-container">
-    { props.label? renderLabel() : '' }
+    { props.label ? renderLabel() : '' }
       <input
         className = {
-          props.setStatus === "success" ?
-          "app-input-text success" :
-          props.setStatus === "danger" ?
-          "app-input-text danger" :
-          "app-input-text"
+            props.setStatus === "success" ? "app-input-text success"
+          : props.setStatus === "danger" ? "app-input-text danger"
+          : "app-input-text"
         }
         style={{
           width: props.width
@@ -55,9 +53,9 @@ const InputText = (props) => {
           className="unmask"
           type="button"
           onClick={toggleInput}
-          style={props.type==="password" ?
-                { display:'inline-block'} : {display : 'none'
-                }}>
+          style={ props.type==="password" ? { display: 'inline-block' }
+                : { display : 'none' }
+                }>
         </button>
       </div>
     </div>

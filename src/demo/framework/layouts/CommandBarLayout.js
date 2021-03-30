@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavPageContainer,CommandBar,Button,
-    InputSearchBox,ImageView,Dialog,View } from '../../../../lib'
-import Img from '../../../img/illustration/macos.jpg'
+         InputSearchBox,ImageView,Dialog,View } from '../../../lib'
+import Img from '../../img/illustration/macos.jpg'
 
 
 class CommandBarLayout extends React.Component {

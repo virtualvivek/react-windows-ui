@@ -1,11 +1,11 @@
 import React from 'react'
-import {ListItem,NavPageContainer} from '../../../../lib'
-import Img1 from '../../../img/illustration/1.jpg'
-import Img2 from '../../../img/illustration/2.jpg'
-import Img3 from '../../../img/illustration/3.jpg'
-import Img4 from '../../../img/illustration/4.jpg'
+import { ListItem,NavPageContainer } from '../../../lib'
+import Img1 from '../../img/illustration/1.jpg'
+import Img2 from '../../img/illustration/2.jpg'
+import Img3 from '../../img/illustration/3.jpg'
+import Img4 from '../../img/illustration/4.jpg'
 
-const Lists = () => {
+const ListLayout = () => {
   return (
     <NavPageContainer hasPadding>
       <h1>Lists</h1>
@@ -88,8 +88,9 @@ const Lists = () => {
 
     <br/><br/><br/><br/>
 
-</NavPageContainer>
-  );
+  </NavPageContainer>
+  )
 }
 
-export default Lists
+
+export default ListLayout

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 var createAlphaPrimaryColor = require('./utils/ThemeManager').createAlphaPrimaryColor
 
 const Alert = (props) => {
@@ -10,8 +10,8 @@ const Alert = (props) => {
   return (
     <>
     <div
-      className={props.isVisible ? "app-dim-overlay show" : "app-dim-overlay"}
-      style={props.isVisible ? { visibility:'visible'} : {visibility : 'hidden'}}
+      className={ props.isVisible ? "app-dim-overlay show" : "app-dim-overlay" }
+      style={props.isVisible ? { visibility:'visible'} : { visibility : 'hidden' }}
       onClick={props.onBackdropPress}>
     </div>
     <div

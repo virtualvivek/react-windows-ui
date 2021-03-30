@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer,Card,LinkCompound } from '../../../../lib'
+import { NavPageContainer, Card, LinkCompound } from '../../../lib'
 
 const Layouts = () => {
 

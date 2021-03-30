@@ -13,12 +13,13 @@ const SliderBar = (props) => {
       let iswitch = inputRef.current
           iswitch.style.visibility="hidden"
           iswitch.style.opacity="0"
-  }
+    }
 
   return (
-    <div className={props.thumbStyle === 'round' ?
-      "app-range-slider round" : props.thumbStyle === 'round-border' ?
-      "app-range-slider round-border" : "app-range-slider" }>
+    <div className={
+          props.thumbStyle === 'round' ? "app-range-slider round"
+        : props.thumbStyle === 'round-border' ? "app-range-slider round-border"
+        : "app-range-slider" }>
         <input
           type="range"
           defaultValue={props.value}
@@ -28,13 +29,13 @@ const SliderBar = (props) => {
           onMouseEnter={() => toggleVisible()}
           onMouseLeave={() => toggleHidden()}
           step={props.step}
-          style={{background:"linear-gradient(90deg, var(--PrimaryColor)"+(props.value/props.max) * 100+"%, #999999 20.1%)"}}
+          style={{ background: "linear-gradient(90deg, var(--PrimaryColor)"+(props.value/props.max) * 100+"%, #999999 20.1%)" }}
         />
-        {props.showValue ? <span> {props.value}</span> : ""}
+        { props.showValue ? <span> {props.value}</span> : "" }
         <span
           className="popup"
           ref={inputRef}
-          style={{left: (props.value/props.max) *72+"%"}}>
+          style={{ left: (props.value/props.max) *72+"%" }}>
             {props.value}
         </span>
     </div>

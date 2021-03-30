@@ -47,7 +47,7 @@ const MenuBar = (props) => {
       onClick={showMenuBar}
       ref={wrapperRef}>
         <span>{props.label}</span>
-        <ul className={menubar ? 'show' : ''}>
+        <ul className={ menubar ? 'show' : ''}>
           <div className="app-search-box"
             onClick={(e)=> {e.stopPropagation()}}>
               <input

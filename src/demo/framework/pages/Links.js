@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { NavPageContainer,LinkCompound,LinkCompoundFluent,RegisterFluentEffect } from '../../../../lib'
+import { NavPageContainer, LinkCompound,
+         LinkCompoundFluent, RegisterFluentEffect } from '../../../lib'
 
 const Links = () => {
   return (

@@ -5,9 +5,9 @@ const ColorPickerItem = (props) => {
 
 const inputRef = React.useRef()
 
-  const setThemeColor = (color) =>{
+  const setThemeColor = (color) => {
     let radio = inputRef.current
-      if(radio.checked){
+      if(radio.checked) {
         document.documentElement.style.setProperty('--PrimaryColor', color)
         createAlphaPrimaryColor()
       }

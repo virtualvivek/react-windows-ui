@@ -1,8 +1,8 @@
 import React from 'react'
-import {NavPageContainer,Checkbox,Switch,
-        InputText,InputDate,InputSearchBar,
-        InputSearchBox,SliderBar,
-        RadioButton,SelectBox,MenuBar,InputSearchSuggestion} from '../../../../lib'
+import { NavPageContainer,Checkbox,Switch,
+         InputText,InputDate,InputSearchBar,
+         InputSearchBox,SliderBar,
+         RadioButton,SelectBox,MenuBar,InputSearchSuggestion } from '../../../lib'
 
 class Inputs extends React.Component {
 

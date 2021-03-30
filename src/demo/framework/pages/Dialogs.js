@@ -1,10 +1,10 @@
 import React from 'react'
-import {NavPageContainer,AvatarView,
-    Dialog,Alert,Button,ListItem} from '../../../../lib'
-import AvatarImg from '../../../img/anim_avatar.jpeg'
-import Img2 from '../../../img/illustration/2.jpg'
-import Img3 from '../../../img/illustration/3.jpg'
-import Img4 from '../../../img/illustration/4.jpg'
+import { NavPageContainer, AvatarView,
+         Dialog, Alert, Button, ListItem } from '../../../lib'
+import AvatarImg from '../../img/anim_avatar.jpeg'
+import Img2 from '../../img/illustration/2.jpg'
+import Img3 from '../../img/illustration/3.jpg'
+import Img4 from '../../img/illustration/4.jpg'
 
 
 class Lists extends React.Component {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { NavPageContainer,NavPageContainerRight } from '../../../../lib'
+import { NavPageContainer, NavPageContainerRight } from '../../../lib'
 
 const Texts = () => {
   return (

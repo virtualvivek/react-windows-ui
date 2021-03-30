@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, ColorPickerItem } from '../../../../lib'
+import { NavPageContainer, ColorPickerItem } from '../../../lib'
 import ReactIcon from './css/home/ReactIcon'
 import NpmIcon from './css/home/npmIcon'
 import GithuIcon from './css/home/githubIcon'

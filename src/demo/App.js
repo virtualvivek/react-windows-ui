@@ -1,5 +1,5 @@
 import React from 'react'
-import Framework from './routes/framework'
+import Framework from './framework'
 
 function App() {
   return (

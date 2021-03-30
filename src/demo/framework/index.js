@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { NavBar, NavBarLink, NavBarLinkFluent,
-  SystemThemeFollower, RegisterFluentEffect } from '../../../lib'
+import {  NavBar, NavBarLink, NavBarLinkFluent,
+          SystemThemeFollower, RegisterFluentEffect } from '../../lib'
 import Home from './pages/Home'
 import Layouts from './pages/Layouts'
 import Inputs from './pages/Inputs'

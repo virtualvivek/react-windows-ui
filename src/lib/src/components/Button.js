@@ -11,7 +11,7 @@ const Button = (props) => {
           : props.type ==="success" ? "app-loader-busy small light"
           : "app-loader-busy small"
           }
-        style={props.isLoading ? { display:'inline'} : {display : 'none'}}>
+        style={ props.isLoading ? { display: 'inline' } : { display : 'none' }}>
       <LoaderBusyWrapper/>
     </div>
   }
@@ -35,9 +35,9 @@ const Button = (props) => {
       disabled={props.disabled}>
 
       <span style={
-          props.isLoading ? { display:'none'}
+          props.isLoading ? { display:'none' }
         : props.value === "" ? { paddingRight: '0'}
-        : props.icon ? {display : 'inline-flex',paddingRight: '5px'}
+        : props.icon ? { display : 'inline-flex', paddingRight: '5px' }
         : {paddingRight: '0'}
         }>
 
@@ -46,7 +46,7 @@ const Button = (props) => {
 
       { props.isLoading ? renderLoader() : "" }
       
-      <span style={props.isLoading ? { opacity:'0'} : {opacity : '1'}}>
+      <span style={props.isLoading ? { opacity: '0' } : { opacity : '1' }}>
         {props.value}
       </span>
     </button>

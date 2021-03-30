@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer,Gauge,Button } from '../../../../lib'
+import { NavPageContainer, Gauge, Button } from '../../../lib'
 
 class Gauges extends React.Component {
 

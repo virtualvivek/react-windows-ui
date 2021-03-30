@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, ColorPickerItem, Switch } from '../../../../lib'
+import { NavPageContainer, ColorPickerItem, Switch } from '../../../lib'
 import './css/themes.css'
 
 class Themes extends React.Component {

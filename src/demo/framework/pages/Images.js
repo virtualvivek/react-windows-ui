@@ -1,9 +1,9 @@
 import React from 'react'
-import {NavPageContainer,NavPageContainerInner,
-  ImageView,AvatarView} from '../../../../lib'
-import IronMan from '../../../img/illustration/ironman.jpg'
-import Img2 from '../../../img/illustration/2.jpg'
-import Img3 from '../../../img/illustration/3.jpg'
+import { NavPageContainer,NavPageContainerInner,
+         ImageView,AvatarView } from '../../../lib'
+import IronMan from '../../img/illustration/ironman.jpg'
+import Img2 from '../../img/illustration/2.jpg'
+import Img3 from '../../img/illustration/3.jpg'
 
 const Images = () => {
   return (

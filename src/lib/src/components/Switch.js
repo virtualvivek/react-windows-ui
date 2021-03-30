@@ -13,7 +13,7 @@ const showData = () => {
     <label
       className="app-switch"
       style={
-        props.textOn === "" ? {marginRight:0} : {marginRight:''}
+        props.textOn === "" ? { marginRight: 0 } : { marginRight: '' }
       }>
       <input
         type="checkbox"
@@ -21,7 +21,7 @@ const showData = () => {
         onChange={props.onChange}
         disabled={props.disabled}
       />
-      {showData()}
+      { showData() }
     </label>
   )
 }

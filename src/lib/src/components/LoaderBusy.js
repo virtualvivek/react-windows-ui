@@ -3,12 +3,16 @@ import LoaderBusyWrapper from './_common/LoaderBusyWrapper'
 
 const LoaderBusy = (props) => {
 
+  const toggleLoading = () => {
+    if(props.isLoading) return ' animate'
+    else return ''
+  }
   const renderLoader = () => {
     return  <div
               className={
                 props.setTheme === "light" ?
-                "app-loader-busy light"
-                : "app-loader-busy"}>
+                "app-loader-busy light" + toggleLoading() :
+                "app-loader-busy" + toggleLoading()}>
               <LoaderBusyWrapper/>
             </div>
   }
@@ -52,7 +56,8 @@ const LoaderBusy = (props) => {
 }
 
 LoaderBusy.defaultProps = {
-  backgroundColor: 'var(--color_light_grey_alpha)'
+  backgroundColor: 'var(--color_light_grey_alpha)',
+  isLoading: true
 }
 
 export default LoaderBusy

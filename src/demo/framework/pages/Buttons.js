@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button,ButtonFluent,NavPageContainer,RegisterFluentEffect } from '../../../../lib'
+import { Button, ButtonFluent, NavPageContainer,
+         RegisterFluentEffect } from '../../../lib'
 
 class Buttons extends React.Component {
 

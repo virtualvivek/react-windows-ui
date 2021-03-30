@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer,Card,ListItem,Button,LinkCompound } from '../../../../lib'
+import { NavPageContainer,Card,ListItem,Button,LinkCompound } from '../../../lib'
 
 class CardLayout extends React.Component {
 

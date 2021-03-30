@@ -15,9 +15,11 @@ const AvatarView = (props) => {
 
     const renderDropShadow = () => {
       return <img
-        className={props.size === "small" ? "app-avatar small drop-shadow" 
+        className={
+          props.size === "small" ? "app-avatar small drop-shadow"
         : props.size === "large" ? "app-avatar large drop-shadow"
-        : "app-avatar medium drop-shadow"}
+        : "app-avatar medium drop-shadow"
+        }
         style={{
           objectFit: props.objectFit,
           width: props.width,
@@ -34,9 +36,11 @@ const AvatarView = (props) => {
   return (
     <div className="app-avatar-container">
         <img
-          className={props.size === "small" ? "app-avatar small"
+          className={
+            props.size === "small" ? "app-avatar small"
           : props.size === "large" ? "app-avatar large"
-          : "app-avatar medium"}
+          : "app-avatar medium"
+          }
           src={props.src}
           alt={props.alt}
           style={{

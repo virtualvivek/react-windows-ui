@@ -1,6 +1,7 @@
 import React from 'react'
-import { NavPageContainer,InputSearchBox,ListItem,HeaderFixedContainer,StickyHeader } from '../../../../lib'
-import Img1 from '../../../img/default_avatar.png'
+import { NavPageContainer,InputSearchBox,ListItem,
+         HeaderFixedContainer,StickyHeader } from '../../../lib'
+import Img1 from '../../img/default_avatar.png'
 import Contacts from './data/contactsData.json'
 
 class ContactsLayout extends React.Component {
