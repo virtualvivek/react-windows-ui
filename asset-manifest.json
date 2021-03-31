@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-windows-ui/static/css/main.2999493c.chunk.css",
-    "main.js": "/react-windows-ui/static/js/main.3f7a9675.chunk.js",
-    "main.js.map": "/react-windows-ui/static/js/main.3f7a9675.chunk.js.map",
+    "main.css": "/react-windows-ui/static/css/main.9be7661e.chunk.css",
+    "main.js": "/react-windows-ui/static/js/main.8d5c586b.chunk.js",
+    "main.js.map": "/react-windows-ui/static/js/main.8d5c586b.chunk.js.map",
     "runtime-main.js": "/react-windows-ui/static/js/runtime-main.f20d92f6.js",
     "runtime-main.js.map": "/react-windows-ui/static/js/runtime-main.f20d92f6.js.map",
     "static/js/2.f96bea1e.chunk.js": "/react-windows-ui/static/js/2.f96bea1e.chunk.js",
     "static/js/2.f96bea1e.chunk.js.map": "/react-windows-ui/static/js/2.f96bea1e.chunk.js.map",
     "index.html": "/react-windows-ui/index.html",
-    "static/css/main.2999493c.chunk.css.map": "/react-windows-ui/static/css/main.2999493c.chunk.css.map",
+    "static/css/main.9be7661e.chunk.css.map": "/react-windows-ui/static/css/main.9be7661e.chunk.css.map",
     "static/js/2.f96bea1e.chunk.js.LICENSE.txt": "/react-windows-ui/static/js/2.f96bea1e.chunk.js.LICENSE.txt",
     "static/media/anim_avatar.5df7499e.jpeg": "/react-windows-ui/static/media/anim_avatar.5df7499e.jpeg",
     "static/media/ironman.64e8edbb.jpg": "/react-windows-ui/static/media/ironman.64e8edbb.jpg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.f20d92f6.js",
     "static/js/2.f96bea1e.chunk.js",
-    "static/css/main.2999493c.chunk.css",
-    "static/js/main.3f7a9675.chunk.js"
+    "static/css/main.9be7661e.chunk.css",
+    "static/js/main.8d5c586b.chunk.js"
   ]
 }
