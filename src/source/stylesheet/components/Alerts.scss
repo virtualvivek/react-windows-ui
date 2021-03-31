@@ -13,6 +13,21 @@
     visibility: hidden;
     transition: opacity 0.3s ease;
 
+    &.light {
+        @extend .color-dark-text;
+        @extend .background-color-light-grey;
+
+        button {
+            border: 2px solid var(--color_button_hover);
+            color: var(--color_button_hover);
+            
+            &:active {
+                background: var(--color_button_hover) !important;
+                color: #fff;
+            }
+        }
+    }
+
     &.show {
         opacity: 1;
         visibility: visible;
@@ -67,9 +82,13 @@
         width: 100% !important;
         left: 0 !important;
         margin: 0;
-        background: var(--PrimaryColor) !important;
+        background: var(--PrimaryColor);
         transition: all 0.3s ease;
         transform: translateY(-100%);
+
+        &.light {
+            background: var(--color_light_grey);
+        }
 
         &.show {
             transform: translateY(0%);

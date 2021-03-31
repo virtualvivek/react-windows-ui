@@ -20,7 +20,7 @@ const InputText = (props) => {
     return <i className="icons10-cross color-danger font-size-18px"></i>
   }
   const renderLoader = () => {
-    return  <div className="app-loader-busy small" style={{top:'5px'}}>
+    return  <div className="app-loader-busy small animate" style={{top:'5px'}}>
               <LoaderBusyWrapper/>
             </div>
   }

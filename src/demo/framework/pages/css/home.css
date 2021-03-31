@@ -4,6 +4,9 @@
     font-size: 50px;
     width: 360px;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     text-align: center;
     margin-top: 50px;
@@ -14,10 +17,9 @@
 .home-header i {
     color: var(--PrimaryColor);
     font-size: 60px;
-}
-.home-header span {
-    position: relative;
-    top: -10px;
+    height: 52px;
+    width: 52px;
+    display: flex;
 }
 .home-text {
     text-align: center;
@@ -72,8 +74,5 @@
 @media only screen and (max-width: 760px) {
     .home-header {
         width: 280px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }

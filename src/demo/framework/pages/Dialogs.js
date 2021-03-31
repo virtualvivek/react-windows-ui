@@ -12,28 +12,31 @@ class Lists extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showDialog :false,
-            showAlert :false
+            showDialog: false,
+            showAlert: false,
+            showAlertLight: false
         }
     }
 
     toggleDialog = () => {
-        if(this.state.showDialog){
-            this.setState({showDialog: false});
-        }
-        else {
-            this.setState({showDialog: true}); 
-        } 
+        if(this.state.showDialog)
+                this.setState({showDialog: false});
+        else    this.setState({showDialog: true});
     }
 
     toggleAlert = () => {
-        if(this.state.showAlert){
-            this.setState({showAlert: false});
-        }
-        else {
-            this.setState({showAlert: true}); 
-        } 
+        if(this.state.showAlert)
+                this.setState({showAlert: false});
+        else    this.setState({showAlert: true});  
     }
+
+    toggleAlertLight = () => {
+        if(this.state.showAlertLight)
+                this.setState({showAlertLight: false});
+        else    this.setState({showAlertLight: true});  
+    }
+
+
     render() {
       return (
         <NavPageContainer hasPadding>
@@ -62,11 +65,6 @@ class Lists extends React.Component {
 
 
         <br/>
-        <h3 className="m-b-15">Alert</h3>
-        <Button value="Open Alert" 
-            onClick={this.toggleAlert}
-        />
-        <br></br>
 
         <h3 className="m-b-15">Dialog</h3>
         <Button
@@ -100,13 +98,32 @@ class Lists extends React.Component {
                 />
             </div>
         </Dialog>
+
+        <h2 className="m-b-15">Alerts</h2>
+
+        <Button value="Open Alert Primary" 
+            onClick={this.toggleAlert}
+        />
+        <br/><br/>
+        <Button value="Open Alert Light" 
+            onClick={this.toggleAlertLight}
+        />
   
         <Alert
           isVisible={this.state.showAlert}
           onBackdropPress={this.toggleAlert}
           title="Alert"
-          message="This is alert demo">
+          message="This is alert Box.">
             <button onClick={this.toggleAlert}>OK</button>
+        </Alert>
+
+        <Alert
+          isVisible={this.state.showAlertLight}
+          onBackdropPress={this.toggleAlertLight}
+          setTheme="light"
+          title="Alert"
+          message={<p className="color-success">This is Light alert Box. <i className="icons10-checked"></i></p>}>
+            <button onClick={this.toggleAlertLight}>OK</button>
         </Alert>
 
         <br/><br/>

@@ -6,10 +6,10 @@ const Button = (props) => {
   const renderLoader = () => {
     return <div
         className = {
-            props.type ==="primary" ?  "app-loader-busy small light"
-          : props.type ==="danger" ? "app-loader-busy small light"
-          : props.type ==="success" ? "app-loader-busy small light"
-          : "app-loader-busy small"
+            props.type ==="primary" ?  "app-loader-busy small light animate"
+          : props.type ==="danger" ? "app-loader-busy small light animate"
+          : props.type ==="success" ? "app-loader-busy small light animate"
+          : "app-loader-busy small animate"
           }
         style={ props.isLoading ? { display: 'inline' } : { display : 'none' }}>
       <LoaderBusyWrapper/>

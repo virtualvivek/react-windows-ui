@@ -7,7 +7,7 @@ const AvatarView = (props) => {
 
   const renderLoader = () => {
         return  <div className="app-image-view-loader">
-                  <div className="app-loader-busy light">
+                  <div className="app-loader-busy light animate">
                     <LoaderBusyWrapper/>
                   </div>
                 </div>

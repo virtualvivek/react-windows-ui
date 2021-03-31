@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import {  NavBar, NavBarLink, NavBarLinkFluent,
+import {  NavBar, NavBarLink,
           SystemThemeFollower, RegisterFluentEffect } from '../../lib'
 import Home from './pages/Home'
 import Layouts from './pages/Layouts'
@@ -41,29 +41,36 @@ const Framework = () => {
           titleShort={<i className="icons10-windows"></i>}
        // titleShort="R" render text or icons
        // mobileHasIcons={true}
-          shadowOnScroll
+          shadowOnScroll={true}
           >
 
-          <NavBarLinkFluent
+          {/* <NavBarLinkFluent
+            to="/"
+            exact={true}
+            text="Home"
+            icon={<i className="icons10-home"></i>}
+          /> */}
+
+          <NavBarLink
             to="/"
             exact={true}
             text="Home"
             icon={<i className="icons10-home"></i>}
           />
 
-          <NavBarLinkFluent
+          <NavBarLink
             to="/layouts"
             text="Layouts"
             icon={<i className="icons10-parallel-tasks"></i>}
           />
 
-          <NavBarLinkFluent
+          <NavBarLink
             to="/inputs"
             text="Inputs"
             icon={<i className="icons10-keyboard"></i>}
           />
 
-          <NavBarLinkFluent
+          <NavBarLink
             to="/texts"
             text="Texts"
             icon={<i className="icons10-align-left"></i>}

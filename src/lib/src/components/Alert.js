@@ -7,6 +7,11 @@ const Alert = (props) => {
     createAlphaPrimaryColor()
   })
 
+  const setThemeLight = () => {
+    if(props.setTheme === 'light') return ' light'
+    else return ''
+  }
+
   return (
     <>
     <div
@@ -15,8 +20,10 @@ const Alert = (props) => {
       onClick={props.onBackdropPress}>
     </div>
     <div
-      className={props.isVisible ?
-        "app-alert show" : "app-alert"}>
+      className={
+          props.isVisible ? "app-alert show"+setThemeLight()
+        : "app-alert"+setThemeLight()
+      }>
         <h1>{props.title}</h1>
         <div className="alert-message">{props.message}</div>
         <div className="btn-container">
