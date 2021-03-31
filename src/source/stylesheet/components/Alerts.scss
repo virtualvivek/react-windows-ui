@@ -44,6 +44,7 @@
         text-align: justify;
         min-height: 80px;
         padding: 0 32px;
+        line-break: auto;
     }
     .btn-container {
         display: block;
@@ -85,6 +86,10 @@
         background: var(--PrimaryColor);
         transition: all 0.3s ease;
         transform: translateY(-100%);
+
+        .alert-message {
+            min-height: 50px;
+        }
 
         &.light {
             background: var(--color_light_grey);

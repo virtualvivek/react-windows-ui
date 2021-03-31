@@ -121,8 +121,8 @@ class Lists extends React.Component {
           isVisible={this.state.showAlertLight}
           onBackdropPress={this.toggleAlertLight}
           setTheme="light"
-          title="Alert"
-          message={<p className="color-success">This is Light alert Box. <i className="icons10-checked"></i></p>}>
+          title={<><i className="icons10-sun"></i>Alert</>}
+          message="This is Light alert Box.">
             <button onClick={this.toggleAlertLight}>OK</button>
         </Alert>
 

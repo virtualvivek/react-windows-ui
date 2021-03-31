@@ -2,7 +2,7 @@
     background-color: #222;
     border-radius: 28px;
     font-size: 50px;
-    width: 360px;
+    width: 345px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -11,7 +11,7 @@
     text-align: center;
     margin-top: 50px;
     margin-bottom: 25px;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 0 4px 4px #222;
 }
 .home-header i {
@@ -73,6 +73,6 @@
 
 @media only screen and (max-width: 760px) {
     .home-header {
-        width: 280px;
+        width: 265px;
     }
 }
