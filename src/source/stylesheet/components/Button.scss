@@ -72,10 +72,8 @@ button,
     &.success-outline,
     &.danger-outline {
         background-color: transparent;
-        transition-duration: 0s;
         &:active {
             color: #fff;
-            transform: unset !important;
             filter: unset;
         }
         &[disabled] {
@@ -110,7 +108,7 @@ button,
 }
 
 @mixin button-mobile() {
-    .app-button {
+    .app-button:not(.primary-outline):not(.danger-outline):not(.success-outline) {
         &:hover {
             border-color: transparent;
             filter: none;

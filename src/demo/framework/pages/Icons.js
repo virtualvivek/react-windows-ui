@@ -7,13 +7,13 @@ const Icons = () => {
     <NavPageContainer hasPadding>
       <h1 className="m-b-15">Icons</h1>
 
-      <p><b>react-windows-ui</b> comes with the premium and free font developed icons. <br/>
+      <p><b>react-windows-ui</b> comes with the premium and free <b>font</b> developed icons. <br/>
       It’s easy to incorporate icons into your app. Here’s a small example:
       </p>
-      <pre style={{display:'inline'}}>
+      <pre style={{display:'inline',fontSize:14}}>
         <code>&lt;i className="icons10-home"&gt;&lt;/i&gt;</code>
       </pre> - &nbsp;
-      <i className="icons10-home font-size-18px"></i>
+      <i className="icons10-home" style={{fontSize:24}}></i>
       <div className="app-hr"></div>
 
       <div className="glyph">
