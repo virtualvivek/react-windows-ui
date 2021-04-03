@@ -13,6 +13,7 @@ class Lists extends React.Component {
         super(props);
         this.state = {
             showDialog: false,
+            showDialogConfirm: false,
             showAlert: false,
             showAlertLight: false
         }
@@ -22,6 +23,11 @@ class Lists extends React.Component {
         if(this.state.showDialog)
                 this.setState({showDialog: false});
         else    this.setState({showDialog: true});
+    }
+    toggleDialogConfirm = () => {
+        if(this.state.showDialogConfirm)
+                this.setState({showDialogConfirm: false});
+        else    this.setState({showDialogConfirm: true});
     }
 
     toggleAlert = () => {
@@ -70,11 +76,17 @@ class Lists extends React.Component {
         <Button
             value="Open Dialog"
             onClick={this.toggleDialog}/>
+
+        <br/><br/>
+
+        <Button
+            value="Open Dialog Confirm"
+            onClick={this.toggleDialogConfirm}/>    
   
         <Dialog
           isVisible={this.state.showDialog}
           onBackdropPress={this.toggleDialog}
-          showDropShadow>
+          showDropShadow={true}>
             <ListItem
                 img={Img4}
                 imgBorderRadius={8}
@@ -94,10 +106,31 @@ class Lists extends React.Component {
             <div style={{padding:'10px',float:'right'}}>
                 <Button
                     value="Close"
-                    onClick={this.toggleDialog}
-                />
+                    onClick={this.toggleDialog}/>
             </div>
         </Dialog>
+
+        <Dialog
+          isVisible={this.state.showDialogConfirm}
+          onBackdropPress={this.toggleDialogConfirm}
+          showDropShadow={true}>
+            <div style={{padding:'15px 15px 15px 25px'}}>
+            <h2 className="m-tb-10">Dialog Confirm</h2>    
+            <h3>Are you feel good today?</h3>  
+            <div style={{display:'flex',justifyContent:'flex-end'}}>
+                <Button
+                    value="Cancel"
+                    type="danger-outline"
+                    onClick={this.toggleDialogConfirm}/>
+                <div className="app-space-15"></div>    
+                <Button
+                    value="OK"
+                    onClick={this.toggleDialogConfirm}/>    
+            </div>
+            </div>
+        </Dialog>
+
+        {/* -------------------------------------------------------------------- */}
 
         <h2 className="m-b-15">Alerts</h2>
 

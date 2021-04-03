@@ -23,7 +23,7 @@ const LoaderBusy = (props) => {
     <div
       className={
       props.isVisible ?
-      "app-dim-overlay show"
+        "app-dim-overlay show"
       : "app-dim-overlay"}
       style={{
         backgroundColor: props.backgroundColor
@@ -47,7 +47,7 @@ const LoaderBusy = (props) => {
 
   return (
     <>
-    {props.display === "fullscreen" ?
+    { props.display === "fullscreen" ?
       renderLoaderFullScreen()
       : renderLoader()
     }

@@ -51,6 +51,7 @@ class Gauges extends React.Component {
             value={this.state.gaugeValue+"%"}
             strokeColor="#eb8613"
             valueColor="#eb8613"
+            type="fill"
         />
 
         <Gauge
@@ -59,7 +60,6 @@ class Gauges extends React.Component {
             value={this.state.gaugeValue+"%"}
             info="of total"
             strokeColor="#e01944"
-            strokeWidth={8}
             valueColor="#e01944"
         />
 

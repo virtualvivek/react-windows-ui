@@ -1,6 +1,25 @@
 import React from 'react'
 
 const Gauge = (props) => {
+
+  const renderBackground = () => {
+    if(props.type === 'fill')
+        return <circle
+                cx="50"
+                cy="50"
+                r="45"
+                fill={props.backgroundColor}
+                />
+    else
+        return <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke={props.backgroundColor}
+                strokeWidth="5px"
+                fill="transparent"
+                />
+  }  
   return (
       <div
         style={{
@@ -9,18 +28,15 @@ const Gauge = (props) => {
             height: 100*props.scale+"px"}}>
         <svg
             style={{
-                transform:"scale("+props.scale+")",
+                transform: "scale("+props.scale+")",
                 transformOrigin:' 0% 0%',
-                width:"100px",
-                height:"100px"}}>
-        <circle
-            cx="50"
-            cy="50"
-            r="45"
-            fill={props.backgroundColor}
-        />
+                width: "100px",
+                height: "100px"}}>
+
+        { renderBackground() }
+
         <path
-            strokeLinecap="round" 
+            strokeLinecap="round"
             strokeWidth={props.strokeWidth} 
             stroke={props.strokeColor} 
             style={{transition: '1s ease-in-out'}}

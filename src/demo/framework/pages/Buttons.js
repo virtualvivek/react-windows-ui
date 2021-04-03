@@ -7,8 +7,8 @@ class Buttons extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        stateDisabled :false,
-        stateLoading :false
+        stateDisabled: false,
+        stateLoading: false
     }
   }
 
@@ -20,7 +20,9 @@ class Buttons extends React.Component {
 
   return (
     <NavPageContainer hasPadding>
+      
       <RegisterFluentEffect/>
+
       <h1>Buttons</h1>
 
       <h3>States</h3>
@@ -28,6 +30,7 @@ class Buttons extends React.Component {
 
         <Button
           value="Button Regular"
+          type="primary"
           disabled={this.state.stateDisabled}
           isLoading={this.state.stateLoading}/>
 
@@ -36,21 +39,21 @@ class Buttons extends React.Component {
 
         <Button
           value="loading"
-          type="primary"
+          type="primary-outline"
           onClick={this.setLoading}/>
 
           &nbsp;
 
         <Button
           value="disabled"
-          type="primary"
+          type="primary-outline"
           onClick={this.setDisabled}/>
 
           &nbsp;
 
         <Button
           value="regular"
-          type="primary"
+          type="primary-outline"
           onClick={this.setRegular}/>
 
 
@@ -133,6 +136,21 @@ class Buttons extends React.Component {
           type="primary"
           isLoading
           value="Loading Button"/>
+
+        <br/><br/>
+
+        <Button
+          type="primary-outline"
+          value="Primary Button"
+        />
+
+        &nbsp;&nbsp;
+
+        <Button
+          type="primary-outline"
+          icon={<i className="icons10-fantasy"></i>}
+          value="Primary Button"
+        />  
       
 
 
@@ -148,6 +166,19 @@ class Buttons extends React.Component {
           type="success"
           icon={<i className="icons10-checkmark"></i>}
           value="Success Button"/>
+
+        <br/><br/>
+
+        <Button
+          type="success-outline"
+          value="Success Button"/>
+
+        &nbsp;&nbsp;
+
+        <Button
+          type="success-outline"
+          icon={<i className="icons10-checkmark"></i>}
+          value="Success Button"/>  
       
 
       <h3 className="m-b-15">Danger</h3>
@@ -162,6 +193,19 @@ class Buttons extends React.Component {
           type="danger"
           icon={<i className="icons10-cancel-2"></i>}
           value="Danger Button"/>
+
+        <br/><br/>
+
+        <Button
+          type="danger-outline"
+          value="Danger Button"/>
+
+        &nbsp;&nbsp;
+
+        <Button
+          type="danger-outline"
+          icon={<i className="icons10-cancel-2"></i>}
+          value="Danger Button"/>  
 
         <br/><br/><br/><br/>
 

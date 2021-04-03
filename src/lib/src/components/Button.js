@@ -16,14 +16,22 @@ const Button = (props) => {
     </div>
   }
 
+  const toggleLoading = () => {
+    if(props.isLoading) return ' isLoading'
+    else return ''
+  }
+
   
   return (
     <button
       className = {
-        props.type ==="primary" ?  "app-button animate primary"
-      : props.type ==="danger" ? "app-button animate bg-danger"
-      : props.type ==="success" ? "app-button animate bg-success"
-      : "app-button animate"
+        props.type ==="primary" ?  "app-button animate primary"+toggleLoading()
+      : props.type ==="danger" ? "app-button animate danger"+toggleLoading()
+      : props.type ==="success" ? "app-button animate success"+toggleLoading()
+      : props.type ==="primary-outline" ? "app-button animate primary-outline"+toggleLoading()
+      : props.type ==="danger-outline" ? "app-button animate danger-outline"+toggleLoading()
+      : props.type ==="success-outline" ? "app-button animate success-outline"+toggleLoading()
+      : "app-button animate"+toggleLoading()
       }
       style={{
         width: props.width,

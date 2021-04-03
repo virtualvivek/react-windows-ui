@@ -1,6 +1,7 @@
 button,
 .app-button {
     @extend .user-select-none;
+    cursor: pointer;
     &:focus,
     &:active,
     &:focus:active {
@@ -12,9 +13,9 @@ button,
     @extend .color-dark-text;
     @extend .transition-all-400ms;
     @extend .vertical-align-middle;
+    @extend .background-color-button;
  
     height: 35px;
-    background: var(--color_button);
     padding: 5px 15px;
     font-size: 15px;
     border: 2px solid transparent;
@@ -28,9 +29,58 @@ button,
         filter: opacity(0.6);
         transition: 0.04s ease;
     }
+    &.isLoading {
+        pointer-events: none;
+    }
+
     &.primary {
         @extend .background-color-primary;
+    }
+    &.primary-outline {
+        @extend .color-primary;
+        border: 2px solid var(--PrimaryColor);
+        &:active {
+            background-color: var(--PrimaryColor);
+        }
+    }
+    &.danger {
+        background: #C50500;
+    }
+    &.danger-outline {
+        border: 2px solid #C50500;
+        color: #C50500;
+        &:active {
+            background-color: #C50500;
+        }
+    }
+    &.success {
+        background: #2C8B2C;
+    }
+    &.success-outline {
+        border: 2px solid #2C8B2C;
+        color: #2C8B2C;
+        &:active {
+            background-color: #2C8B2C;
+        }
+    }
+    &.primary,
+    &.danger,
+    &.success {
         color: #fff;
+    }
+    &.primary-outline,
+    &.success-outline,
+    &.danger-outline {
+        background-color: transparent;
+        transition-duration: 0s;
+        &:active {
+            color: #fff;
+            transform: unset !important;
+            filter: unset;
+        }
+        &[disabled] {
+            backdrop-filter: grayscale(1);
+        }
     }
     &.animate:active {
         transform: scale(0.950, 0.950);

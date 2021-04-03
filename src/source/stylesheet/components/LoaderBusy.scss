@@ -3,6 +3,8 @@
     height: 30px;
     position: relative;
     top: -2px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 
     &.medium {
       top: 2.5px;
@@ -37,6 +39,9 @@
       height: 34px;
       position: absolute;
       opacity: 0;
+
+      transform: rotate(225deg);
+      animation: orbit 4.8s infinite;
       
 
       .w-ball {
@@ -50,11 +55,6 @@
           border-radius: 50%;
           box-shadow: none;
         }
-    }
-    &.animate {
-      .w-ball-wrapper {
-        transform: rotate(225deg);
-        animation: orbit 4.8s infinite;
 
         &.ball-1 {
           animation-delay: 0.96s;
@@ -71,7 +71,9 @@
         &.ball-5 {
           animation-delay: 0.77s;
         }
-      }
+    }
+    &.animate {
+      opacity: 1;
     }
 
       &.light {
