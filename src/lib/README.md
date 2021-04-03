@@ -3,7 +3,7 @@
 </h2>
 <h1 align="center">react-windows-ui</h1>
 
-<p align="center">Build full featured Windows fluent UI apps using ReactJS.</p>
+<p align="center">Build full featured <b>Windows fluent UI</b> apps using <b>ReactJS</b>.</p>
 
 <p align="center">
 	
@@ -58,16 +58,17 @@ import 'react-windows-ui/config/app-config.css'
 import 'react-windows-ui/dist/react-windows-ui.min.css'
 import 'react-windows-ui/icons/fonts/fonts.min.css'
 ```
+
 ### app-config
 
-‣ `app-config` file contains the primary `AppColor`, `Fontfamily` used by the app <br>
-‣ You can import default `app-config` using this file <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/config/app-config.css">app-config.css</a><br>
+‣ `app-config` file contains the app `PrimaryColor`, `Fontfamily` used by the app <br>
+‣ You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a><br>
 OR <br>
 Create your own like this
 
 ```css
 :root {
-    --AppColor: #6632a8;
+    --PrimaryColor: #6632a8;
     /* Change color you like */
 }
 body {
@@ -82,6 +83,9 @@ https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo
 ## ‣ Library Source Code
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib
 
+
+## Github
+https://github.com/virtualvivek/react-windows-ui
 
 ## Find this library useful? :heart:
 Support it by joining [stargazers](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
