@@ -10,7 +10,7 @@ const Icons = () => {
       <p><b>react-windows-ui</b> comes with the premium and free <b>font</b> developed icons. <br/>
       It’s easy to incorporate icons into your app. Here’s a small example:
       </p>
-      <pre style={{display:'inline',fontSize:14}}>
+      <pre style={{display:'inline',fontSize:13}}>
         <code>&lt;i className="icons10-home"&gt;&lt;/i&gt;</code>
       </pre> - &nbsp;
       <i className="icons10-home" style={{fontSize:24}}></i>

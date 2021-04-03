@@ -145,7 +145,7 @@
     background: var(--color_light_bg);
 }
 .input-field-primary-disabled {
-    filter: contrast(0.6);
+    filter: contrast(0.6) !important;
     cursor: not-allowed !important;
 }
 .app-overlay {
