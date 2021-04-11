@@ -131,6 +131,8 @@ import { ProgressBarIndeterminate, ProgressBar,
           <br/>
 
           <div className="app-flex">
+
+            <div className="app-space-10"></div>
             
             <LoaderBusy
               isLoading={this.state.showLoaderBusy}/>

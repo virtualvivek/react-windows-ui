@@ -1,6 +1,6 @@
 {
   "name": "react-windows-ui",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Build full featured Windows fluent UI apps using reactjs.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,10 @@
     "responsive",
     "uwp",
     "electron",
-    "mobile"
+    "mobile",
+    "windows-app",
+    "ui-design",
+    "web-app"
   ],
   "author": "Vivek Verma",
   "license": "MIT",
