@@ -88,10 +88,10 @@ body {
 }
 ```
 
-## ‣ Example Code
+# ‣ Example Code
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo
 
-## ‣ Library Source Code
+# ‣ Library Source Code
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib
 
 <img src="markdown/md_npm_.png" width="75" />
@@ -102,7 +102,7 @@ https://www.npmjs.com/package/react-windows-ui
 Support it by joining [stargazers](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
 
 
-## License
+# License
 
 `react-windows-ui` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE).<br>
 Copyright (c) 2021 ` Vivek Verma `
