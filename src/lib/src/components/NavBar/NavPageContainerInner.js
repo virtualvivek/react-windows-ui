@@ -3,7 +3,7 @@ import React from 'react'
 const NavPageContainerInner = (props) => {
 
   return (
-    <div style={{marginLeft: "30px"}}>
+    <div className="app-section-container-inner">
       {props.children}
     </div>
   )

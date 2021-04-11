@@ -16,6 +16,7 @@ const Icons = () => {
       <i className="icons10-home" style={{fontSize:24}}></i>
       <div className="app-hr"></div>
 
+      <br/>
       <div className="glyph">
           
           

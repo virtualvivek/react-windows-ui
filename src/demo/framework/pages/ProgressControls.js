@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProgressBarIndeterminate, ProgressBar,
-         LoaderBar, LoaderBusy, NavPageContainer, Button } from '../../../lib'
+         LoaderBar, LoaderBusy, NavPageContainer,NavPageContainerInner, Button } from '../../../lib'
 
   class ProgressControls extends React.Component {
 
@@ -52,7 +52,9 @@ import { ProgressBarIndeterminate, ProgressBar,
 
   render() {
     return (
-    <NavPageContainer hasPadding>
+    <NavPageContainer>
+
+    <NavPageContainerInner>
 
       <h1>ProgressControls</h1>
 
@@ -128,8 +130,24 @@ import { ProgressBarIndeterminate, ProgressBar,
 
           <br/>
 
-          <LoaderBusy
-            isLoading={this.state.showLoaderBusy}/>
+          <div className="app-flex">
+            
+            <LoaderBusy
+              isLoading={this.state.showLoaderBusy}/>
+
+            <div className="app-space-45"></div>
+
+            <LoaderBusy
+              isLoading={this.state.showLoaderBusy}
+              size="medium"/>
+
+            <div className="app-space-35"></div>
+
+            <LoaderBusy
+              isLoading={this.state.showLoaderBusy}
+              size="small"/>
+          </div>
+          
 
           <br/><br/>
           <Button
@@ -180,14 +198,49 @@ import { ProgressBarIndeterminate, ProgressBar,
           <h2 className="m-b-15">Success</h2>
 
             <ProgressBar
-              title="Downloaded imageres.dll ✔️"
+              title="Downloaded imageres.dll ✅"
               setProgress={99}
               setStatus="success"
             />
 
+          <br/><br/>
 
+    </NavPageContainerInner>
 
-            <br/><br/><br/><br/><br/><br/>
+      <div className="app-align-center background-color-primary">
+      
+        <br/><br/>
+        
+        <div className="app-flex">
+        <div className="app-space-45"></div>
+
+          <LoaderBusy
+            setTheme="light"
+            isLoading={true}/>
+
+          <div className="app-space-45"></div>
+
+          <LoaderBusy
+            setTheme="light"
+            isLoading={true}
+            size="medium"/>
+
+          <div className="app-space-35"></div>
+
+          <LoaderBusy
+            setTheme="light"
+            isLoading={true}
+            size="small"/>
+        </div>
+        <br/><br/>
+
+        <LoaderBar
+        setTheme="light"
+          isLoading={true}
+        />
+
+        <br/><br/>
+      </div>
 
     </NavPageContainer>
   );

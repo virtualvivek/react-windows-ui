@@ -6,6 +6,10 @@
     }
 }
 
+.app-section-container-inner {
+    margin-left: 30px;
+}
+
 .app-nav-wrap.toggled + .app-section-container {
     padding-left: 74px;
     &.has-padding {
@@ -39,5 +43,8 @@
         &.has-padding {
             margin: 0 15px !important;
         }
+    }
+    .app-section-container-inner {
+        margin: 15px;
     }
 }

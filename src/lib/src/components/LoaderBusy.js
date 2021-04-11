@@ -7,12 +7,18 @@ const LoaderBusy = (props) => {
     if(props.isLoading) return ' animate'
     else return ''
   }
+  const setSize = () => {
+    if(props.size === 'medium') return ' medium'
+    else if (props.size === 'small') return ' small'
+    else return ''
+  }
+
   const renderLoader = () => {
     return  <div
               className={
                 props.setTheme === "light" ?
-                "app-loader-busy light" + toggleLoading() :
-                "app-loader-busy" + toggleLoading()}>
+                "app-loader-busy light" + setSize() + toggleLoading() :
+                "app-loader-busy" + setSize() + toggleLoading()}>
               <LoaderBusyWrapper/>
             </div>
   }
@@ -24,7 +30,8 @@ const LoaderBusy = (props) => {
       className={
       props.isVisible ?
         "app-dim-overlay show"
-      : "app-dim-overlay"}
+      : "app-dim-overlay"
+      }
       style={{
         backgroundColor: props.backgroundColor
       }}>
@@ -37,7 +44,8 @@ const LoaderBusy = (props) => {
       {renderLoader()}
       <span className={
         props.setTheme === "light" ?
-        "title text-light" : "title"}>
+        "title text-light" : "title"
+        }>
         {props.title}
       </span>
     </div>
@@ -48,7 +56,7 @@ const LoaderBusy = (props) => {
   return (
     <>
     { props.display === "fullscreen" ?
-      renderLoaderFullScreen()
+        renderLoaderFullScreen()
       : renderLoader()
     }
     </>

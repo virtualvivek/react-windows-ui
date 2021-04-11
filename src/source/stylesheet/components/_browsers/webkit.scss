@@ -21,6 +21,10 @@
     &::-webkit-scrollbar-thumb:active {
         background-color: #999999;
     }
+    //Setting margin-top for laying scrollbar between navigation li items.
+    &::-webkit-scrollbar-track{ 
+        margin-top: 102px;
+    }
 }
 .app-nav-wrap.toggled nav {
     &:hover::-webkit-scrollbar {
@@ -30,7 +34,7 @@
 
 @mixin browser-webkit-mobile() {
     ::-webkit-scrollbar {
-        width: 2.4px;
+        width: 10px;
     }
     .app-nav-wrap nav {
         &::-webkit-scrollbar {
