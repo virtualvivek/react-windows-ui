@@ -72,7 +72,7 @@ import 'react-windows-ui/icons/fonts/fonts.min.css'
 ```
 ### app-config
 
-‣ `app-config` file contains the app `PrimaryColor`, `Fontfamily` used by the app <br>
+‣ `app-config.css` file contains the app `PrimaryColor`, `Fontfamily` used by the app <br>
 ‣ You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a><br>
 OR <br>
 Create your own like this
@@ -88,11 +88,15 @@ body {
 }
 ```
 
-## ‣ Example Code
+# ‣ Example Code
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo
 
-## ‣ Library Source Code
+# ‣ Library Source Code
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib
+
+## 🎨 Library Styles SCSS Code
+https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet
+
 
 <img src="markdown/md_npm_.png" width="75" />
 https://www.npmjs.com/package/react-windows-ui
@@ -102,7 +106,7 @@ https://www.npmjs.com/package/react-windows-ui
 Support it by joining [stargazers](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
 
 
-## License
+# License
 
 `react-windows-ui` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE).<br>
 Copyright (c) 2021 ` Vivek Verma `
