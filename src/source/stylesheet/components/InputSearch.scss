@@ -7,8 +7,8 @@
     }
 }
 .app-input-search {
-    height: inherit;
     width: 100%;
+    height: inherit;
     padding-right: 35px;
 }
 
@@ -51,7 +51,7 @@
     &::after {
         @extend .font-icon-dark;
         content: "\f1b9";
-        z-index: 2;
+        z-index: 1;
         font-weight: 600;
         font-size: 19px;
         margin-left: -29px;

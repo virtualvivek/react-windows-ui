@@ -5,6 +5,7 @@ import NavBarLinkUser from './NavBarLinkUser'
 import NavPageContainer from './NavPageContainer'
 import NavPageContainerRight from './NavPageContainerRight'
 import NavPageContainerInner from './NavPageContainerInner'
+import NavSearchBox from './NavSearchBox'
 
 export {
     NavBar,
@@ -13,5 +14,6 @@ export {
     NavBarLinkUser,
     NavPageContainer,
     NavPageContainerRight,
-    NavPageContainerInner
+    NavPageContainerInner,
+    NavSearchBox
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import {  NavBar, NavBarLink,
+import {  NavBar, NavBarLink, NavSearchBox,
           SystemThemeFollower, RegisterFluentEffect } from '../../lib'
 import Home from './pages/Home'
 import Layouts from './pages/Layouts'
@@ -50,6 +50,9 @@ const Framework = () => {
             text="Home"
             icon={<i className="icons10-home"></i>}
           /> */}
+
+          <NavSearchBox
+            placeholder="Find a component"/>
 
           <NavBarLink
             to="/"

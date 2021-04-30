@@ -5,6 +5,7 @@
     @include fluent-effect-mobile();
     @include header-fixed-container-mobile();
     @include app-navbar-mobile();
+    @include app-navbar-search-mobile();
     @include alert-mobile();
     @include avatar-view-mobile();
     @include button-mobile();
