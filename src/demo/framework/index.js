@@ -23,10 +23,35 @@ import CardLayout from './layouts/CardLayout'
 import CommanBarLayout from './layouts/CommandBarLayout'
 import ContactsLayout from './layouts/ContactsLayout'
 import LoginLayout from './layouts/LoginLayout'
-
 import ListLayout from './layouts/ListLayout'
 
-const Framework = () => {
+import NavBarItem from './NavBarItems.json'
+
+class Framework extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+        data: NavBarItem,
+        filteredData: NavBarItem
+    }
+  }
+
+  handleInputSearch = event => {
+    const query = event.target.value
+    this.setState(prevState => {
+      const filteredData = prevState.data.filter(element => {
+        return element.text.toLowerCase().includes(query.toLowerCase())
+      })
+      return {
+        query,
+        filteredData
+      }
+    })
+  }
+
+
+  render() {
   return (
     <>
      <Router basename="react-windows-ui">
@@ -52,83 +77,24 @@ const Framework = () => {
           /> */}
 
           <NavSearchBox
-            placeholder="Find a component"/>
+            placeholder="Find a component"
+            onChange={this.handleInputSearch}/>
 
-          <NavBarLink
-            to="/"
-            exact={true}
-            text="Home"
-            icon={<i className="icons10-home"></i>}
-          />
+          {this.state.filteredData.map((item, key) => {
+            return <NavBarLink
+                      key={key}
+                      to={item.to}
+                      exact={item.exact}
+                      text={item.text}
+                      icon={<i className={item.icon}></i>}
+                      showBadge={item.showBadge}
+                    />
+            })
+          }
 
-          <NavBarLink
-            to="/layouts"
-            text="Layouts"
-            icon={<i className="icons10-parallel-tasks"></i>}
-          />
 
-          <NavBarLink
-            to="/inputs"
-            text="Inputs"
-            icon={<i className="icons10-keyboard"></i>}
-          />
+      {/* If you don't want to add NavSearchBar simply add <NavBarLink /> like below  */}
 
-          <NavBarLink
-            to="/texts"
-            text="Texts"
-            icon={<i className="icons10-align-left"></i>}
-          />
-         
-          <NavBarLink
-            to="/buttons"
-            text="Buttons"
-            showBadge={7}
-            icon={<i className="icons10-controller"></i>}
-          />
-
-          <NavBarLink
-            to="/images"
-            text="Images"
-            icon={<i className="icons10-picture"></i>}
-          />
-                    
-          <NavBarLink
-            to="/dialogs"
-            text="Dialogs"
-            icon={<i className="icons10-notification-image"></i>}
-          />
-
-          <NavBarLink
-            to="/links"
-            text="Links"
-            icon={<i className="icons10-link"></i>}
-          />
-                    
-          <NavBarLink
-            to="/progress"
-            text="Progress Controls"
-            icon={<i className="icons10-bar-chart"></i>}
-          />
-
-          <NavBarLink
-            to="/themes"
-            text="Themes"
-            icon={<i className="icons10-color-palette"></i>}
-          />
-
-          <NavBarLink
-            to="/gauges"
-            text="Gauges"
-            icon={<i className="icons10-gauge"></i>}
-          />
-                    
-          <NavBarLink
-            to="/icons"
-            text="Icons"
-            icon={<i className="icons10-deathly-hallows"></i>}
-          />
-                
-                   
           <h1>Layouts</h1>
           <div className="app-hr"></div>
 
@@ -177,7 +143,8 @@ const Framework = () => {
         </Switch>
       </Router> 
     </>
-  )
+    )
+  }
 }
 
 export default Framework

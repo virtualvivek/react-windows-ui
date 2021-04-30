@@ -1,0 +1,86 @@
+[
+    {
+        "to": "/",
+        "exact": true,
+        "text": "Home",
+        "icon": "icons10-home",
+        "showBadge": false
+    },
+    {
+        "to": "/layouts",
+        "exact": false,
+        "text": "Layouts",
+        "icon": "icons10-parallel-tasks",
+        "showBadge": false
+    },
+    {
+        "to": "/inputs",
+        "exact": false,
+        "text": "Inputs",
+        "icon": "icons10-keyboard",
+        "showBadge": false
+    },
+    {
+        "to": "/texts",
+        "exact": false,
+        "text": "Texts",
+        "icon": "icons10-align-left",
+        "showBadge": false
+    },
+    {
+        "to": "/buttons",
+        "exact": false,
+        "text": "Buttons",
+        "icon": "icons10-controller",
+        "showBadge": 7
+    },
+    {
+        "to": "/images",
+        "exact": false,
+        "text": "Images",
+        "icon": "icons10-picture",
+        "showBadge": false
+    },
+    {
+        "to": "/dialogs",
+        "exact": false,
+        "text": "Dialogs",
+        "icon": "icons10-notification-image",
+        "showBadge": false
+    },
+    {
+        "to": "/links",
+        "exact": false,
+        "text": "Links",
+        "icon": "icons10-link",
+        "showBadge": false
+    },
+    {
+        "to": "/progress",
+        "exact": false,
+        "text": "Progress Controls",
+        "icon": "icons10-bar-chart",
+        "showBadge": false
+    },
+    {
+        "to": "/themes",
+        "exact": false,
+        "text": "Themes",
+        "icon": "icons10-color-palette",
+        "showBadge": false
+    },
+    {
+        "to": "/gauges",
+        "exact": false,
+        "text": "Gauges",
+        "icon": "icons10-gauge",
+        "showBadge": false
+    },
+    {
+        "to": "/icons",
+        "exact": false,
+        "text": "Icons",
+        "icon": "icons10-deathly-hallows",
+        "showBadge": false
+    }
+]

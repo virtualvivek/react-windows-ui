@@ -7,25 +7,25 @@ import Contacts from './data/contactsData.json'
 class ContactsLayout extends React.Component {
 
   constructor() {
-      super();
-      this.state = {   
-          data: Contacts,
-          filteredData: Contacts
-      }
+    super();
+    this.state = {   
+        data: Contacts,
+        filteredData: Contacts
     }
+  }
 
-    handleInputChange = event => {
-      const query = event.target.value
-      this.setState(prevState => {
-        const filteredData = prevState.data.filter(element => {
-          return element.name.toLowerCase().includes(query.toLowerCase())
-        })
-        return {
-          query,
-          filteredData
-        }
+  handleInputChange = event => {
+    const query = event.target.value
+    this.setState(prevState => {
+      const filteredData = prevState.data.filter(element => {
+        return element.name.toLowerCase().includes(query.toLowerCase())
       })
-    }
+      return {
+        query,
+        filteredData
+      }
+    })
+  }
 
   render() {
     return (
@@ -47,23 +47,23 @@ class ContactsLayout extends React.Component {
         {
         this.state.filteredData.map((item, key) => {
             switch(item.name) {
-                case "header":
-                    return <StickyHeader
-                            key={key}
-                            title={item.subtitle}
-                            stickOffset={140}
-                            //color="#16ab9c"
-                            //fontSize={22}
-                            />
-                
-                default:
-                    return <ListItem
-                            key={key}
-                            img={Img1}
-                            imgAlt="avatar1"
-                            title={item.name}
-                            subtitle={"@"+item.name}
-                            />
+              case "header":
+                  return <StickyHeader
+                          key={key}
+                          title={item.subtitle}
+                          stickOffset={140}
+                          //color="#16ab9c"
+                          //fontSize={22}
+                          />
+              
+              default:
+                  return <ListItem
+                          key={key}
+                          img={Img1}
+                          imgAlt="avatar1"
+                          title={item.name}
+                          subtitle={"@"+item.name}
+                          />
             }
         })
         }
