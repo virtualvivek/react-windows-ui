@@ -55,6 +55,9 @@ const NavSearchBox = (props) => {
           placeholder={props.placeholder}
           onChange={props.onChange}
         />
+        <button onClick={showMenuBar}>
+          <i className="icons10-cross"></i>
+        </button>
     </div>
     </>
   )

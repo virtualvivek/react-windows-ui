@@ -13,6 +13,7 @@
     width: 280px;
     z-index: 5;
     transition: 0.2s ease;
+    overflow-y: overlay;
 
     nav {
         @extend .transition-background-400ms;
@@ -24,8 +25,9 @@
         top: 0;
         padding: 0;
         display: block;
+        overflow: scroll;
         overflow-x: hidden;
-        overflow-y: auto;
+        overflow-y: overlay;
         z-index: inherit;
 
         &.animate {
@@ -46,7 +48,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             line-height: 2.4;
-            padding: 8px 25px;
+            padding: 6px 25px;
             font-weight: 400;
             color: var(--color_dark_text);
 

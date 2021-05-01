@@ -32,6 +32,15 @@
             margin-right: -35px;
             z-index: 1;
         }
+        .icons10-cross {
+            margin: 0;
+            color: var(--color_dark_text);
+        }
+        button {
+            width: 40px;
+            border: none;
+            background-color: transparent;
+        }
     }
     .app-search-dialog-trigger {
         display: none;
@@ -67,7 +76,7 @@
             display: none;
         }
         .app-search-dialog {
-            padding: 5px 0;
+            padding: 6px 0 0 20px;
             .app-input-search {
                 width: 70%;
             }
