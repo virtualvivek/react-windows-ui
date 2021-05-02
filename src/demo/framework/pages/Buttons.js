@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, ButtonFluent, NavPageContainer,
+import { Button, ButtonFluent,ButtonIcon, NavPageContainer,
          RegisterFluentEffect } from '../../../lib'
 
 class Buttons extends React.Component {
@@ -150,7 +150,27 @@ class Buttons extends React.Component {
           type="primary-outline"
           icon={<i className="icons10-fantasy"></i>}
           value="Primary Button"
-        />  
+        />
+
+      <h3 className="m-b-15">Button Icon</h3>
+
+        <ButtonIcon
+          icon={<i className="icons10-home"></i>}
+        />
+
+        &nbsp;&nbsp;
+
+        <ButtonIcon
+          icon={<i className="icons10-share"></i>}
+        />
+
+        <ButtonIcon
+          icon={<i className="icons10-add"></i>}
+        />
+
+        <ButtonIcon
+          icon={<i className="icons10-fingerprint"></i>}
+        />
       
 
 

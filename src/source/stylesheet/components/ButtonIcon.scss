@@ -1,0 +1,17 @@
+.app-button-icon {
+    @extend .transition-all-400ms;
+    transition-duration: 0.2s;
+    background-color: transparent;
+    color: var(--PrimaryColor);
+    border: none;
+    vertical-align: middle;
+    font-size: 24px;
+
+    &:hover {
+        background-color: var(--color_primary_alpha);
+        color: #fff;
+    }
+    &:active {
+        transform: scale(0.94, 0.94);
+    }
+}

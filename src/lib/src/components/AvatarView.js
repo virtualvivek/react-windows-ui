@@ -29,6 +29,7 @@ const AvatarView = (props) => {
         alt={props.alt}
       />
     }
+
     const handleOnLoad = () => {
       setLoad(true)
     }
@@ -60,10 +61,10 @@ const AvatarView = (props) => {
 }
 
 AvatarView.defaultProps = {
-    isLoading: false,
-    objectFit: 'cover',
-    alt: "avatar image",
-    onLoad: () => {}
-  }
+  isLoading: false,
+  objectFit: 'cover',
+  alt: "avatar image",
+  onLoad: () => {}
+}
 
 export default AvatarView

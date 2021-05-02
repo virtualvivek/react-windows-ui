@@ -1,6 +1,7 @@
 import AvatarView from './src/components/AvatarView'
 import Alert from './src/components/Alert'
 import Button from './src/components/Button'
+import ButtonIcon from './src/components/ButtonIcon'
 import ButtonFluent from './src/components/ButtonFluent'
 import Card from './src/components/Card'
 import Checkbox from './src/components/Checkbox'
@@ -49,6 +50,7 @@ export {
     AvatarView,
     Alert,
     Button,
+    ButtonIcon,
     ButtonFluent,
     Card,
     Checkbox,

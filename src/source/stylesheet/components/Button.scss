@@ -81,7 +81,7 @@ button,
         }
     }
     &.animate:active {
-        transform: scale(0.950, 0.950);
+        transform: scale(0.95, 0.95);
     }
     &[disabled] {
         @extend .input-field-primary-disabled;

@@ -16,6 +16,7 @@ const AvatarView = (props) => {
   const renderShadow = () => {
     return <div className="shadow"></div>
   }
+  
   const handleOnLoad = () => {
     setLoad(true)
   }

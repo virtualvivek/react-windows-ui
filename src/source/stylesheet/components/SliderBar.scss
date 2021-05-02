@@ -43,8 +43,6 @@
             cursor: pointer;
             transition: background 0.15s ease-in-out;
             user-select: none;
-        }
-        &::-moz-range-thumb {
             background: var(--PrimaryColor);
         }
         &::-moz-range-thumb:hover,

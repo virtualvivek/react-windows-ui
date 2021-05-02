@@ -8,8 +8,7 @@ const Alert = (props) => {
   })
 
   const setThemeLight = () => {
-    if(props.setTheme === 'light') return ' light'
-    else return ''
+    return props.setTheme === 'light' ? ' light' : '';
   }
 
   return (

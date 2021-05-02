@@ -17,8 +17,7 @@ const Button = (props) => {
   }
 
   const toggleLoading = () => {
-    if(props.isLoading) return ' isLoading'
-    else return ''
+    return props.isLoading ? ' isLoading' : '';
   }
 
   

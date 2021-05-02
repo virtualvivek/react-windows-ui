@@ -12,7 +12,8 @@
     margin-bottom: 5px;
     border: 2px solid transparent;
     
-    &:hover {
+    &:hover,
+    &.focused {
         @extend .background-color-light-grey;
     }
     &:active {

@@ -33,13 +33,13 @@ class Lists extends React.Component {
     toggleAlert = () => {
         if(this.state.showAlert)
                 this.setState({showAlert: false});
-        else    this.setState({showAlert: true});  
+        else    this.setState({showAlert: true});
     }
 
     toggleAlertLight = () => {
         if(this.state.showAlertLight)
                 this.setState({showAlertLight: false});
-        else    this.setState({showAlertLight: true});  
+        else    this.setState({showAlertLight: true});
     }
 
 
@@ -52,18 +52,18 @@ class Lists extends React.Component {
         <br/>
         <div className="app-flex app-align-center">
             <AvatarView
-                size="large" 
+                size="large"
                 src={AvatarImg}
                 showDropShadow/>
             &nbsp;&nbsp;
             <div className="app-grid">
                 <AvatarView
-                    size="small" 
+                    size="small"
                     src={Img2}
                     showDropShadow/>
                 &nbsp;
                 <AvatarView
-                    size="small" 
+                    size="small"
                     src={Img3}
                     showDropShadow/>
             </div>
@@ -115,17 +115,17 @@ class Lists extends React.Component {
           onBackdropPress={this.toggleDialogConfirm}
           showDropShadow={true}>
             <div style={{padding:'15px 15px 15px 25px'}}>
-            <h2 className="m-tb-10">Dialog Confirm</h2>    
+            <h2 className="m-tb-10">Dialog Confirm</h2>
             <h3>Are you feel good today?</h3>  
             <div style={{display:'flex',justifyContent:'flex-end'}}>
                 <Button
                     value="Cancel"
                     type="danger-outline"
                     onClick={this.toggleDialogConfirm}/>
-                <div className="app-space-15"></div>    
+                <div className="app-space-15"></div>
                 <Button
                     value="OK"
-                    onClick={this.toggleDialogConfirm}/>    
+                    onClick={this.toggleDialogConfirm}/>
             </div>
             </div>
         </Dialog>
@@ -138,7 +138,7 @@ class Lists extends React.Component {
             onClick={this.toggleAlert}
         />
         <br/><br/>
-        <Button value="Open Alert Light" 
+        <Button value="Open Alert Light"
             onClick={this.toggleAlertLight}
         />
   
