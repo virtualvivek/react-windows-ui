@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { NavPageContainer, LinkCompound,
          LinkCompoundFluent, RegisterFluentEffect } from '../../../lib'
+import Img1 from '../../img/illustration/mountain.jpg'
 
 const Links = () => {
   return (
@@ -45,6 +46,16 @@ const Links = () => {
         title="Notification settings and DND"
         subtitle="Control which app push notification"
         icon={<i className="icons10-notification"></i>}
+      />
+
+      <h3>Link with Image</h3>
+
+      <LinkCompound
+        to="#"
+        title="User preferences and uploads"
+        subtitle="Profile pictures and details"
+        image={Img1}
+        imageAlt="Demo Image"
       />
 
 

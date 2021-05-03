@@ -29,7 +29,7 @@ class Images extends React.Component {
         height={'280px'}
         insetShadow
         title="IronMan"
-        subtitle="Mark 50 suit is a fifty'th combat exo-armor"
+        subtitle="Mark 50 combat armor"
       />
 
       <NavPageContainerInner>

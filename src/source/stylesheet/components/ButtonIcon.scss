@@ -15,3 +15,15 @@
         transform: scale(0.94, 0.94);
     }
 }
+
+@mixin button-icon-mobile() {
+    .app-button-icon {
+        &:hover {
+            background-color: transparent;
+            color: var(--PrimaryColor);
+        }
+        &:active {
+            background-color: var(--color_primary_alpha);
+        }
+    }
+}

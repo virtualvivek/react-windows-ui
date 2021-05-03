@@ -18,7 +18,7 @@
     }
     &:active {
         @extend .transition-scale-0_95;
-        background: var(--color_link_bg_hover) !important;
+        background: var(--color_link_bg_hover);
     }
     i {
         font-size: 36px;
@@ -30,6 +30,13 @@
             font-size: 30px;
             padding: 3px;
         }
+    }
+    img {
+        width: 37px;
+        height: 37px;
+        margin: 0 0 -5px -2px;
+        position: relative;
+        top: 18px;
     }
     span {
         @extend .color-dark-text;
@@ -74,14 +81,32 @@
     i.color-primary {
         @extend .color-primary;
     }
+
+   
+}
+
+div.app-link-compound {
+    &:hover,
+    &:active {
+        background-color: unset;
+        transition: unset;
+        transform: unset;
+    }
+}
+.app-link-compound + .app-switch {
+    display: inline-flex;
+    line-height: 3;
 }
 
 @mixin link-compound-mobile() {
-    .app-link-compound {
+    .app-link-compound:not(.focused) {
         &:hover,
         &.primary:hover {
             background: transparent;
             border-color: transparent;
         }
+    }
+    .app-link-compound + .app-switch {
+        margin-left: 10px;
     }
 }

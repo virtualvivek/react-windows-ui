@@ -6,6 +6,9 @@ const LinkCompound = (props) => {
   const setFocused = () =>{
     return props.focused ? ' focused' : '';
   }
+  const setImg = () =>{
+    return props.image ? <img src={props.image} alt={props.imageAlt}/> : '';
+  }
   return (
     <Link
       to={props.to}
@@ -19,6 +22,7 @@ const LinkCompound = (props) => {
       }}  
       onMouseOver={props.onMouseOver}>
           {props.icon}
+          {setImg()}
           <span>{props.title}</span>
           <p>{props.subtitle}</p>
     </Link>
@@ -26,7 +30,8 @@ const LinkCompound = (props) => {
 }
 
 LinkCompound.defaultProps = {
-  to: "#"
+  to: "#",
+  imageAlt: 'image'
 }
 
 export default LinkCompound
