@@ -82,7 +82,6 @@
         @extend .color-primary;
     }
 
-   
 }
 
 div.app-link-compound {
@@ -99,7 +98,7 @@ div.app-link-compound {
 }
 
 @mixin link-compound-mobile() {
-    .app-link-compound:not(.focused) {
+    .app-link-compound:not(.focused):not(:active) {
         &:hover,
         &.primary:hover {
             background: transparent;
