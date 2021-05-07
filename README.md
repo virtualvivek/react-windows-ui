@@ -96,7 +96,7 @@ https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework
 # ‣ Library Source Code
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib
 
-## 🎨 Library Styles SCSS Code
+## ❅ Library Styles SCSS Code
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet
 
 
