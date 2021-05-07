@@ -94,9 +94,11 @@ body {
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework
 
 # ‣ Library Source Code
+◓ Actual npm package used by the project:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib
 
 ## ❅ Library Styles SCSS Code
+◓ npm package scss source code:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet
 
 
