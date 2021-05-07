@@ -10,8 +10,7 @@ const Switch = (props) => {
         />
         <button
           type="submit"
-          onClick={props.onClick}
-        >
+          onClick={props.onSubmit}>
         </button>
     </div>
   )

@@ -21,6 +21,13 @@
         "showBadge": false
     },
     {
+        "to": "/navigation",
+        "exact": false,
+        "text": "Navigation",
+        "icon": "icons10-explore",
+        "showBadge": false
+    },
+    {
         "to": "/texts",
         "exact": false,
         "text": "Texts",

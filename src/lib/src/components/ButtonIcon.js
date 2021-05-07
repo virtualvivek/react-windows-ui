@@ -11,6 +11,7 @@ const ButtonIcon = (props) => {
       <button
         className="app-button-icon"
         disabled={props.disabled}
+        onClick={props.onClick}
         style={{
             width: props.width,
             height: props.height,

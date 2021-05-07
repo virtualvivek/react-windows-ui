@@ -1,0 +1,8 @@
+.code {
+    font-size: 14px;
+    border: none;
+}
+.code.navigation {
+    font-size: 12px;
+    width: 92%;
+}

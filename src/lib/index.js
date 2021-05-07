@@ -1,3 +1,4 @@
+import Accordion from './src/components/Accordion'
 import AvatarView from './src/components/AvatarView'
 import Alert from './src/components/Alert'
 import Button from './src/components/Button'
@@ -47,6 +48,7 @@ import View from './src/components/View'
 
 
 export {
+    Accordion,
     AvatarView,
     Alert,
     Button,

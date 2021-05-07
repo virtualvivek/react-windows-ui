@@ -3,6 +3,7 @@
     @extend .transition-background-400ms;
     width: 280px;
     padding-left: 0;
+    display: inline-block;
 
     select {
         @extend .background-color-light-bg;

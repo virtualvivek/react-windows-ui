@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { NavBar, NavBarLink, NavSearchBox, SystemThemeFollower, RegisterFluentEffect } from '../../lib'
 import Home from './pages/Home'
 import Layouts from './pages/Layouts'
+import Navigation from './pages/Navigation'
 import Inputs from './pages/Inputs'
 import Texts from './pages/Texts'
 import Buttons from './pages/Buttons'
@@ -25,6 +26,7 @@ import LoginLayout from './layouts/LoginLayout'
 import ListLayout from './layouts/ListLayout'
 
 import NavBarItem from './NavBarItems.json'
+import './pages/css/codeStyle.css'
 
 class Framework extends React.Component {
 
@@ -63,8 +65,8 @@ class Framework extends React.Component {
       <NavBar 
         title="React Windows UI"
         titleShort={<i className="icons10-windows"></i>}
-      // titleShort="R" render text or icons
-      // mobileHasIcons={true}
+      //titleShort="R" render text or icons
+      //mobileHasIcons={true}
         shadowOnScroll={true}>
 
         {/* <NavBarLinkFluent
@@ -119,6 +121,7 @@ class Framework extends React.Component {
       <Switch>
         <Route path="/" component={Home}  exact />
         <Route path='/layouts' component={Layouts} />
+        <Route path='/navigation' component={Navigation} />
         <Route path='/inputs' component={Inputs} />
         <Route path='/texts' component={Texts} />
         <Route path='/buttons' component={Buttons} />
@@ -140,7 +143,7 @@ class Framework extends React.Component {
         <Route path='/LoginLayout' component={LoginLayout} />
         <Route path='/ListLayout' component={ListLayout} />
       </Switch>
-    </Router> 
+    </Router>
   </>
     )
   }

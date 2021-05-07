@@ -1,8 +1,15 @@
 import React from 'react'
-import { NavPageContainer,Checkbox,Switch,
-         InputText,InputDate,InputSearchBar,
-         InputSearchBox,SliderBar,
-         RadioButton,SelectBox,MenuBar,InputSearchSuggestion } from '../../../lib'
+import { NavPageContainer,Checkbox,Switch,InputText,InputDate,
+        InputSearchBar,InputSearchBox,SliderBar,RadioButton,
+        SelectBox,MenuBar,InputSearchSuggestion,Accordion } from '../../../lib'
+        
+import SyntaxHighlighter from 'react-syntax-highlighter'
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+
+import {SwitchCode,SliderBarCode,CheckboxCode,InputTextCode,
+  InputPasswordCode,InputLabelCode,InputDateCode,InputSearchBarCode,
+  InputSearchBoxCode,InputSearchSuggestionCode,SelectBoxCode,MenuBarCode,
+  RadioButtonCode} from './codes/inputs'
 
 class Inputs extends React.Component {
 
@@ -30,7 +37,7 @@ class Inputs extends React.Component {
         <div className="app-flex">
                 
           <Switch
-            checked/>
+            checked />
 
           <Switch
             checked
@@ -52,6 +59,16 @@ class Inputs extends React.Component {
             textOff="Disabled Off" />
                 
         </div>
+        <br/>
+
+        <Accordion title="Code - Switch" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {SwitchCode}
+          </SyntaxHighlighter>
+        </Accordion>
 
       <h3 className="m-b-15">SliderBar</h3>
 
@@ -75,6 +92,16 @@ class Inputs extends React.Component {
           value={this.state.Slider3}
           thumbStyle="round-border"
           onChange={(e) => {this.onChangeSlider3(e)}} />
+
+        <br/>
+        <Accordion title="Code - SliderBar" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {SliderBarCode}
+          </SyntaxHighlighter>
+        </Accordion>
 
 
       <h3 className="m-b-15">Checkbox</h3>
@@ -108,8 +135,16 @@ class Inputs extends React.Component {
             text="Disabled Unchecked"/>
 
         </div>
+        <br/>
+        <Accordion title="Code - Checkbox" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {CheckboxCode}
+          </SyntaxHighlighter>
+        </Accordion>
 
-          <br/>
       <h3 className="m-b-15">Inputs</h3>
                
         <InputText
@@ -135,11 +170,31 @@ class Inputs extends React.Component {
 
         <br/><br/>
 
+        <Accordion title="Code - Inputs" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {InputTextCode}
+          </SyntaxHighlighter>
+        </Accordion>
+        <br/>
+
         <InputText
           type="password"
           placeholder="Enter a password"/>
 
         <br/><br/>
+
+        <Accordion title="Code - InputPassword" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {InputPasswordCode}
+          </SyntaxHighlighter>
+        </Accordion>
+        <br/>
 
         <InputText
           width={225}
@@ -148,18 +203,59 @@ class Inputs extends React.Component {
 
         <br/><br/>
 
+        <Accordion title="Code - Input Label" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {InputLabelCode}
+          </SyntaxHighlighter>
+        </Accordion>
+        <br/>
+
         <InputDate
           placeholder="Select Date" />
 
+        <br/><br/>
+        <Accordion title="Code - Input Date" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {InputDateCode}
+          </SyntaxHighlighter>
+        </Accordion>
+       
       <h3 className="m-b-15">SearchBar</h3>
 
         <InputSearchBar
           placeholder="Search here"/>
 
+        <br/><br/>
+        <Accordion title="Code - SearchBar" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {InputSearchBarCode}
+          </SyntaxHighlighter>
+        </Accordion>
+       
+
         <h3 className="m-b-15">SearchBox</h3>
 
         <InputSearchBox
           placeholder="Enter to Search"/>
+
+        <br/><br/>
+        <Accordion title="Code SearchBox" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {InputSearchBoxCode}
+          </SyntaxHighlighter>
+        </Accordion>
 
       <h3 className="m-b-15">Search Suggestion</h3>
 
@@ -173,6 +269,16 @@ class Inputs extends React.Component {
             ]}
           />
 
+        <br/><br/>
+        <Accordion title="Code - Search Suggestion" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {InputSearchSuggestionCode}
+          </SyntaxHighlighter>
+        </Accordion>
+
 
       <h3 className="m-b-15">SelectBox</h3>
           
@@ -185,6 +291,17 @@ class Inputs extends React.Component {
             ]}
         />
 
+        <br/><br/>
+        <Accordion title="Code - SelectBox" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {SelectBoxCode}
+          </SyntaxHighlighter>
+        </Accordion>
+       
+
       <h3 className="m-b-15">MenuBar</h3>
 
         <MenuBar
@@ -196,6 +313,16 @@ class Inputs extends React.Component {
             {label: 'peach', link: '#'},
             ]}
         />
+
+        <br/><br/>
+        <Accordion title="Code - MenuBar" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {MenuBarCode}
+          </SyntaxHighlighter>
+        </Accordion>
 
               
       <h3 className="m-b-15">Radio Button</h3>
@@ -218,6 +345,17 @@ class Inputs extends React.Component {
           text="Disabled"
           disabled
           checked/>
+
+        <br/><br/>
+        <Accordion title="Code - RadioButton" focused>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {RadioButtonCode}
+          </SyntaxHighlighter>
+        </Accordion>
+        <br/>
 
         <br/><br/><br/><br/>
             

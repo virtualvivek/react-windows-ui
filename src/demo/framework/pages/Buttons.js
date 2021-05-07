@@ -1,6 +1,10 @@
 import React from 'react'
 import { Button, ButtonFluent,ButtonIcon, NavPageContainer,
-         RegisterFluentEffect } from '../../../lib'
+         RegisterFluentEffect,Accordion } from '../../../lib'
+import SyntaxHighlighter from 'react-syntax-highlighter'
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import {ButtonDefaultCode,ButtonIconPrimary,ButtonPrimary,
+  ButtonPrimaryOutline,ButtonIconCode} from './codes/buttons'  
 
 class Buttons extends React.Component {
 
@@ -97,6 +101,16 @@ class Buttons extends React.Component {
 
         <br/><br/>
 
+        <Accordion title="Code - Button Default" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {ButtonDefaultCode}
+          </SyntaxHighlighter>
+        </Accordion>
+        <br/>
+
         <Button
           icon={<i className="icons10-plus color-primary"></i>}
           value="Primary Icon"/>
@@ -108,6 +122,16 @@ class Buttons extends React.Component {
           textAlign={'start'}
           icon={<i className="icons10-plus color-primary"></i>}
           value="Align Start"/>
+
+        <br/><br/>
+        <Accordion title="Code - Button Icon Primary" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {ButtonIconPrimary}
+          </SyntaxHighlighter>
+        </Accordion>
        
 
       <h3 className="m-b-15">Primary</h3>
@@ -138,6 +162,16 @@ class Buttons extends React.Component {
           value="Loading Button"/>
 
         <br/><br/>
+        <Accordion title="Code - Button Primary" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {ButtonPrimary}
+          </SyntaxHighlighter>
+        </Accordion>
+        <br/>
+
 
         <Button
           type="primary-outline"
@@ -151,6 +185,17 @@ class Buttons extends React.Component {
           icon={<i className="icons10-fantasy"></i>}
           value="Primary Button"
         />
+
+        <br/><br/>
+        <Accordion title="Code - Button Primary Outline" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {ButtonPrimaryOutline}
+          </SyntaxHighlighter>
+        </Accordion>
+       
 
       <h3 className="m-b-15">Button Icon</h3>
 
@@ -171,6 +216,16 @@ class Buttons extends React.Component {
         <ButtonIcon
           icon={<i className="icons10-fingerprint"></i>}
         />
+
+        <br/><br/>
+        <Accordion title="Code - ButtonIcon" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {ButtonIconCode}
+          </SyntaxHighlighter>
+        </Accordion>
       
 
 

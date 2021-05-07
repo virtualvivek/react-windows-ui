@@ -7,6 +7,7 @@ const InputDate = (props) => {
         type="date"
         className="app-input-text"
         placeholder={props.placeholder}
+        onChange={props.onChange}
     />
   )
 }
