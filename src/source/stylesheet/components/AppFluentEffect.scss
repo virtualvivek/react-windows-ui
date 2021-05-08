@@ -36,7 +36,8 @@
 .app-fluent-effect:hover::before {
     transform: translate(-50%, -50%) translate(var(--x), var(--y)) scale(5);
     opacity: 0.7;
-    background: var(--color_button)
+    background:
+        var(--color_button)
         radial-gradient(circle 20px, #999999 15%, transparent);
 }
 
