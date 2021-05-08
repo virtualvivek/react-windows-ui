@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavPageContainer,ImageView } from '../../../lib'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import {NavBarCode,Page1Code} from './codes/navigation'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { NavBarCode,Page1Code } from './codes/navigation'
 import NavigationPreview from '../../img/navigation_preview.JPG'
 
 const Navigation = () => {
@@ -20,6 +20,7 @@ const Navigation = () => {
 
         <SyntaxHighlighter
             language="javascript"
+            showLineNumbers
             style={dracula}
             className="code navigation">
             {NavBarCode}
@@ -29,6 +30,7 @@ const Navigation = () => {
 
         <SyntaxHighlighter
             language="javascript"
+            showLineNumbers
             style={dracula}
             className="code navigation">
             {Page1Code}

@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavPageContainer,NavPageContainerInner,Accordion,
          ImageView,AvatarView, Button } from '../../../lib'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import IronMan from '../../img/illustration/ironman.jpg'
 import Img2 from '../../img/illustration/2.jpg'
 import Img3 from '../../img/illustration/3.jpg'

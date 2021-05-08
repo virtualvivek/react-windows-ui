@@ -1,5 +1,8 @@
 import React from 'react'
-import { NavPageContainer, Gauge, Button } from '../../../lib'
+import { NavPageContainer, Gauge, Button, Accordion } from '../../../lib'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { GaugeDefaultCode,GaugeCustom1Code,GaugeCustom2Code } from './codes/gauges'
 
 class Gauges extends React.Component {
 
@@ -43,7 +46,17 @@ class Gauges extends React.Component {
             <Button value="100%" onClick={this.setGauge100} />
         </div>
 
-        <br/><br/>
+        <br/>
+        <Accordion title="💻 Code - Gauge" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={vscDarkPlus}
+            className="code">
+            {GaugeDefaultCode}
+          </SyntaxHighlighter>
+        </Accordion>
+
+        <div className="app-hr"></div>
 
         <Gauge
             setProgress={this.state.gaugeValue}
@@ -63,6 +76,17 @@ class Gauges extends React.Component {
             valueColor="#e01944"
         />
 
+        <br/><br/>
+        <Accordion title="💻 Code - Gauge Custom" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={vscDarkPlus}
+            className="code">
+            {GaugeCustom1Code}
+          </SyntaxHighlighter>
+        </Accordion>
+
+        <div className="app-hr"></div>
         <h3 className="m-b-15">Customization</h3>
 
         <Gauge
@@ -85,6 +109,16 @@ class Gauges extends React.Component {
             strokeWidth={10}
             backgroundColor="#0ac94e44"
         />
+
+        <br/><br/>
+        <Accordion title="💻 Code - Gauge Custom Extended" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={vscDarkPlus}
+            className="code">
+            {GaugeCustom2Code}
+          </SyntaxHighlighter>
+        </Accordion>
 
 
 

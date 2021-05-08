@@ -2,10 +2,10 @@ import React from 'react'
 import { ProgressBarIndeterminate, ProgressBar,
          LoaderBar, LoaderBusy, NavPageContainer,
          NavPageContainerInner, Button, Accordion } from '../../../lib'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { ProgressBarCode,ProgressBarIndeterminateCode,LoaderBarCode,
-  LoaderBusyCode,LoaderBusyFullscreenCode} from './codes/progress'
+         LoaderBusyCode,LoaderBusyFullscreenCode } from './codes/progress'
 
 class ProgressControls extends React.Component {
 

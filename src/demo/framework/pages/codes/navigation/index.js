@@ -8,15 +8,13 @@ import Page2 from './pages/page2'
 const App = () => {
     return (
         <Router basename="react-windows-ui">
-
-            <SystemThemeFollower/>
-
-            <NavBar 
-              title="React Windows UI"
-              titleShort={<i className="icons10-windows"></i>}
-           // titleShort="R" render text or icons
-           // mobileHasIcons={true}
-              shadowOnScroll={true}>
+          <SystemThemeFollower/>
+          <NavBar 
+            title="React Windows UI"
+            titleShort={<i className="icons10-windows"></i>}
+          //titleShort="R" render text or icons
+          //mobileHasIcons={true}
+            shadowOnScroll={true}>
 
                 <h1>Layouts</h1>
                 <div className="app-hr"></div>
@@ -28,19 +26,16 @@ const App = () => {
                   icon={<i className="icons10-home"></i>}
                   showBadge={7}
                 />
-
                 <NavBarLink
                   to="/page2"
                   text="Page2"
                   icon={<i className="icons10-list"></i>}
                 />
-
-            </NavBar>
-
-            <Switch>
-                <Route path="/" component={Page1}  exact />
-                <Route path="/page2" component={Page2} />
-            </Switch>
+          </NavBar>
+          <Switch>
+              <Route path="/" component={Page1}  exact />
+              <Route path="/page2" component={Page2} />
+          </Switch>
         </Router>
       )
     }

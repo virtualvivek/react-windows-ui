@@ -1,11 +1,11 @@
 import React from 'react'
 import { Button, ButtonFluent,ButtonIcon, NavPageContainer,
          RegisterFluentEffect,Accordion } from '../../../lib'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import {ButtonDefaultCode,ButtonIconPrimary,ButtonPrimary,
-  ButtonPrimaryOutline,ButtonIconCode,ButtonSuccessCode,
-  ButtonDangerCode,ButtonFluentCode} from './codes/buttons'  
+import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { ButtonDefaultCode,ButtonIconPrimary,ButtonPrimary,
+         ButtonPrimaryOutline,ButtonIconCode,ButtonSuccessCode,
+         ButtonDangerCode,ButtonFluentCode} from './codes/buttons'  
 
 class Buttons extends React.Component {
 

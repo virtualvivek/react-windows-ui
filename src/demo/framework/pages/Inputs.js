@@ -1,10 +1,10 @@
 import React from 'react'
 import { NavPageContainer,Checkbox,Switch,InputText,InputDate,
-        InputSearchBar,InputSearchBox,SliderBar,RadioButton,
-        SelectBox,MenuBar,InputSearchSuggestion,Accordion } from '../../../lib'
+         InputSearchBar,InputSearchBox,SliderBar,RadioButton,
+         SelectBox,MenuBar,InputSearchSuggestion,Accordion } from '../../../lib'
         
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { vscDarkPlus as materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 import {SwitchCode,SliderBarCode,CheckboxCode,InputTextCode,
   InputPasswordCode,InputLabelCode,InputDateCode,InputSearchBarCode,
@@ -66,7 +66,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code - Switch" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {SwitchCode}
           </SyntaxHighlighter>
@@ -99,7 +99,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code - SliderBar" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {SliderBarCode}
           </SyntaxHighlighter>
@@ -141,7 +141,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code - Checkbox" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {CheckboxCode}
           </SyntaxHighlighter>
@@ -175,7 +175,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code - Inputs" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {InputTextCode}
           </SyntaxHighlighter>
@@ -191,7 +191,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code - InputPassword" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {InputPasswordCode}
           </SyntaxHighlighter>
@@ -208,7 +208,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code - Input Label" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {InputLabelCode}
           </SyntaxHighlighter>
@@ -222,7 +222,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code - Input Date" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {InputDateCode}
           </SyntaxHighlighter>
@@ -237,7 +237,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code - SearchBar" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {InputSearchBarCode}
           </SyntaxHighlighter>
@@ -253,7 +253,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code SearchBox" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {InputSearchBoxCode}
           </SyntaxHighlighter>
@@ -275,7 +275,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code - Search Suggestion" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {InputSearchSuggestionCode}
           </SyntaxHighlighter>
@@ -297,7 +297,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code - SelectBox" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {SelectBoxCode}
           </SyntaxHighlighter>
@@ -320,7 +320,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code - MenuBar" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {MenuBarCode}
           </SyntaxHighlighter>
@@ -352,7 +352,7 @@ class Inputs extends React.Component {
         <Accordion title="💻 Code - RadioButton" focused>
           <SyntaxHighlighter
             language="javascript"
-            style={dracula}
+            style={materialDark}
             className="code">
             {RadioButtonCode}
           </SyntaxHighlighter>

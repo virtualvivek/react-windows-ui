@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { NavPageContainer, LinkCompound,
          LinkCompoundFluent, RegisterFluentEffect,Accordion } from '../../../lib'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import {LinkDefaultCode,LinkCompoundCode,LinkCompoundBorderCode,
-        LinkCompoundFluentCode,LinkCompoundImageCode,LinkCompoundIconBGPrimary,
-        LinkCompoundIconBGGrey} from './codes/links'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'         
+import { LinkDefaultCode,LinkCompoundCode,LinkCompoundBorderCode,
+         LinkCompoundFluentCode,LinkCompoundImageCode,LinkCompoundIconBGPrimary,
+         LinkCompoundIconBGGrey} from './codes/links'
 
 import Img1 from '../../img/illustration/mountain.jpg'
 
@@ -29,7 +29,7 @@ const Links = () => {
       <br/><br/>
       <Accordion title="💻 Code - Link Default" focused width={320}>
         <SyntaxHighlighter
-          language="javascript"
+          language="jsx"
           style={dracula}
           className="code">
           {LinkDefaultCode}
@@ -57,7 +57,7 @@ const Links = () => {
       <br/><br/>
       <Accordion title="💻 Code - Link Compound" focused width={320}>
         <SyntaxHighlighter
-          language="javascript"
+          language="jsx"
           style={dracula}
           className="code">
           {LinkCompoundCode}
@@ -77,7 +77,7 @@ const Links = () => {
       <br/><br/>
       <Accordion title="💻 Code - Link Border Style" focused width={320}>
         <SyntaxHighlighter
-          language="javascript"
+          language="jsx"
           style={dracula}
           className="code">
           {LinkCompoundBorderCode}
@@ -97,7 +97,7 @@ const Links = () => {
       <br/><br/>
       <Accordion title="💻 Code - Link with Image" focused width={320}>
         <SyntaxHighlighter
-          language="javascript"
+          language="jsx"
           style={dracula}
           className="code">
           {LinkCompoundImageCode}
@@ -117,7 +117,7 @@ const Links = () => {
       <br/><br/>
       <Accordion title="💻 Code - Link Fluent" focused width={320}>
         <SyntaxHighlighter
-          language="javascript"
+          language="jsx"
           style={dracula}
           className="code">
           {LinkCompoundFluentCode}
@@ -136,7 +136,7 @@ const Links = () => {
       <br/><br/>
       <Accordion title="💻 Code - Link Bg-Primary" focused width={320}>
         <SyntaxHighlighter
-          language="javascript"
+          language="jsx"
           style={dracula}
           className="code">
           {LinkCompoundIconBGPrimary}
@@ -155,7 +155,7 @@ const Links = () => {
       <br/><br/>
       <Accordion title="💻 Code - Link Bg-Grey" focused width={320}>
         <SyntaxHighlighter
-          language="javascript"
+          language="jsx"
           style={dracula}
           className="code">
           {LinkCompoundIconBGGrey}
