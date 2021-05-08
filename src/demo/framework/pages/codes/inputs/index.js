@@ -1,11 +1,11 @@
 const SwitchCode =
 `<Switch
  checked={true}
- //disabled
  textOn="On"
  textOff="Off"
  onChange={() => {}}
- />`;
+ //disabled
+/>`;
  
 const SliderBarCode =
 `<SliderBar
@@ -15,31 +15,31 @@ const SliderBarCode =
  step={1}
  showValue={true}
  onChange={() => {}}
- />`;
+/>`;
 
 const CheckboxCode =
 `<Checkbox
  checked={true}
- //disabled
  text="Text"
  onChange={() => {}}
- />`;
+ //disabled
+/>`;
 
 const InputTextCode =
 `<InputText
  placeholder="Enter a text"
+ onChange={() => {}}
  //setStatus="success"
  //setStatus="danger"
  //setStatus="loading"
- onChange={() => {}}
- />`;
+/>`;
 
 const InputPasswordCode =
 `<InputText
  type="password"
  placeholder="Enter password"
  onChange={() => {}}
- />`;
+/>`;
 
 const InputLabelCode =
 `<InputText
@@ -47,36 +47,36 @@ const InputLabelCode =
  label="label text"
  placeholder="Enter a text"
  onChange={() => {}}
- />`;
+/>`;
 
 const InputDateCode =
 `<InputDate
  placeholder="Select Date"
  onChange={() => {}}
- />`;
+/>`;
 
 const InputSearchBarCode =
 `<InputSearchBar
  placeholder="Search here"
  onSubmit={() => {}}
- />`;
+/>`;
 
 const InputSearchBoxCode =
 `<InputSearchBox
  placeholder="Enter to Search"
  onChange={() => {}}
- />`;
+/>`;
 
 const InputSearchSuggestionCode =
 `<InputSearchSuggestion
  placeholder="Type 'a' .."
  data={[
   {label: 'apple', link: '#', icon:<i className="icons10-baby"></i>},
-  {label: 'orange', link: '#'},
+  {label: 'orange', link: '#',onClick:this.function},
   {label: 'banana', link: '#'},
   {label: 'peach', link: '#'},
   ]}
- />`;
+/>`;
 
 const SelectBoxCode =
 `<SelectBox
@@ -86,18 +86,18 @@ const SelectBoxCode =
   {label: 'green', value: 'green'},
   {label: 'pink', value: 'pink'},
   ]}
- />`;
+/>`;
 
 const MenuBarCode =
 `<MenuBar
  label="Select a fruit"
  data={[
   {label: 'apple', link: '#', icon:<i className="icons10-camera"></i>},
-  {label: 'orange', link: '#'},
+  {label: 'orange', link: '#',onClick:this.function},
   {label: 'banana', link: '#'},
   {label: 'peach', link: '#'},
   ]}
- />`;
+/>`;
 
 const RadioButtonCode =
 `<RadioButton

@@ -43,7 +43,7 @@ const InputSearchSuggestion = (props) => {
             <li 
             className="option"
             key={item.label}>
-                <Link to={item.link}>
+                <Link to={item.link} onClick={item.onClick}>
                 {item.icon}{item.label}
                 </Link>
             </li>

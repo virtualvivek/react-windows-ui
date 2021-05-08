@@ -1,8 +1,13 @@
 import React from 'react'
 import { ProgressBarIndeterminate, ProgressBar,
-         LoaderBar, LoaderBusy, NavPageContainer,NavPageContainerInner, Button } from '../../../lib'
+         LoaderBar, LoaderBusy, NavPageContainer,
+         NavPageContainerInner, Button, Accordion } from '../../../lib'
+import SyntaxHighlighter from 'react-syntax-highlighter'
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import { ProgressBarCode,ProgressBarIndeterminateCode,LoaderBarCode,
+  LoaderBusyCode,LoaderBusyFullscreenCode} from './codes/progress'
 
-  class ProgressControls extends React.Component {
+class ProgressControls extends React.Component {
 
     constructor(props) {
         super(props);
@@ -17,9 +22,9 @@ import { ProgressBarIndeterminate, ProgressBar,
       }
 
     toggleLoaderBusyFull = () => {
-        if(this.state.showLoaderBusyFull)
-              this.setState({showLoaderBusyFull: false});
-        else  this.setState({showLoaderBusyFull: true}); 
+      if(this.state.showLoaderBusyFull)
+            this.setState({showLoaderBusyFull: false});
+      else  this.setState({showLoaderBusyFull: true});
     }
 
     toggleLoaderBusyFullCustom = () => {
@@ -104,59 +109,96 @@ import { ProgressBarIndeterminate, ProgressBar,
           setProgress={50}
           height={15}
         />
+
+        <br/>
+        <Accordion title="💻 Code - ProgressBar" focused width={340}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {ProgressBarCode}
+          </SyntaxHighlighter>
+        </Accordion>
            
         <h3 className="m-b-15">Progress Indeterminate</h3>
 
           <ProgressBarIndeterminate
-            isLoading={this.state.showProgressIndeterminate}
-          />
-           <br/>
-        <Button
-          value="Toggle Progress Loading"
-          icon={<i className="icons10-resize-horizontal"></i>}
-          onClick={this.toggleProgressIndeterminate}/>
+            isLoading={this.state.showProgressIndeterminate}/>
+          <br/>
+          <Button
+            value="Toggle Progress Loading"
+            icon={<i className="icons10-resize-horizontal"></i>}
+            onClick={this.toggleProgressIndeterminate}/>
+
+          <br/><br/>
+          <Accordion title="🎬 Code - ProgressBarIndeterminate" focused width={330}>
+            <SyntaxHighlighter
+              language="javascript"
+              style={dracula}
+              className="code">
+              {ProgressBarIndeterminateCode}
+            </SyntaxHighlighter>
+          </Accordion>
 
         <h2 className="m-b-15">LoaderBars</h2>
 
-            <LoaderBar
-              isLoading={this.state.showLoaderBar}
-            />
-            <Button
-              value="Toggle LoaderBar"
-              icon={<i className="icons10-resize-horizontal" ></i>}
-              onClick={this.toggleLoaderBar}/>
+          <LoaderBar
+            isLoading={this.state.showLoaderBar}
+          />
+          <Button
+            value="Toggle LoaderBar"
+            icon={<i className="icons10-resize-horizontal" ></i>}
+            onClick={this.toggleLoaderBar}/>
+
+          <br/><br/>
+          <Accordion title="💻 Code - LoaderBar" focused width={330}>
+            <SyntaxHighlighter
+              language="javascript"
+              style={dracula}
+              className="code">
+              {LoaderBarCode}
+            </SyntaxHighlighter>
+          </Accordion>
 
         <h3 className="m-b-15">LoadeBusy</h3>
 
-          <br/>
+        <br/>
+        <div className="app-flex">
 
-          <div className="app-flex">
-
-            <div className="app-space-10"></div>
-            
-            <LoaderBusy
-              isLoading={this.state.showLoaderBusy}/>
-
-            <div className="app-space-45"></div>
-
-            <LoaderBusy
-              isLoading={this.state.showLoaderBusy}
-              size="medium"/>
-
-            <div className="app-space-35"></div>
-
-            <LoaderBusy
-              isLoading={this.state.showLoaderBusy}
-              size="small"/>
-          </div>
+          <div className="app-space-10"></div>
           
+          <LoaderBusy
+            isLoading={this.state.showLoaderBusy}/>
 
-          <br/><br/>
-          <Button
-            value="Toggle LoaderBusy"
-            icon={<i className="icons10-resize-horizontal"></i>}
-            onClick={this.toggleLoaderBusy}
-          />
+          <div className="app-space-45"></div>
+
+          <LoaderBusy
+            isLoading={this.state.showLoaderBusy}
+            size="medium"/>
+
+          <div className="app-space-35"></div>
+
+          <LoaderBusy
+            isLoading={this.state.showLoaderBusy}
+            size="small"/>
+        </div>
+
+        <br/><br/>
+        <Button
+          value="Toggle LoaderBusy"
+          icon={<i className="icons10-resize-horizontal"></i>}
+          onClick={this.toggleLoaderBusy}
+        />
+
+        <br/><br/>
+        <Accordion title="💻 Code - LoaderBusy" focused width={330}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {LoaderBusyCode}
+          </SyntaxHighlighter>
+        </Accordion>
 
 
         <h3 className="m-b-15">LoadeBusy Fullscreen</h3>
@@ -168,42 +210,52 @@ import { ProgressBarIndeterminate, ProgressBar,
           />
 
           <Button
-            value="Open fullscreen Loader" 
+            value="Open fullscreen Loader"
             onClick={this.toggleLoaderBusyFull}
           />
 
         <h3 className="m-b-15">Custom Background</h3>
 
-            <LoaderBusy
-              isVisible={this.state.showLoaderBusyFullCustom}
-              onBackdropPress={this.toggleLoaderBusyFullCustom}
-              display="fullscreen"
-              backgroundColor="var(--PrimaryColor)"
-              setTheme="light"
-              title="Tap anywhere to dismiss"
-            />
+          <LoaderBusy
+            isVisible={this.state.showLoaderBusyFullCustom}
+            onBackdropPress={this.toggleLoaderBusyFullCustom}
+            display="fullscreen"
+            backgroundColor="var(--PrimaryColor)"
+            setTheme="light"
+            title="Tap anywhere to dismiss"
+          />
 
-            <Button
-              value="Open Custom fullscreen Loader" 
-              onClick={this.toggleLoaderBusyFullCustom}
-            />
+          <Button
+            value="Open Custom fullscreen Loader" 
+            onClick={this.toggleLoaderBusyFullCustom}
+          />
+
+        <br/><br/>
+        <Accordion title="💻 Code - LoaderBusy Custom" focused width={340}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {LoaderBusyFullscreenCode}
+          </SyntaxHighlighter>
+        </Accordion>
 
         <h2 className="m-b-15">Progress Status</h2>
 
           <h2 className="m-b-15">Danger</h2>
-            <ProgressBar
-              title="Copying files.."
-              setProgress={40}
-              setStatus="danger"
-            />
+          <ProgressBar
+            title="Copying files.."
+            setProgress={40}
+            setStatus="danger"
+          />
 
           <h2 className="m-b-15">Success</h2>
 
-            <ProgressBar
-              title="Downloaded imageres.dll ✅"
-              setProgress={99}
-              setStatus="success"
-            />
+          <ProgressBar
+            title="Downloaded imageres.dll ✅"
+            setProgress={99}
+            setStatus="success"
+          />
 
           <br/><br/>
 
@@ -245,7 +297,7 @@ import { ProgressBarIndeterminate, ProgressBar,
       </div>
 
     </NavPageContainer>
-  );
+    );
   }
 }
 

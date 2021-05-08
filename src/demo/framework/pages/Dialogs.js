@@ -1,10 +1,14 @@
 import React from 'react'
 import { NavPageContainer, AvatarView,
-         Dialog, Alert, Button, ListItem } from '../../../lib'
+         Dialog, Alert, Button, ListItem,Accordion } from '../../../lib'
+import SyntaxHighlighter from 'react-syntax-highlighter'
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import AvatarImg from '../../img/anim_avatar.jpeg'
 import Img2 from '../../img/illustration/2.jpg'
 import Img3 from '../../img/illustration/3.jpg'
 import Img4 from '../../img/illustration/4.jpg'
+
+import {DialogCode,AlertCode} from './codes/dialogs'
 
 
 class Lists extends React.Component {
@@ -49,7 +53,6 @@ class Lists extends React.Component {
                 
         <h1>Dialogs</h1>
 
-        <br/>
         <div className="app-flex app-align-center">
             <AvatarView
                 size="large"
@@ -72,7 +75,6 @@ class Lists extends React.Component {
 
         <br/>
 
-        <h3 className="m-b-15">Dialog</h3>
         <Button
             value="Open Dialog"
             onClick={this.toggleDialog}/>
@@ -130,6 +132,18 @@ class Lists extends React.Component {
             </div>
         </Dialog>
 
+        <br/><br/>
+        <Accordion title="💻 Code - Dialog" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {DialogCode}
+          </SyntaxHighlighter>
+        </Accordion>
+
+        <div className="app-hr"></div>
+
         {/* -------------------------------------------------------------------- */}
 
         <h2 className="m-b-15">Alerts</h2>
@@ -158,6 +172,16 @@ class Lists extends React.Component {
           message="This is Light alert Box.">
             <button onClick={this.toggleAlertLight}>OK</button>
         </Alert>
+
+        <br/><br/>
+        <Accordion title="💻 Code - Alert" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {AlertCode}
+          </SyntaxHighlighter>
+        </Accordion>
 
         <br/><br/>
   

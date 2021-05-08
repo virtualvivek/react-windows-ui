@@ -1,12 +1,12 @@
 const ButtonDefaultCode =
 `<Button
  value="Default Button"
- //disabled
- //width={155}
  isLoading={false}
  icon={<i className="icons10-plus"></i>}
  onClick={() => {}}
- />`;
+ //disabled
+ //width={155}
+/>`;
 
 const ButtonIconPrimary =
 `<Button
@@ -15,38 +15,68 @@ const ButtonIconPrimary =
  icon={<i className="icons10-plus color-primary"></i>}
  value="Button Aligned Start"
  onClick={() => {}}
- />`;
+/>`;
 
 const ButtonPrimary =
 `<Button
  type="primary"
  value="Primary Button"
- //disabled
- //icon={<i className="icons10-plus"></i>}
  isLoading={false}
  onClick={() => {}}
- />`;
+ //disabled
+ //icon={<i className="icons10-plus"></i>}
+/>`;
 
 const ButtonPrimaryOutline =
 `<Button
  type="primary-outline"
  value="Primary Outline"
- //disabled
- //icon={<i className="icons10-plus"></i>}
  isLoading={false}
  onClick={() => {}}
- />`;
+ //disabled
+ //icon={<i className="icons10-plus"></i>}
+/>`;
 
- const ButtonIconCode =
+const ButtonIconCode =
 `<ButtonIcon
  icon={<i className="icons10-add"></i>}
  onClick={() => {}}
-/>`; 
+/>`;
+
+const ButtonSuccessCode =
+`<Button
+ value="Success Button"
+ onClick={() => {}}
+ type="success"
+ //type="success-outline"
+ //icon={<i className="icons10-checkmark"></i>}
+/>`;
+
+const ButtonDangerCode =
+`<Button
+ value="Danger Button"
+ onClick={() => {}}
+ type="danger"
+ //type="danger-outline"
+ //icon={<i className="icons10-cancel-2"></i>}
+/>`;
+
+const ButtonFluentCode =
+`return (
+    <RegisterFluentEffect/>
+    <ButtonFluent
+        value="Fluent Button"
+        onClick={() => {}}
+    />
+    )`;
 
 export {
     ButtonDefaultCode,
     ButtonIconPrimary,
     ButtonPrimary,
     ButtonPrimaryOutline,
-    ButtonIconCode
+    ButtonIconCode,
+    ButtonSuccessCode,
+    ButtonDangerCode,
+    ButtonFluentCode
 }

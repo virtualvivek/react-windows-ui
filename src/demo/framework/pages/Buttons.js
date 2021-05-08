@@ -4,7 +4,8 @@ import { Button, ButtonFluent,ButtonIcon, NavPageContainer,
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import {ButtonDefaultCode,ButtonIconPrimary,ButtonPrimary,
-  ButtonPrimaryOutline,ButtonIconCode} from './codes/buttons'  
+  ButtonPrimaryOutline,ButtonIconCode,ButtonSuccessCode,
+  ButtonDangerCode,ButtonFluentCode} from './codes/buttons'  
 
 class Buttons extends React.Component {
 
@@ -63,18 +64,10 @@ class Buttons extends React.Component {
 
         <div className="app-hr"></div>
 
-        <h3>Fluent Hover Effect</h3>
-        
-        <ButtonFluent
-          value="Fluent Button"/>
-
-
-        <div className="app-hr"></div>
         
         <Button
           value="Default Button"/>
         
-
         <br/><br/>
 
         <Button
@@ -101,7 +94,7 @@ class Buttons extends React.Component {
 
         <br/><br/>
 
-        <Accordion title="Code - Button Default" focused width={320}>
+        <Accordion title="💻 Code - Button Default" focused width={320}>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -109,7 +102,8 @@ class Buttons extends React.Component {
             {ButtonDefaultCode}
           </SyntaxHighlighter>
         </Accordion>
-        <br/>
+      
+        <div className="app-hr"></div>
 
         <Button
           icon={<i className="icons10-plus color-primary"></i>}
@@ -124,7 +118,7 @@ class Buttons extends React.Component {
           value="Align Start"/>
 
         <br/><br/>
-        <Accordion title="Code - Button Icon Primary" focused width={320}>
+        <Accordion title="💻 Code - Button Icon Primary" focused width={320}>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -133,7 +127,7 @@ class Buttons extends React.Component {
           </SyntaxHighlighter>
         </Accordion>
        
-
+      <div className="app-hr"></div>
       <h3 className="m-b-15">Primary</h3>
       
         <Button
@@ -162,7 +156,7 @@ class Buttons extends React.Component {
           value="Loading Button"/>
 
         <br/><br/>
-        <Accordion title="Code - Button Primary" focused width={320}>
+        <Accordion title="💻 Code - Button Primary" focused width={320}>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -187,7 +181,7 @@ class Buttons extends React.Component {
         />
 
         <br/><br/>
-        <Accordion title="Code - Button Primary Outline" focused width={320}>
+        <Accordion title="💻 Code - Button Primary Outline" focused width={320}>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -196,7 +190,7 @@ class Buttons extends React.Component {
           </SyntaxHighlighter>
         </Accordion>
        
-
+      <div className="app-hr"></div>
       <h3 className="m-b-15">Button Icon</h3>
 
         <ButtonIcon
@@ -218,7 +212,7 @@ class Buttons extends React.Component {
         />
 
         <br/><br/>
-        <Accordion title="Code - ButtonIcon" focused width={320}>
+        <Accordion title="💻 Code - ButtonIcon" focused width={320}>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -227,7 +221,23 @@ class Buttons extends React.Component {
           </SyntaxHighlighter>
         </Accordion>
       
+        <div className="app-hr"></div>
+        <h3>Fluent Hover Effect</h3>
+        
+        <ButtonFluent
+          value="Fluent Button"/>
 
+        <br/><br/>
+        <Accordion title="💻 Code - Button Fluent" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {ButtonFluentCode}
+          </SyntaxHighlighter>
+        </Accordion>
+
+        <div className="app-hr"></div>
 
       <h3 className="m-b-15">Success</h3>
 
@@ -253,7 +263,17 @@ class Buttons extends React.Component {
         <Button
           type="success-outline"
           icon={<i className="icons10-checkmark"></i>}
-          value="Success Button"/>  
+          value="Success Button"/>
+
+        <br/><br/>
+        <Accordion title="💻 Code - Button Success" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {ButtonSuccessCode}
+          </SyntaxHighlighter>
+        </Accordion>
       
 
       <h3 className="m-b-15">Danger</h3>
@@ -280,7 +300,17 @@ class Buttons extends React.Component {
         <Button
           type="danger-outline"
           icon={<i className="icons10-cancel-2"></i>}
-          value="Danger Button"/>  
+          value="Danger Button"/>
+
+        <br/><br/>
+        <Accordion title="💻 Code - Button Danger" focused width={320}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={dracula}
+            className="code">
+            {ButtonDangerCode}
+          </SyntaxHighlighter>
+        </Accordion>
 
         <br/><br/><br/><br/>
 

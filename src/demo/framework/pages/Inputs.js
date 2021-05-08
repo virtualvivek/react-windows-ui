@@ -25,6 +25,8 @@ class Inputs extends React.Component {
   onChangeSlider1 = (e) => { this.setState({Slider1:e.target.value}) }
   onChangeSlider2 = (e) => { this.setState({Slider2:e.target.value}) }
   onChangeSlider3 = (e) => { this.setState({Slider3:e.target.value}) }
+
+  sayhellow = () =>{alert("hi")}
   
   render() {
   return (
@@ -61,7 +63,7 @@ class Inputs extends React.Component {
         </div>
         <br/>
 
-        <Accordion title="Code - Switch" focused>
+        <Accordion title="💻 Code - Switch" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -94,7 +96,7 @@ class Inputs extends React.Component {
           onChange={(e) => {this.onChangeSlider3(e)}} />
 
         <br/>
-        <Accordion title="Code - SliderBar" focused>
+        <Accordion title="💻 Code - SliderBar" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -136,7 +138,7 @@ class Inputs extends React.Component {
 
         </div>
         <br/>
-        <Accordion title="Code - Checkbox" focused>
+        <Accordion title="💻 Code - Checkbox" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -170,7 +172,7 @@ class Inputs extends React.Component {
 
         <br/><br/>
 
-        <Accordion title="Code - Inputs" focused>
+        <Accordion title="💻 Code - Inputs" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -186,7 +188,7 @@ class Inputs extends React.Component {
 
         <br/><br/>
 
-        <Accordion title="Code - InputPassword" focused>
+        <Accordion title="💻 Code - InputPassword" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -203,7 +205,7 @@ class Inputs extends React.Component {
 
         <br/><br/>
 
-        <Accordion title="Code - Input Label" focused>
+        <Accordion title="💻 Code - Input Label" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -217,7 +219,7 @@ class Inputs extends React.Component {
           placeholder="Select Date" />
 
         <br/><br/>
-        <Accordion title="Code - Input Date" focused>
+        <Accordion title="💻 Code - Input Date" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -232,7 +234,7 @@ class Inputs extends React.Component {
           placeholder="Search here"/>
 
         <br/><br/>
-        <Accordion title="Code - SearchBar" focused>
+        <Accordion title="💻 Code - SearchBar" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -248,7 +250,7 @@ class Inputs extends React.Component {
           placeholder="Enter to Search"/>
 
         <br/><br/>
-        <Accordion title="Code SearchBox" focused>
+        <Accordion title="💻 Code SearchBox" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -263,14 +265,14 @@ class Inputs extends React.Component {
           placeholder="Type 'a' .."
           data={[
             {label: 'apple', link: '#', icon:<i className="icons10-baby"></i>},
-            {label: 'orange', link: '#'},
+            {label: 'orange', link: '#',onClick:this.sayhellow},
             {label: 'banana', link: '#'},
             {label: 'peach', link: '#'},
             ]}
           />
 
         <br/><br/>
-        <Accordion title="Code - Search Suggestion" focused>
+        <Accordion title="💻 Code - Search Suggestion" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -292,7 +294,7 @@ class Inputs extends React.Component {
         />
 
         <br/><br/>
-        <Accordion title="Code - SelectBox" focused>
+        <Accordion title="💻 Code - SelectBox" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -308,14 +310,14 @@ class Inputs extends React.Component {
           label="Select a fruit"
           data={[
             {label: 'apple', link: '#', icon:<i className="icons10-camera"></i>},
-            {label: 'orange', link: '#'},
+            {label: 'orange', link: '#',onClick:this.sayhellow},
             {label: 'banana', link: '#'},
             {label: 'peach', link: '#'},
             ]}
         />
 
         <br/><br/>
-        <Accordion title="Code - MenuBar" focused>
+        <Accordion title="💻 Code - MenuBar" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
@@ -347,7 +349,7 @@ class Inputs extends React.Component {
           checked/>
 
         <br/><br/>
-        <Accordion title="Code - RadioButton" focused>
+        <Accordion title="💻 Code - RadioButton" focused>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}
