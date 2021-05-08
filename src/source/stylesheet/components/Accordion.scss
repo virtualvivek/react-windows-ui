@@ -24,12 +24,12 @@
     }
 }
 .app-accordion-content {
-    transition: max-height .2s ease-in-out;
-    max-height: 0px;
+    transition: max-height 0.2s ease-in-out;
+    max-height: 0;
     overflow: hidden;
 
     &.show {
-        transition: max-height .28s ease-in;
+        transition: max-height 0.28s ease-in;
         max-height: 500px;
     }
 }

@@ -2,6 +2,7 @@
     @extend .transition-background-400ms;
     position: relative;
     overflow: hidden;
+    
     /*  The padding acts as border, background-clip is set to
         content-box so the padding becomes transparent, then
         a pseudo element moves in the back for the reveal. */

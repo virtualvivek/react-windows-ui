@@ -19,7 +19,8 @@
         width: 0;
         height: 0;
         opacity: 0.3;
-        background: radial-gradient(
+        background:
+            radial-gradient(
             circle closest-side,
             rgba(255, 255, 255, 0.2),
             transparent
@@ -41,7 +42,8 @@
 
 .app-fluent--reveal .app-fluent-effect:hover::before {
     opacity: 0.8;
-    background: var(--color_button)
+    background:
+        var(--color_button)
         radial-gradient(
         circle 20px,
         #999999 15%,
