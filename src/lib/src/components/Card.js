@@ -4,10 +4,10 @@ const Card = (props) => {
   return (
     <div
         className={
-              props.hoverable ? "app-card-default hoverable"
-            : props.focused ? "app-card-default focused"
-            : "app-card-default"
-            }
+            props.hoverable ? "app-card-default hoverable"
+          : props.focused ? "app-card-default focused"
+          : "app-card-default"
+          }
         style={{
             display: props.display,
             padding: props.padding,

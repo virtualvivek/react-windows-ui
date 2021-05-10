@@ -3,18 +3,14 @@ import React from 'react'
 const Dialog = (props) => {
 
   const isDropShadow = () => {
-    if(props.showDropShadow)
-      return "dropShadow"
-    else
-      return ""
+    return props.showDropShadow ? 'dropShadow' : '';
   }
 
   return (
     <>
     <div
       onClick = { props.onBackdropPress }
-      className = {
-        props.isVisible ?
+      className = {props.isVisible ?
         "app-dim-overlay show" : "app-dim-overlay"
         }>
     </div>

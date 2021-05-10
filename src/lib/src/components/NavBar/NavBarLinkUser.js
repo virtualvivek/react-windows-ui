@@ -6,7 +6,7 @@ const NavBarLinkUser = (props) => {
     <li>
       <NavLink
         className="app-nav-user"
-        to={props.to} 
+        to={props.to}
         exact={props.exact}>
           <img
             src={props.img}

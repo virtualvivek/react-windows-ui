@@ -12,8 +12,7 @@ const NavBarLinkFluent = (props) => {
       <div className="app-inline">
         <li className="app-fluent-navlink app-fluent-effect">
         <NavLink to={props.to} exact={props.exact}>
-            {props.icon}
-            
+            {props.icon} 
             <span>{props.text}</span>
             {props.showBadge ? renderBadge() : ""}
         </NavLink>

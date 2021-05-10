@@ -24,11 +24,11 @@ const AvatarView = (props) => {
   return (
     <div className="app-image-view-container"
         style={{
-            width: props.width,
-            height: props.height,
-            padding: props.padding,
-            margin: props.margin,
-            borderRadius: props.borderRadius
+          width: props.width,
+          height: props.height,
+          padding: props.padding,
+          margin: props.margin,
+          borderRadius: props.borderRadius
         }}>
         <img
           className="app-image-view"

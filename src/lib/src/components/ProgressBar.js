@@ -22,7 +22,7 @@ const ProgressBar = (props) => {
             : ""
             }
             style={{
-            width: props.setProgress+'%'
+              width: props.setProgress+'%'
             }}></span>
         </div>
         <span className="subtitle">{props.subtitle}</span>

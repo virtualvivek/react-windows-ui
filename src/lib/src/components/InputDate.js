@@ -4,10 +4,10 @@ const InputDate = (props) => {
 
   return (
     <input
-        type="date"
-        className="app-input-text"
-        placeholder={props.placeholder}
-        onChange={props.onChange}
+      type="date"
+      className="app-input-text"
+      placeholder={props.placeholder}
+      onChange={props.onChange}
     />
   )
 }
