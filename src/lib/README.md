@@ -62,7 +62,7 @@ import 'react-windows-ui/icons/fonts/fonts.min.css'
 ### app-config
 
 ‣ `app-config.css` file contains the `PrimaryColor`, `Fontfamily` used by the app <br>
-‣ You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a><br>
+‣ You can import default `app-config` using this file <a href="config/app-config.css">app-config.css</a><br>
 OR <br>
 Create your own like this
 
@@ -77,13 +77,16 @@ body {
 }
 ```
 
-## ‣ Example Code
-https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo
+# ‣ Example Code
+◓ Components full implementation here:<br/>
+https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework
 
-## ‣ Library Source Code
+# ‣ Library Source Code
+◓ Actual npm package used by the project:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib
 
-## 🎨 Library Styles SCSS Code
+## ❅ Library Styles SCSS Code
+◓ npm package scss source code:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet
 
 ## Github
