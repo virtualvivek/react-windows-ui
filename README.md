@@ -2,13 +2,9 @@
   <img src="markdown/md_img_header.png" width="402" /> 
 </h2>
 
-
 <h1 align="center">react-windows-ui</h1>
 
 <p align="center">Build full featured <b>Windows fluent UI</b> apps using <b>ReactJS</b>.</p>
-
-
-
 
 <p align="center">
 	
@@ -22,7 +18,6 @@
     <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
       alt="License: MIT" />
   </a>
-
   
   <a href="https://virtualvivek.github.io/react-windows-ui/">
     <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui?color=%2331b57e&style=flat-square"
