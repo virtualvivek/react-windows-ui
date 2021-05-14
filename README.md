@@ -7,7 +7,6 @@
 <p align="center">Build full featured <b>Windows fluent UI</b> apps using <b>ReactJS</b>.</p>
 
 <p align="center">
-	
 	 
   <a href="https://virtualvivek.github.io/react-windows-ui/">
     <img src="https://img.shields.io/circleci/build/github/virtualvivek/react-windows-ui?style=flat-square&logo=circleci&token=346e79ab71a8d9c3bad22bacbebc7d7c50dae520"
