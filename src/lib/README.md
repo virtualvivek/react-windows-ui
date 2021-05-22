@@ -23,7 +23,7 @@
   </a>
   
   <a href="https://virtualvivek.github.io/react-windows-ui/">
-    <img src="https://img.shields.io/badge/⚡ Live Demo-here-green.svg?color=%236a31b5&style=flat-square"
+    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=%236a31b5&style=flat-square&logo=github"
       alt="Live Demo" />
   </a>
    
@@ -77,26 +77,30 @@ body {
 }
 ```
 
-# ‣ Example Code
+## ‣ Example Code
 ◓ Components full implementation here:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework
 
-# ‣ Library Source Code
+## ‣ Library Source Code
 ◓ Actual npm package used by the project:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib
 
-## ❅ Library Styles SCSS Code
+## ‣ Library Styles SCSS Code
 ◓ npm package scss source code:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet
 
-## Github
+---
+
+<a href="https://github.com/virtualvivek/react-windows-ui">
+  <img src="https://img.shields.io/badge/repository-github-red.svg?style=for-the-badge&logo=github&color=181717" alt="github" />
+</a><br/>
 https://github.com/virtualvivek/react-windows-ui
 
-## Find this library useful? :heart:
+# Find this library useful? :heart:
 Support it by joining [stargazers](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
 
 
-## License
+# License
 
 `react-windows-ui` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE).<br>
 Copyright (c) 2021 ` Vivek Verma `
