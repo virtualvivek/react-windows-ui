@@ -24,7 +24,7 @@
   </a>
   
   <a href="https://virtualvivek.github.io/react-windows-ui/">
-    <img src="https://img.shields.io/badge/⚡ Live Demo-here-green.svg?color=%236a31b5&style=flat-square"
+    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=%236a31b5&style=flat-square&logo=github"
       alt="Live Demo" />
   </a>
   
@@ -67,8 +67,8 @@ import 'react-windows-ui/icons/fonts/fonts.min.css'
 ```
 ### app-config
 
-‣ `app-config.css` file contains the `PrimaryColor`, `Fontfamily` used by the app <br>
-‣ You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a><br>
+‣ `app-config.css` file contains the `PrimaryColor`, `Fontfamily` used by the app. <br>
+‣ You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
 OR <br>
 Create your own like this
 
@@ -83,24 +83,27 @@ body {
 }
 ```
 
-# ‣ Example Code
+## ‣ Example Code
 ◓ Components full implementation here:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework
 
-# ‣ Library Source Code
+## ‣ Library Source Code
 ◓ Actual npm package used by the project:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib
 
-## ❅ Library Styles SCSS Code
+## ‣ Library Styles SCSS Code
 ◓ npm package scss source code:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet
 
+---
 
-<img src="markdown/md_npm_.png" width="75" />
+<a href="https://www.npmjs.com/package/react-windows-ui">
+  <img src="https://img.shields.io/badge/package-npm-red.svg?style=for-the-badge&logo=npm&color=f55a42" alt="npmJS" />
+</a><br/>
 https://www.npmjs.com/package/react-windows-ui
 
 
-## Find this library useful? :heart:
+# Find this library useful? :heart:
 Support it by joining [stargazers](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
 
 
