@@ -8,6 +8,7 @@ const InputDate = (props) => {
       className="app-input-text"
       placeholder={props.placeholder}
       onChange={props.onChange}
+      title={props.tooltip}
     />
   )
 }

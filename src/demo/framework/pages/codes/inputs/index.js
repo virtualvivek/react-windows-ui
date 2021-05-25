@@ -5,6 +5,7 @@ const SwitchCode =
  textOff="Off"
  onChange={() => {}}
  //disabled
+ //tooltip="tooltip title"
 />`;
  
 const SliderBarCode =
@@ -15,6 +16,7 @@ const SliderBarCode =
  step={1}
  showValue={true}
  onChange={() => {}}
+ //tooltip="tooltip title"
 />`;
 
 const CheckboxCode =
@@ -23,6 +25,7 @@ const CheckboxCode =
  text="Text"
  onChange={() => {}}
  //disabled
+ //tooltip="tooltip title"
 />`;
 
 const InputTextCode =
@@ -32,6 +35,7 @@ const InputTextCode =
  //setStatus="success"
  //setStatus="danger"
  //setStatus="loading"
+ //tooltip="tooltip title"
 />`;
 
 const InputPasswordCode =
@@ -39,6 +43,7 @@ const InputPasswordCode =
  type="password"
  placeholder="Enter password"
  onChange={() => {}}
+ //tooltip="tooltip title"
 />`;
 
 const InputLabelCode =
@@ -53,18 +58,21 @@ const InputDateCode =
 `<InputDate
  placeholder="Select Date"
  onChange={() => {}}
+ //tooltip="tooltip title"
 />`;
 
 const InputSearchBarCode =
 `<InputSearchBar
  placeholder="Search here"
  onSubmit={() => {}}
+ //tooltip="tooltip title"
 />`;
 
 const InputSearchBoxCode =
 `<InputSearchBox
  placeholder="Enter to Search"
  onChange={() => {}}
+ //tooltip="tooltip title"
 />`;
 
 const InputSearchSuggestionCode =
@@ -76,6 +84,7 @@ const InputSearchSuggestionCode =
   {label: 'banana', link: '#'},
   {label: 'peach', link: '#'},
   ]}
+  //tooltip="tooltip title"
 />`;
 
 const SelectBoxCode =
@@ -105,6 +114,7 @@ const RadioButtonCode =
  name="2"
  text="some text"
  //disabled
+ //tooltip="tooltip title"
 />`;
 
 export {

@@ -26,7 +26,7 @@ const InputText = (props) => {
   }
 
   return (
-    <div className="app-input-text-container">
+    <div className="app-input-text-container" title={props.tooltip}>
     { props.label ? renderLabel() : '' }
       <input
         className = {

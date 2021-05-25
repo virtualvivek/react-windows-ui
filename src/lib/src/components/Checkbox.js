@@ -2,7 +2,7 @@ import React from 'react'
 
 const Checkbox = (props) => {
   return (
-    <label className="app-checkbox">
+    <label className="app-checkbox" title={props.tooltip}>
       <input
         type="checkbox"
         defaultChecked={props.checked}

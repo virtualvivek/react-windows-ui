@@ -34,6 +34,7 @@ class Images extends React.Component {
         insetShadow
         title="IronMan"
         subtitle="Mark 50 combat armor"
+        tooltip="ImageView tooltip title"
       />
 
       <NavPageContainerInner>
@@ -45,6 +46,7 @@ class Images extends React.Component {
           <AvatarView
               src={IronMan}
               size="large"
+              tooltip="IronMan"
               showDropShadow/>
 
               &nbsp;&nbsp;

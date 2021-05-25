@@ -35,7 +35,7 @@ const AvatarView = (props) => {
     }
 
   return (
-    <div className="app-avatar-container">
+    <div className="app-avatar-container" title={props.tooltip}>
         <img
           className={
             props.size === "small" ? "app-avatar small"

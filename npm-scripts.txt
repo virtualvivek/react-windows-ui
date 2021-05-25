@@ -28,15 +28,3 @@ package.json>
 npm run deploy
 
 ----------------------------------------------------------
-[ WebPack ] ------------
-Installing webpack
-npm install webpack --save-dev
-
--effects-
-package.json>
-	"scripts": {
-		"build": "webpack src/lib/index.js src/lib/dist/index.js",
-		},
--compile-
-
-npm run build

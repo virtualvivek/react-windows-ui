@@ -6,6 +6,7 @@ const AvatarViewCode =
  size="large"
  //size="medium"
  //size="small"
+ //tooltip="tooltip title"
 />`;
 
 const ImageViewCode =
@@ -18,6 +19,7 @@ const ImageViewCode =
  title="Image Title"
  subtitle="Image Subtitle"
  isLoading={false}
+ //tooltip="tooltip title"
 />`;
 
 export {

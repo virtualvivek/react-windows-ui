@@ -69,6 +69,7 @@ class ProgressControls extends React.Component {
 
       <ProgressBar
         setProgress={this.state.ProgressBar1}
+        tooltip="ProgressBar tooltip title"
       />
 
       <br/>
@@ -111,7 +112,7 @@ class ProgressControls extends React.Component {
         />
 
         <br/>
-        <Accordion title="💻 Code - ProgressBar" focused width={340}>
+        <Accordion title="💡 Code - ProgressBar" focused width={340}>
           <SyntaxHighlighter
             language="javascript"
             style={dracula}

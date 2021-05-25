@@ -6,6 +6,7 @@ const ButtonDefaultCode =
  onClick={() => {}}
  //disabled
  //width={155}
+ //tooltip="tooltip title"
 />`;
 
 const ButtonIconPrimary =
@@ -15,6 +16,7 @@ const ButtonIconPrimary =
  icon={<i className="icons10-plus color-primary"></i>}
  value="Button Aligned Start"
  onClick={() => {}}
+ //tooltip="tooltip title"
 />`;
 
 const ButtonPrimary =
@@ -25,6 +27,7 @@ const ButtonPrimary =
  onClick={() => {}}
  //disabled
  //icon={<i className="icons10-plus"></i>}
+ //tooltip="tooltip title"
 />`;
 
 const ButtonPrimaryOutline =
@@ -41,6 +44,7 @@ const ButtonIconCode =
 `<ButtonIcon
  icon={<i className="icons10-add"></i>}
  onClick={() => {}}
+ //tooltip="tooltip title"
 />`;
 
 const ButtonSuccessCode =

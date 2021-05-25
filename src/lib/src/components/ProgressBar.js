@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProgressBar = (props) => {
   return (
-    <div className="app-progress-container">
+    <div className="app-progress-container" title={props.tooltip}>
 
       <div style={ props.showIcon ? { display:'block'} : { display : 'none' }}>
         {props.icon}

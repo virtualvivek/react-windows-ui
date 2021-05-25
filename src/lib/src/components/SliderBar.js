@@ -4,22 +4,24 @@ const SliderBar = (props) => {
 
   const inputRef = React.useRef()
 
-    const toggleVisible = () => {
-      let iswitch = inputRef.current
-          iswitch.style.visibility="visible"
-          iswitch.style.opacity="1"
-    }
-    const toggleHidden = () => {
-      let iswitch = inputRef.current
-          iswitch.style.visibility="hidden"
-          iswitch.style.opacity="0"
-    }
+  const toggleVisible = () => {
+    let iswitch = inputRef.current
+        iswitch.style.visibility="visible"
+        iswitch.style.opacity="1"
+  }
+  const toggleHidden = () => {
+    let iswitch = inputRef.current
+        iswitch.style.visibility="hidden"
+        iswitch.style.opacity="0"
+  }
 
   return (
-    <div className={
+    <div
+        className={
           props.thumbStyle === 'round' ? "app-range-slider round"
         : props.thumbStyle === 'round-border' ? "app-range-slider round-border"
-        : "app-range-slider" }>
+        : "app-range-slider" }
+        title={props.tooltip}>
       <input
         type="range"
         defaultValue={props.value}
@@ -30,7 +32,7 @@ const SliderBar = (props) => {
         onMouseLeave={() => toggleHidden()}
         step={props.step}
         style={{
-          background: "linear-gradient(90deg, var(--PrimaryColor)"+(props.value/props.max) * 100+"%, #999999 20.1%)"
+          background:"linear-gradient(90deg, var(--PrimaryColor)"+(props.value/props.max) * 100+"%, #999999 20.1%)"
           }}
       />
       { props.showValue ? <span> {props.value}</span> : "" }

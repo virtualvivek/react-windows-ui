@@ -8,6 +8,7 @@ const ProgressBarCode =
  //height={15}
  //showIcon={true}
  //icon={<i className="icons10-hdd"></i>}
+ //tooltip="tooltip title"
 />`;
 
 const ProgressBarIndeterminateCode =

@@ -11,6 +11,7 @@ const AlertCode =
  isVisible={this.state.isVisibleAlert}
  onBackdropPress={this.toggleAlert}
  title="Alert"
+ //setTheme="light"
  message="This is message">
   <button onClick={this.toggleAlert}>OK</button>
 </Alert>`;

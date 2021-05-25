@@ -39,7 +39,8 @@ class Inputs extends React.Component {
         <div className="app-flex">
                 
           <Switch
-            checked />
+            checked
+            tooltip="Switch tooltip title" />
 
           <Switch
             checked
@@ -82,7 +83,8 @@ class Inputs extends React.Component {
         <SliderBar
           value={this.state.Slider1}
           showValue={false}
-          onChange={(e) => {this.onChangeSlider1(e)}} />
+          onChange={(e) => {this.onChangeSlider1(e)}}
+          tooltip="SliderBar tooltip title" />
           
         <SliderBar
           value={this.state.Slider2}
@@ -111,7 +113,8 @@ class Inputs extends React.Component {
         <div className="app-flex">
 
           <Checkbox
-            checked />
+            checked
+            tooltip="Checkbox tooltip title" />
 
           <div className="app-space-35"></div>
 
@@ -150,7 +153,8 @@ class Inputs extends React.Component {
       <h3 className="m-b-15">Inputs</h3>
                
         <InputText
-          placeholder="Enter a text"/>
+          placeholder="Enter a text"
+          tooltip="InputText tooltip title"/>
 
         <br/><br/>
 
@@ -216,7 +220,8 @@ class Inputs extends React.Component {
         <br/>
 
         <InputDate
-          placeholder="Select Date" />
+          placeholder="Select Date"
+          tooltip="InputDate tooltip title" />
 
         <br/><br/>
         <Accordion title="💻 Code - Input Date" focused>
@@ -231,7 +236,8 @@ class Inputs extends React.Component {
       <h3 className="m-b-15">SearchBar</h3>
 
         <InputSearchBar
-          placeholder="Search here"/>
+          placeholder="Search here"
+          tooltip="InputSearchBar tooltip title"/>
 
         <br/><br/>
         <Accordion title="💻 Code - SearchBar" focused>
@@ -247,7 +253,8 @@ class Inputs extends React.Component {
         <h3 className="m-b-15">SearchBox</h3>
 
         <InputSearchBox
-          placeholder="Enter to Search"/>
+          placeholder="Enter to Search"
+          tooltip="InputSearchBox tooltip title"/>
 
         <br/><br/>
         <Accordion title="💻 Code SearchBox" focused>
@@ -269,6 +276,7 @@ class Inputs extends React.Component {
             {label: 'banana', link: '#'},
             {label: 'peach', link: '#'},
             ]}
+            tooltip="SearchSuggestion tooltip title"
           />
 
         <br/><br/>
@@ -332,7 +340,8 @@ class Inputs extends React.Component {
         <RadioButton
           name="1"
           text="Checked"
-          checked/>
+          checked
+          tooltip="RadioButton tooltip title"/>
 
         <br></br>
 

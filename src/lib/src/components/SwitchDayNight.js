@@ -17,7 +17,6 @@ const SwitchDayNight = () => {
     }
   }
 
-
   return (
     <label className="app-switch">
       <input

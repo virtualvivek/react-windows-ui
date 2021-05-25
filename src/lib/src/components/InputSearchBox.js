@@ -2,7 +2,7 @@ import React from 'react'
 
 const InputSearchBox = (props) => {
   return (
-    <div className="app-search-box">
+    <div className="app-search-box" title={props.tooltip}>
       <input
         className="app-input-text app-input-search"
         type="search"

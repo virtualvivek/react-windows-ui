@@ -2,7 +2,7 @@ import React from 'react'
 
 const RadioButton = (props) => {
   return (
-    <label className="app-label">
+    <label className="app-label" title={props.tooltip}>
       <input
         type="radio"
         className="app-radio"

@@ -12,6 +12,7 @@ const showData = () => {
   return (
     <label
       className="app-switch"
+      title={props.tooltip}
       style={
         props.textOn === "" ? { marginRight: 0 } : { marginRight: '' }
       }>

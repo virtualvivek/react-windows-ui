@@ -20,7 +20,7 @@ const InputSearchSuggestion = (props) => {
     const [search, setSearch] = React.useState("");
 
     return (
-        <div className="app-search-suggestion">
+        <div className="app-search-suggestion" title={props.tooltip}>
         <div className="app-search-box">
             <input
                 className="app-input-text app-input-search"

@@ -22,7 +22,9 @@ const AvatarView = (props) => {
   }
 
   return (
-    <div className="app-image-view-container"
+    <div
+        className="app-image-view-container"
+        title={props.tooltip}
         style={{
           width: props.width,
           height: props.height,

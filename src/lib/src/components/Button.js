@@ -39,7 +39,8 @@ const Button = (props) => {
       type="button"
       onSubmit={props.onSubmit}
       onClick={props.onClick}
-      disabled={props.disabled}>
+      disabled={props.disabled}
+      title={props.tooltip}>
 
       <span style={
           props.isLoading ? { display:'none' }

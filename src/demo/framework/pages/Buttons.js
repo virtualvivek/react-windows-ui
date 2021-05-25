@@ -37,7 +37,8 @@ class Buttons extends React.Component {
           value="Button Regular"
           type="primary"
           disabled={this.state.stateDisabled}
-          isLoading={this.state.stateLoading}/>
+          isLoading={this.state.stateLoading}
+          tooltip="Button tooltip title"/>
 
         <span>&nbsp; &nbsp;  set states</span>
         <br/><br/>
@@ -195,6 +196,7 @@ class Buttons extends React.Component {
 
         <ButtonIcon
           icon={<i className="icons10-home"></i>}
+          tooltip="ButtonIcon tooltip title"
         />
 
         &nbsp;&nbsp;
