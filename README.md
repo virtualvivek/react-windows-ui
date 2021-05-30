@@ -104,11 +104,11 @@ https://www.npmjs.com/package/react-windows-ui
 
 
 # Find this library useful? :heart:
-Support it by joining [stargazers](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
+Support it by joining [**stargazers**](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
 
 
 
 # License
 
 `react-windows-ui` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE).<br>
-Copyright (c) 2021 ` Vivek Verma `
+Copyright (c) 2021 [Vivek Verma](https://github.com/virtualvivek)
