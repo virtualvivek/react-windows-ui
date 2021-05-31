@@ -1,6 +1,6 @@
-<h2 align="center"> 
-  <img src="markdown/md_img_header.png" width="402" /> 
-</h2>
+<p align="center"> 
+  <img src="markdown/md_img_header.png" width="405" /> 
+</p>
 
 <h1 align="center">react-windows-ui</h1>
 
@@ -84,15 +84,15 @@ body {
 ```
 
 ## ‣ Example Code
-◓ Components full implementation here:<br/>
+❂ Components full implementation here:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework
 
 ## ‣ Library Source Code
-◓ Actual npm package used by the project:<br/>
+❂ Actual npm package used by the project:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib
 
 ## ‣ Library Styles SCSS Code
-◓ npm package scss source code:<br/>
+❂ npm package scss source code:<br/>
 https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet
 
 ---
@@ -110,5 +110,5 @@ Support it by joining [**stargazers**](https://github.com/virtualvivek/react-win
 
 # License
 
-`react-windows-ui` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE).<br>
-Copyright (c) 2021 [Vivek Verma](https://github.com/virtualvivek)
+**`react-windows-ui`** is licensed under `MIT license`. View [license](https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE).<br>
+Copyright (c) 2021 [**Vivek Verma**](https://github.com/virtualvivek)
