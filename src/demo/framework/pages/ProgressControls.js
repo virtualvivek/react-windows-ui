@@ -57,7 +57,8 @@ class ProgressControls extends React.Component {
 
   render() {
     return (
-    <NavPageContainer>
+    <NavPageContainer
+     animateTransition>
 
     <NavPageContainerInner>
 

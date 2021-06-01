@@ -29,9 +29,8 @@ class CommandBarLayout extends React.Component {
   render() {
     return (
     <NavPageContainer hasPadding>
-      <h1>CommandBar</h1>
 
-      <CommandBar>
+        <CommandBar>
             <Button
                 icon={<i className="icons10-share"></i>}
                 value="Share"/>
@@ -46,6 +45,10 @@ class CommandBarLayout extends React.Component {
                 placeholder="Enter to Search"/>
             &nbsp;&nbsp;
         </CommandBar>
+        
+      <h1>CommandBar</h1>
+
+        
         
 
         <ImageView

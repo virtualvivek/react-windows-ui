@@ -23,7 +23,9 @@ class Themes extends React.Component {
 
   render() {
     return (
-    <NavPageContainer hasPadding>
+    <NavPageContainer
+        hasPadding
+        animateTransition>
       <h1>Themes</h1>
 
         <div className="windows-view">

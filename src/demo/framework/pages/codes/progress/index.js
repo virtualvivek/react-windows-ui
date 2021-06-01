@@ -26,6 +26,7 @@ const LoaderBusyCode =
  isLoading={true}
  //size="medium"
  //size="small"
+ //setTheme="light"
 />`;
 
 const LoaderBusyFullscreenCode =

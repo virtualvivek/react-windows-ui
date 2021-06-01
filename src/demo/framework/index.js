@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { NavBar, NavBarLink, NavSearchBox, SystemThemeFollower, RegisterFluentEffect } from '../../lib'
+import { NavBar, NavBarLink, NavSearchBox, SystemThemeFollower, RegisterFluentEffect,TransitionToLeft } from '../../lib'
 import Home from './pages/Home'
 import Layouts from './pages/Layouts'
 import Navigation from './pages/Navigation'
@@ -56,6 +56,8 @@ class Framework extends React.Component {
   return (
     <>
      <Router basename="react-windows-ui">
+
+      <TransitionToLeft />
 
      <SystemThemeFollower/>
 

@@ -4,7 +4,7 @@ import './css/icons.css'
 
 const Icons = () => {
   return (
-    <NavPageContainer hasPadding>
+    <NavPageContainer hasPadding animateTransition>
       <h1 className="m-b-15">Icons</h1>
 
       <p><b>react-windows-ui</b> comes with the premium and free <b>font</b> developed icons. <br/>

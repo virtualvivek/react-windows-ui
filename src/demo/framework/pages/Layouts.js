@@ -4,7 +4,9 @@ import { NavPageContainer, LinkCompound } from '../../../lib'
 const Layouts = () => {
 
     return (
-    <NavPageContainer hasPadding>
+    <NavPageContainer
+        hasPadding
+        animateTransition>
         <h1>Layouts</h1>
 
         <div>

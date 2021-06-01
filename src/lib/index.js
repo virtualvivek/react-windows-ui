@@ -31,7 +31,8 @@ import {
     NavPageContainer,
     NavPageContainerRight,
     NavPageContainerInner,
-    NavSearchBox } from './src/components/NavBar'
+    NavSearchBox,
+    TransitionToLeft } from './src/components/NavBar'
 import ProgressBar from './src/components/ProgressBar'
 import ProgressBarIndeterminate from './src/components/ProgressBarIndeterminate'
 import RadioButton from './src/components/RadioButton'
@@ -81,6 +82,7 @@ export {
     NavPageContainerRight,
     NavPageContainerInner,
     NavSearchBox,
+    TransitionToLeft,
     ProgressBar,
     ProgressBarIndeterminate,
     RadioButton,

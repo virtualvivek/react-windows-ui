@@ -10,7 +10,7 @@
 
 .app-nav-wrap nav {
     &::-webkit-scrollbar {
-        width: 2px;
+        width: 4px;
     }
     &:hover::-webkit-scrollbar {
         width: 14px;
@@ -31,7 +31,7 @@
 }
 .app-nav-wrap.toggled nav {
     &:hover::-webkit-scrollbar {
-        width: 2px;
+        width: 5px;
     }
 }
 

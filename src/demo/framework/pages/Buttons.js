@@ -24,7 +24,9 @@ class Buttons extends React.Component {
   render() {
 
   return (
-    <NavPageContainer hasPadding>
+    <NavPageContainer
+      hasPadding
+      animateTransition>
       
       <RegisterFluentEffect/>
 

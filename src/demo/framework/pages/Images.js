@@ -25,7 +25,7 @@ class Images extends React.Component {
   render() {
 
   return (
-    <NavPageContainer>
+    <NavPageContainer animateTransition>
    
       <ImageView
         src={IronMan}

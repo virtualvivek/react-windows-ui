@@ -25,7 +25,9 @@ class Gauges extends React.Component {
 
   render() {
     return (
-    <NavPageContainer hasPadding>
+    <NavPageContainer
+      hasPadding
+      animateTransition>
       <h1>Gauge</h1>
 
         <h3 className="m-b-15">Default</h3>

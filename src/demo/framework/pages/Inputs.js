@@ -30,7 +30,9 @@ class Inputs extends React.Component {
   
   render() {
   return (
-    <NavPageContainer hasPadding>
+    <NavPageContainer
+      hasPadding
+      animateTransition>
 
       <h1 className="m-b-15">Form Inputs</h1>
 

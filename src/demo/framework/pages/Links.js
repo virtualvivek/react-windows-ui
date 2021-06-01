@@ -12,7 +12,9 @@ import Img1 from '../../img/illustration/mountain.jpg'
 
 const Links = () => {
   return (
-    <NavPageContainer hasPadding>
+    <NavPageContainer
+      hasPadding
+      animateTransition>
 
     <h1>Links</h1>
 

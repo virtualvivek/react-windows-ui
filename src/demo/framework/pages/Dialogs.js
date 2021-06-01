@@ -49,7 +49,9 @@ class Lists extends React.Component {
 
     render() {
       return (
-        <NavPageContainer hasPadding>
+        <NavPageContainer
+            hasPadding
+            animateTransition>
                 
         <h1>Dialogs</h1>
 
@@ -122,11 +124,12 @@ class Lists extends React.Component {
             <div style={{display:'flex',justifyContent:'flex-end'}}>
                 <Button
                     value="Cancel"
-                    type="danger-outline"
+                    type="danger"
                     onClick={this.toggleDialogConfirm}/>
                 <div className="app-space-15"></div>
                 <Button
                     value="OK"
+                    
                     onClick={this.toggleDialogConfirm}/>
             </div>
             </div>

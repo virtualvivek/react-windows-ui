@@ -3,9 +3,10 @@
 
 @import "./components/Body.scss";
 @import "./components/AppNavBar/AppNavBar.scss";
+@import "./components/AppNavBar/Transition/TransitionToLeft.scss";
+@import "./components/AppNavBar/subcomponents/NavBarLinkFluent.scss";
 @import "./components/AppContentWrap.scss";
 @import "./components/AppFluentEffect.scss";
-@import "./components/AppNavBar/subcomponents/NavBarLinkFluent.scss";
 
 @import "./components/Accordion.scss";
 @import "./components/AvatarView.scss";
