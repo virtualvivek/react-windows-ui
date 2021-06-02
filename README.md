@@ -35,14 +35,11 @@
    
 </p>
 
-<h2 align="center">
-  <img src="markdown/md_img_promo.png" width="652" />
-</h2>
+<p align="center"><img src="markdown/md_img_promo.png" width="652" /></p>
 
 <h1 align="center">Adaptive UI</h1>
-<h2 align="center">
-  <img src="markdown/md_img_adaptive.gif" width="652" />
-</h2>
+
+<p align="center"><img src="markdown/md_img_adaptive.gif" width="652" /></p>
 
 # Demo ⚡
 https://virtualvivek.github.io/react-windows-ui/
