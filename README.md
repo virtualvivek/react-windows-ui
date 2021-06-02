@@ -18,13 +18,13 @@
       alt="License: MIT" />
   </a>
   
-  <a href="https://virtualvivek.github.io/react-windows-ui/">
+  <a href="https://github.com/virtualvivek/react-windows-ui/releases">
     <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui?color=%2331b57e&style=flat-square"
       alt="Version" />
   </a>
   
   <a href="https://virtualvivek.github.io/react-windows-ui/">
-    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=%236a31b5&style=flat-square&logo=github"
+    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=%23c11adb&style=flat-square&logo=github"
       alt="Live Demo" />
   </a>
   
@@ -74,33 +74,29 @@ Create your own like this
 
 ```css
 :root {
-    --PrimaryColor: #6632a8;
-    /* Change color you like */
+  --PrimaryColor: #6632a8;  /* Change color you like */
 }
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
-    /* Change fontfamily you like */
+  font-family: "Segoe UI";  /* Change fontfamily you like */
 }
 ```
 
-## ‣ Example Code
-❂ Components full implementation here:<br/>
-https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework
 
-## ‣ Library Source Code
-❂ Actual npm package used by the project:<br/>
-https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib
+## ❂ Links
 
-## ‣ Library Styles SCSS Code
-❂ npm package scss source code:<br/>
-https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet
+|Name                |Details                                |Link          |
+|:------------------:|:-------------------------------------:|:------------:|
+|Example Codes       |Components implementation here         | [Example LINK](https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework) |
+|Library Source      |Folder publish to npm                  | [Library LINK](https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib) |
+|Library SCSS Source |Style scss source code                 | [SCSS LINK](https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet) |
+
+
 
 ---
 
 <a href="https://www.npmjs.com/package/react-windows-ui">
   <img src="https://img.shields.io/badge/package-npm-red.svg?style=for-the-badge&logo=npm&color=f55a42" alt="npmJS" />
 </a><br/>
-https://www.npmjs.com/package/react-windows-ui
 
 
 # Find this library useful? :heart:
