@@ -49,8 +49,8 @@ https://virtualvivek.github.io/react-windows-ui/
 
 
 # Installation
-```
-npm install react-windows-ui
+```ruby
+$ npm install react-windows-ui
 ```
 
 # Getting Started
@@ -84,13 +84,32 @@ body {
 
 ## ❂ Links
 
-|Name                |Details                                |Link          |
-|:------------------:|:-------------------------------------:|:------------:|
-|Example Codes       |Components implementation here         | [Example LINK](https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework) |
-|Library Source      |Folder publish to npm                  | [Library LINK](https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib) |
-|Library SCSS Source |Style scss source code                 | [SCSS LINK](https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet) |
-
-
+<table>
+<thead>
+<tr>
+  <th align="left">Name</th>
+  <th align="left">Details</th>
+  <th align="left">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Example Codes</td>
+  <td>Components implementation here</td>
+  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework">Example LINK</a></td>
+</tr>
+<tr>
+  <td>Library Source</td>
+  <td>Folder publish to npm</td>
+  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib">Library LINK</a></td>
+</tr>
+<tr>
+  <td>Library SCSS Source</td>
+  <td>Style scss source code</td>
+  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
+</tr>
+</tbody>
+</table>
 
 ---
 
