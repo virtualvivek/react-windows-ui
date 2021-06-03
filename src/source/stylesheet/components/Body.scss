@@ -1,5 +1,6 @@
 html {
     overflow-y: overlay;
+    overflow-x: hidden;
 }
 body {
     @extend .background-color-light-bg;

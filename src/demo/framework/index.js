@@ -1,9 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { NavBar, NavBarLink, NavSearchBox, SystemThemeFollower, RegisterFluentEffect,TransitionToLeft } from '../../lib'
+import { NavBar, NavBarLink, NavSearchBox, SystemThemeFollower,
+         RegisterFluentEffect,TransitionToLeft } from '../../lib'
+
 import Home from './pages/Home'
-import Layouts from './pages/Layouts'
-import Navigation from './pages/Navigation'
+import GettingStarted from './pages/GettingStarted'
 import Inputs from './pages/Inputs'
 import Texts from './pages/Texts'
 import Buttons from './pages/Buttons'
@@ -25,6 +26,10 @@ import ContactsLayout from './layouts/ContactsLayout'
 import LoginLayout from './layouts/LoginLayout'
 import ListLayout from './layouts/ListLayout'
 
+import AppJsDefault from './templates/appjs-default'
+import AppJsSearchable from './templates/appjs-searchable'
+import PageJsDefault from './templates/pagejs-default'
+
 import NavBarItem from './NavBarItems.json'
 import './pages/css/codeStyle.css'
 
@@ -33,8 +38,8 @@ class Framework extends React.Component {
   constructor() {
     super();
     this.state = {
-        data: NavBarItem,
-        filteredData: NavBarItem
+      data: NavBarItem,
+      filteredData: NavBarItem
     }
   }
 
@@ -55,14 +60,14 @@ class Framework extends React.Component {
   render() {
   return (
     <>
-     <Router basename="react-windows-ui">
+    <Router basename="react-windows-ui">
 
       <TransitionToLeft />
 
-     <SystemThemeFollower/>
+      <SystemThemeFollower/>
 
-     {/* Register the fluent effect before using NavBarLinkFluent */}
-     <RegisterFluentEffect/>
+      {/* Register the fluent effect before using NavBarLinkFluent */}
+      <RegisterFluentEffect/>
 
       <NavBar 
         title="React Windows UI"
@@ -78,21 +83,21 @@ class Framework extends React.Component {
           icon={<i className="icons10-home"></i>}
         /> */}
 
-        <NavSearchBox
-          placeholder="Find a component"
-          onChange={this.handleInputSearch}/>
+      <NavSearchBox
+        placeholder="Find a component"
+        onChange={this.handleInputSearch}/>
 
-        {this.state.filteredData.map((item, key) => {
-          return <NavBarLink
-                    key={key}
-                    to={item.to}
-                    exact={item.exact}
-                    text={item.text}
-                    icon={<i className={item.icon}></i>}
-                    showBadge={item.showBadge}
-                  />
-          })
-        }
+      {this.state.filteredData.map((item, key) => {
+        return <NavBarLink
+                  key={key}
+                  to={item.to}
+                  exact={item.exact}
+                  text={item.text}
+                  icon={<i className={item.icon}></i>}
+                  showBadge={item.showBadge}
+                />
+        })
+      }
 
 
       {/* If you don't want to add NavSearchBar simply add <NavBarLink /> like below  */}
@@ -122,8 +127,7 @@ class Framework extends React.Component {
 
       <Switch>
         <Route path="/" component={Home}  exact />
-        <Route path='/layouts' component={Layouts} />
-        <Route path='/navigation' component={Navigation} />
+        <Route path='/getting_started' component={GettingStarted} />
         <Route path='/inputs' component={Inputs} />
         <Route path='/texts' component={Texts} />
         <Route path='/buttons' component={Buttons} />
@@ -144,6 +148,10 @@ class Framework extends React.Component {
         <Route path='/404layout' component={_404Layout} />
         <Route path='/LoginLayout' component={LoginLayout} />
         <Route path='/ListLayout' component={ListLayout} />
+
+        <Route path='/AppJsDefault' component={AppJsDefault} />
+        <Route path='/AppJsSearchable' component={AppJsSearchable} />
+        <Route path='/PageJsDefault' component={PageJsDefault} />
       </Switch>
     </Router>
   </>

@@ -7,10 +7,10 @@
         "showBadge": false
     },
     {
-        "to": "/layouts",
+        "to": "/getting_started",
         "exact": false,
-        "text": "Layouts",
-        "icon": "icons10-parallel-tasks",
+        "text": "Getting Started",
+        "icon": "icons10-terminal",
         "showBadge": false
     },
     {
@@ -18,13 +18,6 @@
         "exact": false,
         "text": "Inputs",
         "icon": "icons10-keyboard",
-        "showBadge": false
-    },
-    {
-        "to": "/navigation",
-        "exact": false,
-        "text": "Navigation",
-        "icon": "icons10-explore",
         "showBadge": false
     },
     {

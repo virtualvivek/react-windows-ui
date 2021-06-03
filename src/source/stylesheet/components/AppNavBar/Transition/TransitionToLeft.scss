@@ -2,8 +2,9 @@
   opacity: 0 !important;
   position: absolute;
   top: 0;
-  width: -webkit-fill-available;
   height: 100%;
+  width: -webkit-fill-available;
+  width: -moz-available;
 
   &.transition-left {
     opacity: 1 !important;
@@ -14,7 +15,7 @@
   @keyframes animate-page {
     0% {
       opacity: 0;
-      transform: translateX(50px);
+      transform: translateX(10px);
     }
     100% {
       opacity: 1;

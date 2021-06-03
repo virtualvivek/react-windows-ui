@@ -5,7 +5,10 @@
     background-color: #88888899;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #99999999;
+    background-color: #9D9D9D99;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #999999EE;
 }
 
 .app-nav-wrap nav {
@@ -22,7 +25,7 @@
         background-color: #99999966;
     }
     &::-webkit-scrollbar-thumb:active {
-        background-color: var(--color_link_bg_hover);
+        background-color: #99999988;
     }
     //Setting margin-top for laying scrollbar between navigation li items.
     &::-webkit-scrollbar-track {

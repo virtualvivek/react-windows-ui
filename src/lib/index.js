@@ -32,6 +32,7 @@ import {
     NavPageContainerRight,
     NavPageContainerInner,
     NavSearchBox,
+    TransitionToTop,
     TransitionToLeft } from './src/components/NavBar'
 import ProgressBar from './src/components/ProgressBar'
 import ProgressBarIndeterminate from './src/components/ProgressBarIndeterminate'
@@ -82,6 +83,7 @@ export {
     NavPageContainerRight,
     NavPageContainerInner,
     NavSearchBox,
+    TransitionToTop,
     TransitionToLeft,
     ProgressBar,
     ProgressBarIndeterminate,

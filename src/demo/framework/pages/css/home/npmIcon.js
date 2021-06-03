@@ -1,12 +1,23 @@
-import React from "react"
+import * as React from "react"
 
-function Icon() {
+function SvgComponent(props) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18" width={54}>
-      <path d="M0 7.334v8h6.666v1.332H12v-1.332h12v-8H0zm6.666 6.664H5.334v-4H3.999v4H1.335V8.667h5.331v5.331zm4 0v1.336H8.001V8.667h5.334v5.332h-2.669v-.001zm12.001 0h-1.33v-4h-1.336v4h-1.335v-4h-1.33v4h-2.671V8.667h8.002v5.331zM10.665 10H12v2.667h-1.335V10z"
-      fill="#f54542"></path>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props} height={80}>
+      <title />
+      <rect
+        width={24}
+        height={10.169}
+        y={6.915}
+        ry={2.542}
+        fill="#f54542"
+        paintOrder="stroke fill markers"
+      />
+      <path
+        d="M5.34 9.621v4.44h3.7v.739H12v-.74h6.66V9.622zm3.7 3.698H8.3V11.1h-.74v2.22H6.08v-2.958H9.04zm2.22 0v.742H9.78v-3.7h2.96v2.959h-1.48zm6.66 0h-.738V11.1h-.742v2.22h-.74V11.1h-.739v2.22H13.48v-2.958h4.44zm-6.66-2.218H12v1.48h-.74z"
+        fill="#fff"
+      />
     </svg>
-  );
+  )
 }
 
-export default Icon
+export default SvgComponent
