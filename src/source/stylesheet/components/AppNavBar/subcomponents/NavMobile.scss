@@ -81,11 +81,10 @@
             }
         }
         .app-switch {
-            margin: 0;
-            position: fixed;
+            position: absolute;
             display: block;
-            margin-top: -40px;
-            left: 70%;
+            margin: -40px 0 0;
+            left: 70vw;
         }
 
         ul h1,
