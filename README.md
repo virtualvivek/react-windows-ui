@@ -18,13 +18,13 @@
       alt="License: MIT" />
   </a>
   
-  <a href="https://virtualvivek.github.io/react-windows-ui/">
+  <a href="https://github.com/virtualvivek/react-windows-ui/releases">
     <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui?color=%2331b57e&style=flat-square"
       alt="Version" />
   </a>
   
   <a href="https://virtualvivek.github.io/react-windows-ui/">
-    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=%236a31b5&style=flat-square&logo=github"
+    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=%23c11adb&style=flat-square&logo=github"
       alt="Live Demo" />
   </a>
   
@@ -35,22 +35,19 @@
    
 </p>
 
-<h2 align="center">
-  <img src="markdown/md_img_promo.png" width="652" />
-</h2>
+<p align="center"><img src="markdown/md_img_promo.png" width="652" /></p>
 
 <h1 align="center">Adaptive UI</h1>
-<h2 align="center">
-  <img src="markdown/md_img_adaptive.gif" width="652" />
-</h2>
+
+<p align="center"><img src="markdown/md_img_adaptive.gif" width="652" /></p>
 
 # Demo ⚡
 https://virtualvivek.github.io/react-windows-ui/
 
 
 # Installation
-```
-npm install react-windows-ui
+```ruby
+$ npm install react-windows-ui
 ```
 
 # Getting Started
@@ -74,33 +71,48 @@ Create your own like this
 
 ```css
 :root {
-    --PrimaryColor: #6632a8;
-    /* Change color you like */
+  --PrimaryColor: #6632a8;  /* Change color you like */
 }
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
-    /* Change fontfamily you like */
+  font-family: "Segoe UI";  /* Change fontfamily you like */
 }
 ```
 
-## ‣ Example Code
-❂ Components full implementation here:<br/>
-https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework
 
-## ‣ Library Source Code
-❂ Actual npm package used by the project:<br/>
-https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib
+## ❂ Links
 
-## ‣ Library Styles SCSS Code
-❂ npm package scss source code:<br/>
-https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet
+<table>
+<thead>
+<tr>
+  <th align="left">Name</th>
+  <th align="left">Details</th>
+  <th align="left">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Example Codes</td>
+  <td>Components implementation here</td>
+  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework">Example LINK</a></td>
+</tr>
+<tr>
+  <td>Library Source</td>
+  <td>Folder publish to npm</td>
+  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib">Library LINK</a></td>
+</tr>
+<tr>
+  <td>Library SCSS Source</td>
+  <td>Style scss source code</td>
+  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 <a href="https://www.npmjs.com/package/react-windows-ui">
   <img src="https://img.shields.io/badge/package-npm-red.svg?style=for-the-badge&logo=npm&color=f55a42" alt="npmJS" />
 </a><br/>
-https://www.npmjs.com/package/react-windows-ui
 
 
 # Find this library useful? :heart:
