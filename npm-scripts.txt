@@ -7,7 +7,8 @@ package.json>
 	"scripts": {
 		"compile:sass": "node-sass src/lib/src/stylesheet/main.scss src/lib/dist/react-windows-ui.css",
 		},
--compile-
+
+--compile--
 
 npm run compile:sass
 
@@ -23,7 +24,8 @@ package.json>
 		"predeploy": "npm run build",
     		"deploy": "gh-pages -d build",
 		},
--compile-
+
+--compile--
 
 npm run deploy
 

@@ -64,7 +64,7 @@ class ProgressControls extends React.Component {
 
       <h1>ProgressControls</h1>
 
-      <h1 className="m-0 " style={{fontSize:56}}>
+      <h1 className="m-0" style={{fontSize:56}}>
         {this.state.ProgressBar1}%
       </h1>
 
