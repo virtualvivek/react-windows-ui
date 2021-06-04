@@ -45,10 +45,13 @@
     height: 125px;
     width: 100%;
     bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .home-footer-group .group {
     width: inherit;
-    height: 25px;
+    height: 2.2vh;
     background-color: var(--PrimaryColor);
 }
 .group.a {
