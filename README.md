@@ -53,10 +53,6 @@ $ npm install react-windows-ui
 # Getting Started
 
 ```js
-import { NavBar,NavPageContainer, ..} from 'react-windows-ui'
-```
-
-```js
 // Be sure to include styles at some point, probably during your bootstraping
 import 'react-windows-ui/config/app-config.css'
 import 'react-windows-ui/dist/react-windows-ui.min.css'
@@ -78,6 +74,25 @@ body {
 }
 ```
 
+# Usage
+
+```js
+import { Button, InputText } from 'react-windows-ui';
+
+const App = () => (
+  <>
+    <Button type="primary" value="Press Me" />
+    <InputText placeholder="Enter a text" />
+  </>
+);
+```
+## Run Demo Locally
+```scss
+$ git clone git@github.com:virtualvivek/react-windows-ui.git
+$ cd react-windows-ui
+$ npm install
+$ npm start
+```
 
 ## ❂ Links
 
