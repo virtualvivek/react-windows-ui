@@ -112,12 +112,12 @@ $ npm start
 </tr>
 <tr>
   <td>Library Source</td>
-  <td>Folder publish to npm</td>
+  <td>Folder publish to <code>npm</code></td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib">Library LINK</a></td>
 </tr>
 <tr>
   <td>Library SCSS Source</td>
-  <td>Style scss source code</td>
+  <td>Style <code>scss</code> source code</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
 </tr>
 </tbody>
