@@ -87,8 +87,8 @@ const App = () => (
 );
 ```
 ## Run Demo Locally
-```scss
-$ git clone git@github.com:virtualvivek/react-windows-ui.git
+```css
+$ git clone https://github.com/virtualvivek/react-windows-ui.git
 $ cd react-windows-ui
 $ npm install
 $ npm start
