@@ -9,7 +9,7 @@ const Checkbox = (props) => {
         disabled={props.disabled}
         onChange={props.onChange}
       />
-        {' '+props.text}
+      {' '+props.text}
     </label>
   )
 }

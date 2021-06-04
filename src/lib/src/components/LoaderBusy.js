@@ -4,9 +4,9 @@ import LoaderBusyWrapper from './_common/LoaderBusyWrapper'
 const LoaderBusy = (props) => {
 
   const toggleLoading = () => {
-    if(props.isLoading) return ' animate'
-    else return ''
+    return props.isLoading ? ' animate' : '';
   }
+
   const setSize = () => {
     if(props.size === 'medium') return ' medium'
     else if (props.size === 'small') return ' small'

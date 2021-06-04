@@ -7,26 +7,25 @@ const MenuBar = (props) => {
   const showMenuBar = () => setMenubar(!menubar)
 
 
-
   //----------------------------------------------------------------
   // Step 1. Out Side click detector code
   const useOutsideAlerter = (ref) => {
     useEffect(() => {
-        /**
-         * Alert if clicked on outside of element
-         */
-        function handleClickOutside(event) {
-            if (ref.current && !ref.current.contains(event.target)) {
-                //alert("You clicked outside of me!");
-                setMenubar(menubar)
-            }
+      /**
+       * Alert if clicked on outside of element
+       */
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          //alert("You clicked outside of me!");
+          setMenubar(menubar)
         }
-        // Bind the event listener
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-            // Unbind the event listener on clean up
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
+      }
+      // Bind the event listener
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+          // Unbind the event listener on clean up
+          document.removeEventListener("mousedown", handleClickOutside);
+      };
     }, [ref]);
   }
   // Step 2. Out Side click Register
@@ -38,7 +37,6 @@ const MenuBar = (props) => {
   const teams_data = props.data
   const [teams, setTeams] = React.useState(teams_data)
   const [search, setSearch] = React.useState("")
-
 
 
   return (

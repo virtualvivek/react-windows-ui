@@ -15,20 +15,20 @@ const inputRef = React.useRef()
 
   return (
     <label className="app-color-picker-item">
-        <input
-            type="radio"
-            className="item"
-            ref={inputRef}
-            name={props.name}
-            defaultChecked={props.checked}
-            disabled={props.disabled}
-            onChange={() => setThemeColor(props.color)}
-        />
-        <div
-        style={{
-            backgroundColor:props.color
-        }}>
-        </div>
+      <input
+        type="radio"
+        className="item"
+        ref={inputRef}
+        name={props.name}
+        defaultChecked={props.checked}
+        disabled={props.disabled}
+        onChange={() => setThemeColor(props.color)}
+      />
+      <div
+      style={{
+          backgroundColor:props.color
+      }}>
+      </div>
     </label>
   )
 }

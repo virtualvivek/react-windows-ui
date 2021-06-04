@@ -26,7 +26,7 @@ const Alert = (props) => {
         <h1>{props.title}</h1>
         <div className="alert-message">{props.message}</div>
         <div className="btn-container">
-            {props.children}
+          {props.children}
         </div>
     </div>
     </>

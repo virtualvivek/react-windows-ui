@@ -1,7 +1,7 @@
 const AppJSDefaultCode =
 `import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { NavBar, NavBarLink, SystemThemeFollower, TransitionToTop } from 'react-windows-ui'
+import { NavBar, NavBarLink, SystemThemeFollower, TransitionToLeft } from 'react-windows-ui'
 import Page1 from './pages/page1'
 import Page2 from './pages/page2'
 
@@ -9,7 +9,7 @@ const App = () => {
     return (
         <Router basename="react-windows-ui">
 
-          <TransitionToTop /> //for registering page transition
+          <TransitionToLeft /> //for registering page transition
 
           <SystemThemeFollower/>
 

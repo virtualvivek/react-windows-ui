@@ -21,8 +21,7 @@ const Dialog = (props) => {
         }
       style = {{
                 padding: props.padding
-              }}
-    >
+              }}>
         {props.children}
     </div>
     </>

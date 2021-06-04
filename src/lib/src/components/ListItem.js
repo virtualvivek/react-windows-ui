@@ -14,7 +14,7 @@ const ListItem = (props) => {
             alt={ props.imgAlt }
             style={ props.img ?
                   { display:'', borderRadius: props.imgBorderRadius } :
-                  { display : 'none'}
+                  { display : 'none' }
                   }>
           </img>
           <div>

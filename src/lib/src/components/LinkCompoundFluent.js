@@ -10,15 +10,15 @@ const LinkCompoundFluent = (props) => {
       }}>
       <div className="app-fluent-btn-container">
         <div className="app-fluent-link app-fluent-effect">
-        <Link
-        to={props.to}
-        className={ props.linkStyle === 'border' ?
-        "app-link-compound primary" : "app-link-compound" }
-        onMouseOver={props.onMouseOver}>
-            {props.icon}
-            <span>{props.title}</span>
-            <p>{props.subtitle}</p>
-        </Link>
+          <Link
+            to={props.to}
+            className={ props.linkStyle === 'border' ?
+            "app-link-compound primary" : "app-link-compound" }
+            onMouseOver={props.onMouseOver}>
+              {props.icon}
+              <span>{props.title}</span>
+              <p>{props.subtitle}</p>
+          </Link>
         </div>
       </div>
     </div>

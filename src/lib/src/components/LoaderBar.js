@@ -3,9 +3,9 @@ import React from 'react'
 const LoaderBar = (props) => {
 
   const setTheme = () => {
-    if(props.setTheme === 'light') return ' light'
-    else return ''
+    return props.setTheme === 'light' ? ' light' : '';
   }
+
   return (
     <div className={props.isLoading ?
         "app-loader-bar animate" + setTheme()

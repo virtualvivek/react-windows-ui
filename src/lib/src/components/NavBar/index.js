@@ -6,7 +6,6 @@ import NavPageContainer from './NavPageContainer'
 import NavPageContainerRight from './NavPageContainerRight'
 import NavPageContainerInner from './NavPageContainerInner'
 import NavSearchBox from './NavSearchBox'
-import TransitionToTop from './Transition/TransitionToTop'
 import TransitionToLeft from './Transition/TransitionToLeft'
 
 export {
@@ -18,6 +17,5 @@ export {
     NavPageContainerRight,
     NavPageContainerInner,
     NavSearchBox,
-    TransitionToTop,
     TransitionToLeft
 }

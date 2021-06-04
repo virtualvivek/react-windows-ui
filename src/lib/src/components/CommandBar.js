@@ -22,8 +22,7 @@ const CommandBar = (props) => {
           margin: props.margin,
           zIndex: props.zIndex
         }
-      }
-      >
+      }>
         <div className="app-command-items">
           {props.children}
         </div>

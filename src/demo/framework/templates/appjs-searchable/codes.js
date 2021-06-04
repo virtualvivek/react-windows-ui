@@ -1,7 +1,7 @@
 const AppJsSearchableCode =
 `import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { NavBar, NavBarLink, NavSearchBox, SystemThemeFollower, TransitionToTop } from 'react-windows-ui'
+import { NavBar, NavBarLink, NavSearchBox, SystemThemeFollower, TransitionToLeft } from 'react-windows-ui'
 import Page1 from './pages/page1'
 import Page2 from './pages/page2'
 
@@ -51,7 +51,7 @@ class App extends React.Component {
   return (
         <Router basename="react-windows-ui">
 
-          <TransitionToTop /> //for registering page transition
+          <TransitionToLeft /> //for registering page transition
 
           <SystemThemeFollower/>
 

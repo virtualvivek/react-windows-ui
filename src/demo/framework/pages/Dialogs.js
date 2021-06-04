@@ -129,7 +129,7 @@ class Lists extends React.Component {
                 <div className="app-space-15"></div>
                 <Button
                     value="OK"
-                    
+                    type="primary"
                     onClick={this.toggleDialogConfirm}/>
             </div>
             </div>

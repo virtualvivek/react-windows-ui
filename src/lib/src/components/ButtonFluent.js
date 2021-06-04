@@ -8,16 +8,16 @@ const ButtonFluent = (props) => {
         display: props.display
       }}>
         <div className="app-fluent-btn-container">
-            <button
-              className="app-fluent-btn app-fluent-effect app-button"
-              onSubmit={props.onSubmit}
-              onClick={props.onClick}>
-                <span style={{
-                    padding: '5px 15px'
-                  }}>
-                  {props.value}
-                </span>
-            </button>
+          <button
+            className="app-fluent-btn app-fluent-effect app-button"
+            onSubmit={props.onSubmit}
+            onClick={props.onClick}>
+              <span style={{
+                  padding: '5px 15px'
+                }}>
+                {props.value}
+              </span>
+          </button>
         </div>
     </div>
   )

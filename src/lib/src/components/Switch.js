@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Switch = (props) => {
+
 const showData = () => {
   if(props.textOn === ""){
     return <div dataoff="" dataon=""></div>
