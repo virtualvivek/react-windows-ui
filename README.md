@@ -53,10 +53,6 @@ $ npm install react-windows-ui
 # Getting Started
 
 ```js
-import { NavBar,NavPageContainer, ..} from 'react-windows-ui'
-```
-
-```js
 // Be sure to include styles at some point, probably during your bootstraping
 import 'react-windows-ui/config/app-config.css'
 import 'react-windows-ui/dist/react-windows-ui.min.css'
@@ -76,6 +72,19 @@ Create your own like this
 body {
   font-family: "Segoe UI";  /* Change fontfamily you like */
 }
+```
+
+# Usage
+
+```js
+import { Button, InputText } from 'react-windows-ui';
+
+const App = () => (
+  <>
+    <Button type="primary" value="Press Me" />
+    <InputText placeholder="Enter a text" />
+  </>
+);
 ```
 
 
