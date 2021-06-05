@@ -62,7 +62,7 @@ import 'react-windows-ui/icons/fonts/fonts.min.css'
 
 ‣ `app-config.css` file contains the `PrimaryColor`, `Fontfamily` used by the app. <br>
 ‣ You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
-OR <br>
+_OR_ <br>
 Create your own like this
 
 ```css
@@ -87,8 +87,8 @@ const App = () => (
 );
 ```
 ## Run Demo Locally
-```scss
-$ git clone git@github.com:virtualvivek/react-windows-ui.git
+```css
+$ git clone https://github.com/virtualvivek/react-windows-ui.git
 $ cd react-windows-ui
 $ npm install
 $ npm start
@@ -112,12 +112,12 @@ $ npm start
 </tr>
 <tr>
   <td>Library Source</td>
-  <td>Folder publish to npm</td>
+  <td>Folder publish to <code>npm</code></td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib">Library LINK</a></td>
 </tr>
 <tr>
   <td>Library SCSS Source</td>
-  <td>Style scss source code</td>
+  <td>Style <code>scss</code> source code</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
 </tr>
 </tbody>
