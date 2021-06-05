@@ -1,6 +1,6 @@
 {
   "name": "react-windows-ui",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Build full featured Windows fluent UI apps using reactjs.",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "react-component",
     "responsive",
     "uwp",
-    "electron",
+    "electronJS",
     "mobile",
     "windows-app",
     "ui-design",
