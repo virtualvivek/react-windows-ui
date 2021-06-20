@@ -1,0 +1,50 @@
+.app-section-container {
+    padding-left: 290px;
+    transition: 0.2s ease;
+    &.has-padding {
+        padding-left: 320px;
+    }
+}
+
+.app-section-container-inner {
+    margin: 0 30px 0 30px;
+}
+
+.app-nav-wrap.toggled + .app-section-container {
+    padding-left: 74px;
+    &.has-padding {
+        padding-left: 104px;
+    }
+}
+
+.app-section-container-right {
+    position: absolute;
+    top: 105px;
+    right: 25px;
+    float: right;
+    max-width: 264px;
+}
+
+@media screen and (max-width: 70em) {
+    .app-section-container-right {
+            max-width: fit-content;
+            position: relative;
+            top: 25px;
+            right: auto;
+            float: left;
+            margin-bottom: 85px;
+    }
+}
+
+@mixin app-content-wrap-mobile() {
+    .app-section-container {
+        margin: 0 !important;
+        padding: 90px 0 0 0 !important;
+        &.has-padding {
+            margin: 0 15px !important;
+        }
+    }
+    .app-section-container-inner {
+        margin: 15px;
+    }
+}

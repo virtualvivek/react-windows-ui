@@ -1,0 +1,51 @@
+.app-image-view {
+    width: 100%;
+    height: 100%;
+    background: #DDDDDD77;
+    text-align: center;
+    z-index: 1;
+}
+.app-image-view-container {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    overflow: hidden;
+
+    .app-image-view-loader {
+        position: absolute;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: #44444477;
+        z-index: 2;
+
+        .app-loader-busy {
+            top: 35%;
+            margin: auto;
+        }
+    }
+    .shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 0 -50px 50px 0 #000000;
+        top: 0;
+        z-index: 1;
+        left: 0;
+    }
+    .app-image-words {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: max-content;
+        z-index: 2;
+        color: #fff;
+        filter: drop-shadow(2px 2px 2px black);
+        padding-left: 5%;
+        padding-bottom: 4%;
+        
+        h1 {
+            margin: 0;
+        }
+    }
+}

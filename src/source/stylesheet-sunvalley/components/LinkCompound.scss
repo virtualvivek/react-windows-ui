@@ -1,0 +1,110 @@
+.app-link-compound {
+    @extend .color-dark-text;
+    @extend .transition-all-400ms;
+    @extend .tap-highlight-none;
+    max-width: 310px;
+    height: fit-content;
+    display: inline-block;
+    font-size: 15px;
+    text-align: start;
+    cursor: pointer;
+    padding: 0 10px 12px 10px;
+    margin-bottom: 5px;
+    border: 2px solid transparent;
+    
+    &:hover,
+    &.focused {
+        @extend .background-color-light-grey;
+    }
+    &:active {
+        @extend .transition-scale-0_95;
+        background: var(--color_link_bg_hover);
+    }
+    i {
+        font-size: 36px;
+        top: 16px;
+        line-height: 0 !important;
+
+        &.bg-primary::before,
+        &.bg-grey::before {
+            font-size: 30px;
+            padding: 3px;
+        }
+    }
+    img {
+        width: 37px;
+        height: 37px;
+        margin: 0 0 -5px -2px;
+        position: relative;
+        top: 18px;
+    }
+    span {
+        @extend .color-dark-text;
+        height: 20px;
+        width: 250px;
+        display: inline-block;
+        top: 7px;
+        left: 12px;
+        line-break: anywhere;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    p {
+        height: fit-content;
+        padding: 0 0 5px 48px;
+        font-size: 12px;
+        opacity: 0.7;
+        margin: 2px 0 0 0;
+        line-height: 1.2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    i,
+    span {
+        position: relative;
+        line-height: 1;
+    }
+
+
+    &.primary {
+        &:hover {
+            border: 2px solid var(--color_link_bg_hover);
+            background: transparent !important;
+        }
+        &:active {
+            background: var(--color_light_grey) !important;
+            border: 2px solid var(--color_link_bg_active);
+        }
+    }
+    &.primary i,
+    i.color-primary {
+        @extend .color-primary;
+    }
+}
+
+div.app-link-compound {
+    &:hover,
+    &:active {
+        background-color: unset;
+        transition: unset;
+        transform: unset;
+    }
+}
+.app-link-compound + .app-switch {
+    display: inline-flex;
+    line-height: 3;
+}
+
+@mixin link-compound-mobile() {
+    .app-link-compound:not(.focused):not(:active) {
+        &:hover,
+        &.primary:hover {
+            background: transparent;
+            border-color: transparent;
+        }
+    }
+    .app-link-compound + .app-switch {
+        margin-left: 10px;
+    }
+}

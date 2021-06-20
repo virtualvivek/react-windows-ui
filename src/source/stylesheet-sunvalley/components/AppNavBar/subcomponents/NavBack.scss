@@ -1,0 +1,53 @@
+.app-name {
+    @extend .color-dark-text;
+    @extend .font-weight-500;
+    @extend .font-size-16px;
+    @extend .transition-background-400ms;
+    padding: 12px 25px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.app-name-short {
+    @extend .font-weight-500;
+    display: none;
+}
+.app-back + .app-name {
+    padding: 12px 10px;
+}
+.app-back {
+    @extend .transition-all-400ms;
+    @extend .color-dark-text;
+    width: fit-content;
+    line-height: 1 !important;
+    font-size: 30px;
+    padding: 7px 22px !important;
+
+    &:hover {
+        @extend .background-color-link-bg-hover;
+    }
+    &:active {
+        @extend .background-color-link-bg-active;
+    }
+    &::after {
+        @extend .font-icon-dark;
+        content: "\f113";
+        position: relative;
+    }
+    &.fixed {
+        height: auto;
+        text-align: center;
+        font-size: 40px;
+        position: absolute;
+        padding: 10px 20px !important;
+
+        &.light {
+            &:hover {
+                background: #EEEEEE44 !important;
+            }
+            &::after {
+                @extend .color-white;
+            }
+        }
+    }
+}

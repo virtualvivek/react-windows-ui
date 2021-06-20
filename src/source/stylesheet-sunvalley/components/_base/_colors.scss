@@ -1,0 +1,33 @@
+:root {
+    --color_primary_alpha: #EEEEEE;
+    
+/*    Day Mode */
+    --color_light_bg: #FFFFFF;
+    --color_dark_text: #222222;
+    --color_nav: #EEEEEE;
+    --color_light_grey: #EEEEEE;
+    --color_light_grey_alpha: #EEEEEED1;
+    --color_link_bg_hover: #CFCFCF;
+    --color_link_bg_active: #B8B8B8;
+    --color_button: #d9d9d9;
+    --color_button_hover: #666666;
+    --color_primary_light: var(--PrimaryColor);
+    --color_primary_dark: var(--PrimaryColor);
+}
+
+.color-danger {
+    color: #C50500;
+}
+.color-success {
+    color: #2C8B2C;
+}
+.bg-danger {
+    background: #C50500 !important;
+}
+.bg-success {
+    background: #2C8B2C !important;
+}
+.bg-danger,
+.bg-success {
+    color: #fff !important;
+}

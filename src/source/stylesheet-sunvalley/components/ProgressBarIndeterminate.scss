@@ -1,0 +1,35 @@
+.app-progress-indeterminate {
+    height: 5px;
+    width: 400px;
+    background-color: var(--color_button);
+    overflow: hidden;
+    transition: height 0.15s ease-out;
+}
+.app-progress-indeterminate:not(.animate) {
+    height: 0;
+}
+.app-progress-indeterminate.animate div.progress-bar {
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(circle at 50% 50%, var(--PrimaryColor) 10%, transparent 90%);
+    animation: indeterminateAnimation 1s infinite linear;
+    transform-origin: 0% 50%;
+    transition-property: background;
+}
+@keyframes indeterminateAnimation {
+  0% {
+    transform: translateX(0) scaleX(0);
+  }
+  40% {
+    transform: translateX(0) scaleX(0.5);
+  }
+  100% {
+    transform: translateX(100%) scaleX(0.6);
+  }
+}
+
+@mixin progress-bar-indeterminate-mobile() {
+  .app-progress-indeterminate {
+    width: 80vw;
+  }
+}

@@ -1,0 +1,6 @@
+.app-sticky-header {
+    @extend .transition-background-400ms;
+    position: sticky;
+    background-color: var(--color_light_bg);
+    padding: 10px 0;
+}

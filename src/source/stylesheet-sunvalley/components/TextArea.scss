@@ -1,0 +1,16 @@
+.app-textarea {
+    @extend .input-field-primary;
+    @extend .transition-background-400ms;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-family: inherit;
+
+    &:hover {
+        border-color: #777;
+    }
+    &:focus {
+        @extend .outline-none;
+        border-color: #666;
+    }
+}

@@ -1,0 +1,115 @@
+@mixin app-navbar-mobile() {
+    .app-nav-wrap nav {
+        width: 100%;
+        height: 93px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        box-shadow: 1px 0 5px rgba(0, 0, 0, 0.25);
+
+        ul {
+            width: 100%;
+            display: inline;
+            white-space: nowrap;
+            position: relative;
+            top: 45px;
+            margin: 0 auto;
+            z-index: 2;
+
+            li {
+                display: inline-flex;
+                a {
+                    i,
+                    span {
+                        opacity: 0.6;
+                    }
+
+                    padding: 0;
+                    user-select: none;
+                    -webkit-tap-highlight-color: transparent;
+                    
+                    &::after {
+                        height: 3px;
+                        width: 90%;
+                        bottom: 0;
+                        left: 6%;
+                        transition: transform 0.4s;
+                        transform: translate3d(0, 100%, 0);
+                    }
+                    &.active {
+                        i,
+                        span {
+                            opacity: 1;
+                        }
+                        &::after {
+                            transform: translate3d(0, 0, 0);
+                        }
+                    }
+                    span {
+                        font-size: 20px;
+                        margin: 0 7px;
+                        bottom: 5px;
+                        right: 0;
+                    }
+                }
+            }
+            .app-hr {
+                height: 20px;
+                width: 2px;
+                margin: 0 5px;
+                display: inline-flex;
+                position: relative;
+                top: 5px;
+            }
+            &.app-mobile-has-icons {
+                li {
+                    a {
+                        padding: 5px 8px;
+                        i::before {
+                            font-size: 28px;
+                        }
+                        &::after {
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .app-nav-user {
+            img {
+                left: 0;
+            }
+        }
+        .app-switch {
+            position: absolute;
+            display: block;
+            margin: -40px 0 0;
+            left: 70vw;
+        }
+
+        ul h1,
+        .app-nav-toggle,
+        .app-nav-user span,
+        ul.app-mobile-has-icons li a span,
+        ul:not(.app-mobile-has-icons) li a i::before {
+            display: none !important;
+        }
+    }
+
+    .app-back {
+        padding: 5px 0 0 12px !important;
+    }
+    .app-name {
+        padding: 10px;
+    }
+
+    .app-back:hover,
+    .app-nav-wrap nav ul,
+    .app-back.fixed.light:hover {
+        li:hover,
+        li a:hover,
+        .app-nav-user:hover {
+            background: transparent !important;
+        }
+    }
+}

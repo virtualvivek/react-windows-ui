@@ -1,0 +1,17 @@
+.app-fluent-link {
+    @extend .transition-background-400ms;
+    position: relative;
+    overflow: hidden;
+    
+    /*  The padding acts as border, background-clip is set to
+        content-box so the padding becomes transparent, then
+        a pseudo element moves in the back for the reveal. */
+    padding: 2px;
+    background: var(--color_light_bg) content-box;
+    &:hover {
+        background: var(--color_light_grey) content-box;
+    }
+    &:active {
+        background: var(--color_link_bg_active) content-box;
+    }
+}

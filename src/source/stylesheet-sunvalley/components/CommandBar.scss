@@ -1,0 +1,58 @@
+.app-command-bar {
+    @extend .background-color-nav;
+    @extend .transition-background-400ms;
+    width: max-content;
+    height: 60px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.38);
+
+    &.fixed {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        text-align: end;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .app-button {
+        height: 60px;
+        display: inline-grid;
+        align-content: center;
+        
+        &:not(:hover) {
+            background-color: transparent;
+        }
+        &:hover {
+            border-color: transparent;
+        }
+        i {
+            font-size: 30px;
+        }
+        span {
+            font-size: 12px;
+            padding: 0 !important;
+        }
+    }
+}
+
+
+@mixin command-bar-mobile() {
+    .app-command-bar {
+        .app-button:not(:active) {
+            &:hover {
+                background-color: transparent;
+                filter: none;
+            }
+        }
+        &.fixed {
+            text-align: center;
+            top: unset;
+            bottom: 0;
+            
+            .app-search-box {
+                width: 45vw;
+            }
+        }
+    }
+}

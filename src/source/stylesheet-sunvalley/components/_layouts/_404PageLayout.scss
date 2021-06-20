@@ -1,0 +1,25 @@
+._404-container {
+    @extend .color-white;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10% 25px 0 25px;
+
+    ._404-sad-face {
+        font-size: 120px;
+    }
+    ._404-upper {
+        font-size: 28px;
+    }
+    ._404-lower {
+        font-size: 16px;
+    }
+    .app-flex {
+        i {
+            font-size: 65px;
+        }
+        p {
+            margin: 5px;
+            font-size: 0.85em;
+        }
+    }
+}

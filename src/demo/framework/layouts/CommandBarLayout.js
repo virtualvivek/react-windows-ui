@@ -86,7 +86,7 @@ class CommandBarLayout extends React.Component {
         <Dialog
           isVisible={this.state.showDialog}
           onBackdropPress={this.toggleDialog}
-          padding="0 0 10px 0"
+          padding="10px"
           showDropShadow>
             <Button
                 width={'100%'}
