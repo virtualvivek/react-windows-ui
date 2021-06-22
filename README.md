@@ -122,7 +122,7 @@ $ npm start
 </tr>
 <tr>
   <td>SunValley SCSS Source</td>
-  <td>Style <code>scss</code> source code</td>
+  <td>SunValley Style <code>scss</code> source code</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet-sunvalley">SCSS LINK</a></td>
 </tr>
 </tbody>
