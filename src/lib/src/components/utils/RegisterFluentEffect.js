@@ -3,18 +3,17 @@ import FluentButton from './FluentButton'
 
 const RegisterFluentEffect = () => {
 
-    useEffect(()=>{
-        <FluentButton />
+  useEffect(()=>{
+    <FluentButton />
 
-        document.querySelectorAll('[data-fluent-component]').forEach(element => {
-            new FluentButton(element, {
-              outerReveal: true
-            });
-          });
-    })
+    document.querySelectorAll('[data-fluent-component]').forEach(element => {
+      new FluentButton(element, {
+        outerReveal: true
+      });
+    });
+  })
 
-    return ''
-
+  return ''
 }
 
 export default RegisterFluentEffect

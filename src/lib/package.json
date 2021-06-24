@@ -25,6 +25,7 @@
     "ui-design",
     "web-app"
   ],
+  "types": "./index.d.ts",
   "author": "Vivek Verma",
   "license": "MIT",
   "peerDependencies": {
