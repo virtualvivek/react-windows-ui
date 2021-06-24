@@ -1,2 +1,1 @@
-*.d.ts linguist-detectable=false
-*.d.ts linguist-language=ts
+*.d.ts linguist-language=TypeScript
