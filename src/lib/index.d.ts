@@ -1,14 +1,13 @@
-import React from 'react'
-
-import NavBar from './src/components/NavBar/NavBar'
-import NavBarLink from './src/components/NavBar/NavBarLink'
-import NavBarLinkFluent from './src/components/NavBar/NavBarLinkFluent'
-import NavBarLinkUser from './src/components/NavBar/NavBarLinkUser'
-import NavPageContainer from './src/components/NavBar/NavPageContainer'
-import NavPageContainerInner from './src/components/NavBar/NavPageContainerInner'
-import NavPageContainerRight from './src/components/NavBar/NavPageContainerRight'
-import NavSearchBox from './src/components/NavBar/NavSearchBox'
-import TransitionToLeft from './src/components/NavBar/Transition/TransitionToLeft'
+import {
+    NavBar,
+    NavBarLink,
+    NavBarLinkFluent,
+    NavBarLinkUser,
+    NavPageContainer,
+    NavPageContainerRight,
+    NavPageContainerInner,
+    NavSearchBox,
+    TransitionToLeft } from './src/components/NavBar'
 
 import Accordion from './src/components/Accordion'
 import AvatarView from './src/components/AvatarView'
@@ -63,7 +62,6 @@ export {
     Button,
     ButtonIcon,
     ButtonFluent,
-    ButtonIcon,
     Card,
     Checkbox,
     CommandBar,
