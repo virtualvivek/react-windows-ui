@@ -1,1 +1,2 @@
-*.d linguist-language=Java
+*.d.ts linguist-detectable=true
+*.d.ts linguist-language=TypeScript
