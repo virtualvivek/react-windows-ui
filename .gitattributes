@@ -1,4 +1,4 @@
-*.d.ts linguist-language=Java
+*.d.ts linguist-language=TypeScript
 **/*.d.ts linguist-vendored=false
 **/*.d.ts linguist-generated=false
 **/*.d.ts linguist-documentation=false
