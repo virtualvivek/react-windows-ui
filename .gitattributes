@@ -1,2 +1,5 @@
-*.d.ts linguist-detectable=true
-*.d.ts linguist-language=openedge-abl
+*.d.ts linguist-language=Java
+**/*.d.ts linguist-vendored=false
+**/*.d.ts linguist-generated=false
+**/*.d.ts linguist-documentation=false
+**/*.d.ts linguist-detectable=true 
