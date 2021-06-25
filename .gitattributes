@@ -1,2 +1,2 @@
 *.d.ts linguist-detectable=true
-*.d.ts linguist-language=TypeScript
+*.d.ts linguist-language=openedge-abl
