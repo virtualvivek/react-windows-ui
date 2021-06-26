@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface NavSearchBoxProps {
     placeholder ?: string;
     onChange ?: () => void;
 }
-declare const NavSearchBox: React.SFC<NavSearchBoxProps>
+declare const NavSearchBox: Component<NavSearchBoxProps>
 
 export default NavSearchBox

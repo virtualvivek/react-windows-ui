@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface ListItemProps {
     to ?: string;
@@ -10,6 +10,6 @@ export interface ListItemProps {
     subtitle ?: string;
     info ?: string;
 }
-declare const ListItem: React.SFC<ListItemProps>
+declare const ListItem: Component<ListItemProps>
 
 export default ListItem

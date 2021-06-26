@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface HeaderFixedContainerProps {
     children ?: ReactNode;
     zIndex ?: number;
 }
-declare const HeaderFixedContainer: React.SFC<HeaderFixedContainerProps>
+declare const HeaderFixedContainer: Component<HeaderFixedContainerProps>
 
 export default HeaderFixedContainer

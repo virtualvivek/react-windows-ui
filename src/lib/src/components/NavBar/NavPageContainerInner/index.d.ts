@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface NavPageContainerInnerProps {
     children ?: ReactNode;
 }
-declare const NavPageContainerInner: React.SFC<NavPageContainerInnerProps>
+declare const NavPageContainerInner: Component<NavPageContainerInnerProps>
 
 export default NavPageContainerInner

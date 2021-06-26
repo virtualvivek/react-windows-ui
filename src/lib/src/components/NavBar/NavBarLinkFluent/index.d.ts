@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface NavBarLinkFluentProps {
     showBadge ?: number | string;
@@ -7,6 +7,6 @@ export interface NavBarLinkFluentProps {
     to ?: string;
     icon ?: ReactNode;
 }
-declare const NavBarLinkFluent: React.SFC<NavBarLinkFluentProps>
+declare const NavBarLinkFluent: Component<NavBarLinkFluentProps>
 
 export default NavBarLinkFluent

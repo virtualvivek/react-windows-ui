@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface AlertProps {
     isVisible ?: boolean;
@@ -8,6 +8,6 @@ export interface AlertProps {
     setTheme ?: string;
     onBackdropPress ?: React.MouseEventHandler<HTMLButtonElement>;
 }
-declare const Alert: React.SFC<AlertProps>
+declare const Alert: Component<AlertProps>
 
 export default Alert

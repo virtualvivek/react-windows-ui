@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface LinkCompoundFluentProps {
     to ?: string;
@@ -9,6 +9,6 @@ export interface LinkCompoundFluentProps {
     display ?: string;
     onMouseOver ?: Function;
 }
-declare const LinkCompoundFluent: React.SFC<LinkCompoundFluentProps>
+declare const LinkCompoundFluent: Component<LinkCompoundFluentProps>
 
 export default LinkCompoundFluent

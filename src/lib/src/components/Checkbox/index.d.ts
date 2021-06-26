@@ -7,6 +7,6 @@ export interface CheckboxProps {
     tooltip ?: string;
     onChange ?: Function;
 }
-declare const Checkbox: React.SFC<CheckboxProps>
+declare const Checkbox: Component<CheckboxProps>
 
 export default Checkbox

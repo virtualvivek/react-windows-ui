@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface AccordionProps {
     width ?: number | string;
@@ -8,6 +8,6 @@ export interface AccordionProps {
     title ?: string;
     children ?: ReactNode;
 }
-declare const Accordion: React.SFC<AccordionProps>
+declare const Accordion: Component<AccordionProps>
 
 export default Accordion

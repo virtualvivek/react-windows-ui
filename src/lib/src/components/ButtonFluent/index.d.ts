@@ -6,6 +6,6 @@ export interface ButtonFluentProps {
     onSubmit ?: Function;
     onClick ?: Function;
 }
-declare const ButtonFluent: React.SFC<ButtonFluentProps>
+declare const ButtonFluent: Component<ButtonFluentProps>
 
 export default ButtonFluent

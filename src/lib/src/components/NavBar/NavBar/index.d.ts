@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface NavBarProps {
     title ?: string;
@@ -8,6 +8,6 @@ export interface NavBarProps {
     goBack ?: () => void;
     children ?: ReactNode;
 }
-declare const NavBar: React.SFC<NavBarProps>
+declare const NavBar: Component<NavBarProps>
 
 export default NavBar

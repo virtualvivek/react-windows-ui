@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface CommandBarProps {
     position ?: string;
@@ -8,6 +8,6 @@ export interface CommandBarProps {
     showDropShadow ?: boolean;
     children ?: ReactNode;
 }
-declare const CommandBar: React.SFC<CommandBarProps>
+declare const CommandBar: Component<CommandBarProps>
 
 export default CommandBar

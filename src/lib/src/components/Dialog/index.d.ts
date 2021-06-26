@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface DialogProps {
     isVisible ?: boolean;
@@ -6,6 +6,6 @@ export interface DialogProps {
     showDropShadow ?: boolean;
     children ?: ReactNode;
 }
-declare const Dialog: React.SFC<DialogProps>
+declare const Dialog: Component<DialogProps>
 
 export default Dialog

@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface ProgressBarProps {
     height ?: number | string;
@@ -10,6 +10,6 @@ export interface ProgressBarProps {
     subtitle ?: string;
     tooltip ?: string;
 }
-declare const ProgressBar: React.SFC<ProgressBarProps>
+declare const ProgressBar: Component<ProgressBarProps>
 
 export default ProgressBar

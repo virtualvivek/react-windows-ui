@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface ButtonIconProps {
     width ?: number | string;
@@ -9,6 +9,6 @@ export interface ButtonIconProps {
     icon ?: ReactNode;
     onClick ?: Function
 }
-declare const ButtonIcon: React.SFC<ButtonIconProps>
+declare const ButtonIcon: Component<ButtonIconProps>
 
 export default ButtonIcon

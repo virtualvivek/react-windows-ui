@@ -5,6 +5,6 @@ export interface InputSearchSuggestionProps {
     tooltip ?: string;
     data ?: string[];
 }
-declare const InputSearchSuggestion: React.SFC<InputSearchSuggestionProps>
+declare const InputSearchSuggestion: Component<InputSearchSuggestionProps>
 
 export default InputSearchSuggestion

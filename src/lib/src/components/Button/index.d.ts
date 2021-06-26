@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface ButtonProps {
     width ?: number | string;
@@ -12,6 +12,6 @@ export interface ButtonProps {
     onSubmit ?: Function;
     onClick ?: Function;
 }
-declare const Button: React.SFC<ButtonProps>
+declare const Button: Component<ButtonProps>
 
 export default Button

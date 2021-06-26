@@ -8,6 +8,6 @@ export interface SwitchProps {
     tooltip ?: string;
     onChange ?: () => void;
 }
-declare const Switch: React.SFC<SwitchProps>
+declare const Switch: Component<SwitchProps>
 
 export default Switch

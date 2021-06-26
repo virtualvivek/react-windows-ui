@@ -5,6 +5,6 @@ export interface InputDateProps {
     onChange ?: Function;
     tooltip ?: string;
 }
-declare const InputDate: React.SFC<InputDateProps>
+declare const InputDate: Component<InputDateProps>
 
 export default InputDate

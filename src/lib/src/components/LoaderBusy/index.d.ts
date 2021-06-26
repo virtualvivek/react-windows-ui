@@ -10,6 +10,6 @@ export interface LoaderBusyProps {
     display ?: string;
     title ?: string;
 }
-declare const LoaderBusy: React.SFC<LoaderBusyProps>
+declare const LoaderBusy: Component<LoaderBusyProps>
 
 export default LoaderBusy

@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface ColorPickerItemProps {
     name ?: string;
@@ -10,6 +10,6 @@ export interface ColorPickerItemProps {
     image ?: ReactNode;
     onChange ?: Function;
 }
-declare const ColorPickerItem: React.SFC<ColorPickerItemProps>
+declare const ColorPickerItem: Component<ColorPickerItemProps>
 
 export default ColorPickerItem

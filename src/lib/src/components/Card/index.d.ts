@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface CardProps {
     maxWidth ?: number | string;
@@ -9,6 +9,6 @@ export interface CardProps {
     hoverable ?: boolean;
     focusable ?: boolean;
 }
-declare const Card: React.SFC<CardProps>
+declare const Card: Component<CardProps>
 
 export default Card

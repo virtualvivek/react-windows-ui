@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface ImageViewProps {
     width?: number | string;
@@ -16,6 +16,6 @@ export interface ImageViewProps {
     subtitle ?: string;
     tooltip ?: string;
 }
-declare const ImageView: React.SFC<ImageViewProps>
+declare const ImageView: Component<ImageViewProps>
 
 export default ImageView

@@ -5,6 +5,6 @@ export interface MenuBarProps {
     label ?: string;
     data ?: string[];
 }
-declare const MenuBar: React.SFC<MenuBarProps>
+declare const MenuBar: Component<MenuBarProps>
 
 export default MenuBar

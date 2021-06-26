@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface ViewProps {
     isVisible ?: boolean;
@@ -6,6 +6,6 @@ export interface ViewProps {
     children ?: ReactNode;
     onClick ?: () => void;
 }
-declare const View: React.SFC<ViewProps>
+declare const View: Component<ViewProps>
 
 export default View

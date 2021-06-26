@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface NavBarLinkUserProps {
     text ?: string;
@@ -7,6 +7,6 @@ export interface NavBarLinkUserProps {
     exact ?: boolean;
     to ?: string;
 }
-declare const NavBarLinkUser: React.SFC<NavBarLinkUserProps>
+declare const NavBarLinkUser: Component<NavBarLinkUserProps>
 
 export default NavBarLinkUser

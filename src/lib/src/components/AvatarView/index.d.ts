@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface AvatarViewProps {
     width ?: number | string;
@@ -12,6 +12,6 @@ export interface AvatarViewProps {
     src ?: ReactNode;
     onLoad ?: Function;
 }
-declare const AvatarView: React.SFC<AvatarViewProps>
+declare const AvatarView: Component<AvatarViewProps>
 
 export default AvatarView

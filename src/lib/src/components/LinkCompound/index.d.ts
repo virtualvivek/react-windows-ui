@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, Component } from 'react'
 
 export interface LinkCompoundProps {
     to ?: string;
@@ -13,6 +13,6 @@ export interface LinkCompoundProps {
     onMouseOver ?: Function;
     focused ?: boolean;
 }
-declare const LinkCompound: React.SFC<LinkCompoundProps>
+declare const LinkCompound: Component<LinkCompoundProps>
 
 export default LinkCompound
