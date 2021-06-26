@@ -8,6 +8,6 @@ export interface NavBarProps {
     goBack ?: () => void;
     children ?: ReactNode;
 }
-declare const NavBar: React.SFC<NavBarProps>
+declare const NavBar: React.FC<NavBarProps>
 
 export default NavBar

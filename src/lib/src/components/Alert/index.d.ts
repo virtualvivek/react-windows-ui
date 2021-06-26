@@ -8,6 +8,6 @@ export interface AlertProps {
     setTheme ?: string;
     onBackdropPress ?: React.MouseEventHandler<HTMLButtonElement>;
 }
-declare const Alert: React.SFC<AlertProps>
+declare const Alert: React.FC<AlertProps>
 
 export default Alert

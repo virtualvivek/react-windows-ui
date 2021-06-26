@@ -7,6 +7,6 @@ export interface NavBarLinkUserProps {
     exact ?: boolean;
     to ?: string;
 }
-declare const NavBarLinkUser: React.SFC<NavBarLinkUserProps>
+declare const NavBarLinkUser: React.FC<NavBarLinkUserProps>
 
 export default NavBarLinkUser

@@ -4,6 +4,6 @@ export interface LoaderBarProps {
     isLoading ?: boolean;
     setTheme ?: string;
 }
-declare const LoaderBar: React.SFC<LoaderBarProps>
+declare const LoaderBar: React.FC<LoaderBarProps>
 
 export default LoaderBar

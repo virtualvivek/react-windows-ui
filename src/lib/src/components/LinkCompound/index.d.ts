@@ -13,6 +13,6 @@ export interface LinkCompoundProps {
     onMouseOver ?: Function;
     focused ?: boolean;
 }
-declare const LinkCompound: React.SFC<LinkCompoundProps>
+declare const LinkCompound: React.FC<LinkCompoundProps>
 
 export default LinkCompound

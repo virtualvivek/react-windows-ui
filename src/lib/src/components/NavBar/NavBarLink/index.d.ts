@@ -7,6 +7,6 @@ export interface NavBarLinkProps {
     to ?: string;
     icon ?: ReactNode;
 }
-declare const NavBarLink: React.SFC<NavBarLinkProps>
+declare const NavBarLink: React.FC<NavBarLinkProps>
 
 export default NavBarLink

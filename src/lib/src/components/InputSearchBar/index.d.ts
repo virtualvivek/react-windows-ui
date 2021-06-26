@@ -5,6 +5,6 @@ export interface InputSearchBarProps {
     onSubmit ?: Function;
     tooltip ?: string;
 }
-declare const InputSearchBar: React.SFC<InputSearchBarProps>
+declare const InputSearchBar: React.FC<InputSearchBarProps>
 
 export default InputSearchBar

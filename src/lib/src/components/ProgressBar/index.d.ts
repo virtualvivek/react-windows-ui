@@ -10,6 +10,6 @@ export interface ProgressBarProps {
     subtitle ?: string;
     tooltip ?: string;
 }
-declare const ProgressBar: React.SFC<ProgressBarProps>
+declare const ProgressBar: React.FC<ProgressBarProps>
 
 export default ProgressBar

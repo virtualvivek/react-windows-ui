@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 export interface LoaderBusyProps {
     size ?: string;
@@ -10,6 +10,6 @@ export interface LoaderBusyProps {
     display ?: string;
     title ?: string;
 }
-declare const LoaderBusy: React.SFC<LoaderBusyProps>
+declare const LoaderBusy: FC<LoaderBusyProps>
 
 export default LoaderBusy

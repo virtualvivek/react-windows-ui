@@ -16,6 +16,6 @@ export interface ImageViewProps {
     subtitle ?: string;
     tooltip ?: string;
 }
-declare const ImageView: React.SFC<ImageViewProps>
+declare const ImageView: React.FC<ImageViewProps>
 
 export default ImageView

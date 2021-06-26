@@ -12,6 +12,6 @@ export interface ButtonProps {
     onSubmit ?: Function;
     onClick ?: Function;
 }
-declare const Button: React.SFC<ButtonProps>
+declare const Button: React.FC<ButtonProps>
 
 export default Button

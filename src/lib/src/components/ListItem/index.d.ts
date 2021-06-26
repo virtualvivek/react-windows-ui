@@ -10,6 +10,6 @@ export interface ListItemProps {
     subtitle ?: string;
     info ?: string;
 }
-declare const ListItem: React.SFC<ListItemProps>
+declare const ListItem: React.FC<ListItemProps>
 
 export default ListItem

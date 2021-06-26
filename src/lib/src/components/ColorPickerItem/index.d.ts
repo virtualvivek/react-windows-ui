@@ -10,6 +10,6 @@ export interface ColorPickerItemProps {
     image ?: ReactNode;
     onChange ?: Function;
 }
-declare const ColorPickerItem: React.SFC<ColorPickerItemProps>
+declare const ColorPickerItem: React.FC<ColorPickerItemProps>
 
 export default ColorPickerItem

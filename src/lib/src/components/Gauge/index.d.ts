@@ -12,6 +12,6 @@ export interface GaugeProps {
     scale ?: number;
     type ?: string;
 }
-declare const Gauge: React.SFC<GaugeProps>
+declare const Gauge: React.FC<GaugeProps>
 
 export default Gauge

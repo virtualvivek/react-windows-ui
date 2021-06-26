@@ -8,6 +8,6 @@ export interface CommandBarProps {
     showDropShadow ?: boolean;
     children ?: ReactNode;
 }
-declare const CommandBar: React.SFC<CommandBarProps>
+declare const CommandBar: React.FC<CommandBarProps>
 
 export default CommandBar

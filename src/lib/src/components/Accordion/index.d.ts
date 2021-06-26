@@ -8,6 +8,6 @@ export interface AccordionProps {
     title ?: string;
     children ?: ReactNode;
 }
-declare const Accordion: React.SFC<AccordionProps>
+declare const Accordion: React.FC<AccordionProps>
 
 export default Accordion

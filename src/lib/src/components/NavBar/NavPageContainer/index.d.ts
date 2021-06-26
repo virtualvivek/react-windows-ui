@@ -5,6 +5,6 @@ export interface NavPageContainerProps {
     hasPadding ?: boolean;
     children ?: ReactNode;
 }
-declare const NavPageContainer: React.SFC<NavPageContainerProps>
+declare const NavPageContainer: React.FC<NavPageContainerProps>
 
 export default NavPageContainer

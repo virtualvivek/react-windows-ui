@@ -6,6 +6,6 @@ export interface DialogProps {
     showDropShadow ?: boolean;
     children ?: ReactNode;
 }
-declare const Dialog: React.SFC<DialogProps>
+declare const Dialog: React.FC<DialogProps>
 
 export default Dialog

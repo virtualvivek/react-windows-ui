@@ -10,6 +10,6 @@ export interface SliderBarProps {
     onChange ?: () => void;
     tooltip ?: string;
 }
-declare const SliderBar: React.SFC<SliderBarProps>
+declare const SliderBar: React.FC<SliderBarProps>
 
 export default SliderBar

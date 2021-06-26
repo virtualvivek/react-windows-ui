@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 export interface SwitchDayNightProps {
     //no props
     //todo - add onChange prop
 }
-declare const SwitchDayNight: React.SFC<SwitchDayNightProps>
+declare const SwitchDayNight: FC<SwitchDayNightProps>
 
 export default SwitchDayNight

@@ -8,6 +8,6 @@ export interface RadioButtonProps {
     tooltip ?: string;
     onChange ?: () => void;
 }
-declare const RadioButton: React.SFC<RadioButtonProps>
+declare const RadioButton: React.FC<RadioButtonProps>
 
 export default RadioButton

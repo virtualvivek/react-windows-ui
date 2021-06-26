@@ -9,6 +9,6 @@ export interface InputTextProps {
     tooltip ?: string;
     onChange ?: Function;
 }
-declare const InputText: React.SFC<InputTextProps>
+declare const InputText: React.FC<InputTextProps>
 
 export default InputText

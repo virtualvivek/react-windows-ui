@@ -9,6 +9,6 @@ export interface StickyHeaderProps {
     lineHeight ?: number;
     zIndex ?: number;
 }
-declare const StickyHeader: React.SFC<StickyHeaderProps>
+declare const StickyHeader: React.FC<StickyHeaderProps>
 
 export default StickyHeader

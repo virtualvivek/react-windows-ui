@@ -4,6 +4,6 @@ export interface HeaderFixedContainerProps {
     children ?: ReactNode;
     zIndex ?: number;
 }
-declare const HeaderFixedContainer: React.SFC<HeaderFixedContainerProps>
+declare const HeaderFixedContainer: React.FC<HeaderFixedContainerProps>
 
 export default HeaderFixedContainer

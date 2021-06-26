@@ -9,6 +9,6 @@ export interface ButtonIconProps {
     icon ?: ReactNode;
     onClick ?: Function
 }
-declare const ButtonIcon: React.SFC<ButtonIconProps>
+declare const ButtonIcon: React.FC<ButtonIconProps>
 
 export default ButtonIcon

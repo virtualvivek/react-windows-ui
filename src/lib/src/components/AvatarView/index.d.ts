@@ -12,6 +12,6 @@ export interface AvatarViewProps {
     src ?: ReactNode;
     onLoad ?: Function;
 }
-declare const AvatarView: React.SFC<AvatarViewProps>
+declare const AvatarView: React.FC<AvatarViewProps>
 
 export default AvatarView

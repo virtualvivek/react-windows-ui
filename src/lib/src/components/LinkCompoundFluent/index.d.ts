@@ -9,6 +9,6 @@ export interface LinkCompoundFluentProps {
     display ?: string;
     onMouseOver ?: Function;
 }
-declare const LinkCompoundFluent: React.SFC<LinkCompoundFluentProps>
+declare const LinkCompoundFluent: React.FC<LinkCompoundFluentProps>
 
 export default LinkCompoundFluent

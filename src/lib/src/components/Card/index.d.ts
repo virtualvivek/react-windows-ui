@@ -9,6 +9,6 @@ export interface CardProps {
     hoverable ?: boolean;
     focusable ?: boolean;
 }
-declare const Card: React.SFC<CardProps>
+declare const Card: React.FC<CardProps>
 
 export default Card
