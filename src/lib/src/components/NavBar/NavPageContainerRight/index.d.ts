@@ -1,7 +1,7 @@
 import React, { ReactNode, Component } from 'react'
 
 export interface NavPageContainerRightProps {
-    children ?: ReactNode;
+    children?: ReactNode;
 }
 declare const NavPageContainerRight: Component<NavPageContainerRightProps>
 

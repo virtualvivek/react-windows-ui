@@ -1,7 +1,7 @@
 import React from 'react'
 
 export interface SelectBoxProps {
-    data ?: string[];
+    data?: string[];
 }
 declare const SelectBox: Component<SelectBoxProps>
 

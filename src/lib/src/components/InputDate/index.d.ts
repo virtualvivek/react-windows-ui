@@ -1,9 +1,9 @@
 import React from 'react'
 
 export interface InputDateProps {
-    placeholder ?: string;
-    onChange ?: Function;
-    tooltip ?: string;
+    placeholder?: string;
+    onChange?: Function;
+    tooltip?: string;
 }
 declare const InputDate: Component<InputDateProps>
 
