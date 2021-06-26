@@ -51,6 +51,7 @@ const AvatarView = (props) => {
         }}
         // onLoad={() => setLoad(true)}
         onLoad={() => { handleOnLoad(); props.onLoad() }}
+        onError={() => { handleOnLoad(); props.onError() }}
       />
 
       { props.showDropShadow ? renderDropShadow() : "" }
@@ -64,7 +65,8 @@ AvatarView.defaultProps = {
   isLoading: false,
   objectFit: 'cover',
   alt: "avatar image",
-  onLoad: () => {}
+  onLoad: () => {},
+  onError: () => {}
 }
 
 export default AvatarView

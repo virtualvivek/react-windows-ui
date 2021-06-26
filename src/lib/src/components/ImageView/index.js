@@ -41,6 +41,7 @@ const ImageView = (props) => {
         }}
         // onLoad={() => setLoad(true)}
         onLoad={() => { handleOnLoad(); props.onLoad() }}
+        onError={() => { handleOnLoad(); props.onError() }}
       />
       <div className="app-image-words">
         <h1>{props.title}</h1>
@@ -61,6 +62,7 @@ ImageView.defaultProps = {
   alt : "image",
   objectFit : 'cover',
   onLoad: () => {},
+  onError: () => {}
 }
 
 export default ImageView
