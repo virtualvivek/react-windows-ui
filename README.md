@@ -94,6 +94,17 @@ $ npm install
 $ npm start
 ```
 
+<h1 align="center">Windows 11 Styles.css</h1>
+<p align="center"><img src="markdown/md_promo_w11.png" width="500" /></p>
+
+```js
+// include windows 11 styles at some point, probably during your bootstraping
+...
+import 'react-windows-ui/dist/react-windows-ui-sunvalley.min.css'
+...
+```
+
+
 ## ❂ Links
 
 <table>
