@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { NavPageContainer, LinkCompound,
-         LinkCompoundFluent, RegisterFluentEffect,Accordion } from '../../../lib'
+         LinkCompoundFluent, RegisterFluentEffect,Accordion,TableView } from '../../../lib'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'         
 import { LinkDefaultCode,LinkCompoundCode,LinkCompoundBorderCode,
@@ -20,6 +20,34 @@ const Links = () => {
 
     {/* Register the fluent effect before using LinkCompoundFluent */}
     <RegisterFluentEffect/>
+
+
+
+
+      <TableView 
+        columns={
+          ['apple','#'],
+          ['apple','#']
+        }
+        data={[
+          [
+            'Yed',
+            124689325,
+          ],
+          [
+            'Yellow',
+            124689389,
+          ],
+          [
+            'Aellow',
+            124689381,
+          ],
+          [
+            'Bellow',
+            124689388,
+          ]
+        ]}
+      />
 
 
       <Link to="#" className="app-link">Default App Link</Link>

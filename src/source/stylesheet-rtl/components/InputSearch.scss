@@ -1,0 +1,14 @@
+.app-search-bar, .app-search-box {
+    flex-direction: row-reverse;
+
+    .app-input-search {
+        direction: rtl;
+        padding-left: 35px;
+        padding-right: 20px;
+    }
+}
+.app-search-box {
+    &::after {
+        margin-right: -29px;
+    }
+}

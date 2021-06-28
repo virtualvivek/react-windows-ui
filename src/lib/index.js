@@ -44,6 +44,7 @@ import StickyHeader from './src/components/StickyHeader'
 import Switch from './src/components/Switch'
 import SwitchDayNight from './src/components/SwitchDayNight'
 import SystemThemeFollower from './src/components/utils/SystemThemeFollower'
+import TableView from './src/components/TableView'
 import ThemeManager from './src/components/utils/ThemeManager'
 import View from './src/components/View'
 
@@ -95,6 +96,7 @@ export {
     Switch,
     SwitchDayNight,
     SystemThemeFollower,
+    TableView,
     ThemeManager,
     View
 }
