@@ -1,5 +1,6 @@
 .app-nav-wrap .app-nav-toggle {
     padding: 0 25px;
+    min-width: max-content;
 
     &:hover {
         @extend .background-color-link-bg-hover;
