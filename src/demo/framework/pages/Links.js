@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { NavPageContainer, LinkCompound,
-         LinkCompoundFluent, RegisterFluentEffect,Accordion,TableView } from '../../../lib'
+         LinkCompoundFluent, RegisterFluentEffect,Accordion,TableView , ButtonIcon} from '../../../lib'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'         
 import { LinkDefaultCode,LinkCompoundCode,LinkCompoundBorderCode,
@@ -24,15 +24,29 @@ const Links = () => {
 
 
 
-      <TableView 
-        columns={
-          ['apple','#'],
-          ['apple','#']
-        }
-        data={[
+      <TableView
+        columns={[
+          {
+            'title':'Apple'
+          },
+          {
+            'title':'Orange',
+            'showSortIcon': true
+          },
+          {
+            'title':'Actions',
+            'showSortIcon': false
+          }
+        ]}
+        rows={[
           [
             'Yed',
             124689325,
+            <ButtonIcon
+              icon={<i className="icons10-trash"></i>}
+              onClick={() => {}}
+              tooltip="Delete Row"
+            />
           ],
           [
             'Yellow',

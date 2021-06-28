@@ -1,6 +1,6 @@
 import {useEffect} from 'react'
-var setAppDark = require('./ThemeManager').setAppDark
-var setAppLight = require('./ThemeManager').setAppLight
+var setAppDark = require('../ThemeManager').setAppDark
+var setAppLight = require('../ThemeManager').setAppLight
 
 const SystemThemeFollower = () => {
 
