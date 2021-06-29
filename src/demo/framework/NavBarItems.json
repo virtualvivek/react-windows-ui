@@ -63,10 +63,10 @@
         "showBadge": false
     },
     {
-        "to": "/themes",
+        "to": "/tables",
         "exact": false,
-        "text": "Themes",
-        "icon": "icons10-color-palette",
+        "text": "Tables",
+        "icon": "icons10-bar-chart",
         "showBadge": false
     },
     {
@@ -81,6 +81,13 @@
         "exact": false,
         "text": "Icons",
         "icon": "icons10-deathly-hallows",
+        "showBadge": false
+    },
+    {
+        "to": "/themes",
+        "exact": false,
+        "text": "Themes",
+        "icon": "icons10-color-palette",
         "showBadge": false
     }
 ]

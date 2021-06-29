@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { NavPageContainer, LinkCompound,
-         LinkCompoundFluent, RegisterFluentEffect,Accordion,TableView , ButtonIcon} from '../../../lib'
+         LinkCompoundFluent, RegisterFluentEffect,Accordion } from '../../../lib'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'         
 import { LinkDefaultCode,LinkCompoundCode,LinkCompoundBorderCode,
@@ -20,48 +20,6 @@ const Links = () => {
 
     {/* Register the fluent effect before using LinkCompoundFluent */}
     <RegisterFluentEffect/>
-
-
-
-
-      <TableView
-        columns={[
-          {
-            'title':'Apple'
-          },
-          {
-            'title':'Orange',
-            'showSortIcon': true
-          },
-          {
-            'title':'Actions',
-            'showSortIcon': false
-          }
-        ]}
-        rows={[
-          [
-            'Yed',
-            124689325,
-            <ButtonIcon
-              icon={<i className="icons10-trash"></i>}
-              onClick={() => {}}
-              tooltip="Delete Row"
-            />
-          ],
-          [
-            'Yellow',
-            124689389,
-          ],
-          [
-            'Aellow',
-            124689381,
-          ],
-          [
-            'Bellow',
-            124689388,
-          ]
-        ]}
-      />
 
 
       <Link to="#" className="app-link">Default App Link</Link>

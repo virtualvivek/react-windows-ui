@@ -28,9 +28,10 @@ const TableView = (props) => {
         style={{
           fontSize: props.headerFontSize
         }}>
-        <tr className="app-table-tr">      
+        <tr className="app-table-tr">
         {columns.map((item, index) => (
           <th
+            className={ item.sortable === false ? 'no-sortable' : '' }
             align="left"
             key={index}
             onClick={() => alphaOrder(index)}>
@@ -43,8 +44,8 @@ const TableView = (props) => {
         style={{
           fontSize: props.rowFontSize
         }}>
-        {rows.map((item) => (
-          <Cell rows={item}/>
+        {rows.map((item, index) => (
+          <Cell rows={item} key={index+item}/>
         ))}
       </tbody>
     </table>

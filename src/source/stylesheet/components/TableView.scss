@@ -7,6 +7,9 @@
         &:hover {
             background-color: var(--color_light_grey_alpha);
         }
+        &.no-sortable {
+            pointer-events: none;
+        }
     }
     td {
         min-width: 100px;

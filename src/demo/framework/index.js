@@ -10,10 +10,11 @@ import Texts from './pages/Texts'
 import Buttons from './pages/Buttons'
 import Links from './pages/Links'
 import ProgressControls from './pages/ProgressControls'
-import Themes from './pages/Themes'
+import Tables from './pages/Tables'
 import Gauges from './pages/Gauges'
 import Lists from './pages/Lists'
 import Icons from './pages/Icons'
+import Themes from './pages/Themes'
 import Images from './pages/Images'
 import Dialogs from './pages/Dialogs'
 
@@ -135,10 +136,11 @@ class Framework extends React.Component {
         <Route path='/dialogs' component={Dialogs} />
         <Route path='/links' component={Links} />
         <Route path='/progress' component={ProgressControls} />
-        <Route path='/themes' component={Themes} />
+        <Route path='/tables' component={Tables} />
         <Route path='/gauges' component={Gauges} />
         <Route path='/lists' component={Lists} />
         <Route path='/icons' component={Icons} />
+        <Route path='/themes' component={Themes} />
         
         <Route path='/AboutLayout' component={AboutLayout} />
         <Route path='/BlogLayout' component={BlogLayout} />

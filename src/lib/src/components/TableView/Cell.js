@@ -8,16 +8,15 @@ const Cell = (props) => {
     <tr>
       {rows_data.map((item, index) => (
         React.isValidElement(item) ?
-          <td style={{padding:0}}
-            key={index}>
+          <td key={index+item} style={{padding:0}}>
             {item}
           </td>
           :
-          <td
-            key={index}>
+          <td key={index+item}>
             {item}
           </td>
       ))}
+      
     </tr>
   )
 }
