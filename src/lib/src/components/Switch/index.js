@@ -16,7 +16,7 @@ const showData = () => {
       title={props.tooltip}
       style={
         props.textOn === "" ? { marginRight: 0 } : { marginRight: '' }
-      }>
+    }>
       <input
         type="checkbox"
         defaultChecked={props.checked}

@@ -21,13 +21,9 @@ const TableView = (props) => {
     }
   }
 
-
   return (
     <table className="app-table-view">
-      <thead
-        style={{
-          fontSize: props.headerFontSize
-        }}>
+      <thead style={{ fontSize: props.headerFontSize }}>
         <tr className="app-table-tr">
         {columns.map((item, index) => (
           <th
@@ -35,17 +31,18 @@ const TableView = (props) => {
             align="left"
             key={index}
             onClick={() => alphaOrder(index)}>
-            {item.title} {item.showSortIcon === false ? '' : <i className="icons10-sort"></i>}
+            {item.title} {
+              item.showSortIcon === false ? ''
+            : tappedColumn === index ? <i className="icons10-arrow-up"></i>
+            : <i className="icons10-arrow-down"></i>
+            }
           </th>
         ))}
         </tr>
       </thead>
-      <tbody
-        style={{
-          fontSize: props.rowFontSize
-        }}>
+      <tbody style={{ fontSize: props.rowFontSize }}>
         {rows.map((item, index) => (
-          <Cell rows={item} key={index+item}/>
+          <Cell rows={item} key={index+item} />
         ))}
       </tbody>
     </table>

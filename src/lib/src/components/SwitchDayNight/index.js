@@ -9,12 +9,8 @@ const SwitchDayNight = () => {
   const toggleDayNight = () => {
     let iswitch = inputRef.current
 
-    if(iswitch.checked) {
-      setAppDark()
-    }
-    else{
-      setAppLight()
-    }
+    if(iswitch.checked) { setAppDark() }
+    else { setAppLight() }
   }
 
   return (
@@ -24,7 +20,7 @@ const SwitchDayNight = () => {
         onChange={toggleDayNight}
         ref={inputRef}
         id="app-day-night-switch"
-        />
+      />
       <div
         dataoff="Day"
         dataon="Night">

@@ -12,10 +12,10 @@ class Tables extends React.Component {
   }
 
   componentDidMount(){
-    this.createData()
+    this.appendRowItem()
   }
 
-  createData = () => {
+  appendRowItem = () => {
     const arr = [];
 
     if(TableData[0][2] === undefined) {
@@ -35,7 +35,7 @@ class Tables extends React.Component {
     }
   }
 
-  
+
   handleInputChange = event => {
     const query = event.target.value
     this.setState(prevState => {
