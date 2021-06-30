@@ -1,16 +1,16 @@
 import React from 'react'
-import { NavPageContainer, TableView, InputSearchBox, ButtonIcon } from '../../../lib'
+import { NavPageContainer, TableView, InputSearchBox, ButtonIcon, Accordion } from '../../../lib'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import TableData from './data/tablesData.json'
+import { TableCode, TableDataCode } from './codes/tables'
 
 class Tables extends React.Component {
 
-  constructor() {
-    super();
-    this.state = {
-      data_i: TableData,
-        data: TableData
-    }
-  }
+  state={
+    data_initial: TableData,
+    data: TableData
+  };
 
   componentDidMount(){
     this.appendRowItem()
@@ -40,7 +40,7 @@ class Tables extends React.Component {
   handleInputChange = (event) => {
     const query = event.target.value
     this.setState(prevState => {
-      const data = prevState.data_i.filter(element => {
+      const data = prevState.data_initial.filter(element => {
         return element[0].toLowerCase().includes(query.toLowerCase())
       })
       return {
@@ -73,6 +73,29 @@ class Tables extends React.Component {
         ]}
         rows={this.state.data}
       />
+
+      <br/>
+      <Accordion title="💻 Code - TableView" focused width={'80%'}>
+        <SyntaxHighlighter
+          language="javascript"
+          showLineNumbers
+          style={vscDarkPlus}
+          className="code">
+          {TableCode}
+        </SyntaxHighlighter>
+      </Accordion>
+
+      <br/>
+      <h3>tablesData.JSON</h3>
+      <Accordion title="💻 Code - Table Data" focused width={'80%'}>
+        <SyntaxHighlighter
+          language="javascript"
+          showLineNumbers
+          style={vscDarkPlus}
+          className="code">
+          {TableDataCode}
+        </SyntaxHighlighter>
+      </Accordion>
 
     </NavPageContainer>
   )

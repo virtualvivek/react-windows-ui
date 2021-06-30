@@ -4,6 +4,8 @@ const AvatarViewCode =
  showDropShadow={true}
  isLoading={false}
  size="large"
+ //onLoad={() => {}}
+ //onError={() => {}}
  //size="medium"
  //size="small"
  //tooltip="tooltip title"
@@ -19,6 +21,8 @@ const ImageViewCode =
  title="Image Title"
  subtitle="Image Subtitle"
  isLoading={false}
+ //onLoad={() => {}}
+ //onError={() => {}} 
  //tooltip="tooltip title"
 />`;
 

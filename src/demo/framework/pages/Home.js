@@ -4,8 +4,8 @@ import { NavPageContainer, ColorPickerItem, Button } from '../../../lib'
 import ReactIcon from './css/home/ReactIcon'
 import NpmIcon from './css/home/npmIcon'
 import GithubIcon from './css/home/githubIcon'
-import Img10 from '../../img/win10picker.jpg'
-import Img11 from '../../img/win11picker.jpg'
+// import Img10 from '../../img/win10picker.jpg'
+// import Img11 from '../../img/win11picker.jpg'
 import './css/home.css'
 
 
@@ -14,58 +14,26 @@ class Home extends React.Component {
 
   constructor() {
     super();
-    
     this.state = {
       stylesheet: 'win10'
-  }
-  }
-
-  componentDidMount() {
-    if(this.state.stylesheet === 'win10') {
-      require('../../../lib/dist/react-windows-ui.min.css');
-   } else if(this.state.stylesheet === 'win11') {
-      require('../../../lib/dist/react-windows-ui-sunvalley.min.css');
-   }
+    }
   }
 
-  componentDidUpdate() {
-    if(this.state.stylesheet === 'win10') {
-      delete [require.resolve('../../../lib/dist/react-windows-ui-sunvalley.min.css')]
-      require('../../../lib/dist/react-windows-ui.min.css')
-   } else {
-      require('../../../lib/dist/react-windows-ui-sunvalley.min.css')
-   }
-  }
-
-  // ChangeTheme10 = () => {
-  //   var head = document.head;
-  //   var link = document.createElement("link");
-
-  //   link.type = "text/css";
-  //   link.rel = "stylesheet";
-  //   link.href = "./lib/dist/react-windows-ui.min.css";
-  //   link.id = "app-stylesheet-id";
-
-  //   var meta = document.getElementById('app-stylesheet-id');
-  //   if(meta){meta.parentNode.removeChild(meta);}
-    
-
-  //   head.appendChild(link);
+  // componentDidMount() {
+  //   if(this.state.stylesheet === 'win10') {
+  //     require('../../../lib/dist/react-windows-ui.min.css');
+  //  } else if(this.state.stylesheet === 'win11') {
+  //     require('../../../lib/dist/react-windows-ui-sunvalley.min.css');
+  //  }
   // }
 
-  // ChangeTheme11 = () => {
-  //   var head = document.head;
-  //   var link = document.createElement("link");
-
-  //   link.type = "text/css";
-  //   link.rel = "stylesheet";
-  //   link.href = "./lib/dist/react-windows-ui-sunvalley.min.css";
-  //   link.id = "app-stylesheet-id";
-
-  //   var meta = document.getElementById('app-stylesheet-id');
-  //   if(meta){meta.parentNode.removeChild(meta);}
-    
-  //   head.appendChild(link);
+  // componentDidUpdate() {
+  //   if(this.state.stylesheet === 'win10') {
+  //     delete [require.resolve('../../../lib/dist/react-windows-ui-sunvalley.min.css')]
+  //     require('../../../lib/dist/react-windows-ui.min.css')
+  //  } else {
+  //     require('../../../lib/dist/react-windows-ui-sunvalley.min.css')
+  //  }
   // }
 
   ChangeTheme10 = () => {
@@ -114,7 +82,7 @@ class Home extends React.Component {
           name="1"
           color="#018574"/>
 
-        <br/><br/>
+        {/* <br/><br/>
 
         <ColorPickerItem
           checked
@@ -129,7 +97,7 @@ class Home extends React.Component {
           width={100}
           name="2"
           onChange={this.ChangeTheme11}
-          image={Img11} />
+          image={Img11} /> */}
 
 
       </div>

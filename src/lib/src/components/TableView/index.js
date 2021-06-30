@@ -10,7 +10,6 @@ const TableView = (props) => {
   }, [rows_data])
 
   const [rows, setRows] = useState(rows_data)
-
   const [tappedColumn, setTappedColumn] = useState(undefined)
 
   const alphaOrder = (index) => {
