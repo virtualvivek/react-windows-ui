@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Cell from './Cell'
 
 const TableView = (props) => {
 
   const rows_data = props.rows
-  const columns = props.columns
+  useEffect(() => {
+    //console.log('rows data state changed from parent');
+    setRows(rows_data)
+  }, [rows_data])
+
   const [rows, setRows] = useState(rows_data)
+
   const [tappedColumn, setTappedColumn] = useState(undefined)
 
   const alphaOrder = (index) => {
@@ -25,7 +30,7 @@ const TableView = (props) => {
     <table className="app-table-view">
       <thead style={{ fontSize: props.headerFontSize }}>
         <tr className="app-table-tr">
-        {columns.map((item, index) => (
+        {props.columns.map((item, index) => (
           <th
             className={ item.sortable === false ? 'no-sortable' : '' }
             align="left"

@@ -6,7 +6,8 @@ class Tables extends React.Component {
 
   constructor() {
     super();
-    this.state = {   
+    this.state = {
+      data_i: TableData,
         data: TableData
     }
   }
@@ -18,7 +19,7 @@ class Tables extends React.Component {
   appendRowItem = () => {
     const arr = [];
 
-    if(TableData[0][2] === undefined) {
+    if(TableData[0][3] === undefined) {
       Object.keys(TableData).forEach(function(key) {
         arr.push(TableData[key]);
         arr[key].push(
@@ -36,16 +37,16 @@ class Tables extends React.Component {
   }
 
 
-  handleInputChange = event => {
+  handleInputChange = (event) => {
     const query = event.target.value
     this.setState(prevState => {
-      const filteredData = prevState.data.filter(element => {
-        return element.name.toLowerCase().includes(query.toLowerCase())
+      const data = prevState.data_i.filter(element => {
+        return element[0].toLowerCase().includes(query.toLowerCase())
       })
       return {
         query,
-        filteredData
-      }
+        data
+      } 
     })
   }
 
@@ -58,15 +59,16 @@ class Tables extends React.Component {
       <h1>Table</h1>
 
       <InputSearchBox
-        placeholder="Search a contact"
+        placeholder="Search by Fruits"
         onChange={this.handleInputChange}/>
 
       <div className="app-hr"></div>
 
       <TableView
         columns={[
-          { 'title':'Apple' },
-          { 'title':'Orange','showSortIcon': true },
+          { 'title':'Fruits' },
+          { 'title':'Energy (KCal)','showSortIcon': true },
+          { 'title':'Color','showSortIcon': true },
           { 'title':'Actions','showSortIcon': false, 'sortable': false }
         ]}
         rows={this.state.data}
