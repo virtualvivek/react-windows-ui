@@ -1,0 +1,9 @@
+.app-switch {
+    margin-left: 70px;
+    margin-right: unset;
+    
+    &>div::after {
+        left: -128%;
+        right: unset;
+    }
+}

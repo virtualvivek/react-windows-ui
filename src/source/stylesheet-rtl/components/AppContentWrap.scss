@@ -1,0 +1,17 @@
+.app-section-container {
+    padding-left: 0;
+    direction: rtl;
+    padding-right: 290px;
+    &.has-padding {
+        padding-right: 320px;
+    }
+}
+
+.app-nav-wrap.toggled {
+    &+.app-section-container.has-padding {
+        padding-right: 104px;
+    }
+    &+.app-section-container {
+        padding-right: 74px;
+    }
+}

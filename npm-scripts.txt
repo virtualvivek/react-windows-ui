@@ -12,6 +12,7 @@ package.json>
 
 npm run compile:sass
 npm run compile:sass-sunvalley
+npm run compile:sass-rtl
 
 -----------------------------------------------------------
 [ GitHub Pages ] ------------

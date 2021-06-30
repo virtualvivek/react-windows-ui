@@ -32,5 +32,6 @@
     &.show {
         transition: max-height 0.28s ease-in;
         max-height: 500px;
+        overflow-y: scroll;
     }
 }

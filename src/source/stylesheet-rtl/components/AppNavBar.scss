@@ -1,18 +1,14 @@
 .app-nav-wrap {
     nav {
-        ul:not(.app-search-dialog){
-            direction: rtl;
+        right: 0;
+        left: unset;
+        direction: rtl;
 
-            .app-search-box {
-                margin-right: 18px;
-                
-            }
+        .app-switch {
+            margin-right: 80px;
         }
     }
-
-    &.toggled {
-        .app-search-dialog-trigger {
-            padding-right: 25px;
-        }
+    .app-search-box {
+        margin: 0 18px 10px 0;
     }
 }

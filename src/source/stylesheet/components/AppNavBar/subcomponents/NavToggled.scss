@@ -13,14 +13,17 @@
         @extend .display-none;
     }
     .app-name-short {
+        width: 74px;
         display: inline-block;
         font-size: 24px;
-        width: 74px;
         text-align: center;
         padding: 10px;
     }
 
     nav {
+        li a {
+            text-overflow: clip;
+        }
         .app-hr {
             width: 56px;
             margin-left: 8px;

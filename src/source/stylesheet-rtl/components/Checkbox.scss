@@ -1,0 +1,6 @@
+label.app-checkbox {
+    input[type="checkbox"]::before {
+        margin-right: -3px;
+        margin-left: unset;
+    }
+}
