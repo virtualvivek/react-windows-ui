@@ -24,7 +24,7 @@
   </a>
   
   <a href="https://virtualvivek.github.io/react-windows-ui/">
-    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=%23c11adb&style=flat-square&logo=github"
+    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=00C244&style=flat-square&logo=github"
       alt="Live Demo" />
   </a>
   
@@ -32,8 +32,9 @@
     <img src="https://img.shields.io/badge/npm-package-green.svg?style=flat-square&logo=npm&color=f55a42"
       alt="npmJS" />
   </a>
-   
+
 </p>
+
 
 <p align="center"><img src="markdown/md_img_promo.png" width="652" /></p>
 
@@ -146,10 +147,26 @@ import 'react-windows-ui/dist/react-windows-ui-sunvalley.min.css'
 
 ---
 
+# Details
+
 <a href="https://www.npmjs.com/package/react-windows-ui">
   <img src="https://img.shields.io/badge/package-npm-red.svg?style=for-the-badge&logo=npm&color=f55a42" alt="npmJS" />
-</a><br/>
-
+</a>
+<br>
+<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=for-the-badge&logo=windows&color=1572B6&label=react-windows-ui.min.css"
+       alt="react-windows-ui.min.css" />
+</a>
+<br>
+<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-sunvalley.min.css?style=for-the-badge&logo=microsoft&color=0078D4&label=react-windows-ui-sunvalley.min.css"
+       alt="react-windows-ui-sunvalley.min.css" />
+</a>
+<br>
+<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-rtl.min.css?style=for-the-badge&logo=LineageOS&color=167C80&label=react-windows-ui-rtl.min.css"
+       alt="react-windows-ui-rtl.min.css" />
+</a>
 
 # Find this library useful? :heart:
 Support it by joining [**stargazers**](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
