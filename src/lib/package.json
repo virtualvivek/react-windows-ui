@@ -1,6 +1,6 @@
 {
   "name": "react-windows-ui",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Build full featured Windows fluent UI apps using reactjs.",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,10 @@
     "web-app"
   ],
   "types": "./index.d.ts",
-  "author": "Vivek Verma",
+  "author": {
+    "name": "Vivek Verma",
+    "email": "virtualvivek7@gmail.com"
+  },
   "license": "MIT",
   "peerDependencies": {
     "react": "^17.0.1",
