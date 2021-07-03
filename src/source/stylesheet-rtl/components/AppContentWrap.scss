@@ -1,9 +1,10 @@
 .app-section-container {
-    padding-left: 0;
     direction: rtl;
     padding-right: 290px;
+    padding-left: unset;
     &.has-padding {
         padding-right: 320px;
+        padding-left: unset;
     }
 }
 

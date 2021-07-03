@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import './lib/config/app-config.css'
 import './lib/dist/react-windows-ui.min.css'
 import './lib/icons/fonts/fonts.min.css'
-import './lib/dist/react-windows-ui-rtl.min.css'
+//import './lib/dist/react-windows-ui-rtl.min.css'
 import App from './demo/App'
 
 ReactDOM.render(

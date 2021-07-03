@@ -1,0 +1,18 @@
+.input-field-primary,
+.app-input-text,
+.app-select-styled,
+.app-textarea {
+    padding-right: 10px;
+    padding-left: unset;
+}
+.app-input-text-container {
+    .app-input-label {
+        border-left: none;
+        border-right: 2px solid #999;
+    }
+
+    .app-input-status-container {
+        right: unset;
+        left: 5px;
+    }
+}

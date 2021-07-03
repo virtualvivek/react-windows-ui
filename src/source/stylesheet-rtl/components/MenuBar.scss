@@ -1,0 +1,19 @@
+.app-select-styled {
+    ul {
+        li {
+            a {
+                padding-right: 10px;
+                padding-left: unset;
+            }
+        }
+    }
+    &.menubar {
+        span {
+            padding: 7px 10px 7px 0;
+        }
+        &::after {
+            float: left;
+            margin-left: 15px;
+        }
+    }
+}

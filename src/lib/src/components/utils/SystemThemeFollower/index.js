@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+import { useEffect } from 'react'
 var setAppDark = require('../ThemeManager').setAppDark
 var setAppLight = require('../ThemeManager').setAppLight
 

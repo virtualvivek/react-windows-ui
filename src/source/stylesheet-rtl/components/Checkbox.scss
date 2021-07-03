@@ -1,6 +1,14 @@
 label.app-checkbox {
+    direction: rtl;
+    
     input[type="checkbox"]::before {
         margin-right: -3px;
         margin-left: unset;
     }
+}
+.app-radio {
+    margin: 5px 0 0 5px;
+}
+.app-radio + span {
+    direction: rtl;
 }

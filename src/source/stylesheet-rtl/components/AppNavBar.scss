@@ -4,6 +4,12 @@
         left: unset;
         direction: rtl;
 
+        ul {
+            h1 {
+                padding: 8px 24px 8px 0;
+            }
+        }
+
         .app-switch {
             margin-right: 80px;
         }

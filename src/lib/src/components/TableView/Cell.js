@@ -16,7 +16,6 @@ const Cell = (props) => {
             {item}
           </td>
       ))}
-      
     </tr>
   )
 }

@@ -35,7 +35,7 @@ const TableView = (props) => {
             align="left"
             key={index}
             onClick={() => alphaOrder(index)}>
-            {item.title} {
+            { item.title } {
               item.showSortIcon === false ? ''
             : tappedColumn === index ? <i className="icons10-arrow-up"></i>
             : <i className="icons10-arrow-down"></i>
