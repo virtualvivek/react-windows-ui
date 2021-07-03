@@ -41,12 +41,12 @@
 
 @mixin browser-webkit-mobile() {
     ::-webkit-scrollbar {
-        width: 10px;
+        width: auto;
     }
     .app-nav-wrap nav {
         overflow-x: overlay !important;
         &::-webkit-scrollbar {
-            height: 5px;
+            height: 1px;
         }
     }
 }
