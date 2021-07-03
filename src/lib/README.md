@@ -23,8 +23,13 @@
   </a>
   
   <a href="https://virtualvivek.github.io/react-windows-ui/">
-    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=%236a31b5&style=flat-square&logo=github"
+    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
       alt="Live Demo" />
+  </a>
+	
+  <a href="https://github.com/virtualvivek/react-windows-ui">
+    <img src="https://img.shields.io/badge/github-repository-green.svg?style=flat-square&logo=github&color=181717"
+      alt="Github Repo" />
   </a>
    
 </p>
@@ -39,7 +44,7 @@
 https://virtualvivek.github.io/react-windows-ui/
 
 # Installation
-```js
+```ruby
 $ npm install react-windows-ui
 ```
 
@@ -89,6 +94,17 @@ $ npm install
 $ npm start
 ```
 
+<h1 align="center">Windows 11 Styles.css</h1>
+<p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_promo_w11.png" width="500" /></p>
+
+```js
+// include windows 11 styles at some point, probably during your bootstraping
+...
+import 'react-windows-ui/dist/react-windows-ui-sunvalley.min.css'
+...
+```
+
+
 ## ❂ Links
 
 <table>
@@ -102,11 +118,11 @@ $ npm start
 <tbody>
 <tr>
   <td>Example Codes</td>
-  <td>Components implementation here</td>
+  <td>Components implementation <code>demo</code></td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework">Example LINK</a></td>
 </tr>
 <tr>
-  <td>Library Source</td>
+  <td>Library Source Directory</td>
   <td>Folder publish to <code>npm</code></td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib">Library LINK</a></td>
 </tr>
@@ -115,14 +131,45 @@ $ npm start
   <td>Style <code>scss</code> source code</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
 </tr>
+<tr>
+  <td>Library SunValley SCSS Source</td>
+  <td>SunValley Styles <code>scss</code> source code</td>
+  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
+</tr>
+<tr>
+  <td>TypeScript Type Definitions</td>
+  <td>Typescript <code>index.d.ts</code> import file</td>
+  <td><a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/index.d.ts">D.TS LINK</a></td>
+</tr>
 </tbody>
 </table>
 
+
 ---
+
+
+# Details
+
 
 <a href="https://github.com/virtualvivek/react-windows-ui">
   <img src="https://img.shields.io/badge/repository-github-red.svg?style=for-the-badge&logo=github&color=181717" alt="github" />
-</a><br/>
+</a>
+<br>
+<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=for-the-badge&logo=windows&color=1572B6&label=react-windows-ui.min.css"
+       alt="react-windows-ui.min.css" />
+</a>
+<br>
+<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-sunvalley.min.css?style=for-the-badge&logo=microsoft&color=0078D4&label=react-windows-ui-sunvalley.min.css"
+       alt="react-windows-ui-sunvalley.min.css" />
+</a>
+<br>
+<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-rtl.min.css?style=for-the-badge&logo=LineageOS&color=167C80&label=react-windows-ui-rtl.min.css"
+       alt="react-windows-ui-rtl.min.css" />
+</a>
+
 
 # Find this library useful? :heart:
 Support it by joining [stargazers](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
@@ -131,4 +178,4 @@ Support it by joining [stargazers](https://github.com/virtualvivek/react-windows
 # License
 
 `react-windows-ui` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE).<br>
-Copyright (c) 2021 [**Vivek Verma**](https://github.com/virtualvivek)
+Copyright (c) 2021 [Vivek Verma](https://github.com/virtualvivek)
