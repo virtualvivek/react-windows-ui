@@ -119,27 +119,27 @@ import 'react-windows-ui/dist/react-windows-ui-sunvalley.min.css'
 <tbody>
 <tr>
   <td>Example Codes</td>
-  <td>Components implementation here</td>
+  <td>Components implementation <code>demo</code></td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework">Example LINK</a></td>
 </tr>
 <tr>
-  <td>Library Source</td>
-  <td>Folder publish to <code><b>npm</b></code></td>
+  <td>Library Source Directory</td>
+  <td>Folder publish to <code>npm</code></td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib">Library LINK</a></td>
 </tr>
 <tr>
-  <td><img src="https://img.shields.io/badge/SCSS-Default-red.svg?style=for-the-badge&logo=sass&color=CC6699" alt="react-windows-ui.min.scss" /></td>
-  <td>Library Styles <code>scss</code> source code</td>
+  <td>Library SCSS Source</td>
+  <td>Style <code>scss</code> source code</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
 </tr>
 <tr>
-  <td><img src="https://img.shields.io/badge/SCSS-SunValley-red.svg?style=for-the-badge&logo=sass&color=CC6699" alt="react-windows-ui-sunvalley.min.scss" /></td>
+  <td>Library SunValley SCSS Source</td>
   <td>SunValley Styles <code>scss</code> source code</td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet-sunvalley">SCSS LINK</a></td>
+  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
 </tr>
 <tr>
-  <td><img src="https://img.shields.io/badge/TS-Typings-red.svg?style=for-the-badge&logo=typescript&color=3178C6" alt="d.ts" /></td>
-  <td>Typescript type definitions import file</td>
+  <td>TypeScript Type Definitions</td>
+  <td>Typescript <code>index.d.ts</code> import file</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/index.d.ts">D.TS LINK</a></td>
 </tr>
 </tbody>
