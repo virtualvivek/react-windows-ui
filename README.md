@@ -24,7 +24,7 @@
   </a>
   
   <a href="https://virtualvivek.github.io/react-windows-ui/">
-    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=%23c11adb&style=flat-square&logo=github"
+    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
       alt="Live Demo" />
   </a>
   
@@ -32,8 +32,9 @@
     <img src="https://img.shields.io/badge/npm-package-green.svg?style=flat-square&logo=npm&color=f55a42"
       alt="npmJS" />
   </a>
-   
+
 </p>
+
 
 <p align="center"><img src="markdown/md_img_promo.png" width="652" /></p>
 
@@ -104,8 +105,17 @@ import 'react-windows-ui/dist/react-windows-ui-sunvalley.min.css'
 ...
 ```
 
+# RTL Support
+Distribute layout direction from Right to Left.
+```js
+// include windows 11 styles at some point, probably during your bootstraping
+...
+import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
+...
+```
 
-## ❂ Links
+
+# ❂ Links
 
 <table>
 <thead>
@@ -118,27 +128,27 @@ import 'react-windows-ui/dist/react-windows-ui-sunvalley.min.css'
 <tbody>
 <tr>
   <td>Example Codes</td>
-  <td>Components implementation here</td>
+  <td>Components implementation <code>demo</code></td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework">Example LINK</a></td>
 </tr>
 <tr>
-  <td>Library Source</td>
-  <td>Folder publish to <code><b>npm</b></code></td>
+  <td>Library Source Directory</td>
+  <td>Folder publish to <code>npm</code></td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib">Library LINK</a></td>
 </tr>
 <tr>
-  <td><img src="https://img.shields.io/badge/SCSS-Default-red.svg?style=for-the-badge&logo=sass&color=CC6699" alt="react-windows-ui.min.scss" /></td>
-  <td>Library Styles <code>scss</code> source code</td>
+  <td>Library SCSS Source</td>
+  <td>Style <code>scss</code> source code</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
 </tr>
 <tr>
-  <td><img src="https://img.shields.io/badge/SCSS-SunValley-red.svg?style=for-the-badge&logo=sass&color=CC6699" alt="react-windows-ui-sunvalley.min.scss" /></td>
+  <td>Library SunValley SCSS Source</td>
   <td>SunValley Styles <code>scss</code> source code</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet-sunvalley">SCSS LINK</a></td>
 </tr>
 <tr>
-  <td><img src="https://img.shields.io/badge/TS-Typings-red.svg?style=for-the-badge&logo=typescript&color=3178C6" alt="d.ts" /></td>
-  <td>Typescript type definitions import file</td>
+  <td>TypeScript Type Definitions</td>
+  <td>Typescript <code>index.d.ts</code> import file</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/index.d.ts">D.TS LINK</a></td>
 </tr>
 </tbody>
@@ -146,10 +156,26 @@ import 'react-windows-ui/dist/react-windows-ui-sunvalley.min.css'
 
 ---
 
+# Details
+
 <a href="https://www.npmjs.com/package/react-windows-ui">
   <img src="https://img.shields.io/badge/package-npm-red.svg?style=for-the-badge&logo=npm&color=f55a42" alt="npmJS" />
-</a><br/>
-
+</a>
+<br>
+<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=for-the-badge&logo=windows&color=1572B6&label=react-windows-ui.min.css"
+       alt="react-windows-ui.min.css" />
+</a>
+<br>
+<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-sunvalley.min.css?style=for-the-badge&logo=microsoft&color=0078D4&label=react-windows-ui-sunvalley.min.css"
+       alt="react-windows-ui-sunvalley.min.css" />
+</a>
+<br>
+<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-rtl.min.css?style=for-the-badge&logo=LineageOS&color=167C80&label=react-windows-ui-rtl.min.css"
+       alt="react-windows-ui-rtl.min.css" />
+</a>
 
 # Find this library useful? :heart:
 Support it by joining [**stargazers**](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
