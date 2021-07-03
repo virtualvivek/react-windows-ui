@@ -104,6 +104,15 @@ import 'react-windows-ui/dist/react-windows-ui-sunvalley.min.css'
 ...
 ```
 
+# RTL Support
+Distribute layout direction from Right to Left.
+```js
+// include windows 11 styles at some point, probably during your bootstraping
+...
+import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
+...
+```
+
 
 ## ❂ Links
 
