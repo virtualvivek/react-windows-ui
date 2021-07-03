@@ -114,7 +114,7 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 ```
 
 
-## ❂ Links
+# Links
 
 <table>
 <thead>
