@@ -4,6 +4,7 @@ import './lib/config/app-config.css'
 import './lib/dist/react-windows-ui.min.css'
 import './lib/icons/fonts/fonts.min.css'
 //import './lib/dist/react-windows-ui-rtl.min.css'
+import './demo/pages/css/codeStyle.css'
 import App from './demo/App'
 
 ReactDOM.render(
