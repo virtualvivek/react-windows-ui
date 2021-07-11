@@ -48,6 +48,6 @@ package.json >
 
 [ Open Git Bash Terminal ( Choose from dropdown in VS Code ) ]
 
-npm run build
+npm run build:production
 
 ----------------------------------------------------------------------------
