@@ -36,6 +36,7 @@ npm run deploy
 [ Babel ] --------------
 Installing Babel
 npm install --save-dev @babel/core @babel/cli @babel/preset-env
+npm i --save-dev babel-preset-minify
 
 -effect-
 package.json >
