@@ -40,7 +40,7 @@ npm i --save-dev babel-preset-minify
 
 -effect-
 package.json >
-	"build": "rm -rf dist && SET NODE_ENV=production && babel src/lib/src --out-dir src/lib/dist --copy-files",
+	"build:production": "rm -rf dist && SET NODE_ENV=production && babel src/lib/src --out-dir src/lib/dist --copy-files",
 
 [ File Added ] > babel.config.js
 
