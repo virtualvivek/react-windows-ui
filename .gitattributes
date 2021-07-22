@@ -4,5 +4,5 @@
 **/*.d.ts linguist-documentation=false
 **/*.d.ts linguist-detectable=true
 
-# excluding demo dir
+# treat as docs dir
 src/demo/docs/** linguist-documentation
