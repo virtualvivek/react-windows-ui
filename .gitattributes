@@ -5,4 +5,4 @@
 **/*.d.ts linguist-detectable=true
 
 # excluding demo dir
-demo/* linguist-vendored=false
+src/demo/* linguist-vendored=false
