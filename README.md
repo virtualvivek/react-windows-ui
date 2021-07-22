@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="markdown/md_img_header.png" width="405" /> 
+  <img src="markdown/md_img_header.png" width="410" /> 
 </p>
 
 <h1 align="center">react-windows-ui</h1>
@@ -98,7 +98,7 @@ OR <br>
 [virtualvivek/react-windows-ui-boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
 
 ## Run Demo Locally
-```css
+```ruby
 $ git clone https://github.com/virtualvivek/react-windows-ui.git
 $ cd react-windows-ui
 $ npm install
@@ -125,7 +125,7 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 ```
 
 
-# ❂ Links
+# Links
 
 <table>
 <thead>
@@ -139,7 +139,7 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 <tr>
   <td>Example Codes</td>
   <td>Components implementation <code>demo</code></td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/framework">Example LINK</a></td>
+  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/">Example LINK</a></td>
 </tr>
 <tr>
   <td>Library Source Directory</td>
@@ -159,7 +159,7 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 <tr>
   <td>TypeScript Type Definitions</td>
   <td>Typescript <code>index.d.ts</code> import file</td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/index.d.ts">D.TS LINK</a></td>
+  <td><a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/src/index.d.ts">D.TS LINK</a></td>
 </tr>
 </tbody>
 </table>
