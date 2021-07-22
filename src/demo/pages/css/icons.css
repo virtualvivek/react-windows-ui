@@ -26,7 +26,7 @@ pre {
     line-height: 1.4;
     word-break: break-all;
     word-wrap: break-word;
-    color: var(--color_dark_text);
+    color: var(--color_text_dark);
     border: 1px solid #eeeeee;
     border-radius: 4px;
     font-weight: bold;

@@ -10,7 +10,7 @@ const AppJsSearchable = () => {
       hasPadding
       animateTransition>
         <h1>App.js</h1>
-        <p>This file includes <b>App.js</b> file code with searchable <b>NavItem</b> configuration.</p>
+        <p>This file includes <b>App.js</b> file code with <span className="color-primary"><b>Searchable NavItem</b></span> configuration.</p>
 
         <SyntaxHighlighter
             language="javascript"
@@ -19,6 +19,7 @@ const AppJsSearchable = () => {
             className="code navigation">
             {AppJsSearchableCode}
         </SyntaxHighlighter>
+        <br/><br/>
 
     </NavPageContainer>
   )

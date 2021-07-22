@@ -7,7 +7,6 @@ import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
 import Inputs from './pages/Inputs'
 import Texts from './pages/Texts'
-import Buttons from './pages/Buttons'
 import Links from './pages/Links'
 import ProgressControls from './pages/ProgressControls'
 import Tables from './pages/Tables'
@@ -17,6 +16,11 @@ import Icons from './pages/Icons'
 import Themes from './pages/Themes'
 import Images from './pages/Images'
 import Dialogs from './pages/Dialogs'
+
+import AccordionDocs from './docs/Accordion_docs'
+import AlertDocs from './docs/Alert_docs'
+import AvatarViewDocs from './docs/AvatarView_docs'
+import ButtonsDocs from './docs/Buttons_docs'
 
 import _404Layout from './layouts/404Layout'
 import AboutLayout from './layouts/AboutLayout'
@@ -30,6 +34,7 @@ import ListLayout from './layouts/ListLayout'
 import AppJsDefault from './templates/appjs-default'
 import AppJsSearchable from './templates/appjs-searchable'
 import PageJsDefault from './templates/pagejs-default'
+import PageJsSplit from './templates/pagejs-split'
 
 import NavBarItem from './NavBarItems.json'
 
@@ -84,8 +89,33 @@ class App extends React.Component {
         /> */}
 
       <NavSearchBox
-        placeholder="Find a component"
+        placeholder="Search the docs v2.0.9"
         onChange={this.handleInputSearch}/>
+      <NavBarLink
+        exact={true}
+        to="/"
+        text="Home"
+        icon={<i className="icons10-home"></i>}
+      />
+      <NavBarLink
+        to="/getting_started"
+        text="Getting Started"
+        icon={<i className="icons10-terminal"></i>}
+      />
+
+      <h1>Preview</h1>
+      <div className="app-hr"></div>
+
+      
+
+      <NavBarLink
+        to="/inputs"
+        text="Inputs"
+        icon={<i className="icons10-keyboard"></i>}
+      />
+
+      <h1>Docs</h1>
+      <div className="app-hr"></div>
 
       {this.state.filteredData.map((item, key) => {
         return <NavBarLink
@@ -128,9 +158,16 @@ class App extends React.Component {
       <Switch>
         <Route path="/" component={Home}  exact />
         <Route path='/getting_started' component={GettingStarted} />
+
         <Route path='/inputs' component={Inputs} />
+
+        <Route path='/accordion' component={AccordionDocs} />
+        <Route path='/alerts' component={AlertDocs} />
+        <Route path='/avatarview' component={AvatarViewDocs} />
+        <Route path='/buttons' component={ButtonsDocs} />
+
         <Route path='/texts' component={Texts} />
-        <Route path='/buttons' component={Buttons} />
+        {/* <Route path='/buttons' component={Buttons} /> */}
         <Route path='/images' component={Images} />
         <Route path='/dialogs' component={Dialogs} />
         <Route path='/links' component={Links} />
@@ -153,6 +190,7 @@ class App extends React.Component {
         <Route path='/AppJsDefault' component={AppJsDefault} />
         <Route path='/AppJsSearchable' component={AppJsSearchable} />
         <Route path='/PageJsDefault' component={PageJsDefault} />
+        <Route path='/PageJsSplit' component={PageJsSplit} />
       </Switch>
     </Router>
   </>

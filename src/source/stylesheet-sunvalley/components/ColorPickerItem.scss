@@ -7,7 +7,7 @@
         display: inline-block;
         border: 2px solid transparent;
         &:hover {
-            border: 2px solid var(--color_dark_text);
+            border: 2px solid var(--color_text_dark);
         }
         &::before {
             content: '✔';
@@ -16,8 +16,8 @@
             font-size: 12px;
             padding: 4px;
             line-height: 1;
-            color: var(--color_light_bg);
-            background: var(--color_dark_text);
+            color: var(--color_bg_light);
+            background: var(--color_text_dark);
             transition: all 0.2s;
           }
     }
@@ -36,6 +36,6 @@
     }
     div:hover,
     .item:checked + div {
-        border: 2px solid var(--color_dark_text);
+        border: 2px solid var(--color_text_dark);
     }
 }

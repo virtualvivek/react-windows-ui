@@ -206,7 +206,7 @@ class Inputs extends React.Component {
 
         <InputText
           width={225}
-          label="label apbc"
+          label="label"
           placeholder="Enter a text"/>
 
         <br/><br/>

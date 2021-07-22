@@ -1,27 +1,28 @@
 const Page1Code =
 `import React from 'react'
-import { NavPageContainer, NavPageContainerInner, NavPageContainerRight } from 'react-windows-ui'
+import { NavPageContainer, NavPageContainerInner } from 'react-windows-ui'
 
 const Page1 = () => {
-    return (
-        <NavPageContainer
-            hasPadding={false}
-            animateTransition={true}>
+  return (
+    <NavPageContainer
+      hasPadding={false}
+      animateTransition={true}>
 
-            <NavPageContainerInner>
-                <h1>Page1</h1>
-            </NavPageContainerInner>
+      {/* NavPageContainerInner only needs to apply
+      if you want to render some component on the page with padding-none
+      render it to the parent NavPageContainer and the childs with default-padding
+      on the NavPageContainerInner */}
 
-            <NavPageContainerRight>
-                <h4 className="m-0">Right Section Container</h4>
-            </NavPageContainerRight>
+      <NavPageContainerInner>
+        <h1>Page1</h1>
+      </NavPageContainerInner>
 
-        </NavPageContainer>
-        );
-    }
+    </NavPageContainer>
+  );
+}
 export default Page1
 `;
 
 export {
-    Page1Code
+  Page1Code
 }

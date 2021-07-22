@@ -7,7 +7,7 @@
         content-box so the padding becomes transparent, then
         a pseudo element moves in the back for the reveal. */
     padding: 2px;
-    background: var(--color_light_bg) content-box;
+    background: var(--color_bg_light) content-box;
     &:hover {
         background: var(--color_light_grey) content-box;
     }

@@ -8,7 +8,7 @@
         border-radius: 50px;
         width: 42px;
         height: 19px;
-        border: 2px solid var(--color_dark_text);
+        border: 2px solid var(--color_text_dark);
         position: relative;
         transition: 200ms ease-out;
 
@@ -24,7 +24,7 @@
             content: '';
             width: 13px;
             height: 13px;
-            background: var(--color_dark_text);
+            background: var(--color_text_dark);
             border-radius: 50%;
             transition: 200ms;
         }
@@ -67,7 +67,7 @@
                 border-color: var(--color_link_bg_hover);
 
                 &::before {
-                    background: var(--color_dark_text) !important;
+                    background: var(--color_text_dark) !important;
                     filter: contrast(0);
                 }
             }

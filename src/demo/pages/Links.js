@@ -20,13 +20,14 @@ const Links = () => {
 
     {/* Register the fluent effect before using LinkCompoundFluent */}
     <RegisterFluentEffect/>
+    <p className="font-size-18px"><span className="color-primary">Links</span> are accessible elements used primarily for navigation.<br/>This component is styled to resemble a hyperlink and semantically renders an {'<a>'}.</p>
 
 
-      <Link to="#" className="app-link">Default App Link</Link>
+      <Link to="#" className="app-link">Default Link</Link>
       
       <br/><br/>
 
-      <Link to="#" className="app-link"><b>Default Bold App Link</b></Link>
+      <Link to="#" className="app-link"><b>Default Bold Link</b></Link>
 
       <br/><br/>
       <Accordion title="💻 Code - Link Default" focused width={320}>

@@ -26,6 +26,7 @@ const TableView = (props) => {
   }
 
   return (
+    <div className="app-table-view-container">
     <table className="app-table-view">
       <thead style={{ fontSize: props.headerFontSize }}>
         <tr className="app-table-tr">
@@ -50,6 +51,7 @@ const TableView = (props) => {
         ))}
       </tbody>
     </table>
+    </div>
   )
 }
 

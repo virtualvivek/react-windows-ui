@@ -10,6 +10,11 @@
     margin: 0 30px 0 30px;
 }
 
+// check if .app-section-container-inner has a sibling of same type
+.app-section-container-inner:first-of-type:not(:only-of-type) {
+    width: 70%;
+}
+
 .app-nav-wrap.toggled + .app-section-container {
     padding-left: 74px;
     &.has-padding {
@@ -18,21 +23,37 @@
 }
 
 .app-section-container-right {
+    @extend .transition-background-400ms;
+    max-width: 20vw;
     position: absolute;
-    top: 105px;
-    right: 25px;
+    top: 100px;
+    right: 5%;
     float: right;
-    max-width: 264px;
+    padding-left: 15px;
+    overflow: auto;
+    background-color: var(--color_bg_light);
+
+    &.fixed {
+        position: fixed;
+    }
 }
 
 @media screen and (max-width: 70em) {
     .app-section-container-right {
-            max-width: fit-content;
+        max-width: fit-content;
+        position: relative;
+        top: 10px;
+        right: auto;
+        float: left;
+        padding-bottom: 70px;
+        padding-left: 30px;
+        
+        &.fixed {
             position: relative;
-            top: 25px;
-            right: auto;
-            float: left;
-            margin-bottom: 85px;
+        }
+    }
+    .app-section-container-inner:first-of-type:not(:only-of-type) {
+        width: auto;
     }
 }
 
@@ -46,5 +67,8 @@
     }
     .app-section-container-inner {
         margin: 15px;
+    }
+    .app-section-container-right {
+        padding-left: 15px;
     }
 }

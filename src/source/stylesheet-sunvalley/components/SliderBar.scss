@@ -69,13 +69,13 @@
                 width: 20px !important;
                 height: 20px;
                 border: 3px solid var(--PrimaryColor);
-                background: var(--color_light_bg);
+                background: var(--color_bg_light);
             }
             &::-moz-range-thumb {
                 width: 14px;
                 height: 14px;
                 border: 3px solid var(--PrimaryColor);
-                background: var(--color_light_bg);
+                background: var(--color_bg_light);
             }
         }
     }

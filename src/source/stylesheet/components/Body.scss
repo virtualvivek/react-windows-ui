@@ -9,7 +9,15 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.app-code {
+    @extend .transition-background-400ms;
+    background-color: var(--color_nav);
+    border-radius: 6px;
+    padding: 5px;
+    margin: 0;
+    line-height: 1;
+    display: inline-block;
+}
 ::selection {
     background-color: var(--PrimaryColor);
     color: white;

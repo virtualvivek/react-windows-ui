@@ -10,8 +10,8 @@ var setAppDark = function() {
   // var meta = document.getElementById('statusBarColor')
   // meta.parentNode.removeChild(meta)
   // document.head.innerHTML += '<meta name="theme-color" content="#403E41" id="statusBarColor" />'
-  document.documentElement.style.setProperty('--color_light_bg','#111111')
-  document.documentElement.style.setProperty('--color_dark_text','#FFFFFF')
+  document.documentElement.style.setProperty('--color_bg_light','#111111')
+  document.documentElement.style.setProperty('--color_text_dark','#FFFFFF')
   document.documentElement.style.setProperty('--color_nav','#403E41')
   document.documentElement.style.setProperty('--color_light_grey','#444444')
   document.documentElement.style.setProperty('--color_light_grey_alpha','#444444D1')
@@ -32,8 +32,8 @@ var setAppLight = function() {
   // var meta = document.getElementById('statusBarColor')
   // meta.parentNode.removeChild(meta)
   // document.head.innerHTML += '<meta name="theme-color" content="#EEE" id="statusBarColor" />'
-  document.documentElement.style.setProperty('--color_light_bg','')
-  document.documentElement.style.setProperty('--color_dark_text','')
+  document.documentElement.style.setProperty('--color_bg_light','')
+  document.documentElement.style.setProperty('--color_text_dark','')
   document.documentElement.style.setProperty('--color_nav','')
   document.documentElement.style.setProperty('--color_light_grey','')
   document.documentElement.style.setProperty('--color_light_grey_alpha','')

@@ -59,7 +59,7 @@ const Gauge = (props) => {
           textAnchor="middle" dy="19" 
           fontSize="7"
           opacity="0.7"
-          fill="var(--color_dark_text)">
+          fill="var(--color_text_dark)">
           {props.info}
         </text>
         </svg>
@@ -73,7 +73,7 @@ Gauge.defaultProps = {
   strokeWidth: 5,
   scale: 1,
   setProgress: 0,
-  valueColor: "var(--color_dark_text)"
+  valueColor: "var(--color_text_dark)"
 }
 
 export default Gauge

@@ -1,30 +1,23 @@
 [
     {
-        "to": "/",
-        "exact": true,
-        "text": "Home",
-        "icon": "icons10-home",
+        "to": "/accordion",
+        "exact": false,
+        "text": "Accordion",
+        "icon": "icons10-down-squared",
         "showBadge": false
     },
     {
-        "to": "/getting_started",
+        "to": "/alerts",
         "exact": false,
-        "text": "Getting Started",
-        "icon": "icons10-terminal",
+        "text": "Alerts",
+        "icon": "icons10-advertising",
         "showBadge": false
     },
     {
-        "to": "/inputs",
+        "to": "/avatarview",
         "exact": false,
-        "text": "Inputs",
-        "icon": "icons10-keyboard",
-        "showBadge": false
-    },
-    {
-        "to": "/texts",
-        "exact": false,
-        "text": "Texts",
-        "icon": "icons10-align-left",
+        "text": "AvatarView",
+        "icon": "icons10-emoji-smile",
         "showBadge": false
     },
     {
@@ -33,6 +26,13 @@
         "text": "Buttons",
         "icon": "icons10-controller",
         "showBadge": 7
+    },
+    {
+        "to": "/texts",
+        "exact": false,
+        "text": "Texts",
+        "icon": "icons10-align-left",
+        "showBadge": false
     },
     {
         "to": "/images",

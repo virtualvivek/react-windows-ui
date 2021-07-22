@@ -78,6 +78,17 @@ class App extends React.Component {
               })
             }
 
+            // You can also add more simple NavBarLink
+            {/* 
+            <NavBarLink
+              to="/"
+              exact={true}
+              text="Page1"
+              icon={<i className="icons10-home"></i>}
+              showBadge={7}
+            />
+            */}
+
           </NavBar>
 
           <Switch>

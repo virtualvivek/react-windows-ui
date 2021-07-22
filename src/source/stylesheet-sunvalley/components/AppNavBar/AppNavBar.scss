@@ -50,7 +50,7 @@
             line-height: 2.4;
             padding: 6px 25px;
             font-weight: 400;
-            color: var(--color_dark_text);
+            color: var(--color_text_dark);
 
             &:focus {
                 @extend .outline-none;
@@ -77,7 +77,7 @@
             }
     
             .app-hr {
-                margin: 10px 15px;
+                margin: 5px 15px;
             }
         }
 

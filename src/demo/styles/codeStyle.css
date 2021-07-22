@@ -1,0 +1,22 @@
+.code {
+  font-size: 12px !important;
+  border: none;
+}
+.code.navigation {
+  width: 92%;
+}
+.code-container {
+  border-radius: 10px;
+  width: 80%;
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+  padding-left: 18px !important;
+}
+@media only screen and (max-width: 760px) {
+  .code-container {
+    width: 90%;
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    padding-left: 14px !important;
+  }
+}

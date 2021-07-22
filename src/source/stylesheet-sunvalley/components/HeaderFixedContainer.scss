@@ -1,7 +1,7 @@
 .app-header-fixed-container {
     @extend .transition-background-400ms;
     position: fixed;
-    background-color: var(--color_light_bg);
+    background-color: var(--color_bg_light);
     top: 0;
 }
 
