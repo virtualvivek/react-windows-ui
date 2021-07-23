@@ -19,7 +19,7 @@
   </a>
   
   <a href="https://github.com/virtualvivek/react-windows-ui/releases">
-    <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui?color=%2331b57e&style=flat-square"
+    <img src="https://img.shields.io/npm/v/react-windows-ui?color=31b57e&label=version&logo=git&logoColor=ffffff&style=flat-square"
       alt="Version" />
   </a>
   
