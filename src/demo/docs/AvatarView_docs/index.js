@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, AvatarView } from '../../../lib/src'
+import { NavPageContainer, AvatarView, Button } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import IronMan from '../../assets/illustration/ironman.jpg'
@@ -9,6 +9,16 @@ import { AvatarViewImportCode, AvatarViewUsageCode, AvatarViewUsageLoadingCode }
 import PropsView from './props-view'
 
 class AvatarViewDocs extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      stateLoadingImg: false
+    }
+  }
+
+  setLoading = () => { this.setState({stateLoadingImg: true}) }
+  setRegular = () => { this.setState({stateLoadingImg: false}) }
 
   render() {
     return (
@@ -20,7 +30,18 @@ class AvatarViewDocs extends React.Component {
         size="large"
         tooltip="IronMan"
         showDropShadow
+        isLoading={this.state.stateLoadingImg}
       />
+      <br/><br/>
+      <Button
+        value="set Loading"
+        type="primary"
+        onClick={this.setLoading}/>
+        &nbsp;
+      <Button
+        value="set Regular"
+        type="primary-outline"
+        onClick={this.setRegular}/>
 
       <h2>Import</h2>
 

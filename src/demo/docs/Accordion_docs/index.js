@@ -11,7 +11,7 @@ const AccordionDocs = () => {
     <NavPageContainer hasPadding animateTransition>
       <h1>Accordion</h1>
 
-      <p className="font-size-18px"><span className="color-primary">Accordion</span> component is used to show (and hide) content, it collapsed on hide and expand on show state.</p>
+      <p><span className="color-primary">Accordion</span> component is used to show (and hide) content, it collapsed on hide and expand on show state.</p>
 
       <Accordion focused title="Some Title">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

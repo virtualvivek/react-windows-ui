@@ -28,6 +28,7 @@ import InputText from './components/InputText'
 import InputSearchBar from './components/InputSearchBar'
 import InputSearchBox from './components/InputSearchBox'
 import InputSearchSuggestion from './components/InputSearchSuggestion'
+import Link from './components/Link'
 import LinkCompound from './components/LinkCompound'
 import LinkCompoundFluent from './components/LinkCompoundFluent'
 import LoaderBar from './components/LoaderBar'
@@ -80,6 +81,7 @@ export {
     InputSearchBar,
     InputSearchBox,
     InputSearchSuggestion,
+    Link,
     LinkCompound,
     LinkCompoundFluent,
     LoaderBar,

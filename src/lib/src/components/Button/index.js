@@ -34,7 +34,8 @@ const Button = (props) => {
       }
       style={{
         width: props.width,
-        textAlign: props.textAlign
+        textAlign: props.textAlign,
+        ...props.style
       }}
       type="button"
       onSubmit={props.onSubmit}

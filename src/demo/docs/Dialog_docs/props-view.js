@@ -14,34 +14,28 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">src</p></td>
-          <td>source</td>
-          <td>null</td>
-          <td>Sets the avatar source</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">size</p></td>
-          <td>small/medium/large</td>
-          <td>medium</td>
-          <td>Sets the avatar size</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">isLoading</p></td>
+          <td><p className="app-code">isVisible</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Sets the avatar loading state</td>
+          <td>Set's Dialog visibility</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">padding</p></td>
+          <td>integer/string</td>
+          <td>0</td>
+          <td>Set's Dialog padding style</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onBackdropPress</p></td>
+          <td>function</td>
+          <td>undefined</td>
+          <td>Callback on backdrop press</td>
         </tr>
         <tr>
           <td><p className="app-code">showDropShadow</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Sets avatar blurred drop shadows</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">tooltip</p></td>
-          <td>string</td>
-          <td>null</td>
-          <td>Sets avatar hover tiiltip</td>
+          <td>Set's Dialog blurred drop shadows</td>
         </tr>
       </tbody>
     </table>

@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, CSSProperties } from 'react'
 
 export interface ButtonProps {
     width ?: number | string;
@@ -11,6 +11,7 @@ export interface ButtonProps {
     type ?: string;
     onSubmit ?: Function;
     onClick ?: Function;
+    style ?: CSSProperties;
 }
 declare const Button: React.FC<ButtonProps>
 

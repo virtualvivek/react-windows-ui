@@ -1,93 +1,104 @@
 import React from 'react'
-import { NavPageContainer, Accordion } from '../../../lib/src'
+import { NavPageContainer, Gauge, Button } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { AccordionImportCode, AccordionUsageCode,
-  AccordionUsageFocusedFalseCode } from './codes'
 
-const Gauge_ = () => {
+class GaugeDocs extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      gaugeValue :50
+    }
+  }
+
+  setGauge0 = () => {   
+    this.setState({gaugeValue: 0});
+  }
+  setGauge50 = () => {   
+    this.setState({gaugeValue: 50});
+  }
+  setGauge100 = () => {   
+    this.setState({gaugeValue: 100});
+  }
+
+render() {
   return (
-    <NavPageContainer hasPadding>
-      <h1>Accordion</h1>
+  <NavPageContainer
+    hasPadding
+    animateTransition>
+    <h1>Gauge</h1>
 
-      <Accordion focused title="Some Title">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </Accordion>
+      <h3 className="m-b-15">Default</h3>
+        
+      <Gauge
+        setProgress={this.state.gaugeValue}
+        scale={2}
+        value={this.state.gaugeValue+"%"}
+        info="of something"
+      />
 
-      <h2>Import</h2>
+      <div className="app-flex">
+        <Button value="0%" onClick={this.setGauge0}/>
+        &nbsp;
+        <Button value="50%" onClick={this.setGauge50} />
+        &nbsp;
+        <Button value="100%" onClick={this.setGauge100} />
+      </div>
 
-      <SyntaxHighlighter
-        language="javascript"
-        style={vscDarkPlus}
-        className="code code-container">
-        {AccordionImportCode}
-      </SyntaxHighlighter>
+   
+      <div className="app-hr"></div>
 
-      <h2>Usage</h2>
+      <Gauge
+        setProgress={this.state.gaugeValue}
+        scale={1.2}
+        value={this.state.gaugeValue+"%"}
+        strokeColor="#eb8613"
+        valueColor="#eb8613"
+        type="fill"
+      />
 
-      <Accordion focused title="Some Title">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </Accordion>
-      <br/>
+      <Gauge
+        setProgress={this.state.gaugeValue}
+        scale={1.2}
+        value={this.state.gaugeValue+"%"}
+        info="of total"
+        strokeColor="#e01944"
+        valueColor="#e01944"
+      />
 
-      <SyntaxHighlighter
-        language="javascript"
-        style={vscDarkPlus}
-        className="code code-container">
-        {AccordionUsageCode}
-      </SyntaxHighlighter>
+    
+      <div className="app-hr"></div>
+      <h3 className="m-b-15">Customization</h3>
 
-      <h3 className="m-tb-20">Accordion focused false</h3>
-
-      <Accordion focused={false} title="Some Title">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </Accordion>
-      <br/>
-
-      <SyntaxHighlighter
-        language="javascript"
-        style={vscDarkPlus}
-        className="code code-container">
-        {AccordionUsageFocusedFalseCode}
-      </SyntaxHighlighter>
-
-
-      <h2>Props</h2>
-      <table className="app-table-view">
-        <thead>
-          <tr className="app-table-tr">
-            <th className="" align="left">Prop</th>
-            <th className="" align="left">Type</th>
-            <th className="" align="left">Default</th>
-            <th className="" align="left">Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><p className="app-code">title</p></td>
-            <td>string</td>
-            <td>null</td>
-            <td>Sets the accordion title</td>
-          </tr>
-          <tr>
-            <td><p className="app-code">focused</p></td>
-            <td>boolean</td>
-            <td>true</td>
-            <td>Sets the accordion background focused</td>
-          </tr>
-          <tr>
-            <td><p className="app-code">children</p></td>
-            <td>ReactNode</td>
-            <td>null</td>
-            <td>Sets the accordion children</td>
-          </tr>
-        </tbody>
-      </table>
+      <Gauge
+        setProgress={44}
+        scale={1.2}
+        value={"44%"}
+        info="of total"
+        strokeColor="#198ae0"
+        strokeWidth={8}
+        valueColor="#198ae0"
+        backgroundColor="#198ae044"
+      />
+      &nbsp;&nbsp;
+      <Gauge
+        setProgress={15}
+        scale={1.2}
+        value={"15%"}
+        info="of Speed"
+        strokeColor="#0ac94e"
+        strokeWidth={10}
+        backgroundColor="#0ac94e44"
+      />
 
 
-    <br/><br/><br/><br/><br/>
-    </NavPageContainer>
-  );
+
+      <br/><br/><br/><br/><br/><br/>
+
+  </NavPageContainer>
+);
+}
 }
 
-export default Gauge_
+export default GaugeDocs

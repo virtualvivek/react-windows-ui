@@ -28,17 +28,10 @@
         "showBadge": 7
     },
     {
-        "to": "/texts",
+        "to": "/cards",
         "exact": false,
-        "text": "Texts",
-        "icon": "icons10-align-left",
-        "showBadge": false
-    },
-    {
-        "to": "/images",
-        "exact": false,
-        "text": "Images",
-        "icon": "icons10-picture",
+        "text": "Cards",
+        "icon": "icons10-film",
         "showBadge": false
     },
     {
@@ -46,6 +39,27 @@
         "exact": false,
         "text": "Dialogs",
         "icon": "icons10-notification-image",
+        "showBadge": false
+    },
+    {
+        "to": "/gauges",
+        "exact": false,
+        "text": "Gauges",
+        "icon": "icons10-gauge",
+        "showBadge": false
+    },
+    {
+        "to": "/images",
+        "exact": false,
+        "text": "ImageView",
+        "icon": "icons10-picture",
+        "showBadge": false
+    },
+    {
+        "to": "/texts",
+        "exact": false,
+        "text": "Texts",
+        "icon": "icons10-align-left",
         "showBadge": false
     },
     {
@@ -67,13 +81,6 @@
         "exact": false,
         "text": "Tables",
         "icon": "icons10-grid-3",
-        "showBadge": false
-    },
-    {
-        "to": "/gauges",
-        "exact": false,
-        "text": "Gauges",
-        "icon": "icons10-gauge",
         "showBadge": false
     },
     {

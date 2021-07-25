@@ -28,7 +28,7 @@ class AlertDocs extends React.Component {
     return (
     <NavPageContainer hasPadding animateTransition>
       <h1>Alerts</h1>
-      <p className="font-size-18px"><span className="color-primary">Alert</span> component is used to interrupt the user with a mandatory confirmation or action.</p>
+      <p><span className="color-primary">Alert</span> component is used to interrupt the user with a mandatory confirmation or action.</p>
       <Button
         value="Open Alert Default" 
         onClick={this.toggleAlert}

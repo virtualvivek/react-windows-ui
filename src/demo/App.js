@@ -10,17 +10,18 @@ import Texts from './pages/Texts'
 import Links from './pages/Links'
 import ProgressControls from './pages/ProgressControls'
 import Tables from './pages/Tables'
-import Gauges from './pages/Gauges'
 import Lists from './pages/Lists'
 import Icons from './pages/Icons'
 import Themes from './pages/Themes'
 import Images from './pages/Images'
-import Dialogs from './pages/Dialogs'
 
 import AccordionDocs from './docs/Accordion_docs'
 import AlertDocs from './docs/Alert_docs'
 import AvatarViewDocs from './docs/AvatarView_docs'
 import ButtonsDocs from './docs/Buttons_docs'
+import CardDocs from './docs/Card_docs'
+import DialogDocs from './docs/Dialog_docs'
+import GaugeDocs from './docs/Gauge_docs'
 
 import _404Layout from './layouts/404Layout'
 import AboutLayout from './layouts/AboutLayout'
@@ -165,15 +166,18 @@ class App extends React.Component {
         <Route path='/alerts' component={AlertDocs} />
         <Route path='/avatarview' component={AvatarViewDocs} />
         <Route path='/buttons' component={ButtonsDocs} />
+        <Route path='/cards' component={CardDocs} />
+        <Route path='/dialogs' component={DialogDocs} />
+        <Route path='/gauges' component={GaugeDocs} />
 
         <Route path='/texts' component={Texts} />
         {/* <Route path='/buttons' component={Buttons} /> */}
         <Route path='/images' component={Images} />
-        <Route path='/dialogs' component={Dialogs} />
+        {/* <Route path='/dialogs' component={Dialogs} /> */}
         <Route path='/links' component={Links} />
         <Route path='/progress' component={ProgressControls} />
         <Route path='/tables' component={Tables} />
-        <Route path='/gauges' component={Gauges} />
+        {/* <Route path='/gauges' component={Gauges} /> */}
         <Route path='/lists' component={Lists} />
         <Route path='/icons' component={Icons} />
         <Route path='/themes' component={Themes} />
