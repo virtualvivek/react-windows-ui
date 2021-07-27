@@ -7,13 +7,11 @@ import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
 import Inputs from './pages/Inputs'
 import Texts from './pages/Texts'
-import Links from './pages/Links'
 import ProgressControls from './pages/ProgressControls'
 import Tables from './pages/Tables'
 import Lists from './pages/Lists'
 import Icons from './pages/Icons'
 import Themes from './pages/Themes'
-import Images from './pages/Images'
 
 import AccordionDocs from './docs/Accordion_docs'
 import AlertDocs from './docs/Alert_docs'
@@ -178,7 +176,6 @@ class App extends React.Component {
 
         <Route path='/texts' component={Texts} />
         {/* <Route path='/buttons' component={Buttons} /> */}
-        <Route path='/images' component={Images} />
         {/* <Route path='/dialogs' component={Dialogs} /> */}
         {/* <Route path='/links' component={Links} /> */}
         <Route path='/progress' component={ProgressControls} />
