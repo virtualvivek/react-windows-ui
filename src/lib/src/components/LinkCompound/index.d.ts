@@ -10,7 +10,6 @@ export interface LinkCompoundProps {
     display ?: string;
     title ?: string;
     subtitle ?: string;
-    onMouseOver ?: Function;
     focused ?: boolean;
 }
 declare const LinkCompound: React.FC<LinkCompoundProps>

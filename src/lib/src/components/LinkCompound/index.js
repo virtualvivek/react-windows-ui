@@ -20,7 +20,7 @@ const LinkCompound = (props) => {
         margin: props.margin,
         display: props.display
       }}  
-      onMouseOver={props.onMouseOver}>
+      {...props}>
           {props.icon}
           {setImg()}
           <span>{props.title}</span>

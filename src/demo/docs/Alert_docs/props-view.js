@@ -39,8 +39,8 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">setTheme</p></td>
-          <td>default/light</td>
-          <td>default</td>
+          <td>'default'/'light'</td>
+          <td>'default'</td>
           <td>Sets the alert theme</td>
         </tr>
         <tr>

@@ -1,7 +1,7 @@
-const AccordionImportCode =
-`import { Accordion } from 'react-windows-ui`;
+const GaugeImportCode =
+`import { Gauge } from 'react-windows-ui'`;
 
-const AccordionUsageCode =
+const GaugeUsageCode =
 `<Accordion
   title="Some Title"
   focused={true}>
@@ -16,7 +16,7 @@ const AccordionUsageFocusedFalseCode =
 </Accordion>`;
 
 export {
-    AccordionImportCode,
-    AccordionUsageCode,
+    GaugeImportCode,
+    GaugeUsageCode,
     AccordionUsageFocusedFalseCode
 }

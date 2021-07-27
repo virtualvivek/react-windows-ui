@@ -1,22 +1,39 @@
-const AccordionImportCode =
-`import { Accordion } from 'react-windows-ui`;
+const ImageViewImportCode =
+`import { ImageView } from 'react-windows-ui'`;
 
-const AccordionUsageCode =
-`<Accordion
-  title="Some Title"
-  focused={true}>
-  <div>children components</div>
-</Accordion>`;
+const ImageViewUsageCode =
+`<ImageView
+  src={Img}
+  width={200}
+  height={200}
+  borderRadius={18}
+  isLoading={false}
+/>`;
 
-const AccordionUsageFocusedFalseCode =
-`<Accordion
-  title="Some Title"
-  focused={false}>
-  <div>children components</div>
-</Accordion>`;
+const ImageViewShadowInsetUsageCode =
+`<ImageView
+  src={Img}
+  width={200}
+  height={200}
+  borderRadius={18}
+  insetShadow={true}
+/>`;
+
+const ImageViewTitleSubtitleUsageCode =
+`<ImageView
+  src={Img}
+  width={200}
+  height={200}
+  borderRadius={18}
+  insetShadow={true}
+  title="Title Text"
+  subtitle="Subtitle text"
+/>`;
+
 
 export {
-    AccordionImportCode,
-    AccordionUsageCode,
-    AccordionUsageFocusedFalseCode
+    ImageViewImportCode,
+    ImageViewUsageCode,
+    ImageViewShadowInsetUsageCode,
+    ImageViewTitleSubtitleUsageCode
 }

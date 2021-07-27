@@ -37,6 +37,7 @@
         margin: 0 0 -5px -2px;
         position: relative;
         top: 18px;
+        object-fit: cover;
     }
     span {
         @extend .color-dark-text;

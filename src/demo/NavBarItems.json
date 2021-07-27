@@ -49,10 +49,24 @@
         "showBadge": false
     },
     {
-        "to": "/images",
+        "to": "/imageview",
         "exact": false,
         "text": "ImageView",
         "icon": "icons10-picture",
+        "showBadge": false
+    },
+    {
+        "to": "/links",
+        "exact": false,
+        "text": "Link",
+        "icon": "icons10-link",
+        "showBadge": false
+    },
+    {
+        "to": "/linkcompound",
+        "exact": false,
+        "text": "LinkCompound",
+        "icon": "icons10-export",
         "showBadge": false
     },
     {
@@ -60,13 +74,6 @@
         "exact": false,
         "text": "Texts",
         "icon": "icons10-align-left",
-        "showBadge": false
-    },
-    {
-        "to": "/links",
-        "exact": false,
-        "text": "Links",
-        "icon": "icons10-link",
         "showBadge": false
     },
     {

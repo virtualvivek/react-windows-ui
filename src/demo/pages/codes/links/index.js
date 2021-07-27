@@ -1,6 +1,6 @@
 const LinkDefaultCode =
 `import { Link } from 'react-router-dom'
-<Link to="#" className="app-link">Default App Link</Link>`;
+<Link to="#" target="" className="app-link">Default App Link</Link>`;
 
 const LinkCompoundCode =
 `<LinkCompound
@@ -12,6 +12,7 @@ const LinkCompoundCode =
 
 const LinkCompoundBorderCode =
 `<LinkCompound
+    target=""
  to="#"
  linkStyle="border"
  title="Title text display here"

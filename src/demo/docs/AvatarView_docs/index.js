@@ -67,7 +67,8 @@ class AvatarViewDocs extends React.Component {
         {AvatarViewUsageCode}
       </SyntaxHighlighter>
 
-      <h3 className="m-tb-20">AvatarView <p className="app-code">state loading</p>:</h3>
+      <div className="app-hr"></div>
+      <h2 className="m-tb-20">AvatarView <p className="app-code">state loading</p>:</h2>
 
       <AvatarView
         size="medium"

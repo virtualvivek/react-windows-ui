@@ -8,8 +8,18 @@ const GettingStarted = () => {
       hasPadding
       animateTransition>
 
-      <h1>Templates</h1>
+      <h1>Boilerplate</h1>
+         
+        <LinkCompound
+          display="inline-block"
+          to="/AppJsDefault"
+          title="Template"
+          subtitle="Starter template repository"
+          icon={<i className="icons10-file-explorer"></i>}
+          focused={true}
+          margin="5px 5px 0 0" />
 
+      <h1>Templates</h1>
          
         <LinkCompound
           display="inline-block"
@@ -48,7 +58,7 @@ const GettingStarted = () => {
           margin="5px 5px 0 0" />
 
 
-        <h1>Layouts</h1>
+      <h1>Layouts</h1>
 
         <LinkCompound
           display="inline-block"

@@ -1,18 +1,68 @@
 import React from 'react'
-import { NavPageContainer, Accordion } from '../../../lib/src'
+import { NavPageContainer, NavPageContainerInner, ImageView, Button } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { AccordionImportCode, AccordionUsageCode,
-  AccordionUsageFocusedFalseCode } from './codes'
+import { ImageViewImportCode,ImageViewUsageCode,ImageViewShadowInsetUsageCode,
+  ImageViewTitleSubtitleUsageCode } from './codes'
+import IronMan from '../../assets/illustration/ironman.jpg'
+import Img2 from '../../assets/illustration/2.jpg'
+import Img3 from '../../assets/illustration/3.jpg'
+import Img4 from '../../assets/illustration/5.jpg'
+import PropsView from './props-view'
 
-const ImageView_ = () => {
+class ImageViewDocs extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      stateLoadingImg: false
+    }
+  }
+
+  setLoading = () => { this.setState({stateLoadingImg: true}) }
+  setRegular = () => { this.setState({stateLoadingImg: false}) }
+
+  render() {
+
   return (
-    <NavPageContainer hasPadding>
-      <h1>Accordion</h1>
+    <NavPageContainer>
 
-      <Accordion focused title="Some Title">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </Accordion>
+      <ImageView
+        src={IronMan}
+        width={'100%'}
+        height={'240px'}
+        insetShadow
+        title="ImageView"
+        subtitle="A component for displaying different types of images, including network images, static resources."
+        tooltip="ImageView tooltip title"
+      />
+
+    <NavPageContainerInner>
+
+      {/* <h1>ImageView</h1> */}
+      <br/>
+
+      <ImageView
+        src={Img4}
+        width={'228px'}
+        height={'180px'}
+        borderRadius={18}
+        title="Skrillex"
+        isLoading={this.state.stateLoadingImg}
+      />
+      <br/><br/>
+
+      <Button
+        value="set Loading"
+        type="primary"
+        onClick={this.setLoading}/>
+      &nbsp;
+      <Button
+        value="set Regular"
+        type="primary-outline"
+        onClick={this.setRegular}/>
+
+      <div className="app-hr"></div>
 
       <h2>Import</h2>
 
@@ -20,74 +70,70 @@ const ImageView_ = () => {
         language="javascript"
         style={vscDarkPlus}
         className="code code-container">
-        {AccordionImportCode}
+        {ImageViewImportCode}
       </SyntaxHighlighter>
 
       <h2>Usage</h2>
 
-      <Accordion focused title="Some Title">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </Accordion>
-      <br/>
+      <SyntaxHighlighter
+        language="javascript"
+        style={vscDarkPlus}
+        className="code code-container">
+        {ImageViewUsageCode}
+      </SyntaxHighlighter>
+
+      <div className="app-hr"></div>
+
+      <h2>ImageView with <p className="app-code">Inset Shadow</p> :</h2>
+
+      <ImageView
+        src={Img4}
+        width={'200px'}
+        height={'200px'}
+        borderRadius={18}
+        title="Skrillex"
+        insetShadow={true}
+      />
 
       <SyntaxHighlighter
         language="javascript"
         style={vscDarkPlus}
         className="code code-container">
-        {AccordionUsageCode}
+        {ImageViewShadowInsetUsageCode}
       </SyntaxHighlighter>
 
-      <h3 className="m-tb-20">Accordion focused false</h3>
+      <div className="app-hr"></div>
 
-      <Accordion focused={false} title="Some Title">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </Accordion>
-      <br/>
+      <h2>ImageView with <p className="app-code">Title and Subtitle</p> :</h2>
+
+      <ImageView
+        src={Img4}
+        width={'200px'}
+        height={'200px'}
+        borderRadius={18}
+        title="Title Text"
+        subtitle="Subtitle text"
+        insetShadow={true}
+      />
 
       <SyntaxHighlighter
         language="javascript"
         style={vscDarkPlus}
         className="code code-container">
-        {AccordionUsageFocusedFalseCode}
+        {ImageViewTitleSubtitleUsageCode}
       </SyntaxHighlighter>
-
 
       <h2>Props</h2>
-      <table className="app-table-view">
-        <thead>
-          <tr className="app-table-tr">
-            <th className="" align="left">Prop</th>
-            <th className="" align="left">Type</th>
-            <th className="" align="left">Default</th>
-            <th className="" align="left">Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><p className="app-code">title</p></td>
-            <td>string</td>
-            <td>null</td>
-            <td>Sets the accordion title</td>
-          </tr>
-          <tr>
-            <td><p className="app-code">focused</p></td>
-            <td>boolean</td>
-            <td>true</td>
-            <td>Sets the accordion background focused</td>
-          </tr>
-          <tr>
-            <td><p className="app-code">children</p></td>
-            <td>ReactNode</td>
-            <td>null</td>
-            <td>Sets the accordion children</td>
-          </tr>
-        </tbody>
-      </table>
+      <PropsView/>
+
+    </NavPageContainerInner>
+    
 
 
     <br/><br/><br/><br/><br/>
     </NavPageContainer>
-  );
+  )
+ }
 }
 
-export default ImageView_
+export default ImageViewDocs

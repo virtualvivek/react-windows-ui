@@ -16,7 +16,7 @@ const PropsView = () => {
         <tr>
           <td><p className="app-code">src</p></td>
           <td>source</td>
-          <td>null</td>
+          <td>required</td>
           <td>Sets the avatar source</td>
         </tr>
         <tr>

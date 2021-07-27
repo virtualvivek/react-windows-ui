@@ -22,6 +22,9 @@ import ButtonsDocs from './docs/Buttons_docs'
 import CardDocs from './docs/Card_docs'
 import DialogDocs from './docs/Dialog_docs'
 import GaugeDocs from './docs/Gauge_docs'
+import ImageViewDocs from './docs/ImageView_docs'
+import LinkDocs from './docs/Link_docs'
+import LinkCompoundDocs from './docs/LinkCompound_docs'
 
 import _404Layout from './layouts/404Layout'
 import AboutLayout from './layouts/AboutLayout'
@@ -169,12 +172,15 @@ class App extends React.Component {
         <Route path='/cards' component={CardDocs} />
         <Route path='/dialogs' component={DialogDocs} />
         <Route path='/gauges' component={GaugeDocs} />
+        <Route path='/imageview' component={ImageViewDocs} />
+        <Route path='/links' component={LinkDocs} />
+        <Route path='/linkcompound' component={LinkCompoundDocs} />
 
         <Route path='/texts' component={Texts} />
         {/* <Route path='/buttons' component={Buttons} /> */}
         <Route path='/images' component={Images} />
         {/* <Route path='/dialogs' component={Dialogs} /> */}
-        <Route path='/links' component={Links} />
+        {/* <Route path='/links' component={Links} /> */}
         <Route path='/progress' component={ProgressControls} />
         <Route path='/tables' component={Tables} />
         {/* <Route path='/gauges' component={Gauges} /> */}

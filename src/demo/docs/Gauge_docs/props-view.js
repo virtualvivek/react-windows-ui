@@ -27,8 +27,8 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">display</p></td>
-          <td>css property</td>
-          <td>'block'</td>
+          <td>integer/string</td>
+          <td>block</td>
           <td>Set's Card display style property</td>
         </tr>
         <tr>
