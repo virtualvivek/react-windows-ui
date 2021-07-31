@@ -14,46 +14,52 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">hoverable</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's Card hoverable on mouse</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">focused</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's Card focused state</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">display</p></td>
-          <td>integer/string</td>
-          <td>block</td>
-          <td>Set's Card display style property</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">maxWidth</p></td>
-          <td>integer/string</td>
-          <td>inherit</td>
-          <td>Set's Card maxWidth style property</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">padding</p></td>
-          <td>integer/string</td>
+          <td><p className="app-code">setProgress</p></td>
+          <td>integer</td>
           <td>0</td>
-          <td>Set's Card padding style property</td>
+          <td>Set's Gauge </td>
         </tr>
         <tr>
-          <td><p className="app-code">margin</p></td>
+          <td><p className="app-code">scale</p></td>
+          <td>float</td>
+          <td>1</td>
+          <td>Set's Gauge scale size</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">value</p></td>
           <td>integer/string</td>
-          <td>0</td>
-          <td>Set's Card margin style property</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">children</p></td>
-          <td>ReactNode</td>
           <td>null</td>
-          <td>Set's Card children</td>
+          <td>Set's Gauge inner value text</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">info</p></td>
+          <td>integer/string</td>
+          <td>null</td>
+          <td>Set's Gauge inner info text</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">strokeColor</p></td>
+          <td>CSS Color</td>
+          <td>'color-primary'</td>
+          <td>Set's Gauge progress ring color</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">valueColor</p></td>
+          <td>CSS Color</td>
+          <td>'color-text-dark'</td>
+          <td>Set's Gauge inner value color</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">backgroundColor</p></td>
+          <td>CSS Color</td>
+          <td>'color-light-grey'</td>
+          <td>Set's Gauge background-ring/backround color</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">type</p></td>
+          <td>'default' | 'fill'</td>
+          <td>'default'</td>
+          <td>Set's Gauge background type</td>
         </tr>
       </tbody>
     </table>

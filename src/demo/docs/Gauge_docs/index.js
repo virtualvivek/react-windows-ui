@@ -2,8 +2,8 @@ import React from 'react'
 import { NavPageContainer, Gauge, Button } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import {GaugeImportCode,
-  GaugeUsageCode} from './codes'
+import { GaugeImportCode,GaugeUsageCode,GaugeCustom1UsageCode,GaugeCustom2UsageCode,
+GaugeCustom3UsageCode,GaugeCustom4UsageCode } from './codes'
 import PropsView from './props-view'
 
 class GaugeDocs extends React.Component {
@@ -29,7 +29,7 @@ render() {
   return (
   <NavPageContainer
     hasPadding
-    animateTransition>
+    animateTransition={false}>
     <h1>Gauge</h1>
         
     <Gauge
@@ -58,8 +58,37 @@ render() {
 
     <h2>Usage</h2>
 
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {GaugeUsageCode}
+    </SyntaxHighlighter>
+
   
     <div className="app-hr"></div>
+    <h2>Gauge <p className="app-code">Custom color</p> :</h2>
+
+
+    <Gauge
+      setProgress={this.state.gaugeValue}
+      scale={1.5}
+      value={this.state.gaugeValue+"%"}
+      info="of total"
+      strokeColor="#e01944"
+      valueColor="#e01944"
+    />
+
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {GaugeCustom1UsageCode}
+    </SyntaxHighlighter>
+
+  
+    <div className="app-hr"></div>
+    <h2>Gauge <p className="app-code">Type Fill</p> :</h2>
 
     <Gauge
       setProgress={this.state.gaugeValue}
@@ -70,18 +99,15 @@ render() {
       type="fill"
     />
 
-    <Gauge
-      setProgress={this.state.gaugeValue}
-      scale={1.2}
-      value={this.state.gaugeValue+"%"}
-      info="of total"
-      strokeColor="#e01944"
-      valueColor="#e01944"
-    />
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {GaugeCustom2UsageCode}
+    </SyntaxHighlighter>
 
-  
     <div className="app-hr"></div>
-    <h3 className="m-b-15">Customization</h3>
+    <h2>Gauge <p className="app-code">Custom border color</p> :</h2>
 
     <Gauge
       setProgress={44}
@@ -93,7 +119,19 @@ render() {
       valueColor="#198ae0"
       backgroundColor="#198ae044"
     />
-    &nbsp;&nbsp;
+
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {GaugeCustom3UsageCode}
+    </SyntaxHighlighter>
+    
+
+
+    <div className="app-hr"></div>
+    <h2>Gauge <p className="app-code">Custom stroke width</p> :</h2>
+
     <Gauge
       setProgress={15}
       scale={1.2}
@@ -103,6 +141,14 @@ render() {
       strokeWidth={10}
       backgroundColor="#0ac94e44"
     />
+
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {GaugeCustom4UsageCode}
+    </SyntaxHighlighter>
+
 
     <h2>Props</h2>
     <PropsView />

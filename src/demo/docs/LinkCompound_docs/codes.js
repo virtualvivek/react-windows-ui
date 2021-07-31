@@ -9,22 +9,12 @@ const LinkUsageCode =
   icon={<i className="icons10-area-chart color-primary"></i>}
 />`;
 
-const LinkInlineUsageCode =
-`<LinkCompound
-  to="#"
-  title="User preferences and uploads"
-  subtitle="Profile pictures and details"
-  image={Img}
-  imageAlt="Landscape"
-  tooltip="This is tooltip text"
-/>`;
-
 const LinkImageUsageCode =
 `<LinkCompound
   to="#"
   title="User preferences and uploads"
   subtitle="Profile pictures and details"
-  image={Img1}
+  image={Img}
   imageAlt="Demo Image"
 />`;
 
@@ -42,7 +32,6 @@ const LinkBorderUsageCode =
 export {
     LinkImportCode,
     LinkUsageCode,
-    LinkInlineUsageCode,
     LinkBorderUsageCode,
     LinkImageUsageCode
 }

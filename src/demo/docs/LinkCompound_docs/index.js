@@ -3,7 +3,7 @@ import { NavPageContainer, LinkCompound } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import PropsView from './props-view'
-import { LinkImportCode,LinkUsageCode,LinkInlineUsageCode,LinkBorderUsageCode,LinkImageUsageCode } from './codes'
+import { LinkImportCode,LinkUsageCode,LinkBorderUsageCode,LinkImageUsageCode } from './codes'
 import Img1 from '../../assets/illustration/mountain.jpg'
 import Img2 from '../../assets/illustration/macos.jpg'
 

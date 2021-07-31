@@ -14,6 +14,13 @@ const Icons = () => {
         <code>&lt;i className="icons10-home"&gt;&lt;/i&gt;</code>
       </pre> - &nbsp;
       <i className="icons10-home" style={{fontSize:24}}></i>
+
+      <br/><br/><p className="m-0">Icon color-primary:</p>
+      <pre style={{display:'inline',fontSize:13}}>
+        <code>&lt;i className="icons10-car color-primary"&gt;&lt;/i&gt;</code>
+      </pre> - &nbsp;
+      <i className="icons10-car color-primary" style={{fontSize:24}}></i>
+
       <div className="app-hr"></div>
 
       <br/>
