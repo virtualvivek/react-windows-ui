@@ -3,7 +3,7 @@ import { NavPageContainer, LinkCompound } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import PropsView from './props-view'
-import { LinkImportCode,LinkUsageCode,LinkInlineUsageCode } from './codes'
+import { LinkImportCode,LinkUsageCode,LinkInlineUsageCode,LinkBorderUsageCode,LinkImageUsageCode } from './codes'
 import Img1 from '../../assets/illustration/mountain.jpg'
 import Img2 from '../../assets/illustration/macos.jpg'
 
@@ -64,7 +64,7 @@ const LinkCompoundDocs = () => {
         language="javascript"
         style={vscDarkPlus}
         className="code code-container">
-        {LinkInlineUsageCode}
+        {LinkImageUsageCode}
       </SyntaxHighlighter>
 
       <div className="app-hr"></div>
@@ -78,6 +78,7 @@ const LinkCompoundDocs = () => {
         subtitle="Control which app push notification"
         image={Img2}
         imageAlt="Demo Image"
+        tooltip="This is tooltip text"
       />
       <br/><br/>
 
@@ -85,7 +86,7 @@ const LinkCompoundDocs = () => {
         language="javascript"
         style={vscDarkPlus}
         className="code code-container">
-        {LinkInlineUsageCode}
+        {LinkBorderUsageCode}
       </SyntaxHighlighter>
 
 

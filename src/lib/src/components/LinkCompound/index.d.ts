@@ -11,6 +11,7 @@ export interface LinkCompoundProps {
     title ?: string;
     subtitle ?: string;
     focused ?: boolean;
+    tooltip ?: string;
 }
 declare const LinkCompound: React.FC<LinkCompoundProps>
 

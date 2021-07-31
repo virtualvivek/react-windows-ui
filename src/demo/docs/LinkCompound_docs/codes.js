@@ -16,10 +16,33 @@ const LinkInlineUsageCode =
   subtitle="Profile pictures and details"
   image={Img}
   imageAlt="Landscape"
+  tooltip="This is tooltip text"
+/>`;
+
+const LinkImageUsageCode =
+`<LinkCompound
+  to="#"
+  title="User preferences and uploads"
+  subtitle="Profile pictures and details"
+  image={Img1}
+  imageAlt="Demo Image"
+/>`;
+
+const LinkBorderUsageCode =
+`<LinkCompound
+  linkStyle="border"
+  to="#"
+  title="Notification settings and DND"
+  subtitle="Control which app push notification"
+  image={Img}
+  imageAlt="Demo Image"
+  tooltip="This is tooltip text"
 />`;
 
 export {
     LinkImportCode,
     LinkUsageCode,
-    LinkInlineUsageCode
+    LinkInlineUsageCode,
+    LinkBorderUsageCode,
+    LinkImageUsageCode
 }

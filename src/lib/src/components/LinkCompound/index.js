@@ -19,8 +19,9 @@ const LinkCompound = (props) => {
       style={{
         margin: props.margin,
         display: props.display
-      }}  
-      {...props}>
+      }}
+      title={props.tooltip}
+      target={props.target}>
           {props.icon}
           {setImg()}
           <span>{props.title}</span>

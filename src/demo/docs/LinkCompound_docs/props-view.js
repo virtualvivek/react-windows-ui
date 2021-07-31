@@ -56,6 +56,12 @@ const PropsView = () => {
           <td>Set's Link children</td>
         </tr>
         <tr>
+          <td><p className="app-code">tooltip</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Set's Link Hover Tooltip</td>
+        </tr>
+        <tr>
           <td><p className="app-code">target</p></td>
           <td>'_blank | _self | _parent | _top'</td>
           <td>'_self'</td>
