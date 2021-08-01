@@ -7,6 +7,8 @@ import PropsView from './props-view'
 
 class MenuBarDocs extends React.Component {
 
+  sayhellow = () =>{alert("clicked")}
+
 render() {
   return (
   <NavPageContainer
@@ -14,7 +16,7 @@ render() {
     animateTransition={false}>
     <h1>MenuBar</h1>
         
-    <p>A <span className="color_primary">MenuBar</span> is a graphical control element which contains drop-down menus</p>
+    <p>A <span className="color-primary">MenuBar</span> is a graphical control element which contains drop-down menus</p>
 
     <MenuBar
       label="Select a fruit"
@@ -55,9 +57,9 @@ render() {
         {label: 'orange', onClick:this.sayhellow},
         {label: 'banana', onClick:this.sayhellow},
         {label: 'peach', onClick:this.sayhellow},
-        ]}
+      ]}
     />
-    
+    <br/><br/>
 
     <SyntaxHighlighter
       language="javascript"

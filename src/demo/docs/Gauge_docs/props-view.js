@@ -27,13 +27,13 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">value</p></td>
-          <td>integer/string</td>
+          <td>integer | string</td>
           <td>null</td>
           <td>Set's Gauge inner value text</td>
         </tr>
         <tr>
           <td><p className="app-code">info</p></td>
-          <td>integer/string</td>
+          <td>integer | string</td>
           <td>null</td>
           <td>Set's Gauge inner info text</td>
         </tr>

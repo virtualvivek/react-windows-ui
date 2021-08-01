@@ -91,6 +91,13 @@
         "showBadge": false
     },
     {
+        "to": "/progressbar",
+        "exact": false,
+        "text": "ProgressBar",
+        "icon": "icons10-bar-chart",
+        "showBadge": false
+    },
+    {
         "to": "/progress",
         "exact": false,
         "text": "Progress Controls",

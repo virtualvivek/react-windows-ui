@@ -14,52 +14,46 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">setProgress</p></td>
-          <td>integer</td>
-          <td>0</td>
-          <td>Set's Gauge </td>
+          <td><p className="app-code">label</p></td>
+          <td>string</td>
+          <td>'Select'</td>
+          <td>Set's MenuBar label</td>
         </tr>
         <tr>
-          <td><p className="app-code">scale</p></td>
-          <td>float</td>
-          <td>1</td>
-          <td>Set's Gauge scale size</td>
+          <td><p className="app-code">searchPlaceholder</p></td>
+          <td>string</td>
+          <td>'search here'</td>
+          <td>Set's MenuBar Search placeholder</td>
         </tr>
         <tr>
-          <td><p className="app-code">value</p></td>
-          <td>integer/string</td>
+          <td><p className="app-code">data</p></td>
+          <td>object</td>
           <td>null</td>
-          <td>Set's Gauge inner value text</td>
+          <td>Set's MenuBar menu items</td>
         </tr>
         <tr>
-          <td><p className="app-code">info</p></td>
-          <td>integer/string</td>
+          <td><p className="app-code">data {'>'} label</p></td>
+          <td>integer | string</td>
           <td>null</td>
-          <td>Set's Gauge inner info text</td>
+          <td>Set's MenuBar item label</td>
         </tr>
         <tr>
-          <td><p className="app-code">strokeColor</p></td>
-          <td>CSS Color</td>
-          <td>'color-primary'</td>
-          <td>Set's Gauge progress ring color</td>
+          <td><p className="app-code">data {'>'} icon</p></td>
+          <td>ReactNode</td>
+          <td>null</td>
+          <td>Set's MenuBar item icon</td>
         </tr>
         <tr>
-          <td><p className="app-code">valueColor</p></td>
-          <td>CSS Color</td>
-          <td>'color-text-dark'</td>
-          <td>Set's Gauge inner value color</td>
+          <td><p className="app-code">data {'>'} link</p></td>
+          <td>link href string</td>
+          <td>'#'</td>
+          <td>Set's MenuBar item link</td>
         </tr>
         <tr>
-          <td><p className="app-code">backgroundColor</p></td>
-          <td>CSS Color</td>
-          <td>'color-light-grey'</td>
-          <td>Set's Gauge background-ring/backround color</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">type</p></td>
-          <td>'default' | 'fill'</td>
-          <td>'default'</td>
-          <td>Set's Gauge background type</td>
+          <td><p className="app-code">data {'>'} onClick</p></td>
+          <td>function</td>
+          <td>null</td>
+          <td>Set's MenuBar item onClick listner</td>
         </tr>
       </tbody>
     </table>

@@ -33,13 +33,13 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">type</p></td>
-          <td>default<br/>primary/primary-outline<br/>success/success-outline<br/>danger/danger-outline</td>
+          <td>default<br/>primary | primary-outline<br/>success | success-outline<br/>danger | danger-outline</td>
           <td>default</td>
           <td>Set's button type</td>
         </tr>
         <tr>
           <td><p className="app-code">textAlign</p></td>
-          <td>center/start</td>
+          <td>center | start</td>
           <td>center</td>
           <td>Set's button text alignment</td>
         </tr>

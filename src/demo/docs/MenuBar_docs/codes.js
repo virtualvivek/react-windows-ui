@@ -9,7 +9,7 @@ const MenuBarUsageCode =
     {label: 'orange', link: '#'},
     {label: 'banana', link: '#'},
     {label: 'peach', link: '#'},
-    ]}
+  ]}
 />`;
 
 const MenuBarOnClickUsageCode =
@@ -20,12 +20,12 @@ const MenuBarOnClickUsageCode =
     {label: 'orange', onClick:this.funcName},
     {label: 'banana', onClick:this.funcName},
     {label: 'peach', onClick:this.funcName},
-    ]}
+  ]}
 />`;
 
 
 export {
-    MenuBarImportCode,
-    MenuBarUsageCode,
-    MenuBarOnClickUsageCode
+  MenuBarImportCode,
+  MenuBarUsageCode,
+  MenuBarOnClickUsageCode
 }

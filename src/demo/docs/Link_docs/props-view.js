@@ -15,7 +15,7 @@ const PropsView = () => {
       <tbody>
         <tr>
           <td><p className="app-code">to</p></td>
-          <td>link string</td>
+          <td>link href string</td>
           <td>'#'</td>
           <td>Set's Link to path</td>
         </tr>

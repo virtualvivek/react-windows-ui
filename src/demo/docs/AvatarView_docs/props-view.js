@@ -21,7 +21,7 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">size</p></td>
-          <td>small/medium/large</td>
+          <td>small | medium | large</td>
           <td>medium</td>
           <td>Sets the avatar size</td>
         </tr>

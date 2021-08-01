@@ -16,13 +16,9 @@ const ProgressBar = (props) => {
             height: props.height
           }}>
           <span
-            className = {
-              props.setStatus ==="danger" ? "bg-danger"
-            : props.setStatus ==="success" ? "bg-success"
-            : ""
-            }
             style={{
-              width: props.setProgress+'%'
+              width: props.setProgress+'%',
+              backgroundColor: props.color
             }}>
           </span>
         </div>

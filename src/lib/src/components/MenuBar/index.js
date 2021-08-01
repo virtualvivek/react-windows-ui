@@ -78,7 +78,8 @@ const MenuBar = (props) => {
 
 MenuBar.defaultProps = {
   data:[],
-  searchPlaceholder: "search here.."
+  searchPlaceholder: "search here..",
+  label: "Select"
 }
 
 export default MenuBar

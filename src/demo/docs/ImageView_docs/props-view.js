@@ -21,13 +21,13 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">width</p></td>
-          <td>integer/string</td>
+          <td>integer | string</td>
           <td>124</td>
           <td>Set's ImageView width</td>
         </tr>
         <tr>
           <td><p className="app-code">height</p></td>
-          <td>integer/string</td>
+          <td>integer | string</td>
           <td>124</td>
           <td>Set's ImageView height</td>
         </tr>

@@ -5,7 +5,7 @@ export interface ProgressBarProps {
   icon ?: ReactNode;
   showIcon ?: boolean;
   setProgress ?: number | string;
-  setStatus ?: string;
+  color ?: string | any;
   title ?: string;
   subtitle ?: string;
   tooltip ?: string;
