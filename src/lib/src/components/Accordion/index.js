@@ -11,7 +11,7 @@ const Accordion = (props) => {
       }}>
       <div
         className={props.focused ? "app-accordion-title focused"
-                                  : "app-accordion-title"}
+                                 : "app-accordion-title"}
         onClick={() => setIsActive(!isActive)}>
         <div>{props.title}</div>
         <div>{isActive ? props.expandIcon : props.collapseIcon}</div>

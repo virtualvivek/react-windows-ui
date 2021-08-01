@@ -9,7 +9,6 @@ import Inputs from './pages/Inputs'
 import Texts from './pages/Texts'
 import ProgressControls from './pages/ProgressControls'
 import Tables from './pages/Tables'
-import Lists from './pages/Lists'
 import Icons from './pages/Icons'
 import Themes from './pages/Themes'
 
@@ -23,15 +22,15 @@ import GaugeDocs from './docs/Gauge_docs'
 import ImageViewDocs from './docs/ImageView_docs'
 import LinkDocs from './docs/Link_docs'
 import LinkCompoundDocs from './docs/LinkCompound_docs'
+import ListItemDocs from './docs/ListItem_docs'
+import LoadersDocs from './docs/LoadersDocs'
 
 import _404Layout from './layouts/404Layout'
 import AboutLayout from './layouts/AboutLayout'
 import BlogLayout from './layouts/BlogLayout'
-import CardLayout from './layouts/CardLayout'
 import CommanBarLayout from './layouts/CommandBarLayout'
 import ContactsLayout from './layouts/ContactsLayout'
 import LoginLayout from './layouts/LoginLayout'
-import ListLayout from './layouts/ListLayout'
 
 import AppJsDefault from './templates/appjs-default'
 import AppJsSearchable from './templates/appjs-searchable'
@@ -138,18 +137,6 @@ class App extends React.Component {
         <div className="app-hr"></div>
 
         <NavBarLink
-          to="/lists"
-          text="Lists"
-          icon={<i className="icons10-list"></i>}
-        />
-
-        <NavBarLink
-          to="/cardlayout"
-          text="Cards"
-          icon={<i className="icons10-film"></i>}
-        />
-
-        <NavBarLink
           to="/404layout"
           text="404Layout"
           icon={<i className="icons10-terminal"></i>}
@@ -173,15 +160,12 @@ class App extends React.Component {
         <Route path='/imageview' component={ImageViewDocs} />
         <Route path='/links' component={LinkDocs} />
         <Route path='/linkcompound' component={LinkCompoundDocs} />
+        <Route path='/listitem' component={ListItemDocs} />
+        <Route path='/loaders' component={LoadersDocs} />
 
         <Route path='/texts' component={Texts} />
-        {/* <Route path='/buttons' component={Buttons} /> */}
-        {/* <Route path='/dialogs' component={Dialogs} /> */}
-        {/* <Route path='/links' component={Links} /> */}
         <Route path='/progress' component={ProgressControls} />
         <Route path='/tables' component={Tables} />
-        {/* <Route path='/gauges' component={Gauges} /> */}
-        <Route path='/lists' component={Lists} />
         <Route path='/icons' component={Icons} />
         <Route path='/themes' component={Themes} />
         
@@ -189,10 +173,8 @@ class App extends React.Component {
         <Route path='/BlogLayout' component={BlogLayout} />
         <Route path='/CommandBarLayout' component={CommanBarLayout} />
         <Route path='/contactslayout' component={ContactsLayout} />
-        <Route path='/cardlayout' component={CardLayout} />
         <Route path='/404layout' component={_404Layout} />
         <Route path='/LoginLayout' component={LoginLayout} />
-        <Route path='/ListLayout' component={ListLayout} />
 
         <Route path='/AppJsDefault' component={AppJsDefault} />
         <Route path='/AppJsSearchable' component={AppJsSearchable} />

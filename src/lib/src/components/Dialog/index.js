@@ -9,13 +9,13 @@ const Dialog = (props) => {
   return (
     <>
     <div
-      onClick = { props.onBackdropPress }
-      className = {props.isVisible ?
+      onClick={ props.onBackdropPress }
+      className={props.isVisible ?
         "app-dim-overlay show" : "app-dim-overlay"
         }>
     </div>
     <div
-      className = { props.isVisible ?
+      className={ props.isVisible ?
         "app-dialog "+ isDropShadow() + " show" :
         "app-dialog "+ isDropShadow()
         }

@@ -7,7 +7,7 @@ const GaugeUsageCode =
   scale={2}
   value={50+"%"}
   info="of something"
-/>>`;
+/>`;
 
 const GaugeCustom1UsageCode =
 `<Gauge
@@ -21,12 +21,12 @@ const GaugeCustom1UsageCode =
 
 const GaugeCustom2UsageCode =
 `<Gauge
+  type="fill"
   setProgress={50}
   scale={1.2}
   value={50+"%"}
   strokeColor="#eb8613"
   valueColor="#eb8613"
-  type="fill"
 />`;
 
 const GaugeCustom3UsageCode =

@@ -206,7 +206,7 @@ class ProgressControls extends React.Component {
         <h3 className="m-b-15">LoadeBusy Fullscreen</h3>
 
           <LoaderBusy
-            isVisible={this.state.showLoaderBusyFull}
+            isLoading={this.state.showLoaderBusyFull}
             onBackdropPress={this.toggleLoaderBusyFull}
             display="fullscreen"
           />
@@ -219,7 +219,7 @@ class ProgressControls extends React.Component {
         <h3 className="m-b-15">Custom Background</h3>
 
           <LoaderBusy
-            isVisible={this.state.showLoaderBusyFullCustom}
+            isLoading={this.state.showLoaderBusyFullCustom}
             onBackdropPress={this.toggleLoaderBusyFullCustom}
             display="fullscreen"
             backgroundColor="var(--PrimaryColor)"

@@ -4,7 +4,7 @@ const CommandBar = (props) => {
   return (
     <div
       className={ props.position ? "app-command-bar" : "app-command-bar fixed" }
-      style = {
+      style={
         props.showDropShadow ?
         {
           backgroundColor: 'var(--color_light_grey_alpha)',

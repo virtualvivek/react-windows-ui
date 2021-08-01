@@ -32,7 +32,7 @@ const CardDocs = () => {
 
       <div className="app-hr"></div>
 
-      <h3 className="m-b-15">Card <p className="app-code">Default</p></h3>
+      <h2 className="m-b-15">Card <p className="app-code">Default</p></h2>
 
       <Card
         display="flow-root">
@@ -54,7 +54,7 @@ const CardDocs = () => {
 
       <div className="app-hr"></div>
 
-      <h3 className="m-b-15">Card <p className="app-code">Hoverable</p></h3>
+      <h2 className="m-b-15">Card <p className="app-code">Hoverable</p></h2>
 
       <p>This demo also using <span className="color-primary">ListItem</span> as a child to know more view <span className="app-code">listview docs</span> individually.</p>
       <br/>
@@ -87,7 +87,7 @@ const CardDocs = () => {
 
       <div className="app-hr"></div>
 
-      <h3 className="m-b-15">Card <p className="app-code">Focused</p></h3>
+      <h2 className="m-b-15">Card <p className="app-code">Focused</p></h2>
 
       <p>This demo also using <span className="color-primary">LinkCompound</span> as child to know more view <span className="app-code">linkCompound docs</span> individually.</p>
       <br/>

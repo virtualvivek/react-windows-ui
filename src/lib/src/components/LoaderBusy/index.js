@@ -28,7 +28,7 @@ const LoaderBusy = (props) => {
   return <>
     <div
       className={
-      props.isVisible ?
+      props.isLoading ?
         "app-dim-overlay show"
       : "app-dim-overlay"
       }
@@ -38,7 +38,7 @@ const LoaderBusy = (props) => {
     </div>
     <div
       onClick={props.onBackdropPress}
-      className={props.isVisible ?
+      className={props.isLoading ?
       "app-loader-busy-fullscreen show"
       : "app-loader-busy-fullscreen"}>
       {renderLoader()}

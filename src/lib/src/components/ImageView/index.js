@@ -6,11 +6,11 @@ const ImageView = (props) => {
   const [didLoad, setLoad] = useState(false)
 
   const renderLoader = () => {
-        return  <div className="app-image-view-loader">
-                  <div className="app-loader-busy light animate">
-                    <LoaderBusyWrapper/>
-                  </div>
-                </div>
+    return  <div className="app-image-view-loader">
+              <div className="app-loader-busy light animate">
+                <LoaderBusyWrapper/>
+              </div>
+            </div>
   }
 
   const renderShadow = () => {
