@@ -7,7 +7,6 @@ import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
 import Inputs from './pages/Inputs'
 import Texts from './pages/Texts'
-import ProgressControls from './pages/ProgressControls'
 import Tables from './pages/Tables'
 import Icons from './pages/Icons'
 import Themes from './pages/Themes'
@@ -117,7 +116,7 @@ class App extends React.Component {
         icon={<i className="icons10-keyboard"></i>}
       />
 
-      <h1>Docs</h1>
+      <h1>Components</h1>
       <div className="app-hr"></div>
 
       {this.state.filteredData.map((item, key) => {
@@ -168,7 +167,6 @@ class App extends React.Component {
         <Route path='/progressbar' component={ProgressBarDocs} />
 
         <Route path='/texts' component={Texts} />
-        <Route path='/progress' component={ProgressControls} />
         <Route path='/tables' component={Tables} />
         <Route path='/icons' component={Icons} />
         <Route path='/themes' component={Themes} />

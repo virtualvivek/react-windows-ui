@@ -1,6 +1,9 @@
 const ProgressBarImportCode =
 `import { ProgressBar } from 'react-windows-ui'`;
 
+const ProgressBarIndeterminateImportCode =
+`import { ProgressBarIndeterminate } from 'react-windows-ui'`;
+
 const ProgressBarUsageCode =
 `<ProgressBar
   setProgress={56}
@@ -41,6 +44,11 @@ const ProgressBarCustomHeightUsageCode =
   setProgress={46}
 />`;
 
+const ProgressBarIndeterminateUsageCode =
+`<ProgressBarIndeterminate
+  isLoading={true}
+/>`;
+
 
 export {
   ProgressBarImportCode,
@@ -49,5 +57,7 @@ export {
   ProgressBarTitleSubtitleUsageCode,
   ProgressBarIconUsageCode,
   ProgressBarCustomColorUsageCode,
-  ProgressBarCustomHeightUsageCode
+  ProgressBarCustomHeightUsageCode,
+  ProgressBarIndeterminateImportCode,
+  ProgressBarIndeterminateUsageCode
 }

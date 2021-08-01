@@ -1,10 +1,11 @@
 import React from 'react'
-import { NavPageContainer, MenuBar,ProgressBar,Button } from '../../../lib/src'
+import { NavPageContainer,ProgressBar,ProgressBarIndeterminate,Button } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { ProgressBarImportCode,ProgressBarUsageCode,ProgressBarTitleUsageCode,
         ProgressBarTitleSubtitleUsageCode,ProgressBarIconUsageCode,
-        ProgressBarCustomColorUsageCode,ProgressBarCustomHeightUsageCode } from './codes'
+        ProgressBarCustomColorUsageCode,ProgressBarCustomHeightUsageCode,
+        ProgressBarIndeterminateImportCode,ProgressBarIndeterminateUsageCode } from './codes'
 import PropsView from './props-view'
 
 class ProgressBarDocs extends React.Component {
@@ -69,8 +70,7 @@ render() {
 
     <ProgressBar
       setProgress={this.state.ProgressBar1}
-      tooltip="ProgressBar tooltip title"
-    /><br/>
+      tooltip="ProgressBar tooltip title"/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -85,8 +85,7 @@ render() {
 
     <ProgressBar
       title="Title"
-      setProgress={80}
-    /><br/>
+      setProgress={80}/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -102,8 +101,7 @@ render() {
     <ProgressBar
       title="Title"
       subtitle="Subtitle"
-      setProgress={46}
-    /><br/>
+      setProgress={46}/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -121,8 +119,7 @@ render() {
       showIcon={true}
       title="Drive C:"
       subtitle="primary storage"
-      setProgress={54}
-    /><br/>
+      setProgress={54}/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -136,13 +133,11 @@ render() {
 
     <ProgressBar
       setProgress={29}
-      color={"#2C8B2C"}
-    />
+      color={"#2C8B2C"}/>
     <br/>
     <ProgressBar
       setProgress={67}
-      color={"#C50500"}
-    />
+      color={"#C50500"}/>
     <br/>
     <SyntaxHighlighter
       language="javascript"
@@ -156,8 +151,7 @@ render() {
 
     <ProgressBar
       setProgress={29}
-      height={15}
-    />
+      height={15}/>
     <br/>
     <SyntaxHighlighter
       language="javascript"
@@ -167,14 +161,44 @@ render() {
     </SyntaxHighlighter>
 
 
+    <div className="app-hr"></div>
+    <h1>ProgressBarIndeterminate</h1>
+
+    <h2>Import</h2>
+
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {ProgressBarIndeterminateImportCode}
+    </SyntaxHighlighter>
+
+    <h2>Usage</h2>
+
+    <ProgressBarIndeterminate
+      isLoading={this.state.showProgressIndeterminate}/><br/>
+    <Button
+      value="Toggle Loading"
+      icon={<i className="icons10-resize-horizontal"></i>}
+      onClick={this.toggleProgressIndeterminate}/><br/><br/>
+
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {ProgressBarIndeterminateUsageCode}
+    </SyntaxHighlighter>
+
+
+    <div className="app-hr"></div>
     <h2>Props</h2>
     <PropsView />
 
     <br/><br/><br/><br/><br/><br/>
 
   </NavPageContainer>
-);
-}
+  );
+ }
 }
 
 export default ProgressBarDocs

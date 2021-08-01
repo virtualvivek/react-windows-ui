@@ -98,13 +98,6 @@
         "showBadge": false
     },
     {
-        "to": "/progress",
-        "exact": false,
-        "text": "Progress Controls",
-        "icon": "icons10-bar-chart",
-        "showBadge": false
-    },
-    {
         "to": "/texts",
         "exact": false,
         "text": "Texts",

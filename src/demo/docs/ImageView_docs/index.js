@@ -5,8 +5,6 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { ImageViewImportCode,ImageViewUsageCode,ImageViewShadowInsetUsageCode,
   ImageViewTitleSubtitleUsageCode } from './codes'
 import IronMan from '../../assets/illustration/ironman.jpg'
-import Img2 from '../../assets/illustration/2.jpg'
-import Img3 from '../../assets/illustration/3.jpg'
 import Img4 from '../../assets/illustration/5.jpg'
 import PropsView from './props-view'
 

@@ -6,7 +6,7 @@ const LinkUsageCode =
 
 const LinkInlineUsageCode =
 `<p>
-  Lorem ipsum dolor sit <Link to="#">This is a Link</Link> adipiscing elit
+  Lorem ipsum dolor sit <Link to="#">This is a Link</Link> adipiscing elit.
 </p>`;
 
 export {

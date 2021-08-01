@@ -170,8 +170,35 @@ render() {
       {LoaderBusyFullscreenCustomUsageCode}
     </SyntaxHighlighter>
 
+    <div className="app-hr"></div>
+    <h2>Loaders <p className="app-code">{`setTheme={'light'}`}</p> :</h2>
+    <div className="app-align-center background-color-primary"
+      style={{width:'80%',borderRadius:12}}>
+      <br/><br/>
+      <div className="app-flex">
+      <div className="app-space-45"></div>
+        <LoaderBusy
+          setTheme="light"
+          isLoading={true}/>
+        <div className="app-space-45"></div>
+        <LoaderBusy
+          setTheme="light"
+          isLoading={true}
+          size="medium"/>
+        <div className="app-space-35"></div>
+        <LoaderBusy
+          setTheme="light"
+          isLoading={true}
+          size="small"/>
+      </div>
+      <br/><br/>
+      <LoaderBar
+        setTheme="light"
+        isLoading={true}/>
+      <br/><br/>
+    </div>
 
-
+    <div className="app-hr"></div>
     <h2>Props</h2>
     <PropsView />
 

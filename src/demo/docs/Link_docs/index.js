@@ -12,9 +12,9 @@ const LinkDocs = () => {
 
       <p><span className="color-primary">Links</span> are accessible elements used primarily for navigation.<br/>This component is styled to resemble a hyperlink and semantically renders an {'<a>'}.</p>
       <div className="app-hr"></div>
-      <Link to="#">This is Default Link</Link>
+      <Link to="#">This is a Link</Link>
       <br/><br/>
-      <Link to="#"><b>This is Default Bold Link</b></Link>
+      <Link to="#"><b>This is a Bold Link</b></Link>
 
       <h2>Import</h2>
 
@@ -41,7 +41,7 @@ const LinkDocs = () => {
       <h2>Link <p className="app-code">Inline</p> :</h2>
 
       <p>
-        Lorem ipsum dolor sit <Link to="#">This is a Link</Link> adipiscing elit
+        Lorem ipsum dolor sit <Link to="#">This is a Link</Link> adipiscing elit.
       </p>
 
       <SyntaxHighlighter
