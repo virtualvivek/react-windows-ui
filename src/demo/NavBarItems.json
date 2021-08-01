@@ -84,6 +84,13 @@
         "showBadge": false
     },
     {
+        "to": "/menubar",
+        "exact": false,
+        "text": "MenuBar",
+        "icon": "icons10-indent",
+        "showBadge": false
+    },
+    {
         "to": "/progress",
         "exact": false,
         "text": "Progress Controls",

@@ -24,6 +24,7 @@ import LinkDocs from './docs/Link_docs'
 import LinkCompoundDocs from './docs/LinkCompound_docs'
 import ListItemDocs from './docs/ListItem_docs'
 import LoadersDocs from './docs/LoadersDocs'
+import MenuBarDocs from './docs/MenuBar_docs'
 
 import _404Layout from './layouts/404Layout'
 import AboutLayout from './layouts/AboutLayout'
@@ -162,6 +163,7 @@ class App extends React.Component {
         <Route path='/linkcompound' component={LinkCompoundDocs} />
         <Route path='/listitem' component={ListItemDocs} />
         <Route path='/loaders' component={LoadersDocs} />
+        <Route path='/menubar' component={MenuBarDocs} />
 
         <Route path='/texts' component={Texts} />
         <Route path='/progress' component={ProgressControls} />

@@ -176,9 +176,9 @@
     padding: 0;
     margin: 2px 0 0 0;
     position: absolute;
-    background: transparent;
+    background: var(--color_light_grey_alpha);
     backdrop-filter: blur(30px);
-    box-shadow: 0 5px 8px var(--color_button);
+    box-shadow: 0 2px 5px var(--color_light_grey_alpha);
     z-index: 999;
     visibility: hidden;
     &.show {
