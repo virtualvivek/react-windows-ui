@@ -26,6 +26,13 @@
     &[disabled] {
         @extend .input-field-primary-disabled;
     }
+
+    &::-webkit-calendar-picker-indicator {
+        padding-right: 5px;
+        width: 24px;
+        height: 24px;
+        opacity: 1;
+    }
 }
 .app-input-text-container {
     width: min-content;
@@ -61,5 +68,12 @@
         @extend .vertical-align-middle;
         background: transparent;
         border: none;
+    }
+}
+
+@mixin input-date-mobile() {
+    input[type="date"].app-input-text::before {
+        content: attr(placeholder);
+        padding-right: 5px;
     }
 }
