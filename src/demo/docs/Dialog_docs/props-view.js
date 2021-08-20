@@ -21,7 +21,7 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">padding</p></td>
-          <td>integer | string</td>
+          <td>CSS Property</td>
           <td>0</td>
           <td>Set's Dialog padding style</td>
         </tr>

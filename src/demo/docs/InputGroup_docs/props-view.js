@@ -40,6 +40,12 @@ const PropsView = () => {
           <td>Set's Input label text</td>
         </tr>
         <tr>
+          <td><p className="app-code">disabled</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's Input state disabled</td>
+        </tr>
+        <tr>
           <td><p className="app-code">setStatus</p></td>
           <td>'default' | 'success' <br/> 'danger' | 'loading'</td>
           <td>'default'</td>

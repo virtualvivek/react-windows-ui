@@ -27,25 +27,25 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">display</p></td>
-          <td>css property</td>
+          <td>CSS Property</td>
           <td>'block'</td>
           <td>Set's Card display style property</td>
         </tr>
         <tr>
           <td><p className="app-code">maxWidth</p></td>
-          <td>integer | string</td>
+          <td>CSS Property</td>
           <td>inherit</td>
           <td>Set's Card maxWidth style property</td>
         </tr>
         <tr>
           <td><p className="app-code">padding</p></td>
-          <td>integer | string</td>
+          <td>CSS Property</td>
           <td>0</td>
           <td>Set's Card padding style property</td>
         </tr>
         <tr>
           <td><p className="app-code">margin</p></td>
-          <td>integer | string</td>
+          <td>CSS Property</td>
           <td>0</td>
           <td>Set's Card margin style property</td>
         </tr>
