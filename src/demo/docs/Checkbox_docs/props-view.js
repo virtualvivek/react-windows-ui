@@ -47,7 +47,7 @@ const PropsView = () => {
           <td><p className="app-code">onChange</p></td>
           <td>null</td>
           <td>object</td>
-          <td>Set's Checkbox on change listner</td>
+          <td>Set's Checkbox on change listener</td>
         </tr>
       </tbody>
     </table>

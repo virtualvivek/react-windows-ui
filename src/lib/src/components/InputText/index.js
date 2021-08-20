@@ -42,6 +42,7 @@ const InputText = (props) => {
         placeholder={props.placeholder}
         onChange={props.onChange}
         disabled={props.disabled}
+        value={props.value}
       />
         
       <div className="app-input-status-container">

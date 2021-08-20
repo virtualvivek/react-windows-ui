@@ -23,7 +23,6 @@ import Dialog from './components/Dialog'
 import Gauge from './components/Gauge'
 import HeaderFixedContainer from './components/HeaderFixedContainer'
 import ImageView from './components/ImageView'
-import InputDate from './components/InputDate'
 import InputText from './components/InputText'
 import InputSearchBar from './components/InputSearchBar'
 import InputSearchBox from './components/InputSearchBox'
@@ -76,7 +75,6 @@ export {
     Gauge,
     HeaderFixedContainer,
     ImageView,
-    InputDate,
     InputText,
     InputSearchBar,
     InputSearchBox,

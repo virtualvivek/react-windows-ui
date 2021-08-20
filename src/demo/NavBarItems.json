@@ -63,6 +63,13 @@
         "showBadge": false
     },
     {
+        "to": "/input_group",
+        "exact": false,
+        "text": "Input Group",
+        "icon": "icons10-keyboard",
+        "showBadge": false
+    },
+    {
         "to": "/links",
         "exact": false,
         "text": "Link",

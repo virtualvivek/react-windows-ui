@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer,Checkbox,Switch,InputText,InputDate,
+import { NavPageContainer,Checkbox,Switch,InputText,
          InputSearchBar,InputSearchBox,SliderBar,RadioButton,
          SelectBox,MenuBar,InputSearchSuggestion,Accordion } from '../../lib/src'
         
@@ -221,7 +221,9 @@ class Inputs extends React.Component {
         </Accordion>
         <br/>
 
-        <InputDate
+
+        <InputText
+          type="date"
           placeholder="Select Date"
           tooltip="InputDate tooltip title" />
 

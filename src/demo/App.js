@@ -20,6 +20,7 @@ import CheckboxDocs from './docs/Checkbox_docs'
 import DialogDocs from './docs/Dialog_docs'
 import GaugeDocs from './docs/Gauge_docs'
 import ImageViewDocs from './docs/ImageView_docs'
+import InputGroupDocs from './docs/InputGroup_docs'
 import LinkDocs from './docs/Link_docs'
 import LinkCompoundDocs from './docs/LinkCompound_docs'
 import ListItemDocs from './docs/ListItem_docs'
@@ -161,6 +162,7 @@ class App extends React.Component {
         <Route path='/dialogs' component={DialogDocs} />
         <Route path='/gauges' component={GaugeDocs} />
         <Route path='/imageview' component={ImageViewDocs} />
+        <Route path='/input_group' component={InputGroupDocs} />
         <Route path='/links' component={LinkDocs} />
         <Route path='/linkcompound' component={LinkCompoundDocs} />
         <Route path='/listitem' component={ListItemDocs} />

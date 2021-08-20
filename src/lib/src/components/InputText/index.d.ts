@@ -1,6 +1,7 @@
 import React from 'react'
 
 export interface InputTextProps {
+  value ?: any;
   width ?: number | string;
   placeholder ?: string;
   label ?: string;

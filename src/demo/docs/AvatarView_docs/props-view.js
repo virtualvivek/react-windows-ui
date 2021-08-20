@@ -41,7 +41,7 @@ const PropsView = () => {
           <td><p className="app-code">tooltip</p></td>
           <td>string</td>
           <td>null</td>
-          <td>Sets avatar hover tiiltip</td>
+          <td>Sets avatar hover tooltip</td>
         </tr>
       </tbody>
     </table>
