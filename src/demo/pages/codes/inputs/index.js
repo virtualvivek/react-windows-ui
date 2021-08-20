@@ -1,8 +1,8 @@
 const SwitchCode =
 `<Switch
- checked={true}
- textOn="On"
- textOff="Off"
+ defaultChecked={true}
+ labelOn="On"
+ labelOff="Off"
  onChange={() => {}}
  //disabled
  //tooltip="tooltip title"
@@ -10,7 +10,7 @@ const SwitchCode =
  
 const SliderBarCode =
 `<SliderBar
- value={this.state.value}
+ defaultValue={this.state.value}
  thumbStyle="round"
  //thumbStyle="round-border"
  step={1}
@@ -21,8 +21,8 @@ const SliderBarCode =
 
 const CheckboxCode =
 `<Checkbox
- checked={true}
- text="Text"
+ defaultChecked={true}
+ label="Text"
  onChange={() => {}}
  //disabled
  //tooltip="tooltip title"
@@ -110,9 +110,9 @@ const MenuBarCode =
 
 const RadioButtonCode =
 `<RadioButton
- checked={true}
+ defaultChecked={true}
  name="2"
- text="some text"
+ label="some text"
  //disabled
  //tooltip="tooltip title"
 />`;

@@ -24,7 +24,7 @@ const SliderBar = (props) => {
       title={props.tooltip}>
       <input
         type="range"
-        defaultValue={props.value}
+        defaultValue={props.defaultValue}
         min={props.min}
         max={props.max}
         onChange={props.onChange}
@@ -32,15 +32,15 @@ const SliderBar = (props) => {
         onMouseLeave={() => toggleHidden()}
         step={props.step}
         style={{
-          background:"linear-gradient(90deg, var(--PrimaryColor)"+(props.value/props.max) * 100+"%, #999999 20.1%)"
+          background:"linear-gradient(90deg, var(--PrimaryColor)"+(props.defaultValue/props.max) * 100+"%, #999999 20.1%)"
           }}
       />
-      { props.showValue ? <span> {props.value}</span> : "" }
+      { props.showValue ? <span> {props.defaultValue}</span> : "" }
       <span
         className="popup"
         ref={inputRef}
-        style={{ left: (props.value/props.max) *72+"%" }}>
-          {props.value}
+        style={{ left: (props.defaultValue/props.max) *72+"%" }}>
+          {props.defaultValue}
       </span>
     </div>
   )
@@ -49,7 +49,7 @@ const SliderBar = (props) => {
 SliderBar.defaultProps = {
   min: 0,
   max: 500,
-  value: 0,
+  defaultValue: 0,
   step: 1,
   showValue: true
 }

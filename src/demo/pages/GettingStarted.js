@@ -52,7 +52,7 @@ const GettingStarted = () => {
         <LinkCompound
           to="/PageJsSplit"
           title="Page.js"
-          subtitle="With split Page Inner and Right"
+          subtitle="With Split Page Inner and Right"
           icon={<i className="icons10-columns"></i>}
           focused={true}
           margin="5px 5px 0 0" />

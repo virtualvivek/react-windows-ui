@@ -32,13 +32,13 @@ const PropsView = () => {
           <td>Set's Link children</td>
         </tr>
         <tr>
-          <td><p className="app-code">image</p></td>
+          <td><p className="app-code">img</p></td>
           <td>source</td>
           <td>null</td>
           <td>Set's Link children</td>
         </tr>
         <tr>
-          <td><p className="app-code">imageAlt</p></td>
+          <td><p className="app-code">imgAlt</p></td>
           <td>string</td>
           <td>'image'</td>
           <td>Set's Link children</td>

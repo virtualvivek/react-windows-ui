@@ -2,8 +2,8 @@ import React, { ReactNode } from 'react'
 
 export interface LinkCompoundProps {
   to ?: string;
-  image ?: ReactNode;
-  imageAlt ?: string;
+  img ?: ReactNode;
+  imgAlt ?: string;
   icon ?: ReactNode;
   linkStyle ?: string;
   margin ?: number | string;

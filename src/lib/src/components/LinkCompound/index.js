@@ -7,7 +7,7 @@ const LinkCompound = (props) => {
     return props.focused ? ' focused' : '';
   }
   const setImg = () =>{
-    return props.image ? <img src={props.image} alt={props.imageAlt}/> : '';
+    return props.img ? <img src={props.img} alt={props.imgAlt}/> : '';
   }
   return (
     <Link
@@ -32,7 +32,7 @@ const LinkCompound = (props) => {
 
 LinkCompound.defaultProps = {
   to: "#",
-  imageAlt: 'image'
+  imgAlt: 'image'
 }
 
 export default LinkCompound

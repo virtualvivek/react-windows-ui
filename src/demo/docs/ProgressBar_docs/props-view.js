@@ -55,6 +55,12 @@ const PropsView = () => {
           <td>'5px'</td>
           <td>Set's ProgressBar height</td>
         </tr>
+        <tr>
+          <td><p className="app-code">tooltip</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Set's ProgressBar hover tooltip text</td>
+        </tr>
       </tbody>
     </table>
     </div>

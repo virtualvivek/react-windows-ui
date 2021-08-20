@@ -7,7 +7,7 @@ const Accordion = (props) => {
     <div
       className="app-accordion-item"
       style={{
-          width: props.width
+        width: props.width
       }}>
       <div
         className={props.focused ? "app-accordion-title focused"

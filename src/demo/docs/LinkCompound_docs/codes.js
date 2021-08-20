@@ -14,8 +14,8 @@ const LinkImageUsageCode =
   to="#"
   title="User preferences and uploads"
   subtitle="Profile pictures and details"
-  image={Img}
-  imageAlt="Demo Image"
+  img={Img}
+  imgAlt="Demo Image"
 />`;
 
 const LinkBorderUsageCode =
@@ -24,8 +24,8 @@ const LinkBorderUsageCode =
   to="#"
   title="Notification settings and DND"
   subtitle="Control which app push notification"
-  image={Img}
-  imageAlt="Demo Image"
+  img={Img}
+  imgAlt="Demo Image"
   tooltip="This is tooltip text"
 />`;
 

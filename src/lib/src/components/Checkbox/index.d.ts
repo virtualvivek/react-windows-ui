@@ -1,11 +1,13 @@
 import React from 'react'
 
 export interface CheckboxProps {
-  text ?: string;
+  label ?: string;
   disabled ?: boolean;
-  checked ?: boolean;
+  defaultChecked ?: boolean;
   tooltip ?: string;
   onChange ?: Function;
+  name ?: any;
+  value ?: any;
 }
 declare const Checkbox: React.FC<CheckboxProps>
 

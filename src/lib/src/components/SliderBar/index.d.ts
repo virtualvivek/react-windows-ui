@@ -3,7 +3,7 @@ import React from 'react'
 export interface SliderBarProps {
   min ?: number;
   max ?: number;
-  value ?: number;
+  defaultValue ?: number;
   step ?: number;
   showValue ?: boolean;
   thumbStyle ?: string;

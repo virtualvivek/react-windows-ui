@@ -32,25 +32,25 @@ const PropsView = () => {
           <td>Set's MenuBar menu items</td>
         </tr>
         <tr>
-          <td><p className="app-code">data {'>'} label</p></td>
+          <td><p className="app-code">data {'▶'} label</p></td>
           <td>integer | string</td>
           <td>null</td>
           <td>Set's MenuBar item label</td>
         </tr>
         <tr>
-          <td><p className="app-code">data {'>'} icon</p></td>
+          <td><p className="app-code">data {'▶'} icon</p></td>
           <td>ReactNode</td>
           <td>null</td>
           <td>Set's MenuBar item icon</td>
         </tr>
         <tr>
-          <td><p className="app-code">data {'>'} link</p></td>
+          <td><p className="app-code">data {'▶'} link</p></td>
           <td>link href string</td>
           <td>'#'</td>
           <td>Set's MenuBar item link</td>
         </tr>
         <tr>
-          <td><p className="app-code">data {'>'} onClick</p></td>
+          <td><p className="app-code">data {'▶'} onClick</p></td>
           <td>function</td>
           <td>null</td>
           <td>Set's MenuBar item onClick listner</td>

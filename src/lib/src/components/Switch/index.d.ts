@@ -1,10 +1,10 @@
 import React from 'react'
 
 export interface SwitchProps {
-  checked ?: boolean;
+  defaultChecked ?: boolean;
   disabled ?: boolean;
-  textOn ?: string;
-  textOff ?: string;
+  labelOn ?: string;
+  labelOff ?: string;
   tooltip ?: string;
   onChange ?: () => void;
 }

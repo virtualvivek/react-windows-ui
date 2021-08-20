@@ -8,6 +8,7 @@ export interface InputTextProps {
   setStatus ?: string;
   tooltip ?: string;
   onChange ?: Function;
+  disabled ?: boolean;
 }
 declare const InputText: React.FC<InputTextProps>
 

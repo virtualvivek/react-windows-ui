@@ -1,22 +1,27 @@
-const AccordionImportCode =
-`import { Accordion } from 'react-windows-ui`;
+const CheckboxImportCode =
+`import { Checkbox } from 'react-windows-ui'`;
 
-const AccordionUsageCode =
-`<Accordion
-  title="Some Title"
-  focused={true}>
-  <div>children components</div>
-</Accordion>`;
+const CheckboxUsageCode =
+`<Checkbox
+  defaultChecked={true}
+  label="Some Text"
+  onChange={() => {}}
+  //disabled
+/>`;
 
-const AccordionUsageFocusedFalseCode =
-`<Accordion
-  title="Some Title"
-  focused={false}>
-  <div>children components</div>
-</Accordion>`;
+const CheckboxInlineUsageCode =
+`<p>Lorem ipsum dolor sit amet 
+  <Checkbox
+    defaultChecked={true}
+    onChange={() => {}}
+    tooltip="inline checkbox"
+  /> 
+sed do eiusmod tempor incididunt ut labore.
+</p>`;
+
 
 export {
-    AccordionImportCode,
-    AccordionUsageCode,
-    AccordionUsageFocusedFalseCode
+    CheckboxImportCode,
+    CheckboxUsageCode,
+    CheckboxInlineUsageCode
 }

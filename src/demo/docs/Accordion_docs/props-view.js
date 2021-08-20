@@ -17,19 +17,31 @@ const PropsView = () => {
           <td><p className="app-code">title</p></td>
           <td>string</td>
           <td>null</td>
-          <td>Sets the accordion title</td>
+          <td>Set's the accordion title</td>
         </tr>
         <tr>
           <td><p className="app-code">focused</p></td>
           <td>boolean</td>
           <td>true</td>
-          <td>Sets the accordion background focused</td>
+          <td>Set's the accordion background focused</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">collapseIcon</p></td>
+          <td>ReactNode</td>
+          <td><i className="icons10-angle-down"></i></td>
+          <td>Set's the accordion title's end collapsed icon</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">expandIcon</p></td>
+          <td>ReactNode</td>
+          <td><i className="icons10-angle-up"></i></td>
+          <td>Set's the accordion title's end expand icon</td>
         </tr>
         <tr>
           <td><p className="app-code">children</p></td>
           <td>ReactNode</td>
           <td>null</td>
-          <td>Sets the accordion children</td>
+          <td>Set's the accordion children</td>
         </tr>
       </tbody>
     </table>

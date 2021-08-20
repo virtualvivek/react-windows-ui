@@ -35,6 +35,13 @@
         "showBadge": false
     },
     {
+        "to": "/checkbox",
+        "exact": false,
+        "text": "Checkbox",
+        "icon": "icons10-checked-2",
+        "showBadge": false
+    },
+    {
         "to": "/dialogs",
         "exact": false,
         "text": "Dialogs",

@@ -2,9 +2,9 @@ import React from 'react'
 
 export interface RadioButtonProps {
   name ?: string;
-  checked ?: boolean;
+  defaultChecked ?: boolean;
   disabled ?: boolean;
-  text ?: string;
+  label ?: string;
   tooltip ?: string;
   onChange ?: () => void;
 }

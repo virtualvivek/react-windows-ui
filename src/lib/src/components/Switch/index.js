@@ -3,11 +3,11 @@ import React from 'react'
 const Switch = (props) => {
 
 const showData = () => {
-  if(props.textOn === ""){
+  if(props.labelOn === ""){
     return <div dataoff="" dataon=""></div>
   }
   else
-    return <div dataoff={props.textOff} dataon={props.textOn}></div>
+    return <div dataoff={props.labelOff} dataon={props.labelOn}></div>
   }
 
   return (
@@ -15,11 +15,11 @@ const showData = () => {
       className="app-switch"
       title={props.tooltip}
       style={
-        props.textOn === "" ? { marginRight: 0 } : { marginRight: '' }
+        props.labelOn === "" ? { marginRight: 0 } : { marginRight: '' }
     }>
       <input
         type="checkbox"
-        defaultChecked={props.checked}
+        defaultChecked={props.defaultChecked}
         onChange={props.onChange}
         disabled={props.disabled}
       />
@@ -29,8 +29,8 @@ const showData = () => {
 }
 
 Switch.defaultProps = {
-  textOff: "Off",
-  textOn: "On"
+  labelOff: "Off",
+  labelOn: "On"
 }
 
 export default Switch

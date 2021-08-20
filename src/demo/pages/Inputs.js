@@ -41,14 +41,14 @@ class Inputs extends React.Component {
         <div className="app-flex">
                 
           <Switch
-            checked
+            defaultChecked
             tooltip="Switch tooltip title" />
 
           <Switch
-            checked
+            defaultChecked
             disabled
-            textOn="Disabled On"
-            textOff="Disabled Off" />
+            labelOn="Disabled On"
+            labelOff="Disabled Off" />
                 
         </div>
 
@@ -60,8 +60,8 @@ class Inputs extends React.Component {
 
           <Switch
             disabled
-            textOn="Disabled On"
-            textOff="Disabled Off" />
+            labelOn="Disabled On"
+            labelOff="Disabled Off" />
                 
         </div>
         <br/>
@@ -83,19 +83,19 @@ class Inputs extends React.Component {
         </h1>
 
         <SliderBar
-          value={this.state.Slider1}
+          defaultValue={this.state.Slider1}
           showValue={false}
           onChange={(e) => {this.onChangeSlider1(e)}}
           tooltip="SliderBar tooltip title" />
           
         <SliderBar
-          value={this.state.Slider2}
+          defaultValue={this.state.Slider2}
           thumbStyle="round"
           step={4}
           onChange={(e) => {this.onChangeSlider2(e)}} />
 
         <SliderBar
-          value={this.state.Slider3}
+          defaultValue={this.state.Slider3}
           thumbStyle="round-border"
           onChange={(e) => {this.onChangeSlider3(e)}} />
 
@@ -115,15 +115,15 @@ class Inputs extends React.Component {
         <div className="app-flex">
 
           <Checkbox
-            checked
+            defaultChecked
             tooltip="Checkbox tooltip title" />
 
           <div className="app-space-35"></div>
 
           <Checkbox
             disabled
-            checked
-            text="Disabled Checked"/>
+            defaultChecked
+            label="Disabled Checked"/>
 
         </div>
 
@@ -132,14 +132,14 @@ class Inputs extends React.Component {
         <div className="app-flex">
 
           <Checkbox
-            checked
-            text="Unchecked" />
+            defaultChecked
+            label="Unchecked" />
 
           <div className="app-space-20"></div>
 
           <Checkbox
-            disabled
-            text="Disabled Unchecked"/>
+            defaultChecked
+            label="Disabled Unchecked"/>
 
         </div>
         <br/>
@@ -341,23 +341,23 @@ class Inputs extends React.Component {
 
         <RadioButton
           name="1"
-          text="Checked"
-          checked
+          label="Checked"
+          defaultChecked
           tooltip="RadioButton tooltip title"/>
 
         <br></br>
 
         <RadioButton
           name="1"
-          text="Unchecked"/>
+          label="Unchecked"/>
           
         <br></br>
 
         <RadioButton
           name="2"
-          text="Disabled"
+          label="Disabled"
           disabled
-          checked/>
+          defaultChecked/>
 
         <br/><br/>
         <Accordion title="💻 Code - RadioButton" focused>
