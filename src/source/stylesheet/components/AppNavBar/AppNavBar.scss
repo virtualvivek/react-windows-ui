@@ -9,80 +9,79 @@
 @import "./subcomponents/NavSearchBox.scss";
 
 .app-nav-wrap {
-    height: 100%;
-    width: 290px;
-    z-index: 5;
-    transition: 0.2s ease;
+  height: 100%;
+  width: 290px;
+  z-index: 5;
+  transition: 0.2s ease;
+  overflow-y: overlay;
+
+  nav {
+    @extend .transition-background-400ms;
+    @extend .background-color-nav;
+    height: inherit;
+    width: inherit;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0;
+    display: block;
+    overflow: scroll;
+    overflow-x: hidden;
     overflow-y: overlay;
+    z-index: inherit;
 
-    nav {
-        @extend .transition-background-400ms;
-        @extend .background-color-nav;
-        height: inherit;
-        width: inherit;
-        position: fixed;
-        left: 0;
-        top: 0;
-        padding: 0;
-        display: block;
-        overflow: scroll;
-        overflow-x: hidden;
-        overflow-y: overlay;
-        z-index: inherit;
-
-        &.animate {
-            ul li {
-                & :active {
-                    @extend .transition-scale-0_95;
-                }
-                a {
-                    @extend .transition-all-400ms;
-                }
-            }
+    &.animate {
+      ul li {
+        & :active {
+          @extend .transition-scale-0_95;
         }
-
         a {
-            position: relative;
-            display: block;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            line-height: 2.4;
-            padding: 6px 25px;
-            font-weight: 400;
-            color: var(--color_text_dark);
-
-            &:focus {
-                @extend .outline-none;
-            }
-            span {
-                @extend .user-select-none;
-                font-size: 16px;
-                margin: 0 10px;
-                position: relative;
-                top: 1px;
-            }
+          @extend .transition-all-400ms;
         }
-
-        ul {
-            display: block;
-            padding: 0 0 40px 0;
-            list-style: none;
-
-            h1 {
-                font-weight: 700;
-                margin: 0;
-                padding: 8px 0 8px 24px;
-                font-size: 15px;
-            }
-    
-            .app-hr {
-                margin: 5px 15px;
-            }
-        }
-
-        .app-switch {
-            margin: 16px 0 0 20px;
-        }
+      }
     }
+
+    a {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: 2.4;
+      padding: 6px 25px;
+      font-weight: 400;
+      color: var(--color_text_dark);
+
+      &:focus {
+        @extend .outline-none;
+      }
+      span {
+        @extend .user-select-none;
+        font-size: 16px;
+        margin: 0 10px;
+        position: relative;
+        top: 1px;
+      }
+    }
+
+    ul {
+      display: block;
+      padding: 0 0 40px 0;
+      list-style: none;
+
+      h1 {
+        font-weight: 700;
+        margin: 0;
+        padding: 8px 0 8px 24px;
+        font-size: 15px;
+      }
+
+      .app-hr {
+        margin: 5px 15px;
+      }
+    }
+    .app-switch {
+      margin: 16px 0 0 20px;
+    }
+  }
 }
