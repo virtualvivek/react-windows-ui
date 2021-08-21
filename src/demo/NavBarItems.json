@@ -65,7 +65,7 @@
     {
         "to": "/input_group",
         "exact": false,
-        "text": "Input Group",
+        "text": "InputText",
         "icon": "icons10-keyboard",
         "showBadge": false
     },

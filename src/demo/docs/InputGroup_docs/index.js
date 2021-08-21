@@ -17,10 +17,8 @@ render() {
   <NavPageContainer
     hasPadding
     animateTransition={false}>
-    <h1>Inputs</h1>
-    <p className="font-size-18px">The <span className="color-primary">Input</span> element is used to create interactive controls for forms in order to accept data from the user.</p>
-        
     <h2>InputText</h2>
+    <p className="font-size-18px">The <span className="color-primary">Input</span> element is used to create interactive controls for forms in order to accept data from the user.</p>
 
     <h2>Import</h2>
 
