@@ -47,7 +47,7 @@ const PropsView = () => {
           <td><p className="app-code">style</p></td>
           <td>object</td>
           <td>null</td>
-          <td>Set's button styles</td>
+          <td>Set's button container styles</td>
         </tr>
         <tr>
           <td><p className="app-code">tooltip</p></td>

@@ -5,9 +5,7 @@ export interface LinkCompoundProps {
   img ?: ReactNode;
   imgAlt ?: string;
   icon ?: ReactNode;
-  linkStyle ?: string;
-  margin ?: number | string;
-  display ?: string;
+  type ?: string;
   title ?: string;
   subtitle ?: string;
   focused ?: boolean;

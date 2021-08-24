@@ -13,19 +13,20 @@ const LinkCompound = (props) => {
     <Link
       to={props.to}
       className={
-          props.linkStyle === 'border' ? "app-link-compound primary"+setFocused()
+          props.type === 'border' ? "app-link-compound primary"+setFocused()
         : "app-link-compound"+setFocused()
         }
-      style={{
-        margin: props.margin,
-        display: props.display
-      }}
+      style={props.style}
       title={props.tooltip}
       target={props.target}>
+        <div className="app-link-compound-container">
           {props.icon}
           {setImg()}
-          <span>{props.title}</span>
-          <p>{props.subtitle}</p>
+          <div className="app-link-compound-subcontainer">
+            <span>{props.title}</span>
+            <p>{props.subtitle}</p>
+          </div>
+        </div>
     </Link>
   )
 }

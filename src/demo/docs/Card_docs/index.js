@@ -37,12 +37,17 @@ const CardDocs = () => {
       <Card
         display="flow-root">
         <div className="app-link-compound">
-          <img src={Img1} alt="Img" />
-          <span>System Settings and preferences</span>
-          <p>Customize system controls and more</p>
+          <div className="app-link-compound-container">
+            <img src={Img1} alt="Img" />
+            <div className="app-link-compound-subcontainer">
+              <span>User preferences and uploads</span>
+              <p>Profile pictures and details</p>
+            </div>
+            <Switch />
+          </div>
         </div>
-        <Switch />
       </Card>
+      
       <br/>
 
       <SyntaxHighlighter

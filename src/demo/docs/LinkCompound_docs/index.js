@@ -69,10 +69,10 @@ const LinkCompoundDocs = () => {
 
       <div className="app-hr"></div>
 
-      <h2>Link <p className="app-code">Border Style</p> :</h2>
+      <h2>Link <p className="app-code">Type Border</p> :</h2>
 
       <LinkCompound
-        linkStyle="border"
+        type="border"
         to="#"
         title="Notification settings and DND"
         subtitle="Control which app push notification"

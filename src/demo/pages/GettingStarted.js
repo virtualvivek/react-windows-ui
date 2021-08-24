@@ -11,7 +11,7 @@ const GettingStarted = () => {
       <h1>Boilerplate</h1>
          
         <LinkCompound
-          display="inline-block"
+          style={{margin:'5px 5px 0 0',width:240}}
           to="/AppJsDefault"
           title="Template"
           subtitle="Starter template repository"
@@ -22,16 +22,15 @@ const GettingStarted = () => {
       <h1>Templates</h1>
          
         <LinkCompound
-          display="inline-block"
+          style={{margin:'5px 5px 0 0',width:240}}
           to="/AppJsDefault"
           title="App.js"
           subtitle="Default App.js Configuration"
           icon={<i className="icons10-bag"></i>}
-          focused={true}
-          margin="5px 5px 0 0" />
+          focused={true} />
 
         <LinkCompound
-          display="inline-block"
+          style={{margin:'5px 5px 0 0',width:240}}
           to="/AppJsSearchable"
           title="App.js"
           subtitle="With Searchable NavItems"
@@ -42,26 +41,26 @@ const GettingStarted = () => {
         <div className="app-hr"></div>
         
         <LinkCompound
+          style={{margin:'5px 5px 0 0',width:240}}
           to="/PageJsDefault"
           title="Page.js"
           subtitle="Default Page.js configuration"
           icon={<i className="icons10-window"></i>}
-          focused={true}
-          margin="5px 5px 0 0" />
+          focused={true} />
 
         <LinkCompound
+          style={{margin:'5px 5px 0 0',width:240}}
           to="/PageJsSplit"
           title="Page.js"
           subtitle="With Split Page Inner and Right"
           icon={<i className="icons10-columns"></i>}
-          focused={true}
-          margin="5px 5px 0 0" />
+          focused={true} />
 
 
       <h1>Layouts</h1>
 
         <LinkCompound
-          display="inline-block"
+          style={{margin:'5px 5px 0 0',width:240}}
           to="/AboutLayout"
           title="About"
           subtitle="App installed information"
@@ -69,22 +68,21 @@ const GettingStarted = () => {
           focused={true}
           margin="5px 5px 0 0" />
 
-        <LinkCompound  
+        <LinkCompound
+          style={{margin:'5px 5px 0 0',width:240}}
           to="/LoginLayout"
           title="Login"
           subtitle="User Login in interface"
           icon={<i className="icons10-lock"></i>}
-          focused={true}
-          margin="5px 5px 0 0" />
+          focused={true} />
 
         <LinkCompound
-          display="inline-block"
+          style={{margin:'5px 5px 0 0',width:240}}
           to="/BlogLayout"
           title="Blog Layout"
           subtitle="Article layout demonstration"
           icon={<i className="icons10-create-new"></i>}
-          focused={true}
-          margin="5px 5px 0 0" />
+          focused={true} />
 
         <LinkCompound
           to="/CommandBarLayout"
@@ -92,7 +90,7 @@ const GettingStarted = () => {
           subtitle="Command UI Pallete"
           icon={<i className="icons10-window"></i>}
           focused={true}
-          margin="5px 5px 0 0" />
+          style={{margin:'5px 5px 0 0',width:240}} />
 
         <LinkCompound
           to="/ContactsLayout"
@@ -100,7 +98,7 @@ const GettingStarted = () => {
           subtitle="ListView of users"
           icon={<i className="icons10-contact-book"></i>}
           focused={true}
-          margin="5px 5px 0 0" />
+          style={{margin:'5px 5px 0 0',width:240}} />
 
         
         <LinkCompound  
@@ -109,7 +107,7 @@ const GettingStarted = () => {
           subtitle="List illustrations"
           icon={<i className="icons10-list"></i>}
           focused={true}
-          margin="5px 5px 0 0" />
+          style={{margin:'5px 5px 0 0',width:240}} />
 
 
     <br/><br/><br/><br/><br/><br/>

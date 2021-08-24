@@ -20,7 +20,7 @@ const LinkImageUsageCode =
 
 const LinkBorderUsageCode =
 `<LinkCompound
-  linkStyle="border"
+  type="border"
   to="#"
   title="Notification settings and DND"
   subtitle="Control which app push notification"

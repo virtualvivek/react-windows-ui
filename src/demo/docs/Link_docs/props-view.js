@@ -26,6 +26,12 @@ const PropsView = () => {
           <td>Set's Link target</td>
         </tr>
         <tr>
+          <td><p className="app-code">style</p></td>
+          <td>object</td>
+          <td>null</td>
+          <td>Set's Link css styles</td>
+        </tr>
+        <tr>
           <td><p className="app-code">children</p></td>
           <td>ReactNode</td>
           <td>null</td>
