@@ -34,11 +34,11 @@
    
 </p>
 
-<p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="652" /></p>
+<a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="652" /></p></a>
 
 <h1 align="center">Adaptive UI</h1>
 
-<p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_adaptive.gif" width="652" /></p>
+<a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_adaptive.gif" width="652" /></p></a>
 
 # Demo ⚡
 https://virtualvivek.github.io/react-windows-ui/
@@ -62,7 +62,7 @@ import 'react-windows-ui/icons/fonts/fonts.min.css'
 ‣ `app-config.css` file contains the `PrimaryColor`, `Fontfamily` used by the app.<br>
 ‣ You can import default `app-config` using this file <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/config/app-config.css">app-config.css</a><br>
 _OR_ <br>
-Create your own like this
+Create your own like this:
 
 ```css
 :root {
