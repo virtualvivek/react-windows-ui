@@ -43,7 +43,7 @@
 
 
 
-<p align="center"><img src="markdown/md_img_promo.png" width="600" /></p>
+<p align="center"><img src="markdown/md_img_promo.png" width="700" /></p>
 
 <h1 align="center">Adaptive UI</h1>
 
