@@ -23,12 +23,12 @@
       alt="Version" />
   </a>
   
-  <a href="https://virtualvivek.github.io/react-windows-ui/">
+  <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">
     <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
       alt="Live Demo" />
   </a>
   
-  <a href="https://www.npmjs.com/package/react-windows-ui">
+  <a href="https://www.npmjs.com/package/react-windows-ui" target="_blank">
     <img src="https://img.shields.io/badge/npm-package-green.svg?style=flat-square&logo=npm&color=f55a42"
       alt="npmJS" />
   </a>
