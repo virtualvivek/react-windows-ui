@@ -112,4 +112,5 @@
             background: transparent !important;
         }
     }
+    @include nav-submenu-mobile();
 }

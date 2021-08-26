@@ -1,6 +1,6 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { NavBar, NavBarLink, NavSearchBox, SystemThemeFollower,
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { NavBar, NavBarLink,NavBarSubMenu, NavSearchBox, SystemThemeFollower,
          RegisterFluentEffect,TransitionToLeft } from '../lib/src'
 
 import Home from './pages/Home'
@@ -71,7 +71,7 @@ class App extends React.Component {
   render() {
   return (
     <>
-    <Router basename="react-windows-ui">
+    <Router basename={process.env.PUBLIC_URL}>
 
       <TransitionToLeft />
 
@@ -109,16 +109,16 @@ class App extends React.Component {
         icon={<i className="icons10-terminal"></i>}
       />
 
-      <h1>Preview</h1>
-      <div className="app-hr"></div>
-
-      
+      <NavBarSubMenu title="Preview">
 
       <NavBarLink
         to="/inputs"
         text="Inputs"
         icon={<i className="icons10-keyboard"></i>}
       />
+
+      </NavBarSubMenu>
+
 
       <h1>Components</h1>
       <div className="app-hr"></div>

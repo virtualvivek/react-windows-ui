@@ -1,0 +1,69 @@
+.app-nav-submenu {
+    .app-nav-submenu-title {
+      @extend .transition-background-400ms;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 14px 25px;
+      font-size: 16px;
+      font-weight: 500;
+      user-select: none;
+    
+      &:hover {
+        background-color: var(--color_link_bg_hover);
+      }
+      &:active {
+        background-color: var(--color_button);
+        @extend .transition-scale-0_95;
+      }
+    }
+    .app-nav-submenu-content {
+      transition: max-height 0.2s ease-in-out;
+      max-height: 0;
+      overflow: hidden;
+      backdrop-filter: brightness(0.97);
+    
+      &.show {
+        transition: max-height 0.38s ease-in;
+        max-height: 500px;
+        overflow-y: auto;
+      }
+    }
+}
+
+@mixin nav-submenu-mobile() {
+  .app-nav-submenu {
+    width: fit-content;
+    display: inline-flex;
+
+    .app-nav-submenu-title {
+      font-size: 20px;
+      line-height: 2.4;
+      margin: 0 7px;
+      padding: 0;
+      font-weight: unset;
+
+      &:hover {
+        background-color: unset;
+      }
+      .app-nav-submenu-icon {
+        transform: rotate(-90deg);
+        height: max-content;
+      }
+    }
+
+    .app-nav-submenu-content {
+      transition: max-width 0.2s ease-in-out;
+      max-height: unset;
+      max-width: 0;
+      backdrop-filter: unset;
+
+      &.show {
+        transition: max-width 0.38s ease-in;
+        max-width: 500px;
+        overflow-x: auto;
+      }
+    }
+  }
+}

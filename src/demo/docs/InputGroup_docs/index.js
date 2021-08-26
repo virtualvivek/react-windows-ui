@@ -34,7 +34,7 @@ render() {
     <InputText
       placeholder="Enter a text"
       tooltip="InputText tooltip title"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;
+    <br/><br/>
     <InputText
       placeholder="Disbaled Input"
       disabled/>
