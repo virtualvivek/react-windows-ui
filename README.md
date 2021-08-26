@@ -2,13 +2,7 @@
   <img src="markdown/md_img_header.png" width="410" /> 
 </p>
 
-
-
-
-
 <h1 align="center">react-windows-ui</h1>
-
-
 
 <p align="center">Build full featured <b>Windows fluent UI</b> apps using <b>ReactJS</b>.</p>
 
@@ -29,12 +23,12 @@
       alt="Version" />
   </a>
   
-  <a href="https://virtualvivek.github.io/react-windows-ui/">
+  <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">
     <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
       alt="Live Demo" />
   </a>
   
-  <a href="https://www.npmjs.com/package/react-windows-ui">
+  <a href="https://www.npmjs.com/package/react-windows-ui" target="_blank">
     <img src="https://img.shields.io/badge/npm-package-green.svg?style=flat-square&logo=npm&color=f55a42"
       alt="npmJS" />
   </a>
@@ -43,11 +37,11 @@
 
 
 
-<p align="center"><img src="markdown/md_img_promo.png" width="700" /></p>
+<a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="markdown/md_img_promo.png" width="700" alt="react-windows-ui" /></p></a>
 
 <h1 align="center">Adaptive UI</h1>
 
-<p align="center"><img src="markdown/md_img_adaptive.gif" width="652" /></p>
+<a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="markdown/md_img_adaptive.gif" width="652" alt="react-windows-ui" /></p></a>
 
 # Demo ⚡
 https://virtualvivek.github.io/react-windows-ui/
