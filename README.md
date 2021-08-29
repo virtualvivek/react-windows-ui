@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="markdown/md_img_header.png" width="410" /> 
+  <img src="markdown/md_img_header.png" width="400" /> 
 </p>
 
 <h1 align="center">react-windows-ui</h1>
