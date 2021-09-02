@@ -3,6 +3,7 @@ import {
     NavBarLink,
     NavBarLinkFluent,
     NavBarLinkUser,
+    NavBarSubMenu,
     NavPageContainer,
     NavPageContainerRight,
     NavPageContainerInner,
@@ -23,11 +24,11 @@ import Dialog from './components/Dialog'
 import Gauge from './components/Gauge'
 import HeaderFixedContainer from './components/HeaderFixedContainer'
 import ImageView from './components/ImageView'
-import InputDate from './components/InputDate'
 import InputText from './components/InputText'
 import InputSearchBar from './components/InputSearchBar'
 import InputSearchBox from './components/InputSearchBox'
 import InputSearchSuggestion from './components/InputSearchSuggestion'
+import Link from './components/Link'
 import LinkCompound from './components/LinkCompound'
 import LinkCompoundFluent from './components/LinkCompoundFluent'
 import LoaderBar from './components/LoaderBar'
@@ -52,6 +53,7 @@ export {
     NavBarLink,
     NavBarLinkFluent,
     NavBarLinkUser,
+    NavBarSubMenu,
     NavPageContainer,
     NavPageContainerRight,
     NavPageContainerInner,
@@ -72,11 +74,11 @@ export {
     Gauge,
     HeaderFixedContainer,
     ImageView,
-    InputDate,
     InputText,
     InputSearchBar,
     InputSearchBox,
     InputSearchSuggestion,
+    Link,
     LinkCompound,
     LinkCompoundFluent,
     LoaderBar,

@@ -26,6 +26,7 @@ import LinkCompoundDocs from './docs/LinkCompound_docs'
 import ListItemDocs from './docs/ListItem_docs'
 import LoadersDocs from './docs/LoadersDocs'
 import MenuBarDocs from './docs/MenuBar_docs'
+import NavBarDocs from './docs/NavBar_docs'
 import ProgressBarDocs from './docs/ProgressBar_docs'
 
 import _404Layout from './layouts/404Layout'
@@ -42,7 +43,7 @@ import PageJsSplit from './templates/pagejs-split'
 
 import NavBarItem from './NavBarItems.json'
 
-import Img2 from './assets/illustration/macos.jpg'
+//import Img2 from './assets/illustration/macos.jpg'
 
 class App extends React.Component {
 
@@ -154,6 +155,8 @@ class App extends React.Component {
         <Route path='/getting_started' component={GettingStarted} />
 
         <Route path='/inputs' component={Inputs} />
+
+        <Route path='/navbar' component={NavBarDocs} />
 
         <Route path='/accordion' component={AccordionDocs} />
         <Route path='/alerts' component={AlertDocs} />

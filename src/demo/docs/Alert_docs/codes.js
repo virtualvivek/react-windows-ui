@@ -15,7 +15,7 @@ const AlertLightUsageCode =
   isVisible={false}
   title="Alert"
   message="This is message"
-  setTheme="light"
+  setTheme="system"
   onBackdropPress={()=>{}}>
     <button onClick={()=>{}}>OK</button>
 </Alert>`;

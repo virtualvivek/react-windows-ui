@@ -9,8 +9,7 @@ export interface GaugeProps {
   valueColor ?: string;
   scale ?: number;
   setProgress ?: number;
-  scale ?: number;
-  type ?: string;
+  type ?: "default" | "fill";
 }
 declare const Gauge: React.FC<GaugeProps>
 

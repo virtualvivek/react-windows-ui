@@ -1,22 +1,16 @@
-const AccordionImportCode =
-`import { Accordion } from 'react-windows-ui`;
+const NavBarImportCode =
+`import { Gauge } from 'react-windows-ui'`;
 
-const AccordionUsageCode =
-`<Accordion
-  title="Some Title"
-  focused={true}>
-  <div>children components</div>
-</Accordion>`;
+const NavBarUsageCode =
+`<Gauge
+  setProgress={50}
+  scale={2}
+  value={50+"%"}
+  info="of something"
+/>`;
 
-const AccordionUsageFocusedFalseCode =
-`<Accordion
-  title="Some Title"
-  focused={false}>
-  <div>children components</div>
-</Accordion>`;
 
 export {
-    AccordionImportCode,
-    AccordionUsageCode,
-    AccordionUsageFocusedFalseCode
+    NavBarImportCode,
+    NavBarUsageCode
 }

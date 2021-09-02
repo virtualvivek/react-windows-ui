@@ -31,6 +31,15 @@
       }
     }
 }
+.app-nav-wrap.toggled {
+  .app-nav-submenu-title { 
+    justify-content: center;
+    
+    > :first-child {
+      display: none;
+    }
+  }
+}
 
 @mixin nav-submenu-mobile() {
   .app-nav-submenu {

@@ -45,7 +45,7 @@ class AlertDocs extends React.Component {
       <Alert
         isVisible={this.state.showAlertLight}
         onBackdropPress={this.toggleAlertLight}
-        setTheme="light"
+        setTheme="system"
         title={<><i className="icons10-sun"></i>Alert</>}
         message="This is Light alert Box.">
           <button onClick={this.toggleAlertLight}>OK</button>
@@ -70,7 +70,7 @@ class AlertDocs extends React.Component {
         {AlertUsageCode}
       </SyntaxHighlighter>
 
-      <h2 className="m-tb-20">Alert with <p className="app-code">light theme</p></h2>
+      <h2 className="m-tb-20">Alert with <p className="app-code">system theme</p></h2>
 
       <Button
         value="Open Alert Light"

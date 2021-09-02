@@ -75,11 +75,6 @@
                 }
             }
         }
-        .app-nav-user {
-            img {
-                left: 0;
-            }
-        }
         .app-switch {
             position: absolute;
             display: block;
@@ -89,7 +84,6 @@
 
         ul h1,
         .app-nav-toggle,
-        .app-nav-user span,
         ul.app-mobile-has-icons li a span,
         ul:not(.app-mobile-has-icons) li a i::before {
             display: none !important;
@@ -107,8 +101,7 @@
     .app-nav-wrap nav ul,
     .app-back.fixed.light:hover {
         li:hover,
-        li a:hover,
-        .app-nav-user:hover {
+        li a:hover {
             background: transparent !important;
         }
     }

@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react'
 export interface AvatarViewProps {
   width ?: number | string;
   height ?: number | string;
-  size ?: string;
+  size ?: "small" | "medium" | "large";
   isLoading ?: boolean;
   objectFit ?: string;
   showBackdropShadow ?: boolean;

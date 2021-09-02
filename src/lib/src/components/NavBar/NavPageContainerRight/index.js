@@ -7,7 +7,7 @@ const NavPageContainerRight = (props) => {
   }
 
   return (
-    <div
+    <div style={props.style}
       className={"app-section-container-right"+setPositionFixed()}>
       {props.children}
     </div>
