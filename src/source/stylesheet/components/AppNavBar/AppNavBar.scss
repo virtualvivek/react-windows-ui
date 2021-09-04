@@ -1,12 +1,13 @@
-@import "./subcomponents/NavBack.scss";
+@import "./subcomponents/NavHeader.scss";
 @import "./subcomponents/NavToggled.scss";
-@import "./subcomponents/Nav_li.scss";
+@import "./subcomponents/Nav_Li.scss";
 @import "./subcomponents/NavPositions.scss";
 @import "./subcomponents/NavMobile.scss";
 @import "./subcomponents/NavToggleButton.scss";
 @import "./subcomponents/NavBadge.scss";
 @import "./subcomponents/NavSearchBox.scss";
 @import "./subcomponents/NavBarSubMenu.scss";
+@import "./subcomponents/Nav_Hr.scss";
 
 .app-nav-wrap {
   height: 100%;
@@ -32,40 +33,12 @@
 
     &.animate {
       ul li {
-        & :active {
-          @extend .transition-scale-0_95;
-        }
-        a {
-          @extend .transition-all-400ms;
-        }
-      }
-    }
-
-    a {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      line-height: 2.4;
-      padding: 6px 25px;
-      font-weight: 400;
-      color: var(--color_text_dark);
-
-      &:focus {
-        @extend .outline-none;
-      }
-      span {
-        @extend .user-select-none;
-        font-size: 16px;
-        margin: 0 10px;
-        position: relative;
-        top: 1px;
+        & :active { @extend .transition-scale-0_95; }
+        a { @extend .transition-all-400ms; }
       }
     }
 
     ul {
-      display: block;
       padding: 0 0 40px 0;
       list-style: none;
 
@@ -75,13 +48,7 @@
         padding: 8px 0 8px 24px;
         font-size: 15px;
       }
-
-      .app-hr {
-        margin: 5px 15px;
-      }
     }
-    .app-switch {
-      margin: 16px 0 0 20px;
-    }
+    .app-switch { margin: 16px 0 0 20px; }
   }
 }

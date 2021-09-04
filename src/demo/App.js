@@ -43,7 +43,7 @@ import PageJsSplit from './templates/pagejs-split'
 
 import NavBarItem from './NavBarItems.json'
 
-//import Img2 from './assets/illustration/macos.jpg'
+import Img2 from './assets/illustration/macos.jpg'
 
 class App extends React.Component {
 
@@ -102,7 +102,7 @@ class App extends React.Component {
         exact={true}
         to="/"
         text="Home"
-        icon={<i className="icons10-home"></i>}
+        img={Img2}
       />
       <NavBarLink
         to="/getting_started"

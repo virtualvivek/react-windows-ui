@@ -1,16 +1,15 @@
 .app-nav-wrap .app-nav-toggle {
-    padding: 0 25px;
-    min-width: max-content;
+  padding: 15px 25px;
 
-    &:hover {
-        @extend .background-color-link-bg-hover;
-    }
-    &:active {
-        @extend .background-color-link-bg-active;
-    }
-    &::after {
-        @extend .font-icon-dark;
-        content: "\f106";
-        font-size: 24px;
-    }
+  &:hover {
+    @extend .background-color-link-bg-hover;
+  }
+  &:active {
+    @extend .background-color-link-bg-active;
+  }
+  &::after {
+    @extend .font-icon-dark;
+    content: "\f106";
+    font-size: 24px;
+  }
 }

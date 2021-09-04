@@ -1,0 +1,17 @@
+.app-nav-wrap nav ul {
+  .app-hr {
+    margin: 5px 15px;
+  }
+}
+@mixin nav-ul-hr-mobile() {
+  .app-nav-wrap nav ul {
+    .app-hr {
+      height: 20px;
+      width: 2px;
+      margin: 0 5px;
+      display: inline-flex;
+      position: relative;
+      top: 5px;
+    }
+  }
+}

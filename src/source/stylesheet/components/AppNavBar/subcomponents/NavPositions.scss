@@ -1,23 +1,23 @@
 .app-nav-wrap {
-    nav {
-        ul {
-            margin: 115px 0 0 0;
-        }
+  nav {
+    ul {
+      margin: 115px 0 0 0;
     }
-    nav > div:first-child,
-    nav > div:nth-child(2) {
-        @extend .background-color-nav;
-        width: inherit;
-        display: flex;
-        position: fixed;
-        z-index: 2;
-        transition: inherit;
-    }
+  }
+  nav > div:first-child,
+  nav > div:nth-child(2) {
+    @extend .background-color-nav;
+    width: inherit;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    transition: inherit;
+  }
 
-    nav > div:first-child {
-        padding-bottom: 10px;
-    }
-    nav > div:nth-child(2) {
-        top: 50px;
-    }
+  nav > div:first-child {
+    padding-bottom: 10px;
+  }
+  nav > div:nth-child(2) {
+    top: 50px;
+  }
 }

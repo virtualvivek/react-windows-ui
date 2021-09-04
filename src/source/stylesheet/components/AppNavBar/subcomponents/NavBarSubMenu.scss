@@ -45,13 +45,14 @@
   .app-nav-submenu {
     width: fit-content;
     display: inline-flex;
+    align-self: center;
 
     .app-nav-submenu-title {
       font-size: 20px;
-      line-height: 2.4;
       margin: 0 7px;
       padding: 0;
       font-weight: unset;
+      align-self: center;
 
       &:hover {
         background-color: unset;

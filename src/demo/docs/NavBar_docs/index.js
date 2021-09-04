@@ -5,6 +5,7 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { NavBarImportCode,NavBarUsageCode,
           NavBarLinkImportCode,NavBarLinkUsageCode } from './codes'
 import PropsView from './props-view'
+//import Img2 from '../../assets/illustration/2.jpg'
 
 class NavBarDocs extends React.Component {
 
@@ -96,8 +97,13 @@ render() {
       margin="5px 5px 0 0" />
     <br/>
 
+    <div className="app-hr"></div>
+
     <h2>Props</h2>
     <PropsView />
+
+    <br/>
+    <div className="app-hr"></div>
 
     <h1>NavBarLink</h1>
 
