@@ -45,7 +45,7 @@
     .app-nav-wrap nav {
         overflow-x: overlay !important;
         &::-webkit-scrollbar {
-            height: 1px;
+            height: 5px;
         }
     }
 }

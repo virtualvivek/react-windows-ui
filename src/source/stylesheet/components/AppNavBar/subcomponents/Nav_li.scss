@@ -81,13 +81,13 @@
         bottom: 0;
         left: 6%;
         transition: transform 0.4s;
-        transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 140%, 0);
       }
       &.active {
         i,
         span { opacity: 1; }
 
-        &::after { transform: translate3d(0, 0, 0); }
+        &::after { transform: translate3d(0, -10, 0); }
       }
       span {
         font-size: 20px;

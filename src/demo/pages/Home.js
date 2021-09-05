@@ -116,6 +116,7 @@ class Home extends React.Component {
           <Button
             type="primary-outline"
             value="Components"
+            icon={<GithubIcon/>}
           />
         </Link>
 
@@ -127,6 +128,8 @@ class Home extends React.Component {
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://github.com/virtualvivek/react-windows-ui" target="_blank" rel="noreferrer"><GithubIcon /></a>
       </div>
+
+      <img src={<GithubIcon/>} alt="i" />
 
       <div className="home-footer-group">
         <div className="group a"></div>

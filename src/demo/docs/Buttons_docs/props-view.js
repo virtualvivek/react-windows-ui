@@ -38,7 +38,7 @@ const PropsView = () => {
           <td>Set's button type</td>
         </tr>
         <tr>
-          <td><p className="app-code">textAlign</p></td>
+          <td><p className="app-code">justifyContent</p></td>
           <td>center | start</td>
           <td>center</td>
           <td>Set's button text alignment</td>

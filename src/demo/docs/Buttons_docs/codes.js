@@ -15,7 +15,7 @@ const ButtonDefaultCode =
 
 const ButtonIconPrimary =
 `<Button
- textAlign={'start'}
+ justifyContent={'start'}
  icon={<i className="icons10-plus color-primary"></i>}
  value="Button Aligned Start"
  onClick={() => {}}

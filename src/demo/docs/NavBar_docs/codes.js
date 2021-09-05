@@ -37,10 +37,21 @@ const NavBarLinkUsageCode =
   showBadge={7}
 />`;
 
+const NavBarLinkImgUsageCode =
+`<NavBarLink
+  to="/"
+  exact={true}
+  text="Page1"
+  img={Img1}
+  imgAlt="Img alt text"
+  imgBorderRadius={4}
+/>`;
+
 
 export {
     NavBarImportCode,
     NavBarUsageCode,
     NavBarLinkUsageCode,
     NavBarLinkImportCode,
+    NavBarLinkImgUsageCode
 }

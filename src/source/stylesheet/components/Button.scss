@@ -2,6 +2,9 @@ button,
 .app-button {
     @extend .user-select-none;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     &:focus,
     &:active,
     &:focus:active {
@@ -97,7 +100,7 @@ button,
     .app-loader-busy {
         left: 40%;
         display: inline;
-        top: 0 !important;
+        width: 0px;
     }
     span {
         transition: opacity ease 0.2s;

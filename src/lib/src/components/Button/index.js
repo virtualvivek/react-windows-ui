@@ -34,7 +34,7 @@ const Button = (props) => {
       }
       style={{
         width: props.width,
-        textAlign: props.textAlign,
+        justifyContent: props.justifyContent,
         ...props.style
       }}
       type="button"

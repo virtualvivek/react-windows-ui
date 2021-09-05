@@ -68,11 +68,16 @@
       max-height: unset;
       max-width: 0;
       backdrop-filter: unset;
+      overflow: overlay;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 4px;
+      }
 
       &.show {
         transition: max-width 0.38s ease-in;
         max-width: 500px;
-        overflow-x: auto;
+        overflow: overlay;
       }
     }
   }
