@@ -12,7 +12,8 @@ const GettingStarted = () => {
          
         <LinkCompound
           style={{margin:'5px 5px 0 0',width:240}}
-          to="/AppJsDefault"
+          to="/boilerplate_external"
+          target="_blank"
           title="Template"
           subtitle="Starter template repository"
           icon={<i className="icons10-file-explorer"></i>}

@@ -10,17 +10,7 @@ class Themes extends React.Component {
             gaugeValue :50
         }
       }
-
-    setGauge0 = () => {   
-        this.setState({gaugeValue: 0});  
-    }
-    setGauge50 = () => {   
-        this.setState({gaugeValue: 50});  
-    }
-    setGauge100 = () => {   
-        this.setState({gaugeValue: 100});  
-    }
-
+      
   render() {
     return (
     <NavPageContainer
@@ -129,9 +119,9 @@ class Themes extends React.Component {
         <br/><br/>
         
         <Switch
-            checked
-            textOn="system"
-            textOff="default"/>         
+            defaultChecked
+            labelOn="system"
+            labelOff="default"/>         
 
 
         <br/><br/><br/><br/><br/><br/>

@@ -199,6 +199,11 @@ class App extends React.Component {
         <Route path='/AppJsSearchable' component={AppJsSearchable} />
         <Route path='/PageJsDefault' component={PageJsDefault} />
         <Route path='/PageJsSplit' component={PageJsSplit} />
+
+        <Route path='/boilerplate_external' component={() => { 
+          window.location.href = 'https://github.com/virtualvivek/react-windows-ui-boilerplate';
+          return null;
+        }} />
       </Switch>
     </Router>
   </>

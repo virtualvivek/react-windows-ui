@@ -4,8 +4,6 @@ import { NavPageContainer, ColorPickerItem, Button } from '../../lib/src'
 import ReactIcon from './css/home/ReactIcon'
 import NpmIcon from './css/home/npmIcon'
 import GithubIcon from './css/home/githubIcon'
-// import Img10 from '../assets/win10picker.jpg'
-// import Img11 from '../assets/win11picker.jpg'
 import './css/home.css'
 
 
@@ -68,10 +66,10 @@ class Home extends React.Component {
           checked/>
         <ColorPickerItem
           name="1"
-          color="#F7630C"/>
+          color="#00B294"/>
         <ColorPickerItem
           name="1"
-          color="#06A156"/>
+          color="#F7630C"/>
         <ColorPickerItem
           name="1"
           color="#D13438"/>
@@ -116,7 +114,6 @@ class Home extends React.Component {
           <Button
             type="primary-outline"
             value="Components"
-            icon={<GithubIcon/>}
           />
         </Link>
 
@@ -128,8 +125,6 @@ class Home extends React.Component {
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://github.com/virtualvivek/react-windows-ui" target="_blank" rel="noreferrer"><GithubIcon /></a>
       </div>
-
-      <img src={<GithubIcon/>} alt="i" />
 
       <div className="home-footer-group">
         <div className="group a"></div>
