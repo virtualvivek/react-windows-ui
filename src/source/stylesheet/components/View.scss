@@ -1,11 +1,12 @@
 .app-view-default {
-    transition: opacity 0.4s;
     position: relative;
     opacity: 0;
     visibility: hidden;
+    transition: opacity 0.4s;
     
     &.show {
         opacity: 1;
         visibility: visible;
+        transition: opacity 0.4s;
     }
 }

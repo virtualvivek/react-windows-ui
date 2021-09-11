@@ -1,16 +1,16 @@
-const NavBarImportCode =
-`import { Gauge } from 'react-windows-ui'`;
+const RadioButtonImportCode =
+`import { RadioButton } from 'react-windows-ui'`;
 
-const NavBarUsageCode =
-`<Gauge
-  setProgress={50}
-  scale={2}
-  value={50+"%"}
-  info="of something"
+const RadioButtonUsageCode =
+`<RadioButton
+  defaultChecked={true}
+  name="1"
+  value="Hellow"
+  label="some text"
 />`;
 
 
 export {
-    NavBarImportCode,
-    NavBarUsageCode
+    RadioButtonImportCode,
+    RadioButtonUsageCode
 }

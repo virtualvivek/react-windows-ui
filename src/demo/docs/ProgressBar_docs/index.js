@@ -35,7 +35,7 @@ render() {
     animateTransition={false}>
     <h1>ProgressBar</h1>
         
-    <p>A <span className="color-primary">ProgressBar</span>  can be used to show a user how far along he/she is in a process</p>
+    <p>A <span className="color-primary">ProgressBar</span> can be used to show a user how far along he/she is in a process</p>
 
     <h1 className="m-0" style={{fontSize:56}}>
       {this.state.ProgressBar1}%

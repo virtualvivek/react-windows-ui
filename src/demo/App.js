@@ -21,6 +21,7 @@ import DialogDocs from './docs/Dialog_docs'
 import GaugeDocs from './docs/Gauge_docs'
 import ImageViewDocs from './docs/ImageView_docs'
 import InputGroupDocs from './docs/InputGroup_docs'
+import InputSearchDocs from './docs/InputSearch_docs'
 import LinkDocs from './docs/Link_docs'
 import LinkCompoundDocs from './docs/LinkCompound_docs'
 import ListItemDocs from './docs/ListItem_docs'
@@ -28,6 +29,9 @@ import LoadersDocs from './docs/LoadersDocs'
 import MenuBarDocs from './docs/MenuBar_docs'
 import NavBarDocs from './docs/NavBar_docs'
 import ProgressBarDocs from './docs/ProgressBar_docs'
+import RadioButtonDocs from './docs/RadioButton_docs'
+import SelectBoxDocs from './docs/SelectBox_docs'
+import SwitchDocs from './docs/Switch_docs'
 
 import _404Layout from './layouts/404Layout'
 import AboutLayout from './layouts/AboutLayout'
@@ -96,7 +100,7 @@ class App extends React.Component {
         /> */}
 
       <NavSearchBox
-        placeholder="Search the docs v2.0.9"
+        placeholder="Search Docs pre v4.0.0"
         onChange={this.handleInputSearch}/>
       <NavBarLink
         exact={true}
@@ -168,12 +172,16 @@ class App extends React.Component {
         <Route path='/gauges' component={GaugeDocs} />
         <Route path='/imageview' component={ImageViewDocs} />
         <Route path='/input_group' component={InputGroupDocs} />
+        <Route path='/inputsearch' component={InputSearchDocs} />
         <Route path='/links' component={LinkDocs} />
         <Route path='/linkcompound' component={LinkCompoundDocs} />
         <Route path='/listitem' component={ListItemDocs} />
         <Route path='/loaders' component={LoadersDocs} />
         <Route path='/menubar' component={MenuBarDocs} />
         <Route path='/progressbar' component={ProgressBarDocs} />
+        <Route path='/radio_button' component={RadioButtonDocs} />
+        <Route path='/selectbox' component={SelectBoxDocs} />
+        <Route path='/switch' component={SwitchDocs} />
 
         <Route path='/texts' component={Texts} />
         <Route path='/tables' component={Tables} />

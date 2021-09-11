@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import LoaderBusyWrapper from '../_common/LoaderBusyWrapper'
 
 const InputText = (props) => {
 
-  const inputRef = React.useRef()
+  const inputRef = useRef()
 
   const toggleInput = () => {
     let input = inputRef.current

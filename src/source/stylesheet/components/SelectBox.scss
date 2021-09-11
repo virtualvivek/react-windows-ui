@@ -2,8 +2,10 @@
     @extend .input-field-primary;
     @extend .transition-background-400ms;
     width: 280px;
-    padding-left: 0;
+    height: 30px;
+    padding: 0;
     display: inline-block;
+    vertical-align: unset;
 
     select {
         @extend .background-color-light-bg;
@@ -21,6 +23,9 @@
         }
         option {
             @extend .background-color-light-bg;
+        }
+        &[disabled] {
+            @extend .input-field-primary-disabled;
         }
     }
     &::after {

@@ -1,16 +1,19 @@
-const NavBarImportCode =
-`import { Gauge } from 'react-windows-ui'`;
+const SelectBoxImportCode =
+`import { SelectBox } from 'react-windows-ui'`;
 
-const NavBarUsageCode =
-`<Gauge
-  setProgress={50}
-  scale={2}
-  value={50+"%"}
-  info="of something"
+const SelectBoxUsageCode =
+`<SelectBox
+  name="Some Name"
+  data={[
+    {label: 'red', value: 'red'},
+    {label: 'blue', value: 'blue'},
+    {label: 'green', value: 'green'},
+    {label: 'pink', value: 'pink'},
+  ]}
 />`;
 
 
 export {
-    NavBarImportCode,
-    NavBarUsageCode
+  SelectBoxImportCode,
+  SelectBoxUsageCode
 }

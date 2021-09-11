@@ -8,7 +8,7 @@
     cursor: pointer;
     font: inherit;
     outline: none;
-    margin: 5px 5px 0 0;
+    margin: 0;
     vertical-align: middle;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -26,7 +26,9 @@
     }
 }
 
-.app-label {
+.app-label-radio-button {
+    display: inline-block;
+    align-items: center;
     .app-radio + span {
         @extend .cursor-pointer;
         @extend .vertical-align-middle;

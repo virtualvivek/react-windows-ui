@@ -1,11 +1,11 @@
 import React from 'react'
-import { NavPageContainer, Gauge } from '../../../lib/src'
+import { NavPageContainer, Gauge, Switch } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { NavBarImportCode,NavBarUsageCode } from './codes'
+import { SwitchImportCode,SwitchUsageCode,SwitchNoLabelUsageCode } from './codes'
 import PropsView from './props-view'
 
-class NavBarDocs extends React.Component {
+class SwitchDocs extends React.Component {
 
 
 render() {
@@ -13,11 +13,17 @@ render() {
   <NavPageContainer
     hasPadding
     animateTransition={false}>
-    <h1>Gauge</h1>
+    <h1>Switch</h1>
+
+    <p>A <span className="color-primary">Switch</span> is a simple component used for activating one of two predefined options. Commonly used as an on/off button.</p>
         
-    <Gauge
-      info="of something"
+    <Switch
+      defaultChecked={true}
+      labelOn="On"
+      labelOff="Off"
+      onChange={() => {}}
     />
+    
 
     <h2>Import</h2>
 
@@ -25,52 +31,52 @@ render() {
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-      {NavBarImportCode}
+      {SwitchImportCode}
     </SyntaxHighlighter>
 
     <h2>Usage</h2>
 
+    <Switch
+      defaultChecked={true}
+      labelOn="On"
+      labelOff="Off"
+      onChange={() => {}}
+    />
+
+    <Switch
+      defaultChecked={true}
+      labelOn="Disabled On"
+      labelOff=" Disabled Off"
+      onChange={() => {}}
+      disabled
+    />
+    <br/><br/>
+
     <SyntaxHighlighter
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-      {NavBarUsageCode}
+      {SwitchUsageCode}
     </SyntaxHighlighter>
 
   
     <div className="app-hr"></div>
-    <h2>Gauge <p className="app-code">Custom color</p> :</h2>
+    <h2>Switch <p className="app-code">with no label</p> :</h2>
 
+    <p>To remove label just pass prop <b>labelOn=""</b>:</p>
 
-    <Gauge
-      info="of total"
-      strokeColor="#e01944"
-      valueColor="#e01944"
+    <Switch
+      defaultChecked={true}
+      labelOn=""
+      onChange={() => {}}
     />
+    <br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-     {NavBarUsageCode}
-    </SyntaxHighlighter>
-
-  
-    <div className="app-hr"></div>
-    <h2>Gauge <p className="app-code">Type Fill</p> :</h2>
-
-    <Gauge
-      scale={1.2}
-      strokeColor="#eb8613"
-      valueColor="#eb8613"
-      type="fill"
-    />
-
-    <SyntaxHighlighter
-      language="javascript"
-      style={vscDarkPlus}
-      className="code code-container">
-      {NavBarUsageCode}
+     {SwitchNoLabelUsageCode}
     </SyntaxHighlighter>
 
 
@@ -84,4 +90,4 @@ render() {
 }
 }
 
-export default NavBarDocs
+export default SwitchDocs

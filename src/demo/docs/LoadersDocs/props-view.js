@@ -35,13 +35,13 @@ const PropsView = () => {
           <td><p className="app-code">backgroundColor</p></td>
           <td>CSS Color</td>
           <td>'light-grey-alpha'</td>
-          <td>Set's LoaderBusy fullscreen background-color</td>
+          <td>Set's LoaderBusy background-color | When display: fullscreen</td>
         </tr>
         <tr>
           <td><p className="app-code">title</p></td>
           <td>string</td>
           <td>null</td>
-          <td>Set's LoaderBusy fullscreen title</td>
+          <td>Set's LoaderBusy title | When display: fullscreen</td>
         </tr>
         <tr>
           <td><p className="app-code">onBackdropPress</p></td>

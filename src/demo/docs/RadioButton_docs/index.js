@@ -1,22 +1,32 @@
 import React from 'react'
-import { NavPageContainer, Gauge } from '../../../lib/src'
+import { NavPageContainer, Gauge,RadioButton } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { NavBarImportCode,NavBarUsageCode } from './codes'
+import { RadioButtonImportCode,RadioButtonUsageCode } from './codes'
 import PropsView from './props-view'
 
-class NavBarDocs extends React.Component {
-
+class RadioButtonDocs extends React.Component {
 
 render() {
   return (
   <NavPageContainer
     hasPadding
     animateTransition={false}>
-    <h1>Gauge</h1>
+    <h1>RadioButton</h1>
         
-    <Gauge
-      info="of something"
+    <RadioButton
+      defaultChecked={true}
+      name="2"
+      label="Hellow"
+      //disabled
+      tooltip="this is radio button"
+    />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <RadioButton
+      name="2"
+      label="World"
+      //disabled
+      tooltip="this is radio button"
     />
 
     <h2>Import</h2>
@@ -25,7 +35,7 @@ render() {
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-      {NavBarImportCode}
+      {RadioButtonImportCode}
     </SyntaxHighlighter>
 
     <h2>Usage</h2>
@@ -34,45 +44,8 @@ render() {
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-      {NavBarUsageCode}
+      {RadioButtonUsageCode}
     </SyntaxHighlighter>
-
-  
-    <div className="app-hr"></div>
-    <h2>Gauge <p className="app-code">Custom color</p> :</h2>
-
-
-    <Gauge
-      info="of total"
-      strokeColor="#e01944"
-      valueColor="#e01944"
-    />
-
-    <SyntaxHighlighter
-      language="javascript"
-      style={vscDarkPlus}
-      className="code code-container">
-     {NavBarUsageCode}
-    </SyntaxHighlighter>
-
-  
-    <div className="app-hr"></div>
-    <h2>Gauge <p className="app-code">Type Fill</p> :</h2>
-
-    <Gauge
-      scale={1.2}
-      strokeColor="#eb8613"
-      valueColor="#eb8613"
-      type="fill"
-    />
-
-    <SyntaxHighlighter
-      language="javascript"
-      style={vscDarkPlus}
-      className="code code-container">
-      {NavBarUsageCode}
-    </SyntaxHighlighter>
-
 
     <h2>Props</h2>
     <PropsView />
@@ -84,4 +57,4 @@ render() {
 }
 }
 
-export default NavBarDocs
+export default RadioButtonDocs

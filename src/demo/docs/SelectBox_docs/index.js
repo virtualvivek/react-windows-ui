@@ -1,11 +1,11 @@
 import React from 'react'
-import { NavPageContainer, Gauge } from '../../../lib/src'
+import { NavPageContainer, Gauge, SelectBox } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { NavBarImportCode,NavBarUsageCode } from './codes'
+import { SelectBoxImportCode,SelectBoxUsageCode } from './codes'
 import PropsView from './props-view'
 
-class NavBarDocs extends React.Component {
+class SelectBoxDocs extends React.Component {
 
 
 render() {
@@ -13,10 +13,17 @@ render() {
   <NavPageContainer
     hasPadding
     animateTransition={false}>
-    <h1>Gauge</h1>
-        
-    <Gauge
-      info="of something"
+    <h1>SelectBox</h1>
+  
+
+    <SelectBox
+      name="Some Name"
+      data={[
+        {label: 'red', value: 'red'},
+        {label: 'blue', value: 'blue'},
+        {label: 'green', value: 'green'},
+        {label: 'pink', value: 'pink'},
+        ]}
     />
 
     <h2>Import</h2>
@@ -25,7 +32,7 @@ render() {
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-      {NavBarImportCode}
+      {SelectBoxImportCode}
     </SyntaxHighlighter>
 
     <h2>Usage</h2>
@@ -34,43 +41,7 @@ render() {
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-      {NavBarUsageCode}
-    </SyntaxHighlighter>
-
-  
-    <div className="app-hr"></div>
-    <h2>Gauge <p className="app-code">Custom color</p> :</h2>
-
-
-    <Gauge
-      info="of total"
-      strokeColor="#e01944"
-      valueColor="#e01944"
-    />
-
-    <SyntaxHighlighter
-      language="javascript"
-      style={vscDarkPlus}
-      className="code code-container">
-     {NavBarUsageCode}
-    </SyntaxHighlighter>
-
-  
-    <div className="app-hr"></div>
-    <h2>Gauge <p className="app-code">Type Fill</p> :</h2>
-
-    <Gauge
-      scale={1.2}
-      strokeColor="#eb8613"
-      valueColor="#eb8613"
-      type="fill"
-    />
-
-    <SyntaxHighlighter
-      language="javascript"
-      style={vscDarkPlus}
-      className="code code-container">
-      {NavBarUsageCode}
+      {SelectBoxUsageCode}
     </SyntaxHighlighter>
 
 
@@ -84,4 +55,4 @@ render() {
 }
 }
 
-export default NavBarDocs
+export default SelectBoxDocs

@@ -174,13 +174,16 @@
     list-style: none;
     width: inherit;
     padding: 0;
-    margin: 2px 0 0 0;
+    margin: 4px 0 0 0;
     position: absolute;
     background: var(--color_light_grey_alpha);
     backdrop-filter: blur(30px);
     box-shadow: 0 2px 5px var(--color_light_grey_alpha);
     z-index: 999;
     visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    cursor: auto;
     &.show {
         visibility: visible;
     }
@@ -204,4 +207,5 @@
             }
         }
     }
+
 }

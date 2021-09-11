@@ -2,9 +2,10 @@ import React from 'react'
 import { NavPageContainer, LinkCompound } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { NavBarImportCode,NavBarUsageCode,
-          NavBarLinkImportCode,NavBarLinkUsageCode,NavBarLinkImgUsageCode } from './codes'
+import { NavBarImportCode,NavBarUsageCode,NavBarLinkImportCode,
+  NavBarLinkUsageCode,NavBarLinkImgUsageCode,NavBarLinkBadgeUsageCode } from './codes'
 import PropsView from './props-view'
+import PropsViewNavItem from './props-view-navitem'
 import Img1 from '../../assets/illustration/macos.jpg'
 import Img2 from '../../assets/illustration/2.jpg'
 
@@ -177,6 +178,40 @@ render() {
     </SyntaxHighlighter>
 
     <div className="app-hr"></div>
+
+    <h2>NavBarLink <span className="app-code">show Badge</span> :</h2>
+
+    <div className="app-nav-wrap">
+    <nav className="animate" style={{position:'relative'}}>
+      <ul style={{padding:0,margin:0}}>
+        <li>
+        <a href="#/navbar">
+          <i className="icons10-user"></i>
+          <span>NavItem1</span>
+          <div class="app-badge">12</div>
+        </a>
+        </li>
+        <li>
+          <a href="#/navbar">
+            <img src={Img2} alt="img"/>
+            <span>NavItem2</span>
+            <div class="app-badge">7</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+    <br/>
+
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {NavBarLinkBadgeUsageCode}
+    </SyntaxHighlighter>
+
+    <h2>Props</h2>
+    <PropsViewNavItem />
 
     <br/><br/><br/><br/><br/><br/>
 

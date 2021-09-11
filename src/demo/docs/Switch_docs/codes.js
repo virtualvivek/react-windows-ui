@@ -1,16 +1,24 @@
-const NavBarImportCode =
-`import { Gauge } from 'react-windows-ui'`;
+const SwitchImportCode =
+`import { Switch } from 'react-windows-ui'`;
 
-const NavBarUsageCode =
-`<Gauge
-  setProgress={50}
-  scale={2}
-  value={50+"%"}
-  info="of something"
+const SwitchUsageCode =
+`<Switch
+  defaultChecked={true}
+  labelOn="On"
+  labelOff="Off"
+  onChange={() => {}}
+/>`;
+
+const SwitchNoLabelUsageCode =
+`<Switch
+  defaultChecked={true}
+  labelOn=""
+  onChange={() => {}}
 />`;
 
 
 export {
-    NavBarImportCode,
-    NavBarUsageCode
+    SwitchImportCode,
+    SwitchUsageCode,
+    SwitchNoLabelUsageCode
 }

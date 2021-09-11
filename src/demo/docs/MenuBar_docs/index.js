@@ -48,7 +48,7 @@ render() {
 
   
     <div className="app-hr"></div>
-    <h2>MenuBar with <p className="app-code">onClick Listner</p> :</h2>
+    <h2>MenuBar with <p className="app-code">onClick Listener</p> :</h2>
 
     <MenuBar
       label="Select a fruit"

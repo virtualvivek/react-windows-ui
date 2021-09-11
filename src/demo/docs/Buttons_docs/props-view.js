@@ -21,7 +21,7 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">icon</p></td>
-          <td>ReactNode</td>
+          <td>ReactNode | SVG | FontIcon</td>
           <td>null</td>
           <td>Set's button left icon</td>
         </tr>

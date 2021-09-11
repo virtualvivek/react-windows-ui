@@ -27,7 +27,7 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">value</p></td>
-          <td>string | integer</td>
+          <td>any</td>
           <td>null</td>
           <td>Set's Checkbox value prop</td>
         </tr>
@@ -42,6 +42,12 @@ const PropsView = () => {
           <td>string</td>
           <td>null</td>
           <td>Set's Checkbox hover tooptip text</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">disabled</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's Checkbox disabled state</td>
         </tr>
         <tr>
           <td><p className="app-code">onChange</p></td>

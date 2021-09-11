@@ -8,6 +8,8 @@ const InputSearchBox = (props) => {
         type="search"
         placeholder={props.placeholder}
         onChange={props.onChange}
+        name={props.name}
+        value={props.value}
       />
     </div>
   )

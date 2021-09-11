@@ -10,8 +10,8 @@ const View = (props) => {
         "app-view-default show" : "app-view-default"
         }
         style={{
-            zIndex: props.zIndex
-        }}>
+            zIndex: props.zIndex,
+            ...props.style}}>
         {props.children}
     </div>
   )

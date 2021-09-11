@@ -1,25 +1,30 @@
 .app-select-styled.menubar {
-    @extend .cursor-pointer;
-    @extend .user-select-none;
-    &::after {
-        float: right;
-        right: 8px;
-        top: 4px;
-    }
-    span {
-        padding: 7px 0 7px 10px;
-        display: inline-block;
-    }
+  @extend .cursor-pointer;
+  @extend .user-select-none;
+  
+  &::after {
+    float: right;
+    right: 8px;
+  }
+  span { padding-left: 10px; }
+  
+  &::after,
+  span {
+    height: inherit;
+    display: inline-flex;
+    align-items: center;
+  }
 
-    ul {
-        @extend .app-custom-dropdown-ul;
+  ul {
+    @extend .app-custom-dropdown-ul;
+    max-height: 280px;
 
-        .app-search-box {
-            width: inherit;
-            border-bottom: 1px solid var(--color_light_grey);
-            .app-input-search {
-                border: none;
-            }
-        }
+    .app-search-box {
+      width: inherit;
+      border-bottom: 1px solid var(--color_light_grey);
+      .app-input-search {
+        border: none;
+      }
     }
+  }
 }

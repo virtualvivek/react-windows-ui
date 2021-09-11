@@ -63,6 +63,13 @@
         "showBadge": false
     },
     {
+        "to": "/icons",
+        "exact": false,
+        "text": "Icons",
+        "icon": "icons10-deathly-hallows",
+        "showBadge": false
+    },
+    {
         "to": "/imageview",
         "exact": false,
         "text": "ImageView",
@@ -74,6 +81,13 @@
         "exact": false,
         "text": "InputText",
         "icon": "icons10-keyboard",
+        "showBadge": false
+    },
+    {
+        "to": "/inputsearch",
+        "exact": false,
+        "text": "InputSearch",
+        "icon": "icons10-search",
         "showBadge": false
     },
     {
@@ -119,6 +133,27 @@
         "showBadge": false
     },
     {
+        "to": "/radio_button",
+        "exact": false,
+        "text": "RadioButton",
+        "icon": "icons10-checked",
+        "showBadge": false
+    },
+    {
+        "to": "/selectbox",
+        "exact": false,
+        "text": "SelectBox",
+        "icon": "icons10-database",
+        "showBadge": false
+    },
+    {
+        "to": "/switch",
+        "exact": false,
+        "text": "Switch",
+        "icon": "icons10-touch",
+        "showBadge": false
+    },
+    {
         "to": "/texts",
         "exact": false,
         "text": "Texts",
@@ -130,13 +165,6 @@
         "exact": false,
         "text": "Tables",
         "icon": "icons10-grid-3",
-        "showBadge": false
-    },
-    {
-        "to": "/icons",
-        "exact": false,
-        "text": "Icons",
-        "icon": "icons10-deathly-hallows",
         "showBadge": false
     },
     {

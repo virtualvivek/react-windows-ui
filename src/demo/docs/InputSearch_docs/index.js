@@ -1,11 +1,16 @@
 import React from 'react'
-import { NavPageContainer, Gauge } from '../../../lib/src'
+import { NavPageContainer,InputSearchBar,InputSearchBox,InputSearchSuggestion} from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { NavBarImportCode,NavBarUsageCode } from './codes'
+import { SearchBarImportCode,
+  SearchBoxImportCode,
+  SearchSuggestionImportCode,
+  SearchBarUsageCode,
+  SearchBoxUsageCode,
+  SearchSuggestionUsageCode } from './codes'
 import PropsView from './props-view'
 
-class NavBarDocs extends React.Component {
+class InputSearchDocs extends React.Component {
 
 
 render() {
@@ -13,10 +18,15 @@ render() {
   <NavPageContainer
     hasPadding
     animateTransition={false}>
-    <h1>Gauge</h1>
+    <h1>InputSearch</h1>
+    <p><span className="color-primary">InputSearch</span>  defines a text field for entering a search string.</p>
         
-    <Gauge
-      info="of something"
+    <h2>InputSearchBar</h2>
+
+    <InputSearchBar
+      placeholder="Search here"
+      onSubmit={() => {}}
+      //tooltip="tooltip title"
     />
 
     <h2>Import</h2>
@@ -25,7 +35,7 @@ render() {
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-      {NavBarImportCode}
+      {SearchBarImportCode}
     </SyntaxHighlighter>
 
     <h2>Usage</h2>
@@ -34,43 +44,69 @@ render() {
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-      {NavBarUsageCode}
+      {SearchBarUsageCode}
     </SyntaxHighlighter>
 
   
     <div className="app-hr"></div>
-    <h2>Gauge <p className="app-code">Custom color</p> :</h2>
+    <h2>InputSearchBox</h2>
 
-
-    <Gauge
-      info="of total"
-      strokeColor="#e01944"
-      valueColor="#e01944"
+    <InputSearchBox
+      placeholder="Enter to Search"
+      onChange={() => {}}
+      //tooltip="tooltip title"
     />
+
+    <h2>Import</h2>
 
     <SyntaxHighlighter
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-     {NavBarUsageCode}
+      {SearchBoxImportCode}
     </SyntaxHighlighter>
 
-  
-    <div className="app-hr"></div>
-    <h2>Gauge <p className="app-code">Type Fill</p> :</h2>
-
-    <Gauge
-      scale={1.2}
-      strokeColor="#eb8613"
-      valueColor="#eb8613"
-      type="fill"
-    />
+    <h2>Usage</h2>
 
     <SyntaxHighlighter
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-      {NavBarUsageCode}
+      {SearchBoxUsageCode}
+    </SyntaxHighlighter>
+
+
+  
+    <div className="app-hr"></div>
+    <h2>InputSearchSuggestion</h2>
+
+    <InputSearchSuggestion
+      placeholder="Type 'a' .."
+      data={[
+        {label: 'apple', link: '#', icon:<i className="icons10-baby"></i>},
+        {label: 'orange', link: '#',onClick:this.function},
+        {label: 'banana', link: '#'},
+        {label: 'peach', link: '#'},
+      ]}
+      //tooltip="tooltip title"
+    />
+
+    <h2>Import</h2>
+
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {SearchSuggestionImportCode}
+    </SyntaxHighlighter>
+
+    <h2>Usage</h2>
+
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {SearchSuggestionUsageCode}
     </SyntaxHighlighter>
 
 
@@ -84,4 +120,4 @@ render() {
 }
 }
 
-export default NavBarDocs
+export default InputSearchDocs
