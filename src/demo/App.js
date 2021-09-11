@@ -9,7 +9,6 @@ import Inputs from './pages/Inputs'
 import Texts from './pages/Texts'
 import Tables from './pages/Tables'
 import Icons from './pages/Icons'
-import Themes from './pages/Themes'
 
 import AccordionDocs from './docs/Accordion_docs'
 import AlertDocs from './docs/Alert_docs'
@@ -188,7 +187,6 @@ class App extends React.Component {
         <Route path='/texts' component={Texts} />
         <Route path='/tables' component={Tables} />
         <Route path='/icons' component={Icons} />
-        <Route path='/themes' component={Themes} />
         
         <Route path='/AboutLayout' component={AboutLayout} />
         <Route path='/BlogLayout' component={BlogLayout} />

@@ -2,6 +2,8 @@ const AppThemeImportCode =
 `import { AppTheme } from 'react-windows-ui'`;
 const ColorPickerItemImportCode =
 `import { ColorPickerItem } from 'react-windows-ui'`;
+const ColorPickerPaletteImportCode =
+`import { ColorPickerPalette } from 'react-windows-ui'`;
 
 const AppThemeUsageCode =
 `<AppTheme
@@ -17,10 +19,18 @@ const ColorPickerItemUsageCode =
   onChange={ () => {}}
 />`;
 
+const ColorPickerPaletteUsageCode =
+`<ColorPickerPalette
+  color="#0078D7"
+  onChange={()=> {}}
+/>`;
+
 
 export {
     AppThemeImportCode,
     AppThemeUsageCode,
     ColorPickerItemImportCode,
-    ColorPickerItemUsageCode
+    ColorPickerItemUsageCode,
+    ColorPickerPaletteImportCode,
+    ColorPickerPaletteUsageCode
 }

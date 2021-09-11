@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { NavPageContainer, ColorPickerItem, Button } from '../../lib/src'
+import { NavPageContainer,ColorPickerItem,ColorPickerPalette,Button,AppTheme } from '../../lib/src'
 import ReactIcon from './css/home/ReactIcon'
 import NpmIcon from './css/home/npmIcon'
 import GithubIcon from './css/home/githubIcon'
@@ -9,48 +9,27 @@ import './css/home.css'
 
 class Home extends React.Component {
 
-
-  constructor() {
-    super();
-    this.state = {
-      stylesheet: 'win10'
-    }
+  state = {
+    app_color: '',
+    app_mode: ''
   }
 
-  // componentDidMount() {
-  //   if(this.state.stylesheet === 'win10') {
-  //     require('../../../lib/dist/react-windows-ui.min.css');
-  //  } else if(this.state.stylesheet === 'win11') {
-  //     require('../../../lib/dist/react-windows-ui-sunvalley.min.css');
-  //  }
-  // }
-
-  // componentDidUpdate() {
-  //   if(this.state.stylesheet === 'win10') {
-  //     delete [require.resolve('../../../lib/dist/react-windows-ui-sunvalley.min.css')]
-  //     require('../../../lib/dist/react-windows-ui.min.css')
-  //  } else {
-  //     require('../../../lib/dist/react-windows-ui-sunvalley.min.css')
-  //  }
-  // }
-
-  ChangeTheme10 = () => {
-    this.setState({
-      stylesheet:'win10'
-    })
-    console.log(this.state.stylesheet)
+  changeTheme = (color) => {
+    this.setState({app_color: color.target.value});
   }
-  ChangeTheme11 = () => {
-    this.setState({
-      stylesheet:'win11'
-    })
-    console.log(this.state.stylesheet)
+
+  changeMode = (e) => {
+    e.target.checked ?
+      this.setState({app_mode: 'light'}) :
+      this.setState({app_mode: 'dark'})
   }
 
   
   render() {
   return (
     <NavPageContainer hasPadding>
+
+      <AppTheme color={this.state.app_color} />
 
       <div className="home-header">
         <ReactIcon/>
@@ -61,42 +40,35 @@ class Home extends React.Component {
 
       <div className="home-color-picker">
         <ColorPickerItem
+          defaultChecked
           name="1"
           color="#0078D7"
-          checked/>
+          onChange={ (color) => this.changeTheme(color)}/>
         <ColorPickerItem
           name="1"
-          color="#00B294"/>
+          color="#6632a8"
+          onChange={ (color) => this.changeTheme(color)}/>
         <ColorPickerItem
           name="1"
-          color="#F7630C"/>
+          color="#881798"
+          onChange={ (color) => this.changeTheme(color)}/>
+        
         <ColorPickerItem
           name="1"
-          color="#D13438"/>
+          color="#00B294"
+          onChange={ (color) => this.changeTheme(color)}/>
         <ColorPickerItem
           name="1"
-          color="#4A5459"/>
+          color="#69797E"
+          onChange={ (color) => this.changeTheme(color)}/>
         <ColorPickerItem
           name="1"
-          color="#018574"/>
-
-        {/* <br/><br/>
-
-        <ColorPickerItem
-          checked
-          height={100}
-          width={100}
-          name="2"
-          onChange={this.ChangeTheme10}
-          image={Img10} />
-
-        <ColorPickerItem
-          height={100}
-          width={100}
-          name="2"
-          onChange={this.ChangeTheme11}
-          image={Img11} /> */}
-
+          color="#647C64"
+          onChange={ (color) => this.changeTheme(color)}/>
+        <ColorPickerPalette
+          name="1"
+          color="#ad2642"
+          onChange={ (color) => this.changeTheme(color)}/>
 
       </div>
 

@@ -173,12 +173,5 @@
         "text": "Tables",
         "icon": "icons10-grid-3",
         "showBadge": false
-    },
-    {
-        "to": "/themes",
-        "exact": false,
-        "text": "Themes",
-        "icon": "icons10-color-palette",
-        "showBadge": false
     }
 ]

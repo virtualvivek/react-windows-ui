@@ -2,9 +2,11 @@ import React from 'react'
 import { NavPageContainer, Switch, ColorPickerItem,ColorPickerPalette, AppTheme,Link } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { AppThemeImportCode,AppThemeUsageCode,ColorPickerItemImportCode,ColorPickerItemUsageCode } from './codes'
+import { AppThemeImportCode,AppThemeUsageCode,ColorPickerItemImportCode,
+    ColorPickerItemUsageCode,ColorPickerPaletteImportCode,ColorPickerPaletteUsageCode } from './codes'
 import PropsView from './props-view'
 import PropsViewColorPickerItem from './props-view-color-picker-item'
+import PropsViewColorPickerPalette from './props-view-color-picker-palette'
 import './window-view.css'
 
 class AppThemeDocs extends React.Component {
@@ -110,6 +112,7 @@ class AppThemeDocs extends React.Component {
     <h2>Props</h2>
     <PropsView />
 
+    <div className="app-hr"></div>
     <h1>ColorPickerItem</h1>
 
     <ColorPickerItem
@@ -143,6 +146,37 @@ class AppThemeDocs extends React.Component {
 
     <h2>Props</h2>
     <PropsViewColorPickerItem />
+
+
+    <div className="app-hr"></div>
+    <h1>ColorPickerPalette</h1>
+
+    <ColorPickerPalette
+      color="#0078D7"
+      onChange={()=> {}}/>
+
+    <p><span className="color-primary">ColorPickerPalette</span> is a component used to let user choose a color from Color Palette.</p>
+
+    <h2>Import</h2>
+
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {ColorPickerPaletteImportCode}
+    </SyntaxHighlighter>
+
+    <h2>Usage</h2>
+
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {ColorPickerPaletteUsageCode}
+    </SyntaxHighlighter>
+
+    <h2>Props</h2>
+    <PropsViewColorPickerPalette />
 
     <br/><Link to="/apptheme_external" target="_blank"><span style={{fontSize:24}}>View This Page Source <i className="icons10-arrow-right"></i></span></Link>
 
