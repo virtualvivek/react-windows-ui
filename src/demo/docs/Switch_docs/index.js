@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, Gauge, Switch } from '../../../lib/src'
+import { NavPageContainer, Switch } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { SwitchImportCode,SwitchUsageCode,SwitchNoLabelUsageCode } from './codes'

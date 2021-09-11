@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, Gauge, SelectBox } from '../../../lib/src'
+import { NavPageContainer, SelectBox } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { SelectBoxImportCode,SelectBoxUsageCode } from './codes'

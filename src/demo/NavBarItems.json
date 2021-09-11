@@ -21,6 +21,13 @@
         "showBadge": false
     },
     {
+        "to": "/apptheme",
+        "exact": false,
+        "text": "AppTheme",
+        "icon": "icons10-color-palette",
+        "showBadge": false
+    },
+    {
         "to": "/avatarview",
         "exact": false,
         "text": "AvatarView",

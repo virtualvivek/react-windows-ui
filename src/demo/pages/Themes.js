@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, ColorPickerItem, Switch } from '../../lib/src'
+import { NavPageContainer, ColorPickerItem, Switch,AppTheme } from '../../lib/src'
 import './css/themes.css'
 
 class Themes extends React.Component {
@@ -17,6 +17,8 @@ class Themes extends React.Component {
         hasPadding
         animateTransition>
       <h1>Themes</h1>
+
+      <AppTheme mode="light"/>
 
         <div className="windows-view">
             <div className="start-view">

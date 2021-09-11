@@ -13,6 +13,7 @@ import Themes from './pages/Themes'
 
 import AccordionDocs from './docs/Accordion_docs'
 import AlertDocs from './docs/Alert_docs'
+import AppThemeDocs from './docs/AppTheme_docs'
 import AvatarViewDocs from './docs/AvatarView_docs'
 import ButtonsDocs from './docs/Buttons_docs'
 import CardDocs from './docs/Card_docs'
@@ -164,6 +165,7 @@ class App extends React.Component {
 
         <Route path='/accordion' component={AccordionDocs} />
         <Route path='/alerts' component={AlertDocs} />
+        <Route path='/apptheme' component={AppThemeDocs} />
         <Route path='/avatarview' component={AvatarViewDocs} />
         <Route path='/buttons' component={ButtonsDocs} />
         <Route path='/cards' component={CardDocs} />
@@ -201,6 +203,10 @@ class App extends React.Component {
         <Route path='/PageJsSplit' component={PageJsSplit} />
 
         <Route path='/boilerplate_external' component={() => { 
+          window.location.href = 'https://github.com/virtualvivek/react-windows-ui-boilerplate';
+          return null;
+        }} />
+        <Route path='/apptheme_external' component={() => { 
           window.location.href = 'https://github.com/virtualvivek/react-windows-ui-boilerplate';
           return null;
         }} />

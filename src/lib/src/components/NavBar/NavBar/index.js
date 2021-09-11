@@ -5,19 +5,14 @@ import SwitchDayNight from '../../SwitchDayNight'
 const NavBar = (props) => {
   
   const [sidebar, setSidebar] = useState(false)
+  const [isScrolling, setScrolling] = useState(false)
 
   const showSidebar = () => setSidebar(!sidebar)
-
-  const [isScrolling, setScrolling] = useState(false)
   
   const scrollEvent = (e) => { 
     // console.log(e.target.scrollTop)
-    if(e.target.scrollTop < 50) {
-      setScrolling(false)
-    }
-    else {
-      setScrolling(true)
-    }
+    if(e.target.scrollTop < 50) { setScrolling(false) }
+    else { setScrolling(true) }
   }
 
   return (

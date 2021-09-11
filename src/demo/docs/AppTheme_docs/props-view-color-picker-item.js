@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PropsView = () => {
+const PropsViewColorPickerItem = () => {
   return (
     <div className="app-table-view-container">
     <table className="app-table-view">
@@ -17,47 +17,35 @@ const PropsView = () => {
           <td><p className="app-code">defaultChecked</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Set's Checkbox default checked</td>
+          <td>Set's ColorPickerItem checked rpop</td>
         </tr>
         <tr>
-          <td><p className="app-code">label</p></td>
-          <td>string</td>
-          <td>null</td>
-          <td>Set's Checkbox text label</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">value</p></td>
-          <td>any</td>
-          <td>null</td>
-          <td>Set's Checkbox value prop</td>
+          <td><p className="app-code">color</p></td>
+          <td>CSS Color Value</td>
+          <td>'#eee'</td>
+          <td>Set's ColorPickerItem color prop</td>
         </tr>
         <tr>
           <td><p className="app-code">name</p></td>
-          <td>string | integer</td>
+          <td>any</td>
           <td>null</td>
-          <td>Set's Checkbox group name prop</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">tooltip</p></td>
-          <td>string</td>
-          <td>null</td>
-          <td>Set's Checkbox hover tooptip text</td>
+          <td>Set's ColorPickerItem group name prop</td>
         </tr>
         <tr>
           <td><p className="app-code">disabled</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Set's Checkbox disabled state</td>
+          <td>Set's ColorPickerItem disabled state</td>
         </tr>
         <tr>
           <td><p className="app-code">onChange</p></td>
+          <td>function</td>
           <td>null</td>
-          <td>object</td>
-          <td>Set's Checkbox on change listener</td>
+          <td>Set's ColorPickerItem onChange listener</td>
         </tr>
       </tbody>
     </table>
     </div>
   );
 }
-export default PropsView
+export default PropsViewColorPickerItem

@@ -10,6 +10,7 @@ import {
     TransitionToLeft } from './components/NavBar'
 
 import Accordion from './components/Accordion'
+import AppTheme from './components/AppTheme'
 import AvatarView from './components/AvatarView'
 import Alert from './components/Alert'
 import Button from './components/Button'
@@ -18,7 +19,7 @@ import ButtonFluent from './components/ButtonFluent'
 import Card from './components/Card'
 import Checkbox from './components/Checkbox'
 import CommandBar from './components/CommandBar'
-import ColorPickerItem from './components/ColorPickerItem'
+import ColorPickerItem from './components/ColorPicker/ColorPickerItem'
 import Dialog from './components/Dialog'
 import Gauge from './components/Gauge'
 import HeaderFixedContainer from './components/HeaderFixedContainer'
@@ -62,6 +63,7 @@ export {
     TransitionToLeft,
     
     Accordion,
+    AppTheme,
     AvatarView,
     Alert,
     Button,
