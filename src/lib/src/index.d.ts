@@ -20,6 +20,7 @@ import Card from './components/Card'
 import Checkbox from './components/Checkbox'
 import CommandBar from './components/CommandBar'
 import ColorPickerItem from './components/ColorPicker/ColorPickerItem'
+import ColorPickerPalette from './components/ColorPicker/ColorPickerPalette'
 import Dialog from './components/Dialog'
 import Gauge from './components/Gauge'
 import HeaderFixedContainer from './components/HeaderFixedContainer'
@@ -70,6 +71,7 @@ export {
     Checkbox,
     CommandBar,
     ColorPickerItem,
+    ColorPickerPalette,
     Dialog,
     Gauge,
     HeaderFixedContainer,

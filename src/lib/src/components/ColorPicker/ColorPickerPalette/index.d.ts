@@ -1,15 +1,12 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 
-export interface ColorPickerItemProps {
-  name ?: string;
-  checked ?: boolean;
+export interface ColorPickerPaletteProps {
   disabled ?: boolean;
   width ?: number | string;
   height ?: number | string;
-  color ?: string;
-  image ?: ReactNode;
+  color ?: any;
   onChange ?: Function;
 }
-declare const ColorPickerItem: React.FC<ColorPickerItemProps>
+declare const ColorPickerPalette: React.FC<ColorPickerPaletteProps>
 
-export default ColorPickerItem
+export default ColorPickerPalette

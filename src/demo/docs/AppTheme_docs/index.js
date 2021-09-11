@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, Switch, ColorPickerItem, AppTheme,Link } from '../../../lib/src'
+import { NavPageContainer, Switch, ColorPickerItem,ColorPickerPalette, AppTheme,Link } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { AppThemeImportCode,AppThemeUsageCode,ColorPickerItemImportCode,ColorPickerItemUsageCode } from './codes'
@@ -29,6 +29,7 @@ class AppThemeDocs extends React.Component {
   <NavPageContainer
     hasPadding
     animateTransition={false}>
+
     <h1>AppTheme</h1>
 
     <AppTheme color={this.state.app_color} mode={this.state.app_mode}/>
@@ -58,25 +59,27 @@ class AppThemeDocs extends React.Component {
       onChange={ (color) => this.changeTheme(color)}/>
     <ColorPickerItem
       name="1"
-      color="#744DA9"/>
-    <ColorPickerItem
-      name="1"
-      color="#785AA2"
+      color="#038387"
       onChange={ (color) => this.changeTheme(color)}/>
     <ColorPickerItem
       name="1"
-      color="#0063B1"
+      color="#00B294"
       onChange={ (color) => this.changeTheme(color)}/>
     <ColorPickerItem
       name="1"
-      color="#0078D7"
+      color="#69797E"
       onChange={ (color) => this.changeTheme(color)}/>
     <ColorPickerItem
+      name="1"
+      color="#647C64"
+      onChange={ (color) => this.changeTheme(color)}/>
+    <ColorPickerPalette
       name="1"
       color="#0078D7"
       onChange={ (color) => this.changeTheme(color)}/>
 
-    <br/><br/><Switch
+    <br/><br/>
+    <Switch
       defaultChecked={true}
       labelOn="Mode O"
       labelOff="Mode I"
@@ -141,13 +144,13 @@ class AppThemeDocs extends React.Component {
     <h2>Props</h2>
     <PropsViewColorPickerItem />
 
-    <br/><Link><span style={{fontSize:24}}>View This Page Source <i className="icons10-arrow-right"></i></span></Link>
+    <br/><Link to="/apptheme_external" target="_blank"><span style={{fontSize:24}}>View This Page Source <i className="icons10-arrow-right"></i></span></Link>
 
     <br/><br/><br/><br/><br/><br/>
 
   </NavPageContainer>
-);
-}
+  );
+ }
 }
 
 export default AppThemeDocs

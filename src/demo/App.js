@@ -207,7 +207,7 @@ class App extends React.Component {
           return null;
         }} />
         <Route path='/apptheme_external' component={() => { 
-          window.location.href = 'https://github.com/virtualvivek/react-windows-ui-boilerplate';
+          window.location.href = 'https://github.com/virtualvivek/react-windows-ui/blob/main/src/demo/docs/AppTheme_docs/index.js';
           return null;
         }} />
       </Switch>

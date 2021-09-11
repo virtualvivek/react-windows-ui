@@ -14,9 +14,9 @@ const ColorPickerItem = (props) => {
       />
       <div
       style={{
-          backgroundColor: props.color,
-          width: props.width,
-          height: props.height
+        backgroundColor: props.color,
+        width: props.width,
+        height: props.height
       }}>
       </div>
     </label>

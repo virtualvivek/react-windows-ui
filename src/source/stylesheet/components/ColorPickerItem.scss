@@ -1,41 +1,54 @@
 .app-color-picker-item {
-    padding: 0 4px 2px 0;
+  padding: 0 4px 2px 0;
 
-    div {
-        height: 40px;
-        width: 40px;
-        display: inline-block;
-        border: 2px solid transparent;
-        &:hover {
-            border: 2px solid var(--color_text_dark);
-        }
-        &::before {
-            content: '✔';
-            position: relative;
-            float: right;
-            font-size: 12px;
-            padding: 4px;
-            line-height: 1;
-            color: var(--color_bg_light);
-            background: var(--color_text_dark);
-            transition: all 0.2s;
-          }
+  div {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border: 2px solid transparent;
+
+    &:hover { border: 2px solid var(--color_text_dark); }
+
+    &::before {
+      content: '✔';
+      position: relative;
+      float: right;
+      font-size: 12px;
+      padding: 4px;
+      line-height: 1;
+      color: var(--color_bg_light);
+      background: var(--color_text_dark);
+      transition: all 0.2s;
     }
-    .item:not(:checked) + div::before {
-        opacity: 0;
-        transform: scale(0);
-      }
+  }
+  .item:not(:checked) + div::before {
+    opacity: 0;
+    transform: scale(0);
+    }
       
-    .item:checked + div::before {
-        opacity: 1;
-        transform: scale(1);
-    }
+  .item:checked + div::before {
+    opacity: 1;
+    transform: scale(1);
+  }
 
-    .item {
-        @extend .display-none;
+  .item {
+    @extend .display-none;
+  }
+  div:hover,
+  .item:checked + div {
+    border: 2px solid var(--color_text_dark);
+  }
+
+  &.palette {
+    input[type="color"] {
+      position: absolute;
+      opacity: 0;
     }
-    div:hover,
-    .item:checked + div {
-        border: 2px solid var(--color_text_dark);
+    div {
+      border: 2px solid var(--color_text_dark);
+      &::before {
+        content: '🌗';
+      }
     }
+  }
 }

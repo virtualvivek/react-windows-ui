@@ -1,46 +1,30 @@
-import React from 'react'
-var createAlphaPrimaryColor = require('../utils/ThemeManager').createAlphaPrimaryColor
+import React, {useState} from 'react'
 
-const ColorPickerItem = (props) => {
-
-const inputRef = React.useRef()
-
-  const setThemeColor = (color) => {
-    let radio = inputRef.current
-      if(radio.checked) {
-        document.documentElement.style.setProperty('--PrimaryColor', color)
-        createAlphaPrimaryColor()
-      }
-  }
+const ColorPickerPalette = (props) => {
+  const [icolor, setColor] = useState(props.color);
 
   return (
-    <label className="app-color-picker-item">
+    <label className="app-color-picker-item palette">
       <input
-        type="radio"
-        className="item"
-        ref={inputRef}
-        name={props.name}
-        defaultChecked={props.checked}
+        type="color"
+        value={icolor}
         disabled={props.disabled}
-        onChange={props.onChange? props.onChange : () => setThemeColor(props.color)}
+        onChange={props.onChange}
+        onChangeCapture={e => setColor(e.target.value)}
       />
       <div
       style={{
-          backgroundColor: props.color,
-          backgroundImage: props.image ? "url(" + props.image + ")" : '',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-          width: props.width,
-          height: props.height
+        backgroundColor: icolor,
+        width: props.width,
+        height: props.height
       }}>
       </div>
     </label>
   )
 }
 
-ColorPickerItem.defaultProps = {
+ColorPickerPalette.defaultProps = {
   color: "#eee"
 }
 
-export default ColorPickerItem
+export default ColorPickerPalette
