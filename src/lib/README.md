@@ -105,7 +105,7 @@ $ npm install
 $ npm start
 ```
 
-<h1 align="center">Windows 11 Styles.css</h1>
+<!-- <h1 align="center">Windows 11 Styles.css</h1>
 <p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_promo_w11.png" width="500" /></p>
 
 ```js
@@ -113,7 +113,7 @@ $ npm start
 ...
 import 'react-windows-ui/dist/react-windows-ui-sunvalley.min.css'
 ...
-```
+``` -->
 
 # RTL Support
 Distribute layout direction from Right to Left.
@@ -152,11 +152,6 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
 </tr>
 <tr>
-  <td>Library SunValley SCSS Source</td>
-  <td>SunValley Styles <code>scss</code> source code</td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet-sunvalley">SCSS LINK</a></td>
-</tr>
-<tr>
   <td>TypeScript Type Definitions</td>
   <td>Typescript <code>index.d.ts</code> import file</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/src/index.d.ts">D.TS LINK</a></td>
@@ -178,11 +173,6 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
   <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=for-the-badge&logo=windows&color=1572B6&label=react-windows-ui.min.css"
        alt="react-windows-ui.min.css" />
-</a>
-<br>
-<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-sunvalley.min.css?style=for-the-badge&logo=microsoft&color=0078D4&label=react-windows-ui-sunvalley.min.css"
-       alt="react-windows-ui-sunvalley.min.css" />
 </a>
 <br>
 <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
