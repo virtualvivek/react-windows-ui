@@ -7,7 +7,7 @@ import { AppThemeImportCode,AppThemeUsageCode,ColorPickerItemImportCode,
 import PropsView from './props-view'
 import PropsViewColorPickerItem from './props-view-color-picker-item'
 import PropsViewColorPickerPalette from './props-view-color-picker-palette'
-import './window-view.css'
+import './css/window-view.css'
 
 class AppThemeDocs extends React.Component {
 
@@ -70,10 +70,6 @@ class AppThemeDocs extends React.Component {
     <ColorPickerItem
       name="1"
       color="#69797E"
-      onChange={ (color) => this.changeTheme(color)}/>
-    <ColorPickerItem
-      name="1"
-      color="#647C64"
       onChange={ (color) => this.changeTheme(color)}/>
     <ColorPickerPalette
       name="1"

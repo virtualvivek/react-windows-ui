@@ -1,0 +1,16 @@
+.app-nav-wrap nav {
+    .app-switch {
+      margin: 16px 0 0 20px;
+    }
+}
+
+@mixin nav-switch-mobile() {
+  .app-nav-wrap nav {
+    .app-switch {
+      position: absolute;
+      display: block;
+      margin: -40px 0 0;
+      left: 70vw;
+    }
+  }
+}

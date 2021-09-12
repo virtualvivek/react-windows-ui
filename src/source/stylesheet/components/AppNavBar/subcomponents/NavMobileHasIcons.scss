@@ -1,0 +1,23 @@
+@mixin nav-mobile-has-icons() {
+  .app-nav-wrap nav ul {
+    &.app-mobile-has-icons {
+      li {
+        a {
+          padding: 5px 8px;
+          i::before {
+            font-size: 28px;
+          }
+          &::after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  ul.app-mobile-has-icons li a span,
+  ul:not(.app-mobile-has-icons) li a i::before,
+  ul:not(.app-mobile-has-icons) li a img {
+    display: none !important;
+  }
+}

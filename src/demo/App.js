@@ -89,7 +89,7 @@ class App extends React.Component {
         title="React Windows UI"
         titleShort={<i className="icons10-windows"></i>}
       //titleShort="R" render text or icons
-      //mobileHasIcons={true}
+       //mobileHasIcons={true}
         shadowOnScroll={true}>
 
         {/* <NavBarLinkFluent

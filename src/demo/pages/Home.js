@@ -61,13 +61,9 @@ class Home extends React.Component {
           name="1"
           color="#69797E"
           onChange={ (color) => this.changeTheme(color)}/>
-        <ColorPickerItem
-          name="1"
-          color="#647C64"
-          onChange={ (color) => this.changeTheme(color)}/>
         <ColorPickerPalette
           name="1"
-          color="#ad2642"
+          color="#5ebd06"
           onChange={ (color) => this.changeTheme(color)}/>
 
       </div>

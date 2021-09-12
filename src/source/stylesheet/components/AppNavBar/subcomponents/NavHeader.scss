@@ -48,7 +48,14 @@
 
 @mixin nav-header-mobile() {
   .app-nav-wrap {
-    .app-back { padding: 5px 0 0 12px !important; }
+    .app-back {
+      padding: 5px 0 0 12px !important;
+
+      &:hover,
+      &.fixed.light:hover {
+        background: transparent !important;
+      }
+    }
     .app-name { padding: 10px; }
   }
 }

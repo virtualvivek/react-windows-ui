@@ -1,15 +1,7 @@
 import React from 'react'
 import { NavPageContainer,Checkbox,Switch,InputText,
          InputSearchBar,InputSearchBox,SliderBar,RadioButton,
-         SelectBox,MenuBar,InputSearchSuggestion,Accordion } from '../../lib/src'
-        
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { vscDarkPlus as materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
-
-import {SwitchCode,SliderBarCode,CheckboxCode,InputTextCode,
-  InputPasswordCode,InputLabelCode,InputDateCode,InputSearchBarCode,
-  InputSearchBoxCode,InputSearchSuggestionCode,SelectBoxCode,MenuBarCode,
-  RadioButtonCode} from './codes/inputs'
+         SelectBox,MenuBar,InputSearchSuggestion } from '../../lib/src'
 
 class Inputs extends React.Component {
 
@@ -66,15 +58,6 @@ class Inputs extends React.Component {
         </div>
         <br/>
 
-        <Accordion title="💻 Code - Switch" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {SwitchCode}
-          </SyntaxHighlighter>
-        </Accordion>
-
       <h3 className="m-b-15">SliderBar</h3>
 
         <h1 className="m-0 color-primary"
@@ -100,57 +83,33 @@ class Inputs extends React.Component {
           onChange={(e) => {this.onChangeSlider3(e)}} />
 
         <br/>
-        <Accordion title="💻 Code - SliderBar" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {SliderBarCode}
-          </SyntaxHighlighter>
-        </Accordion>
 
 
       <h3 className="m-b-15">Checkbox</h3>
 
         <div className="app-flex">
-
           <Checkbox
             defaultChecked
             tooltip="Checkbox tooltip title" />
-
           <div className="app-space-35"></div>
-
           <Checkbox
             disabled
             defaultChecked
             label="Disabled Checked"/>
-
         </div>
 
-        <p className="m-b-20"></p>
+        <p className="m-b-10"></p>
 
         <div className="app-flex">
-
           <Checkbox
             defaultChecked
             label="Unchecked" />
-
           <div className="app-space-20"></div>
-
           <Checkbox
             defaultChecked
             label="Disabled Unchecked"/>
-
         </div>
         <br/>
-        <Accordion title="💻 Code - Checkbox" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {CheckboxCode}
-          </SyntaxHighlighter>
-        </Accordion>
 
       <h3 className="m-b-15">Inputs</h3>
                
@@ -178,31 +137,11 @@ class Inputs extends React.Component {
 
         <br/><br/>
 
-        <Accordion title="💻 Code - Inputs" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {InputTextCode}
-          </SyntaxHighlighter>
-        </Accordion>
-        <br/>
-
         <InputText
           type="password"
           placeholder="Enter a password"/>
 
         <br/><br/>
-
-        <Accordion title="💻 Code - InputPassword" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {InputPasswordCode}
-          </SyntaxHighlighter>
-        </Accordion>
-        <br/>
 
         <InputText
           width={225}
@@ -211,47 +150,18 @@ class Inputs extends React.Component {
 
         <br/><br/>
 
-        <Accordion title="💻 Code - Input Label" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {InputLabelCode}
-          </SyntaxHighlighter>
-        </Accordion>
-        <br/>
-
-
         <InputText
           type="date"
           placeholder="Select Date"
           tooltip="InputDate tooltip title" />
 
-        <br/><br/>
-        <Accordion title="💻 Code - Input Date" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {InputDateCode}
-          </SyntaxHighlighter>
-        </Accordion>
+        <br/>
        
       <h3 className="m-b-15">SearchBar</h3>
 
         <InputSearchBar
           placeholder="Search here"
           tooltip="InputSearchBar tooltip title"/>
-
-        <br/><br/>
-        <Accordion title="💻 Code - SearchBar" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {InputSearchBarCode}
-          </SyntaxHighlighter>
-        </Accordion>
        
 
         <h3 className="m-b-15">SearchBox</h3>
@@ -259,16 +169,6 @@ class Inputs extends React.Component {
         <InputSearchBox
           placeholder="Enter to Search"
           tooltip="InputSearchBox tooltip title"/>
-
-        <br/><br/>
-        <Accordion title="💻 Code SearchBox" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {InputSearchBoxCode}
-          </SyntaxHighlighter>
-        </Accordion>
 
       <h3 className="m-b-15">Search Suggestion</h3>
 
@@ -279,19 +179,9 @@ class Inputs extends React.Component {
             {label: 'orange', link: '#',onClick:this.sayhellow},
             {label: 'banana', link: '#'},
             {label: 'peach', link: '#'},
-            ]}
-            tooltip="SearchSuggestion tooltip title"
-          />
-
-        <br/><br/>
-        <Accordion title="💻 Code - Search Suggestion" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {InputSearchSuggestionCode}
-          </SyntaxHighlighter>
-        </Accordion>
+          ]}
+          tooltip="SearchSuggestion tooltip title"
+        />
 
 
       <h3 className="m-b-15">SelectBox</h3>
@@ -302,18 +192,8 @@ class Inputs extends React.Component {
             {label: 'blue', value: 'blue'},
             {label: 'green', value: 'green'},
             {label: 'pink', value: 'pink'},
-            ]}
+          ]}
         />
-
-        <br/><br/>
-        <Accordion title="💻 Code - SelectBox" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {SelectBoxCode}
-          </SyntaxHighlighter>
-        </Accordion>
        
 
       <h3 className="m-b-15">MenuBar</h3>
@@ -325,19 +205,8 @@ class Inputs extends React.Component {
             {label: 'orange', link: '#',onClick:this.sayhellow},
             {label: 'banana', link: '#'},
             {label: 'peach', link: '#'},
-            ]}
+          ]}
         />
-
-        <br/><br/>
-        <Accordion title="💻 Code - MenuBar" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {MenuBarCode}
-          </SyntaxHighlighter>
-        </Accordion>
-
               
       <h3 className="m-b-15">Radio Button</h3>
 
@@ -361,21 +230,10 @@ class Inputs extends React.Component {
           disabled
           defaultChecked/>
 
-        <br/><br/>
-        <Accordion title="💻 Code - RadioButton" focused>
-          <SyntaxHighlighter
-            language="javascript"
-            style={materialDark}
-            className="code">
-            {RadioButtonCode}
-          </SyntaxHighlighter>
-        </Accordion>
-        <br/>
-
         <br/><br/><br/><br/>
             
     </NavPageContainer>
-  )
+    )
   }
 }
 

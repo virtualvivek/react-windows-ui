@@ -47,7 +47,7 @@ const PropsView = () => {
           <td><p className="app-code">onBackdropPress</p></td>
           <td>function</td>
           <td>null</td>
-          <td>Set's LoaderBusy fullscreen backdrop press callback</td>
+          <td>Set's LoaderBusy BackdropPress listener | When display: fullscreen</td>
         </tr>
       </tbody>
     </table>

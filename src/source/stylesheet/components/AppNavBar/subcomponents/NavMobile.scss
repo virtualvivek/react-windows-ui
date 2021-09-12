@@ -15,49 +15,26 @@
       margin: 0 auto;
       z-index: 2;
       line-height: 2.2;
-
-      &.app-mobile-has-icons {
-        li {
-          a {
-            padding: 5px 8px;
-            i::before {
-              font-size: 28px;
-            }
-            &::after {
-              width: 100%;
-              left: 0;
-            }
-          }
-        }
-      }
-    }
-    .app-switch {
-      position: absolute;
-      display: block;
-      margin: -40px 0 0;
-      left: 70vw;
     }
 
     ul h1,
-    .app-nav-toggle,
-    ul.app-mobile-has-icons li a span,
-    ul:not(.app-mobile-has-icons) li a i::before {
+    .app-nav-toggle {
       display: none !important;
     }
   }
 
-  .app-back:hover,
-  .app-nav-wrap nav ul,
-  .app-back.fixed.light:hover {
-      li:hover,
-      li a:hover {
-        background: transparent !important;
-      }
+  .app-nav-wrap nav ul {
+    li:hover,
+    li a:hover {
+      background: transparent !important;
+    }
   }
 
   @include nav-header-mobile();
   @include nav-ul-li-mobile();
+  @include nav-switch-mobile();
   @include nav-ul-hr-mobile();
   @include nav-submenu-mobile();
+  @include nav-mobile-has-icons();
   
 }

@@ -1,13 +1,18 @@
+@import "./subcomponents/Nav_Li.scss";
+@import "./subcomponents/Nav_Switch.scss";
+@import "./subcomponents/Nav_ToggleButton.scss";
+@import "./subcomponents/Nav_Badge.scss";
+@import "./subcomponents/Nav_SearchBox.scss";
+@import "./subcomponents/Nav_Hr.scss";
+
+@import "./subcomponents/NavBarSubMenu.scss";
 @import "./subcomponents/NavHeader.scss";
 @import "./subcomponents/NavToggled.scss";
-@import "./subcomponents/Nav_Li.scss";
+
 @import "./subcomponents/NavPositions.scss";
+
+@import "./subcomponents/NavMobileHasIcons.scss";
 @import "./subcomponents/NavMobile.scss";
-@import "./subcomponents/NavToggleButton.scss";
-@import "./subcomponents/NavBadge.scss";
-@import "./subcomponents/NavSearchBox.scss";
-@import "./subcomponents/NavBarSubMenu.scss";
-@import "./subcomponents/Nav_Hr.scss";
 
 .app-nav-wrap {
   height: 100%;
@@ -49,6 +54,5 @@
         font-size: 15px;
       }
     }
-    .app-switch { margin: 16px 0 0 20px; }
   }
 }

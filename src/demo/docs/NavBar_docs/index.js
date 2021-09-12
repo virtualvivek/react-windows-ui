@@ -8,6 +8,7 @@ import PropsView from './props-view'
 import PropsViewNavItem from './props-view-navitem'
 import Img1 from '../../assets/illustration/macos.jpg'
 import Img2 from '../../assets/illustration/2.jpg'
+import './css/navbar-custom.css'
 
 class NavBarDocs extends React.Component {
 
@@ -21,7 +22,7 @@ render() {
   
 
     <div className="app-nav-wrap">
-    <nav className="animate" style={{position:'relative'}}>
+    <nav className="animate custom" style={{position:'relative'}}>
       <div style={{position:'absolute'}}>
         <span className="app-name">NavBar</span>
         <span className="app-name-short">
@@ -110,7 +111,7 @@ render() {
     <h1>NavBarLink</h1>
 
     <div className="app-nav-wrap">
-    <nav className="animate" style={{position:'relative'}}>
+    <nav className="animate custom" style={{position:'relative'}}>
       <ul style={{padding:0,margin:0}}>
         <li>
           <a href="#/navbar" aria-current="page" className="active">
@@ -149,9 +150,10 @@ render() {
     <div className="app-hr"></div>
 
     <h2>NavBarLink <span className="app-code">with img</span> :</h2>
+    <p>NavBar <b>img</b> and <b>icon</b> is only visible on <b>small devices</b> when prop : <span className="app-code"><b>{`mobileHasIcons={true}`}</b></span></p>
 
     <div className="app-nav-wrap">
-    <nav className="animate" style={{position:'relative'}}>
+    <nav className="animate custom" style={{position:'relative'}}>
       <ul style={{padding:0,margin:0}}>
         <li>
         <a href="#/navbar">
@@ -182,7 +184,7 @@ render() {
     <h2>NavBarLink <span className="app-code">show Badge</span> :</h2>
 
     <div className="app-nav-wrap">
-    <nav className="animate" style={{position:'relative'}}>
+    <nav className="animate custom" style={{position:'relative'}}>
       <ul style={{padding:0,margin:0}}>
         <li>
         <a href="#/navbar">

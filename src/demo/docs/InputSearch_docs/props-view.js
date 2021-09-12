@@ -41,37 +41,42 @@ const PropsView = () => {
           <td><p className="app-code">onSubmit</p></td>
           <td>function</td>
           <td>null</td>
-          <td>Set's Search onSubmit | For InputSearchBar</td>
+          <td>onSubmit listener | For InputSearchBar</td>
         </tr>
         <tr>
           <td><p className="app-code">onChange</p></td>
           <td>function</td>
           <td>null</td>
-          <td>Set's Search onChange | For InputSearchBox</td>
+          <td>onChange listener | For InputSearchBox</td>
+        </tr>
+        <tr>
+          <td>
+            <b>For InputSearchSuggestion</b>
+          </td>
         </tr>
         <tr>
           <td><p className="app-code">data</p></td>
           <td>object</td>
           <td>null</td>
-          <td>Set's Search data prop | For InputSearchSuggestion</td>
+          <td>Set's Search data prop</td>
         </tr>
         <tr>
           <td><p className="app-code">data ▶ label</p></td>
           <td>string</td>
           <td>null</td>
-          <td>Set's Search data item label | For InputSearchSuggestion</td>
+          <td>Set's Search data item label</td>
         </tr>
         <tr>
           <td><p className="app-code">data ▶ icon</p></td>
           <td>ReactNode | SVG | FontIcon</td>
           <td>null</td>
-          <td>Set's Search data item icon | For InputSearchSuggestion</td>
+          <td>Set's Search data item icon</td>
         </tr>
         <tr>
           <td><p className="app-code">data ▶ link</p></td>
           <td>href link string</td>
           <td>'#'</td>
-          <td>Set's Search data item href | For InputSearchSuggestion</td>
+          <td>Set's Search data item href</td>
         </tr>
         <tr>
           <td><p className="app-code">data ▶ onClick</p></td>
