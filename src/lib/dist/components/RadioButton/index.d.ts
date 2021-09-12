@@ -2,6 +2,7 @@ import React from 'react'
 
 export interface RadioButtonProps {
   name ?: string;
+  value ?: any;
   defaultChecked ?: boolean;
   disabled ?: boolean;
   label ?: string;

@@ -8,7 +8,7 @@ export interface ButtonProps {
   isLoading ?: boolean;
   icon ?: ReactNode;
   textAlign ?: string;
-  type ?: string;
+  type ?: "default" | "primary" | "primary-outline" | "success" | "success-outline" | "danger" | "danger-outline";
   onSubmit ?: Function;
   onClick ?: Function;
   style ?: CSSProperties;

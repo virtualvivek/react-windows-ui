@@ -1,13 +1,12 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 
 export interface ColorPickerItemProps {
   name ?: string;
-  checked ?: boolean;
+  defaultChecked ?: boolean;
   disabled ?: boolean;
   width ?: number | string;
   height ?: number | string;
   color ?: string;
-  image ?: ReactNode;
   onChange ?: Function;
 }
 declare const ColorPickerItem: React.FC<ColorPickerItemProps>

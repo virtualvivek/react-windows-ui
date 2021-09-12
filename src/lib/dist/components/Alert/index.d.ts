@@ -5,7 +5,7 @@ export interface AlertProps {
   title ?: string;
   message ?: string;
   children ?: ReactNode;
-  setTheme ?: string;
+  setTheme ?: "system" | "default";
   onBackdropPress ?: React.MouseEventHandler<HTMLButtonElement>;
 }
 declare const Alert: React.FC<AlertProps>

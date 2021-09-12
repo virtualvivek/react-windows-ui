@@ -5,8 +5,8 @@ export interface InputTextProps {
   width ?: number | string;
   placeholder ?: string;
   label ?: string;
-  type ?: string;
-  setStatus ?: string;
+  type ?: "text" | "password" | "date" | "time" | "month" | "datetime-local";
+  setStatus ?: "default" | "success" | "danger" | "loading";
   tooltip ?: string;
   onChange ?: Function;
   disabled ?: boolean;
