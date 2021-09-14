@@ -178,11 +178,11 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
        alt="react-windows-ui.min.css" />
 </a>
 <br>
-<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+<!-- <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
   <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-sunvalley.min.css?style=for-the-badge&logo=microsoft&color=0078D4&label=react-windows-ui-sunvalley.min.css"
        alt="react-windows-ui-sunvalley.min.css" />
 </a>
-<br>
+<br> -->
 <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
   <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-rtl.min.css?style=for-the-badge&logo=LineageOS&color=167C80&label=react-windows-ui-rtl.min.css"
        alt="react-windows-ui-rtl.min.css" />
