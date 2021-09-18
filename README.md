@@ -152,11 +152,11 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
   <td>Style <code>scss</code> source code</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
 </tr>
-<tr>
+<!-- <tr>
   <td>Library SunValley SCSS Source</td>
   <td>SunValley Styles <code>scss</code> source code</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet-sunvalley">SCSS LINK</a></td>
-</tr>
+</tr> -->
 <tr>
   <td>TypeScript Type Definitions</td>
   <td>Typescript <code>index.d.ts</code> import file</td>
