@@ -106,7 +106,7 @@ $ npm install
 $ npm start
 ```
 
-<h1 align="center">Windows 11 Styles.css</h1>
+<!-- <h1 align="center">Windows 11 Styles.css</h1>
 <p align="center"><img src="markdown/md_promo_w11.png" width="500" /></p>
 
 ```js
@@ -114,7 +114,7 @@ $ npm start
 ...
 import 'react-windows-ui/dist/react-windows-ui-sunvalley.min.css'
 ...
-```
+``` -->
 
 # RTL Support
 Distribute layout direction from Right to Left.
