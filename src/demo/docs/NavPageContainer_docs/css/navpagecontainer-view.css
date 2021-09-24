@@ -1,0 +1,77 @@
+.navpagecontainer-view {
+    width: 310px;
+    height: 170px;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: var(--color_nav);
+    display: flex;
+}
+.navpagecontainer-view .navpagecontainer-nav {
+    height: 100%;
+    width: 70px;
+    background-color: var(--color_button);
+    display: inline-block;
+}
+.navpagecontainer-nav .navpagecontainer-rows {
+    width: 35px;
+    height: 2px;
+    margin: 15px 10px;
+    background-color: var(--color_text_dark);
+    opacity: 0.5;
+}
+.navpagecontainer-nav .navpagecontainer-rows.navpage-serachbar{
+    height: 5px;
+    opacity: 0.3;
+}
+.navpagecontainer-nav .navpagecontainer-rows.navpage-header{
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: unset;
+}
+.navpagecontainer-nav .navpagecontainer-rows.navpage-header .navpage-item{
+    height: 2px;
+    width: 10px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+.navpagecontainer-nav .navpagecontainer-rows.navpage-header .navpage-switch{
+    height: 5px;
+    width: 12px;
+    border-radius: 14px;
+    border: 1.5px solid;
+    display: inline-flex;
+    align-items: center;
+}
+.navpagecontainer-nav .navpagecontainer-rows.navpage-header .navpage-switch p {
+    height: 4px;
+    width: 4px;
+    border-radius: 20px;
+    background-color: var(--color_text_dark);
+}
+.navpagecontainer-container {
+    height: calc(100% - 10px);
+    width: 100%;
+    display: inline-block;
+    align-self: center;
+}
+.navpagecontainer-container .navpagecontainer-rows{
+    width: 100px;
+    height: 2px;
+    background-color: var(--color_text_dark);
+    margin: 15px;
+}
+.navpagecontainer-container .navpagecontainer-rows.half {
+    width: 50px;
+}
+.navpagecontainer-container p {
+    margin: 15px;
+}
+.navpagecontainer-container p.toolbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+}

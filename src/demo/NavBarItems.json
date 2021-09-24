@@ -1,12 +1,5 @@
 [
     {
-        "to": "/navbar",
-        "exact": false,
-        "text": "NavBar",
-        "icon": "icons10-map",
-        "showBadge": false
-    },
-    {
         "to": "/accordion",
         "exact": false,
         "text": "Accordion",

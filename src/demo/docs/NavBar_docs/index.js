@@ -18,7 +18,7 @@ render() {
   <NavPageContainer
     hasPadding
     animateTransition={false}>
-    <h1>Navbar</h1>
+    <h1>NavBar</h1>
   
 
     <div className="app-nav-wrap">

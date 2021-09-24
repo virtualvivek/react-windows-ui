@@ -10,6 +10,10 @@ import Texts from './pages/Texts'
 import Tables from './pages/Tables'
 import Icons from './pages/Icons'
 
+import NavBarDocs from './docs/NavBar_docs'
+import NavBarSubMenuDocs from './docs/NavBarSubMenu_docs'
+import NavPageContainerDocs from './docs/NavPageContainer_docs'
+
 import AccordionDocs from './docs/Accordion_docs'
 import AlertDocs from './docs/Alert_docs'
 import AppThemeDocs from './docs/AppTheme_docs'
@@ -27,7 +31,6 @@ import LinkCompoundDocs from './docs/LinkCompound_docs'
 import ListItemDocs from './docs/ListItem_docs'
 import LoadersDocs from './docs/LoadersDocs'
 import MenuBarDocs from './docs/MenuBar_docs'
-import NavBarDocs from './docs/NavBar_docs'
 import ProgressBarDocs from './docs/ProgressBar_docs'
 import RadioButtonDocs from './docs/RadioButton_docs'
 import SelectBoxDocs from './docs/SelectBox_docs'
@@ -115,13 +118,29 @@ class App extends React.Component {
       />
 
       <NavBarSubMenu title="Preview">
+        <NavBarLink
+          to="/inputs"
+          text="Inputs"
+          icon={<i className="icons10-keyboard"></i>}
+        />
+      </NavBarSubMenu>
 
-      <NavBarLink
-        to="/inputs"
-        text="Inputs"
-        icon={<i className="icons10-keyboard"></i>}
-      />
-
+      <NavBarSubMenu title="Navigation">
+        <NavBarLink
+          to="/navbar"
+          text="NavBar"
+          icon={<i className="icons10-map"></i>}
+        />
+        <NavBarLink
+          to="/navbarsubmenu"
+          text="NavBarSubMenu"
+          icon={<i className="icons10-angle-down"></i>}
+        />
+        <NavBarLink
+          to="/navpagecontainer"
+          text="NavPageContainer"
+          icon={<i className="icons10-columns"></i>}
+        />
       </NavBarSubMenu>
 
 
@@ -161,6 +180,8 @@ class App extends React.Component {
         <Route path='/inputs' component={Inputs} />
 
         <Route path='/navbar' component={NavBarDocs} />
+        <Route path='/navbarsubmenu' component={NavBarSubMenuDocs} />
+        <Route path='/navpagecontainer' component={NavPageContainerDocs} />
 
         <Route path='/accordion' component={AccordionDocs} />
         <Route path='/alerts' component={AlertDocs} />

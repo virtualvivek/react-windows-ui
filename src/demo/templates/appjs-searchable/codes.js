@@ -51,7 +51,7 @@ class App extends React.Component {
   return (
         <Router basename="react-windows-ui">
 
-          <TransitionToLeft /> {/* registering container page transition*/}
+          <TransitionToLeft /> {/* Registering NavPageContainer Transition*/}
 
           <SystemThemeFollower/>
 

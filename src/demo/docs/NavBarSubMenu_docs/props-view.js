@@ -14,16 +14,16 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">color</p></td>
-          <td>CSS Color Value</td>
+          <td><p className="app-code">title</p></td>
+          <td>string</td>
           <td>null</td>
-          <td>Set's AppTheme primary color</td>
+          <td>Set's NavBarSubMenu Title</td>
         </tr>
         <tr>
-          <td><p className="app-code">mode</p></td>
-          <td>'light' | 'dark'</td>
-          <td>'light'</td>
-          <td>Set's AppTheme appearance mode</td>
+          <td><p className="app-code">children</p></td>
+          <td>ReactNode</td>
+          <td>null</td>
+          <td>Set's NavBarSubMenu children</td>
         </tr>
       </tbody>
     </table>
