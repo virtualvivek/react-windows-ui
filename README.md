@@ -24,15 +24,27 @@
     <img src="https://img.shields.io/npm/v/react-windows-ui?color=31b57e&label=version&logo=git&logoColor=ffffff&style=flat-square"
       alt="Version" />
   </a>
+	
+  <a href="https://github.com/virtualvivek/react-windows-ui-boilerplate">
+    <img src="https://img.shields.io/badge/Boilerplate-template-green.svg?color=61DAFB&style=flat-square&logo=React"
+      alt="Boilerplate" />
+  </a>
+	
+  <br/>	
   
   <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">
-    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
-      alt="Live Demo" />
+    <img src="https://img.shields.io/badge/Live Demo & Docs-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
+      alt="Live Demo & Docs" />
   </a>
   
   <a href="https://www.npmjs.com/package/react-windows-ui" target="_blank">
-    <img src="https://img.shields.io/badge/npm-package-green.svg?style=flat-square&logo=npm&color=f55a42"
+    <img src="https://img.shields.io/badge/npm-package-green.svg?style=flat-square&logo=npm&color=CB3837"
       alt="npmJS" />
+  </a>
+	
+  <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat-square&logo=CSS3&color=1572B6&label=react-windows-ui.min.css"
+       alt="react-windows-ui.min.css" />
   </a>
 
 </p>
@@ -172,7 +184,7 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 # Details
 
 <a href="https://www.npmjs.com/package/react-windows-ui">
-  <img src="https://img.shields.io/badge/package-npm-red.svg?style=for-the-badge&logo=npm&color=f55a42" alt="npmJS" />
+  <img src="https://img.shields.io/badge/package-npm-red.svg?style=for-the-badge&logo=npm&color=CB3837" alt="npmJS" />
 </a>
 <br>
 <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
