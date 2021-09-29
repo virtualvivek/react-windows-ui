@@ -42,10 +42,6 @@
       alt="npmJS" />
   </a>
 	
-  <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat-square&logo=CSS3&color=1572B6&label=react-windows-ui.min.css"
-       alt="react-windows-ui.min.css" />
-  </a>
 
 </p>
 
