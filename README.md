@@ -33,7 +33,7 @@
   <br/>	
   
   <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">
-    <img src="https://img.shields.io/badge/Live Demo & Docs-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
+    <img src="https://img.shields.io/badge/Demo & Docs-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
       alt="Live Demo & Docs" />
   </a>
   
