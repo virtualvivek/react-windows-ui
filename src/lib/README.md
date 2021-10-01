@@ -30,18 +30,13 @@
   <br/>	
   
   <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">
-    <img src="https://img.shields.io/badge/Live Demo & Docs-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
-      alt="Live Demo & Docs" />
+    <img src="https://img.shields.io/badge/Demo & Docs-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
+      alt="Demo & Docs" />
   </a>
 	
   <a href="https://github.com/virtualvivek/react-windows-ui">
     <img src="https://img.shields.io/badge/github-repository-green.svg?style=flat-square&logo=github&color=5a6a6b"
       alt="Github Repo" />
-  </a>
-	
-  <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat-square&logo=CSS3&color=1572B6&label=react-windows-ui.min.css"
-       alt="react-windows-ui.min.css" />
   </a>
    
 </p>
