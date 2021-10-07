@@ -21,14 +21,21 @@
     <img src="https://img.shields.io/npm/v/react-windows-ui?color=31b57e&label=version&logo=git&logoColor=ffffff&style=flat-square"
       alt="Version" />
   </a>
+	
+  <a href="https://github.com/virtualvivek/react-windows-ui-boilerplate">
+    <img src="https://img.shields.io/badge/Boilerplate-template-green.svg?color=61DAFB&style=flat-square&logo=React"
+      alt="Boilerplate" />
+  </a>
+	
+  <br/>	
   
-  <a href="https://virtualvivek.github.io/react-windows-ui/">
-    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
-      alt="Live Demo" />
+  <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">
+    <img src="https://img.shields.io/badge/Demo & Docs-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
+      alt="Demo & Docs" />
   </a>
 	
   <a href="https://github.com/virtualvivek/react-windows-ui">
-    <img src="https://img.shields.io/badge/github-repository-green.svg?style=flat-square&logo=github&color=181717"
+    <img src="https://img.shields.io/badge/github-repository-green.svg?style=flat-square&logo=github&color=5a6a6b"
       alt="Github Repo" />
   </a>
    
@@ -167,7 +174,7 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 
 
 <a href="https://github.com/virtualvivek/react-windows-ui">
-  <img src="https://img.shields.io/badge/repository-github-red.svg?style=for-the-badge&logo=github&color=181717" alt="github" />
+  <img src="https://img.shields.io/badge/repository-github-red.svg?style=for-the-badge&logo=github&color=5a6a6b" alt="github" />
 </a>
 <br>
 <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
