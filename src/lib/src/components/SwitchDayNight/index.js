@@ -1,6 +1,5 @@
 import React from 'react'
-var setAppDark = require('../utils/ThemeManager').setAppDark
-var setAppLight = require('../utils/ThemeManager').setAppLight
+import Appearance from '../Appearance'
 
 const SwitchDayNight = () => {
 
@@ -9,8 +8,8 @@ const SwitchDayNight = () => {
   const toggleDayNight = () => {
     let iswitch = inputRef.current
 
-    if(iswitch.checked) { setAppDark() }
-    else { setAppLight() }
+    if(iswitch.checked) { Appearance.setDarkScheme() }
+    else { Appearance.setLightScheme() }
   }
 
   return (

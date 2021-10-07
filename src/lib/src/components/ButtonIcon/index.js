@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-var createAlphaPrimaryColor = require('../utils/ThemeManager').createAlphaPrimaryColor
+import ThemeManager from '../utils/ThemeManager'
 
 const ButtonIcon = (props) => {
 
   useEffect(()=>{
-      createAlphaPrimaryColor()
+    ThemeManager.createAlphaPrimaryColor()
   })
   
   return (

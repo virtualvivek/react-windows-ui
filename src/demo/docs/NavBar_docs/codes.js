@@ -17,8 +17,6 @@ const NavBarUsageCode =
     showBadge={7}
   />
   ......
-/>
-
 </NavBar>`;
 
 const NavBarLinkUsageCode =

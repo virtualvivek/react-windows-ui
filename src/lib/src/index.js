@@ -10,6 +10,7 @@ import {
     TransitionToLeft } from './components/NavBar'
 
 import Accordion from './components/Accordion'
+import Appearance from './components/Appearance'
 import AppTheme from './components/AppTheme'
 import AvatarView from './components/AvatarView'
 import Alert from './components/Alert'
@@ -64,6 +65,7 @@ export {
     TransitionToLeft,
     
     Accordion,
+    Appearance,
     AppTheme,
     AvatarView,
     Alert,

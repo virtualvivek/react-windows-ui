@@ -17,6 +17,7 @@ import NavPageContainerDocs from './docs/NavPageContainer_docs'
 import AccordionDocs from './docs/Accordion_docs'
 import AlertDocs from './docs/Alert_docs'
 import AppThemeDocs from './docs/AppTheme_docs'
+import AppearanceDocs from './docs/Appearance_docs'
 import AvatarViewDocs from './docs/AvatarView_docs'
 import ButtonsDocs from './docs/Buttons_docs'
 import CardDocs from './docs/Card_docs'
@@ -186,6 +187,7 @@ class App extends React.Component {
         <Route path='/accordion' component={AccordionDocs} />
         <Route path='/alerts' component={AlertDocs} />
         <Route path='/apptheme' component={AppThemeDocs} />
+        <Route path='/appearance' component={AppearanceDocs} />
         <Route path='/avatarview' component={AvatarViewDocs} />
         <Route path='/buttons' component={ButtonsDocs} />
         <Route path='/cards' component={CardDocs} />

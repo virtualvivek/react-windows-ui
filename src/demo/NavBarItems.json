@@ -21,6 +21,13 @@
         "showBadge": false
     },
     {
+        "to": "/appearance",
+        "exact": false,
+        "text": "Appearance",
+        "icon": "icons10-color-palette",
+        "showBadge": false
+    },
+    {
         "to": "/avatarview",
         "exact": false,
         "text": "AvatarView",

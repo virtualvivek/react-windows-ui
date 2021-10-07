@@ -1,9 +1,11 @@
 import React from 'react'
-import { NavPageContainer, Switch, ColorPickerItem,ColorPickerPalette, AppTheme,Link } from '../../../lib/src'
+import { NavPageContainer, Switch, ColorPickerItem,
+  ColorPickerPalette,AppTheme,Link,Appearance} from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { AppThemeImportCode,AppThemeUsageCode,ColorPickerItemImportCode,
-    ColorPickerItemUsageCode,ColorPickerPaletteImportCode,ColorPickerPaletteUsageCode } from './codes'
+    ColorPickerItemUsageCode,ColorPickerPaletteImportCode,
+    ColorPickerPaletteUsageCode } from './codes'
 import PropsView from './props-view'
 import PropsViewColorPickerItem from './props-view-color-picker-item'
 import PropsViewColorPickerPalette from './props-view-color-picker-palette'
@@ -13,7 +15,8 @@ class AppThemeDocs extends React.Component {
 
   state = {
     app_color: '',
-    app_mode: ''
+    app_mode: '',
+    app_get_theme :''
   }
 
   changeTheme = (color) => {
@@ -26,17 +29,22 @@ class AppThemeDocs extends React.Component {
       this.setState({app_mode: 'dark'})
   }
 
+  getTheme = () =>{
+    let v = Appearance.getColorScheme()
+    this.setState({app_get_theme: v})
+  }
+
   render() {
   return (
   <NavPageContainer
     hasPadding
     animateTransition={false}>
 
-    <h1>AppTheme</h1>
+    <h1>AppTheme {this.state.app_get_theme}</h1>
 
     <AppTheme color={this.state.app_color} mode={this.state.app_mode}/>
 
-    <div className="windows-view">
+    <div className="windows-view" onClick={this.getTheme}>
       <div className="start-view">
           <div className="tiles-view-right">
             <div className="white-line"></div>

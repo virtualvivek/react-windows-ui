@@ -24,7 +24,7 @@
       backdrop-filter: brightness(0.97);
     
       &.show {
-        transition: max-height 0.38s ease-in;
+        transition: max-height 0.25s ease-in;
         max-height: 500px;
         overflow-y: auto;
       }
