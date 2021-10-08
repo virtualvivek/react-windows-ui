@@ -1,9 +1,9 @@
 import React from 'react'
-import { NavPageContainer, Gauge } from '../../../lib/src'
+import { NavPageContainer} from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { AppearanceImportCode,AppearanceUsageCode } from './codes'
-import PropsView from './props-view'
+import { AppearanceImportCode,AppearanceUsageCode,
+  AppearanceGetColorSchemeCode,AppearanceSetDarkSchemeCode,AppearanceSetLightSchemeCode } from './codes'
 
 class AppearanceDocs extends React.Component {
 
@@ -37,9 +37,40 @@ render() {
   
     <div className="app-hr"></div>
 
+    <h2><b>Methods</b></h2>
 
-    <h2>Props</h2>
-    <PropsView />
+    <h2><p className="app-code">getColorScheme()</p></h2>
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {AppearanceGetColorSchemeCode}
+    </SyntaxHighlighter>
+
+    <p>Indicates the current either system or user preferred color scheme.</p>
+
+    <div className="app-hr"></div>
+    <h2><p className="app-code">setDarkScheme()</p></h2>
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {AppearanceSetDarkSchemeCode}
+    </SyntaxHighlighter>
+
+    <p>Set's app to <i>dark</i> color scheme.</p>
+
+    <div className="app-hr"></div>
+    <h2><p className="app-code">setLightScheme()</p></h2>
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {AppearanceSetLightSchemeCode}
+    </SyntaxHighlighter>
+
+    <p>Set's app to <i>light</i> color scheme.</p>
+
 
     <br/><br/><br/><br/><br/><br/>
 

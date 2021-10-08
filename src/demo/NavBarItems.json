@@ -24,7 +24,7 @@
         "to": "/appearance",
         "exact": false,
         "text": "Appearance",
-        "icon": "icons10-color-palette",
+        "icon": "icons10-brush",
         "showBadge": false
     },
     {

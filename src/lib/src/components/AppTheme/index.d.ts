@@ -2,7 +2,7 @@ import React from 'react'
 
 export interface AppThemeProps {
   color ?: any;
-  mode ?: 'light' | 'dark';
+  scheme ?: 'light' | 'dark';
 }
 declare const AppTheme: React.FC<AppThemeProps>
 

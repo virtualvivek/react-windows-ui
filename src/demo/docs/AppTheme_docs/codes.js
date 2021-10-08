@@ -8,7 +8,7 @@ const ColorPickerPaletteImportCode =
 const AppThemeUsageCode =
 `<AppTheme
   color={'#16ab9c'}
-  mode={'light'}
+  scheme={'light'}
 />`;
 
 const ColorPickerItemUsageCode =

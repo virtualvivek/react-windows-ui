@@ -20,7 +20,7 @@ const PropsView = () => {
           <td>Set's AppTheme primary color</td>
         </tr>
         <tr>
-          <td><p className="app-code">mode</p></td>
+          <td><p className="app-code">scheme</p></td>
           <td>'light' | 'dark'</td>
           <td>'light'</td>
           <td>Set's AppTheme appearance mode</td>

@@ -2,16 +2,27 @@ const AppearanceImportCode =
 `import { Appearance } from 'react-windows-ui'`;
 
 const AppearanceUsageCode =
-`<Gauge
-  setProgress={50}
-  scale={2}
-  value={50+"%"}
-  info="of something"
-/>`;
+`const colorScheme = Appearance.getColorScheme();
+  if (colorScheme === 'dark') {
+    Appearance.setLightScheme()
+    // Do action on dark color scheme
+}`;
+
+const AppearanceGetColorSchemeCode =
+`static getColorScheme()`;
+
+const AppearanceSetDarkSchemeCode =
+`static setDarkScheme()`;
+
+const AppearanceSetLightSchemeCode =
+`static setLightScheme()`;
 
 
 
 export {
   AppearanceImportCode,
-  AppearanceUsageCode
+  AppearanceUsageCode,
+  AppearanceGetColorSchemeCode,
+  AppearanceSetDarkSchemeCode,
+  AppearanceSetLightSchemeCode
 }

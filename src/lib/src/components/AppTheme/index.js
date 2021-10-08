@@ -7,11 +7,11 @@ const AppTheme = (props) => {
   useEffect(() => {
     let navSwitch = document.getElementById("app-day-night-switch");
 
-    if(props.mode === 'dark') {
+    if(props.scheme === 'dark') {
       Appearance.setDarkScheme();
       navSwitch.checked = true;
     }
-    else if(props.mode === 'light') {
+    else if(props.scheme === 'light') {
       Appearance.setLightScheme();
       navSwitch.checked = false;
     }
@@ -21,7 +21,7 @@ const AppTheme = (props) => {
       ThemeManager.createAlphaPrimaryColor()
     }
 
-  }, [props.color,props.mode]);
+  }, [props.color,props.scheme]);
 
   return null;
 }
