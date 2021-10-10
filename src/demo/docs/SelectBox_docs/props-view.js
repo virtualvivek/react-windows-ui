@@ -14,6 +14,18 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
+          <td><p className="app-code">defaultValue</p></td>
+          <td>string - oneof data value</td>
+          <td>null</td>
+          <td>Set's Select default selected value</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onChange</p></td>
+          <td>function</td>
+          <td>null</td>
+          <td>Set's Select onChange listener</td>
+        </tr>
+        <tr>
           <td><p className="app-code">name</p></td>
           <td>string | integer</td>
           <td>null</td>
@@ -23,25 +35,25 @@ const PropsView = () => {
           <td><p className="app-code">data</p></td>
           <td>object</td>
           <td>null</td>
-          <td>Set's SelectBox data</td>
+          <td>Set's Select/SelectBox data</td>
         </tr>
         <tr>
           <td><p className="app-code">data ▶ label</p></td>
           <td>integer | string</td>
           <td>null</td>
-          <td>Set's SelectBox data item label</td>
+          <td>Set's Select/SelectBox data item label</td>
         </tr>
         <tr>
           <td><p className="app-code">data ▶ value</p></td>
           <td>integer | string</td>
           <td>null</td>
-          <td>Set's SelectBox data item value</td>
+          <td>Set's Select/SelectBox data item value</td>
         </tr>
         <tr>
           <td><p className="app-code">disabled</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Set's SelectBox disabled state</td>
+          <td>Set's Select/SelectBox disabled state</td>
         </tr>
       </tbody>
     </table>

@@ -1,12 +1,6 @@
-import React, { useEffect } from 'react'
-import ThemeManager from '../utils/ThemeManager'
+import React from 'react'
 
 const ButtonIcon = (props) => {
-
-  useEffect(()=>{
-    ThemeManager.createAlphaPrimaryColor()
-  })
-  
   return (
     <button
       className="app-button-icon"
@@ -14,9 +8,9 @@ const ButtonIcon = (props) => {
       onClick={props.onClick}
       title={props.tooltip}
       style={{
-          width: props.width,
-          height: props.height,
-          fontSize: props.iconSize
+        width: props.width,
+        height: props.height,
+        fontSize: props.iconSize
       }}>
       {props.icon}
     </button>

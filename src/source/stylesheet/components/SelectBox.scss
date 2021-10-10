@@ -5,7 +5,7 @@
     height: 30px;
     padding: 0;
     display: inline-block;
-    vertical-align: unset;
+    user-select: none;
 
     select {
         @extend .background-color-light-bg;

@@ -89,7 +89,7 @@ class App extends React.Component {
       {/* Register the fluent effect before using NavBarLinkFluent */}
       <RegisterFluentEffect/>
 
-      <NavBar 
+      <NavBar
         title="React Windows UI"
         titleShort={<i className="icons10-windows"></i>}
       //titleShort="R" render text or icons
@@ -104,7 +104,7 @@ class App extends React.Component {
         /> */}
 
       <NavSearchBox
-        placeholder="Search Docs pre v4.0.0"
+        placeholder="Search Docs pre v4.0.x"
         onChange={this.handleInputSearch}/>
       <NavBarLink
         exact={true}

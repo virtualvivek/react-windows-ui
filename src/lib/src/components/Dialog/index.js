@@ -18,10 +18,8 @@ const Dialog = (props) => {
       className={ props.isVisible ?
         "app-dialog "+ isDropShadow() + " show" :
         "app-dialog "+ isDropShadow()
-        }
-      style={{
-            padding: props.padding
-            }}>
+      }
+      style={{  padding: props.padding  }}>
         {props.children}
     </div>
     </>

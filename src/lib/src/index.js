@@ -42,6 +42,7 @@ import ProgressBarIndeterminate from './components/ProgressBarIndeterminate'
 import RadioButton from './components/RadioButton'
 import RegisterFluentEffect from './components/utils/RegisterFluentEffect'
 import SliderBar from './components/SliderBar'
+import Select from './components/Select'
 import SelectBox from './components/SelectBox'
 import StickyHeader from './components/StickyHeader'
 import Switch from './components/Switch'
@@ -97,6 +98,7 @@ export {
     RadioButton,
     RegisterFluentEffect,
     SliderBar,
+    Select,
     SelectBox,
     StickyHeader,
     Switch,

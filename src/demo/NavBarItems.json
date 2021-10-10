@@ -149,7 +149,7 @@
     {
         "to": "/selectbox",
         "exact": false,
-        "text": "SelectBox",
+        "text": "Select",
         "icon": "icons10-database",
         "showBadge": false
     },

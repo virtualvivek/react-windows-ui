@@ -1,18 +1,18 @@
-@import "./subcomponents/Nav_Li.scss";
-@import "./subcomponents/Nav_Switch.scss";
-@import "./subcomponents/Nav_ToggleButton.scss";
-@import "./subcomponents/Nav_Badge.scss";
-@import "./subcomponents/Nav_SearchBox.scss";
-@import "./subcomponents/Nav_Hr.scss";
+@import "./sub-components/Nav_Li.scss";
+@import "./sub-components/Nav_Switch.scss";
+@import "./sub-components/Nav_ToggleButton.scss";
+@import "./sub-components/Nav_Badge.scss";
+@import "./sub-components/Nav_SearchBox.scss";
+@import "./sub-components/Nav_Hr.scss";
 
-@import "./subcomponents/NavBarSubMenu.scss";
-@import "./subcomponents/NavHeader.scss";
-@import "./subcomponents/NavToggled.scss";
+@import "./sub-components/NavBarSubMenu.scss";
+@import "./sub-components/NavHeader.scss";
+@import "./sub-components/NavToggled.scss";
 
-@import "./subcomponents/NavPositions.scss";
+@import "./sub-components/NavPositions.scss";
 
-@import "./subcomponents/NavMobileHasIcons.scss";
-@import "./subcomponents/NavMobile.scss";
+@import "./navbar-mobile/NavBarMobileHasIcons.scss";
+@import "./navbar-mobile/NavBarMobile.scss";
 
 .app-nav-wrap {
   height: 100%;

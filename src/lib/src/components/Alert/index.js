@@ -1,11 +1,6 @@
-import React, { useEffect } from 'react'
-import ThemeManager from '../utils/ThemeManager'
+import React from 'react'
 
 const Alert = (props) => {
-
-  useEffect(()=>{
-    ThemeManager.createAlphaPrimaryColor()
-  })
 
   const setThemeLight = () => {
     return props.setTheme === 'system' ? ' light' : '';

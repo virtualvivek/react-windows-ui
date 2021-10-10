@@ -1,4 +1,4 @@
-const createAlphaPrimaryColor = (user, key) => {
+const createAlphaPrimaryColor = () => {
   let alphaColor = window.getComputedStyle(document.documentElement).getPropertyValue('--PrimaryColor')
   alphaColor = alphaColor.trim()
   alphaColor = alphaColor+'9C'

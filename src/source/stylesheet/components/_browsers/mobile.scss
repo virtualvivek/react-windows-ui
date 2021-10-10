@@ -2,10 +2,11 @@
     @include browser-webkit-mobile();
     @include browser-mozilla-mobile();
     @include app-content-wrap-mobile();
-    @include fluent-effect-mobile();
-    @include header-fixed-container-mobile();
     @include app-navbar-mobile();
     @include app-navbar-search-mobile();
+    @include fluent-effect-mobile();
+    @include header-fixed-container-mobile();
+    
     @include alert-mobile();
     @include avatar-view-mobile();
     @include button-mobile();

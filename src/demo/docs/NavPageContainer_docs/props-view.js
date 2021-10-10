@@ -24,9 +24,8 @@ const PropsView = () => {
           <td><p className="app-code">animateTransition</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Set's NavPageContainer animate on visible<br/>when setting <b>{`<TransitionToLeft />`} <br/><Link to="/AppJsDefault">View implementation here</Link></b>.</td>
+          <td>Set's NavPageContainer animate on visible<br/>when setting <b>{`<TransitionToLeft />`} <br/><Link to="/AppJsDefault">View implementation<br/>of {`<TransitionToLeft />`}</Link></b></td>
         </tr>
-      
       </tbody>
     </table>
     </div>

@@ -5,6 +5,7 @@ export interface NavBarProps {
     titleShort ?: string;
     shadowOnScroll ?: boolean;
     mobileHasIcons ?: boolean;
+    showThemeSwitch ?: boolean;
     goBack ?: () => void;
     children ?: ReactNode;
 }
