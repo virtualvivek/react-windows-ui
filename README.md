@@ -106,6 +106,7 @@ You can initialize you Repo with this `Template` <br>
 <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_template_boilerplate.JPG" width="650" />
 
 OR <br>
+
 **Clone as a Repository:**
 [virtualvivek/react-windows-ui-boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
 
