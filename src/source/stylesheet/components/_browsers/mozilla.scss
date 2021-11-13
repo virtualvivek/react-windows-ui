@@ -1,34 +1,34 @@
 @-moz-document url-prefix() {
     
-    ::-moz-selection {
-        background-color: var(--PrimaryColor);
-        color: white;
-    }
+  ::-moz-selection {
+    background-color: var(--PrimaryColor);
+    color: white;
+  }
 
-    .app-content-wrap section {
-        scrollbar-color: #999 transparent;
+  .app-content-wrap section {
+    scrollbar-color: #999 transparent;
+  }
+  .app-nav-wrap nav {
+    scrollbar-width: thin;
+  }
+  
+  .app-dialog.dropShadow {
+    background-color: var(--color_light_grey);
+  }
+  .app-alert {
+    background-color: var(--PrimaryColor) !important;
+    &.light {
+      background-color: var(--color_light_grey) !important;
     }
-    .app-nav-wrap nav {
-        scrollbar-width: thin;
-    }
-    
-    .app-dialog.dropShadow {
-        background-color: var(--color_light_grey);
-    }
-    .app-alert {
-        background-color: var(--PrimaryColor) !important;
-        &.light {
-            background-color: var(--color_light_grey) !important;
-        }
-    }
-    .app-custom-dropdown-ul,
-    .app-search-suggestion ul,
-    .app-select-styled.menubar ul {
-        background-color: var(--color_light_grey);
-    }
+  }
+  .app-custom-dropdown-ul,
+  .app-search-suggestion ul,
+  .app-select-styled.menubar ul {
+    background-color: var(--color_light_grey);
+  }
 }
 @mixin browser-mozilla-mobile() {
-    .app-nav-wrap nav {
-        scrollbar-width: none;
-    }
+  .app-nav-wrap nav {
+    scrollbar-width: none;
+  }
 }

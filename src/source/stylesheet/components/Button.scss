@@ -1,123 +1,128 @@
 button,
 .app-button {
-    @extend .user-select-none;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    &:focus,
-    &:active,
-    &:focus:active {
-        outline: none !important;
-    }
+  @extend .user-select-none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:focus,
+  &:active,
+  &:focus:active {
+    outline: none !important;
+  }
 }
 .app-button {
-    @extend .user-select-none;
-    @extend .color-dark-text;
-    @extend .transition-all-400ms;
-    @extend .vertical-align-middle;
-    @extend .background-color-button;
- 
-    height: 35px;
-    padding: 5px 15px;
-    font-size: 15px;
+  @extend .user-select-none;
+  @extend .color-dark-text;
+  @extend .vertical-align-middle;
+  @extend .background-color-button;
+
+  height: 35px;
+  padding: 5px 15px;
+  font-size: 15px;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+
+  &:hover {
+    border-color: var(--color_button_hover);
+    filter: opacity(0.8);
+  }
+  &:active {
+    filter: contrast(0.4);
+    transition: 0.02s ease;
     border: 2px solid transparent;
-    transition-duration: 0.2s;
+  }
+  &.isLoading {
+    pointer-events: none;
+  }
 
-    &:hover {
-        border-color: var(--color_button_hover);
-        filter: opacity(0.8);
-    }
+  &.primary {
+    @extend .background-color-primary;
+  }
+  &.primary-outline {
+    @extend .color-primary;
+    border: 2px solid var(--PrimaryColor);
     &:active {
-        filter: opacity(0.6);
-        transition: 0.04s ease;
+      background-color: var(--PrimaryColor);
     }
-    &.isLoading {
-        pointer-events: none;
-    }
+  }
+  &.danger {
+    background: #C50500;
+  }
+  &.danger-outline {
+    border: 2px solid #C50500;
+    color: #C50500;
 
-    &.primary {
-        @extend .background-color-primary;
+    &:active {
+      background-color: #C50500;
     }
-    &.primary-outline {
-        @extend .color-primary;
-        border: 2px solid var(--PrimaryColor);
-        &:active {
-            background-color: var(--PrimaryColor);
-        }
+  }
+  &.success {
+    background: #2C8B2C;
+  }
+  &.success-outline {
+    border: 2px solid #2C8B2C;
+    color: #2C8B2C;
+
+    &:active {
+      background-color: #2C8B2C;
     }
-    &.danger {
-        background: #C50500;
-    }
-    &.danger-outline {
-        border: 2px solid #C50500;
-        color: #C50500;
-        &:active {
-            background-color: #C50500;
-        }
-    }
-    &.success {
-        background: #2C8B2C;
-    }
-    &.success-outline {
-        border: 2px solid #2C8B2C;
-        color: #2C8B2C;
-        &:active {
-            background-color: #2C8B2C;
-        }
-    }
-    &.primary,
-    &.danger,
-    &.success {
-        color: #fff;
-    }
-    &.primary-outline,
-    &.success-outline,
-    &.danger-outline {
-        background-color: transparent;
-        &:active {
-            color: #fff;
-            filter: unset;
-        }
-        &[disabled] {
-            backdrop-filter: grayscale(1);
-        }
-    }
-    &.animate:active {
-        transform: scale(0.95, 0.95);
+  }
+  &.primary,
+  &.danger,
+  &.success {
+    color: #fff;
+  }
+  &.primary-outline,
+  &.success-outline,
+  &.danger-outline {
+    background-color: transparent;
+
+    &:active {
+      color: #fff;
+      filter: unset;
     }
     &[disabled] {
-        @extend .input-field-primary-disabled;
-        span {
-            pointer-events: none;
-        }
-        &:active,
-        &:hover {
-            @extend .input-field-primary-disabled;
-        }
+      backdrop-filter: grayscale(1);
     }
-
-    .app-loader-busy {
-        left: 40%;
-        display: inline;
-        width: 0px;
-    }
+  }
+  &.animate:active {
+    transform: scale(0.968, 0.968);
+  }
+  &[disabled] {
+    @extend .input-field-primary-disabled;
+    
     span {
-        transition: opacity ease 0.2s;
+      pointer-events: none;
     }
-    i.color-primary {
-        @extend .color-primary;
+    &:active,
+    &:hover {
+      @extend .input-field-primary-disabled;
     }
+  }
+
+  .app-loader-busy {
+    left: 40%;
+    display: inline;
+    width: 0px;
+  }
+  span {
+    transition: opacity ease 0.2s;
+  }
+  i.color-primary {
+    @extend .color-primary;
+  }
 }
 
 @mixin button-mobile() {
-    .app-button:not(.primary-outline):not(.danger-outline):not(.success-outline) {
-        &:hover {
-            border-color: transparent;
-            filter: none;
-        }
-        &:active {
-            filter: opacity(0.6);
-        }
+  .app-button:not(.primary-outline):not(.danger-outline):not(.success-outline) {
+    &:hover {
+      border-color: transparent;
+      filter: none;
     }
+    &:active {
+      filter: contrast(0.4);
+    }
+  }
 }

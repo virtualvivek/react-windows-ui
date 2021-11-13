@@ -1,0 +1,14 @@
+.app-name {
+  @extend .color-dark-text;
+  @extend .font-weight-500;
+  @extend .font-size-16px;
+  @extend .transition-background-400ms;
+  padding: 12px 25px;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.app-name-short {
+  @extend .font-weight-500;
+  display: none;
+}

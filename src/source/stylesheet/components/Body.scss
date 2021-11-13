@@ -1,34 +1,34 @@
 html {
-    overflow-y: overlay;
-    overflow-x: hidden;
+  overflow-y: overlay;
+  overflow-x: hidden;
 }
 body {
-    @extend .background-color-light-bg;
-    @extend .color-dark-text;
-    @extend .transition-background-400ms;
-    margin: 0;
-    padding: 0;
+  @extend .background-color-light-bg;
+  @extend .color-dark-text;
+  @extend .transition-background-400ms;
+  margin: 0;
+  padding: 0;
 }
 .app-code {
-    @extend .transition-background-400ms;
-    background-color: var(--color_nav);
-    border-radius: 6px;
-    padding: 5px;
-    margin: 0;
-    line-height: 1;
-    display: inline-block;
+  @extend .transition-background-400ms;
+  background-color: var(--color_nav);
+  border-radius: 6px;
+  padding: 5px;
+  margin: 0;
+  line-height: 1;
+  display: inline-block;
 }
 ::selection {
-    background-color: var(--PrimaryColor);
-    color: white;
+  background-color: var(--PrimaryColor);
+  color: white;
 }
 
 .app-container-screen {
-    @extend .background-color-light-bg;
-    height: 100vh;
-    &.primary {
-        @extend .background-color-primary-dark;
-    }
+  @extend .background-color-light-bg;
+  height: 100vh;
+  &.primary {
+    @extend .background-color-primary-dark;
+  }
 }
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 400;
+  font-weight: 400;
 }
 h1.light,
 h2.light,
@@ -51,47 +51,48 @@ h3.light,
 h4.light,
 h5.light,
 h6.light {
-    opacity: 0.58;
+  opacity: 0.58;
 }
 
 a {
-    color: #444;
+  color: #444;
 	text-decoration: none;
 	outline: none;
 	font-weight: 500;
-    &:hover {
-        background-color: #DDD;
-    }
+
+  &:hover {
+    background-color: #DDD;
+  }
 }
 
 .app-hr {
-    @extend .transition-background-400ms;
-    height: 1px;
-    width: 95%;
-    background: var(--color_button);
-    margin: 10px 10px 10px 0;
+  @extend .transition-background-400ms;
+  height: 1px;
+  width: 95%;
+  background: var(--color_button);
+  margin: 10px 10px 10px 0;
 }
 
 
 .app-flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .app-align-center {
-    align-items: center;
+  align-items: center;
 }
 .app-flex {
-    display: flex;
+  display: flex;
 }
 .app-grid {
-    display: grid;
+  display: grid;
 }
 .app-inline {
-    display: inline;
+  display: inline;
 }
 .app-fit-content {
-    width: fit-content !important;
+  width: fit-content !important;
 }
 
 .app-space-10 { width: 10px; }
@@ -104,33 +105,33 @@ a {
 .app-space-45 { width: 45px; }
 
 .m-0 {
-    margin: 0;
+  margin: 0;
 }
 .m-tb-10 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .m-tb-15 {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .m-tb-20 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .m-b-5 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .m-b-10 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .m-b-15 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .m-b-20 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 p.light {
-    font-weight: 100;
+  font-weight: 100;
 }

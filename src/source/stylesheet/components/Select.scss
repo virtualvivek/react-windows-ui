@@ -23,6 +23,7 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(-5px) scaleY(0.85);
+    
     &.open {
       opacity: 1;
       visibility: visible;

@@ -18,9 +18,7 @@ const ButtonIcon = (props) => {
 }
   
 ButtonIcon.defaultProps = {
-  disabled: false,
-  width: 50,
-  height: 35
+  disabled: false
 }
   
 export default ButtonIcon

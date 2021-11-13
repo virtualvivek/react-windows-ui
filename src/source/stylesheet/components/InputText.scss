@@ -1,79 +1,79 @@
 .app-input-text {
-    @extend .input-field-primary;
-    @extend .transition-background-400ms;
+  @extend .input-field-primary;
+  @extend .transition-background-400ms;
 
-    &:hover {
-        border-color: #777;
-    }
-    &:focus {
-        @extend .outline-none;
-        border-color: #666;
-    }
-    &.success {
-        border-color: #2C8B2C;
-    }
-    &.danger {
-        border-color: #C50500;
-    }
+  &:hover {
+    border-color: #777;
+  }
+  &:focus {
+    @extend .outline-none;
+    border-color: #666;
+  }
+  &.success {
+    border-color: #2C8B2C;
+  }
+  &.danger {
+    border-color: #C50500;
+  }
 
-    + div button.unmask::after {
-        @extend .font-icon-dark;
-        content: "\f189";
-        font-size: 24px;
-        cursor: pointer;
-    }
+  + div button.unmask::after {
+    @extend .font-icon-dark;
+    content: "\f189";
+    font-size: 24px;
+    cursor: pointer;
+  }
 
-    &[disabled] {
-        @extend .input-field-primary-disabled;
-    }
+  &[disabled] {
+    @extend .input-field-primary-disabled;
+  }
 
-    &::-webkit-calendar-picker-indicator {
-        padding-right: 5px;
-        width: 24px;
-        height: 24px;
-        opacity: 1;
-    }
+  &::-webkit-calendar-picker-indicator {
+    width: 24px;
+    height: 24px;
+    padding-right: 5px;
+    opacity: 1;
+  }
 }
 .app-input-text-container {
-    width: min-content;
-    display: inline-flex;
-    position: relative;
+  width: min-content;
+  display: inline-flex;
+  position: relative;
 
-    .app-input-label {
-        @extend .transition-background-400ms;
-        width: max-content;
-        padding: 4px 5px;
-        border: 2px solid #999;
-        border-right: none;
-        background-color: var(--color_light_grey_alpha);
-    }
-    .app-input-status-container {
-        position: absolute;
-        top: 4px;
-        right: 5px;
+  .app-input-label {
+    @extend .transition-background-400ms;
+    width: max-content;
+    padding: 4px 5px;
+    border: 2px solid #999;
+    border-right: none;
+    background-color: var(--color_light_grey_alpha);
+  }
+  .app-input-status-container {
+    position: absolute;
+    top: 4px;
+    right: 5px;
 
-        i {
-            &::before {
-                @extend .vertical-align-middle;
-                margin-right: 5px;
-                padding: 4px;
-            }
-        }
-    }
-    
-    input[type="password"].app-input-text + div button.unmask::after {
-        content: "\f1db";
-    }
-    button.unmask {
+    i {
+      &::before {
         @extend .vertical-align-middle;
-        background: transparent;
-        border: none;
+        margin-right: 5px;
+        padding: 4px;
+      }
     }
+  }
+  
+  input[type="password"].app-input-text + div button.unmask::after {
+    content: "\f1db";
+  }
+  button.unmask {
+    @extend .vertical-align-middle;
+    background: transparent;
+    border: none;
+  }
 }
 
 @mixin input-date-mobile() {
-    input[type="date"].app-input-text::before {
-        content: attr(placeholder);
-        padding-right: 5px;
-    }
+  input[type="date"].app-input-text::before {
+    content: attr(placeholder);
+    padding-right: 5px;
+  }
 }

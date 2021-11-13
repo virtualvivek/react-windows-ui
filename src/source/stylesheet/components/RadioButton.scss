@@ -1,36 +1,36 @@
 .app-radio {
-    @extend .transition-background-400ms;
+  @extend .transition-background-400ms;
 
-    height: 20px;
-    width: 20px;
-    border: 2px solid var(--color_text_dark);
-    border-radius: 50%;
-    cursor: pointer;
-    font: inherit;
-    outline: none;
-    margin: 0;
-    vertical-align: middle;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border: 2px solid var(--color_text_dark);
+  border-radius: 50%;
+  cursor: pointer;
+  font: inherit;
+  outline: none;
+  margin: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 
-    &:checked {
-        @extend .background-color-dark-text;
-        border: 2px solid var(--PrimaryColor);
-        box-shadow: inset 0 0 0 2.8px var(--color_bg_light);
-    }
-    &:disabled {
-        cursor: not-allowed;
-        border-color: var(--color_button_hover);
-        background-color: var(--color_button_hover);
-        filter: opacity(0.7);
-    }
+  &:checked {
+    @extend .background-color-dark-text;
+    border: 2px solid var(--PrimaryColor);
+    box-shadow: inset 0 0 0 2.8px var(--color_bg_light);
+  }
+  &:disabled {
+    cursor: not-allowed;
+    border-color: var(--color_button_hover);
+    background-color: var(--color_button_hover);
+    filter: opacity(0.7);
+  }
 }
 
 .app-label-radio-button {
-    display: inline-block;
-    align-items: center;
-    .app-radio + span {
-        @extend .cursor-pointer;
-        @extend .vertical-align-middle;
-    }
+  display: inline-block;
+  align-items: center;
+  .app-radio + span {
+    @extend .cursor-pointer;
+    @extend .vertical-align-middle;
+  }
 }

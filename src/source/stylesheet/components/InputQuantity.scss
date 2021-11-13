@@ -1,43 +1,43 @@
 .app-quantity {
-    display: inline-flex;
+  display: inline-flex;
 
-    input[type="number"] {
-        width: 208px;
-        user-select: none;
-        text-align: center;
-        border-left: none;
-        border-right: none;
-        pointer-events: none;
-    }
-    input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-    input[type=number] {
-        -moz-appearance: textfield;
-    }
+  input[type="number"] {
+    width: 208px;
+    user-select: none;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    pointer-events: none;
+  }
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
 
-    .quantity-button {
-        @extend .background-color-light-bg;
-        @extend .color-dark-text;
-        width: 34px;
-        border: 2px solid #999;
-        text-align: center;
-        font-size: 20px;
+  .quantity-button {
+    @extend .background-color-light-bg;
+    @extend .color-dark-text;
+    width: 34px;
+    border: 2px solid #999;
+    text-align: center;
+    font-size: 20px;
 
-        &:hover {
-            @extend .background-color-link-bg-hover;
-        }
-        &:active {
-            @extend .background-color-link-bg-active;
-        }
+    &:hover {
+      @extend .background-color-link-bg-hover;
     }
+    &:active {
+      @extend .background-color-link-bg-active;
+    }
+  }
 
-    &[disabled] {
-        @extend .input-field-primary-disabled;
-    }
-    &[disabled] .quantity-button {
-        pointer-events: none;
-    }
+  &[disabled] {
+    @extend .input-field-primary-disabled;
+  }
+  &[disabled] .quantity-button {
+    pointer-events: none;
+  }
 }

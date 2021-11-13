@@ -1,42 +1,43 @@
 .app-link {
-    @extend .color-primary;
-    @extend .font-size-16px;
-    display: inline-flex;
-    font-weight: 400;
-    line-height: 1.5;
-    line-break: anywhere;
+  @extend .color-primary;
+  @extend .font-size-16px;
 
-    &:focus {
-        @extend .outline-none;
-    }
-    &:hover,
-    &:active {
-        color: #888;
-        background: none !important;
-    }
-    &:active {
-        color: var(--color_text_dark);
-    }
+  display: inline-flex;
+  font-weight: 400;
+  line-height: 1.5;
+  line-break: anywhere;
 
-    i {
-        font-size: 24px;
-        padding-right: 8px;
-        line-height: 0;
-    }
+  &:focus {
+    @extend .outline-none;
+  }
+  &:hover,
+  &:active {
+    color: #888;
+    background: none !important;
+  }
+  &:active {
+    color: var(--color_text_dark);
+  }
+
+  i {
+    font-size: 24px;
+    padding-right: 8px;
+    line-height: 0;
+  }
 }
 
 i.bg-primary::before {
-    @extend .color-white;
-    @extend .background-color-primary;
+  @extend .color-white;
+  @extend .background-color-primary;
 }
 i.bg-grey::before {
-    @extend .background-color-link-bg-active;
+  @extend .background-color-link-bg-active;
 }
 
 @mixin links-mobile() {
-    .app-link {
-        &:hover {
-            color: var(--PrimaryColor);
-        }
+  .app-link {
+    &:hover {
+      color: var(--PrimaryColor);
     }
+  }
 }

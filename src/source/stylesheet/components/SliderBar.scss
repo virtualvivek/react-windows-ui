@@ -5,9 +5,9 @@
   padding: 5px 0;
 
   input[type="range"] {
-    appearance: none;
     width: calc(100% - (73px));
     height: 2px;
+    appearance: none;
     background: #999999;
     outline: none;
     padding: 0;
@@ -18,8 +18,8 @@
     &::-webkit-slider-thumb {
       width: 8px;
       height: 26px;
-      -webkit-appearance: none;
       appearance: none;
+      -webkit-appearance: none;
       border-radius: 100px;
       background: var(--PrimaryColor);
       cursor: pointer;
