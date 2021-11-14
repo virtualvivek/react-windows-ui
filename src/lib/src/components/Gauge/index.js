@@ -1,79 +1,83 @@
 import React from 'react'
 
-const Gauge = (props) => {
+class Gauge extends React.Component {
 
-  const renderBackground = () => {
-    if(props.type === 'fill')
-      return <circle
-              cx="50"
-              cy="50"
-              r="45"
-              fill={props.backgroundColor}
-              />
-    else
-      return <circle
-              cx="50"
-              cy="50"
-              r="40"
-              stroke={props.backgroundColor}
-              strokeWidth="5px"
-              fill="transparent"
-              />
-  }  
-  return (
+  state={
+    isProgress: this.props.setProgress
+  }
+
+  componentDidUpdate(prevProps) {
+    let limit = this.props.setProgress;
+    let num = this.state.isProgress;
+
+    if (prevProps.setProgress !== this.props.setProgress) {
+
+      if(prevProps.setProgress < this.props.setProgress) {
+        var interval = setInterval(()=> {
+          num += 1;
+          this.setState({ isProgress: num });
+
+          if (num >= limit) { clearInterval(interval); }
+        }, 10);
+      }
+
+      if(prevProps.setProgress > this.props.setProgress) {
+        var interval_ = setInterval(()=> {
+          num -= 1;
+          this.setState({ isProgress: num });
+
+          if (num <= limit) { clearInterval(interval_); }
+        }, 10);
+      }
+    }
+  }
+
+  render() {
+    return (
       <div
+        class="app-gauge"
         style={{
-          display: 'inline-block',
-          width:100*props.scale+"px",
-          height: 100*props.scale+"px"}}>
-        <svg
+          background:
+            `conic-gradient(${this.props.strokeColor} 0% ${this.state.isProgress}%,
+            ${this.props.backgroundColor} ${this.state.isProgress}% 100%)`,
+          width: this.props.size,
+          height: this.props.size
+        }}>
+        <div
+          class="app-gauge-inner"
           style={{
-            transform: "scale("+props.scale+")",
-            transformOrigin:' 0% 0%',
-            width: "100px",
-            height: "100px"}}>
-
-        { renderBackground() }
-
-        <path
-          strokeLinecap="round"
-          strokeWidth={props.strokeWidth} 
-          stroke={props.strokeColor} 
-          style={{transition: '1s ease-in-out'}}
-          fill="none"
-          strokeDasharray={251.2*props.setProgress/100+",251.2"}
-          d="M50 10
-          a 40 40 0 0 1 0 80
-          a 40 40 0 0 1 0 -80">
-        </path>
-        <text
-          x="50" y="50"
-          textAnchor="middle" dy="7"
-          fontSize="17"
-          fontWeight="500"
-          fill={props.valueColor}>
-          {props.value}
-        </text>
-        <text
-          x="50" y="50" 
-          textAnchor="middle" dy="19" 
-          fontSize="7"
-          opacity="0.7"
-          fill="var(--color_text_dark)">
-          {props.info}
-        </text>
-        </svg>
-    </div>
-  )
+            width: this.props.size-20,
+            height: this.props.size-20
+          }}>
+          <span
+            className="app-gauge-value"
+            style={{
+              color: this.props.valueColor,
+              fontSize: this.props.valueFontSize
+            }}>
+            {this.state.isProgress+this.props.value}
+          </span>
+          <span
+            className="app-gauge-info"
+            style={{
+              fontSize: this.props.infoFontSize
+            }}>
+            {this.props.info}
+          </span>
+        </div>
+      </div>
+    );
+  }
 }
 
 Gauge.defaultProps = {
-  backgroundColor: "var(--color_light_grey)",
-  strokeColor: 'var(--PrimaryColor)',
-  strokeWidth: 5,
-  scale: 1,
+  size: 140,
   setProgress: 0,
-  valueColor: "var(--color_text_dark)"
+  valueColor: "var(--color_text_dark)",
+  valueFontSize: 25,
+  infoFontSize: 14,
+  strokeColor: 'var(--PrimaryColor)',
+  backgroundColor: "var(--color_light_grey)"
 }
 
 export default Gauge

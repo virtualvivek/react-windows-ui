@@ -1,15 +1,15 @@
 import React from 'react'
 
 export interface GaugeProps {
-  value ?: string;
-  info ?: string;
-  backgroundColor ?: string;
-  strokeColor ?: string;
-  strokeWidth ?: number | string;
-  valueColor ?: string;
-  scale ?: number;
   setProgress ?: number;
-  type ?: "default" | "fill";
+  size ?: number;
+  value ?: string;
+  valueColor ?: string;
+  valueFontSize ?: number;
+  info ?: string;
+  infoFontSize ?: number;
+  strokeColor ?: string;
+  backgroundColor ?: string;  
 }
 declare const Gauge: React.FC<GaugeProps>
 

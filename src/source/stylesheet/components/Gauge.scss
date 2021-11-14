@@ -1,0 +1,27 @@
+.app-gauge {
+  @extend .transition-background-400ms;
+  
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: default;
+
+  .app-gauge-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color_bg_light);
+
+    .app-gauge-value {
+      font-weight: 500;
+    }
+
+    .app-gauge-info {
+      color: var(--color_text_dark);
+      opacity: 0.7;
+      font-size: 16px;
+    }
+  }
+}

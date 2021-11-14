@@ -2,7 +2,7 @@ import React from 'react'
 import { NavPageContainer, Gauge, Button } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { GaugeImportCode,GaugeUsageCode,GaugeCustom1UsageCode,GaugeCustom2UsageCode,
+import { GaugeImportCode,GaugeUsageCode,GaugeCustom1UsageCode,
 GaugeCustom3UsageCode,GaugeCustom4UsageCode } from './codes'
 import PropsView from './props-view'
 
@@ -34,10 +34,10 @@ render() {
         
     <Gauge
       setProgress={this.state.gaugeValue}
-      scale={2}
-      value={this.state.gaugeValue+"%"}
+      value={"%"}
       info="of something"
     />
+    <br/><br/>
 
     <div className="app-flex">
       <Button value="0%" onClick={this.setGauge0}/>
@@ -72,12 +72,13 @@ render() {
 
     <Gauge
       setProgress={this.state.gaugeValue}
-      scale={1.5}
-      value={this.state.gaugeValue+"%"}
+      size={100}
+      value={"%"}
       info="of total"
       strokeColor="#e01944"
       valueColor="#e01944"
     />
+    <br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -86,39 +87,21 @@ render() {
       {GaugeCustom1UsageCode}
     </SyntaxHighlighter>
 
-  
-    <div className="app-hr"></div>
-    <h2>Gauge <p className="app-code">Type Fill</p> :</h2>
 
-    <Gauge
-      setProgress={this.state.gaugeValue}
-      scale={1.2}
-      value={this.state.gaugeValue+"%"}
-      strokeColor="#eb8613"
-      valueColor="#eb8613"
-      type="fill"
-    />
-
-    <SyntaxHighlighter
-      language="javascript"
-      style={vscDarkPlus}
-      className="code code-container">
-      {GaugeCustom2UsageCode}
-    </SyntaxHighlighter>
 
     <div className="app-hr"></div>
-    <h2>Gauge <p className="app-code">Custom border color</p> :</h2>
+    <h2>Gauge <p className="app-code">Custom colors</p> :</h2>
 
     <Gauge
       setProgress={44}
-      scale={1.2}
-      value={"44%"}
-      info="of total"
+      size={120}
+      value={"%"}
+      valueFontSize={34}
       strokeColor="#198ae0"
-      strokeWidth={8}
       valueColor="#198ae0"
       backgroundColor="#198ae044"
     />
+    <br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -130,17 +113,18 @@ render() {
 
 
     <div className="app-hr"></div>
-    <h2>Gauge <p className="app-code">Custom stroke width</p> :</h2>
+    <h2>Gauge <p className="app-code">Custom stroke color</p> :</h2>
 
     <Gauge
       setProgress={15}
-      scale={1.2}
-      value={"15%"}
+      value={" KM/s"}
+      valueFontSize={20}
       info="of Speed"
+      infoFontSize={16}
       strokeColor="#0ac94e"
-      strokeWidth={10}
       backgroundColor="#0ac94e44"
     />
+    <br/><br/>
 
     <SyntaxHighlighter
       language="javascript"

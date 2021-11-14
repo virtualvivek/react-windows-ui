@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Accordion = (props) => {
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <div
