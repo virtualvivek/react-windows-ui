@@ -42,7 +42,12 @@ class AppThemeDocs extends React.Component {
 
     <h1>AppTheme {this.state.app_get_theme}</h1>
 
-    <AppTheme color={this.state.app_color} scheme={this.state.app_mode}/>
+    <AppTheme
+      color={this.state.app_color}
+      scheme={this.state.app_mode}
+      onColorChange={()=> {}}
+      onSchemeChange={()=> {}}
+    />
 
     <div className="windows-view" onClick={this.getTheme}>
       <div className="start-view">

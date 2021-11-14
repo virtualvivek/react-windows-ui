@@ -25,6 +25,18 @@ const PropsView = () => {
           <td>'light'</td>
           <td>Set's AppTheme appearance mode</td>
         </tr>
+        <tr>
+          <td><p className="app-code">onColorChange</p></td>
+          <td>Object</td>
+          <td>null</td>
+          <td>Set's AppTheme Callback on Color Change</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onSchemeChange</p></td>
+          <td>Object</td>
+          <td>null</td>
+          <td>Set's AppTheme Callback on Scheme Change</td>
+        </tr>
       </tbody>
     </table>
     </div>

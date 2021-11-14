@@ -1,29 +1,44 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Appearance from '../Appearance'
 import ThemeManager from '../utils/ThemeManager'
 
-const AppTheme = (props) => {
+const AppTheme = React.memo(
+  (props) => {
+    useEffect(() => {
+      //console.log("Rendering Theme");
+    });
 
-  useEffect(() => {
+    return "";
+  }, (prevProps, nextProps) => {
+
     let navSwitch = document.getElementById("app-day-night-switch");
 
-    if(props.scheme === 'dark') {
-      Appearance.setDarkScheme();
-      navSwitch.checked = true;
-    }
-    else if(props.scheme === 'light') {
-      Appearance.setLightScheme();
-      navSwitch.checked = false;
+    if(prevProps.scheme !== nextProps.scheme) {
+      if(nextProps.scheme === 'dark') {
+        Appearance.setDarkScheme();
+        navSwitch.checked = true;
+        nextProps.onSchemeChange();
+      }
+      else if(nextProps.scheme === 'light') {
+        Appearance.setLightScheme();
+        navSwitch.checked = false;
+        nextProps.onSchemeChange();
+      }  
     }
 
-    if(props.color) {
-      document.documentElement.style.setProperty('--PrimaryColor', props.color)
-      ThemeManager.createAlphaPrimaryColor()
+    if(prevProps.color !== nextProps.color) {
+      if(nextProps.color) {
+        document.documentElement.style.setProperty('--PrimaryColor', nextProps.color);
+        ThemeManager.createAlphaPrimaryColor();
+        nextProps.onColorChange();
+      }
     }
+  }
+);
 
-  }, [props.color,props.scheme]);
-
-  return null;
+AppTheme.defaultProps = {
+  onSchemeChange: () => {},
+  onColorChange: () => {}
 }
 
 export default AppTheme
