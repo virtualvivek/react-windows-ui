@@ -96,6 +96,7 @@ class Tables extends React.Component {
           {TableDataCode}
         </SyntaxHighlighter>
       </Accordion>
+      <br/><br/><br/><br/>
 
     </NavPageContainer>
   )

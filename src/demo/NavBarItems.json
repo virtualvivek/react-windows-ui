@@ -154,6 +154,13 @@
         "showBadge": false
     },
     {
+        "to": "/sliderbar",
+        "exact": false,
+        "text": "SliderBar",
+        "icon": "icons10-arrow-right",
+        "showBadge": false
+    },
+    {
         "to": "/switch",
         "exact": false,
         "text": "Switch",

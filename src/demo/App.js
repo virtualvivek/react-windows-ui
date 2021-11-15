@@ -35,6 +35,7 @@ import MenuBarDocs from './docs/MenuBar_docs'
 import ProgressBarDocs from './docs/ProgressBar_docs'
 import RadioButtonDocs from './docs/RadioButton_docs'
 import SelectBoxDocs from './docs/SelectBox_docs'
+import SliderBarDocs from './docs/SliderBar_docs'
 import SwitchDocs from './docs/Switch_docs'
 
 import _404Layout from './layouts/404Layout'
@@ -205,6 +206,7 @@ class App extends React.Component {
         <Route path='/progressbar' component={ProgressBarDocs} />
         <Route path='/radio_button' component={RadioButtonDocs} />
         <Route path='/selectbox' component={SelectBoxDocs} />
+        <Route path='/sliderbar' component={SliderBarDocs} />
         <Route path='/switch' component={SwitchDocs} />
 
         <Route path='/texts' component={Texts} />

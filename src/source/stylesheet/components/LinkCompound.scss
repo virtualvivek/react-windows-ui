@@ -3,7 +3,8 @@
     @extend .transition-all-400ms;
     @extend .tap-highlight-none;
     max-width: 310px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     border: 2px solid transparent;
     padding: 15px 15px 15px 10px;
     
@@ -33,6 +34,9 @@
       width: 37px;
       height: 37px;
       object-fit: cover;
+      font-size: 8px;
+      word-break: break-word;
+      background-color: var(--color_link_bg_hover);
     }
     
     .app-link-compound-subcontainer {

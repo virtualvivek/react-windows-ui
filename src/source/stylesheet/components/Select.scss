@@ -14,6 +14,8 @@
   
   .app-select-body {
     width: inherit;
+    max-height: 250px;
+    overflow-y: auto;
     background: var(--color_nav);
     position: absolute;
     margin-top: -30px;
