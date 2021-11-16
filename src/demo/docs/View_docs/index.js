@@ -55,7 +55,6 @@ render() {
 
   
     <div className="app-hr"></div>
-    <h2>Gauge <p className="app-code">Custom color</p> :</h2>
 
 
     <h2>Props</h2>

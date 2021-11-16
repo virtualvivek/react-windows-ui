@@ -5,6 +5,7 @@ export interface ViewProps {
   zIndex ?: number;
   children ?: ReactNode;
   onClick ?: () => void;
+  animationType ?: "none" | "fade";
 }
 declare const View: React.FC<ViewProps>
 

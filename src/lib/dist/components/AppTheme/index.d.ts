@@ -1,8 +1,10 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 
 export interface AppThemeProps {
   color ?: any;
-  mode ?: 'light' | 'dark';
+  scheme ?: 'light' | 'dark';
+  onColorChange ?: Function;
+  onSchemeChange ?: Function;
 }
 declare const AppTheme: React.FC<AppThemeProps>
 

@@ -1,6 +1,6 @@
 {
   "name": "react-windows-ui",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Build full featured Windows fluent UI apps using reactjs.",
   "main": "dist/index.js",
   "scripts": {
