@@ -168,6 +168,13 @@
         "showBadge": false
     },
     {
+        "to": "/view_",
+        "exact": false,
+        "text": "View",
+        "icon": "icons10-ipad",
+        "showBadge": false
+    },
+    {
         "to": "/texts",
         "exact": false,
         "text": "Texts",

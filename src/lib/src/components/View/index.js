@@ -2,16 +2,22 @@ import React from 'react'
 
 const View = (props) => {
 
+  const setAnimFade = () => {
+    return props.animationType === 'fade' ? 'fade' : '';
+  }
+
   return (
     <div
       onClick = { props.onClick }
       className = {
         props.isVisible ?
-        "app-view-default show" : "app-view-default"
+          `app-view-default ${setAnimFade()}`
+        : `app-view-default hide ${setAnimFade()}`
         }
         style={{
             zIndex: props.zIndex,
-            ...props.style}}>
+            ...props.style
+          }}>
         {props.children}
     </div>
   )

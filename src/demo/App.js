@@ -37,6 +37,7 @@ import RadioButtonDocs from './docs/RadioButton_docs'
 import SelectBoxDocs from './docs/SelectBox_docs'
 import SliderBarDocs from './docs/SliderBar_docs'
 import SwitchDocs from './docs/Switch_docs'
+import ViewDocs from './docs/View_docs'
 
 import _404Layout from './layouts/404Layout'
 import AboutLayout from './layouts/AboutLayout'
@@ -208,6 +209,7 @@ class App extends React.Component {
         <Route path='/selectbox' component={SelectBoxDocs} />
         <Route path='/sliderbar' component={SliderBarDocs} />
         <Route path='/switch' component={SwitchDocs} />
+        <Route path='/view_' component={ViewDocs} />
 
         <Route path='/texts' component={Texts} />
         <Route path='/tables' component={Tables} />

@@ -14,52 +14,28 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">setProgress</p></td>
+          <td><p className="app-code">isVisible</p></td>
+          <td>boolean</td>
+          <td>true</td>
+          <td>Toggle's View visibility</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">animationType</p></td>
+          <td>'none' | 'fade'</td>
+          <td>'none'</td>
+          <td>Set's View animate type on visible</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">zIndex</p></td>
           <td>integer</td>
-          <td>0</td>
-          <td>Set's Gauge </td>
-        </tr>
-        <tr>
-          <td><p className="app-code">scale</p></td>
-          <td>float</td>
           <td>1</td>
-          <td>Set's Gauge scale size</td>
+          <td>Set's View zIndex</td>
         </tr>
         <tr>
-          <td><p className="app-code">value</p></td>
-          <td>integer | string</td>
+          <td><p className="app-code">style</p></td>
+          <td>object</td>
           <td>null</td>
-          <td>Set's Gauge inner value text</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">info</p></td>
-          <td>integer | string</td>
-          <td>null</td>
-          <td>Set's Gauge inner info text</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">strokeColor</p></td>
-          <td>CSS Color</td>
-          <td>'color-primary'</td>
-          <td>Set's Gauge progress ring color</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">valueColor</p></td>
-          <td>CSS Color</td>
-          <td>'color-text-dark'</td>
-          <td>Set's Gauge inner value color</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">backgroundColor</p></td>
-          <td>CSS Color</td>
-          <td>'color-light-grey'</td>
-          <td>Set's Gauge background-ring/backround color</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">type</p></td>
-          <td>'default' | 'fill'</td>
-          <td>'default'</td>
-          <td>Set's Gauge background type</td>
+          <td>Set's View container style</td>
         </tr>
       </tbody>
     </table>
