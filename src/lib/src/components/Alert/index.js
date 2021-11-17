@@ -3,7 +3,7 @@ import React from 'react'
 const Alert = (props) => {
 
   const setThemeLight = () => {
-    return props.setTheme === 'system' ? ' light' : '';
+    return props.setTheme === 'system' ? 'light' : '';
   }
 
   return (
@@ -15,8 +15,9 @@ const Alert = (props) => {
     </div>
     <div
       className={
-          props.isVisible ? "app-alert show"+setThemeLight()
-        : "app-alert"+setThemeLight()
+          props.isVisible ?
+          `app-alert show ${setThemeLight()}`
+        : `app-alert ${setThemeLight()}`
       }>
         <h1>{props.title}</h1>
         <div className="alert-message">{props.message}</div>

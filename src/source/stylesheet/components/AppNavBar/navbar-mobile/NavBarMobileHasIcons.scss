@@ -4,6 +4,7 @@
       li {
         a {
           padding: 5px 8px;
+
           i::before {
             font-size: 28px;
           }
@@ -16,8 +17,8 @@
     }
   }
   ul.app-mobile-has-icons li a span,
-  ul:not(.app-mobile-has-icons) li a i::before,
-  ul:not(.app-mobile-has-icons) li a img {
+  ul:not(.app-mobile-has-icons) li a img,
+  ul:not(.app-mobile-has-icons) li a i::before {
     display: none !important;
   }
 }

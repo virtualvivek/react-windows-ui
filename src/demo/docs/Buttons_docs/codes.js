@@ -61,16 +61,6 @@ const ButtonDangerCode =
  //icon={<i className="icons10-cancel-2"></i>}
 />`;
 
-const ButtonFluentCode =
-`import { RegisterFluentEffect, ButtonFluent } from 'react-windows-ui'
-
-return (
-  <RegisterFluentEffect/>
-  <ButtonFluent
-    value="Fluent Button"
-    onClick={() => {}}
-  />
-)`;
 
 export {
   ButtonImportCode,
@@ -81,6 +71,5 @@ export {
   ButtonPrimaryOutline,
   ButtonIconCode,
   ButtonSuccessCode,
-  ButtonDangerCode,
-  ButtonFluentCode
+  ButtonDangerCode
 }

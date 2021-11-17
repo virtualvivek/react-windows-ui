@@ -1,5 +1,6 @@
 const getColorScheme = () => {
-  let color = window.getComputedStyle(document.documentElement).getPropertyValue('--color_scheme')
+  let color = window.getComputedStyle(document.documentElement)
+  .getPropertyValue('--color_scheme')
   return color.toString()
 }
 

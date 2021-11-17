@@ -60,9 +60,9 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ]
   },
   "devDependencies": {
@@ -70,6 +70,6 @@
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
     "babel-preset-minify": "^0.5.1",
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.2.3"
   }
 }

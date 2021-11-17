@@ -12,6 +12,10 @@ const AppTheme = React.memo(
   }, (prevProps, nextProps) => {
 
     let navSwitch = document.getElementById("app-day-night-switch");
+    if(!navSwitch) {
+      navSwitch = document.createElement("input");
+      navSwitch.type = "checkbox";
+    }
 
     if(prevProps.scheme !== nextProps.scheme) {
       if(nextProps.scheme === 'dark') {

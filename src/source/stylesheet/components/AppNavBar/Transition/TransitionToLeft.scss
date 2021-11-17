@@ -1,10 +1,10 @@
 .app-section-container.transition {
-  opacity: 0 !important;
-  position: absolute;
-  top: 0;
   height: 100%;
   width: -webkit-fill-available;
   width: -moz-available;
+  position: absolute;
+  top: 0;
+  opacity: 0 !important;
 
   &.transition-left {
     opacity: 1 !important;

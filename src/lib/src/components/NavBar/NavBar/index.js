@@ -6,8 +6,8 @@ import ThemeManager from '../../utils/ThemeManager'
 const NavBar = (props) => {
 
   useEffect(() => {
-    ThemeManager.createAlphaPrimaryColor()
-  }, []);
+    ThemeManager.createAlphaPrimaryColor();
+  },[]);
   
   const [sidebar, setSidebar] = useState(false)
   const [isScrolling, setScrolling] = useState(false)
@@ -37,18 +37,16 @@ const NavBar = (props) => {
             <span className="app-name-short">{props.titleShort}</span>
           </div>
           <div
-            style={props.shadowOnScroll ?
-                isScrolling ?
-                { boxShadow:'0 6px 8px -8px var(--color_link_bg_hover)'}
-                : {boxShadow : ''}
-                : {boxShadow:''}
+            style={ props.shadowOnScroll ?
+                    isScrolling ?
+                    { boxShadow: "0 6px 8px -8px var(--color_link_bg_hover)"}
+                  : {boxShadow : ""}
+                  : {boxShadow: ""}
               }>
-            <Link
+            <span
               className="app-nav-toggle"
-              to="#"
               onClick={showSidebar}>
-                <span className="display-none"></span>
-            </Link>
+            </span>
             {props.showThemeSwitch && (<SwitchDayNight/>)}
           </div>
           <ul

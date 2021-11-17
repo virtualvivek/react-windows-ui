@@ -101,15 +101,6 @@ const GettingStarted = () => {
           focused={true}
           style={{margin:'5px 5px 0 0',width:240}} />
 
-        
-        <LinkCompound  
-          to="/ListLayout"
-          title="Lists"
-          subtitle="List illustrations"
-          icon={<i className="icons10-list"></i>}
-          focused={true}
-          style={{margin:'5px 5px 0 0',width:240}} />
-
 
     <br/><br/><br/><br/><br/><br/>
     </NavPageContainer>

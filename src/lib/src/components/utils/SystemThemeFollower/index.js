@@ -1,31 +1,35 @@
 import { useEffect } from 'react'
-var setAppDark = require('../ThemeManager').setAppDark
-var setAppLight = require('../ThemeManager').setAppLight
+import Appearance from '../../Appearance'
 
 const SystemThemeFollower = () => {
 
-  useEffect(()=>{
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setAppDark();
-      let navSwitch = document.getElementById("app-day-night-switch");
+  let navSwitch = document.getElementById("app-day-night-switch");
+  if(!navSwitch) {
+    navSwitch = document.createElement("input");
+    navSwitch.type = "checkbox";
+  }
+
+  useEffect(() => {
+    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)")
+      .matches) {
+      Appearance.setDarkScheme();
       navSwitch.checked = true;
     }
   })
 
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-      
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",
+    e => {
     const newColorScheme = e.matches ? "dark" : "light";
-    let navSwitch = document.getElementById("app-day-night-switch");
 
     if(newColorScheme === "dark") {
-      setAppDark();
+      Appearance.setDarkScheme();
       navSwitch.checked = true;
     }
     else {
-      setAppLight();
+      Appearance.setLightScheme();
       navSwitch.checked = false;
     }
-  })
+  });
 
   return ""
 }

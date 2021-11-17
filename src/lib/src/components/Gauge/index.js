@@ -35,7 +35,7 @@ class Gauge extends React.Component {
   render() {
     return (
       <div
-        class="app-gauge"
+        className="app-gauge"
         style={{
           background:
             `conic-gradient(${this.props.strokeColor} 0% ${this.state.isProgress}%,
@@ -44,7 +44,7 @@ class Gauge extends React.Component {
           height: this.props.size
         }}>
         <div
-          class="app-gauge-inner"
+          className="app-gauge-inner"
           style={{
             width: this.props.size-20,
             height: this.props.size-20

@@ -6,9 +6,9 @@ const Button = (props) => {
   const renderLoader = () => {
     return <div
         className = {
-            props.type ==="primary" ?  "app-loader-busy small light animate"
-          : props.type ==="danger" ? "app-loader-busy small light animate"
-          : props.type ==="success" ? "app-loader-busy small light animate"
+            props.type === "primary" ?  "app-loader-busy small light animate"
+          : props.type === "danger" ? "app-loader-busy small light animate"
+          : props.type === "success" ? "app-loader-busy small light animate"
           : "app-loader-busy small animate"
           }
         style={ props.isLoading ? { display: 'inline' } : { display : 'none' }}>
@@ -17,20 +17,20 @@ const Button = (props) => {
   }
 
   const toggleLoading = () => {
-    return props.isLoading ? ' isLoading' : '';
+    return props.isLoading ? 'isLoading' : '';
   }
 
   
   return (
     <button
       className = {
-        props.type ==="primary" ?  "app-button animate primary"+toggleLoading()
-      : props.type ==="danger" ? "app-button animate danger"+toggleLoading()
-      : props.type ==="success" ? "app-button animate success"+toggleLoading()
-      : props.type ==="primary-outline" ? "app-button animate primary-outline"+toggleLoading()
-      : props.type ==="danger-outline" ? "app-button animate danger-outline"+toggleLoading()
-      : props.type ==="success-outline" ? "app-button animate success-outline"+toggleLoading()
-      : "app-button animate"+toggleLoading()
+        props.type ==="primary" ?  `app-button animate primary ${toggleLoading()}`
+      : props.type ==="danger" ? `app-button animate danger ${toggleLoading()}`
+      : props.type ==="success" ? `app-button animate success ${toggleLoading()}`
+      : props.type ==="primary-outline" ? `app-button animate primary-outline ${toggleLoading()}`
+      : props.type ==="danger-outline" ? `app-button animate danger-outline ${toggleLoading()}`
+      : props.type ==="success-outline" ? `app-button animate success-outline ${toggleLoading()}`
+      : `app-button animate ${toggleLoading()}`
       }
       style={{
         width: props.width,
@@ -44,18 +44,17 @@ const Button = (props) => {
       title={props.tooltip}>
 
       <span style={
-          props.isLoading ? { display:'none' }
-        : props.value === "" ? { paddingRight: '0'}
-        : props.icon ? { display : 'inline-flex', paddingRight: '5px' }
-        : {paddingRight: '0'}
+          props.isLoading ? { display: "none" }
+        : props.value === "" ? { paddingRight: 0 }
+        : props.icon ? { display : "inline-flex", paddingRight: 5 }
+        : { paddingRight: 0 }
         }>
-
-      {props.icon}
+        {props.icon}
       </span>
 
       { props.isLoading ? renderLoader() : "" }
       
-      <span style={props.isLoading ? { opacity: '0' } : { opacity : '1' }}>
+      <span style={props.isLoading ? { opacity: 0 } : { opacity : 1 }}>
         {props.value}
       </span>
     </button>

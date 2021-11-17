@@ -1,7 +1,7 @@
 import React from 'react'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { NavBar, NavBarLink,NavBarSubMenu, NavSearchBox, SystemThemeFollower,
-         RegisterFluentEffect,TransitionToLeft } from '../lib/src'
+         TransitionToLeft } from '../lib/src'
 
 import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
@@ -82,16 +82,14 @@ class App extends React.Component {
   render() {
   return (
     <>
-    <Router basename={process.env.PUBLIC_URL}> {/* basename={process.env.PUBLIC_URL} */}
+    <Router basename={'/'}> {/* basename={process.env.PUBLIC_URL} */}
 
       <TransitionToLeft />
 
       <SystemThemeFollower/>
 
-      {/* Register the fluent effect before using NavBarLinkFluent */}
-      <RegisterFluentEffect/>
-
       <NavBar
+      
         title="React Windows UI"
         titleShort={<i className="icons10-windows"></i>}
       //titleShort="R" render text or icons

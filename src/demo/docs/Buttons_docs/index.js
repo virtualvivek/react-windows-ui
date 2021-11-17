@@ -1,13 +1,13 @@
 import React, {createRef} from 'react'
 import { Link } from 'react-router-dom'
-import { Button, ButtonFluent,ButtonIcon, NavPageContainer,NavPageContainerInner,
-         RegisterFluentEffect, NavPageContainerRight } from '../../../lib/src'
+import { Button, ButtonIcon, NavPageContainer,NavPageContainerInner,
+         NavPageContainerRight } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { ButtonImportCode,ButtonIconImportCode,ButtonDefaultCode,
          ButtonIconPrimary,ButtonPrimary,ButtonPrimaryOutline,
          ButtonIconCode,ButtonSuccessCode,
-         ButtonDangerCode,ButtonFluentCode } from './codes'
+         ButtonDangerCode } from './codes'
 import PropsView from './props-view'
 
 class ButtonsDocs extends React.Component {
@@ -40,8 +40,6 @@ class ButtonsDocs extends React.Component {
       animateTransition>
 
     <NavPageContainerInner>
-      
-      <RegisterFluentEffect/>
 
       <h1>Buttons</h1>
 
@@ -128,7 +126,7 @@ class ButtonsDocs extends React.Component {
         &nbsp;&nbsp;
         <Button
           width={155}
-          textAlign={'start'}
+          justifyContent={'start'}
           icon={<i className="icons10-plus color-primary"></i>}
           value="Align Start"/>
 
@@ -262,22 +260,6 @@ class ButtonsDocs extends React.Component {
           className="code code-container">
           {ButtonIconCode}
         </SyntaxHighlighter>
-    
-      
-        <div className="app-hr" ref={this.scrollButtonFluent}></div>
-        <h1>Button Fluent Hover Effect</h1>
-        
-        <ButtonFluent
-          value="Fluent Button"/>
-
-        <br/>
-        <h2>Usage</h2>
-        <SyntaxHighlighter
-          language="javascript"
-          style={dracula}
-          className="code code-container">
-          {ButtonFluentCode}
-        </SyntaxHighlighter>
        
 
         <div className="app-hr" ref={this.scrollProps}></div>
@@ -295,34 +277,29 @@ class ButtonsDocs extends React.Component {
       <h4 className="m-0"><b>On This Page</b></h4>
       <h4 className="m-tb-10">Buttons</h4>
     
-      <Link
+      <Link to="#"
         onClick={()=>{this.scrollButtonPrimaryIcon.current.scrollIntoView({ behavior:'smooth'});}}
         className="app-link">&nbsp; Button icon primary</Link><br/>
-      <Link
+      <Link to="#"
         onClick={()=>{this.scrollButtonPrimary.current.scrollIntoView({ behavior:'smooth'});}}
         className="app-link">&nbsp; Button primary</Link><br/>
-      <Link
+      <Link to="#"
         onClick={()=>{this.scrollButtonPrimaryOutline.current.scrollIntoView({ behavior:'smooth'});}}
         className="app-link">&nbsp; Button primary outline</Link><br/>
-      <Link
+      <Link to="#"
         onClick={()=>{this.scrollButtonSuccess.current.scrollIntoView({ behavior:'smooth'});}}
         className="app-link">&nbsp; Button success</Link><br/>
-      <Link
+      <Link to="#"
         onClick={()=>{this.scrollButtonDanger.current.scrollIntoView({ behavior:'smooth'});}}
         className="app-link">&nbsp; Button danger</Link><br/>
   
       <h4 className="m-tb-10">ButtonIcon</h4>
-      <Link
+      <Link to="#"
         onClick={()=>{this.scrollButtonIcon.current.scrollIntoView({ behavior:'smooth'});}}
         className="app-link">&nbsp; Usage</Link><br/>
 
-      <h4 className="m-tb-10">ButtonFluent</h4>
-      <Link
-        onClick={()=>{this.scrollButtonFluent.current.scrollIntoView({ behavior:'smooth'});}}
-        className="app-link">&nbsp; Usage</Link><br/>
-
       
-      <Link
+      <Link to="#"
         onClick={()=>{this.scrollProps.current.scrollIntoView({ behavior:'smooth'});}}
         className="app-link">
           <h4 className="m-tb-10"><b>Props</b></h4>
