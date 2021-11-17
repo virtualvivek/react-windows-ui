@@ -43,7 +43,12 @@ const NavBar = (props) => {
                 : {boxShadow : ''}
                 : {boxShadow:''}
               }>
-            <Link to="#" className="app-nav-toggle" onClick={showSidebar}></Link>
+            <Link
+              className="app-nav-toggle"
+              to="#"
+              onClick={showSidebar}>
+                <span className="display-none"></span>
+            </Link>
             {props.showThemeSwitch && (<SwitchDayNight/>)}
           </div>
           <ul

@@ -5,11 +5,10 @@ export default function TransitionToLeft() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-
     var element = document.getElementById("app-section-container-id");
-    element.classList.add("transition-left");
-    // setTimeout(() => {   
-    // },40);
+    if(element) {
+      element.classList.add("transition-left");
+    }
 
   }, [pathname]);
 

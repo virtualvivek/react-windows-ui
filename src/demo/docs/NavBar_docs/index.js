@@ -30,7 +30,7 @@ render() {
         </span>
       </div>
       <div style={{position:'absolute'}}>
-        <a className="app-nav-toggle" href="#/navbar"></a>
+        <a className="app-nav-toggle" href="#/navbar"><span style={{display:'none'}}></span></a>
         <label className="app-switch">
           <input type="checkbox" id="app-day-night-switch"/>
           <div dataoff="Day" dataon="Night"></div>

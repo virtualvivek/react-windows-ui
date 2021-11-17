@@ -82,7 +82,7 @@ class App extends React.Component {
   render() {
   return (
     <>
-    <Router> {/* basename={process.env.PUBLIC_URL} */}
+    <Router basename={process.env.PUBLIC_URL}> {/* basename={process.env.PUBLIC_URL} */}
 
       <TransitionToLeft />
 
