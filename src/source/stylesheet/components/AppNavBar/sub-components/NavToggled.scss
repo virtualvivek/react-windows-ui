@@ -7,17 +7,9 @@
   display: inline-block;
     
   .app-name,
-  .app-switch,
   nav a span,
   nav ul h1 {
     @extend .display-none;
-  }
-  .app-name-short {
-    width: 74px;
-    display: inline-block;
-    font-size: 24px;
-    text-align: center;
-    padding: 10px;
   }
 
   nav {
@@ -27,13 +19,6 @@
     .app-hr {
       width: 56px;
       margin-left: 8px;
-    }
-    > div:first-child {
-      width: 74px;
-      height: 42px;
-    }
-    > div:nth-child(2) {
-      width: auto;
     }
   }
 }

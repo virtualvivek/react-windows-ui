@@ -3,6 +3,8 @@
 }
 .app-accordion-title {
   @extend .transition-all-400ms;
+  @extend .tap-highlight-none;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;

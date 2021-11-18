@@ -1,5 +1,6 @@
 .app-radio {
   @extend .transition-background-400ms;
+  @extend .tap-highlight-none;
 
   height: 20px;
   width: 20px;
@@ -29,6 +30,7 @@
 .app-label-radio-button {
   display: inline-block;
   align-items: center;
+
   .app-radio + span {
     @extend .cursor-pointer;
     @extend .vertical-align-middle;

@@ -190,14 +190,14 @@ render() {
         <a href="#/navbar">
           <i className="icons10-user"></i>
           <span>NavItem1</span>
-          <div class="app-badge">12</div>
+          <div className="app-badge">12</div>
         </a>
         </li>
         <li>
           <a href="#/navbar">
             <img src={Img2} alt="img"/>
             <span>NavItem2</span>
-            <div class="app-badge">7</div>
+            <div className="app-badge">7</div>
           </a>
         </li>
       </ul>

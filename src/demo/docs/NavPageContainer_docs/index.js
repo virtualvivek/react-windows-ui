@@ -16,7 +16,7 @@ render() {
     <h1>NavPageContainer</h1>
 
     <div className="navpagecontainer-view">
-      <div class="navpagecontainer-nav">
+      <div className="navpagecontainer-nav">
         <div className="navpagecontainer-rows navpage-header">
           <div className="navpage-item"></div>
           <div className="navpage-switch"><p></p></div>
@@ -27,7 +27,7 @@ render() {
         <div className="navpagecontainer-rows"></div>
         <div className="navpagecontainer-rows"></div>
       </div>
-      <div class="navpagecontainer-container">
+      <div className="navpagecontainer-container">
         <p className="toolbar">- o x</p>
         <p>NavPageContainer</p>
         <div className="navpagecontainer-rows"></div>

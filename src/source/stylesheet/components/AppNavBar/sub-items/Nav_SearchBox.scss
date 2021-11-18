@@ -2,6 +2,7 @@
   .app-search-box {
     width: 250px;
     margin: 0 0 10px 18px;
+    user-select: none;
     filter: opacity(0.7);
   }
 
@@ -53,6 +54,7 @@
       padding-left: 25px;
       display: flex;
       align-items: center;
+      cursor: pointer;
 
         &:hover { background-color: var(--color_link_bg_hover); }
         &:active { background-color: var(--color_link_bg_active); }
@@ -65,7 +67,8 @@
     .app-search-box { display: none; }
     
     .app-search-dialog {
-      padding: 6px 0 0 20px;
+      padding: 2px 0 0 20px;
+
       .app-input-search {
         width: 70%;
       }

@@ -1,7 +1,6 @@
 import {
     NavBar,
     NavBarLink,
-    NavBarLinkFluent,
     NavBarSubMenu,
     NavPageContainer,
     NavPageContainerRight,
@@ -43,7 +42,6 @@ import SelectBox from './components/SelectBox'
 import StickyHeader from './components/StickyHeader'
 import Switch from './components/Switch'
 import SwitchDayNight from './components/SwitchDayNight'
-import SystemThemeFollower from './components/utils/SystemThemeFollower'
 import TableView from './components/TableView'
 import View from './components/View'
 
@@ -51,7 +49,6 @@ import View from './components/View'
 export {
     NavBar,
     NavBarLink,
-    NavBarLinkFluent,
     NavBarSubMenu,
     NavPageContainer,
     NavPageContainerRight,
@@ -93,7 +90,6 @@ export {
     StickyHeader,
     Switch,
     SwitchDayNight,
-    SystemThemeFollower,
     TableView,
     View
 }

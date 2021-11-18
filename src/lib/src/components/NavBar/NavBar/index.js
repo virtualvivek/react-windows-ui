@@ -1,6 +1,4 @@
 import React, { useState,useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import SwitchDayNight from '../../SwitchDayNight'
 import ThemeManager from '../../utils/ThemeManager'
 
 const NavBar = (props) => {
@@ -28,15 +26,7 @@ const NavBar = (props) => {
         <nav
           className="animate"
           onScroll={scrollEvent}>
-          <div>
-            {props.goBack ?
-            <Link to={props.goBack} className="app-back"></Link>
-            :
-            ''}
-            <span className="app-name">{props.title}</span>
-            <span className="app-name-short">{props.titleShort}</span>
-          </div>
-          <div
+          <div className="app-nav-header"
             style={ props.shadowOnScroll ?
                     isScrolling ?
                     { boxShadow: "0 6px 8px -8px var(--color_link_bg_hover)"}
@@ -47,7 +37,7 @@ const NavBar = (props) => {
               className="app-nav-toggle"
               onClick={showSidebar}>
             </span>
-            {props.showThemeSwitch && (<SwitchDayNight/>)}
+            <span className="app-name">{props.title}</span>
           </div>
           <ul
             className={props.mobileHasIcons ?  "app-mobile-has-icons" : ""  }>
@@ -56,10 +46,6 @@ const NavBar = (props) => {
         </nav>
       </div>	 
   );
-}
-
-NavBar.defaultProps = {
-  showThemeSwitch: true
 }
 
 export default NavBar

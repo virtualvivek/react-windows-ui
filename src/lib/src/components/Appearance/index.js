@@ -15,8 +15,6 @@ const setDarkScheme = () => {
   document.documentElement.style.setProperty('--color_link_bg_active','#222222')
   document.documentElement.style.setProperty('--color_button','#555555')
   document.documentElement.style.setProperty('--color_button_hover','#999999')
-  document.documentElement.style.setProperty('--color_button_active','#222222')
-  document.documentElement.style.setProperty('--color_button_active_border','#EEEEEE')
   document.documentElement.style.setProperty('--color_primary_light','#FFFFFF')
   document.documentElement.style.setProperty('--color_primary_dark','#403E41')
   
@@ -34,8 +32,6 @@ const setLightScheme = () => {
   document.documentElement.style.setProperty('--color_link_bg_active','')
   document.documentElement.style.setProperty('--color_button','')
   document.documentElement.style.setProperty('--color_button_hover','')
-  document.documentElement.style.setProperty('--color_button_active','')
-  document.documentElement.style.setProperty('--color_button_active_border','')
   document.documentElement.style.setProperty('--color_primary_light','')
   document.documentElement.style.setProperty('--color_primary_dark','')
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 export interface AppThemeProps {
   color ?: any;
-  scheme ?: 'light' | 'dark';
+  scheme ?: 'light' | 'dark' | 'system';
   onColorChange ?: Function;
   onSchemeChange ?: Function;
 }

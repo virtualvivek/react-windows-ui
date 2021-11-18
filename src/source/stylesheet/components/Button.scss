@@ -1,6 +1,8 @@
 button,
 .app-button {
   @extend .user-select-none;
+  @extend .tap-highlight-none;
+  
   cursor: pointer;
   display: inline-flex;
   align-items: center;

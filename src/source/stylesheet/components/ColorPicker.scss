@@ -1,4 +1,6 @@
 .app-color-picker-item {
+  @extend .tap-highlight-none;
+
   padding: 0 4px 2px 0;
   display: inline-block;
   cursor: pointer;

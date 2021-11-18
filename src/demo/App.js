@@ -1,6 +1,6 @@
 import React from 'react'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
-import { NavBar, NavBarLink,NavBarSubMenu, NavSearchBox, SystemThemeFollower,
+import { NavBar, NavBarLink,NavBarSubMenu, NavSearchBox,
          TransitionToLeft } from '../lib/src'
 
 import Home from './pages/Home'
@@ -83,13 +83,11 @@ class App extends React.Component {
   return (
     <>
     <Router basename={'/'}> {/* basename={process.env.PUBLIC_URL} */}
-
+      
       <TransitionToLeft />
 
-      <SystemThemeFollower/>
-
       <NavBar
-      
+        showThemeSwitch={false}
         title="React Windows UI"
         titleShort={<i className="icons10-windows"></i>}
       //titleShort="R" render text or icons
@@ -104,7 +102,7 @@ class App extends React.Component {
         /> */}
 
       <NavSearchBox
-        placeholder="Search Docs pre v4.0.x"
+        placeholder="Search Docs pre v4.x"
         onChange={this.handleInputSearch}/>
       <NavBarLink
         exact={true}
@@ -118,13 +116,12 @@ class App extends React.Component {
         icon={<i className="icons10-terminal"></i>}
       />
 
-      <NavBarSubMenu title="Preview">
-        <NavBarLink
-          to="/inputs"
-          text="Inputs"
-          icon={<i className="icons10-keyboard"></i>}
-        />
-      </NavBarSubMenu>
+      <NavBarLink
+        to="/inputs"
+        text="Inputs"
+        icon={<i className="icons10-keyboard"></i>}
+      />
+
 
       <NavBarSubMenu title="Navigation">
         <NavBarLink
