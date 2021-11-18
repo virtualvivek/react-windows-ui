@@ -24,3 +24,14 @@
     }
   }
 }
+
+._404-button-back {
+  height: auto;
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  padding: 10px 20px;
+
+  &:hover { background: #EEEEEE44; }
+  &:active { background: #EEEEEE77; }
+}

@@ -10,3 +10,11 @@
   text-overflow: ellipsis;
   user-select: none;
 }
+
+@mixin nav-appname-mobile() {
+  .app-nav-wrap {
+    .app-name {
+      padding: 10px 15px;
+    }
+  }
+}

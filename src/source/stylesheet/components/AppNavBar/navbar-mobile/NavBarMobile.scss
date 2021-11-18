@@ -30,7 +30,7 @@
     }
   }
   
-  @include nav-header-mobile();
+  @include nav-appname-mobile();
   @include nav-ul-li-mobile();
   @include nav-ul-hr-mobile();
   @include nav-submenu-mobile();

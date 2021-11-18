@@ -5,8 +5,10 @@ import { NavPageContainer } from '../../lib/src'
 const _404Layout = () => {
   return (
     <NavPageContainer>
-    <div className="app-container-screen primary">
-        <Link to="../" className="app-back fixed light"/>
+      <div className="app-container-screen primary">
+        <Link to="../" className="_404-button-back">
+          <i className="icons10-arrow-left color-white"></i>
+        </Link>
       
         <div className="_404-container">
             <div className="_404-sad-face">
@@ -23,7 +25,7 @@ const _404Layout = () => {
             </div>
             </div>  
         </div>
-    </div>
+      </div>
     </NavPageContainer>
   )
 }

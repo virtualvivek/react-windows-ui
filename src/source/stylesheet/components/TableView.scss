@@ -8,6 +8,7 @@
     @extend .transition-background-400ms;
     cursor: pointer;
     user-select: none;
+
     &:hover {
       background-color: var(--color_light_grey_alpha);
     }

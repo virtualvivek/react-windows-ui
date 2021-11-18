@@ -1,6 +1,7 @@
 .app-nav-submenu {
   .app-nav-submenu-title {
     @extend .transition-background-400ms;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
