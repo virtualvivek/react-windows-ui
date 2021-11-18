@@ -12,6 +12,7 @@
     border: 2px solid transparent;
 
     &:hover { border: 2px solid var(--color_text_dark); }
+    &:active { filter: brightness(0.6); }
 
     &::before {
       content: '✔';
