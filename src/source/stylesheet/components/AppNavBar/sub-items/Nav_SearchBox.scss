@@ -27,9 +27,10 @@
       padding-left: 45px;
     }
     i {
-      font-size: 21px;
+      font-size: 18px;
       margin-right: -35px;
       z-index: 1;
+      line-height: normal;
     }
     .icons10-cross {
       margin: 0;
@@ -67,17 +68,18 @@
     .app-search-box { display: none; }
     
     .app-search-dialog {
-      padding: 2px 0 0 20px;
+      padding: 0 0 0 20px;
+      z-index: 9;
 
       .app-input-search {
         width: 70%;
       }
     }
     .app-search-dialog-trigger {
-      display: inline;
-      font-size: 22px;
+      display: inline-flex;
+      align-items: center;
+      font-size: 18px;
       padding: 0 10px 0 15px;
-      vertical-align: sub;
     }
   }
 }
