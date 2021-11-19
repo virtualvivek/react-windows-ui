@@ -3,10 +3,16 @@ label.app-checkbox {
   @extend .tap-highlight-none;
   @extend .cursor-pointer;
 
+  &:active input[type="checkbox"] {
+    transform: scale(0.8, 0.8);
+    transition: 0.02s ease;
+  }
+
   input[type="checkbox"] {
     cursor: pointer;
     position: relative;
     -moz-appearance: none;
+    transition: 0.4s ease;
 
     &::before {
       @extend .transition-background-400ms;
