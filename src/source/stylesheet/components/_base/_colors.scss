@@ -15,24 +15,6 @@
   --color_primary_dark: var(--PrimaryColor);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color_primary_alpha: #5555559C;
-    --color_scheme: dark;
-    --color_bg_light: #111111;
-    --color_text_dark: #FFFFFF;
-    --color_nav: #403E41;
-    --color_light_grey: #444444;
-    --color_light_grey_alpha: #444444D1;
-    --color_link_bg_hover: #555555;
-    --color_link_bg_active: #222222;
-    --color_button: #555555;
-    --color_button_hover: #999999;
-    --color_primary_light: #FFFFFF;
-    --color_primary_dark: #403E41;
-  }
-}
-
 .color-danger {
   color: #C50500;
 }

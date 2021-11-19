@@ -148,7 +148,7 @@ render() {
     </SyntaxHighlighter>
 
     <div className="app-hr"></div>
-    <h2>LoaderBusy <p className="app-code">Fullscreen Custom Background Color</p> :</h2>
+    <h2>LoaderBusy <p className="app-code">Fullscreen</p>&nbsp;<p className="app-code">Custom Background Color</p> :</h2>
 
     <LoaderBusy
       isLoading={this.state.showLoaderBusyFullCustom}

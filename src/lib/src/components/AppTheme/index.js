@@ -4,29 +4,37 @@ import ThemeManager from '../utils/ThemeManager'
 
 const AppTheme = React.memo(
   (props) => {
+    const {onMount, scheme} = props;
+
     useEffect(() => {
-      if(props.scheme === 'system') {
+      onMount();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[]);
+
+    useEffect(() => {
+      if(scheme === 'system') {
         if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
           Appearance.setDarkScheme();
         }
       }
-    });
+    },[scheme]);
 
-    if(props.scheme === "system") {
+
+    if(scheme === "system") {
       window.matchMedia("(prefers-color-scheme: dark)")
         .addEventListener("change", e => {
-      const newColorScheme = e.matches ? "dark" : "light";
+        const newColorScheme = e.matches ? "dark" : "light";
 
-      if(newColorScheme === "dark") {
-        Appearance.setDarkScheme();
-      }
-      else {
-        Appearance.setLightScheme();
-      }
-    })
-  }
+        if(newColorScheme === "dark") {
+          Appearance.setDarkScheme();
+        }
+        else {
+          Appearance.setLightScheme();
+        }
+      })
+    }
 
-    return "";
+    return <>{/* ... */}</>;
   }, (prevProps, nextProps) => {
 
     let navSwitch = document.getElementById("app-day-night-switch");
@@ -61,6 +69,7 @@ const AppTheme = React.memo(
 AppTheme.defaultProps = {
   onSchemeChange: () => {},
   onColorChange: () => {},
+  onMount: () => {},
   scheme: 'system'
 }
 

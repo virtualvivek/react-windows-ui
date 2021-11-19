@@ -1,0 +1,9 @@
+.app-splash-screen {
+  @extend .app-overlay;
+
+  background-color: var(--PrimaryColor);
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from '../../../lib/src'
+import {Link} from '../../../../lib/src'
 
 const PropsView = () => {
   return (
@@ -18,13 +18,20 @@ const PropsView = () => {
           <td><p className="app-code">hasPadding</p></td>
           <td>boolean</td>
           <td>true</td>
-          <td>Set's NavPageContainer default padding</td>
+          <td>Set's NavPageContainer default horizontal padding,
+            <br/>set to false if you want to render component with 100% view width.
+            <br/>If <span class="app-code">false</span> use <b>{`<NavPageContainerInner />`}</b> to render child component with padding
+          </td>
         </tr>
         <tr>
           <td><p className="app-code">animateTransition</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Set's NavPageContainer animate on visible<br/>when setting <b>{`<TransitionToLeft />`} <br/><Link to="/AppJsDefault">View implementation<br/>of {`<TransitionToLeft />`}</Link></b></td>
+          <td>Set's NavPageContainer animate on visible
+            <br/>when setting <b>{`<TransitionToLeft />`} 
+            <br/><Link to="/AppJsDefault">View implementation
+            <br/>of {`<TransitionToLeft />`}</Link></b>
+          </td>
         </tr>
       </tbody>
     </table>

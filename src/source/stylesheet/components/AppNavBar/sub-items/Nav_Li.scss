@@ -55,8 +55,9 @@
     img {
       width: 20px;
       height: 20px;
-      border-radius: 4px;
       margin: 2px;
+      border-radius: 4px;
+      background-color: var(--color_link_bg_hover);
     }
   }
 }

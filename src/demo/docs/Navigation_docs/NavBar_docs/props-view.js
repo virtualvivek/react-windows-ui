@@ -20,12 +20,6 @@ const PropsView = () => {
           <td>Set's NavBar title</td>
         </tr>
         <tr>
-          <td><p className="app-code">titleShort</p></td>
-          <td>ReactNode | SVG | FontIcon</td>
-          <td>null</td>
-          <td>Set's NavBar title on collapsed</td>
-        </tr>
-        <tr>
           <td><p className="app-code">shadowOnScroll</p></td>
           <td>boolean</td>
           <td>true</td>
@@ -36,12 +30,6 @@ const PropsView = () => {
           <td>boolean</td>
           <td>false</td>
           <td>Set's NavBar show icons instead of text on small device</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">showThemeSwitch</p></td>
-          <td>boolean</td>
-          <td>true</td>
-          <td>Toggle NavBar's Theme Switch visiblity</td>
         </tr>
         <tr>
           <td><p className="app-code">children</p></td>

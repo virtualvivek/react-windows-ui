@@ -7,7 +7,7 @@ const NavBarLinkImportCode =
 const NavBarUsageCode =
 `<NavBar 
   title="NavBar"
-  titleShort={<i className="icons10-windows"></i>}
+//mobileHasIcons={true}
   shadowOnScroll={true}>
   .....
   <NavBarLink
@@ -49,10 +49,10 @@ const NavBarLinkBadgeUsageCode =
 
 
 export {
-    NavBarImportCode,
-    NavBarUsageCode,
-    NavBarLinkUsageCode,
-    NavBarLinkImportCode,
-    NavBarLinkImgUsageCode,
-    NavBarLinkBadgeUsageCode
+  NavBarImportCode,
+  NavBarUsageCode,
+  NavBarLinkUsageCode,
+  NavBarLinkImportCode,
+  NavBarLinkImgUsageCode,
+  NavBarLinkBadgeUsageCode
 }

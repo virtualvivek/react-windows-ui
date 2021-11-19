@@ -1,6 +1,6 @@
 import React from 'react'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
-import { NavBar, NavBarLink,NavBarSubMenu, NavSearchBox,
+import { AppTheme, SplashScreen, NavBar, NavBarLink,NavBarSubMenu, NavSearchBox,
          TransitionToLeft } from '../lib/src'
 
 import Home from './pages/Home'
@@ -10,9 +10,9 @@ import Texts from './pages/Texts'
 import Tables from './pages/Tables'
 import Icons from './pages/Icons'
 
-import NavBarDocs from './docs/NavBar_docs'
-import NavBarSubMenuDocs from './docs/NavBarSubMenu_docs'
-import NavPageContainerDocs from './docs/NavPageContainer_docs'
+import NavBarDocs from './docs/Navigation_docs/NavBar_docs'
+import NavBarSubMenuDocs from './docs/Navigation_docs/NavBarSubMenu_docs'
+import NavPageContainerDocs from './docs/Navigation_docs/NavPageContainer_docs'
 
 import AccordionDocs from './docs/Accordion_docs'
 import AlertDocs from './docs/Alert_docs'
@@ -60,6 +60,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      showSplash: true,
       data: NavBarItem,
       filteredData: NavBarItem
     }
@@ -83,14 +84,21 @@ class App extends React.Component {
   return (
     <>
     <Router basename={'/'}> {/* basename={process.env.PUBLIC_URL} */}
+
+      <SplashScreen
+        isVisible={this.state.showSplash}
+        title={"react-windows-ui"}
+      />
+
+      <AppTheme
+        scheme="system"
+        onMount={()=> this.setState({ showSplash: false})}
+      />
       
       <TransitionToLeft />
 
       <NavBar
-        showThemeSwitch={false}
         title="React Windows UI"
-        titleShort={<i className="icons10-windows"></i>}
-      //titleShort="R" render text or icons
        //mobileHasIcons={true}
         shadowOnScroll={true}>
 
@@ -102,7 +110,7 @@ class App extends React.Component {
         /> */}
 
       <NavSearchBox
-        placeholder="Search Docs pre v4.x"
+        placeholder="Search Docs pre v4.x.x"
         onChange={this.handleInputSearch}/>
       <NavBarLink
         exact={true}

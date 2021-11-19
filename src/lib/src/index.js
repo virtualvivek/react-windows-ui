@@ -38,6 +38,7 @@ import ProgressBar from './components/ProgressBar'
 import ProgressBarIndeterminate from './components/ProgressBarIndeterminate'
 import RadioButton from './components/RadioButton'
 import SliderBar from './components/SliderBar'
+import SplashScreen from './components/SplashScreen'
 import Select from './components/Select'
 import SelectBox from './components/SelectBox'
 import StickyHeader from './components/StickyHeader'
@@ -89,6 +90,7 @@ export {
     ProgressBarIndeterminate,
     RadioButton,
     SliderBar,
+    SplashScreen,
     Select,
     SelectBox,
     StickyHeader,

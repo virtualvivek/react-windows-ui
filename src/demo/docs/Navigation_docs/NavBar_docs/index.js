@@ -1,13 +1,13 @@
 import React from 'react'
-import { NavPageContainer, LinkCompound } from '../../../lib/src'
+import { NavPageContainer, LinkCompound } from '../../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { NavBarImportCode,NavBarUsageCode,NavBarLinkImportCode,
   NavBarLinkUsageCode,NavBarLinkImgUsageCode,NavBarLinkBadgeUsageCode } from './codes'
 import PropsView from './props-view'
 import PropsViewNavItem from './props-view-navitem'
-import Img1 from '../../assets/illustration/macos.jpg'
-import Img2 from '../../assets/illustration/2.jpg'
+import Img1 from '../../../assets/illustration/macos.jpg'
+import Img2 from '../../../assets/illustration/2.jpg'
 import './css/navbar-custom.css'
 
 class NavBarDocs extends React.Component {
@@ -23,18 +23,9 @@ render() {
 
     <div className="app-nav-wrap">
     <nav className="animate custom" style={{position:'relative'}}>
-      <div style={{position:'absolute'}}>
-        <span className="app-name">NavBar</span>
-        <span className="app-name-short">
-          <i className="icons10-windows"></i>
-        </span>
-      </div>
-      <div style={{position:'absolute'}}>
-        <a className="app-nav-toggle" href="#/navbar"><span style={{display:'none'}}></span></a>
-        <label className="app-switch">
-          <input type="checkbox" id="app-day-night-switch"/>
-          <div dataoff="Day" dataon="Night"></div>
-        </label>
+      <div class="app-nav-header" style={{position:'absolute'}}>
+        <span class="app-nav-toggle"></span>
+        <span class="app-name">React Windows UI</span>
       </div>
       <ul style={{padding:0}}>
         <li>
