@@ -1,0 +1,3 @@
+[submodule "js"]
+	path = js
+	url = https://github.com/virtualvivek/react-windows-ui-boilerplate.git
