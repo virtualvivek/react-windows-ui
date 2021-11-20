@@ -22,6 +22,7 @@ import AvatarViewDocs from './docs/AvatarView_docs'
 import ButtonsDocs from './docs/Buttons_docs'
 import CardDocs from './docs/Card_docs'
 import CheckboxDocs from './docs/Checkbox_docs'
+import CommandBarDocs from './docs/CommandBar_docs'
 import DialogDocs from './docs/Dialog_docs'
 import GaugeDocs from './docs/Gauge_docs'
 import ImageViewDocs from './docs/ImageView_docs'
@@ -197,6 +198,7 @@ class App extends React.Component {
         <Route path='/buttons' component={ButtonsDocs} />
         <Route path='/cards' component={CardDocs} />
         <Route path='/checkbox' component={CheckboxDocs} />
+        <Route path='/commandbar' component={CommandBarDocs} />
         <Route path='/dialogs' component={DialogDocs} />
         <Route path='/gauges' component={GaugeDocs} />
         <Route path='/imageview' component={ImageViewDocs} />

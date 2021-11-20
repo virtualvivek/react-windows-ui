@@ -3,27 +3,15 @@ import React from 'react'
 const CommandBar = (props) => {
   return (
     <div
-      className={ props.position ? "app-command-bar" : "app-command-bar fixed" }
-      style={
-        props.showDropShadow ?
-        {
-          backgroundColor: 'var(--color_light_grey_alpha)',
-          backdropFilter: 'blur(24px)',
-          position: props.position,
-          top: props.top,
-          margin: props.margin,
-          zIndex: props.zIndex
-        }
-        : 
-        {
-          backgroundColor:'',
-          position: props.position,
-          top: props.top,
-          margin: props.margin,
-          zIndex: props.zIndex
-        }
-      }>
-        <div className="app-command-items">
+      className="app-command-bar"
+      style={{backgroundColor: props.backgroundColor,
+              ...props.style}}>
+        <div className={ props.buttonStyle === "row"
+        ? "app-command-items row"
+        : "app-command-items" }
+        style={{
+          height: props.height
+        }}>
           {props.children}
         </div>
     </div>
@@ -31,7 +19,7 @@ const CommandBar = (props) => {
 }
 
 CommandBar.defaultProps = {
-  zIndex: 4
+  height: 45
 }
 
 export default CommandBar

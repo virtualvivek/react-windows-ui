@@ -130,6 +130,27 @@
   transform: scale(0.968, 0.968);
 }
 
+@keyframes transition_dropdown {
+  0% {
+    transform: translate3d(0px, -10px, 0px);
+    pointer-events: none;
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    pointer-events: auto;
+    opacity: 1;
+  }
+}
+.transition_dropdown_show {
+  visibility: visible;
+  animation-name: transition_dropdown;
+  animation-duration: 0.367s;
+  animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+  animation-fill-mode: both;
+}
+
+
 .user-select-none {
   user-select: none;
 }
@@ -179,7 +200,7 @@
   position: absolute;
   background: var(--color_light_grey_alpha);
   backdrop-filter: blur(30px);
-  box-shadow: 0 2px 5px var(--color_light_grey_alpha);
+  box-shadow: 0 2px 2px var(--color_light_grey_alpha);
   z-index: 999;
   visibility: hidden;
   overflow-y: auto;
@@ -187,7 +208,7 @@
   cursor: auto;
 
   &.show {
-    visibility: visible;
+    @extend .transition_dropdown_show;
   }
   li {
     a {

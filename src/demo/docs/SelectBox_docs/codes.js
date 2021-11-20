@@ -5,7 +5,7 @@ const SelectBoxImportCode =
 `import { SelectBox } from 'react-windows-ui'`;
 
 const SelectUsageCode =
-`<SelectBox
+`<Select
   defaultValue="blue" //Optional
   onChange={(value)=> alert(value)}
   data={[

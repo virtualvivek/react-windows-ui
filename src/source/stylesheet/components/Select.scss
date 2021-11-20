@@ -18,21 +18,14 @@
     overflow-y: auto;
     background: var(--color_nav);
     position: absolute;
-    margin-top: -30px;
-    box-shadow: 0 2px 12px var(--color_link_bg_active);
-    transition-duration: 0.1s;
+    margin-top: 5px;
+    box-shadow: 0 2px 4px var(--color_link_bg_hover);
     transition-property: visibility;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-5px) scaleY(0.85);
     
     &.open {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0) scale(1);
-      transition-duration: 0.2s;
-      transition-timing-function: ease-in-out;
-      transition-property: transform,opacity,visibility;
+      @extend .transition_dropdown_show;
     }
     .select-item {
       padding: 10px;
