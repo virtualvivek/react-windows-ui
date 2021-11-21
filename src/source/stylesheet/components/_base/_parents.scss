@@ -89,11 +89,35 @@
   color: var(--color_bg_light);
 }
 
+
+.display-none {
+  display: none;
+}
 .display-block {
   display: block;
 }
-.display-none {
-  display: none;
+.app-align-center {
+  align-items: center;
+}
+.app-flex {
+  display: flex;
+}
+.app-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-grid {
+  display: grid;
+}
+.app-inline {
+  display: inline;
+}
+.app-inline-flex {
+  display: inline-flex;
+}
+.app-fit-content {
+  width: fit-content !important;
 }
 
 .vertical-align-middle {
@@ -198,9 +222,9 @@
   padding: 0;
   margin: 4px 0 0 0;
   position: absolute;
-  background: var(--color_light_grey_alpha);
+  background: var(--color_nav);
   backdrop-filter: blur(30px);
-  box-shadow: 0 2px 2px var(--color_light_grey_alpha);
+  box-shadow: 0 2px 4px #55555555;
   z-index: 999;
   visibility: hidden;
   overflow-y: auto;

@@ -26,9 +26,15 @@ const PropsView = () => {
           <td>Set's MenuBar Search placeholder</td>
         </tr>
         <tr>
+          <td><p className="app-code">showSearchBar</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Toggle's MenuBar Search Input visibility</td>
+        </tr>
+        <tr>
           <td><p className="app-code">data</p></td>
           <td>object</td>
-          <td>null</td>
+          <td>[ ]</td>
           <td>Set's MenuBar menu items</td>
         </tr>
         <tr>

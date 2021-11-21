@@ -1,62 +1,7 @@
 .app-command-bar {
   @extend .transition-background-400ms;
+  @extend .app-inline-flex;
 
   width: max-content;
   height: auto;
-  text-align: center;
-  display: inline-flex;
-
-  .app-command-items.row {
-    .app-button {
-      display: inline-grid;
-      align-content: center;
-
-      i {
-        font-size: 30px;
-      }
-      span {
-        font-size: 12px;
-        padding: 0 !important;
-      }
-    }
-  }
-
-  .app-button {
-    height: 100%;
-    padding: 5px;
-    
-    &:not(:hover) {
-      background: transparent;
-    }
-    &:hover {
-      border-color: transparent;
-      background: var(--color_light_grey_alpha);
-      filter: unset;
-    }
-    &:active {
-      transform: unset;
-      filter: contrast(0.7);
-    }
-    i {
-      font-size: 22px;
-      margin-right: 5px;
-    }
-    span {
-      font-size: 16px;
-      line-height: 0;
-      padding: 0 !important;
-    }
-  }
-}
-
-
-@mixin command-bar-mobile() {
-  .app-command-bar {
-    .app-button:not(:active) {
-      &:hover {
-        background-color: transparent;
-        filter: unset;
-      }
-    }
-  }
 }

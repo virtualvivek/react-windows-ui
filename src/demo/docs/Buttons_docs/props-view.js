@@ -58,7 +58,7 @@ const PropsView = () => {
         <tr>
           <td><p className="app-code">onPress</p></td>
           <td>function</td>
-          <td>undefined</td>
+          <td>null</td>
           <td>Button's onPress event listener</td>
         </tr>
       </tbody>

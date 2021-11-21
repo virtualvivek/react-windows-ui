@@ -14,52 +14,64 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">setProgress</p></td>
-          <td>integer</td>
-          <td>0</td>
-          <td>Set's Gauge </td>
-        </tr>
-        <tr>
-          <td><p className="app-code">scale</p></td>
-          <td>float</td>
-          <td>1</td>
-          <td>Set's Gauge scale size</td>
-        </tr>
-        <tr>
           <td><p className="app-code">value</p></td>
-          <td>integer | string</td>
+          <td>string</td>
+          <td>"Value"</td>
+          <td>Set's CmdBarButton text</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">icon</p></td>
+          <td>ReactNode | SVG | FontIcon</td>
           <td>null</td>
-          <td>Set's Gauge inner value text</td>
+          <td>Set's CmdBarButton text icon</td>
         </tr>
         <tr>
-          <td><p className="app-code">info</p></td>
-          <td>integer | string</td>
+          <td><p className="app-code">onClick</p></td>
+          <td>function</td>
           <td>null</td>
-          <td>Set's Gauge inner info text</td>
+          <td>Set's CmdBarButton onClick listener</td>
         </tr>
         <tr>
-          <td><p className="app-code">strokeColor</p></td>
-          <td>CSS Color</td>
-          <td>'color-primary'</td>
-          <td>Set's Gauge progress ring color</td>
+          <td><p className="app-code">valueDisabled</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's CmdBarButton value disabled prop</td>
         </tr>
         <tr>
-          <td><p className="app-code">valueColor</p></td>
-          <td>CSS Color</td>
-          <td>'color-text-dark'</td>
-          <td>Set's Gauge inner value color</td>
+          <td><p className="app-code">dataDisabled</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's CmdBarButton data disabled prop</td>
         </tr>
         <tr>
-          <td><p className="app-code">backgroundColor</p></td>
-          <td>CSS Color</td>
-          <td>'color-light-grey'</td>
-          <td>Set's Gauge background-ring/backround color</td>
+          <td><p className="app-code">data</p></td>
+          <td>object</td>
+          <td>[ ]</td>
+          <td>Set's CmdBarButton dropdown data</td>
         </tr>
         <tr>
-          <td><p className="app-code">type</p></td>
-          <td>'default' | 'fill'</td>
-          <td>'default'</td>
-          <td>Set's Gauge background type</td>
+          <td><p className="app-code">data {'▶'} label</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Set's CmdBarButton data item label</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">data {'▶'} icon</p></td>
+          <td>ReactNode</td>
+          <td>null</td>
+          <td>Set's CmdBarButton data item icon</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">data {'▶'} onClick</p></td>
+          <td>function</td>
+          <td>null</td>
+          <td>Set's CmdBarButton data item onClick listner</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">data {'▶'} link</p></td>
+          <td>link href string</td>
+          <td>'#'</td>
+          <td>Set's CmdBarButton data item link</td>
         </tr>
       </tbody>
     </table>

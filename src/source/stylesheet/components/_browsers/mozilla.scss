@@ -21,11 +21,6 @@
       background-color: var(--color_light_grey) !important;
     }
   }
-  .app-custom-dropdown-ul,
-  .app-search-suggestion ul,
-  .app-select-styled.menubar ul {
-    background-color: var(--color_light_grey);
-  }
 }
 @mixin browser-mozilla-mobile() {
   .app-nav-wrap nav {

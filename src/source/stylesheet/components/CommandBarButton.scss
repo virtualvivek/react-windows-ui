@@ -1,0 +1,60 @@
+.app-select-styled.commandbar {
+  @extend .user-select-none;
+
+  width: min-content;
+  height: min-content;
+  position: relative;
+  border: none;
+  transition: unset;
+
+  .commandbar-button {
+    width: max-content;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: none;
+    background: none;
+    color: var(--color_text_dark);
+
+    &:hover {
+      background: var(--color_light_grey_alpha);
+    }
+    &:active {
+      background: var(--color_button);
+    }
+
+    i:not(.custom) {
+      padding-right: 10px;
+      transform: scale(1.28);
+      transform-origin: left center;
+    }
+
+    &[disabled] {
+      filter: contrast(0);
+      pointer-events: none;
+    }
+  }
+  
+  ul {
+    @extend .app-custom-dropdown-ul;
+    max-height: 280px;
+    
+    li a {
+      padding-right: 15px;
+    }
+
+    &.show.right {
+      right: 0;
+    }
+  }
+
+  hr {
+    width: 1px;
+    height: inherit;
+    border: none;
+    background: var(--color_link_bg_active);
+  }
+
+  &::after {
+    all:unset
+  }
+}

@@ -52,6 +52,7 @@ render() {
 
     <MenuBar
       label="Select a fruit"
+      showSearchBar={true}
       data={[
         {label: 'apple', icon:<i className="icons10-camera"></i>},
         {label: 'orange', onClick:this.sayhellow},
