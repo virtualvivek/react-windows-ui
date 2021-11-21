@@ -86,14 +86,6 @@ const GettingStarted = () => {
           focused={true} />
 
         <LinkCompound
-          to="/CommandBarLayout"
-          title="Command Bar"
-          subtitle="Command UI Pallete"
-          icon={<i className="icons10-window"></i>}
-          focused={true}
-          style={{margin:'5px 5px 0 0',width:240}} />
-
-        <LinkCompound
           to="/ContactsLayout"
           title="Contact Book"
           subtitle="ListView of users"

@@ -43,7 +43,6 @@ import ViewDocs from './docs/View_docs'
 import _404Layout from './layouts/404Layout'
 import AboutLayout from './layouts/AboutLayout'
 import BlogLayout from './layouts/BlogLayout'
-import CommanBarLayout from './layouts/CommandBarLayout'
 import ContactsLayout from './layouts/ContactsLayout'
 import LoginLayout from './layouts/LoginLayout'
 
@@ -222,7 +221,6 @@ class App extends React.Component {
         
         <Route path='/AboutLayout' component={AboutLayout} />
         <Route path='/BlogLayout' component={BlogLayout} />
-        <Route path='/CommandBarLayout' component={CommanBarLayout} />
         <Route path='/contactslayout' component={ContactsLayout} />
         <Route path='/404layout' component={_404Layout} />
         <Route path='/LoginLayout' component={LoginLayout} />
