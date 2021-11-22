@@ -64,7 +64,8 @@ const Button = (props) => {
 Button.defaultProps = {
   value: "Submit",
   isLoading : false,
-  disabled: false
+  disabled: false,
+  onClick: () => {},
 }
 
 export default Button

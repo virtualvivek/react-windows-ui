@@ -74,6 +74,12 @@ const PropsView = () => {
           <td>Set's Link container css styles</td>
         </tr>
         <tr>
+          <td><p className="app-code">onClick</p></td>
+          <td>function</td>
+          <td>null</td>
+          <td>Set's Link on click listener</td>
+        </tr>
+        <tr>
           <td><p className="app-code">target</p></td>
           <td>'_blank | _self | _parent | _top'</td>
           <td>'_self'</td>

@@ -5,7 +5,10 @@
   width: 280px;
   height: 30px;
   padding: 0;
-  display: inline-block;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
   user-select: none;
 
   select {
@@ -34,7 +37,7 @@
     @extend .font-icon-dark;
     content: "\f10c";
     font-size: 18px;
-    margin-left: -25px;
-    position: relative;
+    position: absolute;
+    right: 10px;
   }
 }

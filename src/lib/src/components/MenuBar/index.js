@@ -1,16 +1,22 @@
 import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import useOutSideClick from '../utils/hooks/useOutSideClick'
+import getScreenOffset from '../utils/getScreenOffset'
 
 const MenuBar = (props) => {
 
-  const [menubar, setMenubar] = useState(false)
-  const showMenuBar = () => setMenubar(!menubar)
+  const [menubar, setMenubar] = useState(false);
+  const [isReverse, setReverse] = useState('');
 
   // # Click Outside Register Code
-  const wrapperRef = useRef(null)
+  const wrapperRef = useRef(null);
   useOutSideClick(wrapperRef, () => setMenubar(false));
   //--------------------------------------------------------------------
+
+  const toggleMenuBar = () => {
+    setMenubar(!menubar);
+    getScreenOffset(wrapperRef) ? setReverse('reverse') :  setReverse('');
+  }
 
 
   const teams_data = props.data
@@ -21,10 +27,10 @@ const MenuBar = (props) => {
   return (
     <div
       className="app-select-styled menubar"
-      onClick={showMenuBar}
+      onClick={toggleMenuBar}
       ref={wrapperRef}>
       <span>{props.label}</span>
-      <ul className={ menubar ? 'show' : ''}>
+      <ul className={ menubar ? `show ${isReverse}` : ''}>
         {props.showSearchBar && (
         <div className="app-search-box"
           onClick={(e)=> {e.stopPropagation()}}>

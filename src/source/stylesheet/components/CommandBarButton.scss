@@ -1,11 +1,11 @@
-.app-select-styled.commandbar {
+.app-commandbar-btn {
   @extend .user-select-none;
 
   width: min-content;
   height: min-content;
   position: relative;
-  border: none;
-  transition: unset;
+  display: inline-flex;
+  flex-direction: column;
 
   .commandbar-button {
     width: max-content;

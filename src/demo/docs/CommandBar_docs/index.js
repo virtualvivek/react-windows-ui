@@ -50,7 +50,7 @@ render() {
     </CommandBar>
 
     <p><span className="color-primary">CommandBar</span> is a surface that houses commands that operate on the content of the window.<br/>
-    It binds <span className="color-primary">CommandBarButton</span> to form layout of options including dropdown and buttons.</p>
+    It binds <span className="color-primary">CommandBarButton</span> to form layout of options including dropdowns and buttons.</p>
 
     <p>However you can use <span className="color-primary">CommandBarButton</span> independently anywhere in the app you want.</p>
 

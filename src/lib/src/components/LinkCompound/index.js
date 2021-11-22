@@ -12,6 +12,7 @@ const LinkCompound = (props) => {
   return (
     <Link
       to={props.to}
+      onClick={props.onClick}
       className={
           props.type === 'border' ? "app-link-compound primary"+setFocused()
         : "app-link-compound"+setFocused()
@@ -33,7 +34,8 @@ const LinkCompound = (props) => {
 
 LinkCompound.defaultProps = {
   to: "#",
-  imgAlt: 'image'
+  imgAlt: 'image',
+  onClick: () => {},
 }
 
 export default LinkCompound

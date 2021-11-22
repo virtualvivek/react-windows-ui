@@ -154,9 +154,23 @@
   transform: scale(0.968, 0.968);
 }
 
+
+
 @keyframes transition_dropdown {
   0% {
     transform: translate3d(0px, -10px, 0px);
+    pointer-events: none;
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    pointer-events: auto;
+    opacity: 1;
+  }
+}
+@keyframes transition_dropdown_reverse {
+  0% {
+    transform: translate3d(0px, 10px, 0px);
     pointer-events: none;
     opacity: 0;
   }
@@ -172,6 +186,9 @@
   animation-duration: 0.367s;
   animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
   animation-fill-mode: both;
+}
+.transition_dropdown_show_reverse {
+  animation-name: transition_dropdown_reverse;
 }
 
 
@@ -220,8 +237,9 @@
   list-style: none;
   width: inherit;
   padding: 0;
-  margin: 4px 0 0 0;
+  margin: 5px 0 5px 0;
   position: absolute;
+  top: 100%;
   background: var(--color_nav);
   backdrop-filter: blur(30px);
   box-shadow: 0 2px 4px #55555555;
@@ -233,6 +251,11 @@
 
   &.show {
     @extend .transition_dropdown_show;
+    &.reverse {
+      @extend .transition_dropdown_show_reverse;
+      top: unset;
+      bottom: 100%;
+    }
   }
   li {
     a {

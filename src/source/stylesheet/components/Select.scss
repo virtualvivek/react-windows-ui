@@ -18,17 +18,24 @@
     overflow-y: auto;
     background: var(--color_nav);
     position: absolute;
-    margin-top: 5px;
+    top: 100%;
+    margin: 5px 0 5px 0;
     box-shadow: 0 2px 4px #55555555;
     transition-property: visibility;
     opacity: 0;
     visibility: hidden;
     
-    &.open {
+    &.show {
       @extend .transition_dropdown_show;
+
+      &.reverse {
+        @extend .transition_dropdown_show_reverse;
+        top: unset;
+        bottom: 100%;
+      }
     }
     .select-item {
-      padding: 10px;
+      padding: 8px 10px;
       cursor: pointer;
       font-size: 16px;
       font-weight: 600;

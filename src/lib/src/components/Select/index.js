@@ -1,11 +1,13 @@
-import React,{ useState,useEffect,useMemo,useRef } from 'react'
+import React,{ useState,useEffect, useMemo, useRef } from 'react'
 import useOutSideClick from '../utils/hooks/useOutSideClick'
+import getScreenOffset from '../utils/getScreenOffset'
 
 const Select = (props) => {
   const data_default = [];
 
   const [isOpen, setOpen] = useState(false);
   const [ilabel, setILabel] = useState('Select');
+  const [isReverse, setReverse] = useState('');
   const [items, setItem] = useState(data_default);
   const [selectedItem, setSelectedItem] = useState(0);
 
@@ -36,11 +38,14 @@ const Select = (props) => {
 
     setILabel(value);
     setSelectedItem(id);
+    toggleDropdown();
     props.onChange(value);
-    toggleDropdown()
   }
 
-  const toggleDropdown = () => setOpen(!isOpen);
+  const toggleDropdown = () => {
+    setOpen(!isOpen);
+    getScreenOffset(wrapperRef) ? setReverse('reverse') :  setReverse('');
+  }
 
   // Click outside Code using custom hook
   const wrapperRef = useRef(null)
@@ -56,7 +61,7 @@ const Select = (props) => {
         {ilabel}
         <i className="icons10-angle-down"></i>
       </div>
-      <div className={`app-select-body ${isOpen && 'open'}`}>
+      <div className={`app-select-body ${isOpen && 'show'} ${isReverse}`}>
         {items.map((item, index) => (
           <div
             className={`select-item ${index === selectedItem && 'selected'}`}

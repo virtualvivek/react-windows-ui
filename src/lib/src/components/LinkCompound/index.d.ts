@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, MouseEvent } from 'react'
 
 export interface LinkCompoundProps {
   to ?: string;
@@ -10,6 +10,7 @@ export interface LinkCompoundProps {
   subtitle ?: string;
   focused ?: boolean;
   tooltip ?: string;
+  onClick ?: MouseEvent<any>;
 }
 declare const LinkCompound: React.FC<LinkCompoundProps>
 

@@ -2,17 +2,12 @@
   @extend .cursor-pointer;
   @extend .user-select-none;
   
-  &::after {
-    float: right;
-    right: 8px;
-  }
-  span { padding-left: 10px; }
-  
   &::after,
   span {
     height: inherit;
     display: inline-flex;
     align-items: center;
+    padding-left: 10px;
   }
 
   ul {
