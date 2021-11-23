@@ -23,9 +23,9 @@ render() {
 
     <div className="app-nav-wrap">
     <nav className="animate custom" style={{position:'relative'}}>
-      <div class="app-nav-header" style={{position:'absolute'}}>
-        <span class="app-nav-toggle"></span>
-        <span class="app-name">React Windows UI</span>
+      <div className="app-nav-header" style={{position:'absolute'}}>
+        <span className="app-nav-toggle"></span>
+        <span className="app-name">React Windows UI</span>
       </div>
       <ul style={{padding:0}}>
         <li>
