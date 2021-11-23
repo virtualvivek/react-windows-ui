@@ -3,7 +3,7 @@ import React from 'react'
 const Dialog = (props) => {
 
   const isDropShadow = () => {
-    return props.showDropShadow ? 'dropShadow' : '';
+    return props.showDropShadow ? "dropShadow" : "";
   }
 
   return (

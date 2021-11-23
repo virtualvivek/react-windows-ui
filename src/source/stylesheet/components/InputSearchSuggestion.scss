@@ -1,6 +1,8 @@
 .app-search-suggestion {
-  display: inline-block;
   width: 285px;
+  position: relative;
+  display: inline-block;
+  
   ul {
     @extend .app-custom-dropdown-ul;
   }

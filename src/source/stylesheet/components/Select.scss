@@ -10,7 +10,7 @@
     align-items: center;
     cursor: pointer;
 
-    i { font-size: 18px;  }
+    i { font-size: 18px; }
   }
   &::after { display: none; }
   
@@ -37,7 +37,7 @@
       }
     }
     .select-item {
-      padding: 8px 10px;
+      padding: 10px;
       cursor: pointer;
       font-size: 16px;
       font-weight: 600;

@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom'
 
 const InputSearchSuggestion = (props) => {
 
-  const inputRef = React.useRef()
+  const inputRef = React.useRef();
 
   const toggleVisible = (e) => {
     let iswitch = inputRef.current
 
     if(!e.target.value){
-      iswitch.style.visibility="hidden"
+      iswitch.style.visibility="hidden";
     }
     else {
-      iswitch.style.visibility="visible"
+      iswitch.style.visibility="visible";
     }
   }
 
@@ -28,7 +28,7 @@ const InputSearchSuggestion = (props) => {
           type="search"
           placeholder={props.placeholder}
           value={search}
-          onChange={e => {
+          onChange={(e) => {
             toggleVisible(e)
             const test = teams_data.filter(team => {
               return team.label.toLowerCase().includes(e.target.value.toLowerCase());
@@ -39,7 +39,7 @@ const InputSearchSuggestion = (props) => {
         />
       </div>
       <ul ref={inputRef}>
-        {teams.map(item => (
+        {teams.map((item) => (
           <li 
             className="option"
             key={item.label}>

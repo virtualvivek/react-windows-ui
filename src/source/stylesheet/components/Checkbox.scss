@@ -12,19 +12,19 @@ label.app-checkbox {
     cursor: pointer;
     position: relative;
     -moz-appearance: none;
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 
     &::before {
       @extend .transition-background-400ms;
-      content: "";
-      display: flex;
       width: 16px;
       height: 16px;
-      border: 2px solid var(--color_button_hover);
-      background-color: var(--color_bg_light);
-      border-radius: 0;
+      content: "";
+      display: flex;
       margin-top: -3px;
       margin-left: -3px;
+      border-radius: 0;
+      border: 2px solid var(--color_button_hover);
+      background-color: var(--color_bg_light);
     }
     &:checked {
       &::before {

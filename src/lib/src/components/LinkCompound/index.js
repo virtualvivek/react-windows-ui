@@ -3,19 +3,20 @@ import { Link } from 'react-router-dom'
 
 const LinkCompound = (props) => {
 
-  const setFocused = () =>{
-    return props.focused ? ' focused' : '';
+  const setFocused = () => {
+    return props.focused ? "focused" : "";
   }
   const setImg = () =>{
-    return props.img ? <img src={props.img} alt={props.imgAlt}/> : '';
+    return props.img ? <img src={props.img} alt={props.imgAlt}/> : "";
   }
   return (
     <Link
       to={props.to}
       onClick={props.onClick}
       className={
-          props.type === 'border' ? "app-link-compound primary"+setFocused()
-        : "app-link-compound"+setFocused()
+          props.type === "border"
+          ? `app-link-compound primary ${setFocused()}`
+          : `app-link-compound ${setFocused()}`
         }
       style={props.style}
       title={props.tooltip}
@@ -34,7 +35,7 @@ const LinkCompound = (props) => {
 
 LinkCompound.defaultProps = {
   to: "#",
-  imgAlt: 'image',
+  imgAlt: "image",
   onClick: () => {},
 }
 

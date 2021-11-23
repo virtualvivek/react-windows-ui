@@ -6,7 +6,7 @@ export interface CommandBarButtonProps {
   data ?: string[];
   valueDisabled ?: boolean;
   dataDisabled ?: boolean;
-  onClick ?: Function;
+  onClick ?: () => void;
 }
 declare const CommandBarButton: React.FC<CommandBarButtonProps>
 

@@ -60,7 +60,7 @@ ImageView.defaultProps = {
   width: 124,
   height: 124,
   alt : "image",
-  objectFit : 'cover',
+  objectFit : "cover",
   onLoad: () => {},
   onError: () => {}
 }

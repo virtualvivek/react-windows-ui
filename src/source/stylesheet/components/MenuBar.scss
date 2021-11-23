@@ -17,9 +17,8 @@
 
     .app-search-box {
       width: inherit;
-      border-bottom: 1px solid var(--color_grey_light);
-      .app-input-search {
-        border: none;
+      .app-input-search:not(:focus) {
+        border-color: #99999988;
       }
     }
   }

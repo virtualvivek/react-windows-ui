@@ -10,7 +10,7 @@ const LoaderBarUsageCode =
 />`;
 
 const LoaderBusyUsageCode =
-`<LoaderBar
+`<LoaderBusy
   isLoading={true}
 />`;
 

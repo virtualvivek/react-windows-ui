@@ -229,7 +229,6 @@
   position: absolute;
   top: 100%;
   background: var(--color_nav);
-  backdrop-filter: blur(30px);
   box-shadow: 0 2px 4px #55555555;
   z-index: 999;
   visibility: hidden;
@@ -252,7 +251,6 @@
       display: flex;
       align-items: center;
       padding-left: 10px;
-      transition: background 0.2s;
 
       &:hover {
         @extend .background-color-link-bg-hover;

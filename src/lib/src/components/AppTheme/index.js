@@ -12,7 +12,7 @@ const AppTheme = React.memo(
     },[]);
 
     useEffect(() => {
-      if(scheme === 'system') {
+      if(scheme === "system") {
         if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
           Appearance.setDarkScheme();
         }
@@ -22,7 +22,7 @@ const AppTheme = React.memo(
 
     if(scheme === "system") {
       window.matchMedia("(prefers-color-scheme: dark)")
-        .addEventListener("change", e => {
+        .addEventListener("change", (e) => {
         const newColorScheme = e.matches ? "dark" : "light";
 
         if(newColorScheme === "dark") {
@@ -44,12 +44,12 @@ const AppTheme = React.memo(
     }
 
     if(prevProps.scheme !== nextProps.scheme) {
-      if(nextProps.scheme === 'dark') {
+      if(nextProps.scheme === "dark") {
         Appearance.setDarkScheme();
         navSwitch.checked = true;
         nextProps.onSchemeChange();
       }
-      else if(nextProps.scheme === 'light') {
+      else if(nextProps.scheme === "light") {
         Appearance.setLightScheme();
         navSwitch.checked = false;
         nextProps.onSchemeChange();
@@ -58,7 +58,7 @@ const AppTheme = React.memo(
 
     if(prevProps.color !== nextProps.color) {
       if(nextProps.color) {
-        document.documentElement.style.setProperty('--PrimaryColor', nextProps.color);
+        document.documentElement.style.setProperty("--PrimaryColor", nextProps.color);
         ThemeManager.createAlphaPrimaryColor();
         nextProps.onColorChange();
       }
@@ -70,7 +70,7 @@ AppTheme.defaultProps = {
   onSchemeChange: () => {},
   onColorChange: () => {},
   onMount: () => {},
-  scheme: 'system'
+  scheme: "system"
 }
 
 export default AppTheme

@@ -11,7 +11,7 @@ const Checkbox = (props) => {
         name={props.name}
         value={props.value}
       />
-      {' '+props.label}
+      {" "+props.label}
     </label>
   )
 }

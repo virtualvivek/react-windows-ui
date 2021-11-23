@@ -17,6 +17,7 @@ import ButtonIcon from './components/ButtonIcon'
 import Card from './components/Card'
 import Checkbox from './components/Checkbox'
 import CommandBar from './components/CommandBar'
+import CommandBarButton from './components/CommandBarButton'
 import ColorPickerItem from './components/ColorPicker/ColorPickerItem'
 import ColorPickerPalette from './components/ColorPicker/ColorPickerPalette'
 import Dialog from './components/Dialog'
@@ -65,6 +66,7 @@ export {
     Card,
     Checkbox,
     CommandBar,
+    CommandBarButton,
     ColorPickerItem,
     ColorPickerPalette,
     Dialog,

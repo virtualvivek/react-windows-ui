@@ -11,13 +11,13 @@ const Button = (props) => {
           : props.type === "success" ? "app-loader-busy small light animate"
           : "app-loader-busy small animate"
           }
-        style={ props.isLoading ? { display: 'inline' } : { display : 'none' }}>
+        style={ props.isLoading ? { display: "inline" } : { display : "none" }}>
       <LoaderBusyWrapper/>
     </div>
   }
 
   const toggleLoading = () => {
-    return props.isLoading ? 'isLoading' : '';
+    return props.isLoading ? "isLoading" : "";
   }
 
   

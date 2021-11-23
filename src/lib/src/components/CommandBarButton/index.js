@@ -6,7 +6,7 @@ import getScreenOffset from '../utils/getScreenOffset'
 const CommandBarButton = (props) => {
 
   const [menubar, setMenubar] = useState(false);
-  const [isReverse, setReverse] = useState('');
+  const [isReverse, setReverse] = useState("");
 
   // # Click Outside Register Code
   const wrapperRef = useRef(null);
@@ -15,7 +15,7 @@ const CommandBarButton = (props) => {
 
   const toggleMenuBar = () => {
     setMenubar(!menubar);
-    getScreenOffset(wrapperRef) ? setReverse('reverse') :  setReverse('');
+    getScreenOffset(wrapperRef) ? setReverse("reverse") :  setReverse("");
   }
 
   const renderMenuItems = (data) => {
@@ -57,7 +57,7 @@ const CommandBarButton = (props) => {
           {props.icon}{props.value}&nbsp;&nbsp;
           <i className="icons10-angle-down custom"></i>
         </button>
-        <ul className={ menubar ? `show ${isReverse}` : ''}>
+        <ul className={ menubar ? `show ${isReverse}` : ""}>
           {renderMenuItems(props.data)}
         </ul>
       </div>
@@ -80,7 +80,7 @@ const CommandBarButton = (props) => {
           <i className="icons10-angle-down custom"></i>
         </button>
       </div>
-      <ul className={ menubar ? `show ${isReverse} right` : 'right'}>
+      <ul className={ menubar ? `show ${isReverse} right` : "right"}>
         {renderMenuItems(props.data)}
       </ul>
     </div>

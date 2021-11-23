@@ -6,7 +6,7 @@ import getScreenOffset from '../utils/getScreenOffset'
 const MenuBar = (props) => {
 
   const [menubar, setMenubar] = useState(false);
-  const [isReverse, setReverse] = useState('');
+  const [isReverse, setReverse] = useState("");
 
   // # Click Outside Register Code
   const wrapperRef = useRef(null);
@@ -15,7 +15,7 @@ const MenuBar = (props) => {
 
   const toggleMenuBar = () => {
     setMenubar(!menubar);
-    getScreenOffset(wrapperRef) ? setReverse('reverse') :  setReverse('');
+    getScreenOffset(wrapperRef) ? setReverse("reverse") :  setReverse("");
   }
 
 
@@ -30,7 +30,7 @@ const MenuBar = (props) => {
       onClick={toggleMenuBar}
       ref={wrapperRef}>
       <span>{props.label}</span>
-      <ul className={ menubar ? `show ${isReverse}` : ''}>
+      <ul className={ menubar ? `show ${isReverse}` : ""}>
         {props.showSearchBar && (
         <div className="app-search-box"
           onClick={(e)=> {e.stopPropagation()}}>

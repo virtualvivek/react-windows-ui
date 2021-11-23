@@ -4,32 +4,30 @@ import LoaderBusyWrapper from '../_common/LoaderBusyWrapper'
 const LoaderBusy = (props) => {
 
   const toggleLoading = () => {
-    return props.isLoading ? ' animate' : '';
+    return props.isLoading ? " animate" : "";
   }
 
   const setSize = () => {
-    if(props.size === 'medium') return ' medium'
-    else if (props.size === 'small') return ' small'
-    else return ''
+    if(props.size === "medium") return " medium";
+    else if (props.size === "small") return " small";
+    else return "";
   }
 
   const renderLoader = () => {
     return  <div
-              className={
-                props.setTheme === "light" ?
-                "app-loader-busy light" + setSize() + toggleLoading() :
-                "app-loader-busy" + setSize() + toggleLoading()}>
+              className={ props.setTheme === "light"
+                ? "app-loader-busy light" + setSize() + toggleLoading()
+                : "app-loader-busy" + setSize() + toggleLoading()}>
               <LoaderBusyWrapper/>
             </div>
   }
 
   const renderLoaderFullScreen = () => {
-    
   return <>
     <div
       className={
-      props.isLoading ?
-        "app-dim-overlay show"
+      props.isLoading
+      ? "app-dim-overlay show"
       : "app-dim-overlay"
       }
       style={{
@@ -37,14 +35,14 @@ const LoaderBusy = (props) => {
       }}>
     </div>
     <div
-      onClick={props.onBackdropPress}
-      className={props.isLoading ?
-      "app-loader-busy-fullscreen show"
-      : "app-loader-busy-fullscreen"}>
+      onClick={ props.onBackdropPress }
+      className={ props.isLoading
+        ? "app-loader-busy-fullscreen show"
+        : "app-loader-busy-fullscreen"}>
       {renderLoader()}
-      <span className={
-        props.setTheme === "light" ?
-        "title text-light" : "title"
+      <span className={ props.setTheme === "light"
+        ? "title text-light"
+        : "title"
         }>
         {props.title}
       </span>
@@ -55,8 +53,8 @@ const LoaderBusy = (props) => {
 
   return (
     <>
-    { props.display === "fullscreen" ?
-        renderLoaderFullScreen()
+    { props.display === "fullscreen"
+      ? renderLoaderFullScreen()
       : renderLoader()
     }
     </>
@@ -64,7 +62,7 @@ const LoaderBusy = (props) => {
 }
 
 LoaderBusy.defaultProps = {
-  backgroundColor: 'var(--color_grey_light_alpha)',
+  backgroundColor: "var(--color_grey_light_alpha)",
   isLoading: true
 }
 

@@ -6,8 +6,8 @@ const Select = (props) => {
   const data_default = [];
 
   const [isOpen, setOpen] = useState(false);
-  const [ilabel, setILabel] = useState('Select');
-  const [isReverse, setReverse] = useState('');
+  const [ilabel, setILabel] = useState("Select");
+  const [isReverse, setReverse] = useState("");
   const [items, setItem] = useState(data_default);
   const [selectedItem, setSelectedItem] = useState(0);
 
@@ -44,7 +44,7 @@ const Select = (props) => {
 
   const toggleDropdown = () => {
     setOpen(!isOpen);
-    getScreenOffset(wrapperRef) ? setReverse('reverse') :  setReverse('');
+    getScreenOffset(wrapperRef) ? setReverse("reverse") :  setReverse("");
   }
 
   // Click outside Code using custom hook
@@ -54,9 +54,9 @@ const Select = (props) => {
 
   
   return (
-    <div className='app-select-styled react' ref={wrapperRef} >
+    <div className="app-select-styled react" ref={wrapperRef} >
       <div
-        className='app-select-header'
+        className="app-select-header"
         onClick={toggleDropdown}>
         {ilabel}
         <i className="icons10-angle-down"></i>

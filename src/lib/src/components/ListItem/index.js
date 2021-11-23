@@ -7,14 +7,14 @@ const ListItem = (props) => {
       <Link
         to={props.to}
         style={
-          props.borderBottom ? { borderBottom: '' } : { borderBottom: '0px' }
+          props.borderBottom ? { borderBottom: "" } : { borderBottom: "0" }
             }>
           <img
             src={ props.img }
             alt={ props.imgAlt }
             style={ props.img ?
-                  { display:'', borderRadius: props.imgBorderRadius } :
-                  { display : 'none' }
+                  { display: "", borderRadius: props.imgBorderRadius } :
+                  { display : "none" }
                   }>
           </img>
           <div>

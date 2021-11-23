@@ -55,7 +55,8 @@ const InputText = (props) => {
           className="unmask"
           type="button"
           onClick={toggleInput}
-          style={ props.type==="password" ? { display: 'inline-block' }
+          style={ props.type === "password"
+                ? { display: 'inline-block' }
                 : { display : 'none' }
                 }>
         </button>

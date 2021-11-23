@@ -10,7 +10,7 @@ const Alert = (props) => {
     <>
     <div
       className={ props.isVisible ? "app-dim-overlay show" : "app-dim-overlay" }
-      style={props.isVisible ? { visibility:'visible'} : { visibility : 'hidden' }}
+      style={props.isVisible ? { visibility: "visible"} : { visibility : "hidden" }}
       onClick={props.onBackdropPress}>
     </div>
     <div
@@ -33,4 +33,4 @@ Alert.defaultProps = {
   isVisible: false
 }
 
-export default Alert
+export default Alert;
