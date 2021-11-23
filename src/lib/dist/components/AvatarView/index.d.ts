@@ -10,7 +10,7 @@ export interface AvatarViewProps {
   tooltip ?: string;
   alt ?: string;
   src ?: ReactNode;
-  onLoad ?: Function;
+  onLoad ?: () => void;
 }
 declare const AvatarView: React.FC<AvatarViewProps>
 

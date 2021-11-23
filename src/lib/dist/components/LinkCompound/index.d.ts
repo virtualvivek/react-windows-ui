@@ -10,6 +10,7 @@ export interface LinkCompoundProps {
   subtitle ?: string;
   focused ?: boolean;
   tooltip ?: string;
+  onClick ?: () => void;
 }
 declare const LinkCompound: React.FC<LinkCompoundProps>
 

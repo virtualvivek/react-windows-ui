@@ -5,6 +5,7 @@ export interface DialogProps {
   padding ?: number | string;
   showDropShadow ?: boolean;
   children ?: ReactNode;
+  onBackdropPress ?: () => void;
 }
 declare const Dialog: React.FC<DialogProps>
 

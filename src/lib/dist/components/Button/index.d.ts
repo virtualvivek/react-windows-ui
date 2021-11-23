@@ -9,8 +9,8 @@ export interface ButtonProps {
   icon ?: ReactNode;
   textAlign ?: string;
   type ?: "default" | "primary" | "primary-outline" | "success" | "success-outline" | "danger" | "danger-outline";
-  onSubmit ?: Function;
-  onClick ?: Function;
+  onSubmit ?: any;
+  onClick ?: () => void;
   style ?: CSSProperties;
 }
 declare const Button: React.FC<ButtonProps>

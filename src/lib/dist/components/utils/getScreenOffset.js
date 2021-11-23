@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;const getScreenOffset=a=>{let b=window.innerHeight,c=a.current.getBoundingClientRect().top;// return true
+return!!(c>b/2)};var _default=getScreenOffset;exports.default=_default;
