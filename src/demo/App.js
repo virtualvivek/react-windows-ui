@@ -67,6 +67,10 @@ class App extends React.Component {
     }
   }
 
+  componentDidMount(){
+    this.setState({ showSplash: false})
+  }
+
   handleInputSearch = event => {
     const query = event.target.value
     this.setState(prevState => {
@@ -87,13 +91,13 @@ class App extends React.Component {
     <Router basename={'/'}> {/* basename={process.env.PUBLIC_URL} */}
 
       <SplashScreen
+        //duration={1200}
         isVisible={this.state.showSplash}
         title={"react-windows-ui"}
       />
 
       <AppTheme
         scheme="system"
-        onMount={()=> this.setState({ showSplash: false})}
       />
       
       <TransitionToLeft />

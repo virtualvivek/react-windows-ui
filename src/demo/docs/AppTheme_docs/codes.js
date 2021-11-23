@@ -11,7 +11,6 @@ const AppThemeUsageCode =
   scheme={'light'}
   onColorChange={()=> {}}
   onSchemeChange={()=> {}}
-  onMount={()=> {}}
 />`;
 
 const ColorPickerItemUsageCode =

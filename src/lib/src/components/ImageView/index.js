@@ -3,7 +3,7 @@ import LoaderBusyWrapper from '../_common/LoaderBusyWrapper'
 
 const ImageView = (props) => {
 
-  const [didLoad, setLoad] = useState(false)
+  const [didLoad, setLoad] = useState(false);
 
   const renderLoader = () => {
     return  <div className="app-image-view-loader">
@@ -18,7 +18,7 @@ const ImageView = (props) => {
   }
   
   const handleOnLoad = () => {
-    setLoad(true)
+    setLoad(true);
   }
 
   return (

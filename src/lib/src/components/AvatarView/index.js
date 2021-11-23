@@ -3,7 +3,7 @@ import LoaderBusyWrapper from '../_common/LoaderBusyWrapper'
 
 const AvatarView = (props) => {
 
-  const [didLoad, setLoad] = useState(false)
+  const [didLoad, setLoad] = useState(false);
 
   const renderLoader = () => {
     return  <div className="app-avatar-loader">
@@ -17,8 +17,8 @@ const AvatarView = (props) => {
     return <img
       className={
         props.size === "small"
-        ? "app-avatar small drop-shadow"  : props.size === "large"
-        ? "app-avatar large drop-shadow"  : "app-avatar medium drop-shadow"
+        ? "app-avatar small drop-shadow" : props.size === "large"
+        ? "app-avatar large drop-shadow" : "app-avatar medium drop-shadow"
       }
       style={{
         objectFit: props.objectFit,
@@ -31,7 +31,7 @@ const AvatarView = (props) => {
   }
 
   const handleOnLoad = () => {
-    setLoad(true)
+    setLoad(true);
   }
 
   return (
@@ -39,8 +39,8 @@ const AvatarView = (props) => {
       <img
         className={
           props.size === "small"
-          ? "app-avatar small"  : props.size === "large"
-          ? "app-avatar large"  : "app-avatar medium"
+          ? "app-avatar small" : props.size === "large"
+          ? "app-avatar large" : "app-avatar medium"
         }
         src={props.src}
         alt={props.alt}

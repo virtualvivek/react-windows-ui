@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const NavBarLink = (props) => {
 
   const renderBadge = () => {
-    return <div className="app-badge">{props.showBadge}</div>
+    return <div className="app-badge">{props.showBadge}</div>;
   }
 
   const renderImg = () => {
@@ -13,7 +13,7 @@ const NavBarLink = (props) => {
         src={props.img}
         alt={props.imgAlt}
         style={{borderRadius:props.imgBorderRadius}} />
-        : ''
+        : ""
   }
 
   return (

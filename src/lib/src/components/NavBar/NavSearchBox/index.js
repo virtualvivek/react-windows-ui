@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react'
 
 const NavSearchBox = (props) => {
 
-  const [menubar, setMenubar] = useState(false)
-  const showMenuBar = () => setMenubar(!menubar)
+  const [menubar, setMenubar] = useState(false);
+  const showMenuBar = () => setMenubar(!menubar);
 
   //----------------------------------------------------------------
   // Step 1. Out Side click detector code
@@ -23,8 +23,8 @@ const NavSearchBox = (props) => {
     }, [ref]);
   }
   // Step 2. Out Side click Register
-  const wrapperRef = useRef(null)
-  useOutsideAlerter(wrapperRef)
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
   //--------------------------------------------------------------------
 
 
@@ -38,11 +38,13 @@ const NavSearchBox = (props) => {
         onChange={props.onChange}
       />
     </div>
-    <div onClick={showMenuBar} className="app-search-dialog-trigger">
+    <div
+      onClick={showMenuBar}
+      className="app-search-dialog-trigger">
       <i className="icons10-search"></i>
     </div>
     <div
-      className={ menubar ? 'app-search-dialog show' : 'app-search-dialog'}
+      className={ menubar ? "app-search-dialog show" : "app-search-dialog"}
       ref={wrapperRef}>
         <i className="icons10-search"></i>
         <input

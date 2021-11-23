@@ -14,8 +14,8 @@ const SwitchDayNight = () => {
 
   useEffect(() => {
     let iswitch = inputRef.current;
-    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)")
-      .matches) {
+    if (window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches) {
       iswitch.checked = true;
     }
   })

@@ -3,7 +3,7 @@ import React from 'react'
 const NavPageContainerRight = (props) => {
 
   const setPositionFixed = () => {
-    return props.position === 'fixed' ? ' fixed' : '';
+    return props.position === "fixed" ? " fixed" : "";
   }
 
   return (

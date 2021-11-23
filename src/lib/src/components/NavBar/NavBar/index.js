@@ -20,7 +20,7 @@ const NavBar = (props) => {
 
   return (
     <div
-      className={sidebar ? 'app-nav-wrap toggled' : 'app-nav-wrap'}
+      className={sidebar ? "app-nav-wrap toggled" : "app-nav-wrap"}
       ref={props.ref}
       id="app-nav-wrap-id"> 
         <nav

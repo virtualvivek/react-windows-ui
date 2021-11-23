@@ -4,16 +4,12 @@ import ThemeManager from '../utils/ThemeManager'
 
 const AppTheme = React.memo(
   (props) => {
-    const {onMount, scheme} = props;
-
-    useEffect(() => {
-      onMount();
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[]);
+    const {scheme} = props;
 
     useEffect(() => {
       if(scheme === "system") {
-        if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        if (window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches) {
           Appearance.setDarkScheme();
         }
       }
