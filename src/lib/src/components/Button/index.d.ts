@@ -1,4 +1,4 @@
-import React, { ReactNode, CSSProperties, MouseEvent } from 'react'
+import React, { ReactNode, CSSProperties } from 'react'
 
 export interface ButtonProps {
   width ?: number | string;
@@ -10,7 +10,7 @@ export interface ButtonProps {
   textAlign ?: string;
   type ?: "default" | "primary" | "primary-outline" | "success" | "success-outline" | "danger" | "danger-outline";
   onSubmit ?: any;
-  onClick ?: MouseEvent<any>;
+  onClick ?: () => void;
   style ?: CSSProperties;
 }
 declare const Button: React.FC<ButtonProps>

@@ -11,6 +11,6 @@ export interface GaugeProps {
   strokeColor ?: string;
   backgroundColor ?: string;  
 }
-declare const Gauge: React.FC<GaugeProps>
+declare const Gauge: React.Component<GaugeProps>
 
 export default Gauge

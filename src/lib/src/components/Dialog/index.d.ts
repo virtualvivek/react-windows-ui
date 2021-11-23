@@ -1,11 +1,11 @@
-import React, { ReactNode,MouseEvent } from 'react'
+import React, { ReactNode } from 'react'
 
 export interface DialogProps {
   isVisible ?: boolean;
   padding ?: number | string;
   showDropShadow ?: boolean;
   children ?: ReactNode;
-  onBackdropPress ?: MouseEvent<any>;
+  onBackdropPress ?: () => void;
 }
 declare const Dialog: React.FC<DialogProps>
 

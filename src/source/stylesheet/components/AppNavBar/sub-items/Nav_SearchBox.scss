@@ -11,11 +11,11 @@
     width: 100%;
     position: fixed;
     top: 0;
-    justify-content: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 0 10px 10vw;
     background: var(--color_nav);
-    align-items: center;
     transform: translateY(-100%);
     transition: 0.2s ease;
 

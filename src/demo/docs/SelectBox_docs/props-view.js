@@ -34,7 +34,7 @@ const PropsView = () => {
         <tr>
           <td><p className="app-code">data</p></td>
           <td>object</td>
-          <td>null</td>
+          <td>[ ]</td>
           <td>Set's Select/SelectBox data</td>
         </tr>
         <tr>
