@@ -64,7 +64,7 @@ const LoaderBusy = (props) => {
 }
 
 LoaderBusy.defaultProps = {
-  backgroundColor: 'var(--color_light_grey_alpha)',
+  backgroundColor: 'var(--color_grey_light_alpha)',
   isLoading: true
 }
 

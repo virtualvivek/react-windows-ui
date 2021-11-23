@@ -42,7 +42,7 @@
     }
 
     input {
-        @extend .display-none;
+        @extend .app-display-none;
         
         &:checked {
             + div {

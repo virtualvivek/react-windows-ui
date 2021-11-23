@@ -10,7 +10,7 @@ button,
 }
 .app-button {
     @extend .user-select-none;
-    @extend .color-dark-text;
+    @extend .color-text-dark;
     @extend .transition-all-400ms;
     @extend .vertical-align-middle;
     @extend .background-color-button;

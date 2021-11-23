@@ -2,7 +2,7 @@
   &.app-input-search {
     &:active,
     &:focus {
-      @extend .border-color-primary;
+      border-color: var(--PrimaryColor);
     }
   }
 }

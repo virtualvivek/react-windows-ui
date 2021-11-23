@@ -1,5 +1,6 @@
 .app-commandbar-btn {
   @extend .user-select-none;
+  @extend .tap-highlight-none;
 
   width: min-content;
   height: min-content;
@@ -16,7 +17,7 @@
     color: var(--color_text_dark);
 
     &:hover {
-      background: var(--color_light_grey_alpha);
+      background: var(--color_grey_light_alpha);
     }
     &:active {
       background: var(--color_button);
@@ -56,5 +57,13 @@
 
   &::after {
     all:unset
+  }
+}
+
+@mixin cmdbar-button-mobile() {
+  .commandbar-button {
+    &:hover:not(:active) {
+      background: none;
+    }
   }
 }

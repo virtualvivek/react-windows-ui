@@ -3,8 +3,8 @@ html {
     overflow-x: hidden;
 }
 body {
-    @extend .background-color-light-bg;
-    @extend .color-dark-text;
+    @extend .background-color-bg-light;
+    @extend .color-text-dark;
     @extend .transition-background-400ms;
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ body {
 }
 
 .app-container-screen {
-    @extend .background-color-light-bg;
+    @extend .background-color-bg-light;
     height: 100vh;
     &.primary {
         @extend .background-color-primary-dark;

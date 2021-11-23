@@ -10,7 +10,7 @@
     .app-switch,
     nav a span,
     nav ul h1 {
-        @extend .display-none;
+        @extend .app-display-none;
     }
     .app-name-short {
         display: inline-block;

@@ -14,8 +14,8 @@
   transition: opacity 0.3s ease;
 
   &.light {
-    @extend .color-dark-text;
-    @extend .background-color-light-grey;
+    @extend .color-text-dark;
+    @extend .background-color-grey-light;
 
     button {
       border: 2px solid var(--color_button_hover);
@@ -92,7 +92,7 @@
         }
 
         &.light {
-            background: var(--color_light_grey);
+            background: var(--color_grey_light);
         }
 
         &.show {

@@ -77,7 +77,7 @@ Gauge.defaultProps = {
   valueFontSize: 25,
   infoFontSize: 14,
   strokeColor: 'var(--PrimaryColor)',
-  backgroundColor: "var(--color_light_grey)"
+  backgroundColor: "var(--color_grey_light)"
 }
 
 export default Gauge

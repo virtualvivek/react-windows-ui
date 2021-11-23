@@ -1,5 +1,5 @@
 .app-link-compound {
-    @extend .color-dark-text;
+    @extend .color-text-dark;
     @extend .transition-all-400ms;
     @extend .tap-highlight-none;
     max-width: 310px;
@@ -14,7 +14,7 @@
     
     &:hover,
     &.focused {
-        @extend .background-color-light-grey;
+        @extend .background-color-grey-light;
     }
     &:active {
         @extend .transition-scale-0_95;
@@ -40,7 +40,7 @@
         object-fit: cover;
     }
     span {
-        @extend .color-dark-text;
+        @extend .color-text-dark;
         height: 20px;
         width: 250px;
         display: inline-block;
@@ -74,7 +74,7 @@
             background: transparent !important;
         }
         &:active {
-            background: var(--color_light_grey) !important;
+            background: var(--color_grey_light) !important;
             border: 2px solid var(--color_link_bg_active);
         }
     }

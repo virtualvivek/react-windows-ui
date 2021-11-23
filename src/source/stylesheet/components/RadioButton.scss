@@ -15,7 +15,7 @@
   -webkit-appearance: none;
 
   &:checked {
-    @extend .background-color-dark-text;
+    @extend .background-color-text-dark;
     border: 2px solid var(--PrimaryColor);
     box-shadow: inset 0 0 0 2.8px var(--color_bg_light);
   }

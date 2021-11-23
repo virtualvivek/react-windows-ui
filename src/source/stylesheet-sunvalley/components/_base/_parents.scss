@@ -1,12 +1,12 @@
-.background-color-light-grey {
-    background-color: var(--color_light_grey);
+.background-color-grey-light {
+    background-color: var(--color_grey_light);
 }
 
-.background-color-light-bg {
+.background-color-bg-light {
     background-color: var(--color_bg_light);
 }
 
-.background-color-dark-text {
+.background-color-text-dark {
     background-color: var(--color_text_dark);
 }
 
@@ -44,11 +44,11 @@
     border-color: var(--PrimaryColor);
 }
 
-.color-dark-text {
+.color-text-dark {
     color: var(--color_text_dark);
 }
 
-.color-light-bg {
+.color-bg-light {
     color: var(--color_bg_light);
 }
 
@@ -89,10 +89,8 @@
     color: var(--color_bg_light);
 }
 
-.display-block {
-    display: block;
-}
-.display-none {
+
+.app-display-none {
     display: none;
 }
 
@@ -176,9 +174,9 @@
     padding: 0;
     margin: 2px 0 0 0;
     position: absolute;
-    background: var(--color_light_grey_alpha);
+    background: var(--color_grey_light_alpha);
     backdrop-filter: blur(30px);
-    box-shadow: 0 2px 5px var(--color_light_grey_alpha);
+    box-shadow: 0 2px 5px var(--color_grey_light_alpha);
     z-index: 999;
     visibility: hidden;
     &.show {

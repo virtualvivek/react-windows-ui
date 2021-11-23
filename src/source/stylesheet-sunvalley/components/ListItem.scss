@@ -6,9 +6,9 @@
         @extend .transition-all-400ms;
         @extend .tap-highlight-none;
         padding: 12px 10px;
-        border-bottom: 1px solid var(--color_light_grey);
+        border-bottom: 1px solid var(--color_grey_light);
         &:hover {
-            @extend .background-color-light-grey;
+            @extend .background-color-grey-light;
         }
         &:active {
             @extend .background-color-link-bg-hover;

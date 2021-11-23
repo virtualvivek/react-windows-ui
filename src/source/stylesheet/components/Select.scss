@@ -1,4 +1,6 @@
 .app-select-styled.react {
+  @extend .tap-highlight-none;
+
   .app-select-header {
     width: initial;
     height: inherit;

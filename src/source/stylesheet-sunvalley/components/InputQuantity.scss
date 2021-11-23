@@ -19,8 +19,8 @@
     }
 
     .quantity-button {
-        @extend .background-color-light-bg;
-        @extend .color-dark-text;
+        @extend .background-color-bg-light;
+        @extend .color-text-dark;
         width: 34px;
         border: 2px solid #999;
         text-align: center;

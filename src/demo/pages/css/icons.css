@@ -18,7 +18,7 @@
     position: relative;
 }
 pre {
-    background-color: var(--color_light_grey);
+    background-color: var(--color_grey_light);
     padding: 4px 2px;
     display: block;
     margin: 2px;

@@ -1,5 +1,5 @@
 .app-dialog {
-  @extend .background-color-light-grey;
+  @extend .background-color-grey-light;
 
   width: 440px;
   max-height: 54vh;
@@ -18,7 +18,7 @@
   transform: translateY(50px);
 
   &.dropShadow {
-    background-color: var(--color_light_grey_alpha);
+    background-color: var(--color_grey_light_alpha);
     backdrop-filter: blur(24px);
   }
 
