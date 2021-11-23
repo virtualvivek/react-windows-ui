@@ -6,6 +6,7 @@ import { AppTheme, SplashScreen, NavBar, NavBarLink,NavBarSubMenu, NavSearchBox,
 import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
 import Inputs from './pages/Inputs'
+import ColorsDocs from './docs/Colors_docs'
 import Texts from './pages/Texts'
 import Tables from './pages/Tables'
 import Icons from './pages/Icons'
@@ -130,6 +131,12 @@ class App extends React.Component {
         icon={<i className="icons10-keyboard"></i>}
       />
 
+      <NavBarLink
+        to="/colors"
+        text="Colors"
+        icon={<i className="icons10-color-palette"></i>}
+      />
+
 
       <NavBarSubMenu title="Navigation">
         <NavBarLink
@@ -184,6 +191,7 @@ class App extends React.Component {
         <Route path='/getting_started' component={GettingStarted} />
 
         <Route path='/inputs' component={Inputs} />
+        <Route path='/colors' component={ColorsDocs} />
 
         <Route path='/navbar' component={NavBarDocs} />
         <Route path='/navbarsubmenu' component={NavBarSubMenuDocs} />
