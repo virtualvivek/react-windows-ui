@@ -8,9 +8,9 @@
     width: 42px;
     height: 19px;
     cursor: pointer;
+    position: relative;
     border-radius: 50px;
     border: 2px solid var(--color_text_dark);
-    position: relative;
     transition: 200ms ease-out;
 
     &:hover {
@@ -22,11 +22,11 @@
       position: absolute;
       top: 3px;
       left: 3px;
-      display: block;
-      background: var(--color_text_dark);
-      border-radius: 50%;
+      display: block;      
       content: '';
       will-change: translate;
+      border-radius: 50%;
+      background: var(--color_text_dark);
       transition: 200ms;
     }
     &::after {
@@ -68,8 +68,8 @@
         border-color: var(--color_link_bg_hover);
 
         &::before {
-          background: var(--color_text_dark) !important;
           filter: contrast(0);
+          background: var(--color_text_dark) !important;
         }
       }
     }

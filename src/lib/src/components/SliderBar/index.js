@@ -5,14 +5,14 @@ const SliderBar = (props) => {
   const inputRef = React.useRef()
 
   const toggleVisible = () => {
-    let iswitch = inputRef.current
-        iswitch.style.visibility="visible"
-        iswitch.style.opacity="1"
+    let ipopup = inputRef.current
+        ipopup.style.visibility="visible"
+        ipopup.style.opacity="1"
   }
   const toggleHidden = () => {
-    let iswitch = inputRef.current
-        iswitch.style.visibility="hidden"
-        iswitch.style.opacity="0"
+    let ipopup = inputRef.current
+        ipopup.style.visibility="hidden"
+        ipopup.style.opacity="0"
   }
 
   return (

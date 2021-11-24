@@ -1,9 +1,9 @@
 .app-image-view {
   width: 100%;
   height: 100%;
-  background: #DDDDDD77;
-  text-align: center;
   z-index: 1;
+  text-align: center;
+  background: #DDDDDD77;
 }
 .app-image-view-container {
   position: relative;
@@ -14,10 +14,10 @@
   .app-image-view-loader {
     width: 100%;
     height: 100%;
+    z-index: 2;
     position: absolute;
     align-items: center;
     background: #44444477;
-    z-index: 2;
 
     .app-loader-busy {
       top: 35%;
@@ -36,12 +36,12 @@
   .app-image-words {
     width: auto;
     position: absolute;
+    color: #fff;
+    z-index: 2;
     bottom: 0;
     left: 0;
     padding-left: 5%;
     padding-bottom: 4%;
-    color: #fff;
-    z-index: 2;
     filter: drop-shadow(2px 2px 2px black);
     
     h1 {

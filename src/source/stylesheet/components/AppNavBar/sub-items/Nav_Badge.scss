@@ -5,11 +5,11 @@
   top: -8px;
   margin-left: -10px;
   padding: 0 5px;
-  display: inline;
-  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
   font-size: 12px;
   font-weight: 500;
-  line-height: 1.5;
   color: white;
+  border-radius: 50px;
   background: #ff3b30;
 }

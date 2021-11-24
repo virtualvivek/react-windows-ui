@@ -8,23 +8,23 @@
     width: calc(100% - (73px));
     height: 2px;
     appearance: none;
-    background: #999999;
     outline: none;
-    padding: 0;
-    margin: 0;
     position: relative;
     top: -5px;
+    padding: 0;
+    margin: 0;
+    background: #999999;
 
     &::-webkit-slider-thumb {
       width: 8px;
       height: 26px;
+      user-select: none;
       appearance: none;
       -webkit-appearance: none;
       border-radius: 100px;
-      background: var(--PrimaryColor);
       cursor: pointer;
+      background: var(--PrimaryColor);
       transition: background 0.15s ease-in-out;
-      user-select: none;
 
       &:hover {
         background: #555;
@@ -41,8 +41,8 @@
       border-radius: 100px;
       border: none;
       cursor: pointer;
-      transition: background 0.15s ease-in-out;
       user-select: none;
+      transition: background 0.15s ease-in-out;
       background: var(--PrimaryColor);
     }
     &::-moz-range-thumb:hover,
@@ -85,17 +85,17 @@
     font-size: 18px;
   }
   .popup {
-    background: var(--color_button);
-    box-shadow: 0 0 2px var(--color_button);
+    opacity: 0;
+    visibility: hidden;
     display: inline-block;
     position: absolute;
     top: -30px;
     font-size: 12px;
     font-weight: 600;
     padding: 5px;
-    transition: 0.08s ease;
-    visibility: hidden;
-    opacity: 0;
+    transition: 0.08s ease;    
+    background: var(--color_button);
+    box-shadow: 0 0 2px var(--color_button);
   }
 }
 

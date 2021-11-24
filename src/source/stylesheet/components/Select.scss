@@ -5,10 +5,10 @@
     width: initial;
     height: inherit;
     margin: 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     i { font-size: 18px; }
   }

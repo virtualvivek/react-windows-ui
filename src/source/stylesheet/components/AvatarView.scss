@@ -1,8 +1,8 @@
 .app-avatar {
+  z-index: 1;
+  text-align: center;
   border-radius: 50%;
   background: #DDDDDD77;
-  text-align: center;
-  z-index: 1;
 
   &.large {
     width: 164px;
@@ -18,11 +18,11 @@
   }
 
   &.drop-shadow {
+    z-index: 0;
     position: absolute;
-    filter: blur(8px);
     top: 14px;
     opacity: 0.8;
-    z-index: 0;
+    filter: blur(8px);
   }
 }
 .app-avatar-container {
@@ -31,13 +31,14 @@
   justify-content: center;
 
   .app-avatar-loader {
-    position: absolute;
-    align-items: center;
     width: 100%;
     height: 100%;
-    background: #44444477;
-    border-radius: 50%;
     z-index: 2;
+    position: absolute;
+    align-items: center;
+    border-radius: 50%;
+    background: #44444477;
+    
 
     .app-loader-busy {
       top: 35%;

@@ -1,15 +1,16 @@
 .app-button-icon {
+  font-size: 24px;
+  vertical-align: middle;
+  color: var(--PrimaryColor);
   padding: 5px 10px;
+  border: none;
   transition: 0.2s ease;
   background-color: transparent;
-  color: var(--PrimaryColor);
-  border: none;
-  vertical-align: middle;
-  font-size: 24px;
+  
 
   &:hover {
-    background-color: var(--color_primary_alpha);
     color: #fff;
+    background-color: var(--color_primary_alpha);
   }
   &:active {
     transform: scale(0.965, 0.965);
@@ -21,8 +22,8 @@
 @mixin button-icon-mobile() {
   .app-button-icon {
     &:hover {
-      background-color: transparent;
       color: var(--PrimaryColor);
+      background-color: transparent;
     }
     &:active {
       background-color: var(--color_primary_alpha);

@@ -75,8 +75,8 @@
         background: transparent !important;
       }
       &:active {
-        background: var(--color_grey_light) !important;
         border: 2px solid var(--color_link_bg_active);
+        background: var(--color_grey_light) !important;
       }
     }
     &.primary i,
@@ -88,9 +88,9 @@
 div.app-link-compound {
   &:hover,
   &:active {
-    background-color: unset;
     transition: unset;
     transform: unset;
+    background-color: unset;
   }
 }
 .app-link-compound-container > .app-switch {
@@ -102,8 +102,8 @@ div.app-link-compound {
   .app-link-compound:not(.focused):not(:active) {
     &:hover,
     &.primary:hover {
-      background: transparent;
       border-color: transparent;
+      background: transparent;
     }
   }
 }

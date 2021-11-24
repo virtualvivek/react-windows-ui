@@ -39,7 +39,6 @@
     height: 34px;
     position: absolute;
     opacity: 0;
-
     transform: rotate(225deg);
     animation: orbit 4.8s infinite;
     
@@ -140,8 +139,8 @@
   }
 
   .app-loader-busy {
-    margin: 0 auto;
     top: 42%;
+    margin: 0 auto;
     z-index: 100;
     filter: drop-shadow(0 4px 4px black);
   }

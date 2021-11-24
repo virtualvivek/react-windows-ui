@@ -1,10 +1,11 @@
 .app-nav-wrap nav ul {
   li {
+    display: flex;
     &:hover { @extend .background-color-link-bg-hover; }
     &:active { @extend .background-color-link-bg-active; }
 
     a {
-      width: 90%;
+      width: 100%;
       padding: 12px 25px;
       font-weight: 400;
       color: var(--color_text_dark);
@@ -13,14 +14,6 @@
       align-items: center;
       background: none;
 
-      &:focus { @extend .outline-none; }
-
-      &::before {
-        position: relative;
-        right: 5px;
-        font-size: 24px;
-        vertical-align: middle;
-      }
       &::after {
         width: 5px;
         height: 35px;
@@ -30,6 +23,9 @@
         content: '';
         transition: transform 0.4s;
         transform: translate3d(-200%, 0, 0);
+      }
+      &:focus {
+        @extend .outline-none;
       }
       &.active {
         @extend .font-weight-500;
@@ -49,8 +45,6 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-
-      &::after { @extend .color-primary; }
     }
     img {
       width: 20px;

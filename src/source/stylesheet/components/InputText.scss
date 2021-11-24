@@ -66,14 +66,14 @@
   }
   button.unmask {
     @extend .vertical-align-middle;
-    background: transparent;
     border: none;
+    background: transparent;
   }
 }
 
 @mixin input-date-mobile() {
   input[type="date"].app-input-text::before {
-    content: attr(placeholder);
     padding-right: 5px;
+    content: attr(placeholder);
   }
 }

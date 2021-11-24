@@ -36,7 +36,10 @@
 
     &.animate {
       ul li {
-        & :active { @extend .transition-scale-0_95; }
+        & :active {
+          @extend .transition-scale-0_95;
+          transform: scale(0.98, 0.98);
+        }
         a { @extend .transition-all-400ms; }
       }
     }

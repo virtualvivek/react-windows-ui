@@ -34,9 +34,9 @@
   }
 
   h1 {
+    font-size: 1.7em;
     margin: 0;
     padding: 25px 32px 10px 32px;
-    font-size: 1.7em;
     background-color: transparent;
   }
   .alert-message {
@@ -53,20 +53,20 @@
   }
   button {
     display: inline;
-    padding: 7px 3.4vw;
-    margin: 10px;
-    border: 2px solid #fff;
     color: #fff;
     font-weight: 700;
     font-size: 14px;
+    padding: 7px 3.4vw;
+    margin: 10px;
+    border: 2px solid #fff;
 
     &:hover {
       opacity: 0.62;
     }
     &:active {
-      background: #fff !important;
       opacity: 1;
       color: var(--PrimaryColor);
+      background: #fff !important;
     }
   }
 
@@ -79,29 +79,29 @@
 }
 
 @mixin alert-mobile() {
-    .app-alert {
-        width: 100% !important;
-        left: 0 !important;
-        margin: 0;
-        background: var(--PrimaryColor);
-        transition: all 0.3s ease;
-        transform: translateY(-100%);
+  .app-alert {
+    width: 100% !important;
+    left: 0 !important;
+    margin: 0;
+    background: var(--PrimaryColor);
+    transition: all 0.3s ease;
+    transform: translateY(-100%);
 
-        .alert-message {
-            min-height: 50px;
-        }
-
-        &.light {
-            background: var(--color_grey_light);
-        }
-
-        &.show {
-            transform: translateY(0%);
-        }
-
-        button {
-            padding: 3px 30px;
-            margin: 15px 15px 15px 0;
-        }
+    .alert-message {
+      min-height: 50px;
     }
+
+    &.light {
+      background: var(--color_grey_light);
+    }
+
+    &.show {
+      transform: translateY(0%);
+    }
+
+    button {
+      padding: 3px 30px;
+      margin: 15px 15px 15px 0;
+    }
+  }
 }

@@ -12,8 +12,8 @@
     }
     &:active {
       @extend .background-color-link-bg-hover;
-      transform: scale(0.99, 0.99);
       transition: 0.04s ease;
+      transform: scale(0.99, 0.99);
     }
   }
   img {
@@ -40,10 +40,10 @@
     }
   }
   div {
+    width: 75%;
+    height: fit-content;
     display: inline-grid;
     align-items: center;
-    height: fit-content;
-    width: 75%;
   }
 
   span.app-list-title {
@@ -57,8 +57,8 @@
 
 .app-list-item,
 .app-list-item a {
-  display: flex;
   width: 100%;
+  display: flex;
   color: var(--color_text_dark);
 }
 
