@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const NavBarSubMenu = (props) => {
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <div className="app-nav-submenu">
@@ -9,7 +9,7 @@ const NavBarSubMenu = (props) => {
         className="app-nav-submenu-title"
         onClick={() => setIsActive(!isActive)}>
         <div>{props.title}</div>
-        <div className="app-nav-submenu-icon">{isActive ? props.expandIcon : props.collapseIcon}</div>
+        {isActive ? props.expandIcon : props.collapseIcon}
       </div>
       <div className={isActive ? "app-nav-submenu-content show"
                                : "app-nav-submenu-content"}>

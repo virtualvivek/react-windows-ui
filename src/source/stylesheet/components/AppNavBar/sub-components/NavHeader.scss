@@ -9,3 +9,11 @@
     transition: inherit;
   }
 }
+
+@mixin nav-header-mobile() {
+  .app-nav-wrap {
+    .app-nav-header {
+      position: relative;
+    }
+  }
+}

@@ -10,8 +10,7 @@ const Button = (props) => {
           : props.type === "danger" ? "app-loader-busy small light animate"
           : props.type === "success" ? "app-loader-busy small light animate"
           : "app-loader-busy small animate"
-          }
-        style={ props.isLoading ? { display: "inline" } : { display : "none" }}>
+          }>
       <LoaderBusyWrapper/>
     </div>
   }
@@ -43,20 +42,11 @@ const Button = (props) => {
       disabled={props.disabled}
       title={props.tooltip}>
 
-      <span style={
-          props.isLoading ? { display: "none" }
-        : props.value === "" ? { paddingRight: 0 }
-        : props.icon ? { display : "inline-flex", paddingRight: 5 }
-        : { paddingRight: 0 }
-        }>
-        {props.icon}
-      </span>
+      {props.isLoading && (renderLoader())}
 
-      { props.isLoading ? renderLoader() : "" }
+      {props.icon && (<span>{props.icon}</span>)}
       
-      <span style={props.isLoading ? { opacity: 0 } : { opacity : 1 }}>
-        {props.value}
-      </span>
+      <span>{props.value}</span>
     </button>
   )
 }

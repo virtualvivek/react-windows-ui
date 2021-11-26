@@ -1,33 +1,27 @@
 import React from 'react'
 
 const Switch = (props) => {
-
-  const showData = () => {
-    return props.labelOn === "" ? <div dataoff="" dataon=""></div>
-          : <div dataoff={props.labelOff} dataon={props.labelOn}></div>;
-  }
-
   return (
     <label
-      className="app-switch"
-      title={props.tooltip}
-      style={props.labelOn === ""
-      ? { marginRight: 0 }
-      : { marginRight: "" }}>
+      class="app-switch"
+      title={props.tooltip}>
       <input
         type="checkbox"
         defaultChecked={props.defaultChecked}
-        onChange={props.onChange}
         disabled={props.disabled}
-      />
-      { showData() }
+        onChange={props.onChange} />
+      <div class="app-switch-view"></div>
+      {props.label && (
+        <span data-off={props.labelOff} data-on={props.labelOn}></span>
+      )}
     </label>
   )
 }
 
 Switch.defaultProps = {
   labelOff: "Off",
-  labelOn: "On"
+  labelOn: "On",
+  label: true
 }
 
 export default Switch

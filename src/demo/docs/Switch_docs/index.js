@@ -43,6 +43,8 @@ render() {
       onChange={() => {}}
     />
 
+    &nbsp;&nbsp;&nbsp;&nbsp;
+
     <Switch
       defaultChecked={true}
       labelOn="Disabled On"
@@ -63,11 +65,11 @@ render() {
     <div className="app-hr"></div>
     <h2>Switch <p className="app-code">with no label</p> :</h2>
 
-    <p>To remove label just pass prop <b>labelOn=""</b>:</p>
+    <p>To remove label just pass prop <b>{'label={false}'}</b>:</p>
 
     <Switch
       defaultChecked={true}
-      labelOn=""
+      label={false}
       onChange={() => {}}
     />
     <br/><br/>

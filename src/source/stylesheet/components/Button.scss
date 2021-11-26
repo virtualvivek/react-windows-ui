@@ -37,6 +37,10 @@ button,
   }
   &.isLoading {
     pointer-events: none;
+
+    span {
+      opacity: 0;
+    }
   }
 
   &.primary {
@@ -55,7 +59,6 @@ button,
   &.danger-outline {
     border: 2px solid #C50500;
     color: #C50500;
-
     &:active {
       background-color: #C50500;
     }
@@ -66,7 +69,6 @@ button,
   &.success-outline {
     border: 2px solid #2C8B2C;
     color: #2C8B2C;
-
     &:active {
       background-color: #2C8B2C;
     }
@@ -114,6 +116,10 @@ button,
   }
   i.color-primary {
     @extend .color-primary;
+  }
+  // check if button child span has a sibling of same type
+  span:first-of-type:not(:only-of-type) {
+    padding-right: 5px;
   }
 }
 

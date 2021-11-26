@@ -210,10 +210,10 @@
 .app-dim-overlay {
   @extend .app-overlay;
   z-index: 10;
-  background: #77777777;
-  transition: visibility 0.4s, opacity 0.4s linear;
   opacity: 0;
   visibility: hidden;
+  background: #77777777;
+  transition: visibility 0.3s, opacity 0.3s ease;
 
   &.show {
     opacity: 1;

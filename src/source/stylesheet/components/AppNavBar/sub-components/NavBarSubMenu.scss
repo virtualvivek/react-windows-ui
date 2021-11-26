@@ -42,30 +42,36 @@
 @mixin nav-submenu-mobile() {
   .app-nav-submenu {
     width: fit-content;
+    height: fit-content;
     display: inline-flex;
-    align-self: center;
+    align-items: flex-start;
 
     .app-nav-submenu-title {
-      font-size: 18px;
+      height: fit-content;
       margin: 0 7px;
       padding: 0;
       font-weight: unset;
-      align-self: center;
+      font-size: 18px;
 
       &:hover { background-color: unset; }
 
-      .app-nav-submenu-icon {
+      i {
         transform: rotate(-90deg);
         height: max-content;
       }
     }
 
     .app-nav-submenu-content {
-      transition: max-width 0.2s ease-in-out;
       max-height: unset;
       max-width: 0;
-      backdrop-filter: unset;
       overflow: overlay;
+      align-self: center;
+      backdrop-filter: unset;
+      transition: max-width 0.2s ease-in-out;
+
+      & li:first-child {
+        margin-left: 0;
+      }
 
       &::-webkit-scrollbar {
         width: 0;

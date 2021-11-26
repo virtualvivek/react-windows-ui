@@ -11,8 +11,8 @@ const SwitchUsageCode =
 
 const SwitchNoLabelUsageCode =
 `<Switch
+  label={false}
   defaultChecked={true}
-  labelOn=""
   onChange={() => {}}
 />`;
 

@@ -7,10 +7,10 @@
   .app-nav-wrap nav ul {
     .app-hr {
       height: 20px;
-      margin: 0 5px;
+      margin: 2px 5px;
       position: relative;
       border: 1px solid var(--color_button);
-      align-self: center;
+      align-self: flex-start;
     }
   }
 }
