@@ -20,10 +20,10 @@ const Alert = (props) => {
                         : "app-alert"
       }
       onClick={(event)=>_onBackdropPress(event)}>
-      <div class={`app-alert-modal ${setThemeLight()}`}>
+      <div className={`app-alert-modal ${setThemeLight()}`}>
         <h1>{props.title}</h1>
         <div className="alert-message">{props.message}</div>
-        <div class="alert-btn-container">
+        <div className="alert-btn-container">
           {props.children}
         </div>
       </div>

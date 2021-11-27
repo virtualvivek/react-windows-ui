@@ -1,7 +1,7 @@
 import React from 'react'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
-import { AppTheme, SplashScreen, NavBar, NavBarLink,NavBarSubMenu, NavSearchBox,
-         TransitionToLeft } from '../lib/src'
+import { AppTheme, SplashScreen, NavBar, NavBarLink,
+        NavBarSubMenu, NavSearchBox } from '../lib/src'
 
 import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
@@ -99,8 +99,6 @@ class App extends React.Component {
       <AppTheme
         scheme="system"
       />
-      
-      <TransitionToLeft />
 
       <NavBar
         title="React Windows UI"

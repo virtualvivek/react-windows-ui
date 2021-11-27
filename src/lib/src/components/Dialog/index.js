@@ -21,7 +21,7 @@ const Dialog = (props) => {
       }
       onClick={(event)=>_onBackdropPress(event)}>
       <div
-        class={`app-dialog-modal ${isDropShadow()}`}
+        className={`app-dialog-modal ${isDropShadow()}`}
         style={props.style}>
         {props.children}
       </div>  
