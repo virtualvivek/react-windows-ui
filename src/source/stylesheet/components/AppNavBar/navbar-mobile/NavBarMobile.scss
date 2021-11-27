@@ -6,7 +6,7 @@
     overflow-x: scroll;
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.25);
 
-    ul {
+    .app-nav-list {
       width: 100%;
       position: relative;
       z-index: 2;
@@ -18,7 +18,7 @@
       align-items: flex-start;
     }
 
-    ul h1,
+    .app-nav-list h1,
     .app-nav-toggle {
       display: none !important;
     }
@@ -35,6 +35,8 @@
   @include nav-header-mobile();
   @include nav-ul-li-mobile();
   @include nav-ul-hr-mobile();
+  @include app-navbar-search-mobile();
+  @include app-navbar-search-dialog-mobile();
   @include nav-submenu-mobile();
   @include nav-mobile-has-icons();
 }

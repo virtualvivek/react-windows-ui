@@ -6,9 +6,9 @@ const InputSearchSuggestion = (props) => {
   const inputRef = React.useRef();
 
   const toggleVisible = (e) => {
-    let iswitch = inputRef.current
+    let iswitch = inputRef.current;
 
-    if(!e.target.value){
+    if(!e.target.value) {
       iswitch.style.visibility="hidden";
     }
     else {

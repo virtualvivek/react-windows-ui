@@ -2,12 +2,14 @@
 @import "./sub-items/Nav_Li.scss";
 @import "./sub-items/Nav_ToggleButton.scss";
 @import "./sub-items/Nav_Badge.scss";
-@import "./sub-items/Nav_SearchBox.scss";
+
 @import "./sub-items/Nav_Hr.scss";
 
 @import "./sub-components/NavBarSubMenu.scss";
 @import "./sub-components/NavToggled.scss";
 @import "./sub-components/NavHeader.scss";
+@import "./sub-components/NavSearchBox.scss";
+@import "./sub-components/NavSearchDialog.scss";
 
 @import "./navbar-mobile/NavBarMobileHasIcons.scss";
 @import "./navbar-mobile/NavBarMobile.scss";
@@ -35,7 +37,7 @@
     z-index: inherit;
 
     &.animate {
-      ul li {
+      .app-nav-list-item {
         & :active {
           @extend .transition-scale-0_95;
           transform: scale(0.98, 0.98);
@@ -44,7 +46,7 @@
       }
     }
 
-    ul {
+    .app-nav-list {
       margin: 60px 0 0 0;
       padding: 0 0 40px 0;
       list-style: none;

@@ -19,15 +19,15 @@
     }
   }
   .app-nav-submenu-content {
-    transition: max-height 0.2s ease-in-out;
     max-height: 0;
     overflow: hidden;
     backdrop-filter: brightness(0.97);
+    transition: max-height 0.2s ease-in-out;
   
     &.show {
-      transition: max-height 0.25s ease-in;
       max-height: 500px;
       overflow-y: auto;
+      transition: max-height 0.25s ease-in;
     }
   }
 }

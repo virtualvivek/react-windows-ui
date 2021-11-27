@@ -1,0 +1,46 @@
+.app-nav-wrap {
+  .app-nav-search {
+    position: relative;
+    ul {
+      @extend .app-custom-dropdown-ul;
+  
+      width: 250px;
+      max-height: 240px;
+      z-index: 1;
+      left: 18px;
+      margin-top: -5px;
+      box-shadow: 0 2px 4px #88888877;
+      background: var(--color_bg_light);
+  
+      li a {
+        padding: 2px 10px;
+
+        &:hover { background: var(--color_grey_light); }
+        &:active { background: var(--color_link_bg_hover); }
+      }
+    }
+  }
+
+  &.toggled {
+    .app-nav-search ul {
+      width: 50%;
+      position: fixed;
+      top: 80px;
+      left: 22vw;
+    }
+  }
+}
+
+@mixin app-navbar-search-dialog-mobile() {
+  .app-nav-wrap {
+    .app-nav-search ul {
+      width: 70%;
+      z-index: 99;
+      position: fixed;
+      top: 80px;
+      left: 15%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

@@ -40,7 +40,9 @@ const NavBar = (props) => {
             <span className="app-name">{props.title}</span>
           </div>
           <ul
-            className={props.mobileHasIcons ?  "app-mobile-has-icons" : ""  }>
+            className={props.mobileHasIcons
+              ? "app-nav-list app-mobile-has-icons"
+              : "app-nav-list"  }>
             {props.children}
           </ul>
         </nav>

@@ -1,5 +1,5 @@
-.app-nav-wrap nav ul {
-  li {
+.app-nav-wrap .app-nav-list {
+  .app-nav-list-item {
     display: flex;
     &:hover { @extend .background-color-link-bg-hover; }
     &:active { @extend .background-color-link-bg-active; }
@@ -57,7 +57,7 @@
 }
 
 @mixin nav-ul-li-mobile() {
-  .app-nav-wrap nav ul li {
+  .app-nav-wrap .app-nav-list .app-nav-list-item {
     display: inline-flex;
     position: relative;
 

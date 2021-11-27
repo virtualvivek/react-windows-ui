@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 0 10px 10vw;
+    padding: 10px 0 10px 0;
     background: var(--color_nav);
     transform: translateY(-105%);
     transition: 0.2s ease;
@@ -68,7 +68,7 @@
     .app-search-box { display: none; }
     
     .app-search-dialog {
-      padding: 0 0 0 20px;
+      padding: 15px;
       z-index: 9;
 
       .app-input-search {

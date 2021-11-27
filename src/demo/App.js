@@ -1,7 +1,7 @@
 import React from 'react'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { AppTheme, SplashScreen, NavBar, NavBarLink,
-        NavBarSubMenu, NavSearchBox } from '../lib/src'
+        NavBarSubMenu, NavSearchSuggestion } from '../lib/src'
 
 import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
@@ -71,20 +71,6 @@ class App extends React.Component {
     this.setState({ showSplash: false})
   }
 
-  handleInputSearch = event => {
-    const query = event.target.value
-    this.setState(prevState => {
-      const filteredData = prevState.data.filter(element => {
-        return element.text.toLowerCase().includes(query.toLowerCase())
-      })
-      return {
-        query,
-        filteredData
-      }
-    })
-  }
-
-
   render() {
   return (
     <>
@@ -105,16 +91,29 @@ class App extends React.Component {
        //mobileHasIcons={true}
         shadowOnScroll={true}>
 
-        {/* <NavBarLinkFluent
-          to="/"
-          exact={true}
-          text="Home"
-          icon={<i className="icons10-home"></i>}
-        /> */}
+        <NavSearchSuggestion
+          placeholder="Search Docs v4.0.x"
+          tooltip="Search Docs"
+          data={[
+            {label: 'home', link: '#', icon: <i className="icons10-home"></i>},
+            {label: 'alert', link: '/alerts'},
+            {label: 'accordion', link: '#'},
+            {label: 'apperarance', link: '/appearance'},
+            {label: 'avatarview', link: '/avatarview'},
+            {label: 'buttons', link: '/buttons'},
+            {label: 'checkbox', link: '/checkbox'},
+            {label: 'commandbar', link: '/commandbar'},
+            {label: 'dialogs', link: '/dialogs'},
+            {label: 'gauges', link: '/gauges'},
+            {label: 'icons', link: '/icons'},
+            {label: 'imageview', link: '/imageview'},
+            {label: 'inputtext', link: '/input_group'},
+            {label: 'inputsearch', link: '/inputsearch'},
+            {label: 'menubar', link: '/menubar'},
+            {label: 'select', link: '/selectbox'}
+          ]}
+        />
 
-      <NavSearchBox
-        placeholder="Search Docs pre v4.x.x"
-        onChange={this.handleInputSearch}/>
       <NavBarLink
         exact={true}
         to="/"

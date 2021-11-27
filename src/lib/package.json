@@ -1,6 +1,6 @@
 {
   "name": "react-windows-ui",
-  "version": "4.0.6",
+  "version": "4.0.7",
   "description": "Build full featured Windows fluent UI apps using reactjs.",
   "main": "dist/index.js",
   "scripts": {
@@ -33,6 +33,18 @@
     "email": "virtualvivek7@gmail.com"
   },
   "license": "MIT",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
   "peerDependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

@@ -4,6 +4,7 @@ import NavPageContainer from './NavPageContainer'
 import NavPageContainerRight from './NavPageContainerRight'
 import NavPageContainerInner from './NavPageContainerInner'
 import NavSearchBox from './NavSearchBox'
+import NavSearchSuggestion from './NavSearchSuggestion'
 import NavBarSubMenu from './NavBarSubMenu'
 
 export {
@@ -13,5 +14,6 @@ export {
     NavPageContainerRight,
     NavPageContainerInner,
     NavSearchBox,
+    NavSearchSuggestion,
     NavBarSubMenu
 }
