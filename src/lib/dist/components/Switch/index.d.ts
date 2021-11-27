@@ -5,6 +5,7 @@ export interface SwitchProps {
   disabled ?: boolean;
   labelOn ?: string;
   labelOff ?: string;
+  label ?: boolean;
   tooltip ?: string;
   onChange ?: () => void;
 }

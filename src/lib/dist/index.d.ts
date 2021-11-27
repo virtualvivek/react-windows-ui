@@ -5,8 +5,7 @@ import {
     NavPageContainer,
     NavPageContainerRight,
     NavPageContainerInner,
-    NavSearchBox,
-    TransitionToLeft } from './components/NavBar'
+    NavSearchBox } from './components/NavBar'
 
 import Accordion from './components/Accordion'
 import AppTheme from './components/AppTheme'
@@ -55,7 +54,6 @@ export {
     NavPageContainerRight,
     NavPageContainerInner,
     NavSearchBox,
-    TransitionToLeft,
 
     Accordion,
     AppTheme,
