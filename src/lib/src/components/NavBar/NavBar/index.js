@@ -1,5 +1,5 @@
-import React, { useState,useEffect } from 'react'
-import ThemeManager from '../../utils/ThemeManager'
+import React, { useState,useEffect } from "react";
+import ThemeManager from "../../utils/ThemeManager";
 
 const NavBar = (props) => {
 
@@ -7,8 +7,8 @@ const NavBar = (props) => {
     ThemeManager.createAlphaPrimaryColor();
   },[]);
   
-  const [sidebar, setSidebar] = useState(false)
-  const [isScrolling, setScrolling] = useState(false)
+  const [sidebar, setSidebar] = useState(false);
+  const [isScrolling, setScrolling] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar)
   
@@ -48,4 +48,4 @@ const NavBar = (props) => {
   );
 }
 
-export default NavBar
+export default NavBar;
