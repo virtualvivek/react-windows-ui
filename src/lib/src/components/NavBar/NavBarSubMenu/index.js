@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 const NavBarSubMenu = (props) => {
   const [isActive, setIsActive] = useState(false);
@@ -24,4 +24,4 @@ NavBarSubMenu.defaultProps = {
   expandIcon: <i className="icons10-angle-up"></i>,
 }
 
-export default NavBarSubMenu
+export default NavBarSubMenu;

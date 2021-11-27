@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const NavPageContainerInner = (props) => {
 
@@ -9,4 +9,4 @@ const NavPageContainerInner = (props) => {
   )
 }
 
-export default NavPageContainerInner
+export default NavPageContainerInner;

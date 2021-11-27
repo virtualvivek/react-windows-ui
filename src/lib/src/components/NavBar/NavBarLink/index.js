@@ -1,5 +1,5 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const NavBarLink = (props) => {
 
@@ -34,4 +34,4 @@ NavBarLink.defaultProps = {
   to : "#"
 }
 
-export default NavBarLink
+export default NavBarLink;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const LoaderBusyWrapper = () => {
   return (
@@ -22,4 +22,4 @@ const LoaderBusyWrapper = () => {
   )
 }
 
-export default LoaderBusyWrapper
+export default LoaderBusyWrapper;

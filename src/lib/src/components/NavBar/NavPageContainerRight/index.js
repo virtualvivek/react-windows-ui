@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const NavPageContainerRight = (props) => {
 
@@ -14,4 +14,4 @@ const NavPageContainerRight = (props) => {
   )
 }
 
-export default NavPageContainerRight
+export default NavPageContainerRight;

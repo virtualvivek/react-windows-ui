@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+import {useEffect} from "react";
 
 const useOutSideClick = (ref,handleOutsideClick) => {
   useEffect(() => {
@@ -16,4 +16,4 @@ const useOutSideClick = (ref,handleOutsideClick) => {
   }, [ref,handleOutsideClick]);
 }
 
-export default useOutSideClick
+export default useOutSideClick;
