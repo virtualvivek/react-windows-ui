@@ -7,8 +7,16 @@
   display: inline-block;
   white-space: nowrap;
   text-overflow: ellipsis;
-  user-select: none;
   font-size: 16px;
+
+  &::-moz-selection {
+    background:transparent;
+    color: var(--color_text_dark);
+  }
+  &::selection {
+    background:transparent;
+    color: var(--color_text_dark);
+  }
 }
 
 @mixin nav-appname-mobile() {

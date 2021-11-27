@@ -1,6 +1,7 @@
 html {
   overflow-y: overlay;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   @extend .background-color-bg-light;

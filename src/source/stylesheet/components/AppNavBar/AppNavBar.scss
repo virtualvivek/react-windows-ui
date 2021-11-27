@@ -51,9 +51,18 @@
 
       h1 {
         font-weight: 700;
+        font-size: 15px;
         margin: 0;
         padding: 8px 0 8px 24px;
-        font-size: 15px;
+
+        &::-moz-selection {
+          background:transparent;
+          color: var(--color_text_dark);
+        }
+        &::selection {
+          background:transparent;
+          color: var(--color_text_dark);
+        }
       }
     }
   }

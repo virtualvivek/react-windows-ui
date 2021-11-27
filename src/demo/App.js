@@ -54,7 +54,7 @@ import PageJsSplit from './templates/pagejs-split'
 
 import NavBarItem from './NavBarItems.json'
 
-import Img2 from './assets/illustration/macos.jpg'
+import Img2 from './assets/illustration/mountain.jpg'
 
 class App extends React.Component {
 
