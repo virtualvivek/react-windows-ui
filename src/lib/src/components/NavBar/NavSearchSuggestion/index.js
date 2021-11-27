@@ -23,6 +23,11 @@ const NavSearchSuggestion = (props) => {
     !e.target.value ? setUList("hide") : setUList("show");
   }
 
+  const _onClickUL = () => {
+    setSearch("");
+    setUList("hide");
+  }
+
 
   return (
     <div className="app-nav-search" title={props.tooltip}>  
@@ -73,7 +78,7 @@ const NavSearchSuggestion = (props) => {
       <ul
         className={is_ulist}
         ref={listRef}
-        onClick={()=> setUList("hide")}>
+        onClick={()=> _onClickUL()}>
         {teams.map((item) => (
           <li 
             className="option"
