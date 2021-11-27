@@ -1,6 +1,6 @@
 {
   "name": "react-windows-ui-app",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "private": false,
   "description": "Build full featured Windows fluent UI apps using reactjs.",
   "keywords": [
