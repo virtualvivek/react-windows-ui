@@ -3,63 +3,51 @@ import LoaderBusyWrapper from '../_common/LoaderBusyWrapper'
 
 const InputText = (props) => {
 
-  const inputRef = useRef()
+  const inputRef = useRef();
 
   const toggleInput = () => {
-    let input = inputRef.current
-    input.type === "text" ? input.type = "password" : input.type = "text"
+    let input = inputRef.current;
+    input.type === "text" ? input.type = "password" : input.type = "text";
   }
 
   const renderLabel = () => {
     return <span className="app-input-label">{props.label}</span>
   }
-  const renderStatusSuccess = () => {
-    return <i className="icons10-checkmark color-success font-size-18px"></i>
-  }
-  const renderStatusDanger = () => {
-    return <i className="icons10-cross color-danger font-size-18px"></i>
-  }
-  const renderLoader = () => {
-    return  <div className="app-loader-busy small animate" style={{top:'5px'}}>
+  const renderStatus = () => {
+    return  ( props.setStatus === "success"
+            ||props.setStatus === "danger") ?
+            <i className="icons10-keyboard font-size-18px"></i>
+            :
+            props.setStatus === "loading" ?
+            <div className="app-loader-busy small animate">
               <LoaderBusyWrapper/>
             </div>
+            :
+            <></>
   }
 
   return (
-    <div className="app-input-text-container" title={props.tooltip}>
-    { props.label ? renderLabel() : '' }
+    <div
+      className={`app-input-text-container ${props.setStatus}`}
+      title={props.tooltip}>
+      {props.label && (renderLabel())}
       <input
-        className = {
-            props.setStatus === "success" ? "app-input-text success"
-          : props.setStatus === "danger" ? "app-input-text danger"
-          : "app-input-text"
-        }
-        style={{
-          width: props.width
-        }}
-        type={props.type}
+        className="app-input-text"
         ref={inputRef}
-        placeholder={props.placeholder}
+        type={props.type}
+        value={props.value}
         onChange={props.onChange}
         disabled={props.disabled}
-        value={props.value}
+        placeholder={props.placeholder}
+        style={{ width: props.width }}
       />
-        
       <div className="app-input-status-container">
+        {renderStatus()}
 
-        { props.setStatus === "success" ? renderStatusSuccess() : '' }
-        { props.setStatus === "danger" ? renderStatusDanger() : '' }
-        { props.setStatus === "loading" ? renderLoader() : '' }
-
-        <button
+        {props.type==="password" && (<button
           className="unmask"
           type="button"
-          onClick={toggleInput}
-          style={ props.type === "password"
-                ? { display: 'inline-block' }
-                : { display : 'none' }
-                }>
-        </button>
+          onClick={toggleInput}/>)}
       </div>
     </div>
   )
@@ -67,7 +55,8 @@ const InputText = (props) => {
 
 InputText.defaultProps = {
   placeholder: "Input Text",
-  type: "text"
+  type: "text",
+  setStatus: "default"
 }
 
 export default InputText

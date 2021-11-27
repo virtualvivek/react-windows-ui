@@ -18,7 +18,7 @@ const setDarkScheme = () => {
   document.documentElement.style.setProperty('--color_primary_light','#FFFFFF');
   document.documentElement.style.setProperty('--color_primary_dark','#403E41');
   
-  return '';
+  return "";
 }
 
 const setLightScheme = () => {
@@ -35,7 +35,7 @@ const setLightScheme = () => {
   document.documentElement.style.setProperty('--color_primary_light','');
   document.documentElement.style.setProperty('--color_primary_dark','');
 
-  return '';
+  return "";
 }
 
 const Appearance = {   

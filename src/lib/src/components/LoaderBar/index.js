@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const LoaderBar = (props) => {
 
@@ -8,8 +8,8 @@ const LoaderBar = (props) => {
 
   return (
     <div className={props.isLoading
-      ? "app-loader-bar animate" + setTheme()
-      : "app-loader-bar" + setTheme()
+      ? `app-loader-bar animate${setTheme()}`
+      : `app-loader-bar${setTheme()}`
       }>
       <div className="app-loaderBar" id="first"></div>
       <div className="app-loaderBar" id="second"></div>
@@ -23,4 +23,4 @@ LoaderBar.defaultProps = {
   isLoading: true
 }
 
-export default LoaderBar
+export default LoaderBar;

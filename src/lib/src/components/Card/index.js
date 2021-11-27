@@ -23,4 +23,4 @@ Card.defaultProps = {
   hoverable: false
 }
 
-export default Card
+export default Card;

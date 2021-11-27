@@ -4,12 +4,13 @@ const CommandBar = (props) => {
   return (
     <div
       className="app-command-bar"
-      style={{backgroundColor: props.backgroundColor,
-              ...props.style}}>
+      style={{
+        backgroundColor: props.backgroundColor,
+        ...props.style}}>
      
         {props.children}
     </div>
   )
 }
 
-export default CommandBar
+export default CommandBar;

@@ -3,7 +3,7 @@ import React from 'react'
 const Alert = (props) => {
 
   const setThemeLight = () => {
-    return props.setTheme === 'system' ? 'light' : '';
+    return props.setTheme === "system" ? "light" : "";
   }
 
   const _onBackdropPress = (event) => {

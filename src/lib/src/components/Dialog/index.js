@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Dialog = (props) => {
 
@@ -6,28 +6,32 @@ const Dialog = (props) => {
     return props.showDropShadow ? "dropShadow" : "";
   }
 
+  const _onBackdropPress = (event) => {
+    event.preventDefault();
+    if(event.target === event.currentTarget) {
+      props.onBackdropPress();
+    } 
+  }
+
   return (
-    <>
     <div
-      onClick={ props.onBackdropPress }
-      className={props.isVisible ?
-        "app-dim-overlay show" : "app-dim-overlay"
-        }>
-    </div>
-    <div
-      className={ props.isVisible
-        ? `app-dialog ${isDropShadow()} show`
-        : `app-dialog ${isDropShadow()}`
+      className={
+        props.isVisible ? "app-dialog show"
+                        : "app-dialog"
       }
-      style={{  padding: props.padding  }}>
+      onClick={(event)=>_onBackdropPress(event)}>
+      <div
+        class={`app-dialog-modal ${isDropShadow()}`}
+        style={props.style}>
         {props.children}
+      </div>  
     </div>
-    </>
   )
 }
 
 Dialog.defaultProps = {
-  isVisible: false
+  isVisible: false,
+  onBackdropPress: () => {}
 }
 
-export default Dialog
+export default Dialog;

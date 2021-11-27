@@ -1,4 +1,4 @@
-import React,{ useState,useEffect } from 'react'
+import React,{ useState,useEffect } from "react";
 
 const SplashScreen = (props) => {
   const [isOpen, setOpen] = useState(true);
@@ -14,8 +14,8 @@ const SplashScreen = (props) => {
     <div
       style={
         isOpen ?
-          {display:'flex', backgroundColor: props.backgroundColor}
-        : {display:'none'}
+          {display:"flex", backgroundColor: props.backgroundColor}
+        : {display:"none"}
       }
       className="app-splash-screen app-flex-center">
       <h1 className="color-white">{props.title}</h1>
@@ -31,4 +31,4 @@ SplashScreen.defaultProps = {
   duration: 1000
 }
 
-export default SplashScreen
+export default SplashScreen;

@@ -67,19 +67,20 @@ class DialogDocs extends React.Component {
         isVisible={this.state.showDialogConfirm}
         onBackdropPress={this.toggleDialogConfirm}
         showDropShadow={true}
-        padding={20}>
+        style={{padding:10}}>
         <h2 className="m-tb-10">Dialog Confirm</h2>
-        <h3>Are you feel good today?</h3>  
+        <p>Are you feel good today?</p>  
         <div style={{display:'flex',justifyContent:'flex-end'}}>
           <Button
-            value="Cancel"
-            type="danger"
+            value="Confirm"
+            type="primary"
             onClick={this.toggleDialogConfirm}/>
           <div className="app-space-15"></div>
           <Button
-            value="OK"
-            type="primary"
+            value="Cancel"
             onClick={this.toggleDialogConfirm}/>
+          
+          
         </div>
       </Dialog>
 

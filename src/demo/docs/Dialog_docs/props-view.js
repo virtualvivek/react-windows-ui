@@ -20,10 +20,10 @@ const PropsView = () => {
           <td>Set's Dialog visibility</td>
         </tr>
         <tr>
-          <td><p className="app-code">padding</p></td>
+          <td><p className="app-code">style</p></td>
           <td>CSS Property</td>
-          <td>0</td>
-          <td>Set's Dialog padding style</td>
+          <td>null</td>
+          <td>Set's Dialog container style</td>
         </tr>
         <tr>
           <td><p className="app-code">onBackdropPress</p></td>

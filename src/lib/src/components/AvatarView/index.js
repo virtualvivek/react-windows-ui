@@ -16,17 +16,17 @@ const AvatarView = (props) => {
   const renderDropShadow = () => {
     return <img
       className={
-        props.size === "small"
-        ? "app-avatar small drop-shadow" : props.size === "large"
-        ? "app-avatar large drop-shadow" : "app-avatar medium drop-shadow"
+        props.size === "small" ? "app-avatar small drop-shadow"
+      : props.size === "large" ? "app-avatar large drop-shadow"
+      : "app-avatar medium drop-shadow"
       }
-      style={{
-        objectFit: props.objectFit,
-        width: props.width,
-        height: props.height,
-      }}
       src={props.src}
       alt={props.alt}
+      style={{
+        width: props.width,
+        height: props.height,
+        objectFit: props.objectFit,
+      }}
     />
   }
 
@@ -38,9 +38,9 @@ const AvatarView = (props) => {
     <div className="app-avatar-container" title={props.tooltip}>
       <img
         className={
-          props.size === "small"
-          ? "app-avatar small" : props.size === "large"
-          ? "app-avatar large" : "app-avatar medium"
+          props.size === "small" ? "app-avatar small"
+        : props.size === "large" ? "app-avatar large"
+        : "app-avatar medium"
         }
         src={props.src}
         alt={props.alt}
@@ -69,4 +69,4 @@ AvatarView.defaultProps = {
   onError: () => {}
 }
 
-export default AvatarView
+export default AvatarView;

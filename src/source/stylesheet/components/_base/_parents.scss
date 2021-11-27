@@ -212,6 +212,9 @@
   z-index: 10;
   opacity: 0;
   visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #77777777;
   transition: visibility 0.3s, opacity 0.3s ease;
 

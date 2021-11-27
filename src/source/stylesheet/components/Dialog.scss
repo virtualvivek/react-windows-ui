@@ -1,28 +1,28 @@
 .app-dialog {
-  @extend .background-color-grey-light;
+  @extend .app-dim-overlay;
 
-  width: 440px;
-  max-height: 54vh;
-  position: fixed;
-  top: 0;
-  left: 32vw;
-  z-index: 11;
-  margin-top: 22vh;
-  border: 1px solid #999;
-  overflow-y: auto;
-  box-shadow: 0 0 7vh rgba(0, 0, 0, 0.14);
+  .app-dialog-modal {
+    width: 440px;
+    max-height: 54vh;
+    z-index: 11;
+    position: fixed;
+    overflow-y: auto;
+    border: 1px solid #999;
+    background-color: var(--color_grey_light);
+    box-shadow: 0 0 7vh rgba(0, 0, 0, 0.14);
 
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
-  transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    transform: translateY(50px);
 
-  &.dropShadow {
-    background-color: var(--color_grey_light_alpha);
-    backdrop-filter: blur(24px);
+    &.dropShadow {
+      background-color: var(--color_grey_light_alpha);
+      backdrop-filter: blur(24px);
+    }
   }
 
-  &.show {
+  &.show .app-dialog-modal {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -30,16 +30,16 @@
 }
 
 @mixin dialog-mobile() {
-  .app-dialog {
+  .app-dialog .app-dialog-modal {
     width: 100%;
     width: -webkit-fill-available;
     width: -moz-available;
     left: 0;
     bottom: 0;
     top: initial;
-    border-top: 1px solid #999;
     border-left: none;
     border-right: none;
+    border-top: 1px solid #999;
     transform: translateY(100%); //adding full 100% to animate like bottomsheet
   }
 }

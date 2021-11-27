@@ -4,9 +4,7 @@ const ProgressBar = (props) => {
   return (
     <div className="app-progress-container" title={props.tooltip}>
 
-      <div style={ props.showIcon ? { display: "block"} : { display : "none" }}>
-        {props.icon}
-      </div>
+      {props.icon && (<>{props.icon}</>)}
       
       <div style={ props.showIcon ? { marginLeft: "15px" } : { marginLeft: "" }}>
         <span className="title">{props.title}</span>
@@ -22,7 +20,7 @@ const ProgressBar = (props) => {
             }}>
           </span>
         </div>
-        <span className="subtitle">{props.subtitle}</span>
+        {props.subtitle && (<span className="subtitle">{props.subtitle}</span>)}
       </div>
     </div>
   )
@@ -33,4 +31,4 @@ ProgressBar.defaultProps = {
   setProgress: 0
 }
 
-export default ProgressBar
+export default ProgressBar;

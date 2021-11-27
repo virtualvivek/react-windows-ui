@@ -35,10 +35,7 @@ render() {
       placeholder="Enter a text"
       tooltip="InputText tooltip title"/>
     <br/><br/>
-    <InputText
-      placeholder="Disbaled Input"
-      disabled/>
-    <br/><br/>
+
 
     <SyntaxHighlighter
       language="javascript"
@@ -84,6 +81,7 @@ render() {
     <h2>Input Label</h2>
 
     <InputText
+      width={225}
       label="label"
       placeholder="Enter a text"/>
     <br/><br/>

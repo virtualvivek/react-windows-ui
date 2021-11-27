@@ -7,20 +7,20 @@ const LinkCompound = (props) => {
     return props.focused ? "focused" : "";
   }
   const setImg = () =>{
-    return props.img ? <img src={props.img} alt={props.imgAlt}/> : "";
+    return props.img ? <img src={props.img} alt={props.imgAlt}/> : <></>;
   }
   return (
     <Link
-      to={props.to}
-      onClick={props.onClick}
       className={
-          props.type === "border"
-          ? `app-link-compound primary ${setFocused()}`
-          : `app-link-compound ${setFocused()}`
-        }
+        props.type === "border"
+        ? `app-link-compound primary ${setFocused()}`
+        : `app-link-compound ${setFocused()}`
+      }
+      to={props.to}
       style={props.style}
+      target={props.target}
       title={props.tooltip}
-      target={props.target}>
+      onClick={props.onClick}>
         <div className="app-link-compound-container">
           {props.icon}
           {setImg()}
@@ -39,4 +39,4 @@ LinkCompound.defaultProps = {
   onClick: () => {},
 }
 
-export default LinkCompound
+export default LinkCompound;

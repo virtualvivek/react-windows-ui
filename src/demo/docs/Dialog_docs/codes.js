@@ -28,9 +28,9 @@ const DialogConfirmUsageCode =
   isVisible={this.state.showDialogConfirm}
   onBackdropPress={this.toggleDialogConfirm}
   showDropShadow={true}
-  padding={20}>
+  style={{padding: 10}}>
   <h2 className="m-tb-10">Dialog Confirm</h2>
-  <h3>Are you feel good today?</h3>  
+  <p>Are you feel good today?</p>  
   <div style={{display:'flex',justifyContent:'flex-end'}}>
     <Button
       value="Cancel"

@@ -6,8 +6,6 @@
     width: 55%;
     z-index: 99;
     position: fixed;
-    left: 24vw;
-    margin-top: 30vh;
     background: var(--PrimaryColor);
     box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);
 
@@ -78,6 +76,7 @@
     .app-alert-modal {
       width: 100% !important;
       left: 0 !important;
+      top: 0;
       margin: 0;
       transition: all 0.3s ease;
       transform: translateY(-100%);

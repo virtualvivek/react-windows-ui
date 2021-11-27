@@ -5,11 +5,11 @@ const Checkbox = (props) => {
     <label className="app-checkbox" title={props.tooltip}>
       <input
         type="checkbox"
-        defaultChecked={props.defaultChecked}
-        disabled={props.disabled}
-        onChange={props.onChange}
         name={props.name}
         value={props.value}
+        disabled={props.disabled}
+        onChange={props.onChange}
+        defaultChecked={props.defaultChecked}
       />
       {" "+props.label}
     </label>

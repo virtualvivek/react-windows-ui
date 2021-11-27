@@ -1,6 +1,6 @@
-import React,{ useState,useEffect, useMemo, useRef } from 'react'
-import useOutSideClick from '../utils/hooks/useOutSideClick'
-import getScreenOffset from '../utils/getScreenOffset'
+import React, { useState,useEffect, useMemo, useRef } from "react";
+import useOutSideClick from "../utils/hooks/useOutSideClick";
+import getScreenOffset from "../utils/getScreenOffset";
 
 const Select = (props) => {
   const data_default = [];
@@ -48,13 +48,13 @@ const Select = (props) => {
   }
 
   // Click outside Code using custom hook
-  const wrapperRef = useRef(null)
+  const wrapperRef = useRef(null);
   //useOutSideClick(wrapperRef, () => console.log('OUTSIDE CLICKED'));
   useOutSideClick(wrapperRef, () => setOpen(false));
 
   
   return (
-    <div className="app-select-styled react" ref={wrapperRef} >
+    <div className="app-select-styled react" ref={wrapperRef}>
       <div
         className="app-select-header"
         onClick={toggleDropdown}>
@@ -79,4 +79,4 @@ Select.defaultProps = {
   onChange: () => {}
 }
 
-export default Select
+export default Select;

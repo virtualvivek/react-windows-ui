@@ -14,8 +14,9 @@
 @mixin nav-appname-mobile() {
   .app-nav-wrap {
     .app-name {
-      padding: 10px 15px;
+      padding: 0 15px;
       font-size: 14px;
+      position: fixed;
     }
   }
 }

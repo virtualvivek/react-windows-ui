@@ -63,10 +63,9 @@ const AppTheme = React.memo(
 );
 
 AppTheme.defaultProps = {
-  onSchemeChange: () => {},
+  scheme: "system",
   onColorChange: () => {},
-  onMount: () => {},
-  scheme: "system"
+  onSchemeChange: () => {},
 }
 
-export default AppTheme
+export default AppTheme;

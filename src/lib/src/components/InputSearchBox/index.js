@@ -6,10 +6,10 @@ const InputSearchBox = (props) => {
       <input
         className="app-input-text app-input-search"
         type="search"
-        placeholder={props.placeholder}
-        onChange={props.onChange}
         name={props.name}
         value={props.value}
+        onChange={props.onChange}
+        placeholder={props.placeholder}
       />
     </div>
   )

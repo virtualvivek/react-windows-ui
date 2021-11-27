@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const ListItem = (props) => {
   return (
@@ -13,10 +13,10 @@ const ListItem = (props) => {
             src={ props.img }
             alt={ props.imgAlt }
             style={ props.img ?
-                  { display: "", borderRadius: props.imgBorderRadius } :
+                  { display: "", borderRadius: props.imgBorderRadius }
+                  :
                   { display : "none" }
-                  }>
-          </img>
+                  }/>
           <div>
             <span className="app-list-title">{props.title}</span>
             <p className="app-list-subtitle">{props.subtitle}</p>
@@ -33,4 +33,4 @@ ListItem.defaultProps = {
   borderBottom: true
 }
 
-export default ListItem
+export default ListItem;

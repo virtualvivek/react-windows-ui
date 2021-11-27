@@ -97,9 +97,9 @@ const CommandBarButton = (props) => {
 }
 
 CommandBarButton.defaultProps = {
-  data:[],
-  dataDisabled: false,
+  data: [],
   value: "Value",
+  dataDisabled: false,
   valueDisabled: false,
 }
 
