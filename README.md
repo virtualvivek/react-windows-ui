@@ -1,29 +1,19 @@
 <p align="center"> 
-
-
-
   <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="400" /> 
 </p>
-
-
 
 
 <h1 align="center">react-windows-ui</h1>
 
 
-
-
 <p align="center">Build full featured <b>Windows fluent UI</b> apps using <b>ReactJS</b>.</p>
-
-
 
 <p align="center">
 	 
   <a href="https://virtualvivek.github.io/react-windows-ui/">
     <img src="https://img.shields.io/circleci/build/github/virtualvivek/react-windows-ui?style=flat-square&logo=circleci&token=346e79ab71a8d9c3bad22bacbebc7d7c50dae520"
       alt="Build" />
-  </a>
-	
+  </a>	
 	
 	
   <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
@@ -82,12 +72,12 @@ import 'react-windows-ui/config/app-config.css'
 import 'react-windows-ui/dist/react-windows-ui.min.css'
 import 'react-windows-ui/icons/fonts/fonts.min.css'
 ```
-### app-config
+## Configuration
 
-‣ `app-config.css` file contains the `PrimaryColor`, `Fontfamily` used by the app. <br>
-‣ You can import default `app-config` using this file <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
+**`app-config.css`** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br>
+‣ You can import default `app-config` file <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
 _OR_ <br>
-Create your own like this
+‣ Create your own like this
 
 ```css
 :root {
@@ -101,7 +91,7 @@ body {
 # Usage
 
 ```js
-import { Button, InputText } from 'react-windows-ui';
+import { Button, InputText } from "react-windows-ui";
 
 const App = () => (
   <>
@@ -113,12 +103,12 @@ const App = () => (
 # [Boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
 <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_boilerplate_screen.JPG" width="800" />
 
-You can initialize you Repo with this `Template` <br>
+‣ You can initialize you Repo with this **`Template`** <br>
 <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_template_boilerplate.JPG" width="650" />
 
 OR <br>
 
-**Clone as a Repository:**
+‣ **`Clone as a Repository`:**
 [virtualvivek/react-windows-ui-boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
 
 ## Run Demo Locally
@@ -218,5 +208,5 @@ Support it by joining [**stargazers**](https://github.com/virtualvivek/react-win
 
 # License
 
-**`react-windows-ui`** is licensed under `MIT license`. View [license](https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE).<br>
+**`react-windows-ui`** is licensed under **`MIT license`**. View [license](https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE).<br>
 Copyright (c) 2021 [**Vivek Verma**](https://github.com/virtualvivek)
