@@ -5,19 +5,7 @@
     overflow-y: hidden;
     overflow-x: scroll;
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.25);
-
-    .app-nav-list {
-      width: 100%;
-      position: relative;
-      z-index: 2;
-      padding: 0;
-      margin: 0 auto;
-      line-height: initial;
-      white-space: nowrap;
-      display: inline-flex;
-      align-items: flex-start;
-    }
-
+  
     .app-nav-list h1,
     .app-nav-toggle {
       display: none !important;
@@ -33,6 +21,7 @@
   
   @include nav-appname-mobile();
   @include nav-header-mobile();
+  @include nav-ul-mobile();
   @include nav-ul-li-mobile();
   @include nav-ul-hr-mobile();
   @include app-navbar-search-mobile();

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const SelectBox = (props) => {
   return (
@@ -20,4 +20,4 @@ SelectBox.defaultProps = {
   data:[]
 }
 
-export default SelectBox
+export default SelectBox;

@@ -26,20 +26,16 @@
       height: 35px;
       padding-left: 45px;
     }
-    i {
-      font-size: 18px;
-      margin-right: -35px;
-      z-index: 1;
-      line-height: normal;
-    }
-    .icons10-cross {
-      margin: 0;
-      color: var(--color_text_dark);
-    }
     button {
       width: 40px;
       border: none;
       background-color: transparent;
+    }
+    &::before {
+      @extend .font-icon-dark;
+      z-index: 2;
+      content: "\f1b9";
+      margin-right: -35px;
     }
   }
   .app-search-dialog-trigger {
@@ -68,11 +64,15 @@
     .app-search-box { display: none; }
     
     .app-search-dialog {
-      padding: 15px;
       z-index: 9;
+      padding: 5px;
+      justify-content: start;
+      margin-inline-start: 30px;
 
       .app-input-search {
         width: 80%;
+        height: 30px;
+        font-size: 14px;
       }
     }
     .app-search-dialog-trigger {

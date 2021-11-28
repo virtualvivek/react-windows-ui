@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
-import Appearance from '../Appearance'
-import ThemeManager from '../utils/ThemeManager'
+import React, { useEffect } from "react";
+import Appearance from "../Appearance";
+import ThemeManager from "../utils/ThemeManager";
 
 const AppTheme = React.memo(
   (props) => {
@@ -12,6 +12,15 @@ const AppTheme = React.memo(
             window.matchMedia("(prefers-color-scheme: dark)").matches) {
           Appearance.setDarkScheme();
         }
+        else {
+          Appearance.setLightScheme();
+        }
+      }
+      else if(scheme === "dark") {
+        Appearance.setDarkScheme();
+      }
+      else if(scheme === "light") {
+        Appearance.setLightScheme();
       }
     },[scheme]);
 

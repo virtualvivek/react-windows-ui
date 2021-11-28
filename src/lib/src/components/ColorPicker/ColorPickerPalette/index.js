@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState} from "react";
 
 const ColorPickerPalette = (props) => {
   const [icolor, setColor] = useState(props.color);
@@ -27,4 +27,4 @@ ColorPickerPalette.defaultProps = {
   color: "#eee"
 }
 
-export default ColorPickerPalette
+export default ColorPickerPalette;

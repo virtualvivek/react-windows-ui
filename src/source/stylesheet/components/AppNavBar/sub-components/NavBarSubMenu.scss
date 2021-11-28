@@ -56,8 +56,8 @@
       &:hover { background-color: unset; }
 
       i {
-        transform: rotate(-90deg);
         height: max-content;
+        transform: rotate(-90deg);
       }
     }
 
@@ -79,9 +79,9 @@
       }
 
       &.show {
-        transition: max-width 0.38s ease-in;
         max-width: 500px;
         overflow: overlay;
+        transition: max-width 0.38s ease-in;
       }
     }
   }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 const Accordion = (props) => {
   const [isActive, setIsActive] = useState(false);
@@ -31,4 +31,4 @@ Accordion.defaultProps = {
   focused: true
 }
 
-export default Accordion
+export default Accordion;

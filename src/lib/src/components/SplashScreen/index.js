@@ -1,11 +1,10 @@
-import React,{ useState,useEffect } from "react";
+import React,{ useState, useEffect } from "react";
 
 const SplashScreen = (props) => {
   const [isOpen, setOpen] = useState(true);
 
   useEffect(() => {
-
-    setTimeout(()=>{
+    setTimeout(() => {
       props.isVisible ? setOpen(true) : setOpen(false);
     }, props.duration);
   }, [props.isVisible,props.duration])

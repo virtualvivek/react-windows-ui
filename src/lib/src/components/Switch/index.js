@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Switch = (props) => {
   return (
@@ -7,12 +7,15 @@ const Switch = (props) => {
       title={props.tooltip}>
       <input
         type="checkbox"
-        defaultChecked={props.defaultChecked}
         disabled={props.disabled}
-        onChange={props.onChange} />
+        onChange={props.onChange}
+        defaultChecked={props.defaultChecked} />
       <div className="app-switch-view"></div>
       {props.label && (
-        <span data-off={props.labelOff} data-on={props.labelOn}></span>
+        <span
+          data-on={props.labelOn}
+          data-off={props.labelOff}>
+        </span>
       )}
     </label>
   )
@@ -24,4 +27,4 @@ Switch.defaultProps = {
   label: true
 }
 
-export default Switch
+export default Switch;

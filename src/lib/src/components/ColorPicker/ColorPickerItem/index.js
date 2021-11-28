@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const ColorPickerItem = (props) => {
   return (
@@ -27,4 +27,4 @@ ColorPickerItem.defaultProps = {
   color: "#eee"
 }
 
-export default ColorPickerItem
+export default ColorPickerItem;

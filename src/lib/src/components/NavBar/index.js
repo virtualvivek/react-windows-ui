@@ -8,12 +8,12 @@ import NavSearchSuggestion from './NavSearchSuggestion'
 import NavBarSubMenu from './NavBarSubMenu'
 
 export {
-    NavBar,
-    NavBarLink,
-    NavPageContainer,
-    NavPageContainerRight,
-    NavPageContainerInner,
-    NavSearchBox,
-    NavSearchSuggestion,
-    NavBarSubMenu
+  NavBar,
+  NavBarLink,
+  NavPageContainer,
+  NavPageContainerRight,
+  NavPageContainerInner,
+  NavSearchBox,
+  NavSearchSuggestion,
+  NavBarSubMenu
 }

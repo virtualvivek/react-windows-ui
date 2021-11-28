@@ -55,7 +55,6 @@ const NavSearchSuggestion = (props) => {
     <div
       className={ menubar ? "app-search-dialog show" : "app-search-dialog"}
       ref={dialogRef}>
-        <i className="icons10-search"></i>
         <input
           className="app-input-text app-input-search"
           type="search"
@@ -71,26 +70,26 @@ const NavSearchSuggestion = (props) => {
             setSearch(e.target.value);
           }}
         />
-        <button onClick={showMenuBar}>
+        <button className="font-size-16px" onClick={showMenuBar}>
           <i className="icons10-cross"></i>
         </button>
     </div>
-      <ul
-        className={is_ulist}
-        ref={listRef}
-        onClick={()=> _onClickUL()}>
-        {teams.map((item) => (
-          <li 
-            className="option"
-            key={item.label}>
-              <Link to={item.link} onClick={item.onClick}>
-              {item.icon}{item.label}
-              </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
+    <ul
+      className={is_ulist}
+      ref={listRef}
+      onClick={()=> _onClickUL()}>
+      {teams.map((item) => (
+        <li 
+          className="option"
+          key={item.label}>
+            <Link to={item.link} onClick={item.onClick}>
+            {item.icon}{item.label}
+            </Link>
+        </li>
+      ))}
+    </ul>
+  </div>
+ )
 }
 
 NavSearchSuggestion.defaultProps = {

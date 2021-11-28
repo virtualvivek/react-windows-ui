@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Checkbox = (props) => {
   return (
@@ -21,4 +21,4 @@ Checkbox.defaultProps = {
   label: ""
 }
 
-export default Checkbox
+export default Checkbox;

@@ -1,5 +1,6 @@
 @import "./sub-items//Nav_AppName.scss";
-@import "./sub-items/Nav_Li.scss";
+@import "./sub-items/Nav_List_Li.scss";
+@import "./sub-items/Nav_List_Ul.scss";
 @import "./sub-items/Nav_ToggleButton.scss";
 @import "./sub-items/Nav_Badge.scss";
 
@@ -43,28 +44,6 @@
           transform: scale(0.98, 0.98);
         }
         a { @extend .transition-all-400ms; }
-      }
-    }
-
-    .app-nav-list {
-      margin: 60px 0 0 0;
-      padding: 0 0 40px 0;
-      list-style: none;
-
-      h1 {
-        font-weight: 700;
-        font-size: 15px;
-        margin: 0;
-        padding: 8px 0 8px 24px;
-
-        &::-moz-selection {
-          background:transparent;
-          color: var(--color_text_dark);
-        }
-        &::selection {
-          background:transparent;
-          color: var(--color_text_dark);
-        }
       }
     }
   }
