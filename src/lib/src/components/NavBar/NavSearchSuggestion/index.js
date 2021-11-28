@@ -70,14 +70,14 @@ const NavSearchSuggestion = (props) => {
             setSearch(e.target.value);
           }}
         />
-        <button className="font-size-16px" onClick={showMenuBar}>
+        <button className="font-size-16px" onClick={_onClickUL}>
           <i className="icons10-cross"></i>
         </button>
     </div>
     <ul
       className={is_ulist}
       ref={listRef}
-      onClick={()=> _onClickUL()}>
+      onClick={_onClickUL}>
       {teams.map((item) => (
         <li 
           className="option"

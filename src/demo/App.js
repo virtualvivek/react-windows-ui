@@ -97,7 +97,7 @@ class App extends React.Component {
           data={[
             {label: 'home', link: '#', icon: <i className="icons10-home"></i>},
             {label: 'alert', link: '/alerts'},
-            {label: 'accordion', link: '#'},
+            {label: 'accordion', link: '/accordion'},
             {label: 'apperarance', link: '/appearance'},
             {label: 'avatarview', link: '/avatarview'},
             {label: 'buttons', link: '/buttons'},

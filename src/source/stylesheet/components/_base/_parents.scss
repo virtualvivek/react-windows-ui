@@ -254,6 +254,7 @@
       display: flex;
       align-items: center;
       padding-left: 10px;
+      @extend .tap-highlight-none;
 
       &:hover {
         @extend .background-color-link-bg-hover;

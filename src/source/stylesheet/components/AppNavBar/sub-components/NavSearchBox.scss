@@ -64,15 +64,13 @@
     .app-search-box { display: none; }
     
     .app-search-dialog {
+      height: 45px;
       z-index: 9;
-      padding: 5px;
+      padding-left: 35px;
       justify-content: start;
-      margin-inline-start: 30px;
 
       .app-input-search {
         width: 80%;
-        height: 30px;
-        font-size: 14px;
       }
     }
     .app-search-dialog-trigger {

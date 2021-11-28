@@ -16,7 +16,7 @@
         padding: 2px 15px;
 
         &:hover { background: var(--color_grey_light); }
-        &:active { background: var(--color_link_bg_hover); }
+        &:active { background: var(--color_link_bg_hover) !important; }
       }
     }
   }
