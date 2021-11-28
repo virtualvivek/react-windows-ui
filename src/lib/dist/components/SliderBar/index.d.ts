@@ -3,12 +3,12 @@ import React from 'react'
 export interface SliderBarProps {
   min ?: number;
   max ?: number;
-  defaultValue ?: number;
   step ?: number;
+  tooltip ?: string;
   showValue ?: boolean;
   thumbStyle ?: string;
+  defaultValue ?: number;
   onChange ?: () => void;
-  tooltip ?: string;
 }
 declare const SliderBar: React.FC<SliderBarProps>
 

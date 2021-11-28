@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 
 export interface NavPageContainerInnerProps {
-    children ?: ReactNode;
+  children ?: ReactNode;
 }
 declare const NavPageContainerInner: React.FC<NavPageContainerInnerProps>
 
