@@ -1,12 +1,12 @@
 import React from 'react'
 
 export interface RadioButtonProps {
-  name ?: string;
   value ?: any;
-  defaultChecked ?: boolean;
-  disabled ?: boolean;
+  name ?: string;
   label ?: string;
   tooltip ?: string;
+  disabled ?: boolean;
+  defaultChecked ?: boolean;
   onChange ?: () => void;
 }
 declare const RadioButton: React.FC<RadioButtonProps>

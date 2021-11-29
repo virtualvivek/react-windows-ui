@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
-import LoaderBusyWrapper from '../_common/LoaderBusyWrapper'
+import React, { useRef } from "react";
+import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
 
 const InputText = (props) => {
 
@@ -59,4 +59,4 @@ InputText.defaultProps = {
   setStatus: "default"
 }
 
-export default InputText
+export default InputText;

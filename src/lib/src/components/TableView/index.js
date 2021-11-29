@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react'
-import Cell from './Cell'
+import React, { useState, useEffect } from "react";
+import Cell from "./Cell";
 
 const TableView = (props) => {
 
-  const rows_data = props.rows
+  const rows_data = props.rows;
   useEffect(() => {
     //console.log('rows data state changed from parent');
     setRows(rows_data)
   }, [rows_data])
 
-  const [rows, setRows] = useState(rows_data)
-  const [tappedColumn, setTappedColumn] = useState(undefined)
+  const [rows, setRows] = useState(rows_data);
+  const [tappedColumn, setTappedColumn] = useState(undefined);
 
   const alphaOrder = (index) => {
     const myData = [].concat(rows).sort((a, b) => a[index] > b[index] ? 1 : -1)
@@ -62,4 +62,4 @@ TableView.defaultProps = {
   rowFontSize: 16
 }
 
-export default TableView
+export default TableView;

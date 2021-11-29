@@ -17,7 +17,7 @@ const SelectBox = (props) => {
 }
 
 SelectBox.defaultProps = {
-  data:[]
+  data: []
 }
 
 export default SelectBox;

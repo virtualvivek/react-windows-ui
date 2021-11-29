@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const Cell = (props) => {
 
-  const rows_data = props.rows
+  const rows_data = props.rows;
 
   return (
     <tr>
@@ -24,4 +24,4 @@ Cell.defaultProps = {
   rows: []
 }
 
-export default Cell
+export default Cell;

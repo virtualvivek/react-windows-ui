@@ -45,9 +45,9 @@ const AvatarView = (props) => {
         src={props.src}
         alt={props.alt}
         style={{
-          objectFit: props.objectFit,
           width: props.width,
           height: props.height,
+          objectFit: props.objectFit,
         }}
         // onLoad={() => setLoad(true)}
         onLoad={() => { handleOnLoad(); props.onLoad() }}

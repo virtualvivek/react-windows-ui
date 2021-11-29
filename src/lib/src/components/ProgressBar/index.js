@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const ProgressBar = (props) => {
   return (
     <div className="app-progress-container" title={props.tooltip}>
 
-      {props.icon && (<>{props.icon}</>)}
+      {props.icon && (<div className="app-progress-icon">{props.icon}</div>)}
       
-      <div style={ props.showIcon ? { marginLeft: "15px" } : { marginLeft: "" }}>
-        <span className="title">{props.title}</span>
+      <div className="app-progress-content">
+        <span className="app-progress-title">{props.title}</span>
         <div
           className={props.showIcon ? "app-progress withIcon" : "app-progress"}
           style={{
@@ -20,7 +20,7 @@ const ProgressBar = (props) => {
             }}>
           </span>
         </div>
-        {props.subtitle && (<span className="subtitle">{props.subtitle}</span>)}
+        {props.subtitle && (<span className="app-progress-subtitle">{props.subtitle}</span>)}
       </div>
     </div>
   )

@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react'
 
 export interface CommandBarProps {
+  zIndex ?: number;
   position ?: string;
   top ?: number | string;
   margin ?: number | string;
-  zIndex ?: number;
   showDropShadow ?: boolean;
   children ?: ReactNode;
 }

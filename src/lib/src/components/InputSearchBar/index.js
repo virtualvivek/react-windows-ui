@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-const Switch = (props) => {
+const InputSearchBar = (props) => {
   return (
     <div className="app-search-bar" title={props.tooltip}>
       <input
@@ -18,8 +18,8 @@ const Switch = (props) => {
   )
 }
 
-Switch.defaultProps = {
+InputSearchBar.defaultProps = {
   placeholder: "Search here.."
 }
 
-export default Switch
+export default InputSearchBar;

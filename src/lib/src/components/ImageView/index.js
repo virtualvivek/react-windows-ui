@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import LoaderBusyWrapper from '../_common/LoaderBusyWrapper'
+import React, { useState } from "react";
+import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
 
 const ImageView = (props) => {
 
@@ -28,8 +28,8 @@ const ImageView = (props) => {
       style={{
         width: props.width,
         height: props.height,
-        padding: props.padding,
         margin: props.margin,
+        padding: props.padding,
         borderRadius: props.borderRadius
       }}>
       <img
@@ -37,7 +37,7 @@ const ImageView = (props) => {
         src={props.src}
         alt={props.alt}
         style={{
-          objectFit : props.objectFit
+          objectFit: props.objectFit
         }}
         // onLoad={() => setLoad(true)}
         onLoad={() => { handleOnLoad(); props.onLoad() }}
@@ -56,13 +56,13 @@ const ImageView = (props) => {
 }
 
 ImageView.defaultProps = {
-  isLoading: false,
   width: 124,
   height: 124,
   alt : "image",
+  isLoading: false,
   objectFit : "cover",
   onLoad: () => {},
   onError: () => {}
 }
 
-export default ImageView
+export default ImageView;

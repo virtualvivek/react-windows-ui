@@ -5,7 +5,7 @@ const Accordion = (props) => {
 
   return (
     <div
-      className="app-accordion-item"
+      className="app-accordion"
       style={{
         width: props.width
       }}>

@@ -37,7 +37,7 @@ const SliderBar = (props) => {
       />
       { props.showValue && (<span> {props.defaultValue}</span>) }
       <span
-        className="popup"
+        className="app-range-slider-popup"
         ref={inputRef}
         style={{ left: (props.defaultValue/props.max) *72+"%" }}>
           {props.defaultValue}

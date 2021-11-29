@@ -37,7 +37,7 @@ const CommandBarButton = (props) => {
 
   const renderValueButton = () => {
     return <button
-      className="commandbar-button"
+      className="app-commandbar-button"
       onClick={props.onClick}
       disabled={props.valueDisabled}>
       {props.icon}{props.value}
@@ -48,11 +48,11 @@ const CommandBarButton = (props) => {
   const memoizedRender = useMemo(() => {
 
     return props.data.length !== 0 && !props.onClick ? <div
-      className="app-commandbar-btn"
+      className="app-commandbar-btn-container"
       ref={wrapperRef}>
         <button
           onClick={toggleMenuBar}
-          className="commandbar-button"
+          className="app-commandbar-button"
           disabled={props.dataDisabled}>
           {props.icon}{props.value}&nbsp;&nbsp;
           <i className="icons10-angle-down custom"></i>
@@ -63,18 +63,18 @@ const CommandBarButton = (props) => {
       </div>
     :
     props.onClick && props.data.length === 0 ? <div
-      className="app-commandbar-btn">
+      className="app-commandbar-btn-container">
       {renderValueButton()}
     </div>
     :
     props.data.length !== 0 && props.onClick ? <div
-    className="app-commandbar-btn"
+    className="app-commandbar-btn-container"
     ref={wrapperRef}>
       <div className="app-inline-flex">
         {renderValueButton()}
         <hr/>
         <button
-          className="commandbar-button"
+          className="app-commandbar-button"
           onClick={toggleMenuBar}
           disabled={props.dataDisabled}>
           <i className="icons10-angle-down custom"></i>

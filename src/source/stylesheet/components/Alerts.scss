@@ -31,14 +31,14 @@
     padding: 25px 32px 10px 32px;
     background-color: transparent;
   }
-  .alert-message {
+  .app-alert-message {
     font-size: 1em;
     text-align: justify;
     min-height: 80px;
     padding: 0 32px;
     line-break: auto;
   }
-  .alert-btn-container {
+  .app-alert-btn-container {
     display: block;
     text-align: right;
     padding: 0 15px 10px 15px;
@@ -64,15 +64,14 @@
 
   h1,
   button,
-  .alert-btn-container,
-  .alert-message {
+  .app-alert-btn-container,
+  .app-alert-message {
     background-color: transparent !important;
   }
 }
 
 @mixin alert-mobile() {
   .app-alert {
-
     .app-alert-modal {
       width: 100% !important;
       left: 0 !important;

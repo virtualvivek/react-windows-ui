@@ -2,19 +2,19 @@
   display: flex;
   align-items: center;
 
-  i {
+  .app-progress-icon {
     color: var(--color_text_dark);
     font-size: 30px;
   }
 
-  .title,
-  .subtitle {
+  .app-progress-title,
+  .app-progress-subtitle {
     @extend .font-weight-500;
   }
-  .title {
+  .app-progress-title {
     line-height: 2;
   }
-  .subtitle {
+  .app-progress-subtitle {
     font-size: 14px;
     opacity: 0.8;
   }
@@ -43,6 +43,10 @@
       width: 355px;
       overflow: visible;
     }
+  }
+  // check if .app-progress-content has a sibling of same type
+  .app-progress-content:first-of-type:not(:only-of-type) {
+    margin-left: 15px;
   }
 }
 

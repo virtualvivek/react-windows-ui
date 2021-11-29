@@ -1,4 +1,4 @@
-.app-commandbar-btn {
+.app-commandbar-btn-container {
   @extend .user-select-none;
   @extend .tap-highlight-none;
 
@@ -8,7 +8,7 @@
   display: inline-flex;
   flex-direction: column;
 
-  .commandbar-button {
+  .app-commandbar-button {
     width: max-content;
     font-size: 15px;
     padding: 8px 10px;
@@ -61,7 +61,7 @@
 }
 
 @mixin cmdbar-button-mobile() {
-  .commandbar-button {
+  .app-commandbar-button {
     &:hover:not(:active) {
       background: none;
     }

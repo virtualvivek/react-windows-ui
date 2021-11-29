@@ -9,11 +9,11 @@
   &.medium {
     top: 2.5px;
 
-    .w-ball-wrapper {
+    .app-loaderBusy {
       width: 25px;
       height: 25px;
 
-      .w-ball {
+      .app-ldrBusy-ball {
         width: 4.4px;
         height: 4.4px;
       }
@@ -23,18 +23,18 @@
   &.small {
     top: 7px;
 
-    .w-ball-wrapper {
+    .app-loaderBusy {
       width: 16px;
       height: 16px;
 
-      .w-ball {
+      .app-ldrBusy-ball {
         width: 3px;
         height: 3px;
       }
     }
   }
 
-  .w-ball-wrapper {
+  .app-loaderBusy {
     width: 34px;
     height: 34px;
     position: absolute;
@@ -43,7 +43,7 @@
     animation: orbit 4.8s infinite;
     
 
-    .w-ball {
+    .app-ldrBusy-ball {
       @extend .background-color-primary-light;
 
       width: 4.8px;
@@ -76,7 +76,7 @@
   }
 
   &.light {
-    .w-ball-wrapper .w-ball {
+    .app-loaderBusy .app-ldrBusy-ball {
       background: #fff;
     }
   }

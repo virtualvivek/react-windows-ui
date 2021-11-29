@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const StickyHeader = (props) => {
   return (
@@ -24,4 +24,4 @@ StickyHeader.defaultProps = {
   zIndex: 1
 }
 
-export default StickyHeader
+export default StickyHeader;
