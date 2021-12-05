@@ -1,0 +1,21 @@
+.app-nav-wrap {
+  .app-nav-header {
+    @extend .background-color-nav;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    transition: inherit;
+  }
+}
+
+@mixin nav-header-mobile() {
+  .app-nav-wrap {
+    .app-nav-header {
+      position: relative;
+      height: 40px;
+    }
+  }
+}

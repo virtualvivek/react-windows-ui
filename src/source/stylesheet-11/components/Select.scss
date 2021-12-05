@@ -1,0 +1,57 @@
+.app-select-styled.react {
+  @extend .tap-highlight-none;
+
+  .app-select-header {
+    width: initial;
+    height: inherit;
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    i { font-size: 18px; }
+  }
+  &::after { display: none; }
+  
+  .app-select-body {
+    width: inherit;
+    max-height: 250px;
+    overflow-y: auto;
+    background: var(--color_nav);
+    position: absolute;
+    top: 100%;
+    margin: 5px 0 5px 0;
+    box-shadow: 0 2px 4px #55555555;
+    transition-property: visibility;
+    opacity: 0;
+    visibility: hidden;
+    
+    &.show {
+      @extend .transition_dropdown_show;
+
+      &.reverse {
+        @extend .transition_dropdown_show_reverse;
+        top: unset;
+        bottom: 100%;
+      }
+    }
+    .select-item {
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--color_dark_text);
+      box-shadow: inset 0 0 0 1000px #ffffff22;
+
+      &:hover { background-color: var(--color_link_bg_hover); }
+      &:active { background-color: var(--color_link_bg_active); }
+      
+      &.selected {
+        background-color: var(--PrimaryColor);
+        box-shadow: inset 0 0 0 1000px #ffffff99;
+        color: #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.app-header-fixed-container {
+  @extend .transition-background-400ms;
+  position: fixed;
+  background-color: var(--color_bg_light);
+  top: 0;
+}
+
+@mixin header-fixed-container-mobile() {
+  .app-section-container .app-header-fixed-container {
+    top: 90px;
+  }
+}

@@ -1,0 +1,38 @@
+.app-accordion {
+  overflow: hidden;
+}
+.app-accordion-title {
+  @extend .transition-all-400ms;
+  @extend .tap-highlight-none;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 8px 15px;
+  font-size: 16px;
+  user-select: none;
+
+  &:hover,
+  &.focused {
+    background-color: var(--color_nav);
+  }
+  &.focused:hover {
+    filter: contrast(0.9);
+  }
+  &:active {
+    background-color: var(--color_button);
+    @extend .transition-scale-active;
+  }
+}
+.app-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+
+  &.show {
+    max-height: 500px;
+    overflow-y: scroll;
+    transition: max-height 0.28s ease-in;
+  }
+}

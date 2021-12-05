@@ -1,0 +1,120 @@
+.app-range-slider {
+  width: 360px;
+  display: block;
+  position: relative;
+  padding: 5px 0;
+
+  input[type="range"] {
+    width: calc(100% - (73px));
+    height: 2px;
+    appearance: none;
+    outline: none;
+    position: relative;
+    top: -5px;
+    padding: 0;
+    margin: 0 10px 0 0;
+    background: #999999;
+
+    &::-webkit-slider-thumb {
+      width: 20px;
+      height: 20px;
+      border: 3px solid var(--color_bg_light);
+      background: var(--PrimaryColor);
+      user-select: none;
+      appearance: none;
+      -webkit-appearance: none;
+      border-radius: 100px;
+      cursor: pointer;
+      transition: background 0.15s ease-in-out;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.28);
+
+      &:hover {
+        background: #555;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
+      }
+      &:active {
+        background: #999;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.46);
+      }
+    }
+    &::-moz-range-thumb {
+      width: 8px;
+      height: 26px;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.15s ease-in-out;
+      background: var(--PrimaryColor);
+    }
+    &::-moz-range-thumb:hover,
+    &:active::-moz-range-thumb {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
+    }
+  }
+  &.round {
+    input[type="range"] {
+      &::-webkit-slider-thumb {
+        width: 20px !important;
+        height: 20px;
+        border: none;
+      }
+      &::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  &.round-border {
+    input[type="range"] {
+      &::-webkit-slider-thumb {
+        width: 20px !important;
+        height: 20px;
+        border: 3px solid var(--PrimaryColor);
+        background: var(--color_bg_light);
+      }
+      &::-moz-range-thumb {
+        width: 14px;
+        height: 14px;
+        border: 3px solid var(--PrimaryColor);
+        background: var(--color_bg_light);
+      }
+    }
+  }
+
+  span {
+    @extend .color-text-dark;
+    display: contents;
+    font-size: 18px;
+  }
+  .app-range-slider-popup {
+    opacity: 0;
+    visibility: hidden;
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px;
+    transition: 0.08s ease;    
+    background: var(--color_button);
+    box-shadow: 0 0 2px var(--color_button);
+    border-radius: 6px;
+  }
+}
+
+@mixin slider-bar-mobile() {
+  .app-range-slider {
+    width: calc(280px + 5%);
+    flex-flow: column-reverse;
+    display: flex;
+
+    input[type="range"] {
+      width: 100%;
+      top: 0;
+    }
+    span {
+      line-height: 2.2;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.app-card-default {
+  @extend .transition-all-400ms;
+  &.focused {
+    @extend .background-color-grey-light;
+  }
+  &.hoverable {
+    &:hover {
+      @extend .background-color-grey-light;
+    }
+  }
+}

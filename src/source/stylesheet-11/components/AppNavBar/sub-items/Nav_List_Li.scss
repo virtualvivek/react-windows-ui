@@ -1,0 +1,110 @@
+.app-nav-wrap .app-nav-list {
+  .app-nav-list-item {
+    display: flex;
+    margin: 5px 10px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &:hover { @extend .background-color-link-bg-hover; }
+    &:active { @extend .background-color-link-bg-active; }
+
+    a {
+      width: 100%;
+      padding: 12px 15px;
+      font-weight: 400;
+      border-radius: 8px;
+      color: var(--color_text_dark);
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      background: none;
+
+      &::after {
+        width: 5px;
+        height: 25px;
+        position: absolute;
+        left: 0;
+        background: var(--PrimaryColor);
+        content: '';
+        border-radius: 25%;
+        transform: translate3d(-200%, 0, 0);
+      }
+      &:focus {
+        @extend .outline-none;
+      }
+      &.active {
+        @extend .font-weight-500;        
+        
+        background: var(--color_grey_light_alpha);
+        backdrop-filter: contrast(0.4);
+        
+        &::after {
+          transition: transform 0.4s;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      i::before {
+        font-size: 24px;
+        vertical-align: middle;
+        text-overflow: unset;
+      }
+    }
+    span {
+      @extend .user-select-none;
+      font-size: 16px;
+      margin: 0 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 2px;
+      border-radius: 4px;
+      background-color: var(--color_link_bg_hover);
+    }
+  }
+}
+
+@mixin nav-ul-li-mobile() {
+  .app-nav-wrap .app-nav-list .app-nav-list-item {
+    display: inline-flex;
+    position: relative;
+
+    &:first-child {
+      margin-left: 10px;
+    }
+    
+    a {
+      width: 100%;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      
+      &::after {
+        height: 3px;
+        width: 90%;
+        bottom: 0;
+        left: 6%;
+        transform: translate3d(0, 10px, 0);
+      }
+
+      i,
+      span { opacity: 0.6; }
+
+      span {
+        font-size: 18px;
+        margin: 0 7px 10px 7px;
+        overflow: visible;
+      }
+
+      &.active {
+        i,
+        span { opacity: 1; }
+
+        &::after { transform: translate3d(0, -10, 0); }
+      }
+    }
+  }
+}

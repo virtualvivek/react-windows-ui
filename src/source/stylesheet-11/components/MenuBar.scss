@@ -1,0 +1,25 @@
+.app-select-styled.menubar {
+  @extend .cursor-pointer;
+  @extend .user-select-none;
+  @extend .tap-highlight-none;
+  
+  &::after,
+  span {
+    height: inherit;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  ul {
+    @extend .app-custom-dropdown-ul;
+    max-height: 280px;
+
+    .app-search-box {
+      width: inherit;
+      .app-input-search:not(:focus) {
+        border-color: #99999988;
+      }
+    }
+  }
+}

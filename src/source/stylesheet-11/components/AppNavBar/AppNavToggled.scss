@@ -1,0 +1,45 @@
+@media only screen and (min-width: 760px) {
+  .app-nav-wrap.toggled {
+    height: 100%;
+    width: 74px;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+    display: inline-block;
+      
+    .app-name,
+    nav a span,
+    nav ul h1,
+    .app-search-box {
+      display: none;
+    }
+
+    nav {
+      li a {
+        text-overflow: clip;
+      }
+      .app-hr {
+        width: 56px;
+        margin-left: 8px;
+      }
+    }
+
+    .app-search-dialog-trigger {
+      height: 55px;
+      font-size: 24px;
+      padding-left: 25px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+        &:hover { background-color: var(--color_link_bg_hover); }
+        &:active { background-color: var(--color_link_bg_active); }
+    }
+
+    .app-nav-submenu-title { 
+      justify-content: center;
+      
+      > :first-child { display: none; }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.app-color-picker-item {
+  @extend .tap-highlight-none;
+
+  padding: 0 4px 2px 0;
+  display: inline-block;
+  cursor: pointer;
+
+  div {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 6px;
+
+    &:hover { border: 2px solid var(--color_text_dark); }
+    &:active { filter: brightness(0.6); }
+
+    &::before {
+      content: '✔';
+      position: relative;
+      float: right;
+      font-size: 12px;
+      padding: 4px;
+      line-height: 1;
+      color: var(--color_bg_light);
+      background: var(--color_text_dark);
+      transition: all 0.2s;
+    }
+  }
+  .item:not(:checked) + div::before {
+    opacity: 0;
+    transform: scale(0);
+    }
+      
+  .item:checked + div::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .item {
+    @extend .app-display-none;
+  }
+  div:hover,
+  .item:checked + div {
+    border: 2px solid var(--color_text_dark);
+  }
+
+  &.palette {
+    input[type="color"] {
+      opacity: 0;
+      position: absolute;
+    }
+    div {
+      border: 2px solid var(--color_text_dark);
+      &::before {
+        content: '▼';
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.app-command-bar {
+  @extend .transition-background-400ms;
+  @extend .app-inline-flex;
+
+  width: max-content;
+  height: auto;
+}
