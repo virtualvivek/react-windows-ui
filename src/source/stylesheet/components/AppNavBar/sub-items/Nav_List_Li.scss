@@ -1,6 +1,7 @@
 .app-nav-wrap .app-nav-list {
   .app-nav-list-item {
     display: flex;
+
     &:hover { @extend .background-color-link-bg-hover; }
     &:active { @extend .background-color-link-bg-active; }
 
@@ -21,7 +22,6 @@
         left: 0;
         background: var(--PrimaryColor);
         content: '';
-        transition: transform 0.4s;
         transform: translate3d(-200%, 0, 0);
       }
       &:focus {
@@ -30,7 +30,10 @@
       &.active {
         @extend .font-weight-500;
         
-        &::after { transform: translate3d(0, 0, 0); }
+        &::after {
+          transition: transform 0.4s;
+          transform: translate3d(0, 0, 0);
+        }
       }
       i::before {
         font-size: 24px;
@@ -76,7 +79,6 @@
         width: 90%;
         bottom: 0;
         left: 6%;
-        transition: transform 0.4s;
         transform: translate3d(0, 10px, 0);
       }
 

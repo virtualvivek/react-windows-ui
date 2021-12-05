@@ -34,7 +34,7 @@ const NavBar = (props) => {
                 : {boxShadow: ""}
             }>
           <span
-            className="app-nav-toggle"
+            className="app-nav-toggle-button"
             onClick={showSidebar}>
           </span>
           <span className="app-name">{props.title}</span>

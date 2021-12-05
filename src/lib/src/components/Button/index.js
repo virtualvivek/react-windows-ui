@@ -16,20 +16,20 @@ const Button = (props) => {
   }
 
   const toggleLoading = () => {
-    return props.isLoading ? " isLoading" : "";
+    return props.isLoading ? "isLoading" : "notLoading";
   }
 
   
   return (
     <button
       className = {
-        props.type ==="primary" ?  `app-button animate primary${toggleLoading()}`
-      : props.type ==="danger" ? `app-button animate danger${toggleLoading()}`
-      : props.type ==="success" ? `app-button animate success${toggleLoading()}`
-      : props.type ==="primary-outline" ? `app-button animate primary-outline${toggleLoading()}`
-      : props.type ==="danger-outline" ? `app-button animate danger-outline${toggleLoading()}`
-      : props.type ==="success-outline" ? `app-button animate success-outline${toggleLoading()}`
-      : `app-button animate${toggleLoading()}`
+        props.type ==="primary" ?  `app-button animate primary ${toggleLoading()}`
+      : props.type ==="danger" ? `app-button animate danger ${toggleLoading()}`
+      : props.type ==="success" ? `app-button animate success ${toggleLoading()}`
+      : props.type ==="primary-outline" ? `app-button animate primary-outline ${toggleLoading()}`
+      : props.type ==="danger-outline" ? `app-button animate danger-outline ${toggleLoading()}`
+      : props.type ==="success-outline" ? `app-button animate success-outline ${toggleLoading()}`
+      : `app-button animate ${toggleLoading()}`
       }
       style={{
         width: props.width,
@@ -46,7 +46,7 @@ const Button = (props) => {
 
       {props.icon && (<span>{props.icon}</span>)}
       
-      <span>{props.value}</span>
+      {props.value!=="" && (<span>{props.value}</span>)}
     </button>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from "react";
 
 const NavSearchBox = (props) => {
 
@@ -62,7 +62,8 @@ const NavSearchBox = (props) => {
 }
 
 NavSearchBox.defaultProps = {
-  placeholder: "Search here.."
+  placeholder: "Search here..",
+  onChange: ()=>{}
 }
 
-export default NavSearchBox
+export default NavSearchBox;

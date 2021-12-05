@@ -41,22 +41,6 @@
   .app-search-dialog-trigger {
     display: none;
   }
-
-  &.toggled {
-    .app-search-box { display: none; }
-
-    .app-search-dialog-trigger {
-      height: 55px;
-      font-size: 24px;
-      padding-left: 25px;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-
-        &:hover { background-color: var(--color_link_bg_hover); }
-        &:active { background-color: var(--color_link_bg_active); }
-    }
-  }
 }
 
 @mixin app-navbar-search-mobile() {

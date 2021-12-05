@@ -17,7 +17,7 @@
         @extend .background-color-grey-light;
     }
     &:active {
-        @extend .transition-scale-0_95;
+        @extend .transition-scale-active;
         background: var(--color_link_bg_hover);
     }
     i {

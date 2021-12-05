@@ -21,7 +21,7 @@
     }
     &:active {
         background-color: var(--color_button);
-        @extend .transition-scale-0_95;
+        @extend .transition-scale-active;
     }
 }
 .app-accordion-content {

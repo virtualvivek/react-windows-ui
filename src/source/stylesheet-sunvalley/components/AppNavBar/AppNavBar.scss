@@ -33,7 +33,7 @@
         &.animate {
             ul li {
                 & :active {
-                    @extend .transition-scale-0_95;
+                    @extend .transition-scale-active;
                 }
                 a {
                     @extend .transition-all-400ms;

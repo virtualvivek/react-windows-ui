@@ -14,7 +14,7 @@
     &:hover { background-color: var(--color_link_bg_hover); }
     
     &:active {
-      @extend .transition-scale-0_95;
+      @extend .transition-scale-active;
       background-color: var(--color_button);
     }
   }
@@ -29,13 +29,6 @@
       overflow-y: auto;
       transition: max-height 0.25s ease-in;
     }
-  }
-}
-.app-nav-wrap.toggled {
-  .app-nav-submenu-title { 
-    justify-content: center;
-    
-    > :first-child { display: none; }
   }
 }
 

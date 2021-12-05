@@ -40,7 +40,8 @@ const NavSearchSuggestion = (props) => {
         onChange={(e) => {
           toggleVisible(e)
           const test = teams_data.filter(team => {
-            return team.label.toLowerCase().includes(e.target.value.toLowerCase());
+            return team.label.toLowerCase()
+            .includes(e.target.value.toLowerCase());
           });
           setTeams(test);
           setSearch(e.target.value);
@@ -93,7 +94,8 @@ const NavSearchSuggestion = (props) => {
 }
 
 NavSearchSuggestion.defaultProps = {
-  placeholder: "Search here.."
+  placeholder: "Search here..",
+  data: []
 }
 
 export default NavSearchSuggestion;

@@ -3,17 +3,17 @@
 @import "./sub-items/Nav_List_Ul.scss";
 @import "./sub-items/Nav_ToggleButton.scss";
 @import "./sub-items/Nav_Badge.scss";
-
 @import "./sub-items/Nav_Hr.scss";
 
 @import "./sub-components/NavBarSubMenu.scss";
-@import "./sub-components/NavToggled.scss";
 @import "./sub-components/NavHeader.scss";
 @import "./sub-components/NavSearchBox.scss";
 @import "./sub-components/NavSearchUL.scss";
 
 @import "./navbar-mobile/NavBarMobileHasIcons.scss";
 @import "./navbar-mobile/NavBarMobile.scss";
+
+@import "./AppNavToggled.scss";
 
 .app-nav-wrap {
   height: 100%;
@@ -40,7 +40,7 @@
     &.animate {
       .app-nav-list-item {
         & :active {
-          @extend .transition-scale-0_95;
+          @extend .transition-scale-active;
           transform: scale(0.98, 0.98);
         }
         a { @extend .transition-all-400ms; }

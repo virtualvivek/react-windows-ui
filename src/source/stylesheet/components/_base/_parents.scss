@@ -135,11 +135,11 @@
   transition-duration: 0.4s;
   transition-timing-function: ease;
 }
-.transition-scale-0_95 {
+.transition-scale-active {
   transition-property: background, transform;
   transition-duration: 0.09s;
   transition-timing-function: ease;
-  transform: scale(0.968, 0.968);
+  transform: scale(0.97, 0.97);
 }
 
 
