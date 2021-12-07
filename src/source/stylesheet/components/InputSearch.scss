@@ -1,32 +1,11 @@
-.app-input-text {
-  &.app-input-search {
-    &:active,
-    &:focus {
-      border-color: var(--PrimaryColor);
-    }
-  }
-}
-.app-input-search {
-  width: 100%;
-  height: inherit;
-  padding-right: 35px;
-}
-
 .app-search-bar {
-  @extend .transition-background-400ms;
-
-  &:disabled {
-    @extend .input-field-primary-disabled;
-  }
-
   button {
     @extend .background-color-nav;
     @extend .transition-background-400ms;
-    width: 31px;
-    height: 31px;
-    margin-top: 2px;
-    margin-left: -33px;
+    width: 30px;
+    height: 30px;
     border: none;
+    margin-left: -32px;
     
     &:hover,
     &:active {
@@ -38,7 +17,7 @@
     &::after {
       @extend .font-icon-dark;
       content: "\f1b9";
-      font-size: 19px;
+      font-size: 18px;
       font-weight: 600;
     }
     &:hover::after {
@@ -53,26 +32,28 @@
     content: "\f1b9";
     z-index: 1;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 18px;
     margin-left: -29px;
     align-self: center;
   }
 }
 
 .app-search-bar,
-.app-search-box {
-  width: 285px;
-  height: 35px;
+.app-search-box,
+.app-search-dialog {
   display: inline-flex;
-  vertical-align: middle;
-}
+  align-items: center;
 
-.index-search {
-  width: fit-content;
-  margin: auto;
-  position: relative;
-  top: 24px;
-  display: table;
+  input {
+    &:active,
+    &:focus {
+      border-color: var(--PrimaryColor);
+    }
+    &::-webkit-search-cancel-button{
+      position: relative;
+      right: 40px;    
+    }
+  }
 }
 
 @mixin input-search-mobile() {

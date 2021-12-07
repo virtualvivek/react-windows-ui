@@ -1,9 +1,9 @@
 .app-nav-wrap {
   .app-search-box {
-    width: 250px;
-    margin: 10px 0 10px 18px;
+    width: 240px;
     user-select: none;
     filter: opacity(0.7);
+    margin: 10px 0 10px 18px;
   }
 
   .app-search-dialog {
@@ -14,16 +14,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
     background: var(--color_nav);
     transform: translateY(-105%);
     transition: 0.2s ease;
 
     &.show { transform: translateY(0%); }
 
-    .app-input-search {
+    .app-input-text {
       width: 50%;
-      height: 35px;
       padding-left: 45px;
     }
     button {
@@ -53,8 +52,8 @@
       padding-left: 35px;
       justify-content: start;
 
-      .app-input-search {
-        width: 80%;
+      .app-input-text {
+        width: 75%;
       }
     }
     .app-search-dialog-trigger {

@@ -10,8 +10,8 @@
     cursor: pointer;
     position: relative;
     border-radius: 50px;
-    border: 2px solid var(--color_text_dark);
     transition: 200ms ease-out;
+    border: 2px solid var(--color_text_dark);
 
     &:hover { opacity: 0.65; }
     &:active { filter: brightness(0.6); }
@@ -24,10 +24,10 @@
       left: 3px;
       display: block;
       content: '';
-      will-change: translate;
       border-radius: 50%;
-      background: var(--color_text_dark);
       transition: 200ms;
+      will-change: translate;
+      background: var(--color_text_dark);
     }
   }
 
@@ -45,10 +45,10 @@
         border-color: var(--PrimaryColor);
 
         &::before {
+          background: #fff;
           color: var(--PrimaryColor);
           transform: translateX(280%);
           transform: translateX(calc(2 * 100% - 3px));
-          background: #fff;
         }
       }
       ~span::before {

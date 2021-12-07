@@ -48,11 +48,11 @@
 
       width: 4.8px;
       height: 4.8px;
+      box-shadow: none;
+      border-radius: 50%;
       position: absolute;
       left: 0;
       top: 0;
-      border-radius: 50%;
-      box-shadow: none;
     }
 
     &.ball-1 {
@@ -129,19 +129,19 @@
   
   z-index: 99;
   opacity: 0;
-  visibility: hidden;
   transition: 0.4s;
+  visibility: hidden;
   
   &.show {
     opacity: 1;
-    visibility: visible;
     transition: 0.4s;
+    visibility: visible;
   }
 
   .app-loader-busy {
     top: 42%;
-    margin: 0 auto;
     z-index: 100;
+    margin: 0 auto;
     filter: drop-shadow(0 4px 4px black);
   }
   .title {

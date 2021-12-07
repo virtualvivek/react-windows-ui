@@ -1,8 +1,8 @@
 .app-header-fixed-container {
   @extend .transition-background-400ms;
   position: fixed;
-  background-color: var(--color_bg_light);
   top: 0;
+  background-color: var(--color_bg_light);
 }
 
 @mixin header-fixed-container-mobile() {

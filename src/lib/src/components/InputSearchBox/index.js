@@ -4,7 +4,7 @@ const InputSearchBox = (props) => {
   return (
     <div className="app-search-box" title={props.tooltip}>
       <input
-        className="app-input-text app-input-search"
+        className="app-input-text"
         type="search"
         name={props.name}
         value={props.value}

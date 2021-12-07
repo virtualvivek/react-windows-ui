@@ -21,7 +21,7 @@
     background: var(--color_nav);
     position: absolute;
     top: 100%;
-    margin: 5px 0 5px 0;
+    margin: 5px 0;
     box-shadow: 0 2px 4px #55555555;
     transition-property: visibility;
     opacity: 0;
@@ -48,9 +48,9 @@
       &:active { background-color: var(--color_link_bg_active); }
       
       &.selected {
+        color: #000;
         background-color: var(--PrimaryColor);
         box-shadow: inset 0 0 0 1000px #ffffff99;
-        color: #000;
       }
     }
   }

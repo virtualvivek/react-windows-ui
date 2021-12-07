@@ -15,29 +15,29 @@
       @extend .background-color-grey-light;
   
       button {
-        border: 2px solid var(--color_button_hover);
         color: var(--color_button_hover);
+        border: 2px solid var(--color_button_hover);
         
         &:active {
-          background: var(--color_button_hover) !important;
           color: #fff;
+          background: var(--color_button_hover) !important;
         }
       }
     }
   }
 
   h1 {
-    font-size: 1.7em;
     margin: 0;
+    font-size: 1.7em;
     padding: 25px 32px 10px 32px;
     background-color: transparent;
   }
   .app-alert-message {
-    font-size: 1em;
-    text-align: justify;
     min-height: 80px;
+    font-size: 1em;
     padding: 0 32px;
     line-break: auto;
+    text-align: justify;
   }
   .app-alert-btn-container {
     display: block;
@@ -45,12 +45,12 @@
     padding: 0 15px 10px 15px;
   }
   button {
-    display: inline;
     color: #fff;
-    font-weight: 700;
     font-size: 14px;
-    padding: 7px 3.4vw;
+    font-weight: 700;
     margin: 10px;
+    display: inline;
+    padding: 7px 3.4vw;
     border: 2px solid #fff;
 
     &:hover {

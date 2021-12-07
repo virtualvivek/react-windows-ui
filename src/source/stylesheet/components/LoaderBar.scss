@@ -1,16 +1,16 @@
 .app-loader-bar {
   width: 400px;
   height: 20px;
-  padding-top: 15px;
   overflow: hidden;
+  padding-top: 15px;
 
   .app-loaderBar {
     @extend .background-color-primary-light;
     width: 6px;
     height: 6px;
+    border-radius: 50%;
     position: relative;
     left: -10px;
-    border-radius: 50%;
   }
 
   &.light {

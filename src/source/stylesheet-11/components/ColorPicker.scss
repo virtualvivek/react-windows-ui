@@ -1,9 +1,9 @@
 .app-color-picker-item {
   @extend .tap-highlight-none;
 
+  cursor: pointer;
   padding: 0 4px 2px 0;
   display: inline-block;
-  cursor: pointer;
 
   div {
     height: 40px;
@@ -22,9 +22,9 @@
       font-size: 12px;
       padding: 4px;
       line-height: 1;
-      color: var(--color_bg_light);
-      background: var(--color_text_dark);
       transition: all 0.2s;
+      color: var(--color_bg_light);
+      background: var(--color_text_dark);  
     }
   }
   .item:not(:checked) + div::before {

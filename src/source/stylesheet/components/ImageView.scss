@@ -35,14 +35,14 @@
   }
   .app-image-words {
     width: auto;
-    position: absolute;
-    color: #fff;
     z-index: 2;
+    color: #fff;
+    position: absolute;
     bottom: 0;
     left: 0;
     padding-left: 5%;
     padding-bottom: 4%;
-    filter: drop-shadow(2px 2px 2px black);
+    filter: drop-shadow(2px 2px 2px #000000);
     
     h1 {
       margin: 0;

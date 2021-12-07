@@ -27,10 +27,10 @@
     .app-search-dialog-trigger {
       height: 55px;
       font-size: 24px;
-      padding-left: 25px;
+      cursor: pointer;
       display: flex;
       align-items: center;
-      cursor: pointer;
+      justify-content: center;
 
         &:hover { background-color: var(--color_link_bg_hover); }
         &:active { background-color: var(--color_link_bg_active); }

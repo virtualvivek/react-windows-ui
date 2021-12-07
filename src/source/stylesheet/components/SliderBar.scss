@@ -1,14 +1,16 @@
 .app-range-slider {
+  @extend .tap-highlight-none;
+
   width: 360px;
+  padding: 5px 0;
   display: block;
   position: relative;
-  padding: 5px 0;
 
   input[type="range"] {
     width: calc(100% - (73px));
     height: 2px;
-    appearance: none;
     outline: none;
+    appearance: none;
     position: relative;
     top: -5px;
     padding: 0;
@@ -21,8 +23,8 @@
       user-select: none;
       appearance: none;
       -webkit-appearance: none;
-      border-radius: 100px;
       cursor: pointer;
+      border-radius: 100px;
       background: var(--PrimaryColor);
       transition: background 0.15s ease-in-out;
 
@@ -38,12 +40,12 @@
     &::-moz-range-thumb {
       width: 8px;
       height: 26px;
-      border-radius: 100px;
       border: none;
       cursor: pointer;
       user-select: none;
-      transition: background 0.15s ease-in-out;
+      border-radius: 100px;
       background: var(--PrimaryColor);
+      transition: background 0.15s ease-in-out;
     }
     &::-moz-range-thumb:hover,
     &:active::-moz-range-thumb {
@@ -85,6 +87,7 @@
     font-size: 18px;
   }
   .app-range-slider-popup {
+    padding: 5px;
     opacity: 0;
     visibility: hidden;
     display: inline-block;
@@ -92,7 +95,6 @@
     top: -30px;
     font-size: 12px;
     font-weight: 600;
-    padding: 5px;
     transition: 0.08s ease;    
     background: var(--color_button);
     box-shadow: 0 0 2px var(--color_button);
@@ -102,8 +104,8 @@
 @mixin slider-bar-mobile() {
   .app-range-slider {
     width: calc(280px + 5%);
-    flex-flow: column-reverse;
     display: flex;
+    flex-flow: column-reverse;
 
     input[type="range"] {
       width: 100%;

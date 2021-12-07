@@ -2,9 +2,9 @@
   @extend .color-primary;
   @extend .font-size-16px;
 
-  display: inline-flex;
   font-weight: 400;
   line-height: 1.5;
+  display: inline-flex;
   line-break: anywhere;
 
   &:focus {

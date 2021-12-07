@@ -32,10 +32,10 @@
     top: 0;
     padding: 0;
     display: block;
+    z-index: inherit;
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: overlay;
-    z-index: inherit;
 
     &.animate {
       .app-nav-list-item {

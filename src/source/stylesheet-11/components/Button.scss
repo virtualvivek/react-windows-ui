@@ -22,14 +22,14 @@ button,
   @extend .background-color-button;
 
   height: 35px;
-  padding: 5px 15px;
   font-size: 15px;
-  border: 2px solid transparent;
+  padding: 5px 15px;
   transition: 0.2s ease;
+  border: 2px solid transparent;
 
   &:hover {
-    border-color: var(--color_button_hover);
     filter: opacity(0.8);
+    border-color: var(--color_button_hover);
   }
   &:active {
     filter: contrast(0.4);
@@ -108,9 +108,9 @@ button,
   }
 
   .app-loader-busy {
-    left: 40%;
-    display: inline;
     width: 0px;
+    left: 40%;
+    display: inline; 
   }
   span {
     transition: opacity ease 0.2s;
@@ -127,8 +127,8 @@ button,
 @mixin button-mobile() {
   .app-button:not(.primary-outline):not(.danger-outline):not(.success-outline) {
     &:hover {
-      border-color: transparent;
       filter: none;
+      border-color: transparent;
     }
     &:active {
       filter: contrast(0.4);

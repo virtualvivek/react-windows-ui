@@ -2,8 +2,8 @@
   height: 5px;
   width: 400px;
   overflow: hidden;
-  background-color: var(--color_button);
   transition: height 0.15s ease-out;
+  background-color: var(--color_button);
 }
 .app-progress-indeterminate:not(.animate) {
   height: 0;

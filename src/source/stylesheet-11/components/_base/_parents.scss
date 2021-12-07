@@ -131,49 +131,49 @@
   transition: background 0.4s;
 }
 .transition-all-400ms {
-  transition-property: background, transform, border;
   transition-duration: 0.4s;
   transition-timing-function: ease;
+  transition-property: background, transform, border;
 }
 .transition-scale-active {
-  transition-property: background, transform;
   transition-duration: 0.09s;
-  transition-timing-function: ease;
   transform: scale(0.97, 0.97);
+  transition-timing-function: ease;
+  transition-property: background, transform;
 }
 
 
 
 @keyframes transition_dropdown {
   0% {
-    transform: translate3d(0px, -10px, 0px);
+    transform: translate3d(0, -10px, 0);
     pointer-events: none;
     opacity: 0;
   }
   100% {
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0, 0px, 0);
     pointer-events: auto;
     opacity: 1;
   }
 }
 @keyframes transition_dropdown_reverse {
   0% {
-    transform: translate3d(0px, 10px, 0px);
+    transform: translate3d(0, 10px, 0);
     pointer-events: none;
     opacity: 0;
   }
   100% {
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0, 0, 0);
     pointer-events: auto;
     opacity: 1;
   }
 }
 .transition_dropdown_show {
   visibility: visible;
-  animation-name: transition_dropdown;
-  animation-duration: 0.367s;
-  animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
   animation-fill-mode: both;
+  animation-duration: 0.367s;
+  animation-name: transition_dropdown;
+  animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
 }
 .transition_dropdown_show_reverse {
   animation-name: transition_dropdown_reverse;
@@ -185,13 +185,14 @@
 }
 
 .input-field-primary {
-  height: 30px;
-  width: 270px;
-  box-shadow: none;
-  padding-left: 10px;
-  font-size: 15px;
+  height: 32px;
+  width: 270px;  
   line-height: 1;
-  vertical-align: middle;
+  font-size: 15px;
+  box-shadow: none;
+  padding: 0 0 0 10px;
+  box-sizing: content-box;
+  border: 2.4px solid #999;
   color: var(--color_text_dark);
   background: var(--color_bg_light);
   border-radius: 6px;
@@ -200,6 +201,9 @@
 
   &:hover {
     border-bottom: 2px solid var(--color_button_hover);
+  }
+  &[disabled] {
+    @extend .input-field-primary-disabled;
   }
   &:focus {
     @extend .outline-none;
@@ -235,19 +239,19 @@
 }
 
 .app-custom-dropdown-ul {
-  list-style: none;
   width: inherit;
   padding: 0;
   margin: 5px 0 5px 0;
   position: absolute;
   top: 100%;
-  background: var(--color_nav);
-  box-shadow: 0 2px 4px #55555555;
   z-index: 999;
+  cursor: auto;
+  list-style: none;
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
-  cursor: auto;
+  background: var(--color_nav);
+  box-shadow: 0 2px 4px #55555555;
   border-radius: 6px;
 
   &.show {
@@ -261,10 +265,10 @@
   li {
     a {
       height: 35px;
-      color: var(--color_text_dark);
       display: flex;
       align-items: center;
       padding-left: 10px;
+      color: var(--color_text_dark);
       @extend .tap-highlight-none;
 
       &:hover {

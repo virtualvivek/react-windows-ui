@@ -1,40 +1,40 @@
 .app-nav-wrap .app-nav-list {
   .app-nav-list-item {
     display: flex;
+    overflow: hidden;
     margin: 5px 10px;
     border-radius: 8px;
-    overflow: hidden;
 
     &:hover { @extend .background-color-link-bg-hover; }
     &:active { @extend .background-color-link-bg-active; }
 
     a {
       width: 100%;
-      padding: 12px 15px;
+      padding: 10px 15px;
       font-weight: 400;
+      background: none;
       border-radius: 8px;
-      color: var(--color_text_dark);
+      position: relative;
+      align-items: center;
       display: inline-flex;
       flex-direction: row;
-      align-items: center;
-      background: none;
+      color: var(--color_text_dark);
 
       &::after {
         width: 5px;
         height: 25px;
         position: absolute;
         left: 0;
+        content: "";
+        border-radius: 22%;
         background: var(--PrimaryColor);
-        content: '';
-        border-radius: 25%;
         transform: translate3d(-200%, 0, 0);
       }
       &:focus {
         @extend .outline-none;
       }
       &.active {
-        @extend .font-weight-500;        
-        
+        @extend .font-weight-500;
         background: var(--color_grey_light_alpha);
         backdrop-filter: contrast(0.4);
         
@@ -53,8 +53,8 @@
       @extend .user-select-none;
       font-size: 16px;
       margin: 0 10px;
-      white-space: nowrap;
       overflow: hidden;
+      white-space: nowrap;
       text-overflow: ellipsis;
     }
     img {
@@ -71,6 +71,8 @@
   .app-nav-wrap .app-nav-list .app-nav-list-item {
     display: inline-flex;
     position: relative;
+    overflow: visible;
+    margin: 0;
 
     &:first-child {
       margin-left: 10px;
@@ -100,8 +102,14 @@
       }
 
       &.active {
+        backdrop-filter: unset;
+          background: transparent;
+
         i,
-        span { opacity: 1; }
+        span {
+          opacity: 1;
+          
+        }
 
         &::after { transform: translate3d(0, -10, 0); }
       }

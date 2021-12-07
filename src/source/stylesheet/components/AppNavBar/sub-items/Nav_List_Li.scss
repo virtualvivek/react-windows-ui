@@ -9,11 +9,12 @@
       width: 100%;
       padding: 12px 25px;
       font-weight: 400;
-      color: var(--color_text_dark);
+      background: none;
+      position: relative;
+      align-items: center;
       display: inline-flex;
       flex-direction: row;
-      align-items: center;
-      background: none;
+      color: var(--color_text_dark);
 
       &::after {
         width: 5px;
@@ -21,7 +22,7 @@
         position: absolute;
         left: 0;
         background: var(--PrimaryColor);
-        content: '';
+        content: "";
         transform: translate3d(-200%, 0, 0);
       }
       &:focus {
@@ -45,8 +46,8 @@
       @extend .user-select-none;
       font-size: 16px;
       margin: 0 10px;
-      white-space: nowrap;
       overflow: hidden;
+      white-space: nowrap;
       text-overflow: ellipsis;
     }
     img {

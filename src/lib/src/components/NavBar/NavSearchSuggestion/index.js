@@ -33,7 +33,7 @@ const NavSearchSuggestion = (props) => {
     <div className="app-nav-search" title={props.tooltip}>  
     <div className="app-search-box">
       <input
-        className="app-input-text app-input-search"
+        className="app-input-text"
         type="search"
         value={search}
         placeholder={props.placeholder}
@@ -57,7 +57,7 @@ const NavSearchSuggestion = (props) => {
       className={ menubar ? "app-search-dialog show" : "app-search-dialog"}
       ref={dialogRef}>
         <input
-          className="app-input-text app-input-search"
+          className="app-input-text"
           type="search"
           value={search}
           placeholder={props.placeholder}

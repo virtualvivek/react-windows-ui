@@ -17,8 +17,14 @@
 
     .app-search-box {
       width: inherit;
-      .app-input-search:not(:focus) {
-        border-color: #99999988;
+      .app-input-text {
+        box-sizing: border-box;
+        height: 35px;
+        width: inherit;
+
+        &:not(:focus) {
+          border-color: #99999988;
+        }
       }
     }
   }

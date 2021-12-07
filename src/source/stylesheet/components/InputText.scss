@@ -2,16 +2,9 @@
   @extend .input-field-primary;
   @extend .transition-background-400ms;
 
-  &:hover {
-    border-color: #777;
-  }
   &:focus {
     @extend .outline-none;
     border-color: #666;
-  }
-
-  &[disabled] {
-    @extend .input-field-primary-disabled;
   }
 
   &::-webkit-calendar-picker-indicator {

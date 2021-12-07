@@ -2,8 +2,8 @@
   @extend .input-field-primary;
   @extend .transition-background-400ms;
 
-  &[disabled] {
-    @extend .input-field-primary-disabled;
+  &:focus {
+    @extend .outline-none;
   }
 
   &::-webkit-calendar-picker-indicator {

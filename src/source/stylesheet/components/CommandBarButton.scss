@@ -10,10 +10,11 @@
 
   .app-commandbar-button {
     width: max-content;
-    font-size: 15px;
-    padding: 8px 10px;
     border: none;
+    font-size: 15px;
     background: none;
+    padding: 8px 10px;
+    transition: 0.2s;
     color: var(--color_text_dark);
 
     &:hover {
@@ -56,7 +57,7 @@
   }
 
   &::after {
-    all:unset
+    all: unset;
   }
 }
 

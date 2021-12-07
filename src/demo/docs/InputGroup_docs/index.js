@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, InputText } from '../../../lib/src'
+import { NavPageContainer, InputText,InputSearchBar,Select } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { InputTextImportCode,
@@ -34,6 +34,20 @@ render() {
     <InputText
       placeholder="Enter a text"
       tooltip="InputText tooltip title"/>
+
+      <InputSearchBar />
+
+      <Select
+  defaultValue="blue" //Optional
+  onChange={(value)=> alert(value)}
+  data={[
+    {label: 'red', value: 'red'},
+    {label: 'blue', value: 'blue'},
+    {label: 'green', value: 'green'},
+    {label: 'pink', value: 'pink'},
+  ]}
+/>
+
     <br/><br/>
 
 
