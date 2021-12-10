@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './lib/config/app-config.css'
-import './lib/dist/react-windows-ui-11.min.css'
+import './lib/dist/react-windows-ui.min.css'
 import './lib/icons/fonts/fonts.min.css'
 //import './lib/dist/react-windows-ui-rtl.min.css'
 import './demo/styles/codeStyle.css'

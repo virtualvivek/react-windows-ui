@@ -21,26 +21,26 @@ render() {
     <h1>NavBar</h1>
   
 
-    <div className="app-nav-wrap">
+    <div className="app-navbar-wrap">
     <nav className="animate custom" style={{position:'relative'}}>
-      <div className="app-nav-header" style={{position:'absolute'}}>
-        <span className="app-nav-toggle"></span>
-        <span className="app-name">React Windows UI</span>
+      <div className="app-navbar-header">
+        <span className="app-navbar-toggle-button"></span>
+        <span className="app-navbar-name">React Windows UI</span>
       </div>
-      <ul style={{padding:0}}>
-        <li>
+      <ul style={{padding:0}} className="app-navbar-list">
+        <li className="app-navbar-list-item">
           <a href="#/navbar"><i className="icons10-home"></i>
           <span>Home</span></a>
         </li>
         <h1>Title</h1>
         <div className="app-hr"></div>
-        <li>
+        <li className="app-navbar-list-item">
           <a href="#/navbar" aria-current="page" className="active">
             <i className="icons10-add"></i>
             <span>NavItem1</span>
           </a>
         </li>
-        <li>
+        <li className="app-navbar-list-item">
           <a href="#/navbar">
             <i className="icons10-user"></i>
             <span>NavItem2</span>
@@ -101,16 +101,16 @@ render() {
 
     <h1>NavBarLink</h1>
 
-    <div className="app-nav-wrap">
+    <div className="app-navbar-wrap">
     <nav className="animate custom" style={{position:'relative'}}>
-      <ul style={{padding:0,margin:0}}>
-        <li>
+      <ul style={{padding:0,margin:0}} className="app-navbar-list">
+        <li className="app-navbar-list-item">
           <a href="#/navbar" aria-current="page" className="active">
             <i className="icons10-add"></i>
             <span>NavItem1</span>
           </a>
         </li>
-        <li>
+        <li className="app-navbar-list-item">
           <a href="#/navbar">
             <i className="icons10-user"></i>
             <span>NavItem2</span>
@@ -143,16 +143,16 @@ render() {
     <h2>NavBarLink <span className="app-code">with img</span> :</h2>
     <p>NavBar <b>img</b> and <b>icon</b> is only visible on <b>small devices</b> when prop : <span className="app-code"><b>{`mobileHasIcons={true}`}</b></span></p>
 
-    <div className="app-nav-wrap">
+    <div className="app-navbar-wrap">
     <nav className="animate custom" style={{position:'relative'}}>
-      <ul style={{padding:0,margin:0}}>
-        <li>
+      <ul style={{padding:0,margin:0}} className="app-navbar-list">
+        <li className="app-navbar-list-item">
         <a href="#/navbar">
           <img src={Img1} alt="img"/>
           <span>NavItem 1</span>
         </a>
         </li>
-        <li>
+        <li className="app-navbar-list-item">
           <a href="#/navbar">
             <img src={Img2} alt="img"/>
             <span>NavItem 2</span>
@@ -174,17 +174,17 @@ render() {
 
     <h2>NavBarLink <span className="app-code">show Badge</span> :</h2>
 
-    <div className="app-nav-wrap">
+    <div className="app-navbar-wrap">
     <nav className="animate custom" style={{position:'relative'}}>
-      <ul style={{padding:0,margin:0}}>
-        <li>
+      <ul style={{padding:0,margin:0}} className="app-navbar-list">
+        <li className="app-navbar-list-item">
         <a href="#/navbar">
           <i className="icons10-user"></i>
           <span>NavItem1</span>
           <div className="app-badge">12</div>
         </a>
         </li>
-        <li>
+        <li className="app-navbar-list-item">
           <a href="#/navbar">
             <img src={Img2} alt="img"/>
             <span>NavItem2</span>

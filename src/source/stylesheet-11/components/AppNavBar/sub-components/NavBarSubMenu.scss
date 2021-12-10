@@ -1,5 +1,5 @@
-.app-nav-submenu {
-  .app-nav-submenu-title {
+.app-navbar-submenu {
+  .app-navbar-submenu-title {
     @extend .transition-background-400ms;
 
     display: flex;
@@ -18,7 +18,7 @@
       background-color: var(--color_button);
     }
   }
-  .app-nav-submenu-content {
+  .app-navbar-submenu-content {
     max-height: 0;
     overflow: hidden;
     backdrop-filter: brightness(0.97);
@@ -33,13 +33,13 @@
 }
 
 @mixin nav-submenu-mobile() {
-  .app-nav-submenu {
+  .app-navbar-submenu {
     width: fit-content;
     height: fit-content;
     display: inline-flex;
     align-items: flex-start;
 
-    .app-nav-submenu-title {
+    .app-navbar-submenu-title {
       height: fit-content;
       padding: 0;
       margin: 0 7px;
@@ -54,7 +54,7 @@
       }
     }
 
-    .app-nav-submenu-content {
+    .app-navbar-submenu-content {
       max-height: unset;
       max-width: 0;
       overflow: overlay;

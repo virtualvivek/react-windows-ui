@@ -17,7 +17,7 @@ const NavBarLink = (props) => {
   }
 
   return (
-    <li className="app-nav-list-item">
+    <li className="app-navbar-list-item">
       <NavLink to={props.to} exact={props.exact}>
         {props.icon}
         {renderImg()}

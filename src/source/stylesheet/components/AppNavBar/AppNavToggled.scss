@@ -1,5 +1,5 @@
 @media only screen and (min-width: 760px) {
-  .app-nav-wrap.toggled {
+  .app-navbar-wrap.toggled {
     height: 100%;
     width: 74px;
     position: fixed;
@@ -7,7 +7,7 @@
     overflow-x: hidden;
     display: inline-block;
       
-    .app-name,
+    .app-navbar-name,
     nav a span,
     nav ul h1,
     .app-search-box {
@@ -36,7 +36,7 @@
         &:active { background-color: var(--color_link_bg_active); }
     }
 
-    .app-nav-submenu-title { 
+    .app-navbar-submenu-title { 
       justify-content: center;
       
       > :first-child { display: none; }

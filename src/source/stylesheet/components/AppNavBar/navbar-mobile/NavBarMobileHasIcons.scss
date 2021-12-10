@@ -1,7 +1,7 @@
 @mixin nav-mobile-has-icons() {
-  .app-nav-wrap .app-nav-list {
+  .app-navbar-wrap .app-navbar-list {
     &.app-mobile-has-icons {
-      .app-nav-list-item {
+      .app-navbar-list-item {
         a {
           padding: 0 7px 10px;
 
@@ -20,9 +20,9 @@
       }
     }
   }
-  ul.app-mobile-has-icons .app-nav-list-item a span,
-  ul:not(.app-mobile-has-icons) .app-nav-list-item a img,
-  ul:not(.app-mobile-has-icons) .app-nav-list-item a i::before {
+  ul.app-mobile-has-icons .app-navbar-list-item a span,
+  ul:not(.app-mobile-has-icons) .app-navbar-list-item a img,
+  ul:not(.app-mobile-has-icons) .app-navbar-list-item a i::before {
     display: none !important;
   }
 }

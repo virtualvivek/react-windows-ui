@@ -1,4 +1,4 @@
-.app-name {
+.app-navbar-name {
   @extend .color-text-dark;
   @extend .font-weight-500;
   @extend .transition-background-400ms;
@@ -20,8 +20,8 @@
 }
 
 @mixin nav-appname-mobile() {
-  .app-nav-wrap {
-    .app-name {
+  .app-navbar-wrap {
+    .app-navbar-name {
       padding: 0 15px;
       font-size: 14px;
       position: fixed;

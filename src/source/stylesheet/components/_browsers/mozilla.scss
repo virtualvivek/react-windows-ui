@@ -8,7 +8,7 @@
   .app-content-wrap section {
     scrollbar-color: #999 transparent;
   }
-  .app-nav-wrap nav {
+  .app-navbar-wrap nav {
     scrollbar-width: thin;
   }
   .app-dialog-modal.dropShadow {
@@ -16,7 +16,7 @@
   }
 }
 @mixin browser-mozilla-mobile() {
-  .app-nav-wrap nav {
+  .app-navbar-wrap nav {
     scrollbar-width: none;
   }
 }

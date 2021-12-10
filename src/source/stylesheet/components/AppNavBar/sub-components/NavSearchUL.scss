@@ -1,4 +1,4 @@
-.app-nav-wrap {
+.app-navbar-wrap {
   .app-nav-search {
     position: relative;
     ul {
@@ -32,7 +32,7 @@
 }
 
 @mixin app-navbar-search-dialog-mobile() {
-  .app-nav-wrap {
+  .app-navbar-wrap {
     .app-nav-search ul {
       width: 80%;
       z-index: 99;

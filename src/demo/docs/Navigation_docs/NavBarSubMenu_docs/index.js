@@ -16,16 +16,16 @@ render() {
 
     <div style={{width:290,backgroundColor:'var(--color_nav)'}}>
     <NavBarSubMenu title="Title">
-      <div className="app-nav-wrap">
+      <div className="app-navbar-wrap">
       <nav className="animate custom" style={{position:'relative'}}>
-        <ul style={{padding:0,margin:0}}>
-          <li>
+        <ul style={{padding:0,margin:0}} className="app-navbar-list">
+          <li className="app-navbar-list-item">
             <a href="#/navbar" aria-current="page" className="active">
               <i className="icons10-add"></i>
               <span>NavItem1</span>
             </a>
           </li>
-          <li>
+          <li className="app-navbar-list-item">
             <a href="#/navbar">
               <i className="icons10-user"></i>
               <span>NavItem2</span>

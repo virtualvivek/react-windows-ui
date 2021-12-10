@@ -1,5 +1,5 @@
-.app-nav-wrap .app-nav-list {
-  .app-nav-list-item {
+.app-navbar-wrap .app-navbar-list {
+  .app-navbar-list-item {
     display: flex;
     overflow: hidden;
     margin: 5px 10px;
@@ -68,7 +68,7 @@
 }
 
 @mixin nav-ul-li-mobile() {
-  .app-nav-wrap .app-nav-list .app-nav-list-item {
+  .app-navbar-wrap .app-navbar-list .app-navbar-list-item {
     display: inline-flex;
     position: relative;
     overflow: visible;

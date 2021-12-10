@@ -1,5 +1,5 @@
-.app-nav-wrap {
-  .app-nav-header {
+.app-navbar-wrap {
+  .app-navbar-header {
     @extend .background-color-nav;
     width: inherit;
     display: flex;
@@ -12,8 +12,8 @@
 }
 
 @mixin nav-header-mobile() {
-  .app-nav-wrap {
-    .app-nav-header {
+  .app-navbar-wrap {
+    .app-navbar-header {
       position: relative;
       height: 40px;
     }

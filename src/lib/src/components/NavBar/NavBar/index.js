@@ -20,13 +20,13 @@ const NavBar = (props) => {
 
   return (
     <div
-      className={sidebar ? "app-nav-wrap toggled" : "app-nav-wrap"}
+      className={sidebar ? "app-navbar-wrap toggled" : "app-navbar-wrap"}
       ref={props.ref}
-      id="app-nav-wrap-id"> 
+      id="app-navbar-wrap-id"> 
       <nav
         className="animate"
         onScroll={scrollEvent}>
-        <div className="app-nav-header"
+        <div className="app-navbar-header"
           style={ props.shadowOnScroll ?
                   isScrolling ?
                   { boxShadow: "0 6px 8px -8px var(--color_link_bg_hover)"}
@@ -34,15 +34,15 @@ const NavBar = (props) => {
                 : {boxShadow: ""}
             }>
           <span
-            className="app-nav-toggle-button"
+            className="app-navbar-toggle-button"
             onClick={showSidebar}>
           </span>
-          <span className="app-name">{props.title}</span>
+          <span className="app-navbar-name">{props.title}</span>
         </div>
         <ul
           className={props.mobileHasIcons
-            ? "app-nav-list app-mobile-has-icons"
-            : "app-nav-list"  }>
+            ? "app-navbar-list app-mobile-has-icons"
+            : "app-navbar-list"  }>
           {props.children}
         </ul>
       </nav>

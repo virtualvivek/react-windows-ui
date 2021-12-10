@@ -1,4 +1,4 @@
-.app-nav-wrap {
+.app-navbar-wrap {
   .app-search-box {
     width: 240px;
     user-select: none;
@@ -43,7 +43,7 @@
 }
 
 @mixin app-navbar-search-mobile() {
-  .app-nav-wrap {
+  .app-navbar-wrap {
     .app-search-box { display: none; }
     
     .app-search-dialog {

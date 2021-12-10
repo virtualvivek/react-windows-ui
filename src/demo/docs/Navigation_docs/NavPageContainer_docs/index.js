@@ -15,25 +15,19 @@ render() {
     animateTransition={false}>
     <h1>NavPageContainer</h1>
 
-    <div className="navpagecontainer-view">
-      <div className="navpagecontainer-nav">
-        <div className="navpagecontainer-rows navpage-header">
-          <div className="navpage-item"></div>
-          <div className="navpage-switch"><p></p></div>
+    <div className="demo-navpagecontainer-view">
+      <div className="demo-navpagecontainer-navbar">
+        <div className="demo-navpagecontainer-rows-header">
+          <div className="demo-navpage-item"></div>
         </div>
-        <div className="navpagecontainer-rows navpage-serachbar"></div>
-        <div className="navpagecontainer-rows"></div>
-        <div className="navpagecontainer-rows"></div>
-        <div className="navpagecontainer-rows"></div>
-        <div className="navpagecontainer-rows"></div>
       </div>
-      <div className="navpagecontainer-container">
-        <p className="toolbar">- o x</p>
-        <p>NavPageContainer</p>
-        <div className="navpagecontainer-rows"></div>
-        <div className="navpagecontainer-rows half"></div>
-        <div className="navpagecontainer-rows half"></div>
+      <div className="demo-navpagecontainer-page-column">
+        <p className="demo-navpagecontainer-toolbar">➖ ⬜ ❌</p>
+        <div className="demo-navpagecontainer-page">
+          <p>NavPageContainer</p>
+        </div>
       </div>
+      <i className="icons10-shutdown"></i>
     </div>
 
     <h2>Import</h2>

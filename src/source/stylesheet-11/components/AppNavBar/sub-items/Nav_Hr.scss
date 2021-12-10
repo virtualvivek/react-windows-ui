@@ -1,10 +1,10 @@
-.app-nav-wrap .app-nav-list {
+.app-navbar-wrap .app-navbar-list {
   .app-hr {
     margin: 5px 15px;
   }
 }
 @mixin nav-ul-hr-mobile() {
-  .app-nav-wrap .app-nav-list {
+  .app-navbar-wrap .app-navbar-list {
     .app-hr {
       width: 0;
       height: 20px;

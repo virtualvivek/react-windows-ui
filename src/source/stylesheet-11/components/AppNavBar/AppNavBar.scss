@@ -15,7 +15,7 @@
 
 @import "./AppNavToggled.scss";
 
-.app-nav-wrap {
+.app-navbar-wrap {
   height: 100%;
   width: 290px;
   z-index: 5;
@@ -38,7 +38,7 @@
     overflow-y: overlay;
 
     &.animate {
-      .app-nav-list-item {
+      .app-navbar-list-item {
         & :active {
           @extend .transition-scale-active;
           transform: scale(0.98, 0.98);

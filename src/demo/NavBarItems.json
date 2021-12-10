@@ -175,10 +175,10 @@
         "showBadge": false
     },
     {
-        "to": "/view_",
+        "to": "/tableview",
         "exact": false,
-        "text": "View",
-        "icon": "icons10-ipad",
+        "text": "TableView",
+        "icon": "icons10-grid-3",
         "showBadge": false
     },
     {
@@ -189,10 +189,10 @@
         "showBadge": false
     },
     {
-        "to": "/tables",
+        "to": "/view_",
         "exact": false,
-        "text": "Tables",
-        "icon": "icons10-grid-3",
+        "text": "View",
+        "icon": "icons10-ipad",
         "showBadge": false
     }
 ]
