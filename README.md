@@ -51,9 +51,6 @@
 
 <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="700" alt="react-windows-ui" /></p></a>
 
-<h1 align="center">Adaptive UI</h1>
-
-<a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_adaptive.gif" width="652" alt="react-windows-ui" /></p></a>
 
 # Demo ⚡
 https://virtualvivek.github.io/react-windows-ui/
