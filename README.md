@@ -34,14 +34,13 @@
 	
   <br/>	
   
-  <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">
-    <img src="https://img.shields.io/badge/Demo & Docs-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
-      alt="Live Demo & Docs" />
-  </a>
-  
   <a href="https://www.npmjs.com/package/react-windows-ui" target="_blank">
     <img src="https://img.shields.io/badge/npm-package-green.svg?style=flat-square&logo=npm&color=CB3837"
       alt="npmJS" />
+  </a>
+	
+  <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+    <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat-square&logo=windows&color=1572B6&label=react-windows-ui.min.css" alt="react-windows-ui.min.css" />
   </a>
 	
 
@@ -72,10 +71,11 @@ import 'react-windows-ui/icons/fonts/fonts.min.css'
 ## Configuration
 
 **`app-config.css`** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br>
-‣ You can import default `app-config` file <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
+‣ You can import default `app-config.css` file from <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
 _OR_ <br>
 ‣ Create your own like this
 
+**app-config.css**
 ```css
 :root {
   --PrimaryColor: #6632a8;  /* Change color you like */
@@ -162,11 +162,6 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
   <td>Style <code>scss</code> source code</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
 </tr>
-<!-- <tr>
-  <td>Library SunValley SCSS Source</td>
-  <td>SunValley Styles <code>scss</code> source code</td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet-sunvalley">SCSS LINK</a></td>
-</tr> -->
 <tr>
   <td>TypeScript Type Definitions</td>
   <td>Typescript <code>index.d.ts</code> import file</td>
@@ -177,25 +172,9 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 
 ---
 
-# Details
 
 <a href="https://www.npmjs.com/package/react-windows-ui">
   <img src="https://img.shields.io/badge/package-npm-red.svg?style=for-the-badge&logo=npm&color=CB3837" alt="npmJS" />
-</a>
-<br>
-<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=for-the-badge&logo=windows&color=1572B6&label=react-windows-ui.min.css"
-       alt="react-windows-ui.min.css" />
-</a>
-<br>
-<!-- <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-sunvalley.min.css?style=for-the-badge&logo=microsoft&color=0078D4&label=react-windows-ui-sunvalley.min.css"
-       alt="react-windows-ui-sunvalley.min.css" />
-</a>
-<br> -->
-<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-rtl.min.css?style=for-the-badge&logo=LineageOS&color=167C80&label=react-windows-ui-rtl.min.css"
-       alt="react-windows-ui-rtl.min.css" />
 </a>
 
 # Find this library useful? :heart:
