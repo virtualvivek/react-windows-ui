@@ -2,9 +2,7 @@
   <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="400" /> 
 </p>
 
-
 <h1 align="center">react-windows-ui</h1>
-
 
 <p align="center">Build full featured <b>Windows fluent UI</b> apps using <b>ReactJS</b>.</p>
 
@@ -101,7 +99,7 @@ const App = () => (
 <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_boilerplate_screen.JPG" width="800" />
 
 ‣ You can initialize you Repo with this **`Template`** <br>
-<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_template_boilerplate.JPG" width="650" />
+<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_template_boilerplate.JPG" width="620" />
 
 OR <br>
 
@@ -162,11 +160,6 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
   <td>Style <code>scss</code> source code</td>
   <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
 </tr>
-<tr>
-  <td>TypeScript Type Definitions</td>
-  <td>Typescript <code>index.d.ts</code> import file</td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/src/index.d.ts">D.TS LINK</a></td>
-</tr>
 </tbody>
 </table>
 
@@ -180,7 +173,6 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 # Find this library useful? :heart:
 Support it by joining [**stargazers**](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
 
-# Work in Progress -version 4.x
 
 # License
 
