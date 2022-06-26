@@ -51,23 +51,23 @@
 }
 .home-footer-group .group {
     width: inherit;
-    height: 1.8vh;
+    height: 2.8vh;
     background-color: var(--PrimaryColor);
 }
 .group.a {
     opacity: 0.1;
 }
 .group.b {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 .group.c {
-    opacity: 0.5;
+    opacity: 0.3;
 }
 .group.d {
-    opacity: 0.7;
+    opacity: 0.4;
 }
 .group.e {
-    opacity: 0.9;
+    opacity: 0.5;
 }
 .home-header *,
 .home-footer-group .group {

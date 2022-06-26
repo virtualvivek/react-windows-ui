@@ -9,6 +9,6 @@ const createAlphaPrimaryColor = () => {
 }
 
 const ThemeManager = {
-  createAlphaPrimaryColor: createAlphaPrimaryColor
+  createAlphaPrimaryColor
 }
 export default ThemeManager;

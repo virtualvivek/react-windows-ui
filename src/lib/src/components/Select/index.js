@@ -1,6 +1,6 @@
 import React, { useState,useEffect, useMemo, useRef } from "react";
-import useOutSideClick from "../utils/hooks/useOutSideClick";
-import getScreenOffset from "../utils/getScreenOffset";
+import { useOutSideClick } from "../_hooks";
+import { ScrollView, getScreenOffset } from "../_api";
 
 const Select = (props) => {
   const data_default = [];
@@ -17,20 +17,19 @@ const Select = (props) => {
       let defaultIndex = items.findIndex(x => x.value === props.defaultValue);
       let defaultLabel = items.find(x => x.value === props.defaultValue).label;
       
-      setSelectedItem(defaultIndex)
-      setILabel(defaultLabel)
+      setSelectedItem(defaultIndex);
+      setILabel(defaultLabel);
     }
     else {
-      setILabel(items[0].label)
+      setILabel(items[0].label);
     }
 
-    setItem(props.data)
-  }, [props.data,props.defaultValue,items])
+    setItem(props.data);
+  }, [props.data,props.defaultValue,items]);
 
-  useMemo(() => {
-    setItem(props.data)
-  }, [props.data])
-  
+  useMemo(() => { setItem(props.data); }, [props.data]);
+
+  useMemo(() => { if(!isOpen) { ScrollView.enableScroll(); } }, [isOpen]);
   
   const handleItemClick = (value) => {
     //get index of selecting value
@@ -44,6 +43,7 @@ const Select = (props) => {
 
   const toggleDropdown = () => {
     setOpen(!isOpen);
+    ScrollView.disableScroll();
     getScreenOffset(wrapperRef) ? setReverse("reverse") :  setReverse("");
   }
 

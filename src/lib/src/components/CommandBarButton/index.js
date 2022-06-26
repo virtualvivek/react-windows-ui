@@ -1,7 +1,7 @@
-import React, { useMemo ,useState, useRef } from 'react'
-import { Link } from 'react-router-dom'
-import useOutSideClick from '../utils/hooks/useOutSideClick'
-import getScreenOffset from '../utils/getScreenOffset'
+import React, { useMemo ,useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { useOutSideClick } from '../_hooks';
+import { getScreenOffset } from '../_api';
 
 const CommandBarButton = (props) => {
 
@@ -103,4 +103,4 @@ CommandBarButton.defaultProps = {
   valueDisabled: false,
 }
 
-export default CommandBarButton
+export default CommandBarButton;

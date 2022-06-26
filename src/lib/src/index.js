@@ -9,7 +9,6 @@ import {
     NavSearchSuggestion } from './components/NavBar'
 
 import Accordion from './components/Accordion'
-import Appearance from './components/Appearance'
 import AppTheme from './components/AppTheme'
 import AvatarView from './components/AvatarView'
 import Alert from './components/Alert'
@@ -46,8 +45,10 @@ import StickyHeader from './components/StickyHeader'
 import Switch from './components/Switch'
 import SwitchDayNight from './components/SwitchDayNight'
 import TableView from './components/TableView'
-import ThemeManager from './components/utils/ThemeManager'
 import View from './components/View'
+
+
+import { Appearance, ThemeManager } from './components/_api'
 
 
 

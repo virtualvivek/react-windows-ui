@@ -1,5 +1,5 @@
-import React, { useEffect,useRef } from 'react'
-import Appearance from '../Appearance'
+import React, { useEffect,useRef } from 'react';
+import { Appearance } from '../_api';
 
 const SwitchDayNight = () => {
 
@@ -49,4 +49,4 @@ const SwitchDayNight = () => {
   )
 }
 
-export default SwitchDayNight
+export default SwitchDayNight;

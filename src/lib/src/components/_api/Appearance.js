@@ -38,10 +38,10 @@ const setLightScheme = () => {
   return "";
 }
 
-const Appearance = {   
-  getColorScheme: getColorScheme,
-  setDarkScheme: setDarkScheme,
-  setLightScheme: setLightScheme,
+const Appearance = {
+  getColorScheme,
+  setDarkScheme,
+  setLightScheme
 }
 
 export default Appearance;

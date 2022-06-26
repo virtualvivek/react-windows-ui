@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { NavPageContainer,ColorPickerItem,ColorPickerPalette,Button,AppTheme } from '../../lib/src'
+import { NavPageContainer, ColorPickerItem, ColorPickerPalette, AppTheme } from '../../lib/src'
 import ReactIcon from './css/home/ReactIcon'
 import NpmIcon from './css/home/npmIcon'
 import GithubIcon from './css/home/githubIcon'
@@ -68,26 +67,10 @@ class Home extends React.Component {
 
       </div>
 
-      <br/><span className="home-text">Build windows fluent ui apps on the go!</span>
+      <br/>
+      <span className="home-text">Build windows fluent ui apps on the go!</span>
 
-      <div className="link-container">
-        <Link to="/getting_started">
-          <Button
-            type="primary"
-            value="Getting Started"
-          />
-        </Link>
-        &nbsp;&nbsp;
-        <Link to="/inputs">
-          <Button
-            type="primary-outline"
-            value="Components"
-          />
-        </Link>
-
-      </div>
-      
-
+      <br/>
       <div className="link-container">
         <a href="https://www.npmjs.com/package/react-windows-ui" target="_blank" rel="noreferrer"><NpmIcon /></a>
         &nbsp;&nbsp;&nbsp;&nbsp;

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import useOutSideClick from "../../utils/hooks/useOutSideClick";
+import  { useOutSideClick } from "../../_hooks";
 
 const NavSearchSuggestion = (props) => {
 

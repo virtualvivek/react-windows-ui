@@ -1,7 +1,7 @@
-import React, { useState, useRef } from 'react'
-import { Link } from 'react-router-dom'
-import useOutSideClick from '../utils/hooks/useOutSideClick'
-import getScreenOffset from '../utils/getScreenOffset'
+import React, { useState, useRef, useMemo } from 'react';
+import { Link } from 'react-router-dom';
+import { useOutSideClick } from '../_hooks';
+import { getScreenOffset, ScrollView } from '../_api';
 
 const MenuBar = (props) => {
 
@@ -15,8 +15,13 @@ const MenuBar = (props) => {
 
   const toggleMenuBar = () => {
     setMenubar(!menubar);
+    ScrollView.disableScroll();
     getScreenOffset(wrapperRef) ? setReverse("reverse") :  setReverse("");
   }
+
+  useMemo(() => {
+    if(!menubar) { ScrollView.enableScroll(); }
+  }, [menubar]);
 
 
   const teams_data = props.data
@@ -33,7 +38,7 @@ const MenuBar = (props) => {
       <ul className={ menubar ? `show ${isReverse}` : ""}>
         {props.showSearchBar && (
         <div className="app-search-box"
-          onClick={(e)=> {e.stopPropagation()}}>
+          onClick={(e) => {e.stopPropagation()}}>
           <input
             className="app-input-text app-input-search"
             type="search"
@@ -66,10 +71,10 @@ const MenuBar = (props) => {
 }
 
 MenuBar.defaultProps = {
-  data:[],
+  data: [],
   label: "Select",
-  searchPlaceholder: "search here..",
-  showSearchBar: false
+  showSearchBar: false,
+  searchPlaceholder: "search here.."
 }
 
-export default MenuBar
+export default MenuBar;

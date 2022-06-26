@@ -1,11 +1,11 @@
-import React, { useState,useEffect } from "react";
-import ThemeManager from "../../utils/ThemeManager";
+import React, { useState, useEffect } from "react";
+import { ThemeManager } from "../../_api";
 
 const NavBar = (props) => {
 
   useEffect(() => {
     ThemeManager.createAlphaPrimaryColor();
-  },[]);
+  }, []);
   
   const [sidebar, setSidebar] = useState(false);
   const [isScrolling, setScrolling] = useState(false);
