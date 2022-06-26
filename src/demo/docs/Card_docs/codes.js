@@ -32,7 +32,7 @@ const CardUsageHoverCode =
     info="installed"
     borderBottom={false}
   />
-  <div style={{float:'right',display:'flex'}}>
+  <div style={{float:'right', display:'flex'}}>
     <Button value="Options"/>
     <div className="app-space-15"></div>
     <Button value="Remove"/> 
@@ -52,7 +52,7 @@ const CardUsageFocusedCode =
     icon={<i className="icons10-notification color-primary"></i>}
   />
   <Button
-    style={{float:'right',margin:5}}
+    style={{float:'right', margin:5}}
     value="Edit" />
 </Card>`;
 

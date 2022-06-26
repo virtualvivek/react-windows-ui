@@ -14,8 +14,8 @@ const MenuBarUsageCode =
 
 const MenuBarOnClickUsageCode =
 `<MenuBar
-  label="Select a fruit"
   showSearchBar={true}
+  label="Select a fruit"
   data={[
     {label: 'apple', onClick: this.funcName, icon:<i className="icons10-camera"></i>},
     {label: 'orange', onClick: this.funcName},

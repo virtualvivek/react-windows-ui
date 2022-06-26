@@ -32,7 +32,7 @@ const PropsView = () => {
           <td>Toggle's MenuBar Search Input visibility</td>
         </tr>
         <tr>
-          <td><p className="app-code">data</p></td>
+          <td><p className="app-code">data ❑</p></td>
           <td>object</td>
           <td>[ ]</td>
           <td>Set's MenuBar menu items</td>

@@ -12,21 +12,21 @@ const LinkUsageCode =
 const LinkImageUsageCode =
 `<LinkCompound
   to="#"
-  title="User preferences and uploads"
-  subtitle="Profile pictures and details"
   img={Img}
   imgAlt="Demo Image"
+  title="User preferences and uploads"
+  subtitle="Profile pictures and details"
 />`;
 
 const LinkBorderUsageCode =
 `<LinkCompound
   type="border"
   to="#"
-  title="Notification settings and DND"
-  subtitle="Control which app push notification"
   img={Img}
   imgAlt="Demo Image"
   tooltip="This is tooltip text"
+  title="Notification settings and DND"
+  subtitle="Control which app push notification"
 />`;
 
 export {

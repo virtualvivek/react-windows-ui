@@ -12,7 +12,7 @@ const LinkCompoundDocs = () => {
     <NavPageContainer hasPadding>
       <h1>LinkCompound</h1>
 
-      <p><span className="color-primary">LinkCompound</span> are accessible elements used primarily for navigation.<br/>This component is a <b>card</b> based style component to resemble a hyperlink.</p>
+      <p><span className="color-primary">LinkCompound</span> are accessible elements used primarily for navigation.<br/>This is a <b>card</b> based component to resemble a hyperlink.</p>
       <div className="app-hr"></div>
       
       <LinkCompound

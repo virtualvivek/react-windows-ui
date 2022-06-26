@@ -23,8 +23,8 @@ const InputTextPasswordUsageCode =
 
 const InputTextLabelUsageCode =
 `<InputText
-  label="label"
   width={225}
+  label="label"
   placeholder="Enter a text"
 />`;
 

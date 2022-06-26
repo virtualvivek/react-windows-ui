@@ -251,6 +251,11 @@ class App extends React.Component {
           window.location.href = 'https://github.com/virtualvivek/react-windows-ui/blob/main/src/demo/docs/AppTheme_docs/index.js';
           return null;
         }} />
+        <Route path='/fluent_icons_external' component={() => { 
+          window.location.href = 'https://github.com/microsoft/fluentui-system-icons';
+          return null;
+        }} />
+        
       </Switch>
     </Router>
   </>

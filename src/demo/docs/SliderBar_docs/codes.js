@@ -3,24 +3,24 @@ const SliderBarImportCode =
 
 const SliderBarUsageCode =
 `<SliderBar
-  defaultValue={this.state.SliderVal}
   showValue={false}
-  onChange={(e) => {this.onChangeSlider(e)}}
   tooltip="SliderBar tooltip title"
+  defaultValue={this.state.SliderVal}
+  onChange={(e) => {this.onChangeSlider(e)}}
 />`;
 
 const SliderBarRoundUsageCode =
 `<SliderBar
-  defaultValue={this.state.Slider}
-  thumbStyle="round"
   step={4}
+  thumbStyle="round"
+  defaultValue={this.state.Slider}
   onChange={(e) => {this.onChangeSlider(e)}}
 />`;
 
 const SliderBarRoundBorderUsageCode =
 `<SliderBar
-  defaultValue={this.state.Slider}
   thumbStyle="round-border"
+  defaultValue={this.state.Slider}
   onChange={(e) => {this.onChangeSlider(e)}}
 />`;
 

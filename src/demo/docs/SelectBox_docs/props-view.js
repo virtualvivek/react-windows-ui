@@ -32,7 +32,7 @@ const PropsView = () => {
           <td>Set's SelectBox name prop</td>
         </tr>
         <tr>
-          <td><p className="app-code">data</p></td>
+          <td><p className="app-code">data ❑</p></td>
           <td>object</td>
           <td>[ ]</td>
           <td>Set's Select/SelectBox data</td>

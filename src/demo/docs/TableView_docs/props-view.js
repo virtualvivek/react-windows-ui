@@ -28,7 +28,7 @@ const PropsView = () => {
 
         <tr>
           <td>
-            <b>columns ▶</b>
+            <b>columns  ❑</b>
           </td>
         </tr>
         <tr>

@@ -4,19 +4,19 @@ const AvatarViewImportCode =
 const AvatarViewUsageCode =
 `<AvatarView
   src={Image}
-  isLoading={false}
   size="medium"
-  tooltip="tooltip title"
+  isLoading={false}
   showDropShadow={true}
+  tooltip="tooltip title"
 />`;
 
 const AvatarViewUsageLoadingCode =
 `<AvatarView
   src={Image}
-  isLoading={true}
   size="medium"
-  tooltip="tooltip title"
+  isLoading={true}
   showDropShadow={true}
+  tooltip="tooltip title"
 />`;
 
 export {

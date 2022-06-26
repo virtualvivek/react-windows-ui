@@ -55,7 +55,7 @@ const PropsView = () => {
           </td>
         </tr>
         <tr>
-          <td><p className="app-code">data</p></td>
+          <td><p className="app-code">data ❑</p></td>
           <td>object</td>
           <td>null</td>
           <td>Set's Search data prop</td>

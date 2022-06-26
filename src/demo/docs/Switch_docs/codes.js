@@ -3,22 +3,22 @@ const SwitchImportCode =
 
 const SwitchUsageCode =
 `<Switch
-  defaultChecked={true}
   labelOn="On"
   labelOff="Off"
   onChange={() => {}}
+  defaultChecked={true}
 />`;
 
 const SwitchNoLabelUsageCode =
 `<Switch
   label={false}
-  defaultChecked={true}
   onChange={() => {}}
+  defaultChecked={true}
 />`;
 
 
 export {
-    SwitchImportCode,
-    SwitchUsageCode,
-    SwitchNoLabelUsageCode
+  SwitchImportCode,
+  SwitchUsageCode,
+  SwitchNoLabelUsageCode
 }

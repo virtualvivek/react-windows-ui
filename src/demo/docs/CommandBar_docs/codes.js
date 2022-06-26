@@ -6,7 +6,7 @@ const CommandBarUsageCode =
   ......
   <CommandBarButton
     value="Upload"
-    onClick={()=>{}}
+    onClick={() => {}}
     icon={<i className="icons10-plus color-primary"></i>}
     data={[
       {label: 'file', link: '#', icon: <i className="icons10-file"></i>},
@@ -22,7 +22,7 @@ const CommandBarButtonUsageCode =
 `<CommandBarButton
   value="Upload"
   icon={<i className="icons10-upload color-primary"></i>}
-  onClick={()=>{}}
+  onClick={() => {}}
 />`;
 
 const CommandBarDropdownUsageCode =
@@ -40,7 +40,7 @@ const CommandBarDropdownUsageCode =
 const CommandBarSplitUsageCode =
 `<CommandBarButton
   value="New"
-  onClick={()=>{}}
+  onClick={() => {}}
   icon={<i className="icons10-plus color-primary"></i>}
   data={[
     {label: 'file', link: '#', icon: <i className="icons10-file"></i>},

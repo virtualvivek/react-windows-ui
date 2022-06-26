@@ -1,5 +1,7 @@
 import React from 'react'
-import { NavPageContainer } from '../../lib/src'
+import { NavPageContainer, Link } from '../../lib/src'
+import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import './css/icons.css'
 
 const Icons = () => {
@@ -7,8 +9,20 @@ const Icons = () => {
     <NavPageContainer hasPadding animateTransition>
       <h1 className="m-b-15">Icons</h1>
 
-      <p><b>react-windows-ui</b> comes with the premium and free <b>font</b> developed icons. <br/>
-      It’s easy to incorporate icons into your app. Here’s a small example:
+      <p><b>react-windows-ui</b> comes with the free <b>font</b> set of icons. <br/>
+      
+      <h2>Import</h2>
+      <SyntaxHighlighter
+        language="javascript"
+        style={vscDarkPlus}
+        className="code code-container">
+        {`import 'react-windows-ui/icons/fonts/fonts.min.css'`}
+      </SyntaxHighlighter>
+
+      <br/><b>If you need a wide variety of Fluent Icons please refer:</b><br/>
+      <Link to="/fluent_icons_external" target="_blank"><span>github.com/microsoft/fluentui-system-icons</span></Link>
+
+      <br/><br/>It’s easy to incorporate icons into your app. Here’s a small example:
       </p>
       <pre style={{display:'inline',fontSize:13}}>
         <code>&lt;i className="icons10-home"&gt;&lt;/i&gt;</code>
