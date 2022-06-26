@@ -16,7 +16,7 @@ const AlertLightUsageCode =
   isVisible={false}
   onBackdropPress={() => {}}
   title={<><i className="icons10-sun"></i>Alert</>}
-  message={<span>This is Light alert Box. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>}>
+  message={<span>This is Light alert Box. Lorem ipsum dolor sit amet.</span>}>
     <button onClick={() => {}}>Cancel</button>
     <button onClick={() => {}}>OK</button>
 </Alert>`;

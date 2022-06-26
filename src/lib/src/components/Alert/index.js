@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useMemo } from "react";
+import { ScrollView } from "../_api";
 
 const Alert = (props) => {
 
@@ -13,11 +14,15 @@ const Alert = (props) => {
     } 
   }
 
+  useMemo(() => {
+    if(props.isVisible) { ScrollView.disableScroll(); }
+    else {ScrollView.enableScroll(); }
+  }, [props.isVisible]);
+
   return (
     <div
       className={
-        props.isVisible ? "app-alert show"
-                        : "app-alert"
+        props.isVisible ? "app-alert show" : "app-alert"
       }
       onClick={(event)=>_onBackdropPress(event)}>
       <div className={`app-alert-modal ${setThemeLight()}`}>

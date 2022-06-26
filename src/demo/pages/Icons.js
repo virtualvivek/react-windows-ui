@@ -20,7 +20,7 @@ const Icons = () => {
       </SyntaxHighlighter>
 
       <br/><b>If you need a wide variety of Fluent Icons please refer:</b><br/>
-      <Link to="/fluent_icons_external" target="_blank"><span>github.com/microsoft/fluentui-system-icons</span></Link>
+      <Link to="/fluent_icons_external" target="_blank"><span><b>github.com/microsoft/fluentui-system-icons</b></span></Link>
 
       <br/><br/>It’s easy to incorporate icons into your app. Here’s a small example:
       </p>
