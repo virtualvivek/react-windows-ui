@@ -27,8 +27,8 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">type</p></td>
-          <td>text &nbsp;&nbsp;&nbsp;&nbsp;| password <br/>
-              date &nbsp;&nbsp;&nbsp;| time <br/>
+          <td>text  ⠀⠀| password <br/>
+              date  ⠀    | time <br/>
               month | datetime-local</td>
           <td>text</td>
           <td>Set's Input type</td>

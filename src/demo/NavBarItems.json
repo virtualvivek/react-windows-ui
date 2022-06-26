@@ -17,7 +17,7 @@
         "to": "/apptheme",
         "exact": false,
         "text": "AppTheme",
-        "icon": "icons10-color-palette",
+        "icon": "icons10-fantasy",
         "showBadge": false
     },
     {
@@ -53,6 +53,13 @@
         "exact": false,
         "text": "Checkbox",
         "icon": "icons10-checked-2",
+        "showBadge": false
+    },
+    {
+        "to": "/colorpicker",
+        "exact": false,
+        "text": "ColorPicker",
+        "icon": "icons10-color-palette",
         "showBadge": false
     },
     {

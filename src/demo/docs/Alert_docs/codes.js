@@ -13,10 +13,11 @@ const AlertUsageCode =
 const AlertLightUsageCode =
 `<Alert
   isVisible={false}
-  title="Alert"
-  message="This is message"
+  title={<><i className="icons10-sun"></i>Alert</>}
+  message={<span>This is Light alert Box. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>}>
   setTheme="system"
   onBackdropPress={()=>{}}>
+    <button onClick={()=>{}}>Cancel</button>
     <button onClick={()=>{}}>OK</button>
 </Alert>`;
 
