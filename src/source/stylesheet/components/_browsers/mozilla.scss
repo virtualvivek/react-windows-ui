@@ -11,9 +11,6 @@
   .app-navbar-wrap nav {
     scrollbar-width: thin;
   }
-  .app-dialog-modal.dropShadow {
-    background-color: var(--color_grey_light) !important;
-  }
 }
 @mixin browser-mozilla-mobile() {
   .app-navbar-wrap nav {

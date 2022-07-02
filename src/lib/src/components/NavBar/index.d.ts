@@ -6,6 +6,7 @@ import NavPageContainerInner from './NavPageContainerInner'
 import NavSearchBox from './NavSearchBox'
 import NavSearchSuggestion from './NavSearchSuggestion'
 import NavBarSubMenu from './NavBarSubMenu'
+import NavThemeSwitcher from './NavThemeSwitcher'
 
 export {
     NavBar,
@@ -15,5 +16,6 @@ export {
     NavPageContainerInner,
     NavSearchBox,
     NavSearchSuggestion,
-    NavBarSubMenu
+    NavBarSubMenu,
+    NavThemeSwitcher
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { AppTheme, SplashScreen, NavBar, NavBarLink,
-        NavBarSubMenu, NavSearchSuggestion } from '../lib/src'
+        NavBarSubMenu, NavSearchSuggestion, NavThemeSwitcher } from '../lib/src'
 
 import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
@@ -42,7 +42,6 @@ import SwitchDocs from './docs/Switch_docs'
 import TableViewDocs from './docs/TableView_docs'
 import ViewDocs from './docs/View_docs'
 
-import _404Layout from './layouts/404Layout'
 import AboutLayout from './layouts/AboutLayout'
 import BlogLayout from './layouts/BlogLayout'
 import ContactsLayout from './layouts/ContactsLayout'
@@ -115,6 +114,8 @@ class App extends React.Component {
           ]}
         />
 
+        <NavThemeSwitcher/>
+
       <NavBarLink
         exact={true}
         to="/"
@@ -171,14 +172,11 @@ class App extends React.Component {
 
       {/* If you don't want to add NavSearchBar simply add <NavBarLink /> like below  */}
 
-        <h1>Layouts</h1>
-        <div className="app-hr"></div>
-
-        <NavBarLink
-          to="/404layout"
-          text="404Layout"
-          icon={<i className="icons10-terminal"></i>}
-        />
+      {/* <NavBarLink
+        to="/getting_started"
+        text="Getting Started"
+        icon={<i className="icons10-terminal"></i>}
+      /> */}
           
       </NavBar>
 
@@ -227,7 +225,6 @@ class App extends React.Component {
         <Route path='/AboutLayout' component={AboutLayout} />
         <Route path='/BlogLayout' component={BlogLayout} />
         <Route path='/contactslayout' component={ContactsLayout} />
-        <Route path='/404layout' component={_404Layout} />
         <Route path='/LoginLayout' component={LoginLayout} />
 
         <Route path='/AppJsDefault' component={AppJsDefault} />

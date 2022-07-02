@@ -9,9 +9,9 @@
 @import "./sub-components/NavHeader.scss";
 @import "./sub-components/NavSearchBox.scss";
 @import "./sub-components/NavSearchUL.scss";
+@import "./sub-components/NavThemeSwitcher.scss";
 
-@import "./navbar-mobile/NavBarMobileHasIcons.scss";
-@import "./navbar-mobile/NavBarMobile.scss";
+// @import "./navbar-mobile/NavBarMobile.scss";
 
 @import "./AppNavToggled.scss";
 
@@ -19,8 +19,8 @@
   height: 100%;
   width: 290px;
   z-index: 5;
-  transition: 0.2s ease;
   overflow-y: overlay;
+  transition: 0.2s ease;
 
   nav {
     @extend .transition-background-400ms;
@@ -45,6 +45,22 @@
         }
         a { @extend .transition-all-400ms; }
       }
+    }
+  }
+
+  .app-navbar-topbar-mobile {
+    height: 45px;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    position: fixed;
+    padding: 0 15px;
+    align-items: center;
+    background-color: var(--color_nav);
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.25);
+
+    .app-navbar-toggle-button {
+      padding: 5px;
     }
   }
 }

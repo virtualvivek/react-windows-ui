@@ -38,8 +38,7 @@ class DialogDocs extends React.Component {
 
       <Dialog
         isVisible={this.state.showDialog}
-        onBackdropPress={this.toggleDialog}
-        showDropShadow={true}>
+        onBackdropPress={this.toggleDialog}>
         <ListItem
           img={Img4}
           imgBorderRadius={8}
@@ -66,7 +65,6 @@ class DialogDocs extends React.Component {
       <Dialog
         isVisible={this.state.showDialogConfirm}
         onBackdropPress={this.toggleDialogConfirm}
-        showDropShadow={true}
         style={{padding:10}}>
         <h2 className="m-tb-10">Dialog Confirm</h2>
         <p>Are you feel good today?</p>  

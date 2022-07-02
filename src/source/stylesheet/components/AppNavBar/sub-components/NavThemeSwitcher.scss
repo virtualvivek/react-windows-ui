@@ -1,0 +1,91 @@
+.app-navbar-theme-switcher {
+  margin: 5px 20px;
+  border-radius: 6px;
+  position: relative;
+  filter: contrast(1.1);
+  transition: 0.2s ease;
+  background: var(--color_button);
+
+  &:hover {
+    background: var(--color_link_bg_hover);
+  }
+  &:active {
+    transition: 0.08s ease;
+    transform: scale(0.99, 0.99);
+    background: var(--color_link_bg_active);
+  }
+
+  span {
+    font-size: 14px;
+    user-select: none;
+    position: absolute;
+    top: 8px;
+    left: 38px;
+    width: 100px;
+  }
+}
+
+.dayNight {
+  cursor: pointer;
+}
+.dayNight input {
+  display: none;
+}
+// Un-Checked Moon State
+.dayNight input + div {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  border-radius: 50%;
+  transform: scale(1) rotate(-2deg);
+  box-shadow: inset 16px -16px 0 0 #fff;
+  transition: box-shadow 0.5s ease 0s, transform 0.4s ease 0.1s;
+
+  transform: scale(0.45);
+}
+.dayNight input + div:before {
+  content: "";
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: background 0.3s ease;
+}
+.dayNight input + div:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: -4px 0 0 -4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  box-shadow: 0 -23px 0 var(--color_text_dark),
+    0 23px 0 var(--color_text_dark), 23px 0 0 var(--color_text_dark),
+    -23px 0 0 var(--color_text_dark), 15px 15px 0 var(--color_text_dark),
+    -15px 15px 0 var(--color_text_dark), 15px -15px 0 var(--color_text_dark),
+    -15px -15px 0 var(--color_text_dark);
+}
+
+
+
+// Checked Sun State
+.dayNight input:checked + div {
+  box-shadow: inset 32px -32px 0 0 #fff;
+  transform: scale(0.5) rotate(0deg);
+  transition: transform 0.3s ease 0.1s, box-shadow 0.2s ease 0s;
+
+  transform: scale(0.25);
+}
+.dayNight input:checked + div:before {
+  background: var(--color_text_dark);
+  transition: background 0.3s ease 0.1s;
+}
+.dayNight input:checked + div:after {
+  transform: scale(1.25);
+  transition: transform 0.5s ease 0.15s;
+}

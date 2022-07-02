@@ -47,7 +47,7 @@ button,
     @extend .background-color-primary;
   }
   &.primary-outline {
-    @extend .color-primary;
+    color: var(--color_primary_light);
     border: 2px solid var(--PrimaryColor);
     &:active {
       background-color: var(--PrimaryColor);
@@ -92,7 +92,7 @@ button,
     }
   }
   &.animate:active {
-    transform: scale(0.97, 0.97);
+    transform: scale(0.98, 0.98);
   }
   &[disabled] {
     @extend .input-field-primary-disabled;
@@ -115,7 +115,7 @@ button,
     transition: opacity ease 0.2s;
   }
   i.color-primary {
-    @extend .color-primary;
+    color: var(--PrimaryColor);
   }
   // check if button child span has a sibling of same type
   span:first-of-type:not(:only-of-type) {

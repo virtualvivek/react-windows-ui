@@ -7,10 +7,11 @@
     overflow-x: hidden;
     display: inline-block;
       
-    .app-navbar-name,
-    nav a span,
     nav ul h1,
-    .app-search-box {
+    nav a span,
+    .app-search-box,
+    .app-navbar-name,
+    .app-navbar-theme-switcher span {
       display: none;
     }
 
@@ -26,9 +27,9 @@
 
     .app-search-dialog-trigger {
       height: 55px;
+      display: flex;
       font-size: 24px;
       cursor: pointer;
-      display: flex;
       align-items: center;
       justify-content: center;
 
@@ -40,6 +41,28 @@
       justify-content: center;
       
       > :first-child { display: none; }
+    }
+  }
+}
+
+// For Mobile device show Sliding NavBar
+
+@media only screen and (max-width: 760px) {
+  .app-navbar-wrap {
+    .app-navbar-topbar-mobile {
+      display: flex !important;
+    }
+    nav {
+      transform-origin: 100% 50%;
+      transform: translateX(-100%);
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+  .app-navbar-wrap.toggled {
+    nav {
+      transform-origin: 100% 50%;
+      transform: translateX(0);
+      transition: transform 0.2s ease-in-out;
     }
   }
 }

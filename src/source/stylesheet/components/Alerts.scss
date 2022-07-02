@@ -3,7 +3,7 @@
   @extend .app-dim-overlay;
 
   .app-alert-modal {
-    width: 55%;
+    width: 52%;
     z-index: 99;
     position: fixed;
     background: var(--PrimaryColor);
@@ -32,7 +32,7 @@
     background-color: transparent;
   }
   .app-alert-message {
-    min-height: 80px;
+    min-height: 70px;
     font-size: 1em;
     padding: 0 32px;
     line-break: auto;
@@ -67,6 +67,12 @@
   .app-alert-btn-container,
   .app-alert-message {
     background-color: transparent !important;
+  }
+}
+
+body.dark-theme {
+  .app-alert .app-alert-modal.light {
+    background-color: var(--color_link_bg_active);
   }
 }
 

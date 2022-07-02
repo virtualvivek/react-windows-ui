@@ -16,14 +16,15 @@
   
   .app-select-body {
     width: inherit;
+    margin: 5px 0;
     max-height: 250px;
     overflow-y: auto;
-    background: var(--color_nav);
     position: absolute;
     top: 100%;
-    margin: 5px 0;
-    box-shadow: 0 2px 4px #55555555;
+    background: var(--color_nav);
     transition-property: visibility;
+    box-shadow: 0 2px 4px #55555555;
+    border: 1px solid var(--color_button);
     opacity: 0;
     visibility: hidden;
     
@@ -48,10 +49,15 @@
       &:active { background-color: var(--color_link_bg_active); }
       
       &.selected {
-        color: #000;
         background-color: var(--PrimaryColor);
         box-shadow: inset 0 0 0 1000px #ffffff99;
       }
     }
+  }
+}
+
+body.dark-theme {
+  .app-select-styled.react .app-select-body .select-item {
+    box-shadow: unset;
   }
 }

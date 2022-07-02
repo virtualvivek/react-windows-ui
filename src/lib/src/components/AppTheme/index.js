@@ -21,12 +21,11 @@ const AppTheme = React.memo(
       else if(scheme === "light") {
         Appearance.setLightScheme();
       }
-    },[scheme]);
+    }, [scheme]);
 
 
     if(scheme === "system") {
-      window.matchMedia("(prefers-color-scheme: dark)")
-        .addEventListener("change", (e) => {
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
         const newColorScheme = e.matches ? "dark" : "light";
 
         if(newColorScheme === "dark") {
@@ -71,7 +70,6 @@ const AppTheme = React.memo(
 );
 
 AppTheme.defaultProps = {
-  scheme: "system",
   onColorChange: () => {},
   onSchemeChange: () => {},
 }

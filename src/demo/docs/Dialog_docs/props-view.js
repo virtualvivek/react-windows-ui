@@ -31,12 +31,6 @@ const PropsView = () => {
           <td>undefined</td>
           <td>Callback on backdrop press</td>
         </tr>
-        <tr>
-          <td><p className="app-code">showDropShadow</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's Dialog blurred drop shadows</td>
-        </tr>
       </tbody>
     </table>
     </div>

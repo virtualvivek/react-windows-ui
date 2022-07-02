@@ -83,7 +83,7 @@ render() {
     <br/><p><b>data prop: </b>You can either provide <b>onClick</b> or <b>link</b> prop to the <b>data</b> items as per your reqirements. </p>
 
 
-    <h2>CommandBarButton as <p className="app-code">button</p> :</h2>
+    <h2>CommandBarButton as <p className="app-code">Button</p> :</h2>
 
     <CommandBarButton
       value="Upload"
@@ -101,7 +101,7 @@ render() {
 
 
 
-    <h2>CommandBarButton as <p className="app-code">dropdown</p> :</h2>
+    <h2>CommandBarButton as <p className="app-code">Dropdown</p> :</h2>
 
     <CommandBarButton
       value="Share"
@@ -123,7 +123,7 @@ render() {
     <div className="app-hr"></div>
 
 
-    <h2>CommandBarButton as <p className="app-code">split mode</p> :</h2>
+    <h2>CommandBarButton as <p className="app-code">Split Mode</p> :</h2>
 
     <CommandBarButton
       value="New"

@@ -10,12 +10,3 @@
     transition: inherit;
   }
 }
-
-@mixin nav-header-mobile() {
-  .app-navbar-wrap {
-    .app-navbar-header {
-      position: relative;
-      height: 40px;
-    }
-  }
-}

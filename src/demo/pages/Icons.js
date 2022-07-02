@@ -10,6 +10,8 @@ const Icons = () => {
       <h1 className="m-b-15">Icons</h1>
 
       <p><b>react-windows-ui</b> comes with the free <b>font</b> set of icons. <br/>
+      <br/>However if you need a wide variety of Fluent Icons please refer:<br/>
+      <Link to="/fluent_icons_external" target="_blank"><span><b>github.com/microsoft/fluentui-system-icons</b></span></Link>
       
       <h2>Import</h2>
       <SyntaxHighlighter
@@ -19,10 +21,7 @@ const Icons = () => {
         {`import 'react-windows-ui/icons/fonts/fonts.min.css'`}
       </SyntaxHighlighter>
 
-      <br/><b>If you need a wide variety of Fluent Icons please refer:</b><br/>
-      <Link to="/fluent_icons_external" target="_blank"><span><b>github.com/microsoft/fluentui-system-icons</b></span></Link>
-
-      <br/><br/>It’s easy to incorporate icons into your app. Here’s a small example:
+      <br/>It’s easy to incorporate icons into your app. Here’s a small example:
       </p>
       <pre style={{display:'inline',fontSize:13}}>
         <code>&lt;i className="icons10-home"&gt;&lt;/i&gt;</code>

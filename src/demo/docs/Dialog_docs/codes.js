@@ -3,7 +3,6 @@ const DialogImportCode =
 
 const DialogUsageCode =
 `<Dialog
-  showDropShadow={true}
   isVisible={this.state.showDialog}
   onBackdropPress={this.toggleDialog}>
   <ListItem
@@ -25,7 +24,6 @@ const DialogUsageCode =
 
 const DialogConfirmUsageCode =
 `<Dialog
-  showDropShadow={true}
   style={{padding: 10}}
   isVisible={this.state.showDialogConfirm}
   onBackdropPress={this.toggleDialogConfirm}>

@@ -7,9 +7,9 @@
       width: 250px;
       max-height: 240px;
       z-index: 1;
-      left: 18px;
+      left: 20px;
       margin-top: -5px;
-      box-shadow: 0 2px 4px #88888877;
+      box-shadow: 0 1px 1px #88888877;
       background: var(--color_bg_light);
   
       li a {
@@ -27,20 +27,6 @@
       position: fixed;
       top: 80px;
       left: 22.5vw;
-    }
-  }
-}
-
-@mixin app-navbar-search-dialog-mobile() {
-  .app-navbar-wrap {
-    .app-nav-search ul {
-      width: 80%;
-      z-index: 99;
-      position: fixed;
-      top: 80px;
-      left: 20px;
-      display: flex;
-      flex-direction: column;
     }
   }
 }

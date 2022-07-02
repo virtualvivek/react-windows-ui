@@ -18,13 +18,3 @@
     color: var(--color_text_dark);
   }
 }
-
-@mixin nav-appname-mobile() {
-  .app-navbar-wrap {
-    .app-navbar-name {
-      padding: 0 15px;
-      font-size: 14px;
-      position: fixed;
-    }
-  }
-}

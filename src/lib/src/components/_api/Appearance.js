@@ -1,10 +1,10 @@
 const getColorScheme = () => {
-  let color = window.getComputedStyle(document.documentElement)
-  .getPropertyValue('--color_scheme');
+  let color = window.getComputedStyle(document.documentElement).getPropertyValue('--color_scheme');
   return color.toString();
 }
 
 const setDarkScheme = () => {
+  document.body.classList.add("dark-theme");
   document.documentElement.style.setProperty('--color_scheme','dark');
   document.documentElement.style.setProperty('--color_bg_light','#111111');
   document.documentElement.style.setProperty('--color_text_dark','#FFFFFF');
@@ -17,11 +17,17 @@ const setDarkScheme = () => {
   document.documentElement.style.setProperty('--color_button_hover','#999999');
   document.documentElement.style.setProperty('--color_primary_light','#FFFFFF');
   document.documentElement.style.setProperty('--color_primary_dark','#403E41');
+
+  if(document.getElementById("app-navbar-theme-switcher")) {
+    document.getElementById("app-navbar-theme-switcher").checked = false;
+    document.getElementById("app-navbar-theme-switcher-text").innerHTML="Night Mode";
+  }
   
   return "";
 }
 
 const setLightScheme = () => {
+  document.body.classList.remove("dark-theme");
   document.documentElement.style.setProperty('--color_scheme','light');
   document.documentElement.style.setProperty('--color_bg_light','');
   document.documentElement.style.setProperty('--color_text_dark','');
@@ -34,6 +40,11 @@ const setLightScheme = () => {
   document.documentElement.style.setProperty('--color_button_hover','');
   document.documentElement.style.setProperty('--color_primary_light','');
   document.documentElement.style.setProperty('--color_primary_dark','');
+
+  if(document.getElementById("app-navbar-theme-switcher")) {
+    document.getElementById("app-navbar-theme-switcher").checked = true;
+    document.getElementById("app-navbar-theme-switcher-text").innerHTML="Day Mode";
+  }  
 
   return "";
 }

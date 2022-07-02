@@ -22,7 +22,11 @@ const NavBar = (props) => {
     <div
       className={sidebar ? "app-navbar-wrap toggled" : "app-navbar-wrap"}
       ref={props.ref}
-      id="app-navbar-wrap-id"> 
+      id="app-navbar-wrap-id">
+      <div className="app-navbar-topbar-mobile">
+        <span class="app-navbar-toggle-button" onClick={showSidebar}></span>
+        <span className="app-navbar-name">{props.title}</span>
+      </div>  
       <nav
         className="animate"
         onScroll={scrollEvent}>
@@ -33,9 +37,7 @@ const NavBar = (props) => {
                 : {boxShadow : ""}
                 : {boxShadow: ""}
             }>
-          <span
-            className="app-navbar-toggle-button"
-            onClick={showSidebar}>
+          <span className="app-navbar-toggle-button" onClick={showSidebar}>
           </span>
           <span className="app-navbar-name">{props.title}</span>
         </div>

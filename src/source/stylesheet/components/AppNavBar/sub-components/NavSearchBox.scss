@@ -3,7 +3,7 @@
     width: 240px;
     user-select: none;
     filter: opacity(0.7);
-    margin: 10px 0 10px 18px;
+    margin: 10px 0 10px 20px;
   }
 
   .app-search-dialog {
@@ -39,28 +39,5 @@
   }
   .app-search-dialog-trigger {
     display: none;
-  }
-}
-
-@mixin app-navbar-search-mobile() {
-  .app-navbar-wrap {
-    .app-search-box { display: none; }
-    
-    .app-search-dialog {
-      height: 45px;
-      z-index: 9;
-      padding-left: 35px;
-      justify-content: start;
-
-      .app-input-text {
-        width: 75%;
-      }
-    }
-    .app-search-dialog-trigger {
-      display: inline-flex;
-      align-items: center;
-      font-size: 18px;
-      padding: 0 10px 0 15px;
-    }
   }
 }

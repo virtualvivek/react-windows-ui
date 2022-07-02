@@ -21,17 +21,3 @@
     }
   }
 }
-
-@mixin nav-ul-mobile() {
-  .app-navbar-wrap .app-navbar-list {
-    width: 100%;
-    z-index: 2;
-    padding: 0;
-    margin: 0 auto;
-    position: relative;
-    white-space: nowrap;
-    line-height: initial;
-    display: inline-flex;
-    align-items: flex-start;
-  }
-}

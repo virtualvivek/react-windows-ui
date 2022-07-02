@@ -10,6 +10,11 @@ body {
   margin: 0;
   padding: 0;
 }
+body.dark-theme {
+  .color-primary {
+    filter: brightness(1.5);
+  }
+}
 .app-code {
   @extend .transition-background-400ms;
   margin: 0;
@@ -38,20 +43,10 @@ h4 { font-size: 1.12em; }
 h5 { font-size: 0.83em; }
 h6 { font-size: 0.75em; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
-h1.light,
-h2.light,
-h3.light,
-h4.light,
-h5.light,
-h6.light {
+h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
   opacity: 0.58;
 }
 
