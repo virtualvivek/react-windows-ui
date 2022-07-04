@@ -109,7 +109,7 @@ OR <br>
 [virtualvivek/react-windows-ui-boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
 
 ## Run Demo Locally
-```ksh
+```php
 $ git clone https://github.com/virtualvivek/react-windows-ui.git
 $ cd react-windows-ui
 $ npm install
