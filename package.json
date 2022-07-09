@@ -33,9 +33,9 @@
     "start": "react-scripts start",
     "build:production": "rm -rf dist && SET NODE_ENV=production && babel src/lib/src --out-dir src/lib/dist --copy-files",
     "build": "react-scripts build",
-    "compile:sass": "node-sass src/source/stylesheet/main.scss src/lib/dist/react-windows-ui.min.css --output-style compressed",
-    "compile:sass-sunvalley": "node-sass src/source/stylesheet-11/main.scss src/lib/dist/react-windows-ui-11.min.css --output-style compressed",
-    "compile:sass-rtl": "node-sass src/source/stylesheet-rtl/main.scss src/lib/dist/react-windows-ui-rtl.min.css --output-style compressed",
+    "compile:sass": "node-sass src/css-source/stylesheet/main.scss src/lib/dist/react-windows-ui.min.css --output-style compressed",
+    "compile:sass-sunvalley": "node-sass src/css-source/stylesheet-11/main.scss src/lib/dist/react-windows-ui-11.min.css --output-style compressed",
+    "compile:sass-rtl": "node-sass src/css-source/stylesheet-rtl/main.scss src/lib/dist/react-windows-ui-rtl.min.css --output-style compressed",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"

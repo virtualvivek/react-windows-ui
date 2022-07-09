@@ -22,6 +22,10 @@ const NavPageContainer = (props) => {
                 ? `app-section-container has-padding${setTransition()}`
                 : `app-section-container${setTransition()}`
                 }
+      style={{
+        backgroundColor: props.backgroundColor,
+        ...props.style
+      }}
       id="app-section-container-id">
       {props.children}
     </div>

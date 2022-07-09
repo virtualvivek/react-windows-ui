@@ -7,16 +7,14 @@ const NavBarLinkImportCode =
 const NavBarUsageCode =
 `<NavBar 
   title="NavBar"
-//mobileHasIcons={true}
   shadowOnScroll={true}>
-  .....
+  ....
   <NavBarLink
     to="/"
     text="Page1"
     icon={<i className="icons10-home"></i>}
-    showBadge={7}
   />
-  ......
+  ....
 </NavBar>`;
 
 const NavBarLinkUsageCode =
@@ -25,13 +23,11 @@ const NavBarLinkUsageCode =
   exact={true}
   text="Page1"
   icon={<i className="icons10-home"></i>}
-  showBadge={7}
 />`;
 
 const NavBarLinkImgUsageCode =
 `<NavBarLink
   to="/"
-  exact={true}
   text="Page1"
   img={Img1}
   imgAlt="Img alt text"
@@ -41,10 +37,9 @@ const NavBarLinkImgUsageCode =
 const NavBarLinkBadgeUsageCode =
 `<NavBarLink
   showBadge={7}
-  to="/"
-  exact={true}
   text="Page1"
   img={Img1}
+  to="/"
 />`;
 
 

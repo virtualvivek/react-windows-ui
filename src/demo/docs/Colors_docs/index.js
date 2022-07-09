@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavPageContainer, Switch } from '../../../lib/src'
+import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import './colors_docs_styles.css'
 
 class ColorsDocs extends React.Component {
@@ -7,10 +9,12 @@ class ColorsDocs extends React.Component {
   constructor(props) {
     super(props);
     let PrimaryColor = window.getComputedStyle(document.documentElement).getPropertyValue('--PrimaryColor');
+    let PrimaryColorLight = window.getComputedStyle(document.documentElement).getPropertyValue('--PrimaryColorLight');
     let alphaColor = window.getComputedStyle(document.documentElement).getPropertyValue('--color_primary_alpha');
 
     this.state = {
       primaryColor_val: PrimaryColor,
+      primaryColorLight_val: PrimaryColorLight,
 
       color_scheme_val: 'light',
       color_bg_light_val: '#FFFFFF',
@@ -83,6 +87,13 @@ render() {
       <span className="demo-colors-name">--PrimaryColor<span className="user-select-none">:</span></span>
       <span className="demo-colors-box background-color-primary"></span>
       <span className="demo-colors-value">{this.state.primaryColor_val}</span>
+    </div>
+    <div className="app-hr m-0"></div>
+
+    <div className="app-flex app-align-center font-size-16px">
+      <span className="demo-colors-name">--PrimaryColorLight<span className="user-select-none">:</span></span>
+      <span className="demo-colors-box" style={{backgroundColor: this.state.primaryColorLight_val}}></span>
+      <span className="demo-colors-value">{this.state.primaryColorLight_val}</span>
     </div>
     <div className="app-hr m-0"></div>
 
@@ -183,6 +194,23 @@ render() {
     <div className="app-hr m-0"></div>
 
     </div>
+
+    <h1>Create your own color variables</h1>
+    <p>Define your own <span className="color-primary">color variables </span>at anywhere like below</p>
+    
+    <SyntaxHighlighter
+      language="css"
+      style={vscDarkPlus}
+      className="code code-container">
+      {
+`body {
+  --your-color-variable: #0078D7;
+}
+body.dark-theme {
+  --your-color-variable: #47aeff;
+}`
+      }
+    </SyntaxHighlighter>
 
     <br/><br/><br/><br/>
 

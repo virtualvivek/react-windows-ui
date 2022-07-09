@@ -70,29 +70,6 @@ render() {
 
     <div className="app-hr"></div>
 
-    <h2>Implementation</h2>
-    <p>See <span className="color-primary">NavBar</span> complete application</p>
-
-    <LinkCompound
-      style={{margin:'5px 5px 0 0',width:240}}
-      to="/AppJsDefault"
-      title="App.js"
-      subtitle="Default App.js Configuration"
-      icon={<i className="icons10-bag"></i>}
-      focused={true} />
-
-    <LinkCompound
-      style={{margin:'5px 5px 0 0',width:240}}
-      to="/AppJsSearchable"
-      title="App.js"
-      subtitle="With Searchable NavItems"
-      icon={<i className="icons10-list-search"></i>}
-      focused={true}
-      margin="5px 5px 0 0" />
-    <br/>
-
-    <div className="app-hr"></div>
-
     <h2>Props</h2>
     <PropsView />
 

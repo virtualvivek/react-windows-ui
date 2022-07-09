@@ -44,7 +44,6 @@ import Select from './components/Select'
 import SelectBox from './components/SelectBox'
 import StickyHeader from './components/StickyHeader'
 import Switch from './components/Switch'
-import SwitchDayNight from './components/SwitchDayNight'
 import TableView from './components/TableView'
 import View from './components/View'
 
@@ -100,7 +99,6 @@ export {
     SelectBox,
     StickyHeader,
     Switch,
-    SwitchDayNight,
     TableView,
     ThemeManager,
     View

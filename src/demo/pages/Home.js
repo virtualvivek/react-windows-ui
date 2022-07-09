@@ -17,7 +17,7 @@ class Home extends React.Component {
   
   render() {
   return (
-    <NavPageContainer style={{backgroundColor:"#faf9f8"}}>
+    <NavPageContainer>
       <AppTheme color={this.state.app_color} />
 
       <div className="root-flex-container-home">
