@@ -11,14 +11,7 @@
   <a href="https://virtualvivek.github.io/react-windows-ui/">
     <img src="https://img.shields.io/circleci/build/github/virtualvivek/react-windows-ui?style=flat-square&logo=circleci&token=346e79ab71a8d9c3bad22bacbebc7d7c50dae520"
       alt="Build" />
-  </a>	
-	
-	
-  <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
-      alt="License: MIT" />
   </a>
-  
 	
   <a href="https://github.com/virtualvivek/react-windows-ui/releases">
     <img src="https://img.shields.io/npm/v/react-windows-ui?color=31b57e&label=version&logo=git&logoColor=ffffff&style=flat-square"
@@ -29,8 +22,6 @@
     <img src="https://img.shields.io/badge/Boilerplate-template-green.svg?color=61DAFB&style=flat-square&logo=React"
       alt="Boilerplate" />
   </a>
-	
-  <br/>	
   
   <a href="https://www.npmjs.com/package/react-windows-ui" target="_blank">
     <img src="https://img.shields.io/badge/npm-package-green.svg?style=flat-square&logo=npm&color=CB3837"
@@ -40,10 +31,8 @@
   <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
     <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat-square&logo=css3&color=1572B6&label=react-windows-ui.min.css" alt="react-windows-ui.min.css" />
   </a>
-	
 
 </p>
-
 
 
 <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="700" alt="react-windows-ui" /></p></a>
@@ -68,20 +57,32 @@ import 'react-windows-ui/icons/fonts/fonts.min.css'
 ```
 ## Configuration
 
-**`app-config.css`** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br>
-‣ You can import default `app-config.css` file from <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
-_OR_ <br>
-‣ Create your own like this
-
-**app-config.css**
+**app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br>
+• You can either import it from <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
+OR <br>
+• Create your own like this
+<details>
+  <summary><b>app-config.css</b></summary><br>
+  
 ```css
 :root {
-  --PrimaryColor: #6632a8;  /* Change color you like */
+  --PrimaryColor: #0078D7; /* Change of your choice */
+  --PrimaryColorLight: #47aeff;  /* Should be a lighter version of --PrimaryColor */
 }
 body {
-  font-family: "Segoe UI";  /* Change fontfamily you like */
+  font-family: "Segoe UI";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::selection {
+  background-color: var(--PrimaryColor);
+  color: #ffffff;
 }
 ```
+</details>
+
+
 
 # Usage
 
@@ -99,6 +100,7 @@ const App = () => (
 <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_boilerplate_screen.JPG" width="540" />
 
 ‣ You can initialize you Repo with this **`Template`** <br>
+
 <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_template_boilerplate.JPG" width="540" />
 
 OR <br>
@@ -107,7 +109,7 @@ OR <br>
 [virtualvivek/react-windows-ui-boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
 
 ## Run Demo Locally
-```ksh
+```php
 $ git clone https://github.com/virtualvivek/react-windows-ui.git
 $ cd react-windows-ui
 $ npm install
@@ -158,7 +160,7 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 <tr>
   <td>Library SCSS Source</td>
   <td>Style <code>scss</code> source code</td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
+  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source">SCSS LINK</a></td>
 </tr>
 </tbody>
 </table>
