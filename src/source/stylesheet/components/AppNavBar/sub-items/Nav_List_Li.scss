@@ -38,8 +38,9 @@
       }
       i::before {
         font-size: 24px;
-        vertical-align: middle;
+        pointer-events: none;
         text-overflow: unset;
+        vertical-align: middle;
       }
     }
     span {
@@ -48,6 +49,7 @@
       margin: 0 10px;
       overflow: hidden;
       white-space: nowrap;
+      pointer-events: none;
       text-overflow: ellipsis;
     }
     img {
@@ -55,7 +57,12 @@
       height: 20px;
       margin: 2px;
       border-radius: 4px;
+      pointer-events: none;
       background-color: var(--color_link_bg_hover);
     }
   }
+}
+
+body.dark-theme .app-navbar-wrap .app-navbar-list-item a::after {
+  background: var(--PrimaryColorLight);
 }

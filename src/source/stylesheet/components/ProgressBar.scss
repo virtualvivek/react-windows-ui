@@ -29,10 +29,10 @@
     background: var(--color_button);
 
     span {
-      @extend .background-color-primary;
       height: 100%;
       position: absolute;
       transition: width 1s ease-in-out;
+      background-color: var(--PrimaryColor);
       &::after,
       &::before {
         display: none !important;
@@ -48,6 +48,10 @@
   .app-progress-content:first-of-type:not(:only-of-type) {
     margin-left: 15px;
   }
+}
+
+body.dark-theme .app-progress-container .app-progress span {
+  background-color: var(--PrimaryColorLight);
 }
 
 @mixin progress-bar-mobile() {

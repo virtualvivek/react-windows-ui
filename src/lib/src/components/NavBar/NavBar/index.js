@@ -6,6 +6,15 @@ const NavBar = (props) => {
   useEffect(() => {
     ThemeManager.createAlphaPrimaryColor();
   }, []);
+
+  const onUlClickItems = (e) => {
+    if (e.target && e.target.matches("a")) {
+      var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      if(width < 760) {
+        setSidebar(false);
+      }
+    }
+  }
   
   const [sidebar, setSidebar] = useState(false);
   const [isScrolling, setScrolling] = useState(false);
@@ -20,34 +29,38 @@ const NavBar = (props) => {
 
   return (
     <div
-      className={sidebar ? "app-navbar-wrap toggled" : "app-navbar-wrap"}
       ref={props.ref}
-      id="app-navbar-wrap-id">
+      id="app-navbar-wrap-id"
+      className={sidebar ? "app-navbar-wrap toggled" : "app-navbar-wrap"}>
       <div className="app-navbar-topbar-mobile">
-        <span class="app-navbar-toggle-button" onClick={showSidebar}></span>
-        <span className="app-navbar-name">{props.title}</span>
+        <span className="app-navbar-toggle-button" onClick={showSidebar}></span>
+        {props.renderTopbarMobile}
       </div>  
       <nav
         className="animate"
         onScroll={scrollEvent}>
         <div className="app-navbar-header"
           style={ props.shadowOnScroll ?
-                  isScrolling ?
-                  { boxShadow: "0 6px 8px -8px var(--color_link_bg_hover)"}
-                : {boxShadow : ""}
-                : {boxShadow: ""}
+                  isScrolling
+                  ? { boxShadow: "0 6px 8px -8px var(--color_link_bg_hover)" }
+                  : { boxShadow : "" }
+                  : { boxShadow: "" }
             }>
           <span className="app-navbar-toggle-button" onClick={showSidebar}>
           </span>
           <span className="app-navbar-name">{props.title}</span>
         </div>
-        <ul
-          className={props.mobileHasIcons
+        <ul className={props.mobileHasIcons
             ? "app-navbar-list app-mobile-has-icons"
-            : "app-navbar-list"  }>
+            : "app-navbar-list" }
+            id="app-navbar-list" onClick={(e) => onUlClickItems(e)}>
           {props.children}
         </ul>
       </nav>
+      <div
+        onClick={showSidebar}
+        className={sidebar ? "app-navbar-overlay show" : "app-navbar-overlay"}>
+      </div>
     </div>	 
   );
 }

@@ -40,6 +40,7 @@ render() {
     <h2><b>Methods</b></h2>
 
     <h2><p className="app-code">getColorScheme()</p></h2>
+    <p>Indicates the current either system or user preferred color scheme.</p>
     <SyntaxHighlighter
       language="javascript"
       style={vscDarkPlus}
@@ -47,10 +48,10 @@ render() {
       {AppearanceGetColorSchemeCode}
     </SyntaxHighlighter>
 
-    <p>Indicates the current either system or user preferred color scheme.</p>
 
     <div className="app-hr"></div>
     <h2><p className="app-code">setDarkScheme()</p></h2>
+    <p>Set's app to <i>dark</i> color scheme.</p>
     <SyntaxHighlighter
       language="javascript"
       style={vscDarkPlus}
@@ -58,18 +59,16 @@ render() {
       {AppearanceSetDarkSchemeCode}
     </SyntaxHighlighter>
 
-    <p>Set's app to <i>dark</i> color scheme.</p>
 
     <div className="app-hr"></div>
     <h2><p className="app-code">setLightScheme()</p></h2>
+    <p>Set's app to <i>light</i> color scheme.</p>
     <SyntaxHighlighter
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
       {AppearanceSetLightSchemeCode}
     </SyntaxHighlighter>
-
-    <p>Set's app to <i>light</i> color scheme.</p>
 
 
     <br/><br/><br/><br/><br/><br/>

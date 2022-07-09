@@ -26,7 +26,10 @@ render() {
     animateTransition={false}>
     <h1>ColorPicker</h1>
 
-    <AppTheme color={this.state.app_color} />
+    <AppTheme
+      color={this.state.app_color}
+      colorDarkMode={this.state.app_color}
+    />
         
     <div className="windows-view">
       <div className="start-view">

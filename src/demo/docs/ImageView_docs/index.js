@@ -46,6 +46,7 @@ class ImageViewDocs extends React.Component {
         height={'180px'}
         borderRadius={18}
         title="Skrillex"
+        tooltip='This is a tooltip'
         isLoading={this.state.stateLoadingImg}
       />
       <br/><br/>

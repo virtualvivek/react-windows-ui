@@ -20,13 +20,13 @@
       }
     }
   }
+}
 
-  &.toggled {
-    .app-nav-search ul {
-      width: 50%;
-      position: fixed;
-      top: 80px;
-      left: 22.5vw;
-    }
+@media only screen and (min-width: 760px) {
+  .app-navbar-wrap.toggled .app-nav-search ul {
+    position: fixed;
+    left: 22.5vw;
+    top: 80px;
+    width: 50%;
   }
 }

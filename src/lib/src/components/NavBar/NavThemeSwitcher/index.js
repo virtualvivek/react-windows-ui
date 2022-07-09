@@ -21,8 +21,7 @@ const NavThemeSwitcher = () => {
 
   useEffect(() => {
     let iswitch = inputRef.current;
-    if (window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
       iswitch.checked = false;
       setLabelText("Night Mode");
     }
@@ -32,8 +31,7 @@ const NavThemeSwitcher = () => {
     }
   }, [setLabelText])
 
-  window.matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", (e) => {
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
     const newColorScheme = e.matches ? "dark" : "light";
     let iswitch = inputRef.current;
 
@@ -55,7 +53,7 @@ const NavThemeSwitcher = () => {
           type="checkbox"
           id="app-navbar-theme-switcher"
           onChange={toggleDayNight}
-          />
+        />
         <div></div>
         <span id="app-navbar-theme-switcher-text">{labelText}</span>
       </label>

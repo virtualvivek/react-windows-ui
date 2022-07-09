@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const View = (props) => {
 
   const setAnimFade = () => {
     return props.animationType === 'fade' ? 'fade' : '';
+  }
+
+  const setHideState = () => {
+    return props.hideOnInvisible ? 'destroy' : '';
   }
 
   return (
@@ -12,7 +16,7 @@ const View = (props) => {
       className = {
         props.isVisible ?
           `app-view-default ${setAnimFade()}`
-        : `app-view-default hide ${setAnimFade()}`
+        : `app-view-default hide ${setAnimFade()} ${setHideState()}`
         }
         style={{
             zIndex: props.zIndex,
@@ -28,4 +32,4 @@ View.defaultProps = {
   zIndex: 1
 }
 
-export default View
+export default View;

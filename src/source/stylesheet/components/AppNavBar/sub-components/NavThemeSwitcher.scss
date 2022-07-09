@@ -4,10 +4,10 @@
   position: relative;
   filter: contrast(1.1);
   transition: 0.2s ease;
-  background: var(--color_button);
+  background: var(--color_link_bg_hover);
 
   &:hover {
-    background: var(--color_link_bg_hover);
+    background: var(--color_button);
   }
   &:active {
     transition: 0.08s ease;
@@ -19,7 +19,7 @@
     font-size: 14px;
     user-select: none;
     position: absolute;
-    top: 8px;
+    top: 24%;
     left: 38px;
     width: 100px;
   }
@@ -27,6 +27,7 @@
 
 .dayNight {
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 .dayNight input {
   display: none;

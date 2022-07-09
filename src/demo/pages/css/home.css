@@ -166,6 +166,10 @@ body.dark-theme .backdrop  .acrylic-material::before {
 
 
 @media only screen and (max-width: 1000px) {
+  .root-flex-container-home {
+    height: 85vh;
+  }
+
   .home-header {
     width: 265px;
   }
@@ -178,8 +182,8 @@ body.dark-theme .backdrop  .acrylic-material::before {
     margin-top: 40px !important;
   }
   .home-title {
-    font-size: 2.2rem;
     margin-top: 15px;
+    font-size: 2.2rem;
   }
 }
 

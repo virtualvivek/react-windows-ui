@@ -1,5 +1,15 @@
 @mixin app-navbar-mobile() {
-  // .app-navbar-wrap nav {
-  //    todo decrease fit size
-  // }
+  .app-navbar-wrap nav {
+    .app-navbar-toggle-button {
+      padding: 12.5px 20px !important;
+    }
+    .app-navbar-list {
+      margin: 55px 0 0 0;
+    }
+    :hover > li,
+    :hover > .app-navbar-toggle-button,
+    :hover > .app-navbar-submenu-title {
+      background-color: transparent !important;
+    }
+  }
 }

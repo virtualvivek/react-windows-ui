@@ -1,18 +1,18 @@
 html {
-  overflow-y: overlay;
   overflow-x: hidden;
+  overflow-y: overlay;
   scroll-behavior: smooth;
 }
 body {
-  @extend .background-color-bg-light;
   @extend .color-text-dark;
+  @extend .background-color-bg-light;
   @extend .transition-background-400ms;
   margin: 0;
   padding: 0;
 }
 body.dark-theme {
   .color-primary {
-    filter: brightness(1.5);
+    color: var(--PrimaryColorLight);
   }
 }
 .app-code {
@@ -23,10 +23,6 @@ body.dark-theme {
   border-radius: 6px;
   display: inline-block;
   background-color: var(--color_nav);
-}
-::selection {
-  background-color: var(--PrimaryColor);
-  color: #ffffff;
 }
 
 .app-container-screen {

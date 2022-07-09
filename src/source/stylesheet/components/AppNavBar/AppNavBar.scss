@@ -11,14 +11,14 @@
 @import "./sub-components/NavSearchUL.scss";
 @import "./sub-components/NavThemeSwitcher.scss";
 
-// @import "./navbar-mobile/NavBarMobile.scss";
+@import "./navbar-mobile/NavBarMobile.scss";
 
 @import "./AppNavToggled.scss";
 
 .app-navbar-wrap {
   height: 100%;
   width: 290px;
-  z-index: 5;
+  z-index: 9;
   overflow-y: overlay;
   transition: 0.2s ease;
 
@@ -49,18 +49,37 @@
   }
 
   .app-navbar-topbar-mobile {
-    height: 45px;
+    z-index: 4;
     width: 100%;
-    z-index: 2;
+    height: 50px;
     display: none;
     position: fixed;
-    padding: 0 15px;
+    padding: 0 10px;
     align-items: center;
     background-color: var(--color_nav);
-    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid var(--color_link_bg_hover);
 
     .app-navbar-toggle-button {
       padding: 5px;
+      border-radius: 4px;
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    .app-navbar-overlay {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 5;
+      position: fixed;
+      visibility: hidden;
+      background: #77777788;
+      transition: visibility 0.3s, opacity 0.3s ease;
+
+      &.show {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 }

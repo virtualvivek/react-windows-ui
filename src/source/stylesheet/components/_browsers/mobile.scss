@@ -2,7 +2,7 @@
   @include browser-webkit-mobile();
   @include browser-mozilla-mobile();
   @include app-content-wrap-mobile();
-  // @include app-navbar-mobile();
+  @include app-navbar-mobile();
   @include header-fixed-container-mobile();
   
   @include alert-mobile();

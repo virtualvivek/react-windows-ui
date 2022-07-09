@@ -63,12 +63,27 @@ class App extends React.Component {
     this.state = {
       showSplash: true,
       data: NavBarItem,
+      currentTitle: "Home",
       filteredData: NavBarItem
     }
   }
 
-  componentDidMount(){
-    this.setState({ showSplash: false})
+  componentDidMount() {
+    this.setState({ showSplash: false});
+
+    window.onpopstate = ()=> {
+      const hash = window.location.href;
+      if(hash.indexOf('getting_started')>-1) this.setState({currentTitle: "Getting Started"});
+      if(hash.indexOf('colors')>-1) this.setState({currentTitle: "Colors"});
+      if(hash.indexOf('accordion')>-1) this.setState({currentTitle: "Accordion"});
+      if(hash.indexOf('alerts')>-1) this.setState({currentTitle: "Alerts"});
+      if(hash.indexOf('apptheme')>-1) this.setState({currentTitle: "AppTheme"});
+      if(hash.indexOf('appearance')>-1) this.setState({currentTitle: "Appearance"});
+      if(hash.indexOf('avatarview')>-1) this.setState({currentTitle: "Avatarview"});
+      if(hash.indexOf('buttons')>-1) this.setState({currentTitle: "Buttons"});
+      if(hash.indexOf('apptheme')>-1) this.setState({currentTitle: "AppTheme"});
+      
+    }
   }
 
   render() {
@@ -88,8 +103,12 @@ class App extends React.Component {
 
       <NavBar
         title="React Windows UI"
-       //mobileHasIcons={true}
-        shadowOnScroll={true}>
+        shadowOnScroll={true}
+        renderTopbarMobile={
+          <div style={{display: "flex", justifyContent: "space-between", width: "calc(100% - 60px)"}}>
+            <span className="app-navbar-name">React-windows-ui</span>
+            <span className="app-navbar-name">{this.state.currentTitle}</span>
+          </div>}>
 
         <NavSearchSuggestion
           placeholder="Search Docs v4.0.x"

@@ -1,8 +1,8 @@
 .app-switch {
   @extend .tap-highlight-none;
   user-select: none;
-  display: inline-flex;
   align-items: center;
+  display: inline-flex;
 
   >.app-switch-view {
     width: 42px;
@@ -45,9 +45,9 @@
         border-color: var(--PrimaryColor);
 
         &::before {
-          background: var(--color_bg_light);
           color: var(--PrimaryColor);
           transform: translateX(280%);
+          background: #fff;
           transform: translateX(calc(2 * 100% - 3px));
         }
       }
@@ -72,14 +72,14 @@
   }
 }
 
-body.dark-theme {
-  .app-switch>.app-switch-view {
-    filter: brightness(1.5);
-    &:active {
-      filter: contrast(0.6);
-    }
-  }
-}
+// body.dark-theme {
+//   .app-switch>.app-switch-view {
+//     filter: brightness(1.5);
+//     &:active {
+//       filter: contrast(0.6);
+//     }
+//   }
+// }
 
 @mixin switch-mobile() {
   .app-switch {

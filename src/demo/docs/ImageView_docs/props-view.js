@@ -62,6 +62,12 @@ const PropsView = () => {
           <td>Set's ImageView subtitle</td>
         </tr>
         <tr>
+          <td><p className="app-code">tooltip</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Set's ImageView hover tooltip</td>
+        </tr>
+        <tr>
           <td><p className="app-code">insetShadow</p></td>
           <td>boolean</td>
           <td>false</td>

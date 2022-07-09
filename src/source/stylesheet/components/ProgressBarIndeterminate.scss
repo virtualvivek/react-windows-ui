@@ -12,8 +12,7 @@
   height: 100%;
   width: 100%;
   background-image: radial-gradient(
-    circle at 50% 50%,
-    var(--PrimaryColor) 10%, transparent 90%);
+    circle at 50% 50%, var(--PrimaryColor) 10%, transparent 90%);
   animation: indeterminateAnimation 1s infinite linear;
   transform-origin: 0% 50%;
   transition-property: background;
@@ -28,6 +27,11 @@
   100% {
     transform: translateX(100%) scaleX(0.6);
   }
+}
+
+body.dark-theme .app-progress-indeterminate.animate div.progress-bar {
+  background-image: radial-gradient(
+    circle at 50% 50%, var(--PrimaryColorLight) 10%, transparent 90%);
 }
 
 @mixin progress-bar-indeterminate-mobile() {

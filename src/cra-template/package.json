@@ -1,0 +1,29 @@
+{
+  "name": "cra-template-windows-ui",
+  "version": "1.0.0",
+  "description": "Build full featured Windows fluent UI apps using reactjs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virtualvivek/react-windows-ui.git",
+    "directory": "src/cra-template"
+  },
+  "keywords": [
+    "windows-ui",
+    "react",
+    "create-react-app",
+    "template"
+  ],
+  "author": "Vivek Verma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/virtualvivek/react-windows-ui/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}

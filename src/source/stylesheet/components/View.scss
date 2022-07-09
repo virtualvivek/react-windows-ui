@@ -15,4 +15,8 @@
       transition: 0.2s;
     }
   }
+
+  &.destroy {
+    height: 0 !important;
+  }
 }

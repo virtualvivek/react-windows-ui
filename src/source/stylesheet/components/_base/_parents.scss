@@ -137,7 +137,7 @@
 }
 .transition-scale-active {
   transition-duration: 0.09s;
-  transform: scale(0.98, 0.98);
+  transform: scale(0.985, 0.985);
   transition-timing-function: ease;
   transition-property: background, transform;
 }
@@ -204,8 +204,8 @@
   }
 }
 .input-field-primary-disabled {
-  filter: contrast(0.6) !important;
   cursor: not-allowed !important;
+  filter: contrast(0.6) !important;
 }
 .app-overlay {
   height: 100vh;
@@ -232,9 +232,8 @@
 }
 
 .app-custom-dropdown-ul {
-  width: inherit;
   padding: 0;
-  margin: 5px 0 5px 0;
+  width: inherit;
   position: absolute;
   top: 100%;
   z-index: 999;
@@ -243,6 +242,7 @@
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
+  margin: 5px 0 5px 0;
   background: var(--color_nav);
   box-shadow: 0 1px 1px #55555555;
   border: 1px solid var(--color_button);

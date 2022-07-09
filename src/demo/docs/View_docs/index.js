@@ -27,9 +27,12 @@ render() {
     <View
       isVisible={this.state.showView}
       animationType="fade"
-      style={{height:150,width:250,backgroundColor: 'var(--PrimaryColor)',
+      hideOnInvisible>
+        <div style={{height:150,width:250,backgroundColor: 'var(--PrimaryColor)',
       justifyContent:'center',alignItems:'center',display:'flex'}}>
-      <span style={{fontSize: 28,color:'#fff'}}>View</span>
+        <span style={{fontSize: 28,color:'#fff'}}>View</span>
+        </div>
+      
     </View>
 
     <br/><Button value="Toggle View" onClick={this.toggleView} />

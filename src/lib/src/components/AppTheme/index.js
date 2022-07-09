@@ -40,21 +40,13 @@ const AppTheme = React.memo(
     return <>{/* ... */}</>;
   }, (prevProps, nextProps) => {
 
-    let navSwitch = document.getElementById("app-day-night-switch");
-    if(!navSwitch) {
-      navSwitch = document.createElement("input");
-      navSwitch.type = "checkbox";
-    }
-
     if(prevProps.scheme !== nextProps.scheme) {
       if(nextProps.scheme === "dark") {
         Appearance.setDarkScheme();
-        navSwitch.checked = true;
         nextProps.onSchemeChange();
       }
       else if(nextProps.scheme === "light") {
         Appearance.setLightScheme();
-        navSwitch.checked = false;
         nextProps.onSchemeChange();
       }  
     }
@@ -62,6 +54,12 @@ const AppTheme = React.memo(
     if(prevProps.color !== nextProps.color) {
       if(nextProps.color) {
         document.documentElement.style.setProperty("--PrimaryColor", nextProps.color);
+        if(nextProps.colorDarkMode) {
+          document.documentElement.style.setProperty("--PrimaryColorLight", nextProps.colorDarkMode);
+        }
+        else {
+          document.documentElement.style.setProperty("--PrimaryColorLight", nextProps.color);
+        }
         ThemeManager.createAlphaPrimaryColor();
         nextProps.onColorChange();
       }

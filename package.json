@@ -4,15 +4,8 @@
   "private": false,
   "description": "Build full featured Windows fluent UI apps using reactjs.",
   "keywords": [
-    "react",
-    "fluentui",
-    "windows10",
-    "user-interface",
-    "react-component",
-    "responsive",
-    "uwp",
-    "electronJS",
-    "mobile"
+    "react", "fluentui", "windows10", "user-interface", "react-component",
+    "responsive", "uwp", "electronJS", "mobile"
   ],
   "homepage": "https://virtualvivek.github.io/react-windows-ui/",
   "bugs": {
