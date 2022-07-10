@@ -58,9 +58,9 @@ import 'react-windows-ui/icons/fonts/fonts.min.css'
 ## Configuration
 
 **app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br>
-• You can either import it from <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
+You can either import it from <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
 OR <br>
-• Create your own like this
+Create your own like this
 <details>
   <summary><b>app-config.css</b></summary><br>
   
@@ -96,16 +96,7 @@ const App = () => (
 # [Boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
 <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_boilerplate_screen.JPG" width="540" />
 
-‣ You can initialize you Repo with this **`Template`** <br>
-
-<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_template_boilerplate.JPG" width="540" />
-
-OR <br>
-
-‣ **`Clone as a Repository`:**
-[virtualvivek/react-windows-ui-boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
-
-## Run Demo Locally
+# Run Demo Locally
 ```php
 $ git clone https://github.com/virtualvivek/react-windows-ui.git
 $ cd react-windows-ui
