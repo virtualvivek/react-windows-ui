@@ -71,9 +71,6 @@ OR <br>
 }
 body {
   font-family: "Segoe UI";
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 ::selection {
   background-color: var(--PrimaryColor);
