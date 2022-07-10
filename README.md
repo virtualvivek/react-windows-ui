@@ -67,7 +67,7 @@ OR <br>
 ```css
 :root {
   --PrimaryColor: #0078D7; /* Change of your choice */
-  --PrimaryColorLight: #47aeff;  /* Should be a lighter version of --PrimaryColor */
+  --PrimaryColorLight: #47aeff;  /* Lighter version of --PrimaryColor for DarkMode */
 }
 body {
   font-family: "Segoe UI";
