@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import { AppTheme, SplashScreen, NavBar, NavBarLink,
         NavBarSubMenu, NavSearchSuggestion, NavThemeSwitcher } from '../lib/src'
 
@@ -11,6 +11,7 @@ import Tables from './pages/Tables'
 import Icons from './pages/Icons'
 
 import NavBarDocs from './docs/Navigation_docs/NavBar_docs'
+import NavBarLinkDocs from './docs/Navigation_docs/NavBarLink_docs'
 import NavBarSubMenuDocs from './docs/Navigation_docs/NavBarSubMenu_docs'
 import NavPageContainerDocs from './docs/Navigation_docs/NavPageContainer_docs'
 
@@ -104,7 +105,7 @@ class App extends React.Component {
       <NavBar
         title="React Windows UI"
         shadowOnScroll={true}
-        renderTopbarMobile={
+        titleBarMobile={
           <div style={{display: "flex", justifyContent: "space-between", width: "calc(100% - 60px)"}}>
             <span className="app-navbar-name">React-windows-ui</span>
             <span className="app-navbar-name">{this.state.currentTitle}</span>
@@ -136,7 +137,7 @@ class App extends React.Component {
         <NavThemeSwitcher/>
 
       <NavBarLink
-        exact={true}
+        exact
         to="/"
         text="Home"
         img={Img2}
@@ -159,6 +160,11 @@ class App extends React.Component {
           to="/navbar"
           text="NavBar"
           icon={<i className="icons10-map"></i>}
+        />
+        <NavBarLink
+          to="/navbarlink"
+          text="NavBarLink"
+          icon={<i className="icons10-link"></i>}
         />
         <NavBarLink
           to="/navbarsubmenu"
@@ -199,72 +205,73 @@ class App extends React.Component {
           
       </NavBar>
 
-      <Switch>
-        <Route path="/" component={Home}  exact />
-        <Route path='/getting_started' component={GettingStarted} />
+      <Routes>
+        <Route path="/" element={<Home/>}  exact />
+        <Route path='/getting_started' element={<GettingStarted/>} />
 
-        <Route path='/colors' component={ColorsDocs} />
+        <Route path='/colors' element={<ColorsDocs/>} />
 
-        <Route path='/navbar' component={NavBarDocs} />
-        <Route path='/navbarsubmenu' component={NavBarSubMenuDocs} />
-        <Route path='/navpagecontainer' component={NavPageContainerDocs} />
+        <Route path='/navbar' element={<NavBarDocs/>} />
+        <Route path='/navbarlink' element={<NavBarLinkDocs/>} />
+        <Route path='/navbarsubmenu' element={<NavBarSubMenuDocs/>} />
+        <Route path='/navpagecontainer' element={<NavPageContainerDocs/>} />
 
-        <Route path='/accordion' component={AccordionDocs} />
-        <Route path='/alerts' component={AlertDocs} />
-        <Route path='/apptheme' component={AppThemeDocs} />
-        <Route path='/appearance' component={AppearanceDocs} />
-        <Route path='/avatarview' component={AvatarViewDocs} />
-        <Route path='/buttons' component={ButtonsDocs} />
-        <Route path='/cards' component={CardDocs} />
-        <Route path='/checkbox' component={CheckboxDocs} />
-        <Route path='/colorpicker' component={ColorPickerDocs} />
-        <Route path='/commandbar' component={CommandBarDocs} />
-        <Route path='/dialogs' component={DialogDocs} />
-        <Route path='/gauges' component={GaugeDocs} />
-        <Route path='/imageview' component={ImageViewDocs} />
-        <Route path='/input_group' component={InputGroupDocs} />
-        <Route path='/inputsearch' component={InputSearchDocs} />
-        <Route path='/links' component={LinkDocs} />
-        <Route path='/linkcompound' component={LinkCompoundDocs} />
-        <Route path='/listitem' component={ListItemDocs} />
-        <Route path='/loaders' component={LoadersDocs} />
-        <Route path='/menubar' component={MenuBarDocs} />
-        <Route path='/progressbar' component={ProgressBarDocs} />
-        <Route path='/radio_button' component={RadioButtonDocs} />
-        <Route path='/selectbox' component={SelectBoxDocs} />
-        <Route path='/sliderbar' component={SliderBarDocs} />
-        <Route path='/switch' component={SwitchDocs} />
-        <Route path='/tableview' component={TableViewDocs} />
-        <Route path='/view_' component={ViewDocs} />
+        <Route path='/accordion' element={<AccordionDocs/>} />
+        <Route path='/alerts' element={<AlertDocs/>} />
+        <Route path='/apptheme' element={<AppThemeDocs/>} />
+        <Route path='/appearance' element={<AppearanceDocs/>} />
+        <Route path='/avatarview' element={<AvatarViewDocs/>} />
+        <Route path='/buttons' element={<ButtonsDocs/>} />
+        <Route path='/cards' element={<CardDocs/>} />
+        <Route path='/checkbox' element={<CheckboxDocs/>} />
+        <Route path='/colorpicker' element={<ColorPickerDocs/>} />
+        <Route path='/commandbar' element={<CommandBarDocs/>} />
+        <Route path='/dialogs' element={<DialogDocs/>} />
+        <Route path='/gauges' element={<GaugeDocs/>} />
+        <Route path='/imageview' element={<ImageViewDocs/>} />
+        <Route path='/input_group' element={<InputGroupDocs/>} />
+        <Route path='/inputsearch' element={<InputSearchDocs/>} />
+        <Route path='/links' element={<LinkDocs/>} />
+        <Route path='/linkcompound' element={<LinkCompoundDocs/>} />
+        <Route path='/listitem' element={<ListItemDocs/>} />
+        <Route path='/loaders' element={<LoadersDocs/>} />
+        <Route path='/menubar' element={<MenuBarDocs/>} />
+        <Route path='/progressbar' element={<ProgressBarDocs/>} />
+        <Route path='/radio_button' element={<RadioButtonDocs/>} />
+        <Route path='/selectbox' element={<SelectBoxDocs/>} />
+        <Route path='/sliderbar' element={<SliderBarDocs/>} />
+        <Route path='/switch' element={<SwitchDocs/>} />
+        <Route path='/tableview' element={<TableViewDocs/>} />
+        <Route path='/view_' element={<ViewDocs/>} />
 
-        <Route path='/texts' component={Texts} />
-        <Route path='/tables' component={Tables} />
-        <Route path='/icons' component={Icons} />
+        <Route path='/texts' element={<Texts/>} />
+        <Route path='/tables' element={<Tables/>} />
+        <Route path='/icons' element={<Icons/>} />
         
-        <Route path='/AboutLayout' component={AboutLayout} />
-        <Route path='/BlogLayout' component={BlogLayout} />
-        <Route path='/contactslayout' component={ContactsLayout} />
-        <Route path='/LoginLayout' component={LoginLayout} />
+        <Route path='/AboutLayout' element={<AboutLayout/>} />
+        <Route path='/BlogLayout' element={<BlogLayout/>} />
+        <Route path='/contactslayout' element={<ContactsLayout/>} />
+        <Route path='/LoginLayout' element={<LoginLayout/>} />
 
-        <Route path='/AppJsDefault' component={AppJsDefault} />
-        <Route path='/AppJsSearchable' component={AppJsSearchable} />
-        <Route path='/PageJsDefault' component={PageJsDefault} />
-        <Route path='/PageJsSplit' component={PageJsSplit} />
+        <Route path='/AppJsDefault' element={<AppJsDefault/>} />
+        <Route path='/AppJsSearchable' element={<AppJsSearchable/>} />
+        <Route path='/PageJsDefault' element={<PageJsDefault/>} />
+        <Route path='/PageJsSplit' element={<PageJsSplit/>} />
 
-        <Route path='/boilerplate_external' component={() => { 
+        <Route path='/boilerplate_external' element={() => { 
           window.location.href = 'https://github.com/virtualvivek/react-windows-ui-boilerplate';
           return null;
         }} />
-        <Route path='/apptheme_external' component={() => { 
+        <Route path='/apptheme_external' element={() => { 
           window.location.href = 'https://github.com/virtualvivek/react-windows-ui/blob/main/src/demo/docs/AppTheme_docs/index.js';
           return null;
         }} />
-        <Route path='/fluent_icons_external' component={() => { 
+        <Route path='/fluent_icons_external' element={() => { 
           window.location.href = 'https://github.com/microsoft/fluentui-system-icons';
           return null;
         }} />
         
-      </Switch>
+      </Routes>
     </Router>
   </>
     )

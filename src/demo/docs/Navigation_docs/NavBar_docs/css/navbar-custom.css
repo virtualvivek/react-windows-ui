@@ -4,11 +4,8 @@
 
 @media only screen and (max-width: 760px) {
   .app-navbar-wrap nav.animate.custom {
-    height: 75px;
-    z-index: 1;
-  }
-  .app-navbar-wrap nav.animate.custom .app-navbar-header,
-  .app-navbar-wrap nav.animate.custom .app-navbar-name {
-    position: relative;
+    transform-origin: unset;
+    transform: unset;
+    transition: unset;
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 import './lib/config/app-config.css'
 import './lib/dist/react-windows-ui.min.css'
 import './lib/icons/fonts/fonts.min.css'
@@ -7,9 +7,9 @@ import './lib/icons/fonts/fonts.min.css'
 import './demo/styles/codeStyle.css'
 import App from './demo/App'
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );

@@ -34,7 +34,7 @@ const NavBar = (props) => {
       className={sidebar ? "app-navbar-wrap toggled" : "app-navbar-wrap"}>
       <div className="app-navbar-topbar-mobile">
         <span className="app-navbar-toggle-button" onClick={showSidebar}></span>
-        {props.renderTopbarMobile}
+        {props.titleBarMobile}
       </div>  
       <nav
         className="animate"

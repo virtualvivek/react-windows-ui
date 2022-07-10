@@ -1,5 +1,8 @@
 import React from 'react'
-import { NavPageContainer, LinkCompound } from '../../lib/src'
+import { NavPageContainer, LinkCompound, Link } from '../../lib/src'
+import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { AppConfigCSSDefault } from './codes/gettingStarted'
 
 const GettingStarted = () => {
 
@@ -8,19 +11,41 @@ const GettingStarted = () => {
       hasPadding
       animateTransition>
 
-      <h1>Boilerplate</h1>
-         
-        <LinkCompound
-          style={{margin:'5px 5px 0 0',width:240}}
-          to="/boilerplate_external"
-          target="_blank"
-          title="Template"
-          subtitle="Starter template repository"
-          icon={<i className="icons10-file-explorer"></i>}
-          focused={true}
-          margin="5px 5px 0 0" />
+      <h1>GettingStarted</h1>
+      <p>Select <b>windows-ui cra-template</b> to initial your project.</p>
 
-      <h1>Templates</h1>
+      <SyntaxHighlighter
+        language="javascript"
+        style={vscDarkPlus}
+        className="code code-container">
+        {`npx create-react-app [my-app-name] --template windows-ui`}
+      </SyntaxHighlighter>
+
+      <p>View cra-template online <Link to="/boilerplate_external">template windows-ui</Link>.</p>
+
+      <h1>app-config.css</h1>
+      <p>By default below <span className='app-code'>app-config.css</span> file is being use by the app.</p>
+      <SyntaxHighlighter
+        language="javascript"
+        style={vscDarkPlus}
+        className="code code-container">
+        {AppConfigCSSDefault}
+      </SyntaxHighlighter>
+
+      <br/><p>If you want to use your own <b>primary color</b> or <b>font-family</b>,
+      <br/>Create a new <span className='app-code'>app-config.css</span> and update import file below:</p>
+      <p><b>app/src/index.js</b></p>
+      <SyntaxHighlighter
+        language="javascript"
+        style={vscDarkPlus}
+        className="code code-container">
+        {`import "react-windows-ui/config/app-config.css";`}
+      </SyntaxHighlighter>
+
+      
+      
+    
+      <h1>Structure</h1>
          
         <LinkCompound
           style={{margin:'5px 5px 0 0',width:240}}

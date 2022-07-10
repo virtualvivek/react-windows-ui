@@ -9,8 +9,7 @@ import './css/home.css'
 class Home extends React.Component {
 
   state = {
-    app_color: '',
-    app_mode: ''
+    app_color: '', app_mode: ''
   }
 
   changeTheme = (color) => { this.setState({app_color: color.target.value}); }
@@ -70,7 +69,7 @@ class Home extends React.Component {
         language="javascript"
         style={vscDarkPlus}
         className="code code-container home-code">
-        {`$ npm install react-windows-ui`}
+        {`$ npx create-react-app my-app --template windows-ui`}
       </SyntaxHighlighter>
 
       </div>

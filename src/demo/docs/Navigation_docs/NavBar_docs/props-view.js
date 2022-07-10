@@ -26,15 +26,15 @@ const PropsView = () => {
           <td>Set's NavBar shadow on scroll</td>
         </tr>
         <tr>
-          <td><p className="app-code">mobileHasIcons</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's NavBar show icons instead of text on small device</td>
+          <td><p className="app-code">titleBarMobile</p></td>
+          <td>ReactNode</td>
+          <td>[ ]</td>
+          <td>Set's NavBar top title bar on small device</td>
         </tr>
         <tr>
           <td><p className="app-code">children</p></td>
           <td>ReactNode</td>
-          <td>null</td>
+          <td>[ ]</td>
           <td>Set's NavBar children</td>
         </tr>
       </tbody>

@@ -1,13 +1,9 @@
 :root {
-  --PrimaryColor: #0078D7;
-  --PrimaryColorLight: #47aeff;
- /*   Change of your choice */
+  --PrimaryColor: #0078D7; /* Change of your choice */
+  --PrimaryColorLight: #47aeff; /* Lighter version of --PrimaryColor for DarkMode */
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Segoe UI";
 }
 ::selection {
   background-color: var(--PrimaryColor);
