@@ -10,8 +10,7 @@ const AppThemeUsageCode =
 />`;
 
 const SwitchThemeUsageCode =
-`
-changeMode = (e) => {
+`changeMode = (e) => {
   e.target.checked ?
     this.setState({app_mode: 'light'}) :
     this.setState({app_mode: 'dark'})

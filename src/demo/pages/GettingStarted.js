@@ -24,7 +24,7 @@ const GettingStarted = () => {
       <p>View cra-template online <Link to="/boilerplate_external">template windows-ui</Link>.</p>
 
       <h1>app-config.css</h1>
-      <p>By default below <span className='app-code'>app-config.css</span> file is being use by the app.</p>
+      <p>By default below <span className='app-code'>app-config.css</span> file is used by the app.</p>
       <SyntaxHighlighter
         language="javascript"
         style={vscDarkPlus}
