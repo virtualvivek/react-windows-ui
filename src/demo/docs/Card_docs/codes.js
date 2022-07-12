@@ -29,7 +29,7 @@ const CardUsageHoverCode =
   <ListItem
     title="News"
     subtitle="12.4 MB"
-    info="installed"
+    info="installed app"
     borderBottom={false}
   />
   <div style={{float:'right', display:'flex'}}>
@@ -41,10 +41,10 @@ const CardUsageHoverCode =
 
 const CardUsageFocusedCode =
 `<Card
-  focused
-  display="flow-root"
+  padding={10}
+  focused={true}
   maxWidth={400}
-  padding={10}>
+  display="flow-root">
   <LinkCompound
     to="#"
     title="Notification settings and DND"
@@ -52,7 +52,7 @@ const CardUsageFocusedCode =
     icon={<i className="icons10-notification color-primary"></i>}
   />
   <Button
-    style={{float:'right', margin:5}}
+    style={{float: "right", margin: 5}}
     value="Edit" />
 </Card>`;
 

@@ -3,17 +3,17 @@ const CheckboxImportCode =
 
 const CheckboxUsageCode =
 `<Checkbox
-  defaultChecked={true}
+  //disabled
   label="Some Text"
   onChange={() => {}}
-  //disabled
+  defaultChecked={true}
 />`;
 
 const CheckboxInlineUsageCode =
 `<p>Lorem ipsum dolor sit amet 
   <Checkbox
-    defaultChecked={true}
     onChange={() => {}}
+    defaultChecked={true}
     tooltip="inline checkbox"
   /> 
 sed do eiusmod tempor incididunt ut labore.

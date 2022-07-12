@@ -25,17 +25,18 @@ const ProgressBarTitleSubtitleUsageCode =
 
 const ProgressBarIconUsageCode =
 `<ProgressBar
-  icon={<i className="icons10-hdd"></i>}
+  
   showIcon={true}
   title="Drive C:"
-  subtitle="primary storage"
   setProgress={54}
+  subtitle="primary storage"
+  icon={<i className="icons10-hdd"></i>}
 />`;
 
 const ProgressBarCustomColorUsageCode =
 `<ProgressBar
-  color={'#2C8B2C'}
   setProgress={76}
+  color={'#2C8B2C'}
 />`;
 
 const ProgressBarCustomHeightUsageCode =

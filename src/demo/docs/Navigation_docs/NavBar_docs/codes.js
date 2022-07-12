@@ -7,11 +7,7 @@ const NavBarUsageCode =
   shadowOnScroll={true}
   titleBarMobile={<>{/* render a layout for small devices */}</>}>
   ....
-  <NavBarLink
-    to="/"
-    text="Page1"
-    icon={<i className="icons10-home"></i>}
-  />
+  <NavBarLink to="/somelink" />
   ....
 </NavBar>`;
 

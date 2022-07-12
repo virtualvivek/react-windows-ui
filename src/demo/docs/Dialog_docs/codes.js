@@ -9,15 +9,9 @@ const DialogUsageCode =
     img={Img4}
     imgBorderRadius={8}
     title="Magenta Riddim"
-    subtitle="5.6 MB"/>
-  <ListItem
-    img={Img3}
-    imgBorderRadius={8}
-    title="Different World"
-    subtitle="12.0 MB"/>
-      
+    subtitle="5.6 MB" /> 
   <Button
-    style={{margin:'15px', float:'right'}}
+    style={{margin: '15px', float: 'right'}}
     value="Close"
     onClick={this.toggleDialog} />
 </Dialog>`;

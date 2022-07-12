@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, LinkCompound, Link } from '../../lib/src'
+import { NavPageContainer, Link } from '../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { AppConfigCSSDefault } from './codes/gettingStarted'
@@ -12,16 +12,16 @@ const GettingStarted = () => {
       animateTransition>
 
       <h1>GettingStarted</h1>
-      <p>Select <b>windows-ui cra-template</b> to initial your project.</p>
+      <p>Select <b>windows-ui cra-template</b> to initialize your project.</p>
 
       <SyntaxHighlighter
         language="javascript"
         style={vscDarkPlus}
         className="code code-container">
-        {`npx create-react-app [my-app-name] --template windows-ui`}
+        {`npx create-react-app MyAppName --template windows-ui`}
       </SyntaxHighlighter>
 
-      <p>View cra-template online <Link to="/boilerplate_external">template windows-ui</Link>.</p>
+      
 
       <h1>app-config.css</h1>
       <p>By default below <span className='app-code'>app-config.css</span> file is used by the app.</p>
@@ -43,47 +43,24 @@ const GettingStarted = () => {
       </SyntaxHighlighter>
 
       
-      
+      <p>View cra-template online <Link to="/boilerplate_external">template windows-ui</Link>.</p>
     
       <h1>Structure</h1>
+
+      <div className='app-code' style={{whiteSpace: "pre-line", lineHeight: "normal", padding:"10px 40px 15px 20px"}}>
+        ./src<br/>
+          │ &nbsp; ├─ <Link to="/AppJsDefault">App.js (Default)</Link> / <Link to="/AppJsSearchable">App.js (Searchable)</Link><br/>
+          │ &nbsp; └─ index.js<br/>
+          └─ pages/<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├─ <Link to="/PageJsDefault">Page1.js (Default)</Link><br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├─ <Link to="/PageJsSplit">Page2.js (Split View)</Link><br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └─ PageN.js<br/>
+      </div>
+      <br/><br/>
          
-        <LinkCompound
-          style={{margin:'5px 5px 0 0',width:240}}
-          to="/AppJsDefault"
-          title="App.js"
-          subtitle="Default App.js Configuration"
-          icon={<i className="icons10-bag"></i>}
-          focused={true} />
-
-        <LinkCompound
-          style={{margin:'5px 5px 0 0',width:240}}
-          to="/AppJsSearchable"
-          title="App.js"
-          subtitle="With Searchable NavItems"
-          icon={<i className="icons10-list-search"></i>}
-          focused={true}
-          margin="5px 5px 0 0" />
-        <br/>
-        <div className="app-hr"></div>
-        
-        <LinkCompound
-          style={{margin:'5px 5px 0 0',width:240}}
-          to="/PageJsDefault"
-          title="Page.js"
-          subtitle="Default Page.js configuration"
-          icon={<i className="icons10-window"></i>}
-          focused={true} />
-
-        <LinkCompound
-          style={{margin:'5px 5px 0 0',width:240}}
-          to="/PageJsSplit"
-          title="Page.js"
-          subtitle="With Split Page Inner and Right"
-          icon={<i className="icons10-columns"></i>}
-          focused={true} />
-
-
-      <h1>Layouts</h1>
+     
+      {/* <h1>Layouts</h1>
 
         <LinkCompound
           style={{margin:'5px 5px 0 0',width:240}}
@@ -116,7 +93,7 @@ const GettingStarted = () => {
           subtitle="ListView of users"
           icon={<i className="icons10-contact-book"></i>}
           focused={true}
-          style={{margin:'5px 5px 0 0',width:240}} />
+          style={{margin:'5px 5px 0 0',width:240}} /> */}
 
 
     <br/><br/><br/><br/><br/><br/>

@@ -21,8 +21,8 @@ const CommandBarUsageCode =
 const CommandBarButtonUsageCode =
 `<CommandBarButton
   value="Upload"
-  icon={<i className="icons10-upload color-primary"></i>}
   onClick={() => {}}
+  icon={<i className="icons10-upload color-primary"></i>}
 />`;
 
 const CommandBarDropdownUsageCode =
@@ -52,9 +52,9 @@ const CommandBarSplitUsageCode =
 
 
 export {
-    CommandBarImportCode,
-    CommandBarUsageCode,
-    CommandBarButtonUsageCode,
-    CommandBarDropdownUsageCode,
-    CommandBarSplitUsageCode
+  CommandBarImportCode,
+  CommandBarUsageCode,
+  CommandBarButtonUsageCode,
+  CommandBarDropdownUsageCode,
+  CommandBarSplitUsageCode
 }

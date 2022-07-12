@@ -3,9 +3,9 @@ const NavPageContainerImportCode =
 
 const NavPageContainerUsageCode =
 `<Gauge
-  setProgress={50}
   scale={2}
   value={50+"%"}
+  setProgress={50}
   info="of something"
 />`;
 

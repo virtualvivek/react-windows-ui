@@ -50,10 +50,10 @@
       }
     }
     span {
-      @extend .user-select-none;
       font-size: 16px;
       margin: 0 10px;
       overflow: hidden;
+      user-select: none;
       white-space: nowrap;
       text-overflow: ellipsis;
     }

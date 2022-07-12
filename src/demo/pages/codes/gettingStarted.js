@@ -7,8 +7,8 @@ body {
   font-family: "Segoe UI";
 }
 ::selection {
-  background-color: var(--PrimaryColor);
   color: #ffffff;
+  background-color: var(--PrimaryColor);
 }
 `;
 

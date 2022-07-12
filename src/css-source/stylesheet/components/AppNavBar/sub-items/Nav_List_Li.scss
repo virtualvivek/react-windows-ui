@@ -7,13 +7,13 @@
 
     a {
       width: 100%;
-      padding: 12px 25px;
       font-weight: 400;
       background: none;
+      padding: 12px 25px;
       position: relative;
       align-items: center;
-      display: inline-flex;
       flex-direction: row;
+      display: inline-flex;
       color: var(--color_text_dark);
 
       &::after {
@@ -42,14 +42,17 @@
         text-overflow: unset;
         vertical-align: middle;
       }
+
+      > * {
+        pointer-events: none;
+      }
     }
     span {
-      @extend .user-select-none;
-      font-size: 16px;
       margin: 0 10px;
+      font-size: 16px;
       overflow: hidden;
+      user-select: none;
       white-space: nowrap;
-      pointer-events: none;
       text-overflow: ellipsis;
     }
     img {
@@ -57,7 +60,6 @@
       height: 20px;
       margin: 2px;
       border-radius: 4px;
-      pointer-events: none;
       background-color: var(--color_link_bg_hover);
     }
   }

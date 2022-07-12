@@ -9,10 +9,10 @@ const InputTextUsageCode =
 
 const InputTextStatusUsageCode =
 `<InputText
-  placeholder="Enter a text success"
   setStatus="success"
   //setStatus="danger"
   //setStatus="loading"
+  placeholder="Enter a text success"
 />`;
 
 const InputTextPasswordUsageCode =

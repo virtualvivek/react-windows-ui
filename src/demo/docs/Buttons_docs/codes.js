@@ -6,59 +6,59 @@ const ButtonIconImportCode =
 
 const ButtonDefaultCode =
 `<Button
- value="Default Button"
- isLoading={false}
- icon={<i className="icons10-plus"></i>}
- onClick={() => {}}
- tooltip="some tooltip text"
+  isLoading={false}
+  onClick={() => {}}
+  value="Default Button"
+  tooltip="some tooltip text"
+  icon={<i className="icons10-plus"></i>}
 />`;
 
 const ButtonIconPrimary =
 `<Button
- justifyContent={'start'}
- icon={<i className="icons10-plus color-primary"></i>}
- value="Button Aligned Start"
- onClick={() => {}}
+  onClick={() => {}}
+  justifyContent={"start"}
+  value="Button Aligned Start"
+  icon={<i className="icons10-plus color-primary"></i>}
 />`;
 
 const ButtonPrimary =
 `<Button
- type="primary"
- value="Primary Button"
- onClick={() => {}}
+  type="primary"
+  value="Primary Button"
+  onClick={() => {}}
 />`;
 
 const ButtonPrimaryOutline =
 `<Button
- type="primary-outline"
- value="Primary Outline"
- onClick={() => {}}
- //icon={<i className="icons10-plus"></i>}
+  onClick={() => {}}
+  type="primary-outline"
+  value="Primary Outline"
+  //icon={<i className="icons10-plus"></i>}
 />`;
 
 const ButtonIconCode =
 `<ButtonIcon
- icon={<i className="icons10-add"></i>}
- onClick={() => {}}
- tooltip="Some tooltip text"
+  onClick={() => {}}
+  tooltip="Some tooltip text"
+  icon={<i className="icons10-add"></i>}
 />`;
 
 const ButtonSuccessCode =
 `<Button
- value="Success Button"
- type="success"
- onClick={() => {}}
- //type="success-outline"
- //icon={<i className="icons10-checkmark"></i>}
+  type="success"
+  onClick={() => {}}
+  value="Success Button"
+  //type="success-outline"
+  //icon={<i className="icons10-checkmark"></i>}
 />`;
 
 const ButtonDangerCode =
 `<Button
- value="Danger Button"
- type="danger"
- onClick={() => {}}
- //type="danger-outline"
- //icon={<i className="icons10-cancel-2"></i>}
+  type="danger"
+  onClick={() => {}}
+  value="Danger Button"
+  //type="danger-outline"
+  //icon={<i className="icons10-cancel-2"></i>}
 />`;
 
 
