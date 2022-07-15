@@ -1,5 +1,5 @@
 const CheckboxImportCode =
-`import { Checkbox } from 'react-windows-ui'`;
+`import { Checkbox } from "react-windows-ui";`;
 
 const CheckboxUsageCode =
 `<Checkbox

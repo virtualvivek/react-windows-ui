@@ -1,13 +1,12 @@
 const ViewImportCode =
-`import { View } from 'react-windows-ui'`;
+`import { View } from "react-windows-ui";`;
 
 const ViewUsageCode =
 `<View
   isVisible={true}
-  zIndex={1}
-  animationType="fade"
+  collapseOnInvisible={true}
   style={{height:150,width:250}}>
-  <span>View</span>
+  <>{/* children */}</>
 </View>`;
 
 

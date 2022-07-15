@@ -1,9 +1,9 @@
 const AppearanceImportCode =
-`import { Appearance } from 'react-windows-ui'`;
+`import { Appearance } from "react-windows-ui";`;
 
 const AppearanceUsageCode =
 `const colorScheme = Appearance.getColorScheme();
-  if (colorScheme === 'dark') {
+  if (colorScheme === "dark") {
     Appearance.setLightScheme()
     // Do action on dark color scheme
 }`;

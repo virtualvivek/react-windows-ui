@@ -1,5 +1,5 @@
 const ListItemImportCode =
-`import { ListItem } from 'react-windows-ui'`;
+`import { ListItem } from "react-windows-ui";`;
 
 const ListItemUsageCode =
 `<ListItem

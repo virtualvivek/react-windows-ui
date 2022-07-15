@@ -26,8 +26,7 @@ render() {
 
     <View
       isVisible={this.state.showView}
-      animationType="fade"
-      hideOnInvisible>
+      animationType="fade">
         <div style={{height:150,width:250,backgroundColor: 'var(--PrimaryColor)',
       justifyContent:'center',alignItems:'center',display:'flex'}}>
         <span style={{fontSize: 28,color:'#fff'}}>View</span>
@@ -35,7 +34,7 @@ render() {
       
     </View>
 
-    <br/><Button value="Toggle View" onClick={this.toggleView} />
+    <br/><Button value="Toggle Visibility" onClick={this.toggleView} />
         
   
     <h2>Import</h2>

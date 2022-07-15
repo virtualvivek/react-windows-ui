@@ -1,16 +1,16 @@
 const RadioButtonImportCode =
-`import { RadioButton } from 'react-windows-ui'`;
+`import { RadioButton } from "react-windows-ui";`;
 
 const RadioButtonUsageCode =
 `<RadioButton
-  defaultChecked={true}
   name="1"
   value="Hellow"
   label="some text"
+  defaultChecked={true}
 />`;
 
 
 export {
-    RadioButtonImportCode,
-    RadioButtonUsageCode
+  RadioButtonImportCode,
+  RadioButtonUsageCode
 }

@@ -1,5 +1,5 @@
 const NavBarLinkImportCode =
-`import { NavBarLink } from 'react-windows-ui'`;
+`import { NavBarLink } from "react-windows-ui";`;
 
 const NavBarLinkUsageCode =
 `<NavBarLink

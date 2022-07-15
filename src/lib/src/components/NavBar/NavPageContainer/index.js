@@ -10,7 +10,10 @@ const NavPageContainer = (props) => {
     if(element && props.animateTransition) {
       element.classList.add("transition-left");
     }
-  }, [pathname, props.animateTransition]);
+    if(props.scrollTopOnMount) {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant"});
+    }
+  }, [pathname, props.animateTransition, props.scrollTopOnMount]);
 
   const setTransition = () => {
     return props.animateTransition ? " transition" : "";

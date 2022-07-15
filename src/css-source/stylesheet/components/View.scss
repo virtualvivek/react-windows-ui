@@ -1,22 +1,15 @@
 .app-view-default {
   opacity: 1;
+  display: inherit;
   position: relative;
   visibility: visible;
-
-  &.fade {
-    transition: 0.4s;
-  }
   
   &.hide {
     opacity: 0;
     visibility: hidden;
-
-    &.fade {
-      transition: 0.2s;
-    }
   }
 
   &.destroy {
-    height: 0 !important;
+    display: none;
   }
 }

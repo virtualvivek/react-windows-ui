@@ -1,5 +1,5 @@
 const LinkImportCode =
-`import { LinkCompound } from 'react-windows-ui'`;
+`import { LinkCompound } from "react-windows-ui";`;
 
 const LinkUsageCode =
 `<LinkCompound

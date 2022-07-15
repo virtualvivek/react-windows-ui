@@ -1,8 +1,8 @@
 const ProgressBarImportCode =
-`import { ProgressBar } from 'react-windows-ui'`;
+`import { ProgressBar } from "react-windows-ui";`;
 
 const ProgressBarIndeterminateImportCode =
-`import { ProgressBarIndeterminate } from 'react-windows-ui'`;
+`import { ProgressBarIndeterminate } from "react-windows-ui";`;
 
 const ProgressBarUsageCode =
 `<ProgressBar

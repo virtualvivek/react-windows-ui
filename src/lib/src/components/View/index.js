@@ -2,12 +2,8 @@ import React from "react";
 
 const View = (props) => {
 
-  const setAnimFade = () => {
-    return props.animationType === 'fade' ? 'fade' : '';
-  }
-
   const setHideState = () => {
-    return props.hideOnInvisible ? 'destroy' : '';
+    return props.collapseOnInvisible ? 'destroy' : '';
   }
 
   return (
@@ -15,8 +11,8 @@ const View = (props) => {
       onClick = { props.onClick }
       className = {
         props.isVisible ?
-          `app-view-default ${setAnimFade()}`
-        : `app-view-default hide ${setAnimFade()} ${setHideState()}`
+          `app-view-default`
+        : `app-view-default hide ${setHideState()}`
         }
         style={{
             zIndex: props.zIndex,
@@ -28,8 +24,9 @@ const View = (props) => {
 }
 
 View.defaultProps = {
+  zIndex: 1,
   isVisible: true,
-  zIndex: 1
+  collapseOnInvisible: true
 }
 
 export default View;

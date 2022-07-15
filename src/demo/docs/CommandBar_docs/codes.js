@@ -1,5 +1,5 @@
 const CommandBarImportCode =
-`import { CommandBar, CommandBarButton  } from 'react-windows-ui'`;
+`import { CommandBar, CommandBarButton  } from "react-windows-ui";`;
 
 const CommandBarUsageCode =
 `<CommandBar>

@@ -1,5 +1,5 @@
 const CardImportCode =
-`import { Card } from 'react-windows-ui'`;
+`import { Card } from "react-windows-ui";`;
 
 const CardUsageCode =
 `<Card>

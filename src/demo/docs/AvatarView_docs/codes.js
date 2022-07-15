@@ -1,5 +1,5 @@
 const AvatarViewImportCode =
-`import { AvatarView } from 'react-windows-ui'`;
+`import { AvatarView } from "react-windows-ui";`;
 
 const AvatarViewUsageCode =
 `<AvatarView

@@ -1,5 +1,5 @@
 const InputTextImportCode =
-`import { InputText } from 'react-windows-ui'`;
+`import { InputText } from "react-windows-ui";`;
 
 const InputTextUsageCode =
 `<InputText

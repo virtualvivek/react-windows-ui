@@ -1,5 +1,5 @@
 const NavBarSubMenuImportCode =
-`import { NavBarSubMenu } from 'react-windows-ui'`;
+`import { NavBarSubMenu } from "react-windows-ui";`;
 
 const NavBarSubMenuUsageCode =
 `<NavBarSubMenu title="Title">

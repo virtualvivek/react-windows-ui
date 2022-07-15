@@ -1,5 +1,5 @@
 const LinkImportCode =
-`import { Link } from 'react-windows-ui'`;
+`import { Link } from "react-windows-ui";`;
 
 const LinkUsageCode =
 `<Link to="#">This is a Link</Link>`;

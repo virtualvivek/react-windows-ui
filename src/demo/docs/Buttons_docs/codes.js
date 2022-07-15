@@ -1,8 +1,8 @@
 const ButtonImportCode = 
-`import { Button } from 'react-windows-ui'`;
+`import { Button } from "react-windows-ui";`;
 
 const ButtonIconImportCode =
-`import { ButtonIcon } from 'react-windows-ui'`;
+`import { ButtonIcon } from "react-windows-ui";`;
 
 const ButtonDefaultCode =
 `<Button

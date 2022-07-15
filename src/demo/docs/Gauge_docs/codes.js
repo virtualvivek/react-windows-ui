@@ -1,5 +1,5 @@
 const GaugeImportCode =
-`import { Gauge } from 'react-windows-ui'`;
+`import { Gauge } from "react-windows-ui";`;
 
 const GaugeUsageCode =
 `<Gauge

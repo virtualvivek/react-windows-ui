@@ -6,7 +6,7 @@ import { NavPageContainerImportCode,NavPageContainerUsageCode } from './codes'
 import PropsView from './props-view'
 import './css/navpagecontainer-view.css'
 
-class NavPageContainerDocs extends React.Component {
+class SplashScreenDocs extends React.Component {
 
 render() {
   return (
@@ -14,17 +14,12 @@ render() {
     hasPadding
     scrollTopOnMount={true}
     animateTransition={true}>
-    <h1>NavPageContainer</h1>
+    <h1>SplashScreen</h1>
 
-    <div className="demo-navpagecontainer-view">
-      <div className="demo-navpagecontainer-navbar">
-        <div className="demo-navpagecontainer-rows-header">
-          <div className="demo-navpage-item"></div>
-        </div>
-      </div>
-      <div className="demo-navpagecontainer-page-column">
-        <p className="demo-navpagecontainer-toolbar">➖ ⬜ ❌</p>
-        <div className="demo-navpagecontainer-page">
+    <div className="demo-splash-navpagecontainer-view">
+      <div className="demo-splash-navpagecontainer-page-column">
+        <p className="demo-splash-navpagecontainer-toolbar">➖ ⬜ ❌</p>
+        <div className="demo-splash-navpagecontainer-page">
           <p>NavPageContainer</p>
         </div>
       </div>
@@ -62,4 +57,4 @@ render() {
 }
 }
 
-export default NavPageContainerDocs
+export default SplashScreenDocs

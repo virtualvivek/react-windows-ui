@@ -1,5 +1,5 @@
 const AlertImportCode =
-`import { Alert } from 'react-windows-ui'`;
+`import { Alert } from "react-windows-ui";`;
 
 const AlertUsageCode =
 `<Alert

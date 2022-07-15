@@ -1,8 +1,8 @@
 const LoaderBarImportCode =
-`import { LoaderBar } from 'react-windows-ui'`;
+`import { LoaderBar } from "react-windows-ui";`;
 
 const LoaderBusyImportCode =
-`import { LoaderBusy } from 'react-windows-ui'`;
+`import { LoaderBusy } from "react-windows-ui";`;
 
 const LoaderBarUsageCode =
 `<LoaderBar
@@ -26,17 +26,17 @@ const LoaderBusyFullscreenCustomUsageCode =
   setTheme="light"
   isLoading={true}
   display="fullscreen"
-  onBackdropPress={() => {}}
   backgroundColor="#16ab9c"
+  onBackdropPress={() => {}}
   title="Tap anywhere to dismiss"
 />`;
 
 
 export {
-    LoaderBarImportCode,
-    LoaderBusyImportCode,
-    LoaderBarUsageCode,
-    LoaderBusyUsageCode,
-    LoaderBusyFullscreenUsageCode,
-    LoaderBusyFullscreenCustomUsageCode
+  LoaderBarImportCode,
+  LoaderBusyImportCode,
+  LoaderBarUsageCode,
+  LoaderBusyUsageCode,
+  LoaderBusyFullscreenUsageCode,
+  LoaderBusyFullscreenCustomUsageCode
 }

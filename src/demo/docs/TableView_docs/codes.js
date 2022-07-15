@@ -1,5 +1,5 @@
 const TableViewImportCode =
-`import { TableView } from 'react-windows-ui'`;
+`import { TableView } from "react-windows-ui";`;
 
 const TableViewUsageCode =
 `<TableView

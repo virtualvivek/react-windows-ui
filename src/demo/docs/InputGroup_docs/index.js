@@ -1,13 +1,9 @@
 import React from 'react'
-import { NavPageContainer, InputText,InputSearchBar,Select } from '../../../lib/src'
+import { NavPageContainer, InputText } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { InputTextImportCode,
-  InputTextUsageCode,
-  InputTextStatusUsageCode,
-  InputTextPasswordUsageCode,
-  InputTextLabelUsageCode,
-  InputDateUsageCode } from './codes'
+import { InputTextImportCode, InputTextUsageCode, InputTextStatusUsageCode,
+  InputTextPasswordUsageCode, InputTextLabelUsageCode, InputDateUsageCode } from './codes'
 import PropsView from './props-view'
 
 class InputGroupDocs extends React.Component {
@@ -33,20 +29,21 @@ render() {
 
     <InputText
       placeholder="Enter a text"
-      tooltip="InputText tooltip title"/>
+      tooltip="InputText tooltip title"
+    />
 
-      <InputSearchBar />
+    {/* <InputSearchBar />
 
-      <Select
-  defaultValue="blue" //Optional
-  onChange={(value)=> alert(value)}
-  data={[
-    {label: 'red', value: 'red'},
-    {label: 'blue', value: 'blue'},
-    {label: 'green', value: 'green'},
-    {label: 'pink', value: 'pink'},
-  ]}
-/>
+    <Select
+      defaultValue="blue"
+      onChange={(value)=> alert(value)}
+      data={[
+        {label: 'red', value: 'red'},
+        {label: 'blue', value: 'blue'},
+        {label: 'green', value: 'green'},
+        {label: 'pink', value: 'pink'},
+      ]}
+    /> */}
 
     <br/><br/>
 

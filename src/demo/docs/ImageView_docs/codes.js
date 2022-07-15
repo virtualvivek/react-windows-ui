@@ -1,5 +1,5 @@
 const ImageViewImportCode =
-`import { ImageView } from 'react-windows-ui'`;
+`import { ImageView } from "react-windows-ui";`;
 
 const ImageViewUsageCode =
 `<ImageView

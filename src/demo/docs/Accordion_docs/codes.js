@@ -1,5 +1,5 @@
 const AccordionImportCode =
-`import { Accordion } from 'react-windows-ui'`;
+`import { Accordion } from "react-windows-ui";`;
 
 const AccordionUsageCode =
 `<Accordion

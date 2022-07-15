@@ -20,10 +20,10 @@ const PropsView = () => {
           <td>Toggle's View visibility</td>
         </tr>
         <tr>
-          <td><p className="app-code">animationType</p></td>
-          <td>'none' | 'fade'</td>
-          <td>'none'</td>
-          <td>Set's View animate type on visible</td>
+          <td><p className="app-code">onClick</p></td>
+          <td>function</td>
+          <td>null</td>
+          <td>Set's View onClick Listener</td>
         </tr>
         <tr>
           <td><p className="app-code">zIndex</p></td>
@@ -33,9 +33,15 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">style</p></td>
-          <td>object</td>
+          <td>CSS Style object</td>
           <td>null</td>
           <td>Set's View container style</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">collapseOnInvisible</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Collapse View on visibility false</td>
         </tr>
       </tbody>
     </table>

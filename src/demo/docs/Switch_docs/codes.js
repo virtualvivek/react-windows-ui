@@ -1,5 +1,5 @@
 const SwitchImportCode =
-`import { Switch } from 'react-windows-ui'`;
+`import { Switch } from "react-windows-ui";`;
 
 const SwitchUsageCode =
 `<Switch

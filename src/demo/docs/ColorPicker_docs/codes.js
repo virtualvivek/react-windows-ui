@@ -1,8 +1,8 @@
 const ColorPickerPaletteImportCode =
-`import { ColorPickerPalette } from 'react-windows-ui'`;
+`import { ColorPickerPalette } from "react-windows-ui";`;
 
 const ColorPickerItemImportCode =
-`import { ColorPickerItem } from 'react-windows-ui'`;
+`import { ColorPickerItem } from "react-windows-ui";`;
 
 const ColorPickerPaletteUsageCode =
 `<ColorPickerPalette

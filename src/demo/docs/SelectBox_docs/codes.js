@@ -1,8 +1,8 @@
 const SelectImportCode =
-`import { Select } from 'react-windows-ui'`;
+`import { Select } from "react-windows-ui";`;
 
 const SelectBoxImportCode =
-`import { SelectBox } from 'react-windows-ui'`;
+`import { SelectBox } from "react-windows-ui";`;
 
 const SelectUsageCode =
 `<Select
