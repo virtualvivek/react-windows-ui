@@ -8,6 +8,8 @@ export interface SwitchProps {
   label ?: boolean;
   tooltip ?: string;
   onChange ?: () => void;
+  labelPosition ?: "start" | "end";
+  labelFixedWidth ?: number | string;
 }
 declare const Switch: React.FC<SwitchProps>
 

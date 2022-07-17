@@ -23,7 +23,7 @@ const GettingStarted = () => {
 
       
 
-      <h1>app-config.css</h1>
+      <h2>app-config.css</h2>
       <p>By default below <span className='app-code'>app-config.css</span> file is used by the app.</p>
       <SyntaxHighlighter
         language="javascript"

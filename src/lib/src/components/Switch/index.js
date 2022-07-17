@@ -5,16 +5,27 @@ const Switch = (props) => {
     <label
       className="app-switch"
       title={props.tooltip}>
+      
       <input
         type="checkbox"
         disabled={props.disabled}
         onChange={props.onChange}
         defaultChecked={props.defaultChecked} />
+        {props.label && props.labelPosition === "start" && (
+          <span
+            className="app-switch-label-start"
+            data-on={props.labelOn}
+            data-off={props.labelOff}
+            style={{ width: props.labelFixedWidth }}>
+          </span>
+        )}
       <div className="app-switch-view"></div>
-      {props.label && (
+      {props.label && props.labelPosition === "end" && (
         <span
+          className="app-switch-label-end"
           data-on={props.labelOn}
-          data-off={props.labelOff}>
+          data-off={props.labelOff}
+          style={{ width: props.labelFixedWidth }}>
         </span>
       )}
     </label>
@@ -22,9 +33,10 @@ const Switch = (props) => {
 }
 
 Switch.defaultProps = {
-  labelOff: "Off",
+  label: true,
   labelOn: "On",
-  label: true
+  labelOff: "Off",
+  labelPosition: "end"
 }
 
 export default Switch;

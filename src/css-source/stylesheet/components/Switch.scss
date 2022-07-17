@@ -33,6 +33,11 @@
 
   >span::before {
     content: attr(data-off);
+  }
+  .app-switch-label-start {
+    padding-right: 10px;
+  }
+  .app-switch-label-end {
     padding-left: 10px;
   }
 
@@ -58,7 +63,7 @@
     }
    
     &:disabled {
-      +.app-switch-view {
+      ~.app-switch-view {
         @extend .background-color-link-bg-hover;
         @extend .cursor-not-allowed;
         border-color: var(--color_link_bg_hover);
