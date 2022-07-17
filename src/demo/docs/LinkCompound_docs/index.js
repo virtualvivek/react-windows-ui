@@ -55,7 +55,7 @@ const LinkCompoundDocs = () => {
         to="#"
         title="User preferences and uploads"
         subtitle="Profile pictures and details"
-        img={Img1}
+        imgSrc={Img1}
         imgAlt="Demo Image"
       />
       <br/><br/>
@@ -76,7 +76,7 @@ const LinkCompoundDocs = () => {
         to="#"
         title="Notification settings and DND"
         subtitle="Control which app push notification"
-        img={Img2}
+        imgSrc={Img2}
         imgAlt="Demo Image"
         tooltip="This is tooltip text"
       />

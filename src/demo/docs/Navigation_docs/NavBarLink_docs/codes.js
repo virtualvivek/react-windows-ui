@@ -13,7 +13,7 @@ const NavBarLinkImgUsageCode =
 `<NavBarLink
   to="/"
   text="Page1"
-  img={Img1}
+  imgSrc={Img1}
   imgAlt="Img alt text"
   imgBorderRadius={4}
 />`;
@@ -22,7 +22,7 @@ const NavBarLinkBadgeUsageCode =
 `<NavBarLink
   showBadge={7}
   text="Page1"
-  img={Img1}
+  imgSrc={Img1}
   to="/"
 />`;
 

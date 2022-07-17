@@ -20,7 +20,7 @@ render() {
       <div className="demo-splash-navpagecontainer-page-column">
         <p className="demo-splash-navpagecontainer-toolbar">➖ ⬜ ❌</p>
         <div className="demo-splash-navpagecontainer-page">
-          <p>NavPageContainer</p>
+          <p>SplashScreen</p>
         </div>
       </div>
       <i className="icons10-shutdown"></i>

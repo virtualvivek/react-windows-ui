@@ -18,7 +18,7 @@ const Icons = () => {
         language="javascript"
         style={vscDarkPlus}
         className="code code-container">
-        {`import 'react-windows-ui/icons/fonts/fonts.min.css'`}
+        {`import "react-windows-ui/icons/fonts/fonts.min.css";`}
       </SyntaxHighlighter>
 
       <br/>It’s easy to incorporate icons into your app. Here’s a small example:

@@ -32,7 +32,7 @@ const PropsView = () => {
             <td>Set's NavBarItem icon</td>
           </tr>
           <tr>
-            <td><p className="app-code">img</p></td>
+            <td><p className="app-code">imgSrc</p></td>
             <td>source</td>
             <td>null</td>
             <td>Set's NavBarItem image</td>

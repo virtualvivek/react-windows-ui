@@ -12,7 +12,7 @@ const LinkUsageCode =
 const LinkImageUsageCode =
 `<LinkCompound
   to="#"
-  img={Img}
+  imgSrc={Img}
   imgAlt="Demo Image"
   title="User preferences and uploads"
   subtitle="Profile pictures and details"
@@ -22,7 +22,7 @@ const LinkBorderUsageCode =
 `<LinkCompound
   type="border"
   to="#"
-  img={Img}
+  imgSrc={Img}
   imgAlt="Demo Image"
   tooltip="This is tooltip text"
   title="Notification settings and DND"

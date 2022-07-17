@@ -10,18 +10,20 @@ const ListItem = (props) => {
           props.borderBottom ? { borderBottom: "" } : { borderBottom: "0" }
             }>
           <img
-            src={ props.img }
+            src={ props.imgSrc }
             alt={ props.imgAlt }
-            style={ props.img ?
-                  { display: "", borderRadius: props.imgBorderRadius }
-                  :
-                  { display : "none" }
-                  }/>
-          <div>
+            style={ props.imgSrc
+                  ? { display: "", borderRadius: props.imgBorderRadius }
+                  : { display : "none" }
+                  }
+          />
+          <div className="app-list-item-container">
             <span className="app-list-title">{props.title}</span>
             <p className="app-list-subtitle">{props.subtitle}</p>
           </div>
-          <p className="app-list-info">{props.info}</p>
+          <div>
+            { props.ItemEndComponent && (<>{props.ItemEndComponent}</>) }
+          </div>
       </Link>
     </li>
   )

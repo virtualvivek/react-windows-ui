@@ -1,8 +1,9 @@
 import React from 'react'
-import { NavPageContainer, ListItem } from '../../../lib/src'
+import { NavPageContainer, ListItem, Button } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { ListItemImportCode,ListItemUsageCode,ListItemImageUsageCode,ListItemImageRoundUsageCode } from './codes'
+import { ListItemImportCode, ListItemUsageCode, ListItemImageUsageCode,
+         ListItemImageRoundUsageCode } from './codes'
 import PropsView from './props-view'
 import Img1 from '../../assets/illustration/1.jpg'
 import Img2 from '../../assets/illustration/2.jpg'
@@ -32,17 +33,17 @@ render() {
     <ListItem
       title="Contacts"
       subtitle="5.6 MB"
-      info="installed"
+      ItemEndComponent={<p className="app-list-info">installed</p>}
     />
     <ListItem
       title="News"
       subtitle="12.0 MB"
-      info="install"
+      ItemEndComponent={<p className="app-list-info">install</p>}
     />
     <ListItem
       title="Payments"
       subtitle="24 MB"
-      info="install"
+      ItemEndComponent={<p className="app-list-info">install</p>}
     />
 
     <SyntaxHighlighter
@@ -58,15 +59,15 @@ render() {
 
 
     <ListItem
-      img={Img4}
+      imgSrc={Img4}
       imgBorderRadius={8}
       imgAlt="avatar1"
       title="Magenta Riddim"
       subtitle="5.6 MB"
-      info="stream now"
+      ItemEndComponent={<Button type='danger-outline' value="Delete"/>}
     />
     <ListItem
-      img={Img3}
+      imgSrc={Img3}
       imgBorderRadius={8}
       imgAlt="avatar2"
       title="Different World"
@@ -74,7 +75,7 @@ render() {
       info="stream now"
     />
     <ListItem
-      img={Img1}
+      imgSrc={Img1}
       imgBorderRadius={8}
       imgAlt="avatar3"
       title="La Familia"
@@ -95,21 +96,21 @@ render() {
     <h2>ListItem with <p className="app-code">Round Image</p> :</h2>
 
     <ListItem
-      img={Img1}
+      imgSrc={Img1}
       imgAlt="avatar1"
       title="User 1"
       subtitle="Web Developer"
       info="online"
     />
     <ListItem
-      img={Img2}
+      imgSrc={Img2}
       imgAlt="avatar2"
       title="User 2"
       subtitle="Data Anylist"
       info="online"
     />
     <ListItem
-      img={Img3}
+      imgSrc={Img3}
       imgAlt="avatar3"
       title="User 3"
       subtitle="iOS Developer"

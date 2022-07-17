@@ -8,9 +8,9 @@ const NavBarLink = (props) => {
   }
 
   const renderImg = () => {
-    return props.img ?
+    return props.imgSrc ?
       <img
-        src={props.img}
+        src={props.imgSrc}
         alt={props.imgAlt}
         style={{borderRadius:props.imgBorderRadius}} />
         : ""

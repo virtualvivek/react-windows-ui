@@ -1,14 +1,12 @@
 const NavPageContainerImportCode =
-`import { NavPageContainer } from "react-windows-ui";`;
+`import { SplashScreen } from "react-windows-ui";`;
 
 const NavPageContainerUsageCode =
-`<NavPageContainer
-  hasPadding={true}
-  animateTransition={true}>
-
-  <>children ..</>
-
-</NavPageContainer>`;
+`<SplashScreen
+  //duration={1200}
+  isVisible={this.state.showSplash}
+  title={"react-windows-ui"}
+/>`;
 
 
 

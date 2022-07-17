@@ -23,13 +23,13 @@ render() {
     <nav className="animate custom" style={{position:'relative'}}>
       <ul style={{padding:0,margin:0}} className="app-navbar-list">
         <li className="app-navbar-list-item">
-          <a href="#/navbar" aria-current="page" className="active">
+          <a href="#/navbarlink" aria-current="page" className="active">
             <i className="icons10-add"></i>
             <span>NavItem1</span>
           </a>
         </li>
         <li className="app-navbar-list-item">
-          <a href="#/navbar">
+          <a href="#/navbarlink">
             <i className="icons10-user"></i>
             <span>NavItem2</span>
           </a>
@@ -58,20 +58,19 @@ render() {
 
     <div className="app-hr"></div>
 
-    <h2>NavBarLink <span className="app-code">with img</span> :</h2>
-    <p>NavBar <b>img</b> and <b>icon</b> is only visible on <b>small devices</b> when prop : <span className="app-code"><b>{`mobileHasIcons={true}`}</b></span></p>
+    <h2>NavBarLink with <span className="app-code">Image</span> :</h2>
 
     <div className="app-navbar-wrap">
     <nav className="animate custom" style={{position:'relative'}}>
       <ul style={{padding:0,margin:0}} className="app-navbar-list">
         <li className="app-navbar-list-item">
-        <a href="#/navbar">
+        <a href="#/navbarlink">
           <img src={Img1} alt="img"/>
           <span>NavItem 1</span>
         </a>
         </li>
         <li className="app-navbar-list-item">
-          <a href="#/navbar">
+          <a href="#/navbarlink">
             <img src={Img2} alt="img"/>
             <span>NavItem 2</span>
           </a>
@@ -90,20 +89,20 @@ render() {
 
     <div className="app-hr"></div>
 
-    <h2>NavBarLink <span className="app-code">show Badge</span> :</h2>
+    <h2>NavBarLink show <span className="app-code">Badge</span> :</h2>
 
     <div className="app-navbar-wrap">
     <nav className="animate custom" style={{position:'relative'}}>
       <ul style={{padding:0,margin:0}} className="app-navbar-list">
         <li className="app-navbar-list-item">
-        <a href="#/navbar">
+        <a href="#/navbarlink">
           <i className="icons10-user"></i>
           <span>NavItem1</span>
           <div className="app-badge">12</div>
         </a>
         </li>
         <li className="app-navbar-list-item">
-          <a href="#/navbar">
+          <a href="#/navbarlink">
             <img src={Img2} alt="img"/>
             <span>NavItem2</span>
             <div className="app-badge">7</div>

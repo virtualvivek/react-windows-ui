@@ -14,6 +14,7 @@ import NavBarDocs from './docs/Navigation_docs/NavBar_docs'
 import NavBarLinkDocs from './docs/Navigation_docs/NavBarLink_docs'
 import NavBarSubMenuDocs from './docs/Navigation_docs/NavBarSubMenu_docs'
 import NavPageContainerDocs from './docs/Navigation_docs/NavPageContainer_docs'
+import SplashScreenDocs from './docs/Navigation_docs/SplashScreen_docs'
 
 import AccordionDocs from './docs/Accordion_docs'
 import AlertDocs from './docs/Alert_docs'
@@ -96,6 +97,7 @@ class App extends React.Component {
         //duration={1200}
         isVisible={this.state.showSplash}
         title={"react-windows-ui"}
+        logo={<img src={Img2} width={100} height={100} alt="Splash"/>}
       />
 
       <AppTheme
@@ -140,7 +142,7 @@ class App extends React.Component {
         exact
         to="/"
         text="Home"
-        img={Img2}
+        imgSrc={Img2}
       />
       <NavBarLink
         to="/getting_started"
@@ -175,6 +177,11 @@ class App extends React.Component {
           to="/navpagecontainer"
           text="NavPageContainer"
           icon={<i className="icons10-columns"></i>}
+        />
+        <NavBarLink
+          to="/splashscreen"
+          text="SplashScreen"
+          icon={<i className="icons10-window"></i>}
         />
       </NavBarSubMenu>
 
@@ -215,6 +222,7 @@ class App extends React.Component {
         <Route path='/navbarlink' element={<NavBarLinkDocs/>} />
         <Route path='/navbarsubmenu' element={<NavBarSubMenuDocs/>} />
         <Route path='/navpagecontainer' element={<NavPageContainerDocs/>} />
+        <Route path='/splashscreen' element={<SplashScreenDocs/>} />
 
         <Route path='/accordion' element={<AccordionDocs/>} />
         <Route path='/alerts' element={<AlertDocs/>} />

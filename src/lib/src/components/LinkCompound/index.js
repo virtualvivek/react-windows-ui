@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const LinkCompound = (props) => {
 
   const setFocused = () => {
     return props.focused ? "focused" : "";
   }
-  const setImg = () =>{
-    return props.img ? <img src={props.img} alt={props.imgAlt}/> : <></>;
+  const setImgSource = () => {
+    return props.imgSrc ? <img src={props.imgSrc} alt={props.imgAlt}/> : <></>;
   }
   return (
     <Link
@@ -23,7 +23,7 @@ const LinkCompound = (props) => {
       onClick={props.onClick}>
         <div className="app-link-compound-container">
           {props.icon}
-          {setImg()}
+          {setImgSource()}
           <div className="app-link-compound-subcontainer">
             <span>{props.title}</span>
             <p>{props.subtitle}</p>
