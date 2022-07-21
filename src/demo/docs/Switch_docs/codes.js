@@ -16,9 +16,28 @@ const SwitchNoLabelUsageCode =
   defaultChecked={true}
 />`;
 
+const SwitchLabelFixedWidthUsageCode =
+`<Switch
+  labelOn="On"
+  labelOff="Off"
+  labelFixedWidth={40}
+  defaultChecked={true}
+/>`;
+
+const SwitchLabelPositionStartUsageCode =
+`<Switch
+  labelOn="On"
+  labelOff="Off"
+  labelFixedWidth={40}
+  labelPosition={"start"}
+  defaultChecked={true}
+/>`;
+
 
 export {
   SwitchImportCode,
   SwitchUsageCode,
-  SwitchNoLabelUsageCode
+  SwitchNoLabelUsageCode,
+  SwitchLabelFixedWidthUsageCode,
+  SwitchLabelPositionStartUsageCode
 }

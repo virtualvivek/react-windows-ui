@@ -22,14 +22,26 @@ const PropsView = () => {
         <tr>
           <td><p className="app-code">labelOn</p></td>
           <td>string</td>
-          <td>'On'</td>
+          <td>"On"</td>
           <td>Set's Switch label on</td>
         </tr>
         <tr>
           <td><p className="app-code">labelOff</p></td>
           <td>string</td>
-          <td>'Off'</td>
+          <td>"Off"</td>
           <td>Set's Switch label off</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">labelFixedWidth</p></td>
+          <td>integer</td>
+          <td>default</td>
+          <td>Set's Switch label with a fixed width</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">labelPosition</p></td>
+          <td>"start" | "end"</td>
+          <td>"end"</td>
+          <td>Set's Switch label position</td>
         </tr>
         <tr>
           <td><p className="app-code">disabled</p></td>

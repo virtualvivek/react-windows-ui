@@ -18,22 +18,25 @@ const DialogUsageCode =
 
 const DialogConfirmUsageCode =
 `<Dialog
-  style={{padding: 10}}
-  isVisible={this.state.showDialogConfirm}
-  onBackdropPress={this.toggleDialogConfirm}>
-    <h2 className="m-tb-10">Dialog Confirm</h2>
-    <p>Are you feel good today?</p>  
-    <div style={{display:'flex', justifyContent:'flex-end'}}>
-      <Button
-        value="Cancel"
-        type="danger"
-        onClick={this.toggleDialogConfirm}/>
-      <div className="app-space-15"></div>
-      <Button
-        value="OK"
-        type="primary"
-        onClick={this.toggleDialogConfirm}/>
-    </div>
+  isVisible={true}
+  style={{padding:20}}
+  onBackdropPress={() => {}}>
+  <h2 style={{margin: 0}}>Dialog Confirm</h2>
+  <p style={{margin: "0 0 40px 0"}}>Are you feel good today?</p>  
+  <div style={{display: "flex", justifyContent: "center"}}>
+    <Button
+      style={{flex: "auto"}}
+      value="Confirm"
+      type="primary"
+      onClick={() => {}}
+    />
+    <div className="app-space-15"></div>
+    <Button
+      style={{flex: "auto"}}
+      value="Cancel"
+      onClick={() => {}}
+    />
+  </div>
 </Dialog>`;
 
 export {

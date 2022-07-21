@@ -16,7 +16,7 @@ const PropsView = () => {
           <tr>
             <td><p className="app-code">to</p></td>
             <td>href link string</td>
-            <td>'#'</td>
+            <td>"#"</td>
             <td>Set's NavBarItem  'to/' prop</td>
           </tr>
           <tr>
@@ -39,14 +39,14 @@ const PropsView = () => {
           </tr>
           <tr>
             <td><p className="app-code">imgAlt</p></td>
-            <td>'image'</td>
-            <td>'color-primary'</td>
+            <td>"image"</td>
+            <td>"color-primary"</td>
             <td>Set's NavBarItem image alt text</td>
           </tr>
           <tr>
             <td><p className="app-code">imgBorderRadius</p></td>
             <td>CSS Property</td>
-            <td>'4px'</td>
+            <td>"4px"</td>
             <td>Set's NavBarItem image border radius</td>
           </tr>
           <tr>

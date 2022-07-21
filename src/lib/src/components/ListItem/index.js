@@ -2,6 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ListItem = (props) => {
+
+  const renderEndComp = () => {
+    if(props.ItemEndComponent) {
+      return <button>Hi</button>
+    }
+  }
+
   return (
     <li className="app-list-item">
       <Link
@@ -21,10 +28,11 @@ const ListItem = (props) => {
             <span className="app-list-title">{props.title}</span>
             <p className="app-list-subtitle">{props.subtitle}</p>
           </div>
-          <div>
+          {/* <div>
             { props.ItemEndComponent && (<>{props.ItemEndComponent}</>) }
-          </div>
+          </div> */}
       </Link>
+      { props.ItemEndComponent && (<>{props.ItemEndComponent}</>) }
     </li>
   )
 }

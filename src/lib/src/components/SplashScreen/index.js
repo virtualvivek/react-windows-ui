@@ -17,17 +17,17 @@ const SplashScreen = (props) => {
       }
       className="app-splash-screen app-flex-center">
       {props.logo && (<>{props.logo}</>)}
-      <h1 className="color-white">{props.title}</h1>
+      {props.title && (<h1 className="color-white">{props.title}</h1>)}
       {props.subtitle && (<h3 className="color-white">{props.subtitle}</h3>)}
     </div>
   )
 }
 
 SplashScreen.defaultProps = {
-  isVisible: false,
   title: "",
   subtitle: "",
-  duration: 1000
+  duration: 0,
+  isVisible: false,
 }
 
 export default SplashScreen;

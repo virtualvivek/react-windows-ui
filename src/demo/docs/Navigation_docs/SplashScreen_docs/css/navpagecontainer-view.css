@@ -21,9 +21,8 @@
     text-align: right;
     font-weight: bold;
     letter-spacing: 2px;
-    margin: 4px 4px 0 4px;
-    border: 1px solid;
     border-bottom: none;
+    margin: 4px 4px 0 4px;
 }
 
 .demo-splash-navpagecontainer-page {
@@ -43,7 +42,7 @@
     position: relative;
 }
 
-.demo-splash-navpagecontainer-view i {
+.demo-splash-navpagecontainer-view i.icons10-shutdown {
     width: 100%;
     color: #fff;
     text-align: center;

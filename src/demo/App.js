@@ -97,7 +97,7 @@ class App extends React.Component {
         //duration={1200}
         isVisible={this.state.showSplash}
         title={"react-windows-ui"}
-        logo={<img src={Img2} width={100} height={100} alt="Splash"/>}
+        logo={<img src={Img2} width={100} height={100} alt="SplashScreen"/>}
       />
 
       <AppTheme

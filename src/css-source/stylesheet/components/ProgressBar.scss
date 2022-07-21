@@ -50,9 +50,9 @@
   }
 }
 
-body.dark-theme .app-progress-container .app-progress span {
-  background-color: var(--PrimaryColorLight);
-}
+// body.dark-theme .app-progress-container .app-progress span {
+//   background-color: var(--PrimaryColorLight);
+// }
 
 @mixin progress-bar-mobile() {
   .app-progress-container {

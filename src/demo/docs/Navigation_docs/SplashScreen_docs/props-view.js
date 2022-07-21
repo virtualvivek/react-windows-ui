@@ -14,37 +14,40 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">hasPadding</p></td>
-          <td>boolean</td>
-          <td>true</td>
-          <td>Set's NavPageContainer default horizontal padding,
-            <br/>set to false if you want to render component with 100% view width.
-            <br/>If <span className="app-code">false</span> use <b>{`<NavPageContainerInner />`}</b> to render child component with padding.
-          </td>
-        </tr>
-        <tr>
-          <td><p className="app-code">animateTransition</p></td>
+          <td><p className="app-code">isVisible</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Animate NavPageContainer on transition.</td>
+          <td>Set's SplashScreen visibility.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">title</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Set's SplashScreen title.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">subtitle</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Set's SplashScreen subtitle.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">logo</p></td>
+          <td>React Node | img</td>
+          <td>null</td>
+          <td>Set's SplashScreen logo.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">duration</p></td>
+          <td>integer</td>
+          <td>0</td>
+          <td>Set's SplashScreen additional delay before page loads.</td>
         </tr>
         <tr>
           <td><p className="app-code">backgroundColor</p></td>
           <td>CSS Property</td>
-          <td>system default</td>
-          <td>Set's NavPageContainer backgroundColor.</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">style</p></td>
-          <td>CSS Style Object</td>
-          <td>[ ]</td>
-          <td>Set's NavPageContainer container styles.</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">scrollTopOnMount</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's NavPageContainer Scroll to top on mount.</td>
+          <td>Primary Color</td>
+          <td>Set's SplashScreen background color.</td>
         </tr>
       </tbody>
     </table>

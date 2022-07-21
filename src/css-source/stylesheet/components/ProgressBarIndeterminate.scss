@@ -29,10 +29,10 @@
   }
 }
 
-body.dark-theme .app-progress-indeterminate.animate div.progress-bar {
-  background-image: radial-gradient(
-    circle at 50% 50%, var(--PrimaryColorLight) 10%, transparent 90%);
-}
+// body.dark-theme .app-progress-indeterminate.animate div.progress-bar {
+//   background-image: radial-gradient(
+//     circle at 50% 50%, var(--PrimaryColorLight) 10%, transparent 90%);
+// }
 
 @mixin progress-bar-indeterminate-mobile() {
   .app-progress-indeterminate {

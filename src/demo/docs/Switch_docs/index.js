@@ -2,7 +2,8 @@ import React from 'react'
 import { NavPageContainer, Switch } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { SwitchImportCode,SwitchUsageCode,SwitchNoLabelUsageCode } from './codes'
+import { SwitchImportCode,SwitchUsageCode,SwitchNoLabelUsageCode,
+        SwitchLabelFixedWidthUsageCode, SwitchLabelPositionStartUsageCode } from './codes'
 import PropsView from './props-view'
 
 class SwitchDocs extends React.Component {
@@ -37,10 +38,11 @@ render() {
     <h2>Usage</h2>
 
     <Switch
-      defaultChecked={true}
       labelOn="On"
       labelOff="Off"
       onChange={() => {}}
+      labelFixedWidth={50}
+      defaultChecked={true}
     />
 
     &nbsp;&nbsp;&nbsp;&nbsp;
@@ -63,7 +65,7 @@ render() {
 
   
     <div className="app-hr"></div>
-    <h2>Switch <p className="app-code">with no label</p> :</h2>
+    <h2>Switch with <p className="app-code">no label</p> :</h2>
 
     <p>To remove label just pass prop <b>{'label={false}'}</b>:</p>
 
@@ -81,6 +83,40 @@ render() {
      {SwitchNoLabelUsageCode}
     </SyntaxHighlighter>
 
+    <div className="app-hr"></div>
+    <h2>Switch with <p className="app-code">label fixed width</p> :</h2>
+
+    <label class="app-switch">
+      <input type="checkbox" checked="checked" />
+      <div class="app-switch-view"></div>
+      <span class="app-switch-label-end" data-on="On" data-off="Off" style={{width: 150, backgroundColor: "var(--color_link_bg_active)"}}>
+      </span>
+    </label>
+    <br/><br/>
+
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+     {SwitchLabelFixedWidthUsageCode}
+    </SyntaxHighlighter>
+
+    <div className="app-hr"></div>
+    <h2>Switch with <p className="app-code">label position "start"</p> :</h2>
+    <Switch
+      onChange={() => {}}
+      labelFixedWidth={28}
+      labelPosition={"start"}
+      defaultChecked={true}
+    />
+    <br/><br/>
+
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+     {SwitchLabelPositionStartUsageCode}
+    </SyntaxHighlighter>
 
     <h2>Props</h2>
     <PropsView />
