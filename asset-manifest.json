@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-windows-ui/static/css/main.da14c5ce.chunk.css",
-    "main.js": "/react-windows-ui/static/js/main.39103c50.chunk.js",
-    "main.js.map": "/react-windows-ui/static/js/main.39103c50.chunk.js.map",
-    "runtime-main.js": "/react-windows-ui/static/js/runtime-main.f20d92f6.js",
-    "runtime-main.js.map": "/react-windows-ui/static/js/runtime-main.f20d92f6.js.map",
-    "static/js/2.29edfa69.chunk.js": "/react-windows-ui/static/js/2.29edfa69.chunk.js",
-    "static/js/2.29edfa69.chunk.js.map": "/react-windows-ui/static/js/2.29edfa69.chunk.js.map",
+    "main.css": "/react-windows-ui/static/css/main.09a18454.chunk.css",
+    "main.js": "/react-windows-ui/static/js/main.29e4eb43.chunk.js",
+    "main.js.map": "/react-windows-ui/static/js/main.29e4eb43.chunk.js.map",
+    "runtime-main.js": "/react-windows-ui/static/js/runtime-main.5f25878d.js",
+    "runtime-main.js.map": "/react-windows-ui/static/js/runtime-main.5f25878d.js.map",
+    "static/js/2.682240af.chunk.js": "/react-windows-ui/static/js/2.682240af.chunk.js",
+    "static/js/2.682240af.chunk.js.map": "/react-windows-ui/static/js/2.682240af.chunk.js.map",
     "index.html": "/react-windows-ui/index.html",
-    "static/css/main.da14c5ce.chunk.css.map": "/react-windows-ui/static/css/main.da14c5ce.chunk.css.map",
-    "static/js/2.29edfa69.chunk.js.LICENSE.txt": "/react-windows-ui/static/js/2.29edfa69.chunk.js.LICENSE.txt",
+    "static/css/main.09a18454.chunk.css.map": "/react-windows-ui/static/css/main.09a18454.chunk.css.map",
+    "static/js/2.682240af.chunk.js.LICENSE.txt": "/react-windows-ui/static/js/2.682240af.chunk.js.LICENSE.txt",
     "static/media/5.8138f9b1.jpg": "/react-windows-ui/static/media/5.8138f9b1.jpg",
     "static/media/anim_avatar.5df7499e.jpeg": "/react-windows-ui/static/media/anim_avatar.5df7499e.jpeg",
     "static/media/home.css": "/react-windows-ui/static/media/backdrop.736da5dc.jpg",
@@ -19,9 +19,9 @@
     "static/media/mountain.b79b96f0.jpg": "/react-windows-ui/static/media/mountain.b79b96f0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f20d92f6.js",
-    "static/js/2.29edfa69.chunk.js",
-    "static/css/main.da14c5ce.chunk.css",
-    "static/js/main.39103c50.chunk.js"
+    "static/js/runtime-main.5f25878d.js",
+    "static/js/2.682240af.chunk.js",
+    "static/css/main.09a18454.chunk.css",
+    "static/js/main.29e4eb43.chunk.js"
   ]
 }
