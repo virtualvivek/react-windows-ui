@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 export interface LinkCompoundProps {
   to ?: string;
-  img ?: ReactNode;
+  imgSrc ?: string | any;
   imgAlt ?: string;
   icon ?: ReactNode;
   type ?: "default" | "border";

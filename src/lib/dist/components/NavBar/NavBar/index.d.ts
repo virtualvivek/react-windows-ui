@@ -2,10 +2,8 @@ import React, { ReactNode } from 'react'
 
 export interface NavBarProps {
   title ?: string;
-  titleShort ?: string;
   shadowOnScroll ?: boolean;
-  mobileHasIcons ?: boolean;
-  showThemeSwitch ?: boolean;
+  titleBarMobile ?: ReactNode;
   goBack ?: () => void;
   children ?: ReactNode;
 }

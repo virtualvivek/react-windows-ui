@@ -6,7 +6,8 @@ import {
     NavPageContainerRight,
     NavPageContainerInner,
     NavSearchBox,
-    NavSearchSuggestion } from './components/NavBar'
+    NavSearchSuggestion,
+    NavThemeSwitcher } from './components/NavBar'
 
 import Accordion from './components/Accordion'
 import AppTheme from './components/AppTheme'
@@ -42,7 +43,6 @@ import Select from './components/Select'
 import SelectBox from './components/SelectBox'
 import StickyHeader from './components/StickyHeader'
 import Switch from './components/Switch'
-import SwitchDayNight from './components/SwitchDayNight'
 import TableView from './components/TableView'
 import View from './components/View'
 
@@ -56,6 +56,7 @@ export {
     NavPageContainerInner,
     NavSearchBox,
     NavSearchSuggestion,
+    NavThemeSwitcher,
 
     Accordion,
     AppTheme,
@@ -91,7 +92,6 @@ export {
     SelectBox,
     StickyHeader,
     Switch,
-    SwitchDayNight,
     TableView,
     View
 }
