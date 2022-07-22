@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, ListItem, Button } from '../../../lib/src'
+import { NavPageContainer, ListItem } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { ListItemImportCode, ListItemUsageCode, ListItemImageUsageCode,
@@ -33,17 +33,17 @@ render() {
     <ListItem
       title="Contacts"
       subtitle="5.6 MB"
-      ItemEndComponent={<p className="app-list-info">installed</p>}
+      ItemEndComponent={<p>installed</p>}
     />
     <ListItem
       title="News"
       subtitle="12.0 MB"
-      ItemEndComponent={<p className="app-list-info">install</p>}
+      ItemEndComponent={<p>install</p>}
     />
     <ListItem
       title="Payments"
       subtitle="24 MB"
-      ItemEndComponent={<p className="app-list-info">install</p>}
+      ItemEndComponent={<p>installed</p>}
     />
 
     <SyntaxHighlighter
@@ -64,7 +64,7 @@ render() {
       imgAlt="avatar1"
       title="Magenta Riddim"
       subtitle="5.6 MB"
-      ItemEndComponent={<Button type='danger-outline' value="Delete"/>}
+      ItemEndComponent={<button style={{width: "50px", height: "100%"}}>Button</button>}
     />
     <ListItem
       imgSrc={Img3}
@@ -72,7 +72,7 @@ render() {
       imgAlt="avatar2"
       title="Different World"
       subtitle="12.0 MB"
-      info="stream now"
+      ItemEndComponent={<button style={{width: "50px", height: "100%"}}>Button</button>}
     />
     <ListItem
       imgSrc={Img1}
@@ -80,7 +80,7 @@ render() {
       imgAlt="avatar3"
       title="La Familia"
       subtitle="24 MB"
-      info="stream now"
+      ItemEndComponent={<button style={{width: "50px", height: "100%"}}>Button</button>}
     />
    
 

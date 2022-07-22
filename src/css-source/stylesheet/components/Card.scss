@@ -1,11 +1,11 @@
 .app-card-default {
   @extend .transition-all-400ms;
   &.focused {
-    @extend .background-color-grey-light;
+    background-color: var(--color_grey_light);
   }
   &.hoverable {
     &:hover {
-      @extend .background-color-grey-light;
+      background-color: var(--color_grey_light);
     }
   }
 }

@@ -75,7 +75,9 @@ render() {
 
   
     <div className="app-hr"></div>
-    <h2>CommandBarButton <p className="app-code">usage</p> :</h2>
+    <h1>CommandBarButton</h1>
+    <h2>Usage</h2>
+
     <p>You can provide <b>onClick</b> listener to make it as a regular button or if 
     you provide <br/><b>data</b> it work as a dropdown & if provide both <b>onClick</b> along with <b>data </b>
     it works as a split button.</p>

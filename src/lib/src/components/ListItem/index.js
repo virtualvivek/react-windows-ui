@@ -1,21 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const ListItem = (props) => {
 
-  const renderEndComp = () => {
-    if(props.ItemEndComponent) {
-      return <button>Hi</button>
+  const [itemEndActive, setItemEndActive] = useState(false);
+
+  const onItemEndHover = () => {
+    if (props.ItemEndComponent && props.ItemEndComponent.type !== "p") {
+      setItemEndActive(true);
     }
   }
 
+  const onItemEndUnHover = () => { setItemEndActive(false); }
+
   return (
-    <li className="app-list-item">
+    <li className={itemEndActive ? "app-list-item pointer-none" : "app-list-item"}>
       <Link
         to={props.to}
-        style={
-          props.borderBottom ? { borderBottom: "" } : { borderBottom: "0" }
-            }>
+        style={props.borderBottom ? { borderBottom: "" } : { borderBottom: "0" }}>
           <img
             src={ props.imgSrc }
             alt={ props.imgAlt }
@@ -28,11 +30,13 @@ const ListItem = (props) => {
             <span className="app-list-title">{props.title}</span>
             <p className="app-list-subtitle">{props.subtitle}</p>
           </div>
-          {/* <div>
-            { props.ItemEndComponent && (<>{props.ItemEndComponent}</>) }
-          </div> */}
       </Link>
-      { props.ItemEndComponent && (<>{props.ItemEndComponent}</>) }
+      <div
+        style={{flex: 0.2}}
+        onMouseEnter={onItemEndHover}
+        onMouseLeave={onItemEndUnHover}>
+        { props.ItemEndComponent && (<>{props.ItemEndComponent}</>) }
+      </div>
     </li>
   )
 }

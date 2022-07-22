@@ -5,7 +5,7 @@ const ListItemUsageCode =
 `<ListItem
   title="Contacts"
   subtitle="5.6 MB"
-  ItemEndComponent={<p className="app-list-info">installed</p>}
+  ItemEndComponent={<p>installed</p>}
 />`;
 
 const ListItemImageUsageCode =
@@ -15,7 +15,7 @@ const ListItemImageUsageCode =
   imgAlt="avatar1"
   title="Magenta Riddim"
   subtitle="5.6 MB"
-  ItemEndComponent={<Button type='danger-outline' value="Delete"/>}
+  ItemEndComponent={<button style={{width: "50px", height: "100%"}}>Button</button>}
 />`;
 
 const ListItemImageRoundUsageCode =
@@ -24,7 +24,6 @@ const ListItemImageRoundUsageCode =
   imgAlt="avatar1"
   title="User 1"
   subtitle="Web Developer"
-  info="online"
 />`;
 
 

@@ -32,7 +32,7 @@ const TableView = (props) => {
         <tr className="app-table-tr">
         {props.columns.map((item, index) => (
           <th
-            className={ item.sortable === false ? "no-sortable" : "" }
+            className={ item.sortable === false ? "no-sortable" : "sortable" }
             align="left"
             key={index}
             onClick={() => alphaOrder(index)}>

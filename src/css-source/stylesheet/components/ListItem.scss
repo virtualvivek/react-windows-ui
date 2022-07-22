@@ -1,23 +1,32 @@
 .app-list-item {
+  @extend .transition-all-400ms;
+
   margin: 0;
   padding: 0;
+  border-bottom: 1px solid var(--color_grey_light);
+
+  &:hover:not(.pointer-none) {
+    background-color: var(--color_grey_light);
+  }
+  &:active:not(.pointer-none) {
+    transition: 0.04s ease;
+    transform: scale(0.998, 0.998);
+    background-color: var(--color_link_bg_hover);
+  }
 
   a {
     @extend .user-select-none;
-    @extend .transition-all-400ms;
     @extend .tap-highlight-none;
 
+    flex: 0.8;
     padding: 12px 10px;
     align-items: center;
-    border-bottom: 1px solid var(--color_grey_light);
 
-    &:hover {
-      @extend .background-color-grey-light;
-    }
-    &:active {
-      @extend .background-color-link-bg-hover;
-      transition: 0.04s ease;
-      transform: scale(0.998, 0.998);
+    &:hover { background-color: unset; }
+    &:active { background-color: unset; }
+
+    &.pointer-none {
+      pointer-events: none;
     }
   }
   img {
@@ -38,13 +47,8 @@
       line-height: 2;
       font-size: 14px;
     }
-    &.app-list-info {
-      flex: none;
-      font-size: 15px;
-    }
   }
   .app-list-item-container {
-    width: 75%;
     height: fit-content;
     display: inline-grid;
     align-items: center;
@@ -67,11 +71,9 @@
 }
 
 @mixin list-item-mobile() {
-  .app-list-item {
-    a:not(:active) {
-      &:hover {
-        background: transparent;
-      }
+  .app-list-item:not(:active) {
+    &:hover {
+      background: transparent;
     }
   }
 }
