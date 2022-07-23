@@ -12,9 +12,9 @@
     "directory": "src/cra-template"
   },
   "keywords": [
-    "windows-ui",
     "react",
     "create-react-app",
+    "windows-ui",
     "template"
   ],
   "author": "Vivek Verma",
