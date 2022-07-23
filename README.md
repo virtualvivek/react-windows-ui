@@ -118,12 +118,9 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 Here are some useful links.
 
 * [NPM CRA-Template](https://www.npmjs.com/package/cra-template-windows-ui)
-* [NPM React-Windows-UI Lib](https://www.npmjs.com/package/react-windows-ui)
+* [NPM React-Windows-UI Library](https://www.npmjs.com/package/react-windows-ui)
 
 
-<a href="https://www.npmjs.com/package/react-windows-ui">
-  <img src="https://img.shields.io/badge/package-npm-red.svg?style=for-the-badge&logo=npm&color=CB3837" alt="npmJS" />
-</a>
 
 # Find this library useful? :heart:
 Support it by joining [**stargazers**](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
