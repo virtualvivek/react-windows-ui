@@ -21,11 +21,6 @@
     <img src="https://img.shields.io/npm/v/react-windows-ui?color=31b57e&label=version&logo=git&logoColor=ffffff&style=flat-square"
       alt="Version" />
   </a>
-	
-  <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">
-    <img src="https://img.shields.io/badge/Demo & Docs-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
-      alt="Demo & Docs" />
-  </a>
   
    <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
     <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat-square&logo=css3&color=1572B6&label=react-windows-ui.min.css" alt="react-windows-ui.min.css" />
@@ -40,12 +35,15 @@
 https://virtualvivek.github.io/react-windows-ui/
 
 # Getting Started
+It will setup everything and then don't require below manual method.
 
 ```js
 npx create-react-app MyAppName --template windows-ui
 ```
 
 # Manual Setup
+If you don't want to go with the above `create-react-app` then use the below manual method.
+
 ```ruby
 npm install react-windows-ui
 ```
@@ -107,52 +105,21 @@ $ npm start
 ```
 
 
-
 # RTL Support
 Distribute layout direction from Right to Left.
 ```js
 // include rtl styles at some point, probably during your bootstraping
-...
+
 import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 ```
 
 
 # Links
+Here are some useful links.
 
-<table>
-<thead>
-<tr>
-  <th align="left">Name</th>
-  <th align="left">Details</th>
-  <th align="left">Link</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Example Codes</td>
-  <td>Components implementation <code>demo</code></td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo">Example LINK</a></td>
-</tr>
-<tr>
-  <td>Library Source Directory</td>
-  <td>Folder publish to <code>npm</code></td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib">Library LINK</a></td>
-</tr>
-<tr>
-  <td>Library SCSS Source</td>
-  <td>Style <code>scss</code> source code</td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source/stylesheet">SCSS LINK</a></td>
-</tr>
-<tr>
-  <td>TypeScript Type Definitions</td>
-  <td>Typescript <code>index.d.ts</code> import file</td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/src/index.d.ts">D.TS LINK</a></td>
-</tr>
-</tbody>
-</table>
+* [NPM CRA-Template](https://www.npmjs.com/package/cra-template-windows-ui)
+* [NPM React-Windows-UI Lib](https://www.npmjs.com/package/react-windows-ui)
 
-
----
 
 
 # Find this library useful? :heart:
