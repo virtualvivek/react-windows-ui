@@ -22,63 +22,64 @@
       alt="Version" />
   </a>
 	
-  <a href="https://github.com/virtualvivek/react-windows-ui-boilerplate">
-    <img src="https://img.shields.io/badge/Boilerplate-template-green.svg?color=61DAFB&style=flat-square&logo=React"
-      alt="Boilerplate" />
-  </a>
-	
-  <br/>	
-  
   <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">
     <img src="https://img.shields.io/badge/Demo & Docs-Here-green.svg?color=00C244&style=flat-square&logo=PyTorchLightning"
       alt="Demo & Docs" />
   </a>
-	
-  <a href="https://github.com/virtualvivek/react-windows-ui">
-    <img src="https://img.shields.io/badge/github-repository-green.svg?style=flat-square&logo=github&color=5a6a6b"
-      alt="Github Repo" />
+  
+   <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+    <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat-square&logo=css3&color=1572B6&label=react-windows-ui.min.css" alt="react-windows-ui.min.css" />
   </a>
    
 </p>
 
 <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="652" /></p></a>
 
-<h1 align="center">Adaptive UI</h1>
-
-<a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_adaptive.gif" width="652" /></p></a>
 
 # Demo ⚡
 https://virtualvivek.github.io/react-windows-ui/
 
-# Installation
-```ruby
-$ npm install react-windows-ui
-```
-
 # Getting Started
 
+```js
+npx create-react-app MyAppName --template windows-ui
+```
+
+# Manual Setup
+```ruby
+npm install react-windows-ui
+```
 ```js
 // Be sure to include styles at some point, probably during your bootstraping
 import 'react-windows-ui/config/app-config.css'
 import 'react-windows-ui/dist/react-windows-ui.min.css'
 import 'react-windows-ui/icons/fonts/fonts.min.css'
 ```
+# Configuration
 
-### app-config
-
-‣ `app-config.css` file contains the `PrimaryColor`, `Fontfamily` used by the app.<br>
-‣ You can import default `app-config` using this file <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/config/app-config.css">app-config.css</a><br>
-_OR_ <br>
-Create your own like this:
-
+**app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br>
+You can either import it from <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
+OR <br>
+Create your own like this
+<details>
+  <summary><b>app-config.css</b></summary><br>
+  
 ```css
 :root {
-  --PrimaryColor: #6632a8;  /* Change color you like */
+  --PrimaryColor: #0078D7; /* Change of your choice */
+  --PrimaryColorLight: #47aeff;  /* Lighter version of --PrimaryColor for DarkMode */
 }
 body {
-  font-family: "Segoe UI";  /* Change fontfamily you like */
+  font-family: "Segoe UI";
+}
+::selection {
+  color: #ffffff;
+  background-color: var(--PrimaryColor);
 }
 ```
+</details>
+
+
 
 # Usage
 
@@ -94,33 +95,18 @@ const App = () => (
 ```
 
 # [Boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
-<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_boilerplate_screen.JPG" width="800" />
-
-You can initialize you Repo with this **`Template`**: <br>
-<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_template_boilerplate.JPG" width="650" />
-
-OR <br>
-**Clone as a Repository:**
-[virtualvivek/react-windows-ui-boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
+<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_boilerplate_screen.JPG" width="540" />
 
 
-## Run Demo Locally
-```ruby
+# Run Demo Locally
+```php
 $ git clone https://github.com/virtualvivek/react-windows-ui.git
 $ cd react-windows-ui
 $ npm install
 $ npm start
 ```
 
-<!-- <h1 align="center">Windows 11 Styles.css</h1>
-<p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_promo_w11.png" width="500" /></p>
 
-```js
-// include windows 11 styles at some point, probably during your bootstraping
-...
-import 'react-windows-ui/dist/react-windows-ui-sunvalley.min.css'
-...
-``` -->
 
 # RTL Support
 Distribute layout direction from Right to Left.
@@ -128,7 +114,6 @@ Distribute layout direction from Right to Left.
 // include rtl styles at some point, probably during your bootstraping
 ...
 import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
-...
 ```
 
 
@@ -168,24 +153,6 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 
 
 ---
-
-
-# Details
-
-
-<a href="https://github.com/virtualvivek/react-windows-ui">
-  <img src="https://img.shields.io/badge/repository-github-red.svg?style=for-the-badge&logo=github&color=5a6a6b" alt="github" />
-</a>
-<br>
-<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=for-the-badge&logo=windows&color=1572B6&label=react-windows-ui.min.css"
-       alt="react-windows-ui.min.css" />
-</a>
-<br>
-<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-  <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-rtl.min.css?style=for-the-badge&logo=LineageOS&color=167C80&label=react-windows-ui-rtl.min.css"
-       alt="react-windows-ui-rtl.min.css" />
-</a>
 
 
 # Find this library useful? :heart:
