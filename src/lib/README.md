@@ -49,9 +49,9 @@ npm install react-windows-ui
 ```
 ```js
 // Be sure to include styles at some point, probably during your bootstraping
-import 'react-windows-ui/config/app-config.css'
-import 'react-windows-ui/dist/react-windows-ui.min.css'
-import 'react-windows-ui/icons/fonts/fonts.min.css'
+import "react-windows-ui/config/app-config.css";
+import "react-windows-ui/dist/react-windows-ui.min.css";
+import "react-windows-ui/icons/fonts/fonts.min.css";
 ```
 
 # Configuration
@@ -119,7 +119,7 @@ import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 Here are some useful links.
 
 * [NPM CRA-Template](https://www.npmjs.com/package/cra-template-windows-ui)
-* [NPM React-Windows-UI Lib](https://www.npmjs.com/package/react-windows-ui)
+* [NPM React-Windows-UI Library](https://www.npmjs.com/package/react-windows-ui)
 
 
 
