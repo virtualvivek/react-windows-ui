@@ -1,6 +1,6 @@
 {
   "name": "cra-template-windows-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build full featured Windows fluent UI apps using reactjs.",
   "main": "index.js",
   "scripts": {

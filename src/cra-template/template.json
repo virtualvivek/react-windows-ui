@@ -1,6 +1,7 @@
 {
   "package": {
     "dependencies": {
+      "react-windows-ui": "^4.1.0",
       "react-router-dom": "^6.3.0",
       "web-vitals": "^2.1.4"
     },
