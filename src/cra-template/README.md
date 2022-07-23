@@ -4,9 +4,9 @@
 
 <h1 align="center">cra-template-windows-ui</h1>
 
-This is the official template for [react-windows-ui](https://github.com/virtualvivek/react-windows-ui).
+This is the official cra template for [react-windows-ui](https://github.com/virtualvivek/react-windows-ui).
 
-## **`For -v4.1.0`**
+## For **`react-windows-ui -v4.1.0`**
 
 # Getting Started
 
