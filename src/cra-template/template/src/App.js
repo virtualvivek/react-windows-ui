@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { AppTheme, SplashScreen, NavBar, NavBarLink, NavSearchSuggestion } from 'react-windows-ui'
-import Page0 from './pages/page0'
-import Page1 from './pages/page1'
-import Page2 from './pages/page2'
-import Img from './assets/mountain.jpg'
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AppTheme, SplashScreen, NavBar, NavBarLink, NavSearchSuggestion, NavThemeSwitcher } from "react-windows-ui";
+import Page0 from "./pages/page0";
+import Page1 from "./pages/page1";
+import Page2 from "./pages/page2";
+import Img from "./assets/mountain.jpg";
 
 const App = () => {
 
@@ -18,21 +18,26 @@ const App = () => {
     <Router basename="react-windows-ui">
 
       <SplashScreen
-        //duration={1000} // additionally adjust how long it takes after render
+        //duration={1000} /* Add additional delay before page loads */
         isVisible={splash}
-        title={"react-windows-ui-boilerplate"}
+        title={"App Name"}
       />
 
-      <AppTheme //added AppTheme to make app reactive with theme
-        scheme="system" // available props - 'light', 'dark' or 'system'
+      <AppTheme // To make app reactive with theme
+        scheme="system" // Available props - 'light', 'dark' or 'system'
       />
 
       <NavBar 
-        title="App Boilderplate"
-        shadowOnScroll={true}>
+        title="App Name"
+        shadowOnScroll={true}
+        titleBarMobile={
+          <div style={{display: "flex", justifyContent: "space-between", width: "calc(100% - 60px)"}}>
+            <span className="app-navbar-name">React-windows-ui</span>
+            <span className="app-navbar-name">Subtitle</span>
+          </div>}
+      >
 
         {/* Optional component - emphasizes navbar Search funtionality */}
-
         <NavSearchSuggestion
           placeholder="Search Your Pages.."
           tooltip="Search Tooltip"
@@ -42,6 +47,7 @@ const App = () => {
             {label: 'Page 2', link: '/page2'}
           ]}
         />
+        <NavThemeSwitcher/>
 
         <h1>Pages</h1>
         <div className="app-hr"></div>
@@ -50,7 +56,7 @@ const App = () => {
           to="/"
           exact={true}
           text="Home"
-          img={Img}
+          imgSrc={Img}
         />
 
         <NavBarLink
@@ -67,11 +73,11 @@ const App = () => {
 
       </NavBar>
 
-      <Switch>
-        <Route path="/" component={Page0}  exact />
-        <Route path="/page1" component={Page1} />
-        <Route path="/page2" component={Page2} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Page0/>}  exact />
+        <Route path="/page1" element={<Page1/>} />
+        <Route path="/page2" element={<Page2/>} />
+      </Routes>
 
     </Router>
   )
