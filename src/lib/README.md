@@ -35,7 +35,7 @@
 https://virtualvivek.github.io/react-windows-ui/
 
 # Getting Started
-It will setup everything and then don't require below manual method.
+It will `setup everything` and then don't require below manual method.
 
 ```js
 npx create-react-app MyAppName --template windows-ui
@@ -53,6 +53,7 @@ import 'react-windows-ui/config/app-config.css'
 import 'react-windows-ui/dist/react-windows-ui.min.css'
 import 'react-windows-ui/icons/fonts/fonts.min.css'
 ```
+
 # Configuration
 
 **app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br>
