@@ -17,11 +17,6 @@
     <img src="https://img.shields.io/npm/v/react-windows-ui?color=31b57e&label=version&logo=git&logoColor=ffffff&style=flat-square"
       alt="Version" />
   </a>
-	
-  <a href="https://github.com/virtualvivek/react-windows-ui-boilerplate">
-    <img src="https://img.shields.io/badge/Boilerplate-template-green.svg?color=61DAFB&style=flat-square&logo=React"
-      alt="Boilerplate" />
-  </a>
   
   <a href="https://www.npmjs.com/package/react-windows-ui" target="_blank">
     <img src="https://img.shields.io/badge/npm-package-green.svg?style=flat-square&logo=npm&color=CB3837"
@@ -41,21 +36,27 @@
 # Demo ⚡
 https://virtualvivek.github.io/react-windows-ui/
 
-
-# Installation
-```ruby
-$ npm install react-windows-ui
-```
-
 # Getting Started
+It will `setup everything` and then don't require below manual method.
 
 ```js
-// Be sure to include styles at some point, probably during your bootstraping
-import 'react-windows-ui/config/app-config.css'
-import 'react-windows-ui/dist/react-windows-ui.min.css'
-import 'react-windows-ui/icons/fonts/fonts.min.css'
+npx create-react-app MyAppName --template windows-ui
 ```
-## Configuration
+
+# Manual Setup
+If you don't want to go with the above `create-react-app` then use the below manual method.
+
+```ruby
+npm install react-windows-ui
+```
+```js
+// Be sure to include styles at some point, probably during your bootstraping
+import "react-windows-ui/config/app-config.css";
+import "react-windows-ui/dist/react-windows-ui.min.css";
+import "react-windows-ui/icons/fonts/fonts.min.css";
+```
+
+# Configuration
 
 **app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br>
 You can either import it from <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
@@ -78,7 +79,6 @@ body {
 }
 ```
 </details>
-
 
 
 # Usage
@@ -104,56 +104,21 @@ $ npm install
 $ npm start
 ```
 
-<!-- <h1 align="center">Windows 11 Styles.css</h1>
-<p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_promo_w11.png" width="500" /></p>
-
-```js
-// include windows 11 styles at some point, probably during your bootstraping
-...
-import 'react-windows-ui/dist/react-windows-ui-sunvalley.min.css'
-...
-``` -->
 
 # RTL Support
 Distribute layout direction from Right to Left.
 ```js
 // include rtl styles at some point, probably during your bootstraping
-...
+
 import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
-...
 ```
 
 
 # Links
+Here are some useful links.
 
-<table>
-<thead>
-<tr>
-  <th align="left">Name</th>
-  <th align="left">Details</th>
-  <th align="left">Link</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Example Codes</td>
-  <td>Components implementation <code>demo</code></td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/demo/">Example LINK</a></td>
-</tr>
-<tr>
-  <td>Library Source Directory</td>
-  <td>Folder publish to <code>npm</code></td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib">Library LINK</a></td>
-</tr>
-<tr>
-  <td>Library SCSS Source</td>
-  <td>Style <code>scss</code> source code</td>
-  <td><a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/source">SCSS LINK</a></td>
-</tr>
-</tbody>
-</table>
-
----
+* [NPM CRA-Template](https://www.npmjs.com/package/cra-template-windows-ui)
+* [NPM React-Windows-UI Lib](https://www.npmjs.com/package/react-windows-ui)
 
 
 <a href="https://www.npmjs.com/package/react-windows-ui">
