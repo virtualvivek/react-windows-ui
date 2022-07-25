@@ -51,3 +51,33 @@ package.json >
 npm run build:production
 
 ----------------------------------------------------------------------------
+
+===========================
+PUBLISHING ./lib
+===========================
+build:production
+	|
+README.md (at ./lib)
+	|
+package.json (at ./lib)
+	|
+Publish @Latest
+
+=============================
+react-windows-ui-boilerplace
+=============================
+Updating ./src
+	|
+README.md
+	|
+Release @Latest
+
+============================
+react-windows-ui
+============================
+package.json
+	|
+README.md
+	|
+Release @Latest
+
