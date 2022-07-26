@@ -37,7 +37,7 @@
 https://virtualvivek.github.io/react-windows-ui/
 
 # Getting Started
-It will `setup everything` and then don't require below manual method.
+It will `setup everything` and then don't require manual method.
 
 ```js
 npx create-react-app MyAppName --template windows-ui
