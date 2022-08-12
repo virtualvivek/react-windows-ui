@@ -116,7 +116,7 @@ $ npm start
 Distribute layout direction from Right to Left.
 ```js
 // include rtl styles at some point, probably during your bootstraping
-import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
+import "react-windows-ui/dist/react-windows-ui-rtl.min.css";
 ```
 
 
