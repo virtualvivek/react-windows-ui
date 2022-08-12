@@ -81,3 +81,12 @@ README.md
 	|
 Release @Latest
 
+-----------------------------
+
+Testing CRA Template Locally
+=============================
+
+cd ./react-windows-ui/src/cra-template
+
+npx create-react-app my-app --template file:./react-windows-ui/src/cra-template
+
