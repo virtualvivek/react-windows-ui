@@ -17,13 +17,14 @@
       alt="License: MIT" />
   </a>
   
-  <a href="https://github.com/virtualvivek/react-windows-ui/releases">
-    <img src="https://img.shields.io/npm/v/react-windows-ui?color=31b57e&label=version&logo=git&logoColor=ffffff&style=flat-square"
+  <a href="https://github.com/virtualvivek/react-windows-ui/releases/tag/v4.2.0">
+    <img src="https://img.shields.io/badge/version-4.2.0-darklime.svg?style=flat-square&color=31b57e&logo=git&logoColor=ffffff"
       alt="Version" />
   </a>
   
-   <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-    <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat-square&logo=css3&color=1572B6&label=react-windows-ui.min.css" alt="react-windows-ui.min.css" />
+  <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+    <img src="https://img.shields.io/badge/react&#8208windows&#8208ui.min.css-50.6 KB-darklime.svg?style=flat-square&color=1572B6&logo=css3&logoColor=ffffff"
+      alt="react-windows-ui.min.css" />
   </a>
    
 </p>
