@@ -37,14 +37,21 @@
 https://virtualvivek.github.io/react-windows-ui/
 
 # Getting Started
-It will `setup everything` and then don't require manual method.
+You can use `cra-template` to initialize project or use `boilerplate`.
 
 ```js
 npx create-react-app MyAppName --template windows-ui
 ```
 
-# Manual Setup
-If you don't want to go with the above `create-react-app` then use the below manual method.
+# [Boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
+<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_boilerplate_screen.JPG" width="400" />
+
+
+# Manual Installation
+If you don't want `cra` or `boilerplate` you can manually install it on your porject.
+<details>
+<summary><b>See Manual Method</b></summary>
+<br/>
 
 ```ruby
 npm install react-windows-ui
@@ -54,16 +61,18 @@ npm install react-windows-ui
 import "react-windows-ui/config/app-config.css";
 import "react-windows-ui/dist/react-windows-ui.min.css";
 import "react-windows-ui/icons/fonts/fonts.min.css";
-```
+``` 
+</details>
+
 
 # Configuration
 
-**app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br>
+**app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br/><br/>
 You can either import it from <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
-OR <br>
-Create your own like this
+Or `create` your own like this:
+
 <details>
-  <summary><b>app-config.css</b></summary><br>
+  <summary><b>app-config.css</b></summary><br/>
   
 ```css
 :root {
@@ -93,8 +102,6 @@ const App = () => (
   </>
 );
 ```
-# [Boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
-<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_boilerplate_screen.JPG" width="540" />
 
 # Run Demo Locally
 ```php
@@ -109,7 +116,6 @@ $ npm start
 Distribute layout direction from Right to Left.
 ```js
 // include rtl styles at some point, probably during your bootstraping
-
 import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
 ```
 
