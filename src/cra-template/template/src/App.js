@@ -15,7 +15,7 @@ const App = () => {
   }, [])
 
   return (
-    <Router basename="react-windows-ui">
+    <Router basename={'/'}>
 
       <SplashScreen
         //duration={1000} /* Add additional delay before page loads */
