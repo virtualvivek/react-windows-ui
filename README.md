@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="400" /> 
+  <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="280" /> 
 </p>
 
 <h1 align="center">react-windows-ui</h1>
@@ -104,11 +104,11 @@ const App = () => (
 ```
 
 # Run Demo Locally
-```php
-$ git clone https://github.com/virtualvivek/react-windows-ui.git
-$ cd react-windows-ui
-$ npm install
-$ npm start
+```cmd
+git clone https://github.com/virtualvivek/react-windows-ui.git
+cd react-windows-ui
+npm install
+npm start
 ```
 
 
