@@ -33,14 +33,14 @@
 <a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="580" alt="react-windows-ui" /></p></a>
 
 
-# Demo ⚡
+# Demo & Docs
 https://virtualvivek.github.io/react-windows-ui/
 
 # Getting Started
 You can use `cra-template` to initialize project or use `boilerplate`.
 
 ```js
-npx create-react-app MyAppName --template windows-ui
+npx create-react-app MyApp --template windows-ui
 ```
 
 # [Boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
