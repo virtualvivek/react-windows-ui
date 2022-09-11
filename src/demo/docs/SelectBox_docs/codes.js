@@ -1,8 +1,8 @@
 const SelectImportCode =
 `import { Select } from "react-windows-ui";`;
 
-const SelectBoxImportCode =
-`import { SelectBox } from "react-windows-ui";`;
+const SelectNativeImportCode =
+`import { SelectNative } from "react-windows-ui";`;
 
 const SelectUsageCode =
 `<Select
@@ -16,8 +16,8 @@ const SelectUsageCode =
   ]}
 />`;
 
-const SelectBoxUsageCode =
-`<SelectBox
+const SelectNativeUsageCode =
+`<SelectNative
   name="Some Name"
   data={[
     {label: 'red', value: 'red'},
@@ -31,6 +31,6 @@ const SelectBoxUsageCode =
 export {
   SelectImportCode,
   SelectUsageCode,
-  SelectBoxImportCode,
-  SelectBoxUsageCode
+  SelectNativeImportCode,
+  SelectNativeUsageCode
 }

@@ -1,11 +1,7 @@
 import React, { ReactNode } from 'react'
 
 export interface CommandBarProps {
-  zIndex ?: number;
-  position ?: string;
-  top ?: number | string;
-  margin ?: number | string;
-  showDropShadow ?: boolean;
+  backgroundColor ?: string;
   children ?: ReactNode;
 }
 declare const CommandBar: React.FC<CommandBarProps>

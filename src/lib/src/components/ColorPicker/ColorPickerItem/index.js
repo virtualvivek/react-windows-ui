@@ -4,6 +4,7 @@ const ColorPickerItem = (props) => {
   return (
     <label className="app-color-picker-item">
       <input
+        {...props}
         type="radio"
         className="item"
         name={props.name}

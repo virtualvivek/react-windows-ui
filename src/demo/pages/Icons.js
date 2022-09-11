@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, Link } from '../../lib/src'
+import { NavPageContainer } from '../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import './css/icons.css'
@@ -11,8 +11,10 @@ const Icons = () => {
 
       <p><b>react-windows-ui</b> comes with the free <b>font</b> set of icons. <br/>
       <br/>However if you need a wide variety of Fluent Icons please refer:<br/>
-      <Link to="/fluent_icons_external" target="_blank"><span><b>github.com/microsoft/fluentui-system-icons</b></span></Link>
-      
+
+      <a className="app-link" target="_blank" rel="noopener noreferrer" href="https://github.com/microsoft/fluentui-system-icons">
+        <b>github.com/microsoft/fluentui-system-icons</b>
+      </a>
       <h2>Import</h2>
       <SyntaxHighlighter
         language="javascript"

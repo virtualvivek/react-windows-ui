@@ -86,10 +86,10 @@ render() {
     <div className="app-hr"></div>
     <h2>Switch with <p className="app-code">label fixed width</p> :</h2>
 
-    <label class="app-switch">
+    <label className="app-switch">
       <input type="checkbox" checked="checked" />
-      <div class="app-switch-view"></div>
-      <span class="app-switch-label-end" data-on="On" data-off="Off" style={{width: 150, backgroundColor: "var(--color_link_bg_active)"}}>
+      <div className="app-switch-view"></div>
+      <span className="app-switch-label" data-on="On" data-off="Off" style={{width: 150, backgroundColor: "var(--color_link_bg_active)"}}>
       </span>
     </label>
     <br/><br/>

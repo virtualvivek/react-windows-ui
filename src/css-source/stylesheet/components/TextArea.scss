@@ -4,8 +4,8 @@
 
   width: auto;
   height: auto;
-  padding: 10px;
   cursor: auto;
+  padding: 10px;
   font-family: inherit;
   line-height: normal;
 
@@ -13,7 +13,7 @@
     border-color: #777;
   }
   &:focus {
-    @extend .outline-none;
+    outline: none;
     border-color: #666;
   }
 }

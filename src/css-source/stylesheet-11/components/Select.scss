@@ -1,4 +1,4 @@
-.app-select-styled.react {
+.app-select-menu.react {
   @extend .tap-highlight-none;
 
   .app-select-header {
@@ -18,7 +18,7 @@
     width: inherit;
     max-height: 250px;
     overflow-y: auto;
-    background: var(--color_nav);
+    background: var(--color_navbar_bg);
     position: absolute;
     top: 100%;
     margin: 5px 0;

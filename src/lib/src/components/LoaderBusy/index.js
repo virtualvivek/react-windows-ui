@@ -8,8 +8,8 @@ const LoaderBusy = (props) => {
   }
 
   const setSize = () => {
-    if(props.size === "medium") return " medium";
-    else if (props.size === "small") return " small";
+    if(props.size === "large") return " loader-lg";
+    else if (props.size === "small") return " loader-sm";
     else return "";
   }
 

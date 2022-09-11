@@ -14,64 +14,60 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
+          <td><p className="app-code">style</p></td>
+          <td>object</td>
+          <td>null</td>
+          <td>Set's CommandBar container style.</td>
+        </tr>
+
+        <br/><tr><td><b>CommandBar.Button</b></td><td></td><td></td><td></td></tr>
+        <tr>
           <td><p className="app-code">value</p></td>
           <td>string</td>
           <td>"Value"</td>
-          <td>Set's CmdBarButton text</td>
+          <td>Set's CommandBar text</td>
         </tr>
         <tr>
           <td><p className="app-code">icon</p></td>
-          <td>ReactNode | SVG | FontIcon</td>
+          <td>ReactNode | SVG | JSX</td>
           <td>null</td>
-          <td>Set's CmdBarButton text icon</td>
+          <td>Set's CommandBar text icon</td>
         </tr>
         <tr>
           <td><p className="app-code">onClick</p></td>
           <td>function</td>
           <td>null</td>
-          <td>Set's CmdBarButton onClick listener</td>
+          <td>Set's CommandBar onClick listener</td>
         </tr>
+
+
+        <br/><tr><td><b>CommandBar.Menu</b></td><td></td><td></td><td></td></tr>
         <tr>
-          <td><p className="app-code">valueDisabled</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's CmdBarButton value disabled prop</td>
+          <td><p className="app-code">menuDirection</p></td>
+          <td>"rightJustify" | "leftJustify"</td>
+          <td>"rightJustify"</td>
+          <td>Set's CommandBar value disabled prop</td>
         </tr>
+
+
+        <br/><tr><td><b>CommandBar.MenuItem</b></td><td></td><td></td><td></td></tr>
         <tr>
-          <td><p className="app-code">dataDisabled</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's CmdBarButton data disabled prop</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">data ❑</p></td>
-          <td>object</td>
-          <td>[ ]</td>
-          <td>Set's CmdBarButton dropdown data</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">data {'▶'} label</p></td>
+          <td><p className="app-code">label</p></td>
           <td>string</td>
           <td>null</td>
-          <td>Set's CmdBarButton data item label</td>
+          <td>Set's CommandBar data disabled prop</td>
         </tr>
         <tr>
-          <td><p className="app-code">data {'▶'} icon</p></td>
-          <td>ReactNode</td>
+          <td><p className="app-code">icon</p></td>
+          <td>ReactNode | SVG | JSX</td>
           <td>null</td>
-          <td>Set's CmdBarButton data item icon</td>
+          <td>Set's CommandBar text icon</td>
         </tr>
         <tr>
-          <td><p className="app-code">data {'▶'} onClick</p></td>
+          <td><p className="app-code">onClick</p></td>
           <td>function</td>
           <td>null</td>
-          <td>Set's CmdBarButton data item onClick listner</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">data {'▶'} link</p></td>
-          <td>link href string</td>
-          <td>'#'</td>
-          <td>Set's CmdBarButton data item link</td>
+          <td>Set's CommandBar onClick listener</td>
         </tr>
       </tbody>
     </table>

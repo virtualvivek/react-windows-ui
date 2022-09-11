@@ -1,6 +1,6 @@
 .app-navbar-name {
-  @extend .color-text-dark;
-  @extend .font-weight-500;
+  color: var(--color_text_dark);
+  font-weight: 500;
   @extend .transition-background-400ms;
 
   font-size: 16px;

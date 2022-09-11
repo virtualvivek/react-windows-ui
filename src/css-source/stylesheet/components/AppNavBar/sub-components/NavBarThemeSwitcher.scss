@@ -1,0 +1,95 @@
+.app-navbar-theme-switch {
+  display: grid;
+  cursor: pointer;
+  padding: 10px;
+  align-items: center;
+  flex-direction: row;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  -webkit-tap-highlight-color: transparent;
+
+  margin: 5px 20px;
+  border-radius: 6px;
+  position: relative;
+  filter: contrast(1.1);
+  background: var(--color_link_bg_hover);
+
+  &:hover {
+    background: var(--color_button);
+  }
+  &:active {
+    background: var(--color_link_bg_active);
+  }
+
+  span {
+    left: 2px;
+    width: 100px;
+    line-height: 1;
+    font-size: 14px;
+    user-select: none;
+    padding-left: 10px;
+    position: relative;
+  }
+}
+.app-navbar-theme-switch input {
+  display: none;
+}
+
+
+// Un-Checked Moon State
+.app-navbar-theme-switch input + .app-navbar-theme-switch-view {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  border-radius: 50%;
+  transform: scale(1) rotate(-2deg);
+  box-shadow: inset 7px -7px 0 0.09px #fff;
+  transition: box-shadow 0.5s ease 0s, transform 0.4s ease 0.1s;
+}
+.app-navbar-theme-switch input + .app-navbar-theme-switch-view:before {
+  content: "";
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: background 0.3s ease;
+}
+.app-navbar-theme-switch input + .app-navbar-theme-switch-view:after {
+  content: "";
+  width: 3.8px;
+  height: 3.8px;
+  border-radius: 50%;
+  margin: -2px 0 0 -2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  box-shadow:
+    0 -11px 0 var(--color_text_dark),
+    0 11px 0 var(--color_text_dark),
+      11px 0 0 var(--color_text_dark),
+      -11px 0 0 var(--color_text_dark),
+    7.2px 7.2px 0 var(--color_text_dark),
+    -7.2px 7.2px 0 var(--color_text_dark),
+    7.2px -7.2px 0 var(--color_text_dark),
+    -7.2px -7.2px 0 var(--color_text_dark);
+}
+
+
+// Checked Sun State
+.app-navbar-theme-switch input:checked + .app-navbar-theme-switch-view {
+  box-shadow: inset 14px -14px 0 0 #fff;
+  transform: scale(0.5) rotate(0deg);
+  transition: transform 0.3s ease 0.1s, box-shadow 0.2s ease 0s;
+}
+.app-navbar-theme-switch input:checked + .app-navbar-theme-switch-view:before {
+  background: var(--color_text_dark);
+  transition: background 0.3s ease 0.1s;
+}
+.app-navbar-theme-switch input:checked + .app-navbar-theme-switch-view:after {
+  transform: scale(1.25);
+  transition: transform 0.5s ease 0.15s;
+}

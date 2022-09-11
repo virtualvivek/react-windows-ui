@@ -7,35 +7,36 @@
 
 @import "./sub-components/NavBarSubMenu.scss";
 @import "./sub-components/NavHeader.scss";
-@import "./sub-components/NavSearchBox.scss";
+@import "./sub-components/NavBarSearchBox.scss";
 @import "./sub-components/NavSearchUL.scss";
-@import "./sub-components/NavThemeSwitcher.scss";
+@import "./sub-components/NavBarThemeSwitcher.scss";
 
 @import "./navbar-mobile/NavBarMobile.scss";
 
 @import "./AppNavToggled.scss";
 
 .app-navbar-wrap {
-  height: 100%;
-  width: 290px;
   z-index: 9;
+  width: 290px;
+  height: 100%;
   overflow-y: overlay;
   transition: 0.2s ease;
 
   nav {
     @extend .transition-background-400ms;
-    @extend .background-color-nav;
+    
     height: inherit;
     width: inherit;
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
     padding: 0;
     display: block;
     z-index: inherit;
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: overlay;
+    background-color: var(--color_navbar_bg);
 
     &.animate {
       .app-navbar-list-item {
@@ -56,7 +57,7 @@
     position: fixed;
     padding: 0 10px;
     align-items: center;
-    background-color: var(--color_nav);
+    background-color: var(--color_navbar_bg);
     border-bottom: 1px solid var(--color_link_bg_hover);
 
     .app-navbar-toggle-button {

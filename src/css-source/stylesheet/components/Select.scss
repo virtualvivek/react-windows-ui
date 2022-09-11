@@ -1,63 +1,35 @@
-.app-select-styled.react {
-  @extend .tap-highlight-none;
+.app-dropdown-menu {
+  ul.app-dropdown-list {
+    @extend .app-custom-dropdown-ul;
+    max-height: 280px;
 
-  .app-select-header {
-    width: initial;
-    height: inherit;
-    margin: 0 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    i { font-size: 18px; }
-  }
-  &::after { display: none; }
-  
-  .app-select-body {
-    width: inherit;
-    margin: 5px 0;
-    max-height: 250px;
-    overflow-y: auto;
-    position: absolute;
-    top: 100%;
-    background: var(--color_nav);
-    transition-property: visibility;
-    box-shadow: 0 2px 4px #55555555;
-    border: 1px solid var(--color_button);
-    opacity: 0;
-    visibility: hidden;
-    
-    &.show {
-      @extend .transition_dropdown_show;
-
-      &.reverse {
-        @extend .transition_dropdown_show_reverse;
-        top: unset;
-        bottom: 100%;
+    li.app-dropdown-list-item {
+      &:hover {
+        background-color: var(--color_link_bg_hover);
       }
-    }
-    .select-item {
-      padding: 10px;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--color_dark_text);
-      box-shadow: inset 0 0 0 1000px #ffffff22;
+      &:active {
+        background-color: var(--color_link_bg_active);
+      }
 
-      &:hover { background-color: var(--color_link_bg_hover); }
-      &:active { background-color: var(--color_link_bg_active); }
-      
-      &.selected {
+      &.item-selected {
         background-color: var(--PrimaryColor);
         box-shadow: inset 0 0 0 1000px #ffffff99;
       }
     }
   }
+  
+  span,
+  &::after {
+    height: inherit;
+    padding-left: 10px;
+    align-items: center;
+    display: inline-flex;
+  }
 }
 
+
 body.dark-theme {
-  .app-select-styled.react .app-select-body .select-item {
+  .app-dropdown-list li.app-dropdown-list-item.item-selected {
     box-shadow: unset;
   }
 }

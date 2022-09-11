@@ -6,6 +6,7 @@ const ColorPickerPalette = (props) => {
   return (
     <label className="app-color-picker-item palette">
       <input
+        {...props}
         type="color"
         value={icolor}
         disabled={props.disabled}

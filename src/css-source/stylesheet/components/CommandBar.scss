@@ -1,7 +1,59 @@
-.app-command-bar {
+.app-cmd-bar {
   @extend .transition-background-400ms;
   @extend .app-inline-flex;
 
   width: max-content;
-  height: auto;
+  height: auto;  
+}
+
+ul.app-cmdbar-menu-list {
+  @extend .app-custom-dropdown-ul;
+  max-height: 280px;
+  
+  &.leftJustify {
+    right: 0;
+  }
+}
+
+.app-cmdbar-menu {
+  position: relative;
+  display: inline-flex;
+}
+
+.app-cmdbar-button {
+  border: none;
+  font-size: 15px;
+  transition: 0.08s;
+  background: none;
+  padding: 8px 10px;
+  width: max-content;
+  color: var(--color_text_dark);
+
+  &:hover {
+    background: var(--color_grey_light_alpha);
+  }
+  &:active {
+    background: var(--color_button);
+  }
+  &[disabled] {
+    filter: contrast(0);
+    pointer-events: none;
+  }
+
+  > i + span {
+    margin-left: 10px;
+  }
+
+  i {
+    transform: scale(1.2);
+    transform-origin: center;
+  }
+}
+
+@mixin cmdbar-button-mobile() {
+  .app-cmdbar-button {
+    &:hover:not(:active) {
+      background: none;
+    }
+  }
 }

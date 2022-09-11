@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const InputSearchSuggestion = (props) => {
 
@@ -21,8 +21,8 @@ const InputSearchSuggestion = (props) => {
   const [search, setSearch] = React.useState("");
 
   return (
-    <div className="app-search-suggestion" title={props.tooltip}>
-      <div className="app-search-box">
+    <div className="app-input-search-suggestion" title={props.tooltip}>
+      <div className="app-input-search-box">
         <input
           className="app-input-text app-input-search"
           type="search"
@@ -40,7 +40,7 @@ const InputSearchSuggestion = (props) => {
       </div>
       <ul ref={inputRef}>
         {teams.map((item) => (
-          <li 
+          <li
             className="option"
             key={item.label}>
               <Link to={item.link} onClick={item.onClick}>
@@ -57,4 +57,4 @@ InputSearchSuggestion.defaultProps = {
   placeholder: "Search here.."
 }
 
-export default InputSearchSuggestion
+export default InputSearchSuggestion;

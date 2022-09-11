@@ -29,11 +29,11 @@ const BlogLayout = () => {
                 height={'40px'}
                 borderRadius={50}
             />
-            <div className="app-space-10"></div>
+            &nbsp;
             <h3>John Doe</h3>
-            <div className="app-space-20"></div>
+            &nbsp;
             <p>2 May ・ 1 min read</p>
-            <div className="app-space-20"></div>
+            &nbsp;
             <ButtonIcon icon={<i className="icons10-pencil"></i>}/>
             <ButtonIcon icon={<i className="icons10-trash"></i>}/>
         </div>
@@ -66,7 +66,7 @@ const BlogLayout = () => {
                 height={'35px'}
                 borderRadius={50}
             />
-            <div className="app-space-20"></div>
+            &nbsp;
             <textarea
                 className="app-textarea"
                 rows="4" cols="40"

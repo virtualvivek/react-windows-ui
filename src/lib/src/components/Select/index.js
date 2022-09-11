@@ -6,8 +6,8 @@ const Select = (props) => {
   const data_default = [];
 
   const [isOpen, setOpen] = useState(false);
-  const [ilabel, setILabel] = useState("Select");
   const [isReverse, setReverse] = useState("");
+  const [ilabel, setILabel] = useState("Select");
   const [items, setItem] = useState(data_default);
   const [selectedItem, setSelectedItem] = useState(0);
 
@@ -47,30 +47,26 @@ const Select = (props) => {
     getScreenOffset(wrapperRef) ? setReverse("reverse") :  setReverse("");
   }
 
-  // Click outside Code using custom hook
+
   const wrapperRef = useRef(null);
   //useOutSideClick(wrapperRef, () => console.log('OUTSIDE CLICKED'));
   useOutSideClick(wrapperRef, () => setOpen(false));
 
-  
   return (
-    <div className="app-select-styled react" ref={wrapperRef}>
-      <div
-        className="app-select-header"
-        onClick={toggleDropdown}>
-        {ilabel}
-        <i className="icons10-angle-down"></i>
-      </div>
-      <div className={`app-select-body ${isOpen && 'show'} ${isReverse}`}>
+    <div className="app-dropdown-menu app-select" ref={wrapperRef} onClick={toggleDropdown}>
+      <span>{ilabel}</span>
+      <ul className={`app-dropdown-list ${isOpen && 'show'} ${isReverse}`}>
         {items.map((item, index) => (
-          <div
-            className={`select-item ${index === selectedItem && 'selected'}`}
-            onClick={() => handleItemClick(item.value)}
-            key={index}>
-            {item.label}
+        <li
+          className={`app-dropdown-list-item ${index === selectedItem && 'item-selected'}`}
+          key={index}>
+          <div className="dropdown-lst-item"
+            onClick={() => handleItemClick(item.value)}>
+            {item.icon}{item.label}
           </div>
+        </li>
         ))}
-      </div>
+      </ul>
     </div>
   )
 }

@@ -11,10 +11,10 @@ const LoaderBar = (props) => {
       ? `app-loader-bar animate${setTheme()}`
       : `app-loader-bar${setTheme()}`
       }>
-      <div className="app-loaderBar first"></div>
-      <div className="app-loaderBar second"></div>
-      <div className="app-loaderBar third"></div>
-      <div className="app-loaderBar fourth"></div>
+      <div className="app-ldr-bar first"></div>
+      <div className="app-ldr-bar second"></div>
+      <div className="app-ldr-bar third"></div>
+      <div className="app-ldr-bar fourth"></div>
     </div>
   )
 }

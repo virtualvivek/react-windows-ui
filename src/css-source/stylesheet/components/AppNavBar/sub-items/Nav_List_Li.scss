@@ -2,8 +2,8 @@
   .app-navbar-list-item {
     display: flex;
 
-    &:hover { @extend .background-color-link-bg-hover; }
-    &:active { @extend .background-color-link-bg-active; }
+    &:hover { background-color: var(--color_link_bg_hover); }
+    &:active { background-color: var(--color_link_bg_active); }
 
     a {
       width: 100%;
@@ -17,19 +17,19 @@
       color: var(--color_text_dark);
 
       &::after {
+        left: 0;
+        content: "";
         width: 5px;
         height: 35px;
         position: absolute;
-        left: 0;
         background: var(--PrimaryColor);
-        content: "";
         transform: translate3d(-200%, 0, 0);
       }
       &:focus {
-        @extend .outline-none;
+        outline: none;
       }
       &.active {
-        @extend .font-weight-500;
+        font-weight: 500;
         
         &::after {
           transition: transform 0.4s;

@@ -16,9 +16,9 @@ const AvatarView = (props) => {
   const renderDropShadow = () => {
     return <img
       className={
-        props.size === "small" ? "app-avatar small drop-shadow"
-      : props.size === "large" ? "app-avatar large drop-shadow"
-      : "app-avatar medium drop-shadow"
+        props.size === "small" ? "app-avatar avatar-sm drop-shadow"
+      : props.size === "large" ? "app-avatar avatar-lg drop-shadow"
+      : "app-avatar drop-shadow"
       }
       src={props.src}
       alt={props.alt}
@@ -38,9 +38,9 @@ const AvatarView = (props) => {
     <div className="app-avatar-container" title={props.tooltip}>
       <img
         className={
-          props.size === "small" ? "app-avatar small"
-        : props.size === "large" ? "app-avatar large"
-        : "app-avatar medium"
+          props.size === "small" ? "app-avatar avatar-sm"
+        : props.size === "large" ? "app-avatar avatar-lg"
+        : "app-avatar"
         }
         src={props.src}
         alt={props.alt}
@@ -53,13 +53,9 @@ const AvatarView = (props) => {
         onLoad={() => { handleOnLoad(); props.onLoad() }}
         onError={() => { handleOnLoad(); props.onError() }}
       />
-
       { props.showDropShadow && (renderDropShadow()) }
-
       { props.isLoading && (renderLoader()) }
-
       { didLoad ? <></> : renderLoader() }
-      
     </div>
   )
 }

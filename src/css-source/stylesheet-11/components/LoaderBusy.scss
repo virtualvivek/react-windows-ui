@@ -44,7 +44,7 @@
     
 
     .app-ldrBusy-ball {
-      @extend .background-color-primary-light;
+      background-color: var(--color_day_primary_night_white);
 
       width: 4.8px;
       height: 4.8px;

@@ -1,14 +1,13 @@
 .app-link {
-  @extend .color-primary;
   @extend .font-size-16px;
-
   font-weight: 400;
   line-height: 1.5;
   display: inline-flex;
   line-break: anywhere;
+  color: var(--PrimaryColor);
 
   &:focus {
-    @extend .outline-none;
+    outline: none;
   }
   &:hover,
   &:active {
@@ -27,11 +26,11 @@
 }
 
 i.bg-primary::before {
-  @extend .color-white;
-  @extend .background-color-primary;
+  color: #fff;
+  background-color: var(--PrimaryColor);
 }
 i.bg-grey::before {
-  @extend .background-color-link-bg-active;
+  background-color: var(--color_link_bg_active);
 }
 
 @mixin links-mobile() {

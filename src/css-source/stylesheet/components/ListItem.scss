@@ -15,7 +15,7 @@
   }
 
   a {
-    @extend .user-select-none;
+    user-select: none;
     @extend .tap-highlight-none;
 
     flex: 0.8;
@@ -50,8 +50,8 @@
   }
   .app-list-item-container {
     height: fit-content;
-    display: inline-grid;
     align-items: center;
+    display: inline-grid;
   }
 
   span.app-list-title {

@@ -1,28 +1,26 @@
 .app-avatar {
   z-index: 1;
+  width: 124px;
+  height: 124px;
   border-radius: 50%;
   text-align: center;
   background: #DDDDDD77;
 
-  &.large {
+  &.avatar-lg {
     width: 164px;
     height: 164px;
   }
-  &.medium {
-    width: 124px;
-    height: 124px;
-  }
-  &.small {
+  &.avatar-sm {
     width: 84px;
     height: 84px;
   }
 
   &.drop-shadow {
-    z-index: 0;
-    position: absolute;
     top: 14px;
+    z-index: 0;    
     opacity: 0.8;
     filter: blur(8px);
+    position: absolute;
   }
 }
 .app-avatar-container {
@@ -31,10 +29,11 @@
   justify-content: center;
 
   .app-avatar-loader {
+    z-index: 2;
     width: 100%;
     height: 100%;
-    z-index: 2;
     position: absolute;
+    text-align: center;
     align-items: center;
     border-radius: 50%;
     background: #44444477;
@@ -50,15 +49,13 @@
 
 @mixin avatar-view-mobile() {
   .app-avatar {
-    &.large {
+    width: 104px;
+    height: 104px;
+    &.avatar-lg {
       width: 144px;
       height: 144px;
     }
-    &.medium {
-      width: 104px;
-      height: 104px;
-    }
-    &.small {
+    &.avatar-sm {
       width: 64px;
       height: 64px;
     }

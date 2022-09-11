@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const NavSearchBox = (props) => {
+const NavBarSearchBox = (props) => {
 
   const [menubar, setMenubar] = useState(false);
   const showMenuBar = () => setMenubar(!menubar);
@@ -30,7 +30,7 @@ const NavSearchBox = (props) => {
 
   return (
     <>  
-    <div className="app-search-box">
+    <div className="app-input-search-box">
       <input
         className="app-input-text app-input-search"
         type="search"
@@ -61,9 +61,9 @@ const NavSearchBox = (props) => {
   )
 }
 
-NavSearchBox.defaultProps = {
+NavBarSearchBox.defaultProps = {
   placeholder: "Search here..",
   onChange: ()=>{}
 }
 
-export default NavSearchBox;
+export default NavBarSearchBox;

@@ -1,24 +1,26 @@
 .app-section-container.transition {
-  height: 100%;
   width: -webkit-fill-available;
   width: -moz-available;
   position: absolute;
+  height: 100%;
   top: 0;
-  opacity: 0 !important;
 
   &.transition-left {
-    opacity: 1 !important;
-    animation: animate-page 0.38s;
+    animation-duration: 0.7s;
+    animation-name: animate-page;
+    animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
   }
 
   @keyframes animate-page {
     0% {
-      opacity: 0;
-      transform: translateX(10px);
+      transform: translate3d(20px, 0px, 0px);
+      pointer-events: none;
+      opacity: 0.4;
     }
     100% {
+      transform: translate3d(0px, 0px, 0px);
+      pointer-events: auto;
       opacity: 1;
-      transform: translateX(0%);
     }
   }
 }

@@ -4,6 +4,7 @@ const Checkbox = (props) => {
   return (
     <label className="app-checkbox" title={props.tooltip}>
       <input
+        {...props}
         type="checkbox"
         name={props.name}
         value={props.value}

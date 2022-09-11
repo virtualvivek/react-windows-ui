@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer,CommandBar,CommandBarButton } from '../../../lib/src'
+import { NavPageContainer, CommandBar } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { CommandBarImportCode,CommandBarUsageCode,
@@ -19,40 +19,32 @@ render() {
     <h1>CommandBar</h1>
 
     <CommandBar>
+      <CommandBar.Button value="New" icon={<i className="icons10-plus color-primary"></i>}/>
+      
+      <CommandBar.SplitDivider/>
 
-      <CommandBarButton
-        value="New"
-        onClick={()=>{}}
-        icon={<i className="icons10-plus color-primary"></i>}
-        data={[
-          {label: 'file', link: '#', icon: <i className="icons10-file"></i>},
-          {label: 'folder', link: '#',onClick: this.sayhellow},
-          {label: 'image', link: '#'},
-          {label: 'document', link: '#'},
-        ]}
-      />
+      <CommandBar.Menu menuDirection="leftJustify">
+        <CommandBar.MenuItem label="File" icon={<i className="icons10-file"></i>} />
+        <CommandBar.MenuItem label="Folder" onClick={() => alert("Hi")} />
+        <CommandBar.MenuItem label="Image" />
+        <CommandBar.MenuItem label="Document" />
+      </CommandBar.Menu>
 
-      <CommandBarButton
-        value="Upload"
-        icon={<i className="icons10-upload color-primary"></i>}
-        onClick={()=>{}}
-      />
+      <CommandBar.Button value="Upload" icon={<i className="icons10-upload color-primary"></i>}/>
 
-      <CommandBarButton
-        value="Share"
-        data={[
-          {label: 'Whatsapp', link: '#', icon: <i className="icons10-share"></i>},
-          {label: 'Facebook', onClick: this.sayhellow},
-          {label: 'Instagram', link: '#'},
-          {label: 'Telegram', onClick: this.sayhellow},
-        ]}
-      />
+      <CommandBar.Menu>
+        <CommandBar.MenuTrigger>
+          <CommandBar.Button value="Share" icon={<i className="icons10-angle-down color-primary"></i>}/>
+        </CommandBar.MenuTrigger>
+        <CommandBar.MenuItem label="Whatsapp" />
+        <CommandBar.MenuItem label="Facebook" />
+      </CommandBar.Menu>
+
     </CommandBar>
 
-    <p><span className="color-primary">CommandBar</span> is a surface that houses commands that operate on the content of the window.<br/>
-    It binds <span className="color-primary">CommandBarButton</span> to form layout of options including dropdowns and buttons.</p>
 
-    <p>However you can use <span className="color-primary">CommandBarButton</span> independently anywhere in the app you want.</p>
+
+    <p><span className="color-primary">CommandBar</span> is a surface that houses commands that operate on the content of the window.<br/></p>
 
   
     <h2>Import</h2>
@@ -75,23 +67,17 @@ render() {
 
   
     <div className="app-hr"></div>
-    <h1>CommandBarButton</h1>
+    <h1>CommandBar as Button</h1>
     <h2>Usage</h2>
 
-    <p>You can provide <b>onClick</b> listener to make it as a regular button or if 
-    you provide <br/><b>data</b> it work as a dropdown & if provide both <b>onClick</b> along with <b>data </b>
-    it works as a split button.</p>
 
-    <br/><p><b>data prop: </b>You can either provide <b>onClick</b> or <b>link</b> prop to the <b>data</b> items as per your reqirements. </p>
+    <h2>CommandBar as <p className="app-code">Button</p> :</h2>
 
-
-    <h2>CommandBarButton as <p className="app-code">Button</p> :</h2>
-
-    <CommandBarButton
+    <CommandBar.Button
       value="Upload"
       icon={<i className="icons10-upload color-primary"></i>}
-      onClick={()=>{}}
-    /><br/><br/>
+    />
+    <br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -103,18 +89,17 @@ render() {
 
 
 
-    <h2>CommandBarButton as <p className="app-code">Dropdown</p> :</h2>
+    <h2>CommandBar as <p className="app-code">Menu</p> :</h2>
 
-    <CommandBarButton
-      value="Share"
-      icon={<i className="icons10-share color-primary"></i>}
-      data={[
-        {label: 'Whatsapp', link: '#', icon: <i className="icons10-share"></i>},
-        {label: 'Facebook', onClick: this.sayhellow},
-        {label: 'Instagram', link: '#'},
-        {label: 'Telegram', onClick: this.sayhellow},
-      ]}
-    /><br/><br/>
+    <CommandBar.Menu>
+      <CommandBar.MenuTrigger>
+        <CommandBar.Button value="Share" icon={<i className="icons10-angle-down color-primary"></i>}/>
+      </CommandBar.MenuTrigger>
+      <CommandBar.MenuItem label="Whatsapp" />
+      <CommandBar.MenuItem label="Facebook" />
+    </CommandBar.Menu>
+
+    <br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -125,19 +110,23 @@ render() {
     <div className="app-hr"></div>
 
 
-    <h2>CommandBarButton as <p className="app-code">Split Mode</p> :</h2>
+    <h2>CommandBar as <p className="app-code">Split Mode</p> :</h2>
 
-    <CommandBarButton
-      value="New"
-      onClick={()=>{}}
-      icon={<i className="icons10-plus color-primary"></i>}
-      data={[
-        {label: 'file', link: '#', icon: <i className="icons10-file"></i>},
-        {label: 'folder', link: '#',onClick: this.sayhellow},
-        {label: 'image', link: '#'},
-        {label: 'document', link: '#'},
-      ]}
-    /><br/><br/>
+    <CommandBar>
+      <CommandBar.Button value="New" icon={<i className="icons10-plus color-primary"></i>}/>
+      
+      <CommandBar.SplitDivider/>
+  
+      <CommandBar.Menu menuDirection="leftJustify">
+        <CommandBar.MenuItem label="File" icon={<i className="icons10-file"></i>} />
+        <CommandBar.MenuItem label="Folder" onClick={() => alert("Hi")} />
+        <CommandBar.MenuItem label="Image" />
+        <CommandBar.MenuItem label="Document" />
+      </CommandBar.Menu>
+    </CommandBar>
+    
+  
+    <br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -149,8 +138,7 @@ render() {
 
 
 
-
-    <h2>Props : CommandBarButton</h2>
+    <h2>Props</h2>
     <PropsView />
 
     <br/><br/><br/><br/><br/><br/>

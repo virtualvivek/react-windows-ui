@@ -2,8 +2,9 @@ import React from "react";
 
 const InputSearchBar = (props) => {
   return (
-    <div className="app-search-bar" title={props.tooltip}>
+    <div className="app-input-search-bar" title={props.tooltip}>
       <input
+        {...props}
         className="app-input-text"
         type="search"
         placeholder={props.placeholder}
@@ -19,7 +20,8 @@ const InputSearchBar = (props) => {
 }
 
 InputSearchBar.defaultProps = {
-  placeholder: "Search here.."
+  placeholder: "Search here..",
+  onSubmit: () => {}
 }
 
 export default InputSearchBar;

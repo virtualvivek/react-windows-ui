@@ -3,7 +3,7 @@
   @extend .transition-background-400ms;
 
   &:focus {
-    @extend .outline-none;
+    outline: none;
   }
 
   &::-webkit-calendar-picker-indicator {
@@ -41,7 +41,7 @@
     right: 5px;
 
     i::before {
-      @extend .vertical-align-middle;
+      vertical-align: middle;
       margin-right: 5px;
       padding: 4px;
       content: "";
@@ -53,7 +53,7 @@
   }
 
   button.unmask {
-    @extend .vertical-align-middle;
+    vertical-align: middle;
     border: none;
     background: transparent;
 

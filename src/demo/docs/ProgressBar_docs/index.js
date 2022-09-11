@@ -44,7 +44,7 @@ render() {
     <ProgressBar
       setProgress={this.state.ProgressBar1}
       tooltip="ProgressBar tooltip title"/>
-    <br/>
+    <br/><br/>
     <Button
       value="set 2%"
       onClick={this.setProgress2}/>
@@ -70,7 +70,7 @@ render() {
 
     <ProgressBar
       setProgress={this.state.ProgressBar1}
-      tooltip="ProgressBar tooltip title"/><br/>
+      tooltip="ProgressBar tooltip title"/><br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -85,7 +85,7 @@ render() {
 
     <ProgressBar
       title="Title"
-      setProgress={80}/><br/>
+      setProgress={80}/><br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -101,7 +101,7 @@ render() {
     <ProgressBar
       title="Title"
       subtitle="Subtitle"
-      setProgress={46}/><br/>
+      setProgress={46}/><br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -119,7 +119,7 @@ render() {
       showIcon={true}
       title="Drive C:"
       subtitle="primary storage"
-      setProgress={54}/><br/>
+      setProgress={54}/><br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -138,7 +138,7 @@ render() {
     <ProgressBar
       setProgress={67}
       color={"#C50500"}/>
-    <br/>
+    <br/><br/>
     <SyntaxHighlighter
       language="javascript"
       style={vscDarkPlus}
@@ -152,7 +152,7 @@ render() {
     <ProgressBar
       setProgress={29}
       height={15}/>
-    <br/>
+    <br/><br/>
     <SyntaxHighlighter
       language="javascript"
       style={vscDarkPlus}
@@ -176,7 +176,7 @@ render() {
     <h2>Usage</h2>
 
     <ProgressBarIndeterminate
-      isLoading={this.state.showProgressIndeterminate}/><br/>
+      isLoading={this.state.showProgressIndeterminate}/><br/><br/>
     <Button
       value="Toggle Loading"
       icon={<i className="icons10-resize-horizontal"></i>}

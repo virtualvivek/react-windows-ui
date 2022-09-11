@@ -1,6 +1,6 @@
-.app-search-bar {
+.app-input-search-bar {
   button {
-    @extend .background-color-nav;
+    background-color: var(--color_navbar_bg);
     @extend .transition-background-400ms;
     width: 30px;
     height: 30px;
@@ -10,7 +10,7 @@
     
     &:hover,
     &:active {
-      @extend .background-color-primary;
+      background-color: var(--PrimaryColor);
     }
     &:active {
       opacity: 0.65;
@@ -27,7 +27,7 @@
   }
 }
 
-.app-search-box {
+.app-input-search-box {
   &::after {
     @extend .font-icon-dark;
     content: "\f1b9";
@@ -39,8 +39,8 @@
   }
 }
 
-.app-search-bar,
-.app-search-box,
+.app-input-search-bar,
+.app-input-search-box,
 .app-search-dialog {
   display: inline-flex;
   align-items: center;
@@ -54,10 +54,10 @@
 }
 
 @mixin input-search-mobile() {
-  .app-search-bar {
+  .app-input-search-bar {
     button:not(:active) {
       &:hover {
-        background: var(--color_nav);
+        background: var(--color_navbar_bg);
         &::after {
           color: var(--color_text_dark) !important;
         }

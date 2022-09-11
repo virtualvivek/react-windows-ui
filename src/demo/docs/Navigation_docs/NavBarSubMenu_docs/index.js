@@ -14,7 +14,7 @@ render() {
     animateTransition={false}>
     <h1>NavBarSubMenu</h1>
 
-    <div style={{width:290,backgroundColor:'var(--color_nav)'}}>
+    <div style={{width:290,backgroundColor:'var(--color_navbar_bg)'}}>
     <NavBarSubMenu title="Title">
       <div className="app-navbar-wrap">
       <nav className="animate custom" style={{position:'relative'}}>

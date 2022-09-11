@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavPageContainer,Checkbox,Switch,InputText,
          InputSearchBar,InputSearchBox,SliderBar,RadioButton,
-         SelectBox,MenuBar,InputSearchSuggestion } from '../../lib/src'
+         SelectNative,MenuBar,InputSearchSuggestion } from '../../lib/src'
 
 class Inputs extends React.Component {
 
@@ -91,7 +91,7 @@ class Inputs extends React.Component {
           <Checkbox
             defaultChecked
             tooltip="Checkbox tooltip title" />
-          <div className="app-space-35"></div>
+          &nbsp;
           <Checkbox
             disabled
             defaultChecked
@@ -104,7 +104,7 @@ class Inputs extends React.Component {
           <Checkbox
             defaultChecked
             label="Unchecked" />
-          <div className="app-space-20"></div>
+          &nbsp;
           <Checkbox
             defaultChecked
             label="Disabled Unchecked"/>
@@ -184,9 +184,9 @@ class Inputs extends React.Component {
         />
 
 
-      <h3 className="m-b-15">SelectBox</h3>
+      <h3 className="m-b-15">SelectNative</h3>
           
-        <SelectBox
+        <SelectNative
           data={[
             {label: 'red', value: 'red'},
             {label: 'blue', value: 'blue'},

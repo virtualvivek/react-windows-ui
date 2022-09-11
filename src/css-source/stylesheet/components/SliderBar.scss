@@ -20,11 +20,11 @@
     &::-webkit-slider-thumb {
       width: 8px;
       height: 26px;
-      user-select: none;
-      appearance: none;
-      -webkit-appearance: none;
       cursor: pointer;
+      user-select: none;      
+      appearance: none;
       border-radius: 100px;
+      -webkit-appearance: none;
       background: var(--PrimaryColor);
       transition: background 0.15s ease-in-out;
 
@@ -52,7 +52,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
     }
   }
-  &.round {
+  &.slider-round {
     input[type="range"] {
       &::-webkit-slider-thumb {
         width: 20px !important;
@@ -64,7 +64,7 @@
       }
     }
   }
-  &.round-border {
+  &.slider-round-border {
     input[type="range"] {
       &::-webkit-slider-thumb {
         width: 20px !important;
@@ -82,9 +82,9 @@
   }
 
   span {
-    @extend .color-text-dark;
-    display: contents;
     font-size: 18px;
+    display: contents;
+    color: var(--color_text_dark);
   }
   .app-range-slider-popup {
     padding: 5px;

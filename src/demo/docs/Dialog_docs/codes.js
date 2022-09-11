@@ -30,7 +30,7 @@ const DialogConfirmUsageCode =
       type="primary"
       onClick={() => {}}
     />
-    <div className="app-space-15"></div>
+    &nbsp;
     <Button
       style={{flex: "auto"}}
       value="Cancel"

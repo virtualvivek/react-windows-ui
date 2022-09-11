@@ -13,7 +13,7 @@ const Switch = (props) => {
         defaultChecked={props.defaultChecked} />
         {props.label && props.labelPosition === "start" && (
           <span
-            className="app-switch-label-start"
+            className="app-switch-label"
             data-on={props.labelOn}
             data-off={props.labelOff}
             style={{ width: props.labelFixedWidth }}>
@@ -22,7 +22,7 @@ const Switch = (props) => {
       <div className="app-switch-view"></div>
       {props.label && props.labelPosition === "end" && (
         <span
-          className="app-switch-label-end"
+          className="app-switch-label"
           data-on={props.labelOn}
           data-off={props.labelOff}
           style={{ width: props.labelFixedWidth }}>

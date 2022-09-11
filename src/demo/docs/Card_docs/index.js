@@ -77,7 +77,7 @@ const CardDocs = () => {
         />
         <div style={{float:'right',display:'flex'}}>
           <Button value="Options"/>
-          <div className="app-space-10"></div>
+          &nbsp;
           <Button value="Remove"/> 
         </div>
       </Card>

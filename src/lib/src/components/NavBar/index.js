@@ -3,10 +3,10 @@ import NavBarLink from './NavBarLink'
 import NavPageContainer from './NavPageContainer'
 import NavPageContainerRight from './NavPageContainerRight'
 import NavPageContainerInner from './NavPageContainerInner'
-import NavSearchBox from './NavSearchBox'
-import NavSearchSuggestion from './NavSearchSuggestion'
+import NavBarSearchBox from './NavBarSearchBox'
+import NavBarSearchSuggestion from './NavBarSearchSuggestion'
 import NavBarSubMenu from './NavBarSubMenu'
-import NavThemeSwitcher from './NavThemeSwitcher'
+import NavBarThemeSwitcher from './NavBarThemeSwitcher'
 
 export {
   NavBar,
@@ -14,8 +14,8 @@ export {
   NavPageContainer,
   NavPageContainerRight,
   NavPageContainerInner,
-  NavSearchBox,
-  NavSearchSuggestion,
+  NavBarSearchBox,
+  NavBarSearchSuggestion,
   NavBarSubMenu,
-  NavThemeSwitcher
+  NavBarThemeSwitcher
 }

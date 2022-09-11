@@ -1,15 +1,15 @@
-.app-search-bar {
+.app-input-search-bar {
   button {
-    @extend .background-color-nav;
     @extend .transition-background-400ms;
     width: 30px;
     height: 30px;
     border: none;
     margin-left: -32px;
+    background-color: var(--color_navbar_bg);
     
     &:hover,
     &:active {
-      @extend .background-color-primary;
+      background-color: var(--PrimaryColor);
     }
     &:active {
       opacity: 0.65;
@@ -26,23 +26,23 @@
   }
 }
 
-.app-search-box {
+.app-input-search-box {
   &::after {
     @extend .font-icon-dark;
-    content: "\f1b9";
     z-index: 1;
-    font-weight: 600;
     font-size: 18px;
+    font-weight: 600;
+    content: "\f1b9";
     margin-left: -29px;
     align-self: center;
   }
 }
 
-.app-search-bar,
-.app-search-box,
+.app-input-search-bar,
+.app-input-search-box,
 .app-search-dialog {
-  display: inline-flex;
   align-items: center;
+  display: inline-flex;
 
   input {
     &:active,
@@ -50,17 +50,17 @@
       border-color: var(--PrimaryColor);
     }
     &::-webkit-search-cancel-button{
+      right: 40px;
       position: relative;
-      right: 40px;    
     }
   }
 }
 
 @mixin input-search-mobile() {
-  .app-search-bar {
+  .app-input-search-bar {
     button:not(:active) {
       &:hover {
-        background: var(--color_nav);
+        background: var(--color_navbar_bg);
         &::after {
           color: var(--color_text_dark) !important;
         }

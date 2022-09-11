@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
+const input_prefix = "input-";
 
 const InputText = (props) => {
 
@@ -19,7 +20,7 @@ const InputText = (props) => {
             <i className="icons10-keyboard font-size-18px"></i>
             :
             props.setStatus === "loading" ?
-            <div className="app-loader-busy small animate">
+            <div className="app-loader-busy loader-sm animate">
               <LoaderBusyWrapper/>
             </div>
             :
@@ -28,7 +29,7 @@ const InputText = (props) => {
 
   return (
     <div
-      className={`app-input-text-container ${props.setStatus}`}
+      className={`app-input-container ${props.setStatus ? input_prefix+props.setStatus : ""}`}
       title={props.tooltip}>
       {props.label && (renderLabel())}
       <input
@@ -43,20 +44,24 @@ const InputText = (props) => {
       />
       <div className="app-input-status-container">
         {renderStatus()}
-
-        {props.type==="password" && (<button
-          className="unmask"
-          type="button"
-          onClick={toggleInput}/>)}
+        {
+          props.type==="password" && (
+            <button
+              className="app-input-text-unmask"
+              type="button"
+              onClick={toggleInput}
+            />
+          )
+        }
       </div>
     </div>
   )
 }
 
 InputText.defaultProps = {
-  placeholder: "Input Text",
   type: "text",
-  setStatus: "default"
+  setStatus: "default",
+  placeholder: "Input Text"  
 }
 
 export default InputText;

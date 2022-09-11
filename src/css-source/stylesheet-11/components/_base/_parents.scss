@@ -11,7 +11,7 @@
 }
 
 .background-color-nav {
-  background-color: var(--color_nav);
+  background-color: var(--color_navbar_bg);
 }
 
 .background-color-primary {
@@ -19,11 +19,11 @@
 }
 
 .background-color-primary-light {
-  background-color: var(--color_primary_light);
+  background-color: var(--color_day_primary_night_white);
 }
 
 .background-color-primary-dark {
-  background-color: var(--color_primary_dark);
+  background-color: var(--color_day_primary_night_grey);
 }
 
 .background-color-button {
@@ -58,7 +58,7 @@
 }
 
 .color-primary-light {
-  color: var(--color_primary_light);
+  color: var(--color_day_primary_night_white);
 }
 
 .color-white {
@@ -206,7 +206,7 @@
     @extend .input-field-primary-disabled;
   }
   &:focus {
-    @extend .outline-none;
+    outline: none;
     border-bottom: 2px solid var(--PrimaryColor);
   }
 }
@@ -250,7 +250,7 @@
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
-  background: var(--color_nav);
+  background: var(--color_navbar_bg);
   box-shadow: 0 2px 4px #55555555;
   border-radius: 6px;
 
@@ -272,10 +272,10 @@
       @extend .tap-highlight-none;
 
       &:hover {
-        @extend .background-color-link-bg-hover;
+        background-color: var(--color_link_bg_hover);
       }
       &:active {
-        @extend .background-color-link-bg-active;
+        background-color: var(--color_link_bg_active);
       }
       i {
         font-size: 21px;

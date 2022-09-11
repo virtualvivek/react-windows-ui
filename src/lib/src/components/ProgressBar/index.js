@@ -9,11 +9,11 @@ const ProgressBar = (props) => {
       <div className="app-progress-content">
         <span className="app-progress-title">{props.title}</span>
         <div
-          className={props.showIcon ? "app-progress withIcon" : "app-progress"}
+          className={props.showIcon ? "app-progress-bar with-icon" : "app-progress-bar"}
           style={{
             height: props.height
           }}>
-          <span
+          <span role="progressbar"
             style={{
               width: props.setProgress+"%",
               backgroundColor: props.color
@@ -27,8 +27,8 @@ const ProgressBar = (props) => {
 }
 
 ProgressBar.defaultProps = {
-  showIcon: false,
-  setProgress: 0
+  setProgress: 0,
+  showIcon: false
 }
 
 export default ProgressBar;

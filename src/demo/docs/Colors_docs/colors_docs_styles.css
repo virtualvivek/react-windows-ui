@@ -1,9 +1,13 @@
+.demo-colors-container {
+  font-size: 15px !important;
+}
 .demo-colors-container .app-hr{
   width: 450px;
+  font-size: 15px !important;
 }
 .demo-colors-name {
   margin-right: 10px;
-  width: 210px;
+  width: 240px;
 }
 .demo-colors-value {
   font-style: italic;
@@ -11,8 +15,8 @@
 }
 
 .demo-colors-box {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   margin: 2px 10px;
   border: 1px solid #77777777;
 }

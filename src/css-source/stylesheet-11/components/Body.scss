@@ -4,8 +4,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  @extend .background-color-bg-light;
-  @extend .color-text-dark;
+  background-color: var(--color_bg_light);
+  color: var(--color_text_dark);
   @extend .transition-background-400ms;
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body {
   line-height: 1;
   border-radius: 6px;
   display: inline-block;
-  background-color: var(--color_nav);
+  background-color: var(--color_navbar_bg);
 }
 ::selection {
   background-color: var(--PrimaryColor);
@@ -25,10 +25,10 @@ body {
 }
 
 .app-container-screen {
-  @extend .background-color-bg-light;
+  background-color: var(--color_bg_light);
   height: 100vh;
   &.primary {
-    @extend .background-color-primary-dark;
+    background-color: var(--color_day_primary_night_grey);
   }
 }
 h1 { font-size: 2em; }

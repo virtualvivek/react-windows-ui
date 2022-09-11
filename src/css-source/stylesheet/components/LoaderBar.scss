@@ -4,34 +4,34 @@
   overflow: hidden;
   padding-top: 15px;
 
-  .app-loaderBar {
-    @extend .background-color-primary-light;
+  .app-ldr-bar {
     width: 6px;
     height: 6px;
+    left: -10px;
     border-radius: 50%;
     position: relative;
-    left: -10px;
+    background-color: var(--color_day_primary_night_white);
   }
 
   &.light {
-    .app-loaderBar {
+    .app-ldr-bar {
       background-color: #fff;
     }
   }
 
   &.animate {
-    .app-loaderBar.first {
+    .app-ldr-bar.first {
       animation: move 2s infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
     }
-    .app-loaderBar.second {
+    .app-ldr-bar.second {
       top: -6px;
       animation: move 2s 150ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
     }
-    .app-loaderBar.third {
+    .app-ldr-bar.third {
       top: -12px;
       animation: move 2s 300ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
     }
-    .app-loaderBar.fourth {
+    .app-ldr-bar.fourth {
       top: -18px;
       animation: move 2s 450ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
     }

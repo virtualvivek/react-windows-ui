@@ -6,30 +6,30 @@ const Button = (props) => {
   const renderLoader = () => {
     return <div
         className = {
-            props.type === "primary" ?  "app-loader-busy small light animate"
-          : props.type === "danger" ? "app-loader-busy small light animate"
-          : props.type === "success" ? "app-loader-busy small light animate"
-          : "app-loader-busy small animate"
+            props.type === "primary" ?  "app-loader-busy loader-sm light animate"
+          : props.type === "danger" ? "app-loader-busy loader-sm light animate"
+          : props.type === "success" ? "app-loader-busy loader-sm light animate"
+          : "app-loader-busy loader-sm animate"
           }>
       <LoaderBusyWrapper/>
     </div>
   }
 
   const toggleLoading = () => {
-    return props.isLoading ? "isLoading" : "notLoading";
+    return props.isLoading ? "btn-is-loading" : "btn-no-loading";
   }
 
   
   return (
     <button
       className = {
-        props.type ==="primary" ?  `app-button animate primary ${toggleLoading()}`
-      : props.type ==="danger" ? `app-button animate danger ${toggleLoading()}`
-      : props.type ==="success" ? `app-button animate success ${toggleLoading()}`
-      : props.type ==="primary-outline" ? `app-button animate primary-outline ${toggleLoading()}`
-      : props.type ==="danger-outline" ? `app-button animate danger-outline ${toggleLoading()}`
-      : props.type ==="success-outline" ? `app-button animate success-outline ${toggleLoading()}`
-      : `app-button animate ${toggleLoading()}`
+        props.type ==="primary" ?  `app-btn animate btn-primary ${toggleLoading()}`
+      : props.type ==="danger" ? `app-btn animate btn-danger ${toggleLoading()}`
+      : props.type ==="success" ? `app-btn animate btn-success ${toggleLoading()}`
+      : props.type ==="primary-outline" ? `app-btn animate btn-primary-outline ${toggleLoading()}`
+      : props.type ==="danger-outline" ? `app-btn animate btn-danger-outline ${toggleLoading()}`
+      : props.type ==="success-outline" ? `app-btn animate btn-success-outline ${toggleLoading()}`
+      : `app-btn animate ${toggleLoading()}`
       }
       style={{
         width: props.width,

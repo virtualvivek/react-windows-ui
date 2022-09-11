@@ -1,5 +1,5 @@
 .app-navbar-wrap {
-  .app-search-box {
+  .app-input-search-box {
     width: 240px;
     user-select: none;
     filter: opacity(0.7);
@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px 0;
-    background: var(--color_nav);
+    background: var(--color_navbar_bg);
     transform: translateY(-105%);
     transition: 0.2s ease;
 
@@ -44,7 +44,7 @@
 
 @mixin app-navbar-search-mobile() {
   .app-navbar-wrap {
-    .app-search-box { display: none; }
+    .app-input-search-box { display: none; }
     
     .app-search-dialog {
       height: 45px;

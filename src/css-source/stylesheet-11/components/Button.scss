@@ -1,6 +1,6 @@
 button,
 .app-button {
-  @extend .user-select-none;
+  user-select: none;
   @extend .tap-highlight-none;
   
   cursor: pointer;
@@ -16,10 +16,10 @@ button,
   }
 }
 .app-button {
-  @extend .user-select-none;
-  @extend .color-text-dark;
-  @extend .vertical-align-middle;
-  @extend .background-color-button;
+  user-select: none;
+  color: var(--color_text_dark);
+  vertical-align: middle;
+  background-color: var(--color_button);
 
   height: 35px;
   font-size: 15px;
@@ -45,10 +45,10 @@ button,
   }
 
   &.primary {
-    @extend .background-color-primary;
+    background-color: var(--PrimaryColor);
   }
   &.primary-outline {
-    @extend .color-primary;
+    color: var(--PrimaryColor);
     border: 2px solid var(--PrimaryColor);
     &:active {
       background-color: var(--PrimaryColor);
@@ -116,7 +116,7 @@ button,
     transition: opacity ease 0.2s;
   }
   i.color-primary {
-    @extend .color-primary;
+    color: var(--PrimaryColor);
   }
   // check if button child span has a sibling of same type
   span:first-of-type:not(:only-of-type) {

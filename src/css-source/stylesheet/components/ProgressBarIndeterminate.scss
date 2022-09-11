@@ -2,6 +2,7 @@
   height: 5px;
   width: 400px;
   overflow: hidden;
+  display: inline-flex;
   transition: height 0.15s ease-out;
   background-color: var(--color_button);
 }

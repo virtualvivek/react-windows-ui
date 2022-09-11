@@ -85,7 +85,7 @@
   }
 
   span {
-    @extend .color-text-dark;
+    color: var(--color_text_dark);
     display: contents;
     font-size: 18px;
   }

@@ -3,7 +3,7 @@
   @extend .transition-background-400ms;
 
   &:focus {
-    @extend .outline-none;
+    outline: none;
     border-color: #666;
   }
 
@@ -16,7 +16,7 @@
 }
 
 
-.app-input-text-container {
+.app-input-container {
   width: min-content;
   display: inline-flex;
   position: relative;
@@ -30,41 +30,36 @@
     background-color: var(--color_grey_light_alpha);
   }
   .app-input-status-container {
+    right: 10px;
+    height: 100%;
+    display: flex;
     position: absolute;
-    top: 4px;
-    right: 5px;
+    align-items: center;
 
-    i::before {
-      @extend .vertical-align-middle;
-      margin-right: 5px;
-      padding: 4px;
-      content: "";
-    }
     .app-loader-busy {
-      top: 5px;
       display: none;
     }
   }
 
-  button.unmask {
-    @extend .vertical-align-middle;
+  button.app-input-text-unmask {
+    padding: 0;
     border: none;
     background: transparent;
 
     &::after {
       @extend .font-icon-dark;
-      content: "\f189";
+      content: "\f1db";
       font-size: 24px;
       cursor: pointer;
     }
   }
   
-  input[type="password"].app-input-text + div button.unmask::after {
-    content: "\f1db";
+  input[type="password"].app-input-text + div button.app-input-text-unmask::after {
+    content: "\f189";
   }
   
 
-  &.success {
+  &.input-success {
     .app-input-text {
       border-color: #2C8B2C;
     }
@@ -75,7 +70,7 @@
       }
     }
   }
-  &.danger {
+  &.input-danger {
     .app-input-text {
       border-color: #C50500;
     }
@@ -86,9 +81,9 @@
       }
     }
   }
-  &.loading {
+  &.input-loading {
     .app-loader-busy {
-      display: inherit;
+      display: inline-flex;
     }
   }
 }

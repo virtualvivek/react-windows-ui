@@ -13,7 +13,7 @@
     border-color: #777;
   }
   &:focus {
-    @extend .outline-none;
+    outline: none;
     border-color: #666;
   }
 }

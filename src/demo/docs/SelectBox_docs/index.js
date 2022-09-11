@@ -1,13 +1,12 @@
 import React from 'react'
-import { NavPageContainer, SelectBox,Select } from '../../../lib/src'
+import { NavPageContainer, SelectNative,Select } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { SelectImportCode,SelectUsageCode,
-    SelectBoxImportCode,SelectBoxUsageCode } from './codes'
+    SelectNativeImportCode,SelectNativeUsageCode } from './codes'
 import PropsView from './props-view'
 
 class SelectBoxDocs extends React.Component {
-
 
 render() {
   return (
@@ -50,10 +49,10 @@ render() {
     </SyntaxHighlighter>
 
 
-    <h1>SelectBox</h1>
-    <p>The <span className="color-primary">SelectBox</span> renders native {`<select>`} component.</p>
+    <h1>SelectNative</h1>
+    <p>The <span className="color-primary">SelectNative</span> renders native {`<select>`} component.</p>
 
-    <SelectBox
+    <SelectNative
       name="Some Name"
       data={[
         {label: 'red', value: 'red'},
@@ -69,7 +68,7 @@ render() {
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-      {SelectBoxImportCode}
+      {SelectNativeImportCode}
     </SyntaxHighlighter>
 
     <h2>Usage</h2>
@@ -78,7 +77,7 @@ render() {
       language="javascript"
       style={vscDarkPlus}
       className="code code-container">
-      {SelectBoxUsageCode}
+      {SelectNativeUsageCode}
     </SyntaxHighlighter>
 
 

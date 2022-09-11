@@ -1,7 +1,7 @@
 const AppJsSearchableCode =
 `import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { NavBar, NavBarLink, NavSearchBox } from 'react-windows-ui'
+import { NavBar, NavBarLink, NavBarSearchBox } from 'react-windows-ui'
 import Page1 from './pages/page1'
 import Page2 from './pages/page2'
 
@@ -56,7 +56,7 @@ class App extends React.Component {
           //mobileHasIcons={true}
             shadowOnScroll={true}>
 
-            <NavSearchBox
+            <NavBarSearchBox
               placeholder="Find a Nav Item"
               onChange={this.handleInputSearch}/>
 

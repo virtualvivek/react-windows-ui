@@ -17,7 +17,7 @@ const AboutLayout = () => {
             <h4 className="m-tb-10">System type</h4>
             <h4 className="m-tb-10">App Size</h4>
         </div>
-        <div className="app-space-40"></div>
+        &nbsp;
         <div>
             <h4 className="light m-tb-10">react-windows-ui</h4>
             <h4 className="light m-tb-10">1.0.4</h4>

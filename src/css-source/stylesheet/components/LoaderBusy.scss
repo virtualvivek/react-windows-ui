@@ -1,58 +1,58 @@
 .app-loader-busy {
+  opacity: 0;
   width: 30px;
   height: 30px;
   position: relative;
-  top: -2px;
-  opacity: 0;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;  
   transition: opacity 0.4s ease;
 
-  &.medium {
-    top: 2.5px;
+  &.loader-lg {
+    width: 30px;
+    height: 30px;
 
-    .app-loaderBusy {
-      width: 25px;
-      height: 25px;
+    .app-ldr-busy {
+      width: 34px;
+      height: 34px;
 
-      .app-ldrBusy-ball {
-        width: 4.4px;
-        height: 4.4px;
+      .ldr-busy-ball {
+        width: 4.8px;
+        height: 4.8px;
       }
     }
   }
 
-  &.small {
-    top: 7px;
-
-    .app-loaderBusy {
+  &.loader-sm {
+    .app-ldr-busy {
       width: 16px;
       height: 16px;
 
-      .app-ldrBusy-ball {
+      .ldr-busy-ball {
         width: 3px;
         height: 3px;
       }
     }
   }
 
-  .app-loaderBusy {
-    width: 34px;
-    height: 34px;
-    position: absolute;
+  .app-ldr-busy {
     opacity: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
     transform: rotate(225deg);
     animation: orbit 4.8s infinite;
     
 
-    .app-ldrBusy-ball {
-      @extend .background-color-primary-light;
-
-      width: 4.8px;
-      height: 4.8px;
+    .ldr-busy-ball {
+      width: 4.4px;
+      height: 4.4px;
+      top: 0;
+      left: 0;
       box-shadow: none;
       border-radius: 50%;
       position: absolute;
-      left: 0;
-      top: 0;
+      background-color: var(--color_day_primary_night_white);
     }
 
     &.ball-1 {
@@ -76,7 +76,7 @@
   }
 
   &.light {
-    .app-loaderBusy .app-ldrBusy-ball {
+    .app-ldr-busy .ldr-busy-ball {
       background: #fff;
     }
   }
@@ -102,8 +102,8 @@
       animation-timing-function: linear;
     }
     70% {
-      transform: rotate(835deg);
       opacity: 1;
+      transform: rotate(835deg);
       animation-timing-function: linear;
     }
     76% {
@@ -146,10 +146,10 @@
   }
   .title {
     width: 100%;
-    text-align: center;
-    position: absolute;
     bottom: 18%;
-
+    position: absolute;
+    text-align: center;
+    
     &.text-light {
       font-size: 1.5em;
       color: #fff;

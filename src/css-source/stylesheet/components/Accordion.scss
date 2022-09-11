@@ -4,35 +4,31 @@
 .app-accordion-title {
   @extend .transition-all-400ms;
   @extend .tap-highlight-none;
-  
+
   display: flex;
-  flex-direction: row;
   font-size: 16px;
   cursor: pointer;
   padding: 8px 15px;
   user-select: none;
+  flex-direction: row;
   justify-content: space-between;
+  background-color: var(--color_navbar_bg);
 
-  &:hover,
-  &.focused {
-    background-color: var(--color_nav);
-  }
-  &.focused:hover {
-    filter: contrast(0.9);
+  &:hover {
+    background-color: var(--color_navbar_bg);
   }
   &:active {
     background-color: var(--color_button);
     @extend .transition-scale-active;
   }
 }
-.app-accordion-content {
-  max-height: 0;
+.app-accordion-panel {
+  height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-in-out;
+  transition: height 243ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
   &.show {
-    max-height: 500px;
-    overflow-y: scroll;
-    transition: max-height 0.28s ease-in;
+    height: 500px;
+    transition: height 243ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
 }

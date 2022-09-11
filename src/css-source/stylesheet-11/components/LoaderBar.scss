@@ -5,7 +5,7 @@
   padding-top: 15px;
 
   .app-loaderBar {
-    @extend .background-color-primary-light;
+    background-color: var(--color_day_primary_night_white);
     width: 6px;
     height: 6px;
     border-radius: 50%;

@@ -3,14 +3,14 @@
   cursor: pointer;
 
   &:hover {
-    @extend .background-color-link-bg-hover;
+    background-color: var(--color_link_bg_hover);
   }
   &:active {
-    @extend .background-color-link-bg-active;
+    background-color: var(--color_link_bg_active);
   }
   &::after {
-    @extend .font-icon-dark;
-    content: "\f106";
     font-size: 24px;
+    content: "\f106";
+    @extend .font-icon-dark;
   }
 }

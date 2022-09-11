@@ -1,18 +1,19 @@
 :root {
-  --color_primary_alpha: #EEEEEE9C;
 /*    Day Mode */
   --color_scheme: light;
+
   --color_bg_light: #FFFFFF;
-  --color_text_dark: #222222;
-  --color_nav: #EEEEEE;
-  --color_grey_light: #EEEEEE;
-  --color_grey_light_alpha: #EEEEEED1;
-  --color_link_bg_hover: #D8D8D8;
-  --color_link_bg_active: #B8B8B8;
   --color_button: #CDCDCD;
   --color_button_hover: #666666;
-  --color_primary_light: var(--PrimaryColor);
-  --color_primary_dark: var(--PrimaryColor);
+  --color_day_primary_night_grey: var(--PrimaryColor);
+  --color_day_primary_night_white: var(--PrimaryColor);
+  --color_grey_light: #EEEEEE;
+  --color_grey_light_alpha: #EEEEEED1;
+  --color_link_bg_active: #B8B8B8;
+  --color_link_bg_hover: #D8D8D8;
+  --color_navbar_bg: #EEEEEE;
+  --color_primary_alpha: #EEEEEE9C;
+  --color_text_dark: #000000;
 }
 
 .color-danger {

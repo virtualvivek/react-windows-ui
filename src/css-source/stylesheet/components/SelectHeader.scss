@@ -1,33 +1,34 @@
-.app-select-styled {
+.app-select-menu, .app-dropdown-menu {
   @extend .input-field-primary;
   @extend .transition-background-400ms;
   
+  padding: 0;
   width: 280px;
   height: 30px;
-  padding: 0;
+  user-select: none;
   position: relative;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  user-select: none;
+  
 
   select {
-    @extend .background-color-bg-light;
-    @extend .color-text-dark;
+    background-color: var(--color_bg_light);
+    color: var(--color_text_dark);
     @extend .transition-background-400ms;
 
     width: 100%;
     height: 100%;
-    padding-left: 10px;
     border: none;
     font-size: 15px;
+    padding-left: 10px;
     -webkit-appearance: none;
 
     &:focus {
       outline: none;
     }
     option {
-      @extend .background-color-bg-light;
+      background-color: var(--color_bg_light);
     }
     &[disabled] {
       @extend .input-field-primary-disabled;
@@ -36,8 +37,8 @@
   &::after {
     @extend .font-icon-dark;
     content: "\f10c";
-    font-size: 18px;
     position: absolute;
+    font-size: 18px;
     right: 10px;
   }
 }

@@ -16,7 +16,7 @@
 
   &:hover,
   &.focused {
-    background-color: var(--color_nav);
+    background-color: var(--color_navbar_bg);
   }
   &.focused:hover {
     filter: contrast(0.9);

@@ -1,54 +1,52 @@
 const CommandBarImportCode =
-`import { CommandBar, CommandBarButton  } from "react-windows-ui";`;
+`import { CommandBar } from "react-windows-ui";`;
 
 const CommandBarUsageCode =
 `<CommandBar>
-  ......
-  <CommandBarButton
-    value="Upload"
-    onClick={() => {}}
-    icon={<i className="icons10-plus color-primary"></i>}
-    data={[
-      {label: 'file', link: '#', icon: <i className="icons10-file"></i>},
-      {label: 'folder', onClick: this.funName},
-      {label: 'image', onClick: this.funName},
-      {label: 'document', onClick: this.funName},
-    ]}
-  />
-  ......
+  <CommandBar.Button value="New" icon={<i className="icons10-plus color-primary"></i>}/>
+
+  <CommandBar.SplitDivider/>
+
+  <CommandBar.Menu menuDirection="leftJustify">
+    <CommandBar.MenuItem label="File" icon={<i className="icons10-file"></i>} />
+    <CommandBar.MenuItem label="Folder" onClick={() => alert("Hi")} />
+    <CommandBar.MenuItem label="Image" />
+    <CommandBar.MenuItem label="Document" />
+  </CommandBar.Menu>
+
 </CommandBar>`;
 
 const CommandBarButtonUsageCode =
-`<CommandBarButton
+`<CommandBar.Button
   value="Upload"
-  onClick={() => {}}
   icon={<i className="icons10-upload color-primary"></i>}
 />`;
 
 const CommandBarDropdownUsageCode =
-`<CommandBarButton
-  value="Share"
-  icon={<i className="icons10-share color-primary"></i>}
-  data={[
-    {label: 'Whatsapp', link: '#', icon: <i className="icons10-share"></i>},
-    {label: 'Facebook', onClick: this.funName},
-    {label: 'Instagram', link: '#'},
-    {label: 'Telegram', onClick: this.funName},
-  ]}
-/>`;
+`<CommandBar.Menu>
+  <CommandBar.MenuTrigger>
+    <CommandBar.Button
+      value="Share"
+      icon={<i className="icons10-angle-down color-primary"></i>}
+    />
+  </CommandBar.MenuTrigger>
+  <CommandBar.MenuItem label="Whatsapp" />
+  <CommandBar.MenuItem label="Facebook" />
+</CommandBar.Menu>`;
 
 const CommandBarSplitUsageCode =
-`<CommandBarButton
-  value="New"
-  onClick={() => {}}
-  icon={<i className="icons10-plus color-primary"></i>}
-  data={[
-    {label: 'file', link: '#', icon: <i className="icons10-file"></i>},
-    {label: 'folder', onClick: this.funName},
-    {label: 'image', link: '#'},
-    {label: 'document', onClick: this.funName},
-  ]}
-/>`;
+`<CommandBar>
+  <CommandBar.Button value="New" icon={<i className="icons10-plus color-primary"></i>}/>
+
+  <CommandBar.SplitDivider/>
+
+  <CommandBar.Menu menuDirection="leftJustify">
+    <CommandBar.MenuItem label="File" icon={<i className="icons10-file"></i>} />
+    <CommandBar.MenuItem label="Folder" onClick={() => {}} />
+    <CommandBar.MenuItem label="Image" />
+    <CommandBar.MenuItem label="Document" />
+  </CommandBar.Menu>
+</CommandBar>`;
 
 
 export {

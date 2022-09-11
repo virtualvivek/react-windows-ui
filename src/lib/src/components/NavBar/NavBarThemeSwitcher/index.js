@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Appearance } from "../../_api";
 
-const NavThemeSwitcher = () => {
+const NavBarThemeSwitcher = () => {
 
   const inputRef = useRef();
   const [labelText, setLabelText] = useState("Mode");
@@ -46,19 +46,17 @@ const NavThemeSwitcher = () => {
   });
 
   return (
-    <div className="app-navbar-theme-switcher">
-      <label className="dayNight">
-        <input
-          ref={inputRef}
-          type="checkbox"
-          id="app-navbar-theme-switcher"
-          onChange={toggleDayNight}
-        />
-        <div></div>
-        <span id="app-navbar-theme-switcher-text">{labelText}</span>
-      </label>
-    </div>
+    <label className="app-navbar-theme-switch">
+      <input
+        ref={inputRef}
+        type="checkbox"
+        onChange={toggleDayNight}
+        id="app-navbar-theme-switch"
+      />
+      <div className="app-navbar-theme-switch-view"></div>
+      <span id="app-navbar-theme-switch-text">{labelText}</span>
+    </label>
   )
 }
 
-export default NavThemeSwitcher;
+export default NavBarThemeSwitcher;

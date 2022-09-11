@@ -30,14 +30,11 @@ const MenuBar = (props) => {
 
 
   return (
-    <div
-      className="app-select-styled menubar"
-      onClick={toggleMenuBar}
-      ref={wrapperRef}>
+    <div className="app-dropdown-menu app-menubar" onClick={toggleMenuBar} ref={wrapperRef}>
       <span>{props.label}</span>
-      <ul className={ menubar ? `show ${isReverse}` : ""}>
+      <ul className={ menubar ? `app-dropdown-list show ${isReverse}` : "app-dropdown-list"}>
         {props.showSearchBar && (
-        <div className="app-search-box"
+        <div className="app-input-search-box"
           onClick={(e) => {e.stopPropagation()}}>
           <input
             className="app-input-text app-input-search"
@@ -56,7 +53,7 @@ const MenuBar = (props) => {
         )}
         {teams.map(item => (
         <li
-          className="option"
+          className="app-dropdown-list-item"
           key={item.label}>
           <Link
             to={item.link ? item.link : "#"}

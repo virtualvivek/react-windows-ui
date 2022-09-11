@@ -6,6 +6,7 @@ const RadioButton = (props) => {
       className="app-radio-button"
       title={props.tooltip}>
       <input
+        {...props}
         type="radio"
         className="app-radio"
         name={props.name}

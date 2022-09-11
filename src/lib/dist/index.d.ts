@@ -5,9 +5,9 @@ import {
     NavPageContainer,
     NavPageContainerRight,
     NavPageContainerInner,
-    NavSearchBox,
-    NavSearchSuggestion,
-    NavThemeSwitcher } from './components/NavBar'
+    NavBarSearchBox,
+    NavBarSearchSuggestion,
+    NavBarThemeSwitcher } from './components/NavBar'
 
 import Accordion from './components/Accordion'
 import AppTheme from './components/AppTheme'
@@ -40,7 +40,7 @@ import ProgressBarIndeterminate from './components/ProgressBarIndeterminate'
 import RadioButton from './components/RadioButton'
 import SliderBar from './components/SliderBar'
 import Select from './components/Select'
-import SelectBox from './components/SelectBox'
+import SelectNative from './components/SelectNative'
 import StickyHeader from './components/StickyHeader'
 import Switch from './components/Switch'
 import TableView from './components/TableView'
@@ -54,9 +54,9 @@ export {
     NavPageContainer,
     NavPageContainerRight,
     NavPageContainerInner,
-    NavSearchBox,
-    NavSearchSuggestion,
-    NavThemeSwitcher,
+    NavBarSearchBox,
+    NavBarSearchSuggestion,
+    NavBarThemeSwitcher,
 
     Accordion,
     AppTheme,
@@ -89,7 +89,7 @@ export {
     RadioButton,
     SliderBar,
     Select,
-    SelectBox,
+    SelectNative,
     StickyHeader,
     Switch,
     TableView,

@@ -5,8 +5,8 @@
     margin: 5px 10px;
     border-radius: 8px;
 
-    &:hover { @extend .background-color-link-bg-hover; }
-    &:active { @extend .background-color-link-bg-active; }
+    &:hover { background-color: var(--color_link_bg_hover); }
+    &:active { background-color: var(--color_link_bg_active); }
 
     a {
       width: 100%;
@@ -31,10 +31,10 @@
         transform: translate3d(-200%, 0, 0);
       }
       &:focus {
-        @extend .outline-none;
+        outline: none;
       }
       &.active {
-        @extend .font-weight-500;
+        font-weight: 500;
         background: var(--color_grey_light_alpha);
         backdrop-filter: contrast(0.4);
         

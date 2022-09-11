@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, Accordion } from '../../../lib/src'
+import { NavPageContainer, Accordion, LinkCompound } from '../../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { AccordionImportCode, AccordionUsageCode,
@@ -13,9 +13,7 @@ const AccordionDocs = () => {
 
       <p><span className="color-primary">Accordion</span> component is used to show (and hide) content, it collapsed on hide and expand on show state.</p>
 
-      <Accordion focused title="Some Title">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </Accordion>
+      
 
       <h2>Import</h2>
 
@@ -28,9 +26,17 @@ const AccordionDocs = () => {
 
       <h2>Usage</h2>
 
-      <Accordion focused title="Some Title">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <Accordion headerTitle="Some Title" style={{width: "280px"}}>
+        <Accordion.Panel>
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+          nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </Accordion.Panel>
       </Accordion>
+
       <br/>
 
       <SyntaxHighlighter
@@ -42,8 +48,24 @@ const AccordionDocs = () => {
 
       <h3 className="m-tb-20">Accordion <p className="app-code">focused false</p></h3>
 
-      <Accordion focused={false} title="Some Title">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <Accordion
+        style={{width: "270px"}}
+        onCollapse={() => {}}
+        onExpand={() => {}}>
+        <Accordion.Header>
+          <LinkCompound
+            to="#"
+            title="User preferences and uploads"
+            subtitle="Profile pictures and details"
+          />
+        </Accordion.Header>
+        <Accordion.Panel>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam.
+          </p>
+        </Accordion.Panel>
       </Accordion>
       <br/>
 

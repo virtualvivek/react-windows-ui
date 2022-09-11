@@ -97,16 +97,16 @@ render() {
     <h2>Usage</h2>
 
     <div className="app-flex">
-      <div className="app-space-10"></div>
+      &nbsp;&nbsp;&nbsp;
+      <LoaderBusy
+        size="large"
+        isLoading={this.state.showLoaderBusy}
+      />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <LoaderBusy
         isLoading={this.state.showLoaderBusy}
       />
-      <div className="app-space-45"></div>
-      <LoaderBusy
-        isLoading={this.state.showLoaderBusy}
-        size="medium"
-      />
-      <div className="app-space-35"></div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <LoaderBusy
         isLoading={this.state.showLoaderBusy}
         size="small"
@@ -138,7 +138,8 @@ render() {
     <Button
       value="Open fullscreen Loader"
       onClick={this.toggleLoaderBusyFull}
-    /><br/><br/>
+    />
+    <br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -172,20 +173,20 @@ render() {
 
     <div className="app-hr"></div>
     <h2>Loaders <p className="app-code">{`setTheme={'light'}`}</p> :</h2>
-    <div className="app-align-center background-color-primary"
-      style={{width:'80%',borderRadius:12}}>
+    <div className="app-align-center"
+      style={{width:'80%',borderRadius: 12, backgroundColor: "var(--PrimaryColor)"}}>
       <br/><br/>
       <div className="app-flex">
-      <div className="app-space-45"></div>
-        <LoaderBusy
-          setTheme="light"
-          isLoading={true}/>
-        <div className="app-space-45"></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;
         <LoaderBusy
           setTheme="light"
           isLoading={true}
-          size="medium"/>
-        <div className="app-space-35"></div>
+          size="large"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <LoaderBusy
+          setTheme="light"
+          isLoading={true}/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <LoaderBusy
           setTheme="light"
           isLoading={true}

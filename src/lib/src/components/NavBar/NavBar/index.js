@@ -42,7 +42,7 @@ const NavBar = (props) => {
         <div className="app-navbar-header"
           style={ props.shadowOnScroll ?
                   isScrolling
-                  ? { boxShadow: "0 6px 8px -8px var(--color_link_bg_hover)" }
+                  ? { boxShadow: "0 6px 8px -8px var(--color_link_bg_active)" }
                   : { boxShadow : "" }
                   : { boxShadow: "" }
             }>

@@ -1,4 +1,4 @@
-.app-button-icon {
+.app-btn-icon {
   font-size: 24px;
   vertical-align: middle;
   padding: 5px 10px;
@@ -20,7 +20,7 @@
 }
 
 @mixin button-icon-mobile() {
-  .app-button-icon {
+  .app-btn-icon {
     &:hover {
       color: var(--PrimaryColor);
       background-color: transparent;

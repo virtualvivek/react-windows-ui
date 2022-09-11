@@ -34,7 +34,7 @@ const CardUsageHoverCode =
   />
   <div style={{float:'right', display:'flex'}}>
     <Button value="Options"/>
-    <div className="app-space-15"></div>
+    &nbsp;
     <Button value="Remove"/> 
   </div>
 </Card>`;

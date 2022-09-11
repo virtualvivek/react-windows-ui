@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const LinkCompound = (props) => {
 
   const setFocused = () => {
-    return props.focused ? "focused" : "";
+    return props.focused ? " focused" : "";
   }
   const setImgSource = () => {
     return props.imgSrc ? <img src={props.imgSrc} alt={props.imgAlt}/> : <></>;
@@ -13,8 +13,8 @@ const LinkCompound = (props) => {
     <Link
       className={
         props.type === "border"
-        ? `app-link-compound primary ${setFocused()}`
-        : `app-link-compound ${setFocused()}`
+        ? `app-link-compound link-border${setFocused()}`
+        : `app-link-compound${setFocused()}`
       }
       to={props.to}
       style={props.style}

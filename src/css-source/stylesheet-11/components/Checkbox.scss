@@ -1,7 +1,7 @@
 label.app-checkbox {
-  @extend .user-select-none;
+  user-select: none;
   @extend .tap-highlight-none;
-  @extend .cursor-pointer;
+  cursor: pointer;
 
   &:active input[type="checkbox"] {
     transition: 0.02s ease;
@@ -58,7 +58,7 @@ label.app-checkbox {
     
     &:checked:disabled::before,
     &:disabled::before {
-      @extend .cursor-not-allowed;
+      cursor: not-allowed;
     }
   }
 }

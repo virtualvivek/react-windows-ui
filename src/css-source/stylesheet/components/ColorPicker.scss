@@ -37,7 +37,7 @@
   }
 
   .item {
-    @extend .app-display-none;
+    display: none;
   }
   div:hover,
   .item:checked + div {

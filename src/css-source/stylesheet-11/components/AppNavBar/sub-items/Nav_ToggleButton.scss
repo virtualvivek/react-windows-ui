@@ -3,10 +3,10 @@
   cursor: pointer;
 
   &:hover {
-    @extend .background-color-link-bg-hover;
+    background-color: var(--color_link_bg_hover);
   }
   &:active {
-    @extend .background-color-link-bg-active;
+    background-color: var(--color_link_bg_active);
   }
   &::after {
     @extend .font-icon-dark;

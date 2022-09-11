@@ -1,8 +1,8 @@
 import React from "react";
 
-const SelectBox = (props) => {
+const SelectNative = (props) => {
   return (
-    <div className="app-select-styled">
+    <div className="app-select-menu">
       <select name={props.name} disabled={props.disabled}>
         {props.data.map(item => (
         <option
@@ -16,8 +16,8 @@ const SelectBox = (props) => {
   )
 }
 
-SelectBox.defaultProps = {
+SelectNative.defaultProps = {
   data: []
 }
 
-export default SelectBox;
+export default SelectNative;

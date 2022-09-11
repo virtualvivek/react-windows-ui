@@ -1,6 +1,6 @@
-.app-select-styled.menubar {
-  @extend .cursor-pointer;
-  @extend .user-select-none;
+.app-select-menu.menubar {
+  cursor: pointer;
+  user-select: none;
   @extend .tap-highlight-none;
   
   &::after,
@@ -15,7 +15,7 @@
     @extend .app-custom-dropdown-ul;
     max-height: 280px;
 
-    .app-search-box {
+    .app-input-search-box {
       width: inherit;
       .app-input-text {
         box-sizing: border-box;

@@ -1,4 +1,4 @@
-.app-select-styled {
+.app-select-menu {
   @extend .input-field-primary;
   @extend .transition-background-400ms;
   
@@ -12,8 +12,8 @@
   user-select: none;
 
   select {
-    @extend .background-color-bg-light;
-    @extend .color-text-dark;
+    background-color: var(--color_bg_light);
+    color: var(--color_text_dark);
     @extend .transition-background-400ms;
 
     width: 100%;
@@ -27,7 +27,7 @@
       outline: none;
     }
     option {
-      @extend .background-color-bg-light;
+      background-color: var(--color_bg_light);
     }
     &[disabled] {
       @extend .input-field-primary-disabled;

@@ -37,11 +37,11 @@
   }
 
   input {
-    @extend .app-display-none;
+    display: none;
     
     &:checked {
       ~.app-switch-view {
-        @extend .background-color-primary;
+        background-color: var(--PrimaryColor);
         border-color: var(--PrimaryColor);
 
         &::before {
@@ -59,8 +59,8 @@
    
     &:disabled {
       +.app-switch-view {
-        @extend .background-color-link-bg-hover;
-        @extend .cursor-not-allowed;
+        background-color: var(--color_link_bg_hover);
+        cursor: not-allowed;
         border-color: var(--color_link_bg_hover);
 
         &::before {

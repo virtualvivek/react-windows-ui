@@ -1,6 +1,6 @@
 .app-navbar-wrap {
   .app-navbar-header {
-    @extend .background-color-nav;
+    background-color: var(--color_navbar_bg);
     width: inherit;
     display: flex;
     align-items: center;

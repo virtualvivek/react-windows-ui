@@ -16,8 +16,8 @@
   -webkit-appearance: none;
 
   &:checked {
-    @extend .background-color-text-dark;
     border: 2px solid var(--PrimaryColor);
+    background-color: var(--color_text_dark);
     box-shadow: inset 0 0 0 2.8px var(--color_bg_light);
   }
   &:disabled {
@@ -29,11 +29,11 @@
 }
 
 .app-radio-button {
-  display: inline-block;
   align-items: center;
+  display: inline-block;
 
   .app-radio + span {
-    @extend .cursor-pointer;
-    @extend .vertical-align-middle;
+    cursor: pointer;
+    vertical-align: middle;
   }
 }

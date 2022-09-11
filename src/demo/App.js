@@ -1,7 +1,7 @@
 import React from 'react'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import { AppTheme, SplashScreen, NavBar, NavBarLink,
-        NavBarSubMenu, NavSearchSuggestion, NavThemeSwitcher } from '../lib/src'
+        NavBarSubMenu, NavBarSearchSuggestion, NavBarThemeSwitcher } from '../lib/src'
 
 import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
@@ -57,6 +57,7 @@ import PageJsSplit from './templates/pagejs-split'
 import NavBarItem from './NavBarItems.json'
 
 import Img2 from './assets/illustration/mountain.jpg'
+import { ReactComponent as GithubIcon } from './assets/github.svg'
 
 class App extends React.Component {
 
@@ -108,12 +109,16 @@ class App extends React.Component {
         title="React Windows UI"
         shadowOnScroll={true}
         titleBarMobile={
-          <div style={{display: "flex", justifyContent: "space-between", width: "calc(100% - 60px)"}}>
+          <div style={{display: "flex", justifyContent: "space-between", width: "calc(100% - 60px)", alignItems: "center"}}>
             <span className="app-navbar-name">React-windows-ui</span>
-            <span className="app-navbar-name">{this.state.currentTitle}</span>
+            <span className="app-navbar-name">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/virtualvivek/react-windows-ui/">
+                <GithubIcon width={25} height={25}/>
+              </a>
+            </span>
           </div>}>
 
-        <NavSearchSuggestion
+        <NavBarSearchSuggestion
           placeholder="Search Docs v4.0.x"
           tooltip="Search Docs"
           data={[
@@ -136,7 +141,7 @@ class App extends React.Component {
           ]}
         />
 
-        <NavThemeSwitcher/>
+        <NavBarThemeSwitcher/>
 
       <NavBarLink
         exact
@@ -266,16 +271,12 @@ class App extends React.Component {
         <Route path='/PageJsDefault' element={<PageJsDefault/>} />
         <Route path='/PageJsSplit' element={<PageJsSplit/>} />
 
-        <Route path='/boilerplate_external' element={() => { 
+        <Route path='/boilerplate_external' element={() => {
           window.location.href = 'https://github.com/virtualvivek/react-windows-ui-boilerplate';
           return null;
         }} />
-        <Route path='/apptheme_external' element={() => { 
+        <Route path='/apptheme_external' element={() => {
           window.location.href = 'https://github.com/virtualvivek/react-windows-ui/blob/main/src/demo/docs/AppTheme_docs/index.js';
-          return null;
-        }} />
-        <Route path='/fluent_icons_external' element={() => { 
-          window.location.href = 'https://github.com/microsoft/fluentui-system-icons';
           return null;
         }} />
         

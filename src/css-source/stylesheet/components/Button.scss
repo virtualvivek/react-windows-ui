@@ -1,9 +1,9 @@
 button,
-.app-button {
-  @extend .user-select-none;
+.app-btn {
   @extend .tap-highlight-none;
   
   cursor: pointer;
+  user-select: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -14,11 +14,11 @@ button,
     outline: none !important;
   }
 }
-.app-button {
-  @extend .user-select-none;
-  @extend .color-text-dark;
-  @extend .vertical-align-middle;
-  @extend .background-color-button;
+.app-btn {
+  user-select: none;
+  vertical-align: middle;
+  color: var(--color_text_dark);
+  background-color: var(--color_button);
 
   height: 35px;
   font-size: 15px;
@@ -35,52 +35,53 @@ button,
     transition: 0.02s ease;
     border: 2px solid transparent;
   }
-  &.isLoading {
-    pointer-events: none;
+  &.btn-is-loading {
+    cursor: auto;
 
     span {
       opacity: 0;
     }
   }
 
-  &.primary {
-    @extend .background-color-primary;
+  &.btn-primary {
+    background-color: var(--PrimaryColor);
   }
-  &.primary-outline {
-    color: var(--color_primary_light);
+  &.btn-primary-outline {
+    color: var(--color_day_primary_night_white);
     border: 2px solid var(--PrimaryColor);
+
     &:active {
       background-color: var(--PrimaryColor);
     }
   }
-  &.danger {
+  &.btn-danger {
     background: #C50500;
   }
-  &.danger-outline {
+  &.btn-danger-outline {
     border: 2px solid #C50500;
     color: #C50500;
     &:active {
       background-color: #C50500;
     }
   }
-  &.success {
+  &.btn-success {
     background: #2C8B2C;
   }
-  &.success-outline {
+  &.btn-success-outline {
     border: 2px solid #2C8B2C;
     color: #2C8B2C;
     &:active {
       background-color: #2C8B2C;
     }
   }
-  &.primary,
-  &.danger,
-  &.success {
+  &.btn-primary,
+  &.btn-danger,
+  &.btn-success {
     color: #fff;
   }
-  &.primary-outline,
-  &.success-outline,
-  &.danger-outline {
+  &.btn-primary-outline,
+  &.btn-success-outline,
+  &.btn-danger-outline {
     background-color: transparent;
 
     &:active {
@@ -107,9 +108,7 @@ button,
   }
 
   .app-loader-busy {
-    width: 0px;
-    left: 40%;
-    display: inline; 
+    position: absolute;
   }
   span {
     transition: opacity ease 0.2s;
@@ -124,7 +123,7 @@ button,
 }
 
 @mixin button-mobile() {
-  .app-button:not(.primary-outline):not(.danger-outline):not(.success-outline) {
+  .app-btn:not(.primary-outline):not(.danger-outline):not(.success-outline) {
     &:hover {
       filter: none;
       border-color: transparent;

@@ -3,7 +3,8 @@ import React from 'react'
 const ButtonIcon = (props) => {
   return (
     <button
-      className="app-button-icon"
+      {...props}
+      className="app-btn-icon"
       disabled={props.disabled}
       onClick={props.onClick}
       title={props.tooltip}

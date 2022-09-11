@@ -11,6 +11,7 @@ const LoaderBarUsageCode =
 
 const LoaderBusyUsageCode =
 `<LoaderBusy
+  size="large"
   isLoading={true}
 />`;
 

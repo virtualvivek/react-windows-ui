@@ -1,5 +1,5 @@
 .app-alert {
-  @extend .color-white;
+  color: #fff;
   @extend .app-dim-overlay;
 
   .app-alert-modal {
@@ -10,8 +10,8 @@
     box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);
 
     &.light {
-      @extend .color-text-dark;
-      @extend .background-color-grey-light;
+      color: var(--color_text_dark);
+      background-color: var(--color_grey_light);
   
       button {
         color: var(--color_button_hover);

@@ -11,6 +11,9 @@
   .app-navbar-wrap nav {
     scrollbar-width: thin;
   }
+  .app-navbar-theme-switch {
+    margin: 5px 10px 5px 20px;
+  }
 }
 @mixin browser-mozilla-mobile() {
   .app-navbar-wrap nav {

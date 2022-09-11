@@ -1,7 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useLayoutEffect } from "react";
 
 const NavBarSubMenu = (props) => {
+  const panelRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
+  const [contentHeight, setContentHeight] = useState(100);
+
+  useLayoutEffect(() => {
+    let height_ = 0;
+    panelRef.current?.childNodes.forEach((node, index) => {
+        height_ += node?.clientHeight;
+    });
+    setContentHeight(height_);
+  }, []);
+
 
   return (
     <div className="app-navbar-submenu">
@@ -11,7 +22,10 @@ const NavBarSubMenu = (props) => {
         <div>{props.title}</div>
         {isActive ? props.expandIcon : props.collapseIcon}
       </div>
-      <div className={isActive ? "app-navbar-submenu-content show"
+      <div
+        ref={panelRef}
+        style={isActive ? {height: contentHeight} : {height: 0}}
+        className={isActive ? "app-navbar-submenu-content show"
                                : "app-navbar-submenu-content"}>
         {props.children}
       </div>

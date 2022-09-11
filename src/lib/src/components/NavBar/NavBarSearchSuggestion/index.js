@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import  { useOutSideClick } from "../../_hooks";
+import { useOutSideClick } from "../../_hooks";
 
-const NavSearchSuggestion = (props) => {
+const NavBarSearchSuggestion = (props) => {
 
   const dialogRef = useRef(null);
   const listRef = useRef(null);
@@ -31,7 +31,7 @@ const NavSearchSuggestion = (props) => {
 
   return (
     <div className="app-nav-search" title={props.tooltip}>  
-    <div className="app-search-box">
+    <div className="app-input-search-box">
       <input
         className="app-input-text"
         type="search"
@@ -93,9 +93,9 @@ const NavSearchSuggestion = (props) => {
  )
 }
 
-NavSearchSuggestion.defaultProps = {
+NavBarSearchSuggestion.defaultProps = {
   placeholder: "Search here..",
   data: []
 }
 
-export default NavSearchSuggestion;
+export default NavBarSearchSuggestion;

@@ -14,34 +14,40 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">title</p></td>
+          <td><p className="app-code">headerTitle</p></td>
           <td>string</td>
+          <td>""</td>
+          <td>Set's accordion title if not using custom Header.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">style</p></td>
+          <td>object</td>
           <td>null</td>
-          <td>Set's the accordion title</td>
+          <td>Set's accordion container style.</td>
         </tr>
         <tr>
-          <td><p className="app-code">focused</p></td>
-          <td>boolean</td>
-          <td>true</td>
-          <td>Set's the accordion background focused</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">collapseIcon</p></td>
-          <td>ReactNode</td>
-          <td><i className="icons10-angle-down"></i></td>
-          <td>Set's the accordion title's end collapsed icon</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">expandIcon</p></td>
-          <td>ReactNode</td>
-          <td><i className="icons10-angle-up"></i></td>
-          <td>Set's the accordion title's end expand icon</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">children</p></td>
-          <td>ReactNode</td>
+          <td><p className="app-code">onCollapse()</p></td>
+          <td>function</td>
           <td>null</td>
-          <td>Set's the accordion children</td>
+          <td>Set's accordion onCollapse listener.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onExpand()</p></td>
+          <td>function</td>
+          <td>null</td>
+          <td>Set's accordion onExpand listener.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">Accordion.Header</p></td>
+          <td>ReactNode</td>
+          <td>[ ]</td>
+          <td>Set's accordion custom header component.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">Accordion.Panel</p></td>
+          <td>ReactNode</td>
+          <td>[ ]</td>
+          <td>Set's accordion panel component.</td>
         </tr>
       </tbody>
     </table>

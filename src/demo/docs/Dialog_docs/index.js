@@ -75,7 +75,7 @@ class DialogDocs extends React.Component {
             type="primary"
             onClick={this.toggleDialogConfirm}
           />
-          <div className="app-space-15"></div>
+          &nbsp;
           <Button
             style={{flex: "auto"}}
             value="Cancel"
