@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { AppTheme, SplashScreen, NavBar, NavBarLink, NavBarSearchSuggestion, NavBarThemeSwitcher } from "react-windows-ui";
+import { AppTheme, SplashScreen, NavBar, NavBarLink, NavBarSearchSuggestion, NavBarThemeSwitch } from "react-windows-ui";
 import Page0 from "./pages/page0";
 import Page1 from "./pages/page1";
 import Page2 from "./pages/page2";
@@ -47,7 +47,7 @@ const App = () => {
             {label: 'Page 2', link: '/page2'}
           ]}
         />
-        <NavBarThemeSwitcher/>
+        <NavBarThemeSwitch/>
 
         <h1>Pages</h1>
         <div className="app-hr"></div>

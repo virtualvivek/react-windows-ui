@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Appearance } from "../../_api";
 
-const NavBarThemeSwitcher = () => {
+const NavBarThemeSwitch = () => {
 
   const inputRef = useRef();
   const [labelText, setLabelText] = useState("Mode");
@@ -59,4 +59,4 @@ const NavBarThemeSwitcher = () => {
   )
 }
 
-export default NavBarThemeSwitcher;
+export default NavBarThemeSwitch;

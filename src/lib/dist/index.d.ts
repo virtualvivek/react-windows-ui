@@ -7,7 +7,7 @@ import {
     NavPageContainerInner,
     NavBarSearchBox,
     NavBarSearchSuggestion,
-    NavBarThemeSwitcher } from './components/NavBar'
+    NavBarThemeSwitch } from './components/NavBar'
 
 import Accordion from './components/Accordion'
 import AppTheme from './components/AppTheme'
@@ -56,7 +56,7 @@ export {
     NavPageContainerInner,
     NavBarSearchBox,
     NavBarSearchSuggestion,
-    NavBarThemeSwitcher,
+    NavBarThemeSwitch,
 
     Accordion,
     AppTheme,

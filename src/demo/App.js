@@ -1,7 +1,7 @@
 import React from 'react'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import { AppTheme, SplashScreen, NavBar, NavBarLink,
-        NavBarSubMenu, NavBarSearchSuggestion, NavBarThemeSwitcher } from '../lib/src'
+        NavBarSubMenu, NavBarSearchSuggestion, NavBarThemeSwitch } from '../lib/src'
 
 import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
@@ -141,7 +141,7 @@ class App extends React.Component {
           ]}
         />
 
-        <NavBarThemeSwitcher/>
+        <NavBarThemeSwitch/>
 
       <NavBarLink
         exact
