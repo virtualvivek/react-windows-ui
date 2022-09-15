@@ -116,6 +116,7 @@ npm start
 Head to the desired version [Release](https://github.com/virtualvivek/react-windows-ui/releases/). <br/>
 Download the Release and start exploring !
 ```html
+cd to-your-downloaded-version
 npm install
 npm start
 ```
