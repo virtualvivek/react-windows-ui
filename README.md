@@ -104,7 +104,7 @@ const App = () => (
 ```
 
 # Run Demo Locally
-```cmd
+```html
 git clone https://github.com/virtualvivek/react-windows-ui.git
 cd react-windows-ui
 npm install
@@ -112,11 +112,13 @@ npm start
 ```
 
 
-# RTL Support
-Distribute layout direction from Right to Left.
-```js
-// include rtl styles at some point, probably during your bootstraping
-import "react-windows-ui/dist/react-windows-ui-rtl.min.css";
+# View Docs for specific version
+Head to the desired version [Release](https://github.com/virtualvivek/react-windows-ui/releases/). <br/>
+Download the Release and start exploring !
+```html
+cd to-your-downloaded-version
+npm install
+npm start
 ```
 
 
@@ -127,6 +129,12 @@ Here are some useful links.
 * [NPM React-Windows-UI Library](https://www.npmjs.com/package/react-windows-ui)
 
 
+# RTL Support
+Distribute layout direction from Right to Left.
+```js
+// include rtl styles at some point, probably during your bootstraping
+import "react-windows-ui/dist/react-windows-ui-rtl.min.css";
+```
 
 # Find this library useful? :heart:
 Support it by joining [**stargazers**](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
