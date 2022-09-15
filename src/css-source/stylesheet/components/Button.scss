@@ -123,7 +123,7 @@ button,
 }
 
 @mixin button-mobile() {
-  .app-btn:not(.primary-outline):not(.danger-outline):not(.success-outline) {
+  .app-btn:not(.btn-primary-outline):not(.btn-danger-outline):not(.btn-success-outline) {
     &:hover {
       filter: none;
       border-color: transparent;

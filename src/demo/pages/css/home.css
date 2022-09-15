@@ -1,14 +1,14 @@
 .home-header {
-  width: 275px;
+  width: 255px;
   color: #fff;
   margin: auto;
   display: flex;
   padding: 15px;
-  font-size: 50px;
+  font-size: 42px;
   text-align: center;
   align-items: center;
   margin-bottom: 25px;
-  border-radius: 25px;
+  border-radius: 14px;
   justify-content: center;
   background-color: #222;
   box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
@@ -17,13 +17,6 @@
               0 20.5812px 20.5812px rgb(0 0 0 / 6%),
               0 41.1623px 41.1623px rgb(0 0 0 / 7%),
               0 96.0454px 89.1851px rgb(0 0 0 / 9%);
-}
-.home-header i {
-  width: 52px;
-  height: 52px;
-  display: flex;
-  font-size: 60px;
-  color: var(--PrimaryColor);
 }
 .home-title {
   font-weight: 800;
@@ -168,10 +161,6 @@ body.dark-theme .backdrop  .acrylic-material::before {
 @media only screen and (max-width: 1000px) {
   .root-flex-container-home {
     height: 85vh;
-  }
-
-  .home-header {
-    width: 265px;
   }
   .root-flex-subcontainer-home {
     width: fit-content;

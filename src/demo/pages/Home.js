@@ -3,6 +3,7 @@ import { NavPageContainer, ColorPickerItem, ColorPickerPalette, AppTheme, Button
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import ReactIcon from './css/home/ReactIcon'
+import WinIcon from './css/home/WinIcon'
 import './css/home.css'
 
 
@@ -27,7 +28,7 @@ class Home extends React.Component {
           <div className="home-header">
             <ReactIcon/>
             <span>&nbsp;   +   &nbsp;</span>
-            <i className="icons10-windows"></i>
+            <WinIcon/>
           </div>
 
           <div className="home-color-picker">
