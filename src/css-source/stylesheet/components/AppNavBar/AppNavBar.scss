@@ -14,6 +14,7 @@
 @import "./navbar-mobile/NavBarMobile.scss";
 
 @import "./AppNavToggled.scss";
+@import "../../repository";
 
 .app-navbar-wrap {
   z-index: 9;
@@ -23,7 +24,9 @@
   transition: 0.2s ease;
 
   nav {
-    @extend .transition-background-400ms;
+    @if $repository == "react-windows-ui" {
+      @extend .transition-background-400ms;
+    }
     
     height: inherit;
     width: inherit;

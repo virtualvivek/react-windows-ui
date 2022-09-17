@@ -1,10 +1,15 @@
+@import "../repository";
+
 html {
   overflow-x: hidden;
   overflow-y: overlay;
   scroll-behavior: smooth;
 }
 body {
-  @extend .transition-background-400ms;
+  @if $repository == "react-windows-ui" {
+    @extend .transition-background-400ms;
+  }
+  
   margin: 0;
   padding: 0;
   color: var(--color_text_dark);
