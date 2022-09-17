@@ -51,12 +51,13 @@ import PageJsSplit from './_templates/pagejs-split'
 
 import NavBarItem from './index_nav_items.json'
 import Img2 from '../assets/illustration/mountain.jpg'
+import GithubIcon from "../assets/static/GithubIcon";
 
 import './_lib/config/app-config.css'
 import './_lib/react-windows-ui.min.css'
 import { lib_version } from './values'
 
-class App_420 extends React.Component {
+class AppFourTwoZero extends React.Component {
 
   constructor() {
     super();
@@ -126,9 +127,13 @@ class App_420 extends React.Component {
         </>}
         shadowOnScroll={true}
         titleBarMobile={
-          <div style={{display: "flex", justifyContent: "space-between", width: "calc(100% - 60px)"}}>
+          <div style={{display: "flex", justifyContent: "space-between", width: "calc(100% - 60px)", alignItems: "center"}}>
             <span className="app-navbar-name">React-windows-ui</span>
-            <span className="app-navbar-name"></span>
+            <span className="app-navbar-name">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/virtualvivek/react-windows-ui/">
+                <GithubIcon width={25} height={25}/>
+              </a>
+            </span>
           </div>}>
 
         <NavSearchSuggestion
@@ -285,4 +290,4 @@ class App_420 extends React.Component {
   }
 }
 
-export default App_420
+export default AppFourTwoZero

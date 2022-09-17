@@ -51,14 +51,14 @@ import PageJsSplit from './_templates/pagejs-split'
 
 import NavBarItem from './index_nav_items.json'
 import Img2 from '../assets/illustration/mountain.jpg'
-import GithubIcon from "../assets/static/GithubIcon";
+import GithubIcon from "../assets/static/GithubIcon"
 
 import '../../lib/config/app-config.css'
 import '../../lib/dist/react-windows-ui.min.css'
 
 import { lib_version } from './values'
 
-class App_421_View extends React.Component {
+class AppFourTwoOne extends React.Component {
 
   constructor() {
     super();
@@ -287,4 +287,4 @@ class App_421_View extends React.Component {
   }
 }
 
-export default App_421_View
+export default AppFourTwoOne
