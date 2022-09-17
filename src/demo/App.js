@@ -57,7 +57,9 @@ import PageJsSplit from './templates/pagejs-split'
 import NavBarItem from './NavBarItems.json'
 
 import Img2 from './assets/illustration/mountain.jpg'
-import { ReactComponent as GithubIcon } from './assets/github.svg'
+// import { ReactComponent as GithubIcon } from './assets/github.svg'
+import GithubIcon from "./assets/static/GithubIcon";
+import { lib_version } from './values'
 
 class App extends React.Component {
 
@@ -66,27 +68,12 @@ class App extends React.Component {
     this.state = {
       showSplash: true,
       data: NavBarItem,
-      currentTitle: "Home",
       filteredData: NavBarItem
     }
   }
 
   componentDidMount() {
     this.setState({ showSplash: false});
-
-    window.onpopstate = ()=> {
-      const hash = window.location.href;
-      if(hash.indexOf('getting_started')>-1) this.setState({currentTitle: "Getting Started"});
-      if(hash.indexOf('colors')>-1) this.setState({currentTitle: "Colors"});
-      if(hash.indexOf('accordion')>-1) this.setState({currentTitle: "Accordion"});
-      if(hash.indexOf('alerts')>-1) this.setState({currentTitle: "Alerts"});
-      if(hash.indexOf('apptheme')>-1) this.setState({currentTitle: "AppTheme"});
-      if(hash.indexOf('appearance')>-1) this.setState({currentTitle: "Appearance"});
-      if(hash.indexOf('avatarview')>-1) this.setState({currentTitle: "Avatarview"});
-      if(hash.indexOf('buttons')>-1) this.setState({currentTitle: "Buttons"});
-      if(hash.indexOf('apptheme')>-1) this.setState({currentTitle: "AppTheme"});
-      
-    }
   }
 
   render() {
@@ -119,7 +106,7 @@ class App extends React.Component {
           </div>}>
 
         <NavBarSearchSuggestion
-          placeholder="Search Docs v4.0.x"
+          placeholder={`Search Docs v${lib_version}`}
           tooltip="Search Docs"
           data={[
             {label: 'home', link: '#', icon: <i className="icons10-home"></i>},

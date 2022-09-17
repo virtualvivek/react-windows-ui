@@ -107,7 +107,7 @@
   transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
-  background: url(./home/backdrop.jpg) center/cover no-repeat;
+  background: url(../../assets/static/backdrop.jpg) center/cover no-repeat;
 }
 
 .backdrop .acrylic-material,
@@ -128,27 +128,27 @@
   background-blend-mode: normal, color, luminosity;
   background: -o-linear-gradient(bottom, rgba(239, 239, 239, 0.3), 
             rgba(239, 239, 239, 0.3)), 
-            rgba(239, 239, 239, 0.95) url(./home/noise.png) center/196px repeat;
+            rgba(239, 239, 239, 0.95) url(../../assets/static/noise.png) center/196px repeat;
   background: -webkit-gradient(linear, left bottom, left top, 
               from(rgba(239, 239, 239, 0.3)), 
               to(rgba(239, 239, 239, 0.3))), 
-            rgba(239, 239, 239, 0.95) url(./home/noise.png) center/196px repeat;
+            rgba(239, 239, 239, 0.95) url(../../assets/static/noise.png) center/196px repeat;
   background: linear-gradient(0deg, rgba(239, 239, 239, 0.3), 
             rgba(239, 239, 239, 0.3)), 
             rgba(239, 239, 239, 0.95) 
-              url(./home/noise.png) center/196px repeat;
+              url(../../assets/static/noise.png) center/196px repeat;
 }
 
 body.dark-theme .backdrop  .acrylic-material::before {
   background: -o-linear-gradient(bottom, rgba(45, 45, 45, 0.2), 
   rgba(45, 45, 45, 0.2)), 
-  rgba(45, 45, 45, .95) url(./home/noise.png) center/196px repeat;
+  rgba(45, 45, 45, .95) url(../../assets/static/noise.png) center/196px repeat;
   background: -webkit-gradient(linear, left bottom, 
   left top, from(rgba(45, 45, 45, 0.2)), to(rgba(45, 45, 45, 0.2))), 
-  rgba(45, 45, 45, .95) url(./home/noise.png) center/196px repeat;
+  rgba(45, 45, 45, .95) url(../../assets/static/noise.png) center/196px repeat;
   background: linear-gradient(0deg, rgba(45, 45, 45, 0.2), 
   rgba(45, 45, 45, 0.2)), 
-  rgba(45, 45, 45, .95) url(./home/noise.png) center/196px repeat;
+  rgba(45, 45, 45, .95) url(../../assets/static/noise.png) center/196px repeat;
 }
 
 .home-code {

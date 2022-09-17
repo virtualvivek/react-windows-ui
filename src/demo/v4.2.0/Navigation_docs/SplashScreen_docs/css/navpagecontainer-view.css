@@ -1,0 +1,51 @@
+.demo-splash-navpagecontainer-view {
+    width: 300px;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    border: 4px solid #555;
+    border-bottom: 24px solid #555;
+}
+.demo-splash-navpagecontainer-page-column {
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+}
+
+.demo-splash-navpagecontainer-toolbar {
+    height: min-content;
+    padding: 0;
+    font-size: 8px;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: none;
+    margin: 4px 4px 0 4px;
+}
+
+.demo-splash-navpagecontainer-page {
+    width: 96%;
+    height: 100%;
+    margin: 0 0 5px 0;
+    align-self: center;
+    text-align: center;
+    background: var(--PrimaryColor);
+    border: 1px solid var(--color_link_bg_hover);
+}
+.demo-splash-navpagecontainer-page p {
+    top: 40%;
+    color: #fff;
+    margin: 0px auto;
+    font-weight: bold;
+    position: relative;
+}
+
+.demo-splash-navpagecontainer-view i.icons10-shutdown {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: -22px;
+}

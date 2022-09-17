@@ -1,0 +1,11 @@
+:root {
+  --PrimaryColor: #0078D7; /* Change of your choice */
+  --PrimaryColorLight: #47aeff; /* Lighter version of --PrimaryColor for DarkMode */
+}
+body {
+  font-family: "Segoe UI";
+}
+::selection {
+  color: #ffffff;
+  background-color: var(--PrimaryColor);
+}

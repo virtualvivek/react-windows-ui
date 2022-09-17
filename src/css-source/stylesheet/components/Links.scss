@@ -17,20 +17,10 @@
   &:active {
     color: var(--color_text_dark);
   }
-
-  i {
-    line-height: 0;
-    font-size: 24px;
-    padding-right: 8px;
-  }
 }
 
-i.bg-primary::before {
-  color: #fff;
-  background-color: var(--PrimaryColor);
-}
-i.bg-grey::before {
-  background-color: var(--color_link_bg_active);
+body.dark-theme .app-link:not(:active):not(:hover) {
+  color: var(--PrimaryColorLight);
 }
 
 @mixin links-mobile() {

@@ -1,0 +1,115 @@
+.windows-view {
+    width: 310px;
+    height: 170px;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: var(--color_link_bg_hover);
+}
+.start-view {
+    height: 120px;
+    width: 150px;
+    bottom: 20px;
+    filter: drop-shadow(4px -4px 15px #55555577);
+}
+.start-view .white-line {
+    height: 2px;
+    width: 50px;
+}
+.tiles-view {
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+    left: 60px;
+}
+.tiles-view p {
+    margin: 0;
+    padding: 0;
+    line-height: 2.5;
+    color: #fff;
+    text-align: center;
+    width: 50px;
+}
+.tiles-view p::before {
+    height: 60%;
+    width: 3px;
+    margin-left: 50px;
+    top: 0;
+    filter: brightness(0.8);
+}
+.tiles-view p::after {
+    height: 3px;
+    width: 100%;
+    bottom: 40%;
+    filter: brightness(0.8);
+}
+.tiles-view-right .white-line {
+    width: 25px;
+}
+.tiles-view-right p {
+    width: 10px;
+    height: 10px;
+    margin: 0 0 3px 0;
+    
+}
+.tiles-view-right p:after {
+    width: 14px;
+    height: 2px;
+    position: relative;
+    left: 15px;
+    top: 4px;
+}
+.tiles-view-right {
+    width: 25px;
+    height: 80px;
+    bottom: 0;
+    left: 10px;
+}
+.taskbar-view {
+    width: 100%;
+    height: 20px;
+    opacity: 0.6;
+    bottom: 0;
+}
+.tiles-view p::before,
+.tiles-view p::after,
+.tiles-view-right p:after {
+    content: '';
+    display: block;
+}
+.tiles-view .white-line,
+.tiles-view-right .white-line {
+    margin-top: -10px;
+}
+.tiles-view,
+.tiles-view-right p {
+    filter: brightness(1.2);
+}
+.start-view .white-line,
+.tiles-view-right p:after {
+    background-color: #fff;
+}
+.start-view,
+.start-view .white-line,
+.taskbar-view,
+.tiles-view-right,
+.tiles-view,
+.tiles-view p::before,
+.tiles-view p::after {
+    position: absolute;
+}
+.start-view,
+.taskbar-view,
+.tiles-view,
+.tiles-view p::before,
+.tiles-view p::after,
+.tiles-view-right p {
+    background-color: var(--PrimaryColor);
+}
+div.windows-view *,
+.tiles-view p::before,
+.tiles-view p::after {
+    transition-property: background, transform, border;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}

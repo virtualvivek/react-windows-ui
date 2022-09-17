@@ -5,4 +5,4 @@
 **/*.d.ts linguist-detectable=true
 
 # treat as docs dir
-src/demo/docs/** linguist-documentation
+src/demo/** linguist-documentation

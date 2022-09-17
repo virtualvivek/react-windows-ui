@@ -2,9 +2,10 @@ import React from 'react'
 import { NavPageContainer, ColorPickerItem, ColorPickerPalette, AppTheme, Button } from '../../lib/src'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import ReactIcon from './css/home/ReactIcon'
-import WinIcon from './css/home/WinIcon'
+import ReactIcon from '../assets/static/ReactIcon'
+import WinIcon from '../assets/static/WinIcon'
 import './css/home.css'
+import { lib_version } from '../values'
 
 
 class Home extends React.Component {
@@ -62,7 +63,7 @@ class Home extends React.Component {
           <div style={{display: "flex",flexDirection: "column",paddingLeft: "5%", justifyContent: "flex-start"}}>
             <h1 className="home-title">react-windows-ui</h1>
             <span style={{maxWidth: 340, marginBottom: 24}}>Build Windows fluent UI apps using ReactJS. Provides a set of accessible, reusable, and composable React components.</span>
-            <Button type="primary-outline" value="Github Releases v4.0.8"/>
+            <Button type="primary-outline" value={`Github Release v${lib_version}`}/>
           </div>
       </div>
 
@@ -74,12 +75,6 @@ class Home extends React.Component {
       </SyntaxHighlighter>
 
       </div>
-   
-      {/* <div className="link-container">
-        <a href="https://www.npmjs.com/package/react-windows-ui" target="_blank" rel="noreferrer"><NpmIcon /></a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://github.com/virtualvivek/react-windows-ui" target="_blank" rel="noreferrer"><GithubIcon /></a>
-      </div> */}
 
 
       <div className="backdrop-overlay">
