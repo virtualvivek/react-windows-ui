@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import { AppTheme, SplashScreen, NavBar, NavBarLink,
-        NavBarSubMenu, NavSearchSuggestion, NavThemeSwitcher, Dialog, Button } from './_lib'
+        NavBarSubMenu, NavSearchSuggestion, NavThemeSwitcher, Dialog } from './_lib'
 
 import Home from './_pages/Home'
 import GettingStarted from './_pages/GettingStarted'
@@ -49,7 +49,7 @@ import AppJsSearchable from './_templates/appjs-searchable'
 import PageJsDefault from './_templates/pagejs-default'
 import PageJsSplit from './_templates/pagejs-split'
 
-import NavBarItem from './index_NavBarItems.json'
+import NavBarItem from './index_nav_items.json'
 import Img2 from '../assets/illustration/mountain.jpg'
 
 import './_lib/config/app-config.css'
@@ -78,6 +78,15 @@ class App_420 extends React.Component {
     else    this.setState({showDialog: true});
   }
 
+  onBranchChange = () => {
+    this.toggleDialog();
+    setTimeout(() => {
+      window.location.reload();
+    }, 500);
+  }
+
+  
+
   render() {
   return (
     <>
@@ -92,18 +101,27 @@ class App_420 extends React.Component {
         scheme="system"
       />
 
-    <Dialog style={{flexDirection: "column", display:"flex", padding: 5}}
-      isVisible={this.state.showDialog}
-      onBackdropPress={this.toggleDialog}>
-        <Button value="‣ version 4.2.1 ▪ Early preview" justifyContent={"start"}/>
-        <Button value="‣ version 4.2.0" justifyContent={"start"}/>
-    </Dialog>
+      <Dialog style={{flexDirection: "column", display:"flex", padding: 5}}
+        isVisible={this.state.showDialog}
+        onBackdropPress={this.toggleDialog}>
+          <Link
+            to="/v4.2.1/home"
+            onClick={this.onBranchChange}
+            className="docs-btn-branch-dialog-txt">
+              ‣  version 4.2.1
+          </Link>
+          <Link
+            to="#"
+            onClick={this.toggleDialog}
+            className="docs-btn-branch-dialog-txt">
+            ‣  version 4.2.0
+          </Link>
+      </Dialog>
 
       <NavBar
-        title={
-        <>React Win UI &nbsp;
-          <Link to="#" onClick={this.toggleDialog}>
-            <span style={{color:"var(--PrimaryColorLight)"}}>v4.2.0&nbsp;<i className="icons10-angle-down"></i></span>
+        title={<>React Win UI &nbsp;
+          <Link to="#" className="docs-btn-branch-selector" onClick={this.toggleDialog}>
+            <span>v{lib_version}&nbsp;<i className="icons10-angle-down"></i></span>
           </Link>
         </>}
         shadowOnScroll={true}
@@ -140,7 +158,7 @@ class App_420 extends React.Component {
 
       <NavBarLink
         exact
-        to="/"
+        to="home"
         text="Home"
         imgSrc={Img2}
       />
@@ -204,7 +222,7 @@ class App_420 extends React.Component {
       </NavBar>
 
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="home" element={<Home/>} />
         <Route path='getting_started' element={<GettingStarted/>} />
 
         <Route path='colors' element={<ColorsDocs/>} />
@@ -258,10 +276,6 @@ class App_420 extends React.Component {
         }} />
         <Route path='/apptheme_external' element={() => { 
           window.location.href = 'https://github.com/virtualvivek/react-windows-ui/blob/main/src/demo/docs/AppTheme_docs/index.js';
-          return null;
-        }} />
-        <Route path='/fluent_icons_external' element={() => { 
-          window.location.href = 'https://github.com/microsoft/fluentui-system-icons';
           return null;
         }} />
         

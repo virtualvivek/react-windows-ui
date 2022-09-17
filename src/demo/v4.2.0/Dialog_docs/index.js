@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, Dialog, Button, ListItem } from '../../../lib/src'
+import { NavPageContainer, Dialog, Button, ListItem } from '../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { DialogImportCode, DialogUsageCode, DialogConfirmUsageCode } from './codes'

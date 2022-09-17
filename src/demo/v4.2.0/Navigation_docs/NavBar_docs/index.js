@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer } from '../../../../lib/src'
+import { NavPageContainer } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { NavBarImportCode,NavBarUsageCode,NavBarExampleUsageCode } from './codes'

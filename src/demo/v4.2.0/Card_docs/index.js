@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, Card, Switch, ListItem, Button, LinkCompound } from '../../../lib/src'
+import { NavPageContainer, Card, Switch, ListItem, Button, LinkCompound } from '../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import Img1 from '../../assets/illustration/2.jpg'
