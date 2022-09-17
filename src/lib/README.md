@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="402" /> 
+  <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="280" /> 
 </p>
 <h1 align="center">react-windows-ui</h1>
 
@@ -18,32 +18,39 @@
   </a>
   
   <a href="https://github.com/virtualvivek/react-windows-ui/releases/tag/v4.2.0">
-    <img src="https://img.shields.io/badge/version-4.2.0-darklime.svg?style=flat-square&color=31b57e&logo=git&logoColor=ffffff"
+    <img src="https://img.shields.io/badge/version-4.2.1-darklime.svg?style=flat-square&color=31b57e&logo=git&logoColor=ffffff"
       alt="Version" />
   </a>
   
   <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-    <img src="https://img.shields.io/badge/react&#8208windows&#8208ui.min.css-50.6 KB-darklime.svg?style=flat-square&color=1572B6&logo=css3&logoColor=ffffff"
+    <img src="https://img.shields.io/badge/react&#8208windows&#8208ui.min.css-50.8 KB-darklime.svg?style=flat-square&color=1572B6&logo=css3&logoColor=ffffff"
       alt="react-windows-ui.min.css" />
   </a>
    
 </p>
 
-<a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="652" /></p></a>
+<a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="580" /></p></a>
 
 
-# Demo ⚡
+# Demo & Docs
 https://virtualvivek.github.io/react-windows-ui/
 
 # Getting Started
-It will `setup everything` and then don't require manual method.
+You can use `cra-template` to initialize project or use `boilerplate`.
 
 ```js
-npx create-react-app MyAppName --template windows-ui
+npx create-react-app MyApp --template windows-ui
 ```
 
-# Manual Setup
-If you don't want to go with the above `create-react-app` then use the below manual method.
+# [Boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
+<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_boilerplate_screen.JPG" width="400" />
+
+
+# Manual Installation
+If you don't want `cra` or `boilerplate` you can manually install it on your porject.
+<details>
+<summary><b>See Manual Method</b></summary>
+<br/>
 
 ```ruby
 npm install react-windows-ui
@@ -53,16 +60,18 @@ npm install react-windows-ui
 import "react-windows-ui/config/app-config.css";
 import "react-windows-ui/dist/react-windows-ui.min.css";
 import "react-windows-ui/icons/fonts/fonts.min.css";
-```
+``` 
+</details>
+
 
 # Configuration
 
-**app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br>
-You can either import it from <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
-OR <br>
-Create your own like this
+**app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br/><br/>
+By `default` project uses <a href="src/lib/config/app-config.css">app-config.css</a>.<br>
+Or `create` your own config file with custom PrimaryColor/Fontfamily like this below:
+
 <details>
-  <summary><b>app-config.css</b></summary><br>
+  <summary><b>app-config.css</b></summary><br/>
   
 ```css
 :root {
@@ -80,11 +89,10 @@ body {
 </details>
 
 
-
 # Usage
 
 ```js
-import { Button, InputText } from 'react-windows-ui';
+import { Button, InputText } from "react-windows-ui";
 
 const App = () => (
   <>
@@ -94,25 +102,22 @@ const App = () => (
 );
 ```
 
-# [Boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
-<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_boilerplate_screen.JPG" width="540" />
-
-
 # Run Demo Locally
-```php
-$ git clone https://github.com/virtualvivek/react-windows-ui.git
-$ cd react-windows-ui
-$ npm install
-$ npm start
+```html
+git clone https://github.com/virtualvivek/react-windows-ui.git
+cd react-windows-ui
+npm install
+npm start
 ```
 
 
-# RTL Support
-Distribute layout direction from Right to Left.
-```js
-// include rtl styles at some point, probably during your bootstraping
-
-import 'react-windows-ui/dist/react-windows-ui-rtl.min.css'
+# View Docs for specific version
+Head to the desired version [Release](https://github.com/virtualvivek/react-windows-ui/releases/). <br/>
+Download the Release and start exploring !
+```html
+cd to-your-downloaded-version
+npm install
+npm start
 ```
 
 
@@ -125,7 +130,8 @@ Here are some useful links.
 
 
 # Find this library useful? :heart:
-Support it by joining [stargazers](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
+Support it by joining [**stargazers**](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
+
 
 
 # License
