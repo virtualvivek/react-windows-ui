@@ -53,9 +53,10 @@ const PropsView = () => {
           <td>
             <b>For InputSearchSuggestion</b>
           </td>
+          <td></td><td></td><td></td>
         </tr>
         <tr>
-          <td><p className="app-code">data ❑</p></td>
+          <td><p className="app-code">data ▶</p></td>
           <td>object</td>
           <td>null</td>
           <td>Set's Search data prop</td>

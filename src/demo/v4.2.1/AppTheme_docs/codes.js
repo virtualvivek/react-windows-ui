@@ -3,8 +3,9 @@ const AppThemeImportCode =
 
 const AppThemeUsageCode =
 `<AppTheme
-  color={'#16ab9c'}
   scheme={'light'}
+  color={'#16ab9c'}
+  colorDarkMode={'#1ee6d1'}
   onColorChange={() => {}}
   onSchemeChange={() => {}}
 />`;
@@ -16,16 +17,16 @@ const SwitchThemeUsageCode =
     this.setState({app_mode: 'dark'})
 }
 
-<AppTheme
-  scheme={this.state.app_mode}
-/>
-
-<Switch
-  labelOn="Mode O"
-  labelOff="Mode I"
-  defaultChecked={true}
-  onChange={(e) => {this.changeMode(e)}}
-/>`;
+return (
+  <div>
+    <AppTheme
+      scheme={this.state.app_mode}
+    />
+    <Switch
+      onChange={(e) => {this.changeMode(e)}}
+    />
+  </div>
+)`;
 
 
 export {

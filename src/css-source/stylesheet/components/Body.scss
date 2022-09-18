@@ -61,6 +61,9 @@ a {
   &:hover {
     background-color: #DDD;
   }
+  &:focus-visible {
+    outline: 2px solid var(--color_button_hover);
+  }
 }
 
 .app-hr {

@@ -6,7 +6,7 @@ import { NavBarLinkImportCode,NavBarLinkUsageCode,
          NavBarLinkImgUsageCode,NavBarLinkBadgeUsageCode } from './codes'
 import PropsView from './props-view'
 import Img1 from '../../../assets/illustration/macos.jpg'
-import Img2 from '../../../assets/illustration/2.jpg'
+import { lib_version } from '../../values'
 
 class NavBarLinkDocs extends React.Component {
 
@@ -23,13 +23,13 @@ render() {
     <nav className="animate custom" style={{position:'relative'}}>
       <ul style={{padding:0,margin:0}} className="app-navbar-list">
         <li className="app-navbar-list-item">
-          <a href="#/navbarlink" aria-current="page" className="active">
+          <a rel="noopener noreferrer" href={`#/v${lib_version}/navbarlink`} className="active">
             <i className="icons10-add"></i>
             <span>NavItem1</span>
           </a>
         </li>
         <li className="app-navbar-list-item">
-          <a href="#/navbarlink">
+          <a rel="noopener noreferrer" href={`#/v${lib_version}/navbarlink`}>
             <i className="icons10-user"></i>
             <span>NavItem2</span>
           </a>
@@ -64,16 +64,10 @@ render() {
     <nav className="animate custom" style={{position:'relative'}}>
       <ul style={{padding:0,margin:0}} className="app-navbar-list">
         <li className="app-navbar-list-item">
-        <a href="#/navbarlink">
+        <a rel="noopener noreferrer" href={`#/v${lib_version}/navbarlink`}>
           <img src={Img1} alt="img"/>
           <span>NavItem 1</span>
         </a>
-        </li>
-        <li className="app-navbar-list-item">
-          <a href="#/navbarlink">
-            <img src={Img2} alt="img"/>
-            <span>NavItem 2</span>
-          </a>
         </li>
       </ul>
     </nav>
@@ -95,18 +89,11 @@ render() {
     <nav className="animate custom" style={{position:'relative'}}>
       <ul style={{padding:0,margin:0}} className="app-navbar-list">
         <li className="app-navbar-list-item">
-        <a href="#/navbarlink">
+        <a rel="noopener noreferrer" href={`#/v${lib_version}/navbarlink`}>
           <i className="icons10-user"></i>
           <span>NavItem1</span>
           <div className="app-badge">12</div>
         </a>
-        </li>
-        <li className="app-navbar-list-item">
-          <a href="#/navbarlink">
-            <img src={Img2} alt="img"/>
-            <span>NavItem2</span>
-            <div className="app-badge">7</div>
-          </a>
         </li>
       </ul>
     </nav>

@@ -22,7 +22,6 @@ import ColorPickerItem from './components/ColorPicker/ColorPickerItem'
 import ColorPickerPalette from './components/ColorPicker/ColorPickerPalette'
 import Dialog from './components/Dialog'
 import Gauge from './components/Gauge'
-import HeaderFixedContainer from './components/HeaderFixedContainer'
 import ImageView from './components/ImageView'
 import InputText from './components/InputText'
 import InputSearchBar from './components/InputSearchBar'
@@ -41,7 +40,6 @@ import SliderBar from './components/SliderBar'
 import SplashScreen from './components/SplashScreen'
 import Select from './components/Select'
 import SelectNative from './components/SelectNative'
-import StickyHeader from './components/StickyHeader'
 import Switch from './components/Switch'
 import TableView from './components/TableView'
 import View from './components/View'
@@ -76,7 +74,6 @@ export {
     ColorPickerPalette,
     Dialog,
     Gauge,
-    HeaderFixedContainer,
     ImageView,
     InputText,
     InputSearchBar,
@@ -95,7 +92,6 @@ export {
     SplashScreen,
     Select,
     SelectNative,
-    StickyHeader,
     Switch,
     TableView,
     ThemeManager,

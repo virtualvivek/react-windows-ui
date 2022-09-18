@@ -7,6 +7,7 @@ export interface NavBarLinkProps {
   exact ?: boolean;
   to ?: string;
   icon ?: ReactNode | any;
+  badgeBackgroundColor ?: string | any;
 }
 declare const NavBarLink: React.FC<NavBarLinkProps>
 

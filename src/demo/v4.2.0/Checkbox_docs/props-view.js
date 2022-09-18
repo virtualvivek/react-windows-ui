@@ -14,12 +14,6 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">defaultChecked</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's Checkbox default checked</td>
-        </tr>
-        <tr>
           <td><p className="app-code">label</p></td>
           <td>string</td>
           <td>null</td>
@@ -54,6 +48,12 @@ const PropsView = () => {
           <td>null</td>
           <td>object</td>
           <td>Set's Checkbox on change listener</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">defaultChecked</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's Checkbox default checked</td>
         </tr>
       </tbody>
     </table>

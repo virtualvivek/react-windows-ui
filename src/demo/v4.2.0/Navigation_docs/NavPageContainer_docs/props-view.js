@@ -14,6 +14,12 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
+          <td><p className="app-code">style</p></td>
+          <td>CSS Style Object</td>
+          <td>[ ]</td>
+          <td>Set's NavPageContainer container styles.</td>
+        </tr>
+        <tr>
           <td><p className="app-code">hasPadding</p></td>
           <td>boolean</td>
           <td>true</td>
@@ -23,22 +29,16 @@ const PropsView = () => {
           </td>
         </tr>
         <tr>
-          <td><p className="app-code">animateTransition</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Animate NavPageContainer on transition.</td>
-        </tr>
-        <tr>
           <td><p className="app-code">backgroundColor</p></td>
           <td>CSS Property</td>
           <td>system default</td>
           <td>Set's NavPageContainer backgroundColor.</td>
         </tr>
         <tr>
-          <td><p className="app-code">style</p></td>
-          <td>CSS Style Object</td>
-          <td>[ ]</td>
-          <td>Set's NavPageContainer container styles.</td>
+          <td><p className="app-code">animateTransition</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Animate NavPageContainer on transition.</td>
         </tr>
         <tr>
           <td><p className="app-code">scrollTopOnMount</p></td>

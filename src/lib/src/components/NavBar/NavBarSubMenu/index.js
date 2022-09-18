@@ -7,7 +7,7 @@ const NavBarSubMenu = (props) => {
 
   useLayoutEffect(() => {
     let height_ = 0;
-    panelRef.current?.childNodes.forEach((node, index) => {
+    panelRef.current?.childNodes.forEach((node) => {
         height_ += node?.clientHeight;
     });
     setContentHeight(height_);

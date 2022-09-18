@@ -14,12 +14,6 @@ const PropsViewColorPickerItem = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">defaultChecked</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's ColorPickerItem checked prop</td>
-        </tr>
-        <tr>
           <td><p className="app-code">name</p></td>
           <td>any</td>
           <td>""</td>
@@ -42,6 +36,12 @@ const PropsViewColorPickerItem = () => {
           <td>function</td>
           <td>null</td>
           <td>Set's ColorPickerItem onChange listener</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">defaultChecked</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's ColorPickerItem checked prop</td>
         </tr>
       </tbody>
     </table>

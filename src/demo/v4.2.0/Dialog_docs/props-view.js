@@ -14,16 +14,16 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">isVisible</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's Dialog visibility</td>
-        </tr>
-        <tr>
           <td><p className="app-code">style</p></td>
           <td>CSS Property</td>
           <td>null</td>
           <td>Set's Dialog container style</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">isVisible</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's Dialog visibility</td>
         </tr>
         <tr>
           <td><p className="app-code">onBackdropPress</p></td>

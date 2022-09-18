@@ -25,9 +25,6 @@
         background: var(--PrimaryColor);
         transform: translate3d(-200%, 0, 0);
       }
-      &:focus {
-        outline: none;
-      }
       &.active {
         font-weight: 500;
         

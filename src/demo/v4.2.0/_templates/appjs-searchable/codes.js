@@ -1,6 +1,6 @@
 const AppJsSearchableCode =
 `import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { NavBar, NavBarLink, NavBarSearchBox } from 'react-windows-ui'
 import Page1 from './pages/page1'
 import Page2 from './pages/page2'
@@ -48,13 +48,13 @@ class App extends React.Component {
 
 
   render() {
-  return (
+    return (
         <Router basename="react-windows-ui">
 
           <NavBar 
-            title="React Windows UI"
-          //mobileHasIcons={true}
-            shadowOnScroll={true}>
+            title="App Name"
+            shadowOnScroll={true}
+            titleBarMobile={<> your custom view for mobile devices </>}>
 
             <NavBarSearchBox
               placeholder="Find a Nav Item"
@@ -78,17 +78,17 @@ class App extends React.Component {
               to="/"
               exact={true}
               text="Page1"
-              icon={<i className="icons10-home"></i>}
               showBadge={7}
+              icon={<i className="icons10-home"></i>}
             />
             */}
 
           </NavBar>
 
-          <Switch>
-            <Route path="/" component={Page1}  exact />
-            <Route path="/page2" component={Page2} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Page1/>} exact/>
+            <Route path="/page2" element={<Page2/>} />
+          </Routes>
 
         </Router>
       )

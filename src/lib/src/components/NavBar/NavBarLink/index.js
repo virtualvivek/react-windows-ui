@@ -4,7 +4,14 @@ import { NavLink } from "react-router-dom";
 const NavBarLink = (props) => {
 
   const renderBadge = () => {
-    return <div className="app-badge">{props.showBadge}</div>;
+    if(props.showBadge > 0 || props.showBadge !== "") {
+      return <div
+              className="app-badge"
+              style={{backgroundColor: props.badgeBackgroundColor}}>
+                {props.showBadge}
+            </div>;
+    }
+    else return <></>
   }
 
   const renderImg = () => {

@@ -14,28 +14,28 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">isVisible</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's SplashScreen visibility.</td>
-        </tr>
-        <tr>
           <td><p className="app-code">title</p></td>
           <td>string</td>
           <td>null</td>
           <td>Set's SplashScreen title.</td>
         </tr>
         <tr>
-          <td><p className="app-code">subtitle</p></td>
-          <td>string</td>
-          <td>null</td>
-          <td>Set's SplashScreen subtitle.</td>
-        </tr>
-        <tr>
           <td><p className="app-code">logo</p></td>
           <td>React Node | img</td>
           <td>null</td>
           <td>Set's SplashScreen logo.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">isVisible</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's SplashScreen visibility.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">subtitle</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Set's SplashScreen subtitle.</td>
         </tr>
         <tr>
           <td><p className="app-code">duration</p></td>

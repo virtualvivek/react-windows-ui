@@ -4,6 +4,7 @@ import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { NavBarSubMenuImportCode,NavBarSubMenuUsageCode } from './codes'
 import PropsView from './props-view'
+import { lib_version } from '../../values'
 
 class NavBarSubMenuDocs extends React.Component {
 
@@ -20,13 +21,13 @@ render() {
       <nav className="animate custom" style={{position:'relative'}}>
         <ul style={{padding:0,margin:0}} className="app-navbar-list">
           <li className="app-navbar-list-item">
-            <a href="#/navbar" aria-current="page" className="active">
+            <a rel="noopener noreferrer" href={`#/v${lib_version}/navbarsubmenu`} className="active">
               <i className="icons10-add"></i>
               <span>NavItem1</span>
             </a>
           </li>
           <li className="app-navbar-list-item">
-            <a href="#/navbar">
+            <a rel="noopener noreferrer" href={`#/v${lib_version}/navbarsubmenu`}>
               <i className="icons10-user"></i>
               <span>NavItem2</span>
             </a>

@@ -26,6 +26,12 @@ const PropsView = () => {
           <td>Sets the avatar size</td>
         </tr>
         <tr>
+          <td><p className="app-code">tooltip</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Sets avatar hover tooltip</td>
+        </tr>
+        <tr>
           <td><p className="app-code">isLoading</p></td>
           <td>boolean</td>
           <td>false</td>
@@ -36,12 +42,6 @@ const PropsView = () => {
           <td>boolean</td>
           <td>false</td>
           <td>Sets avatar blurred drop shadows</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">tooltip</p></td>
-          <td>string</td>
-          <td>null</td>
-          <td>Sets avatar hover tooltip</td>
         </tr>
       </tbody>
     </table>

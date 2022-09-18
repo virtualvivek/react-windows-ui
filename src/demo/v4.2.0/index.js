@@ -51,7 +51,7 @@ import PageJsSplit from './_templates/pagejs-split'
 
 import NavBarItem from './index_nav_items.json'
 import Img2 from '../assets/illustration/mountain.jpg'
-import GithubIcon from "../assets/static/GithubIcon";
+import GithubIcon from "../assets/static/GithubIcon"
 
 import './_lib/config/app-config.css'
 import './_lib/react-windows-ui.min.css'
@@ -141,21 +141,21 @@ class AppFourTwoZero extends React.Component {
           tooltip="Search Docs"
           data={[
             {label: 'home', link: '#', icon: <i className="icons10-home"></i>},
-            {label: 'alert', link: '/alerts'},
-            {label: 'accordion', link: '/accordion'},
-            {label: 'apperarance', link: '/appearance'},
-            {label: 'avatarview', link: '/avatarview'},
-            {label: 'buttons', link: '/buttons'},
-            {label: 'checkbox', link: '/checkbox'},
-            {label: 'commandbar', link: '/commandbar'},
-            {label: 'dialogs', link: '/dialogs'},
-            {label: 'gauges', link: '/gauges'},
-            {label: 'icons', link: '/icons'},
-            {label: 'imageview', link: '/imageview'},
-            {label: 'inputtext', link: '/input_group'},
-            {label: 'inputsearch', link: '/inputsearch'},
-            {label: 'menubar', link: '/menubar'},
-            {label: 'select', link: '/selectbox'}
+            {label: 'alert', link: 'alerts'},
+            {label: 'accordion', link: 'accordion'},
+            {label: 'apperarance', link: 'appearance'},
+            {label: 'avatarview', link: 'avatarview'},
+            {label: 'buttons', link: 'buttons'},
+            {label: 'checkbox', link: 'checkbox'},
+            {label: 'commandbar', link: 'commandbar'},
+            {label: 'dialogs', link: 'dialogs'},
+            {label: 'gauges', link: 'gauges'},
+            {label: 'icons', link: 'icons'},
+            {label: 'imageview', link: 'imageview'},
+            {label: 'inputtext', link: 'input_group'},
+            {label: 'inputsearch', link: 'inputsearch'},
+            {label: 'menubar', link: 'menubar'},
+            {label: 'select', link: 'selectbox'}
           ]}
         />
 
@@ -270,19 +270,10 @@ class AppFourTwoZero extends React.Component {
         <Route path='tables' element={<Tables/>} />
         <Route path='icons' element={<Icons/>} />
 
-        <Route path='AppJsDefault' element={<AppJsDefault/>} />
-        <Route path='AppJsSearchable' element={<AppJsSearchable/>} />
-        <Route path='PageJsDefault' element={<PageJsDefault/>} />
-        <Route path='PageJsSplit' element={<PageJsSplit/>} />
-
-        <Route path='/boilerplate_external' element={() => { 
-          window.location.href = 'https://github.com/virtualvivek/react-windows-ui-boilerplate';
-          return null;
-        }} />
-        <Route path='/apptheme_external' element={() => { 
-          window.location.href = 'https://github.com/virtualvivek/react-windows-ui/blob/main/src/demo/docs/AppTheme_docs/index.js';
-          return null;
-        }} />
+        <Route path='getting_started/AppJsDefault' element={<AppJsDefault/>} />
+        <Route path='getting_started/AppJsSearchable' element={<AppJsSearchable/>} />
+        <Route path='getting_started/PageJsDefault' element={<PageJsDefault/>} />
+        <Route path='getting_started/PageJsSplit' element={<PageJsSplit/>} />
         
       </Routes>
   </>

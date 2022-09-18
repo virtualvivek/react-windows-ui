@@ -1,10 +1,8 @@
-import React, {createRef} from 'react'
-import { Link } from 'react-router-dom'
-import { Button, ButtonIcon, NavPageContainer,NavPageContainerInner,
-         NavPageContainerRight } from '../_lib'
+import React from 'react'
+import { Button, ButtonIcon, NavPageContainer,NavPageContainerInner } from '../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { ButtonImportCode,ButtonIconImportCode,ButtonDefaultCode,
+import { ButtonImportCode,ButtonAsIconCode,ButtonIconImportCode,ButtonDefaultCode,
          ButtonIconPrimary,ButtonPrimary,ButtonPrimaryOutline,
          ButtonIconCode,ButtonSuccessCode,
          ButtonDangerCode } from './codes'
@@ -14,14 +12,6 @@ class ButtonsDocs extends React.Component {
 
   constructor(props) {
     super(props);
-    this.scrollButtonPrimaryIcon = createRef();
-    this.scrollButtonPrimary = createRef();
-    this.scrollButtonPrimaryOutline = createRef();
-    this.scrollButtonSuccess = createRef();
-    this.scrollButtonDanger = createRef();
-    this.scrollButtonIcon = createRef();
-    this.scrollButtonFluent = createRef();
-    this.scrollProps = createRef();
 
     this.state = {
       stateDisabled: false,
@@ -57,18 +47,20 @@ class ButtonsDocs extends React.Component {
         <Button
           value="loading"
           type="primary-outline"
-          onClick={this.setLoading} />
+          onClick={this.setLoading}
+        />
           &nbsp;
         <Button
           value="disabled"
           type="primary-outline"
-          onClick={this.setDisabled} />
+          onClick={this.setDisabled}
+        />
           &nbsp;
         <Button
           value="regular"
           type="primary-outline"
-          onClick={this.setRegular}/>
-
+          onClick={this.setRegular}
+        />
 
         <div className="app-hr"></div>
 
@@ -84,51 +76,68 @@ class ButtonsDocs extends React.Component {
         <h2>Usage</h2>
 
         <Button
-          value="Default Button"/>
-        
+          value="Default Button"
+        />
         <br/><br/>
 
         <Button
           icon={<i className="icons10-plus"></i>}
-          value="Default Button"/>
-        &nbsp;&nbsp;
-        <Button
-          icon={<i className="icons10-plus"></i>}
-          value=""/>
-
+          value="Default Button"
+        />
         <br/><br/>
 
         <Button
           disabled
-          value="Disabled Button" />
+          value="Disabled Button"
+        />
         &nbsp;&nbsp;
         <Button
           isLoading
-          value="Loading Button" />
-
+          value="Loading Button"
+        />
         <br/><br/>
 
-        
         <SyntaxHighlighter
           language="javascript"
           style={dracula}
           className="code code-container">
           {ButtonDefaultCode}
         </SyntaxHighlighter>
+
+        <h2>Button as only Icon:</h2>
+
+        <Button
+          icon={<i className="icons10-plus"></i>}
+          value=""
+        />
+        &nbsp;&nbsp;
+        <Button
+          icon={<i className="icons10-controller"></i>}
+          value=""
+        />
+        <br/><br/>
+        <SyntaxHighlighter
+          language="javascript"
+          style={dracula}
+          className="code code-container">
+          {ButtonAsIconCode}
+        </SyntaxHighlighter>
        
       
-        <div className="app-hr" ref={this.scrollButtonPrimaryIcon}></div>
-        <h2 className="m-t-15">Button icon primary :</h2>
+        <div className="app-hr"></div>
+        <h2 className="m-t-15">Button icon primary:</h2>
 
         <Button
           icon={<i className="icons10-plus color-primary"></i>}
-          value="Primary Icon"/>
+          value="Primary Icon"
+        />
         &nbsp;&nbsp;
         <Button
           width={155}
           justifyContent={'start'}
           icon={<i className="icons10-plus color-primary"></i>}
-          value="Align Start"/>
+          value="Align Start"
+        />
 
         <br/><br/>
         
@@ -140,19 +149,20 @@ class ButtonsDocs extends React.Component {
         </SyntaxHighlighter>
         
        
-      <div className="app-hr" ref={this.scrollButtonPrimary}></div>
-      <h2>Button <p className="app-code">Primary</p> :</h2>
+        <div className="app-hr"></div>
+        <h2>Button <p className="app-code">Primary</p>:</h2>
       
         <Button
           type="primary"
           icon={<i className="icons10-fantasy"></i>}
-          value="Primary Button" />
+          value="Primary Button"
+        />
         &nbsp;&nbsp;
         <Button
           type="primary"
           isLoading
-          value="Loading Button" />  
-
+          value="Loading Button"
+        />
         <br/><br/>
         
         <SyntaxHighlighter
@@ -162,22 +172,19 @@ class ButtonsDocs extends React.Component {
           {ButtonPrimary}
         </SyntaxHighlighter>
        
-        <div className="app-hr" ref={this.scrollButtonPrimaryOutline}></div>
-        <h2>Button <p className="app-code">Primary Outline</p> :</h2>
+        <div className="app-hr"></div>
+        <h2>Button <p className="app-code">Primary Outline</p>:</h2>
 
         <Button
           type="primary-outline"
           value="Primary Button"
         />
-
         &nbsp;&nbsp;
-
         <Button
           type="primary-outline"
           icon={<i className="icons10-fantasy"></i>}
           value="Primary Button"
         />
-
         <br/><br/>
       
         <SyntaxHighlighter
@@ -187,17 +194,19 @@ class ButtonsDocs extends React.Component {
           {ButtonPrimaryOutline}
         </SyntaxHighlighter>
 
-        <div className="app-hr" ref={this.scrollButtonSuccess}></div>
+        <div className="app-hr"></div>
         <h2 className="m-b-15">Button Success</h2>
 
         <Button
           type="success"
-          value="Success Button"/>
+          value="Success Button"
+        />
         &nbsp;&nbsp;
         <Button
           type="success-outline"
           icon={<i className="icons10-checkmark"></i>}
-          value="Success Button"/>
+          value="Success Button"
+        />
         <br/><br/>
         
         <SyntaxHighlighter
@@ -208,31 +217,31 @@ class ButtonsDocs extends React.Component {
         </SyntaxHighlighter>
        
       
-      <div className="app-hr" ref={this.scrollButtonDanger}></div>
-      <h2 className="m-b-15">Button Danger</h2>
+        <div className="app-hr"></div>
+        <h2 className="m-b-15">Button Danger</h2>
 
-      <Button
-        type="danger"
-        value="Danger Button"/>
-      &nbsp;&nbsp;
-      <Button
-        type="danger-outline"
-        icon={<i className="icons10-cancel-2"></i>}
-        value="Danger Button"/>        
-      <br/><br/>
+        <Button
+          type="danger"
+          value="Danger Button"
+        />
+        &nbsp;&nbsp;
+        <Button
+          type="danger-outline"
+          icon={<i className="icons10-cancel-2"></i>}
+          value="Danger Button"
+        />        
+        <br/><br/>
 
-      <SyntaxHighlighter
-        language="javascript"
-        style={dracula}
-        className="code code-container">
-        {ButtonDangerCode}
-      </SyntaxHighlighter>
-       
-       
+        <SyntaxHighlighter
+          language="javascript"
+          style={dracula}
+          className="code code-container">
+          {ButtonDangerCode}
+        </SyntaxHighlighter>
 
 
-      <div className="app-hr" ref={this.scrollButtonIcon}></div>
-      <h1 className="m-b-15">Button Icon</h1>
+        <div className="app-hr"></div>
+        <h1 className="m-b-15">Button Icon</h1>
 
         <ButtonIcon
           icon={<i className="icons10-home"></i>}
@@ -260,52 +269,15 @@ class ButtonsDocs extends React.Component {
           className="code code-container">
           {ButtonIconCode}
         </SyntaxHighlighter>
-       
 
-        <div className="app-hr" ref={this.scrollProps}></div>
+        <div className="app-hr"></div>
 
         <h2>Props</h2>
         <PropsView/>
 
-      
 
         <br/><br/><br/><br/>
       </NavPageContainerInner>
-
-      <NavPageContainerRight position="fixed">
-      
-      <h4 className="m-0"><b>On This Page</b></h4>
-      <h4 className="m-tb-10">Buttons</h4>
-    
-      <Link to="#"
-        onClick={()=>{this.scrollButtonPrimaryIcon.current.scrollIntoView({ behavior:'smooth'});}}
-        className="app-link">&nbsp; Button icon primary</Link><br/>
-      <Link to="#"
-        onClick={()=>{this.scrollButtonPrimary.current.scrollIntoView({ behavior:'smooth'});}}
-        className="app-link">&nbsp; Button primary</Link><br/>
-      <Link to="#"
-        onClick={()=>{this.scrollButtonPrimaryOutline.current.scrollIntoView({ behavior:'smooth'});}}
-        className="app-link">&nbsp; Button primary outline</Link><br/>
-      <Link to="#"
-        onClick={()=>{this.scrollButtonSuccess.current.scrollIntoView({ behavior:'smooth'});}}
-        className="app-link">&nbsp; Button success</Link><br/>
-      <Link to="#"
-        onClick={()=>{this.scrollButtonDanger.current.scrollIntoView({ behavior:'smooth'});}}
-        className="app-link">&nbsp; Button danger</Link><br/>
-  
-      <h4 className="m-tb-10">ButtonIcon</h4>
-      <Link to="#"
-        onClick={()=>{this.scrollButtonIcon.current.scrollIntoView({ behavior:'smooth'});}}
-        className="app-link">&nbsp; Usage</Link><br/>
-
-      
-      <Link to="#"
-        onClick={()=>{this.scrollProps.current.scrollIntoView({ behavior:'smooth'});}}
-        className="app-link">
-          <h4 className="m-tb-10"><b>Props</b></h4>
-      </Link><br/>
-      
-      </NavPageContainerRight>
 
       </NavPageContainer>
     );

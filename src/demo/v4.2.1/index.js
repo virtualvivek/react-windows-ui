@@ -270,16 +270,7 @@ class AppFourTwoOne extends React.Component {
         <Route path='AppJsDefault' element={<AppJsDefault/>} />
         <Route path='AppJsSearchable' element={<AppJsSearchable/>} />
         <Route path='PageJsDefault' element={<PageJsDefault/>} />
-        <Route path='PageJsSplit' element={<PageJsSplit/>} />
-
-        <Route path='/boilerplate_external' element={() => {
-          window.location.href = 'https://github.com/virtualvivek/react-windows-ui-boilerplate';
-          return null;
-        }} />
-        <Route path='/apptheme_external' element={() => {
-          window.location.href = 'https://github.com/virtualvivek/react-windows-ui/blob/main/src/demo/docs/AppTheme_docs/index.js';
-          return null;
-        }} />
+        <Route path='PageJsSplit' element={<PageJsSplit/>} />      
         
       </Routes>
   </>

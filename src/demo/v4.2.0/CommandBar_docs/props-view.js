@@ -44,31 +44,31 @@ const PropsView = () => {
           <td>Set's CmdBarButton data disabled prop</td>
         </tr>
         <tr>
-          <td><p className="app-code">data ❑</p></td>
+          <td><p className="app-code">data ▶</p></td>
           <td>object</td>
           <td>[ ]</td>
           <td>Set's CmdBarButton dropdown data</td>
         </tr>
         <tr>
-          <td><p className="app-code">data {'▶'} label</p></td>
+          <td><p className="app-code">data ▶ label</p></td>
           <td>string</td>
           <td>null</td>
           <td>Set's CmdBarButton data item label</td>
         </tr>
         <tr>
-          <td><p className="app-code">data {'▶'} icon</p></td>
+          <td><p className="app-code">data ▶ icon</p></td>
           <td>ReactNode</td>
           <td>null</td>
           <td>Set's CmdBarButton data item icon</td>
         </tr>
         <tr>
-          <td><p className="app-code">data {'▶'} onClick</p></td>
+          <td><p className="app-code">data ▶ onClick</p></td>
           <td>function</td>
           <td>null</td>
           <td>Set's CmdBarButton data item onClick listner</td>
         </tr>
         <tr>
-          <td><p className="app-code">data {'▶'} link</p></td>
+          <td><p className="app-code">data ▶ link</p></td>
           <td>link href string</td>
           <td>'#'</td>
           <td>Set's CmdBarButton data item link</td>

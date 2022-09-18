@@ -11,7 +11,11 @@ button,
   &:focus,
   &:active,
   &:focus:active {
-    outline: none !important;
+    outline: none;
+  }
+  &:focus-visible {
+    transition: 0s ease;
+    outline: 2px solid var(--color_button_hover);
   }
 }
 .app-btn {

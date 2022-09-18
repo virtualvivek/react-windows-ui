@@ -15,7 +15,7 @@ const PropsViewColorPickerPalette = () => {
       <tbody>
         <tr>
           <td><p className="app-code">color</p></td>
-          <td>CSS Color Value</td>
+          <td>CSS Color</td>
           <td>'#eee'</td>
           <td>Set's ColorPickerPalette color prop</td>
         </tr>

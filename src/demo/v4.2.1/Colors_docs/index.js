@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavPageContainer, Switch } from '../_lib'
+import { ColorVariables } from '../../common/components'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import './colors_docs_styles.css'
@@ -82,135 +83,38 @@ render() {
 
     <div className="demo-colors-container">
 
-    <div className="app-hr m-0"></div>
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--PrimaryColor<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.primaryColor_val}}></span>
-      <span className="demo-colors-value">{this.state.primaryColor_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
+      <ColorVariables colorName="--PrimaryColor" backgroundColor={this.state.primaryColor_val} />
+      <ColorVariables colorName="--PrimaryColorLight" backgroundColor={this.state.primaryColorLight_val} />
 
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--PrimaryColorLight<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.primaryColorLight_val}}></span>
-      <span className="demo-colors-value">{this.state.primaryColorLight_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-
-    <p>Color values when app scheme is <b>{this.state.color_scheme_val}</b></p>
-
+      <div className="app-hr m-0"></div>
+      <p>Color values when app scheme is <b>{this.state.color_scheme_val}</b></p>
     
-    <div className="app-hr m-0"></div>
+      <div className="app-hr m-0"></div>
+      <div className="app-flex app-align-center">
+        <span className="demo-colors-name">--color_scheme<span className="user-select-none"><span className="user-select-none">:</span></span></span>
+        <span className="demo-colors-box" style={{backgroundColor: this.state.color_navbar_bg_val}}></span>
+        <span className="demo-colors-value">{this.state.color_scheme_val}</span>
+      </div>
 
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_scheme<span className="user-select-none"><span className="user-select-none">:</span></span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.color_navbar_bg_val}}></span>
-      <span className="demo-colors-value">{this.state.color_scheme_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
+      <ColorVariables colorName="--color_bg_light" backgroundColor={this.state.color_bg_light_val} />
+      <ColorVariables colorName="--color_button" backgroundColor={this.state.color_button_val} />
+      <ColorVariables colorName="--color_button_hover" backgroundColor={this.state.color_button_hover_val} />
+      <ColorVariables colorName="--color_day_primary_night_grey" backgroundColor={this.state.color_day_primary_night_grey_val} />
+      <ColorVariables colorName="--color_day_primary_night_white" backgroundColor={this.state.color_day_primary_night_white_val} />
+      <ColorVariables colorName="--color_grey_light" backgroundColor={this.state.color_grey_light_val} />
+      <ColorVariables colorName="--color_grey_light_alpha" backgroundColor={this.state.color_grey_light_alpha_val} />
+      <ColorVariables colorName="--color_link_bg_active" backgroundColor={this.state.color_link_bg_active_val} />
+      <ColorVariables colorName="--color_link_bg_hover" backgroundColor={this.state.color_link_bg_hover_val} />
+      <ColorVariables colorName="--color_navbar_bg" backgroundColor={this.state.color_navbar_bg_val} />
+      <ColorVariables colorName="--color_primary_alpha" backgroundColor={this.state.color_primary_alpha_val} />
+      <ColorVariables colorName="--color_text_dark" backgroundColor={this.state.color_text_dark_val} />
 
-
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_bg_light<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.color_bg_light_val}}></span>
-      <span className="demo-colors-value">{this.state.color_bg_light_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-
-
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_button<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.color_button_val}}></span>
-      <span className="demo-colors-value">{this.state.color_button_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-
-
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_button_hover<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.color_button_hover_val}}></span>
-      <span className="demo-colors-value">{this.state.color_button_hover_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-
-
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_day_primary_night_grey<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.color_day_primary_night_grey_val}}></span>
-      <span className="demo-colors-value">{this.state.color_day_primary_night_grey_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-
-
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_day_primary_night_white<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.color_day_primary_night_white_val}}></span>
-      <span className="demo-colors-value">{this.state.color_day_primary_night_white_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-
-
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_grey_light<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.color_grey_light_val}}></span>
-      <span className="demo-colors-value">{this.state.color_grey_light_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-
-
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_grey_light_alpha<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.color_grey_light_alpha_val}}></span>
-      <span className="demo-colors-value">{this.state.color_grey_light_alpha_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-
-
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_link_bg_active<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.color_link_bg_active_val}}></span>
-      <span className="demo-colors-value">{this.state.color_link_bg_active_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-
-
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_link_bg_hover<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.color_link_bg_hover_val}}></span>
-      <span className="demo-colors-value">{this.state.color_link_bg_hover_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-
-
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_navbar_bg<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.color_navbar_bg_val}}></span>
-      <span className="demo-colors-value">{this.state.color_navbar_bg_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-
-
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_primary_alpha<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor:'var(--color_primary_alpha)'}}></span>
-      <span className="demo-colors-value">{this.state.color_primary_alpha_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-    
-
-    <div className="app-flex app-align-center">
-      <span className="demo-colors-name">--color_text_dark<span className="user-select-none">:</span></span>
-      <span className="demo-colors-box" style={{backgroundColor: this.state.color_text_dark_val}}></span>
-      <span className="demo-colors-value">{this.state.color_text_dark_val}</span>
-    </div>
-    <div className="app-hr m-0"></div>
-
-
+      <div className="app-hr m-0"></div>
 
     </div>
 
-    <h1>Create your own color variables</h1>
-    <p>Define your own <span className="color-primary">color variables </span>at anywhere like below</p>
+    <h1>Create your own color variables.</h1>
+    <p>Define your own <span className="color-primary">color variables </span>at anywhere like below:</p>
     
     <SyntaxHighlighter
       language="css"
@@ -222,6 +126,23 @@ render() {
 }
 body.dark-theme {
   --your-color-variable: #47aeff;
+}`
+      }
+    </SyntaxHighlighter>
+
+
+    <h1>Define a component style as per theme.</h1>
+    
+    <SyntaxHighlighter
+      language="css"
+      style={vscDarkPlus}
+      className="code code-container">
+      {
+`.my-component {
+  background-color: #ffffff;
+}
+body.dark-theme .my-component {
+  background-color: #000000;
 }`
       }
     </SyntaxHighlighter>

@@ -6,9 +6,6 @@
   line-break: anywhere;
   color: var(--PrimaryColor);
 
-  &:focus {
-    outline: none;
-  }
   &:hover,
   &:active {
     color: #888;

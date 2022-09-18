@@ -22,8 +22,8 @@ const NavBarLinkBadgeUsageCode =
 `<NavBarLink
   to="/"
   text="Page1"
-  showBadge={7}
   imgSrc={Img1}
+  showBadge={7}
 />`;
 
 

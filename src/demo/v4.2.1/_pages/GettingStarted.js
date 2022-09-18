@@ -33,7 +33,7 @@ const GettingStarted = () => {
       </SyntaxHighlighter>
 
       <br/><p>If you want to use your own <b>primary color</b> or <b>font-family</b>,
-      <br/>Create a new <span className='app-code'>app-config.css</span> and update import file below:</p>
+      <br/>Create a new <span className='app-code'>app-config.css</span> and <span className='app-code'>update</span> import file below:</p>
       <p><b>app/src/index.js</b></p>
       <SyntaxHighlighter
         language="javascript"

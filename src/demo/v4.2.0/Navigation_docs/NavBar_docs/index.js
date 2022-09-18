@@ -5,6 +5,7 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { NavBarImportCode,NavBarUsageCode,NavBarExampleUsageCode } from './codes'
 import PropsView from './props-view'
 import './css/navbar-custom.css'
+import { lib_version } from '../../values'
 
 class NavBarDocs extends React.Component {
 
@@ -25,19 +26,19 @@ render() {
       </div>
       <ul style={{padding:0}} className="app-navbar-list">
         <li className="app-navbar-list-item">
-          <a href="#/navbar"><i className="icons10-home"></i>
+          <a rel="noopener noreferrer" href={`#/v${lib_version}/navbar`}><i className="icons10-home"></i>
           <span>Home</span></a>
         </li>
         <h1>Title</h1>
         <div className="app-hr"></div>
         <li className="app-navbar-list-item">
-          <a href="#/navbar" aria-current="page" className="active">
+          <a rel="noopener noreferrer" href={`#/v${lib_version}/navbar`} className="active">
             <i className="icons10-add"></i>
             <span>NavItem1</span>
           </a>
         </li>
         <li className="app-navbar-list-item">
-          <a href="#/navbar">
+          <a rel="noopener noreferrer" href={`#/v${lib_version}/navbar`}>
             <i className="icons10-user"></i>
             <span>NavItem2</span>
           </a>

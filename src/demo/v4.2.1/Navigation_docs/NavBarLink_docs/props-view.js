@@ -55,6 +55,12 @@ const PropsView = () => {
             <td>null</td>
             <td>Set's NavBarItem badge</td>
           </tr>
+          <tr>
+            <td><p className="app-code">badgeBackgroundColor</p></td>
+            <td>CSS Color</td>
+            <td>default red</td>
+            <td>Set's NavBarItem badge backgroundColor</td>
+          </tr>
         </tbody>
       </table>
     </div>

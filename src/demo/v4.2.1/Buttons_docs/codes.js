@@ -13,6 +13,12 @@ const ButtonDefaultCode =
   icon={<i className="icons10-plus"></i>}
 />`;
 
+const ButtonAsIconCode =
+`<Button
+  value=""
+  icon={<i className="icons10-controller"></i>}
+/>`;
+
 const ButtonIconPrimary =
 `<Button
   onClick={() => {}}
@@ -64,6 +70,7 @@ const ButtonDangerCode =
 
 export {
   ButtonImportCode,
+  ButtonAsIconCode,
   ButtonIconImportCode,
   ButtonDefaultCode,
   ButtonIconPrimary,

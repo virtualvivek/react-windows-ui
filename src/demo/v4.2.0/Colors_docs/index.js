@@ -195,8 +195,8 @@ render() {
 
     </div>
 
-    <h1>Create your own color variables</h1>
-    <p>Define your own <span className="color-primary">color variables </span>at anywhere like below</p>
+    <h1>Create your own color variables.</h1>
+    <p>Define your own <span className="color-primary">color variables </span>at anywhere like below:</p>
     
     <SyntaxHighlighter
       language="css"
@@ -208,6 +208,22 @@ render() {
 }
 body.dark-theme {
   --your-color-variable: #47aeff;
+}`
+      }
+    </SyntaxHighlighter>
+
+    <h1>Define a component style as per theme.</h1>
+    
+    <SyntaxHighlighter
+      language="css"
+      style={vscDarkPlus}
+      className="code code-container">
+      {
+`.my-component {
+  background-color: #ffffff;
+}
+body.dark-theme .my-component {
+  background-color: #000000;
 }`
       }
     </SyntaxHighlighter>

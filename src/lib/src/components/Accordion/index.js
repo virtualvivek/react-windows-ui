@@ -21,7 +21,6 @@ const Accordion = (props) => {
   }, [panelRef]);
 
   useEffect(() => {
-    updateWidth();
     window.addEventListener("resize", updateWidth);
     return () => {
       window.removeEventListener("resize", updateWidth);
