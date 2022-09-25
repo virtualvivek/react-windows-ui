@@ -129,7 +129,7 @@ Here are some useful links.
 
 
 
-# Find this library useful? :heart:
+# Find this project useful? :heart:
 Support it by joining [**stargazers**](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
 
 
