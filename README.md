@@ -136,7 +136,7 @@ Distribute layout direction from Right to Left.
 import "react-windows-ui/dist/react-windows-ui-rtl.min.css";
 ```
 
-# Find this library useful? :heart:
+# Find this project useful? :heart:
 Support it by joining [**stargazers**](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
 
 
