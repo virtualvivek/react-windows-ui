@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import ContainerInner from "./ContainerInner";
+import ContainerTitleBar from "./ContainerTitleBar";
 
 const NavPageContainer = (props) => {
 
@@ -20,7 +22,7 @@ const NavPageContainer = (props) => {
   }
 
   return (
-    <div
+    <div id="app-section-container-id"
       className={ props.hasPadding
                 ? `app-section-container has-padding${setTransition()}`
                 : `app-section-container${setTransition()}`
@@ -28,11 +30,13 @@ const NavPageContainer = (props) => {
       style={{
         backgroundColor: props.backgroundColor,
         ...props.style
-      }}
-      id="app-section-container-id">
+      }}>
       {props.children}
     </div>
   )
 }
+
+NavPageContainer.Inner = ContainerInner;
+NavPageContainer.TitleBar = ContainerTitleBar;
 
 export default NavPageContainer;

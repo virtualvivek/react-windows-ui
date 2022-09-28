@@ -1,9 +1,21 @@
 .app-navbar-wrap .app-navbar-list {
   .app-navbar-list-item {
     display: flex;
+    transition: 0s ease;
 
-    &:hover { background-color: var(--color_link_bg_hover); }
-    &:active { background-color: var(--color_link_bg_active); }
+    &:hover {
+      transition: 0.15s ease;
+      background-color: var(--color_link_bg_hover);
+    }
+    &:active {
+      transition: 0s ease;
+      background-color: var(--color_link_bg_active);
+
+      span {
+        transform: scale(0.98, 0.98);
+        transition: transform 0s ease-in-out;
+      }
+    }
 
     a {
       width: 100%;
@@ -51,6 +63,7 @@
       user-select: none;
       white-space: nowrap;
       text-overflow: ellipsis;
+      transition: transform 0.4s ease-in-out;
     }
     img {
       width: 20px;

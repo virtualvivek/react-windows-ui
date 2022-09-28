@@ -40,16 +40,6 @@
     overflow-x: hidden;
     overflow-y: overlay;
     background-color: var(--color_navbar_bg);
-
-    &.animate {
-      .app-navbar-list-item {
-        & :active {
-          @extend .transition-scale-active;
-          transform: scale(0.98, 0.98);
-        }
-        a { @extend .transition-all-400ms; }
-      }
-    }
   }
 
   .app-navbar-topbar-mobile {
