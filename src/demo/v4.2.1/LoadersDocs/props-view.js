@@ -27,7 +27,7 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">display</p></td>
-          <td>'default' | 'fullscreen'</td>
+          <td>'default' | 'overlay'</td>
           <td>'default'</td>
           <td>Set's LoaderBusy screen mode</td>
         </tr>
@@ -35,19 +35,19 @@ const PropsView = () => {
           <td><p className="app-code">backgroundColor</p></td>
           <td>CSS Color</td>
           <td>'light-grey-alpha'</td>
-          <td>Set's LoaderBusy background-color | When display: fullscreen</td>
+          <td>Set's LoaderBusy background-color | When display: overlay</td>
         </tr>
         <tr>
           <td><p className="app-code">title</p></td>
           <td>string</td>
           <td>null</td>
-          <td>Set's LoaderBusy title | When display: fullscreen</td>
+          <td>Set's LoaderBusy title | When display: overlay</td>
         </tr>
         <tr>
           <td><p className="app-code">onBackdropPress</p></td>
           <td>function</td>
           <td>null</td>
-          <td>Set's LoaderBusy BackdropPress listener | When display: fullscreen</td>
+          <td>Set's LoaderBusy BackdropPress listener | When display: overlay</td>
         </tr>
       </tbody>
     </table>

@@ -5,9 +5,7 @@ const NavPageContainerUsageCode =
 `<NavPageContainer
   hasPadding={true}
   animateTransition={true}>
-
   <>children ..</>
-
 </NavPageContainer>`;
 
 

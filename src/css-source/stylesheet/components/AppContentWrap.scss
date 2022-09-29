@@ -24,36 +24,7 @@
   }
 }
 
-.app-section-container-right {
-  @extend .transition-background-400ms;
-  max-width: 20vw;
-  position: absolute;
-  top: 100px;
-  right: 5%;
-  float: right;
-  overflow: auto;
-  padding-left: 15px;
-  background-color: var(--color_bg_light);
-
-  &.fixed {
-    position: fixed;
-  }
-}
-
 @media screen and (max-width: 70em) {
-  .app-section-container-right {
-    max-width: fit-content;
-    position: relative;
-    top: 10px;
-    right: auto;
-    float: left;
-    padding-left: 30px;
-    padding-bottom: 70px;
-    
-    &.fixed {
-      position: relative;
-    }
-  }
   .app-section-container-inner:first-of-type:not(:only-of-type) {
     width: auto;
   }
@@ -70,8 +41,5 @@
   }
   .app-section-container-inner {
     margin: 15px;
-  }
-  .app-section-container-right {
-    padding-left: 15px;
   }
 }

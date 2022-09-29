@@ -25,7 +25,7 @@ render() {
       <div className="demo-navpagecontainer-page-column">
         <p className="demo-navpagecontainer-toolbar">➖ ⬜ ❌</p>
         <div className="demo-navpagecontainer-page">
-          <p>NavPageContainer</p>
+          <p>NavPageContainer <span className='color-primary'>hasPadding</span></p>
         </div>
       </div>
       <i className="icons10-shutdown"></i>
@@ -50,6 +50,25 @@ render() {
     </SyntaxHighlighter>
   
     <div className="app-hr"></div>
+    <h2>NavPageContainer: hasPadding={`false`}</h2>
+
+    <div className="demo-navpagecontainer-view">
+      <div className="demo-navpagecontainer-navbar">
+        <div className="demo-navpagecontainer-rows-header">
+          <div className="demo-navpage-item"></div>
+        </div>
+      </div>
+      <div className="demo-navpagecontainer-page-column">
+        <p className="demo-navpagecontainer-toolbar">➖ ⬜ ❌</p>
+        <div className="demo-navpagecontainer-page no-padding">
+          <div className="demo-navpagecontainer-page no-padding">
+          <p style={{position:"absolute", top:24, left:40}}>NavPageContainer</p>
+          <p>NavPageContainer.Inner</p>
+          </div>
+        </div>
+      </div>
+      <i className="icons10-shutdown"></i>
+    </div>
 
 
     <h2>Props</h2>

@@ -29,11 +29,12 @@
 
 .demo-navpagecontainer-page-column {
     display: flex;
+    width: inherit;
     flex-direction: column;
 }
 
 .demo-navpagecontainer-toolbar {
-    width: 230px;
+    width: 245px;
     height: min-content;
     padding: 0;
     font-size: 8px;
@@ -44,15 +45,25 @@
 }
 
 .demo-navpagecontainer-page {
-    width: 95%;
     height: 100%;
-    margin: 8px;
+    
+    margin: 15px;
+    display: flex;
     background: var(--color_navbar_bg);
     border: 1px solid var(--color_link_bg_hover);
+}
+.demo-navpagecontainer-page.no-padding{
+    margin: 20px 0 0 0;
+    width: fit-content;
+    padding: 10px;
 }
 .demo-navpagecontainer-page p {
     margin: 15px;
     font-weight: bold;
+}
+.demo-navpagecontainer-page.no-padding .demo-navpagecontainer-page{
+    height: auto;
+    background-color: var(--color_button);
 }
 
 .demo-navpagecontainer-view i {

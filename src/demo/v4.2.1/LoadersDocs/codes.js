@@ -18,7 +18,7 @@ const LoaderBusyUsageCode =
 const LoaderBusyFullscreenUsageCode =
 `<LoaderBusy
   isLoading={true}
-  display="fullscreen"
+  display="overlay"
   onBackdropPress={() => {}}
 />`;
 
@@ -26,7 +26,7 @@ const LoaderBusyFullscreenCustomUsageCode =
 `<LoaderBusy
   setTheme="light"
   isLoading={true}
-  display="fullscreen"
+  display="overlay"
   backgroundColor="#16ab9c"
   onBackdropPress={() => {}}
   title="Tap anywhere to dismiss"

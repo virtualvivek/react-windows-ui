@@ -3,7 +3,6 @@ const GaugeImportCode =
 
 const GaugeUsageCode =
 `<Gauge
-  value={"%"}
   info="of something"
   setProgress={this.state.gaugeValue}
 />`;
@@ -11,7 +10,7 @@ const GaugeUsageCode =
 const GaugeCustom1UsageCode =
 `<Gauge
   size={100}
-  value={"%"}
+  valueUnit={"%"}
   info="of total"
   valueColor="#e01944"
   strokeColor="#e01944"
@@ -21,7 +20,6 @@ const GaugeCustom1UsageCode =
 const GaugeCustom3UsageCode =
 `<Gauge
   size={120}
-  value={"%"}
   setProgress={44}
   valueFontSize={34}
   strokeColor="#198ae0"
@@ -31,7 +29,7 @@ const GaugeCustom3UsageCode =
 
 const GaugeCustom4UsageCode =
 `<Gauge
-  value={" KM/s"}
+  valueUnit={" KM/s"}
   info="of Speed"
   setProgress={15}
   infoFontSize={16}

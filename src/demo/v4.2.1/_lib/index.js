@@ -6,8 +6,6 @@ import {
   NavBarThemeSwitch,
   NavBarSearchSuggestion,
   NavPageContainer,
-  NavPageContainerRight,
-  NavPageContainerInner,
   
   Accordion,
   Appearance,
@@ -55,8 +53,6 @@ export {
   NavBarThemeSwitch,
   NavBarSearchSuggestion,
   NavPageContainer,
-  NavPageContainerRight,
-  NavPageContainerInner,
   
   Accordion,
   Appearance,

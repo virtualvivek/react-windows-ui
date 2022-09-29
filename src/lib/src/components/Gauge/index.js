@@ -49,14 +49,16 @@ class Gauge extends React.Component {
             width: this.props.size-20,
             height: this.props.size-20
           }}>
-          <span
-            className="app-gauge-value"
-            style={{
-              color: this.props.valueColor,
-              fontSize: this.props.valueFontSize
-            }}>
-            {this.state.isProgress+this.props.value}
-          </span>
+          {this.props.showValue && (
+            <span
+              className="app-gauge-value"
+              style={{
+                color: this.props.valueColor,
+                fontSize: this.props.valueFontSize
+              }}>
+              {this.state.isProgress+""+this.props.valueUnit}
+            </span>
+          )}
           <span
             className="app-gauge-info"
             style={{
@@ -73,6 +75,8 @@ class Gauge extends React.Component {
 Gauge.defaultProps = {
   size: 140,
   setProgress: 0,
+  showValue: true,
+  valueUnit: "",
   valueColor: "var(--color_text_dark)",
   valueFontSize: 25,
   infoFontSize: 14,

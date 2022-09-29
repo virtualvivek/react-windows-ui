@@ -1,5 +1,6 @@
-import React from 'react'
-import LoaderBusyWrapper from '../_common/LoaderBusyWrapper'
+import React, { useMemo } from "react";
+import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
+import { ScrollView } from "../_api";
 
 const LoaderBusy = (props) => {
 
@@ -13,14 +14,25 @@ const LoaderBusy = (props) => {
     else return "";
   }
 
-  const renderLoader = () => {
-    return  <div
-              className={ props.setTheme === "light"
-                ? "app-loader-busy light" + setSize() + toggleLoading()
-                : "app-loader-busy" + setSize() + toggleLoading()}>
-              <LoaderBusyWrapper/>
-            </div>
+  const isOverlay = () => {
+    return props.display === "overlay" ? " loader-lg" : "";
   }
+
+  const renderLoader = () => {
+    return <div
+            className={ props.setTheme === "light"
+              ? `app-loader-busy${isOverlay()} light${setSize()}${toggleLoading()}`
+              : `app-loader-busy${isOverlay()}${setSize()}${toggleLoading()}`}>
+            <LoaderBusyWrapper/>
+          </div>
+  }
+
+  useMemo(() => {
+    if(props.display === "overlay") {
+      if(props.isLoading) { ScrollView.disableScroll(); }
+      else {ScrollView.enableScroll(); }
+    }
+  }, [props.isLoading, props.display]);
 
   const renderLoaderFullScreen = () => {
   return <>
@@ -37,8 +49,8 @@ const LoaderBusy = (props) => {
     <div
       onClick={ props.onBackdropPress }
       className={ props.isLoading
-        ? "app-loader-busy-fullscreen show"
-        : "app-loader-busy-fullscreen"}>
+        ? "app-loader-busy-overlay show"
+        : "app-loader-busy-overlay"}>
       {renderLoader()}
       <span className={ props.setTheme === "light"
         ? "title text-light"
@@ -53,7 +65,7 @@ const LoaderBusy = (props) => {
 
   return (
     <>
-    { props.display === "fullscreen"
+    { props.display === "overlay"
       ? renderLoaderFullScreen()
       : renderLoader()
     }
@@ -66,4 +78,4 @@ LoaderBusy.defaultProps = {
   isLoading: true
 }
 
-export default LoaderBusy
+export default LoaderBusy;

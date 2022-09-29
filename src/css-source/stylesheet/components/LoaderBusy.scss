@@ -124,12 +124,15 @@
   }
 }
 
-.app-loader-busy-fullscreen {
+.app-loader-busy-overlay {
   @extend .app-overlay;
   
   z-index: 99;
   opacity: 0;
+  display: flex;
   transition: 0.4s;
+  text-align: center;
+  flex-direction: column;
   visibility: hidden;
   
   &.show {
@@ -142,7 +145,7 @@
     top: 42%;
     z-index: 100;
     margin: 0 auto;
-    filter: drop-shadow(0 4px 4px black);
+    filter: drop-shadow(0 4px 4px #44444488);
   }
   .title {
     width: 100%;

@@ -139,21 +139,21 @@ class AppFourTwoOne extends React.Component {
           tooltip="Search Docs"
           data={[
             {label: 'home', link: '#', icon: <i className="icons10-home"></i>},
-            {label: 'alert', link: '/alerts'},
-            {label: 'accordion', link: '/accordion'},
-            {label: 'apperarance', link: '/appearance'},
-            {label: 'avatarview', link: '/avatarview'},
-            {label: 'buttons', link: '/buttons'},
-            {label: 'checkbox', link: '/checkbox'},
-            {label: 'commandbar', link: '/commandbar'},
-            {label: 'dialogs', link: '/dialogs'},
-            {label: 'gauges', link: '/gauges'},
-            {label: 'icons', link: '/icons'},
-            {label: 'imageview', link: '/imageview'},
-            {label: 'inputtext', link: '/input_group'},
-            {label: 'inputsearch', link: '/inputsearch'},
-            {label: 'menubar', link: '/menubar'},
-            {label: 'select', link: '/selectbox'}
+            {label: 'alert', link: 'alerts'},
+            {label: 'accordion', link: 'accordion'},
+            {label: 'apperarance', link: 'appearance'},
+            {label: 'avatarview', link: 'avatarview'},
+            {label: 'buttons', link: 'buttons'},
+            {label: 'checkbox', link: 'checkbox'},
+            {label: 'commandbar', link: 'commandbar'},
+            {label: 'dialogs', link: 'dialogs'},
+            {label: 'gauges', link: 'gauges'},
+            {label: 'icons', link: 'icons'},
+            {label: 'imageview', link: 'imageview'},
+            {label: 'inputtext', link: 'input_group'},
+            {label: 'inputsearch', link: 'inputsearch'},
+            {label: 'menubar', link: 'menubar'},
+            {label: 'select', link: 'selectbox'}
           ]}
         />
 

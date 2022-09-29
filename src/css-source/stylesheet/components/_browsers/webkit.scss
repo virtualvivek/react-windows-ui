@@ -14,9 +14,13 @@
 .app-navbar-wrap nav {
   &::-webkit-scrollbar {
     width: 4px;
+    background-color: transparent;
   }
   &:hover::-webkit-scrollbar {
     width: 14px;
+  }
+  &::-webkit-scrollbar-button:single-button {
+    display: none;
   }
   &::-webkit-scrollbar-thumb {
     background-color: #99999933;

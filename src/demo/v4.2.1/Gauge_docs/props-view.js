@@ -26,10 +26,16 @@ const PropsView = () => {
           <td>Set's Gauge width & height</td>
         </tr>
         <tr>
-          <td><p className="app-code">value</p></td>
+          <td><p className="app-code">valueUnit</p></td>
           <td>string</td>
           <td>null</td>
-          <td>Set's Gauge suffix value</td>
+          <td>Set's Gauge value unit</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">showValue</p></td>
+          <td>boolean</td>
+          <td>''</td>
+          <td>Set's Gauge if value visible</td>
         </tr>
         <tr>
           <td><p className="app-code">valueColor</p></td>

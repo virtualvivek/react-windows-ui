@@ -34,7 +34,6 @@ render() {
         
     <Gauge
       setProgress={this.state.gaugeValue}
-      value={"%"}
       info="of something"
     />
     <br/><br/>
@@ -73,7 +72,7 @@ render() {
     <Gauge
       setProgress={this.state.gaugeValue}
       size={100}
-      value={"%"}
+      valueUnit={"%"}
       info="of total"
       strokeColor="#e01944"
       valueColor="#e01944"
@@ -95,7 +94,6 @@ render() {
     <Gauge
       setProgress={44}
       size={120}
-      value={"%"}
       valueFontSize={34}
       strokeColor="#198ae0"
       valueColor="#198ae0"
@@ -117,7 +115,7 @@ render() {
 
     <Gauge
       setProgress={15}
-      value={" KM/s"}
+      valueUnit={" KM/s"}
       valueFontSize={20}
       info="of Speed"
       infoFontSize={16}

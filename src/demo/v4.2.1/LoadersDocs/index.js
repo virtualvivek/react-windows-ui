@@ -128,15 +128,15 @@ render() {
 
   
     <div className="app-hr"></div>
-    <h2>LoaderBusy <p className="app-code">Fullscreen</p> :</h2>
+    <h2>LoaderBusy <p className="app-code">Overlay</p> :</h2>
 
     <LoaderBusy
       isLoading={this.state.showLoaderBusyFull}
       onBackdropPress={this.toggleLoaderBusyFull}
-      display="fullscreen"
+      display="overlay"
     />
     <Button
-      value="Open fullscreen Loader"
+      value="Open overlay Loader"
       onClick={this.toggleLoaderBusyFull}
     />
     <br/><br/>
@@ -149,18 +149,18 @@ render() {
     </SyntaxHighlighter>
 
     <div className="app-hr"></div>
-    <h2>LoaderBusy <p className="app-code">Fullscreen</p>&nbsp;<p className="app-code">Custom Background Color</p> :</h2>
+    <h2>LoaderBusy <p className="app-code">Overlay</p>&nbsp;<p className="app-code">Custom Background Color</p> :</h2>
 
     <LoaderBusy
       isLoading={this.state.showLoaderBusyFullCustom}
       onBackdropPress={this.toggleLoaderBusyFullCustom}
-      display="fullscreen"
+      display="overlay"
       backgroundColor="var(--PrimaryColor)"
       setTheme="light"
       title="Tap anywhere to dismiss"
     />
     <Button
-      value="Open Custom fullscreen Loader" 
+      value="Open custom overlay loader" 
       onClick={this.toggleLoaderBusyFullCustom}
     /><br/><br/>
 

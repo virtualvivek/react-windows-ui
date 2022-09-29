@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, ButtonIcon, NavPageContainer,NavPageContainerInner } from '../_lib'
+import { Button, ButtonIcon, NavPageContainer } from '../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { ButtonImportCode,ButtonAsIconCode,ButtonIconImportCode,ButtonDefaultCode,
@@ -29,7 +29,7 @@ class ButtonsDocs extends React.Component {
     <NavPageContainer
       animateTransition>
 
-    <NavPageContainerInner>
+    <NavPageContainer.Inner>
 
       <h1>Buttons</h1>
 
@@ -277,7 +277,7 @@ class ButtonsDocs extends React.Component {
 
 
         <br/><br/><br/><br/>
-      </NavPageContainerInner>
+      </NavPageContainer.Inner>
 
       </NavPageContainer>
     );

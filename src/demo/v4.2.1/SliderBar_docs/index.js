@@ -82,6 +82,7 @@ render() {
     <SliderBar
       defaultValue={this.state.Slider3}
       thumbStyle="round-border"
+      showPopupValue={false}
       onChange={(e) => {this.onChangeSlider3(e)}} />
     <br/>
 

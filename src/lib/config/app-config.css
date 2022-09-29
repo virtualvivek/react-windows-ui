@@ -5,7 +5,8 @@
 body {
   font-family: "Segoe UI";
 }
-::selection {
+
+[data-theme="dark"] ::selection {
   color: #ffffff;
-  background-color: var(--PrimaryColor);
+  background-color: #2E517E;
 }

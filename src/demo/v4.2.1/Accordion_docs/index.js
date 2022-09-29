@@ -8,7 +8,10 @@ import PropsView from './props-view'
 
 const AccordionDocs = () => {
   return (
-    <NavPageContainer hasPadding animateTransition>
+    <NavPageContainer
+      hasPadding
+      animateTransition
+      overscroll>
       <h1>Accordion</h1>
 
       <p><span className="color-primary">Accordion</span> component is used to show (and hide) content, it collapsed on hide and expand on show state.</p>

@@ -31,7 +31,7 @@ const NavBarThemeSwitch = () => {
     }
   }, [setLabelText])
 
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+  const themeListener = (e) => {
     const newColorScheme = e.matches ? "dark" : "light";
     let iswitch = inputRef.current;
 
@@ -43,7 +43,14 @@ const NavBarThemeSwitch = () => {
       iswitch.checked = true;
       setLabelText("Day Mode");
     }
-  });
+  }
+
+  useEffect(() => {
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", themeListener);
+    return () => {
+      window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change", themeListener);
+    };
+  }, []);
 
   return (
     <label className="app-navbar-theme-switch">

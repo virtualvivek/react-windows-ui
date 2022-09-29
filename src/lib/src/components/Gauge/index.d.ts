@@ -3,7 +3,8 @@ import React from 'react'
 export interface GaugeProps {
   setProgress ?: number;
   size ?: number;
-  value ?: string;
+  showValue ?: boolean;
+  valueUnit ?: string;
   valueColor ?: string;
   valueFontSize ?: number;
   info ?: string;

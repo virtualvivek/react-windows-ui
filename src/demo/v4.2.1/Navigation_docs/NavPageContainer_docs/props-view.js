@@ -25,7 +25,7 @@ const PropsView = () => {
           <td>true</td>
           <td>Set's NavPageContainer default horizontal padding,
             <br/>set to false if you want to render component with 100% view width.
-            <br/>If <span className="app-code">false</span> use <b>{`<NavPageContainerInner />`}</b> to render child component with padding.
+            <br/>If <span className="app-code">false</span> use <b>{`<NavPageContainer.Inner />`}</b> to render child component with padding.
           </td>
         </tr>
         <tr>

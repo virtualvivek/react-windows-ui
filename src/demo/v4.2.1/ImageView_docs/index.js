@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, NavPageContainerInner, ImageView, Button } from '../_lib'
+import { NavPageContainer, ImageView, Button } from '../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { ImageViewImportCode,ImageViewUsageCode,ImageViewShadowInsetUsageCode,
@@ -35,7 +35,7 @@ class ImageViewDocs extends React.Component {
         tooltip="ImageView tooltip title"
       />
 
-    <NavPageContainerInner>
+    <NavPageContainer.Inner>
 
       {/* <h1>ImageView</h1> */}
       <br/>
@@ -125,7 +125,7 @@ class ImageViewDocs extends React.Component {
       <h2>Props</h2>
       <PropsView/>
 
-    </NavPageContainerInner>
+    </NavPageContainer.Inner>
     
 
 

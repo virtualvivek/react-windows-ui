@@ -91,7 +91,7 @@ render() {
     
       <div className="app-hr m-0"></div>
       <div className="app-flex app-align-center">
-        <span className="demo-colors-name">--color_scheme<span className="user-select-none"><span className="user-select-none">:</span></span></span>
+        <span className="demo-colors-name">color-scheme<span className="user-select-none"><span className="user-select-none">:</span></span></span>
         <span className="demo-colors-box" style={{backgroundColor: this.state.color_navbar_bg_val}}></span>
         <span className="demo-colors-value">{this.state.color_scheme_val}</span>
       </div>
