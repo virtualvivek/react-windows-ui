@@ -189,13 +189,6 @@
         "showBadge": false
     },
     {
-        "to": "texts",
-        "exact": false,
-        "text": "Texts",
-        "icon": "icons10-align-left",
-        "showBadge": false
-    },
-    {
         "to": "view_",
         "exact": false,
         "text": "View",

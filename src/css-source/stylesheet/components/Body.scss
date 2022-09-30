@@ -74,31 +74,29 @@ a {
   background: var(--color_button);
 }
 
-.m-0 {
+.app-ul-content li {
+  margin-bottom: 0.25rem;
+}
+
+.app-m-0 {
   margin: 0;
 }
-.m-tb-10 {
+.app-mt-10 {
   margin-top: 10px;
+}
+.app-mb-10 {
   margin-bottom: 10px;
 }
-.m-tb-15 {
+.app-mt-15 {
   margin-top: 15px;
+}
+.app-mb-15 {
   margin-bottom: 15px;
 }
-.m-tb-20 {
+.app-mt-20 {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
-.m-b-5 {
-  margin-bottom: 5px;
-}
-.m-b-10 {
-  margin-bottom: 10px;
-}
-.m-b-15 {
-  margin-bottom: 15px;
-}
-.m-b-20 {
+.app-mb-20 {
   margin-bottom: 20px;
 }
 

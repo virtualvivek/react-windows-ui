@@ -5,7 +5,6 @@ import { AppTheme, SplashScreen, NavBar, NavBarLink,
 
 import Home from './_pages/Home'
 import GettingStarted from './_pages/GettingStarted'
-import Texts from './_pages/Texts'
 import Tables from './_pages/Tables'
 import Icons from './_pages/Icons'
 
@@ -42,6 +41,7 @@ import SelectBoxDocs from './SelectBox_docs'
 import SliderBarDocs from './SliderBar_docs'
 import SwitchDocs from './Switch_docs'
 import TableViewDocs from './TableView_docs'
+import TextsDocs from './Texts_docs'
 import ViewDocs from './View_docs'
 
 import AppJsDefault from './_templates/appjs-default'
@@ -176,6 +176,11 @@ class AppFourTwoOne extends React.Component {
         text="Colors"
         icon={<i className="icons10-color-palette"></i>}
       />
+      <NavBarLink
+        to="utilities"
+        text="Utilities"
+        icon={<i className="icons10-puzzle"></i>}
+      />
 
       <NavBarSubMenu title="Navigation">
         <NavBarLink
@@ -228,6 +233,7 @@ class AppFourTwoOne extends React.Component {
         <Route path='getting_started' element={<GettingStarted/>} />
 
         <Route path='colors' element={<ColorsDocs/>} />
+        <Route path='utilities' element={<TextsDocs/>} />
 
         <Route path='navbar' element={<NavBarDocs/>} />
         <Route path='navbarlink' element={<NavBarLinkDocs/>} />
@@ -263,7 +269,6 @@ class AppFourTwoOne extends React.Component {
         <Route path='tableview' element={<TableViewDocs/>} />
         <Route path='view_' element={<ViewDocs/>} />
 
-        <Route path='texts' element={<Texts/>} />
         <Route path='tables' element={<Tables/>} />
         <Route path='icons' element={<Icons/>} />
 

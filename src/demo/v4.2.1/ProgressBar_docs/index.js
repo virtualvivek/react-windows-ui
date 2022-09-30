@@ -37,7 +37,7 @@ render() {
         
     <p>A <span className="color-primary">ProgressBar</span> can be used to show a user how far along he/she is in a process</p>
 
-    <h1 className="m-0" style={{fontSize:56}}>
+    <h1 className="app-m-0" style={{fontSize:56}}>
       {this.state.ProgressBar1}%
     </h1>
 

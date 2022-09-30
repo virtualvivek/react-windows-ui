@@ -13,7 +13,7 @@ const Page0 = () => {
         <i className="icons10-windows app-align-center"
           style={{fontSize: 120,color: '#67DBF9'}}></i>
         <div style={{color: '#fff'}}>
-          <h1 className="m-0">Welcome to react-windows-ui</h1>
+          <h1 className="app-m-0">Welcome to react-windows-ui</h1>
           <h4>-v4.1.0</h4>
           <br/><br/><br/><br/>
           <h2>Edit App.js and save to see changes.</h2>

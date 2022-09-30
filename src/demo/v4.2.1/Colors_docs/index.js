@@ -86,10 +86,10 @@ render() {
       <ColorVariables colorName="--PrimaryColor" backgroundColor={this.state.primaryColor_val} />
       <ColorVariables colorName="--PrimaryColorLight" backgroundColor={this.state.primaryColorLight_val} />
 
-      <div className="app-hr m-0"></div>
+      <div className="app-hr app-m-0"></div>
       <p>Color values when app scheme is <b>{this.state.color_scheme_val}</b></p>
     
-      <div className="app-hr m-0"></div>
+      <div className="app-hr app-m-0"></div>
       <div className="app-flex app-align-center">
         <span className="demo-colors-name">color-scheme<span className="user-select-none"><span className="user-select-none">:</span></span></span>
         <span className="demo-colors-box" style={{backgroundColor: this.state.color_navbar_bg_val}}></span>
@@ -109,7 +109,7 @@ render() {
       <ColorVariables colorName="--color_primary_alpha" backgroundColor={this.state.color_primary_alpha_val} />
       <ColorVariables colorName="--color_text_dark" backgroundColor={this.state.color_text_dark_val} />
 
-      <div className="app-hr m-0"></div>
+      <div className="app-hr app-m-0"></div>
 
     </div>
 

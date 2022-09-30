@@ -34,8 +34,9 @@
     img {
       width: 37px;
       height: 37px;
-      object-fit: cover;
       font-size: 8px;
+      user-select: none;
+      object-fit: cover;
       word-break: break-word;
       background-color: var(--color_link_bg_hover);
     }
@@ -53,7 +54,7 @@
       }
       p {
         font-size: 12px;
-        opacity: 0.7;
+        opacity: 0.8;
         margin: 0;
       }
       span,

@@ -28,7 +28,7 @@ render() {
     animateTransition={false}>
     <h1>SliderBar</h1>
         
-    <h1 className="m-0 color-primary"
+    <h1 className="app-m-0 color-primary"
       style={{fontSize:46}}>
         {this.state.Slider1}%
     </h1>
@@ -37,7 +37,8 @@ render() {
       defaultValue={this.state.Slider1}
       showValue={false}
       onChange={(e) => {this.onChangeSlider1(e)}}
-      tooltip="SliderBar tooltip title" />
+      tooltip="SliderBar tooltip title"
+    />
 
     <h2>Import</h2>
 
@@ -65,8 +66,9 @@ render() {
       defaultValue={this.state.Slider2}
       thumbStyle="round"
       step={4}
-      onChange={(e) => {this.onChangeSlider2(e)}} />
-    <br/>
+      onChange={(e) => {this.onChangeSlider2(e)}}
+    />
+    <br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -83,8 +85,9 @@ render() {
       defaultValue={this.state.Slider3}
       thumbStyle="round-border"
       showPopupValue={false}
-      onChange={(e) => {this.onChangeSlider3(e)}} />
-    <br/>
+      onChange={(e) => {this.onChangeSlider3(e)}}
+    />
+    <br/><br/>
 
     <SyntaxHighlighter
       language="javascript"

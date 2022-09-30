@@ -2,7 +2,7 @@ import React from 'react'
 import { NavPageContainer } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { NavPageContainerImportCode,NavPageContainerUsageCode } from './codes'
+import { NavPageContainerImportCode,NavPageContainerUsageCode, NavPageContainerInnerUsageCode } from './codes'
 import PropsView from './props-view'
 import './css/navpagecontainer-view.css'
 
@@ -69,6 +69,13 @@ render() {
       </div>
       <i className="icons10-shutdown"></i>
     </div>
+    <br/>
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {NavPageContainerInnerUsageCode}
+    </SyntaxHighlighter>
 
 
     <h2>Props</h2>

@@ -1,21 +1,18 @@
 .app-navbar-theme-switch {
   display: grid;
   cursor: pointer;
-  padding: 10px;
+  padding: 8px 6px;
+  margin: 5px 20px;
+  border-radius: 6px;
+  position: relative;
   align-items: center;
   flex-direction: row;
   grid-auto-flow: column;
   justify-content: flex-start;
   -webkit-tap-highlight-color: transparent;
 
-  margin: 5px 20px;
-  border-radius: 6px;
-  position: relative;
-  filter: contrast(1.1);
-  background: var(--color_link_bg_hover);
-
   &:hover {
-    background: var(--color_button);
+    background: var(--color_link_bg_hover);
   }
   &:active {
     background: var(--color_link_bg_active);
@@ -27,7 +24,7 @@
     line-height: 1;
     font-size: 14px;
     user-select: none;
-    padding-left: 10px;
+    padding-left: 8px;
     position: relative;
   }
 }
@@ -42,6 +39,8 @@
   height: 16px;
   position: relative;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
   transform: scale(1) rotate(-2deg);
   box-shadow: inset 7px -7px 0 0.09px #fff;
   transition: box-shadow 0.5s ease 0s, transform 0.4s ease 0.1s;
@@ -53,35 +52,23 @@
   border-radius: inherit;
   position: absolute;
   left: 0;
-  top: 0;
   transition: background 0.3s ease;
 }
 .app-navbar-theme-switch input + .app-navbar-theme-switch-view:after {
-  content: "";
-  width: 3.8px;
-  height: 3.8px;
+  content: "\f120";
+  font-family: icons10;
+  font-size: 36px;
   border-radius: 50%;
-  margin: -2px 0 0 -2px;
+  margin: -10px 0 0 -10px;
   position: absolute;
-  top: 50%;
-  left: 50%;
   transform: scale(0);
   transition: all 0.3s ease;
-  box-shadow:
-    0 -11px 0 var(--color_text_dark),
-    0 11px 0 var(--color_text_dark),
-      11px 0 0 var(--color_text_dark),
-      -11px 0 0 var(--color_text_dark),
-    7.2px 7.2px 0 var(--color_text_dark),
-    -7.2px 7.2px 0 var(--color_text_dark),
-    7.2px -7.2px 0 var(--color_text_dark),
-    -7.2px -7.2px 0 var(--color_text_dark);
 }
 
 
 // Checked Sun State
 .app-navbar-theme-switch input:checked + .app-navbar-theme-switch-view {
-  box-shadow: inset 14px -14px 0 0 #fff;
+  box-shadow: inset 14px -14px 0 0 transparent;
   transform: scale(0.5) rotate(0deg);
   transition: transform 0.3s ease 0.1s, box-shadow 0.2s ease 0s;
 }
@@ -90,6 +77,6 @@
   transition: background 0.3s ease 0.1s;
 }
 .app-navbar-theme-switch input:checked + .app-navbar-theme-switch-view:after {
-  transform: scale(1.25);
+  transform: scale(1);
   transition: transform 0.5s ease 0.15s;
 }

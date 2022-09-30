@@ -15,7 +15,7 @@ const Page2 = () => {
 
 
       <NavPageContainerRight>
-        <h4 className="m-0">Right Section Container</h4>
+        <h4 className="app-m-0">Right Section Container</h4>
         <p>Your Right container contents</p>
         <Link>Components here</Link>
         <br/>

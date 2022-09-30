@@ -13,7 +13,7 @@ const Page1 = () => {
       </NavPageContainerInner>
 
       <NavPageContainerRight>
-        <h4 className="m-0">Right Section Container</h4>
+        <h4 className="app-m-0">Right Section Container</h4>
       </NavPageContainerRight>
 
     </NavPageContainer>
