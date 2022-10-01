@@ -52,6 +52,18 @@ const PropsView = () => {
           <td>Button's onPress event listener</td>
         </tr>
         <tr>
+          <td><p className="app-code">onSubmit</p></td>
+          <td>function</td>
+          <td>null</td>
+          <td>Button's onSubmit event listener</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onDoubleClick</p></td>
+          <td>function</td>
+          <td>null</td>
+          <td>Button's onDoubleClick event listener</td>
+        </tr>
+        <tr>
           <td><p className="app-code">isLoading</p></td>
           <td>boolean</td>
           <td>false</td>

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useMemo } from "react";
 import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
 const input_prefix = "input-";
 
@@ -14,18 +14,18 @@ const InputText = (props) => {
   const renderLabel = () => {
     return <span className="app-input-label">{props.label}</span>
   }
-  const renderStatus = () => {
-    return  ( props.setStatus === "success"
-            ||props.setStatus === "danger") ?
-            <i className="icons10-keyboard font-size-18px"></i>
-            :
-            props.setStatus === "loading" ?
-            <div className="app-loader-busy loader-sm animate">
+
+  const renderStatus = useMemo(() => {
+    if(props.setStatus === "success" || props.setStatus === "danger") {
+      return <i className="icons10-keyboard font-size-18px"></i>;
+    }
+    else if(props.setStatus === "loading") {
+      return <div className="app-loader-busy loader-sm animate">
               <LoaderBusyWrapper/>
             </div>
-            :
-            <></>
-  }
+    }
+    return <></>;
+  }, [props.setStatus])
 
   return (
     <div
@@ -37,13 +37,14 @@ const InputText = (props) => {
         ref={inputRef}
         type={props.type}
         value={props.value}
+        onClick={props.onClick}
         onChange={props.onChange}
         disabled={props.disabled}
         placeholder={props.placeholder}
         style={{ width: props.width }}
       />
       <div className="app-input-status-container">
-        {renderStatus()}
+        {renderStatus}
         {
           props.type==="password" && (
             <button

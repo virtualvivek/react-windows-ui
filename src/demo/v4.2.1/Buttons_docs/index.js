@@ -249,7 +249,7 @@ class ButtonsDocs extends React.Component {
         <ButtonIcon
           icon={<i className="icons10-share"></i>} />
         <ButtonIcon
-          icon={<i className="icons10-add"></i>} />
+          icon={<i className="icons10-plus"></i>} />
         <ButtonIcon
           icon={<i className="icons10-fingerprint"></i>} />
         <br/>

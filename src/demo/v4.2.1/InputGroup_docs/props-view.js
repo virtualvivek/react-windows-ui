@@ -14,10 +14,10 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">placeholder</p></td>
-          <td>string</td>
-          <td>'Enter a text'</td>
-          <td>Set's Input placeholder</td>
+          <td><p className="app-code">ref</p></td>
+          <td>function</td>
+          <td>null</td>
+          <td>Set's Input refrence value</td>
         </tr>
         <tr>
           <td><p className="app-code">value</p></td>
@@ -32,6 +32,12 @@ const PropsView = () => {
               month | datetime-local</td>
           <td>text</td>
           <td>Set's Input type</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">width</p></td>
+          <td>CSS Property</td>
+          <td>'270px'</td>
+          <td>Set's Input background-ring/backround color</td>
         </tr>
         <tr>
           <td><p className="app-code">label</p></td>
@@ -52,16 +58,10 @@ const PropsView = () => {
           <td>Set's Input status</td>
         </tr>
         <tr>
-          <td><p className="app-code">ref</p></td>
-          <td>function</td>
-          <td>null</td>
-          <td>Set's Input refrence value</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">width</p></td>
-          <td>CSS Property</td>
-          <td>'270px'</td>
-          <td>Set's Input background-ring/backround color</td>
+          <td><p className="app-code">placeholder</p></td>
+          <td>string</td>
+          <td>'Enter a text'</td>
+          <td>Set's Input placeholder</td>
         </tr>
         <tr>
           <td><p className="app-code">onChange</p></td>

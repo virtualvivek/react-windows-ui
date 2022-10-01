@@ -4,16 +4,19 @@ const InputSearchBar = (props) => {
   return (
     <div className="app-input-search-bar" title={props.tooltip}>
       <input
-        {...props}
+        style={{ width: props.width }}
         className="app-input-text"
         type="search"
-        placeholder={props.placeholder}
-        value={props.value}
         name={props.name}
+        value={props.value}
+        onClick={props.onClick}
+        onChange={props.onChange}
+        disabled={props.disabled}
+        placeholder={props.placeholder}
       />
       <button
         type="submit"
-        onClick={props.onSubmit}>
+        onClick={() => props.onSubmit(props.value)}>
       </button>
     </div>
   )

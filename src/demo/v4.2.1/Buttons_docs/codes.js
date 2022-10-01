@@ -46,7 +46,7 @@ const ButtonIconCode =
 `<ButtonIcon
   onClick={() => {}}
   tooltip="Some tooltip text"
-  icon={<i className="icons10-add"></i>}
+  icon={<i className="icons10-plus"></i>}
 />`;
 
 const ButtonSuccessCode =

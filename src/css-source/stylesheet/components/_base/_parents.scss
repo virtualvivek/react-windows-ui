@@ -166,9 +166,8 @@
   }
   li {
     a, .dropdown-lst-item {
-      height: 35px;
       display: flex;
-      padding: 0 10px;
+      padding: 10px;
       align-items: center;
       color: var(--color_text_dark);
       @extend .tap-highlight-none;
@@ -181,6 +180,7 @@
       }
       i {
         font-size: 18px;
+        line-height: 0;
         padding-right: 5px;
       }
     }

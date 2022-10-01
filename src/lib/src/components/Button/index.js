@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useMemo } from "react";
 import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
 
 const Button = (props) => {
 
-  const renderLoader = () => {
+  const renderLoader = useMemo(() => {
     return <div
         className = {
             props.type === "primary" ?  "app-loader-busy loader-sm light animate"
@@ -13,23 +13,23 @@ const Button = (props) => {
           }>
       <LoaderBusyWrapper/>
     </div>
-  }
+  }, [props.type])
 
-  const toggleLoading = () => {
+  const toggleLoading = useMemo(() => {
     return props.isLoading ? "btn-is-loading" : "btn-no-loading";
-  }
+  }, [props.isLoading])
 
   
   return (
     <button
       className = {
-        props.type ==="primary" ?  `app-btn animate btn-primary ${toggleLoading()}`
-      : props.type ==="danger" ? `app-btn animate btn-danger ${toggleLoading()}`
-      : props.type ==="success" ? `app-btn animate btn-success ${toggleLoading()}`
-      : props.type ==="primary-outline" ? `app-btn animate btn-primary-outline ${toggleLoading()}`
-      : props.type ==="danger-outline" ? `app-btn animate btn-danger-outline ${toggleLoading()}`
-      : props.type ==="success-outline" ? `app-btn animate btn-success-outline ${toggleLoading()}`
-      : `app-btn animate ${toggleLoading()}`
+        props.type ==="primary" ?  `app-btn animate btn-primary ${toggleLoading}`
+      : props.type ==="danger" ? `app-btn animate btn-danger ${toggleLoading}`
+      : props.type ==="success" ? `app-btn animate btn-success ${toggleLoading}`
+      : props.type ==="primary-outline" ? `app-btn animate btn-primary-outline ${toggleLoading}`
+      : props.type ==="danger-outline" ? `app-btn animate btn-danger-outline ${toggleLoading}`
+      : props.type ==="success-outline" ? `app-btn animate btn-success-outline ${toggleLoading}`
+      : `app-btn animate ${toggleLoading}`
       }
       style={{
         width: props.width,
@@ -40,12 +40,11 @@ const Button = (props) => {
       title={props.tooltip}
       onClick={props.onClick}
       onSubmit={props.onSubmit}
-      disabled={props.disabled}>
+      disabled={props.disabled}
+      onDoubleClick={props.onDoubleClick}>
 
-      {props.isLoading && (renderLoader())}
-
+      {props.isLoading && (renderLoader)}
       {props.icon && (<span>{props.icon}</span>)}
-      
       {props.value!=="" && (<span>{props.value}</span>)}
     </button>
   )
@@ -53,8 +52,8 @@ const Button = (props) => {
 
 Button.defaultProps = {
   value: "Submit",
-  isLoading: false,
   disabled: false,
+  isLoading: false,
   onClick: () => {},
 }
 

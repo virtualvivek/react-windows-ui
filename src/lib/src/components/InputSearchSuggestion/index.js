@@ -5,40 +5,43 @@ const InputSearchSuggestion = (props) => {
 
   const inputRef = React.useRef();
 
-  const toggleVisible = (e) => {
+  const _onChange = (e) => {
+    setSearch(e.target.value);
     let iswitch = inputRef.current;
-
-    if(!e.target.value) {
+    if(!e.target.value || !inputRef.current.hasChildNodes()) {
       iswitch.style.visibility="hidden";
     }
     else {
       iswitch.style.visibility="visible";
     }
+    props.onChange();
   }
 
-  const teams_data = props.data;
-  const [teams, setTeams] = React.useState(teams_data);
+  const search_data = props.data;
+  const [teams, setTeams] = React.useState(search_data);
   const [search, setSearch] = React.useState("");
 
   return (
     <div className="app-input-search-suggestion" title={props.tooltip}>
       <div className="app-input-search-box">
         <input
-          className="app-input-text app-input-search"
           type="search"
-          placeholder={props.placeholder}
           value={search}
+          style={{ width: props.width }}
+          onClick={props.onClick}
+          disabled={props.disabled}
+          placeholder={props.placeholder}
+          className="app-input-text app-input-search"
           onChange={(e) => {
-            toggleVisible(e)
-            const test = teams_data.filter(team => {
+            _onChange(e)
+            const test = search_data.filter(team => {
               return team.label.toLowerCase().includes(e.target.value.toLowerCase());
             });
             setTeams(test);
-            setSearch(e.target.value);
           }}
         />
       </div>
-      <ul ref={inputRef}>
+      <ul ref={inputRef} style={{ width: props.width }}>
         {teams.map((item) => (
           <li
             className="option"
@@ -54,7 +57,8 @@ const InputSearchSuggestion = (props) => {
   }
 
 InputSearchSuggestion.defaultProps = {
-  placeholder: "Search here.."
+  placeholder: "Search here..",
+  onChange: () => {}
 }
 
 export default InputSearchSuggestion;

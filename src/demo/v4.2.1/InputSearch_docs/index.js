@@ -25,7 +25,9 @@ render() {
 
     <InputSearchBar
       placeholder="Search here"
-      onSubmit={() => {}}
+      value={"H"}
+      onSubmit={(val) => {alert(val)}}
+      onChange={(val) => {alert(val)}}
       //tooltip="tooltip title"
     />
 
@@ -53,7 +55,9 @@ render() {
 
     <InputSearchBox
       placeholder="Enter to Search"
-      onChange={() => {}}
+      // onChange={() => {}}
+      value={"H"}
+      onChange={(val) => {alert(val)}}
       //tooltip="tooltip title"
     />
 

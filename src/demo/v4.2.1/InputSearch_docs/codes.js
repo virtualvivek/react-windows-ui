@@ -12,7 +12,6 @@ const SearchBarUsageCode =
   name="Some Name"
   value="some value"
   onSubmit={() => {}}
-  //tooltip="tooltip title"
   placeholder="Search here"
 />`;
 
@@ -34,15 +33,14 @@ const SearchSuggestionUsageCode =
     {label: 'banana', link: '#'},
     {label: 'peach', link: '#'},
   ]}
-  //tooltip="tooltip title"
 />`;
 
 
 export {
-    SearchBarImportCode,
-    SearchBoxImportCode,
-    SearchSuggestionImportCode,
-    SearchBarUsageCode,
-    SearchBoxUsageCode,
-    SearchSuggestionUsageCode
+  SearchBarImportCode,
+  SearchBoxImportCode,
+  SearchSuggestionImportCode,
+  SearchBarUsageCode,
+  SearchBoxUsageCode,
+  SearchSuggestionUsageCode
 }

@@ -14,18 +14,6 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">placeholder</p></td>
-          <td>string</td>
-          <td>'search here..'</td>
-          <td>Set's Search placeholder</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">tooltip</p></td>
-          <td>string</td>
-          <td>null</td>
-          <td>Set's Search hover tooltip text</td>
-        </tr>
-        <tr>
           <td><p className="app-code">name</p></td>
           <td>string</td>
           <td>null</td>
@@ -36,6 +24,30 @@ const PropsView = () => {
           <td>string</td>
           <td>null</td>
           <td>Set's Search value prop</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">width</p></td>
+          <td>CSS value</td>
+          <td>system default</td>
+          <td>Set's Search width prop</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">tooltip</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Set's Search hover tooltip text</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">disabled</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's Search if disabled</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onClick</p></td>
+          <td>function</td>
+          <td>null</td>
+          <td>onClick listener | For InputSearchBar</td>
         </tr>
         <tr>
           <td><p className="app-code">onSubmit</p></td>
@@ -50,9 +62,15 @@ const PropsView = () => {
           <td>onChange listener | For InputSearchBox</td>
         </tr>
         <tr>
+          <td><p className="app-code">placeholder</p></td>
+          <td>string</td>
+          <td>'search here..'</td>
+          <td>Set's Search placeholder</td>
+        </tr>
+        <tr>
           <td>
             <b>For InputSearchSuggestion</b>
-          </td>
+          </td><td></td><td></td><td></td>
         </tr>
         <tr>
           <td><p className="app-code">data ❑</p></td>

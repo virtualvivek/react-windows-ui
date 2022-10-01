@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const ButtonIcon = (props) => {
   return (
@@ -22,4 +22,4 @@ ButtonIcon.defaultProps = {
   disabled: false
 }
   
-export default ButtonIcon
+export default ButtonIcon;

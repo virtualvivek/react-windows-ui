@@ -91,6 +91,8 @@ render() {
 
     <h2>CommandBar as <p className="app-code">Menu</p> :</h2>
 
+    <p>You can render any components as <b>{`<CommandBar.MenuTrigger>`}</b>.</p>
+
     <CommandBar.Menu>
       <CommandBar.MenuTrigger>
         <CommandBar.Button value="Share" icon={<i className="icons10-angle-down color-primary"></i>}/>
