@@ -3,17 +3,37 @@
     display: flex;
     transition: 0s ease;
 
+    @if $platform == "windows11" {
+      overflow: hidden;
+      margin: 5px 10px;
+      border-radius: 6px;
+    }
+
     &:hover {
       transition: 0.15s ease;
       background-color: var(--color_link_bg_hover);
     }
     &:active {
       transition: 0s ease;
-      background-color: var(--color_link_bg_active);
+
+      @if $platform == "windows10" {
+        background-color: var(--color_link_bg_active);
+      }
+      @if $platform == "windows11" {
+        opacity: 0.7;
+      }
 
       span {
         transform: scale(0.98, 0.98);
         transition: transform 0s ease-in-out;
+      }
+
+      @if $platform == "windows11" {
+        a, a.active {
+          &::after {
+            height: 18px;
+          }
+        }
       }
     }
 
@@ -21,28 +41,53 @@
       width: 100%;
       font-weight: 400;
       background: none;
-      padding: 12px 25px;
+      
       position: relative;
       align-items: center;
       flex-direction: row;
       display: inline-flex;
       color: var(--color_text_dark);
 
+      @if $platform == "windows10" {
+        padding: 12px 25px;
+      }
+      @if $platform == "windows11" {
+        padding: 10px 15px;
+      }
+
       &::after {
         left: 0;
         content: "";
-        width: 5px;
-        height: 35px;
         position: absolute;
         background: var(--PrimaryColor);
         transform: translate3d(-200%, 0, 0);
+
+        @if $platform=="windows10" {
+          width: 5px; height: 35px;
+        }
+        @if $platform=="windows11" {
+          width: 4px;
+          height: 10px;
+          border-radius: 22%;
+        }
       }
       &.active {
         font-weight: 500;
-        
-        &::after {
-          transition: transform 0.4s;
+
+        @if $platform=="windows10" {
+          &::after {
+            transition: transform 0.4s;
+            transform: translate3d(0, 0, 0);
+          }
+        }
+        @if $platform=="windows11" {
+          background-color: var(--color_link_bg_hover);
+
+          &::after {
+          height: 22.5px;
+          transition: height 0.25s;
           transform: translate3d(0, 0, 0);
+          }
         }
       }
       i::before {

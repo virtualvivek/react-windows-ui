@@ -3,10 +3,6 @@ import { ScrollView } from "../_api";
 
 const Alert = (props) => {
 
-  const setThemeLight = () => {
-    return props.setTheme === "system" ? "light" : "";
-  }
-
   const _onBackdropPress = (event) => {
     event.preventDefault();
     if(event.target === event.currentTarget) {
@@ -20,12 +16,9 @@ const Alert = (props) => {
   }, [props.isVisible]);
 
   return (
-    <div
-      className={
-        props.isVisible ? "app-alert show" : "app-alert"
-      }
+    <div className={props.isVisible ? "app-alert show" : "app-alert"}
       onClick={(event)=>_onBackdropPress(event)}>
-      <div className={`app-alert-modal ${setThemeLight()}`}>
+      <div className="app-alert-modal">
         <h1>{props.title}</h1>
         <div className="app-alert-message">{props.message}</div>
         <div className="app-alert-btn-container">

@@ -14,7 +14,6 @@
 @import "./navbar-mobile/NavBarMobile.scss";
 
 @import "./AppNavToggled.scss";
-@import "../../repository";
 
 .app-navbar-wrap {
   z-index: 9;
@@ -39,7 +38,8 @@
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: overlay;
-    background-color: var(--color_navbar_bg);
+    background-color: var(--color_navbar_bg_default);
+    @if $platform == "windows11" { border-right: 1px solid #77777744; }
   }
 
   .app-navbar-topbar-mobile {
@@ -50,7 +50,7 @@
     position: fixed;
     padding: 0 10px;
     align-items: center;
-    background-color: var(--color_navbar_bg);
+    background-color: var(--color_navbar_bg_default);
     border-bottom: 1px solid var(--color_link_bg_hover);
 
     .app-navbar-toggle-button {

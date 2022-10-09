@@ -64,7 +64,7 @@ const ButtonDangerCode =
   onClick={() => {}}
   value="Danger Button"
   //type="danger-outline"
-  //icon={<i className="icons10-cancel-2"></i>}
+  //icon={<i className="icons10-cross"></i>}
 />`;
 
 

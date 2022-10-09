@@ -1,16 +1,14 @@
 .app-link-compound {
-    @extend .transition-all-400ms;
-    @extend .tap-highlight-none;
     max-width: 310px;
     align-items: center;
     display: inline-flex;
     padding: 15px 15px 15px 10px;
     color: var(--color_text_dark);
     border: 2px solid transparent;
+    @extend .tap-highlight-none;
+    @extend .transition-all-400ms;
     
-    
-    &:hover,
-    &.focused {
+    &:hover, &.focused {
       background-color: var(--color_grey_light);
     }
     &:active {
@@ -27,8 +25,8 @@
 
       &.bg-primary::before,
       &.bg-grey::before {
-        font-size: 30px;
         padding: 3px;
+        font-size: 30px;
       }
     }
     img {
@@ -57,19 +55,17 @@
         opacity: 0.8;
         margin: 0;
       }
-      span,
-      p {
-        text-overflow: ellipsis;
+      span, p {
         overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
 
     .app-link-compound-container,
     .app-link-compound-subcontainer {
-      max-width: inherit;
       overflow: hidden;
+      max-width: inherit;
     }
-
 
     &.link-border {
       &:hover {
@@ -88,8 +84,7 @@
 }
 
 div.app-link-compound {
-  &:hover,
-  &:active {
+  &:hover, &:active {
     transform: unset;
     transition: unset;
     background-color: unset;
@@ -102,8 +97,7 @@ div.app-link-compound {
 
 @mixin link-compound-mobile() {
   .app-link-compound:not(.focused):not(:active) {
-    &:hover,
-    &.link-border:hover {
+    &:hover, &.link-border:hover {
       border-color: transparent;
       background: transparent;
     }

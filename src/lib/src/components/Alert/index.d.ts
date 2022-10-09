@@ -5,7 +5,6 @@ export interface AlertProps {
   title ?: string;
   message ?: string;
   children ?: ReactNode;
-  setTheme ?: "system" | "default";
   onBackdropPress ?: () => void;
 }
 declare const Alert: React.FC<AlertProps>

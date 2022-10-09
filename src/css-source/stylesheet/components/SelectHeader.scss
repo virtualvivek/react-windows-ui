@@ -1,20 +1,21 @@
-.app-select-menu, .app-dropdown-menu {
-  @extend .input-field-primary;
-  @extend .transition-background-400ms;
-  
-  padding: 0;
+.app-select-menu,
+.app-dropdown-menu {
+  padding: 0 1px;
   width: 280px;
-  height: 30px;
   cursor: pointer;
   user-select: none;
   position: relative;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
+  @extend .input-field-primary;
+  @extend .transition-background-400ms;
+  @if $platform == "windows10" { height: 30px; }
+  @if $platform == "windows11" { height: 32px; }
   
 
   select {
-    background-color: var(--color_bg_light);
+    background-color: var(--color_background_default);
     color: var(--color_text_dark);
     @extend .transition-background-400ms;
 
@@ -22,14 +23,14 @@
     height: 100%;
     border: none;
     font-size: 15px;
+    appearance: none;
     padding-left: 10px;
-    -webkit-appearance: none;
 
     &:focus {
       outline: none;
     }
     option {
-      background-color: var(--color_bg_light);
+      background-color: var(--color_background_default);
     }
     &[disabled] {
       @extend .input-field-primary-disabled;
@@ -37,8 +38,8 @@
   }
   &::after {
     @extend .font-icon-dark;
-    content: "\f10c";
     position: absolute;
+    content: "\f10c";
     font-size: 18px;
     right: 10px;
   }

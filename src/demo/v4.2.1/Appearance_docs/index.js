@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, Appearance} from '../_lib'
+import { NavPageContainer } from '../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { AppearanceImportCode,AppearanceUsageCode,
@@ -7,21 +7,12 @@ import { AppearanceImportCode,AppearanceUsageCode,
 
 class AppearanceDocs extends React.Component {
 
-  getTheme() {
-    const colorScheme = Appearance.getColorScheme();
-    if (colorScheme === "dark") {
-      alert(colorScheme);
-    }
-    
-  }
-
 render() {
   return (
   <NavPageContainer
     hasPadding
     animateTransition={false}>
     <h1>Appearance</h1>
-    <button onClick={()=> this.getTheme()}>Hi</button>
         
    <p>The <span className="color-primary">Appearance</span> module exposes information about the user's appearance preferences,<br/> such as their preferred color scheme (light or dark).</p>
 

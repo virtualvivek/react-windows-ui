@@ -22,21 +22,20 @@
   }
   
   .app-progress-bar {
-    @extend .transition-background-400ms;
-
     width: 400px;
     height: 5px;
     overflow: hidden;
     position: relative;
-    background: var(--color_button);
+    background: var(--color_button_default);
+    @extend .transition-background-400ms;
+    @if $platform == "windows11" { border-radius: 4px; }
 
     span {
       height: 100%;
       position: absolute;
       transition: width 1s ease-in-out;
       background-color: var(--PrimaryColor);
-      &::after,
-      &::before {
+      &::after, &::before {
         display: none !important;
       }
     }
@@ -52,9 +51,12 @@
   }
 }
 
-// body.dark-theme .app-progress-container .app-progress span {
-//   background-color: var(--PrimaryColorLight);
-// }
+@if $platform == "windows11" {
+  body.dark-theme .app-progress-container .app-progress-bar span {
+    background-color: var(--PrimaryColorLight);
+  }
+}
+
 
 @mixin progress-bar-mobile() {
   .app-progress-container {

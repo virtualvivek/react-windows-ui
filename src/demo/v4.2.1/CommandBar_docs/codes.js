@@ -30,7 +30,10 @@ const CommandBarDropdownUsageCode =
       icon={<i className="icons10-angle-down color-primary"></i>}
     />
   </CommandBar.MenuTrigger>
-  <CommandBar.MenuItem label="Whatsapp" />
+  <CommandBar.MenuItem label="Whatsapp">
+    <CommandBar.MenuSubItem label="HyperLink"/>
+    <CommandBar.MenuSubItem label="QR Code"/>
+  </CommandBar.MenuItem>
   <CommandBar.MenuItem label="Facebook" />
 </CommandBar.Menu>`;
 

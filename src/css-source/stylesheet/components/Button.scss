@@ -1,93 +1,106 @@
 button,
 .app-btn {
-  @extend .tap-highlight-none;
-  
   cursor: pointer;
   user-select: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  @extend .tap-highlight-none;
 
-  &:focus,
-  &:active,
-  &:focus:active {
+  @if $platform == "windows11" {
+    border-radius: 4px;
+    border: 1.5px solid;
+    border-color: rgba(0, 0, 0, 0.06);
+    border-bottom-color: rgba(0, 0, 0, 0.16);
+  }
+
+  &:focus, &:active, &:focus:active {
     outline: none;
   }
   &:focus-visible {
     transition: 0s ease;
-    outline: 2px solid var(--color_button_hover);
+    outline: 1px solid var(--color_button_hover);
   }
 }
 .app-btn {
-  user-select: none;
-  vertical-align: middle;
-  color: var(--color_text_dark);
-  background-color: var(--color_button);
-
   height: 35px;
   font-size: 15px;
-  padding: 5px 15px;
+  user-select: none;
   transition: 0.2s ease;
-  border: 2px solid transparent;
+  vertical-align: middle;
+  color: var(--color_text_dark);
+  background-color: var(--color_button_default);
 
-  &:hover {
-    filter: opacity(0.8);
-    border-color: var(--color_button_hover);
-  }
-  &:active {
-    filter: contrast(0.4);
-    transition: 0.02s ease;
+  @if $platform == "windows10" {
+    padding: 5px 15px;
     border: 2px solid transparent;
+    &:hover {
+      filter: opacity(0.8);
+      border-color: var(--color_button_hover);
+    }
+    &:active {
+      filter: contrast(0.4);
+      transition: 0.02s ease;
+      border: 2px solid transparent;
+    }
   }
+  @if $platform == "windows11" {
+    padding: 6px 11px;
+    &:hover {
+      opacity: 0.8;
+      transition: 0s ease;
+    }
+    &:active {
+      filter: brightness(0.8);
+    }
+  }
+  
   &.btn-is-loading {
     cursor: auto;
-
-    span {
-      opacity: 0;
-    }
+    span { opacity: 0; }
   }
 
   &.btn-primary {
     background-color: var(--PrimaryColor);
+    @if $platform == "windows11" {
+      border-color: rgba(255, 255, 255, 0.08);
+      border-bottom-color: rgba(0, 0, 0, 0.8);
+    }
   }
+
   &.btn-primary-outline {
     color: var(--color_day_primary_night_white);
-    border: 2px solid var(--PrimaryColor);
+    @if $platform == "windows10" { border: 2px solid var(--PrimaryColor); }
+    @if $platform == "windows11" { border: 1px solid var(--PrimaryColor); }
 
     &:active {
       background-color: var(--PrimaryColor);
     }
   }
+
   &.btn-danger {
     background: #C50500;
   }
   &.btn-danger-outline {
-    border: 2px solid #C50500;
     color: #C50500;
-    &:active {
-      background-color: #C50500;
-    }
+    border-color: #C50500;
+    &:active { background-color: #C50500; }
   }
+
   &.btn-success {
     background: #2C8B2C;
   }
   &.btn-success-outline {
-    border: 2px solid #2C8B2C;
     color: #2C8B2C;
-    &:active {
-      background-color: #2C8B2C;
-    }
+    border-color: #2C8B2C;
+    &:active { background-color: #2C8B2C; }
   }
-  &.btn-primary,
-  &.btn-danger,
-  &.btn-success {
+
+  &.btn-primary, &.btn-danger, &.btn-success {
     color: #fff;
   }
-  &.btn-primary-outline,
-  &.btn-success-outline,
-  &.btn-danger-outline {
+  &[class*="outline"] {
     background-color: transparent;
-
     &:active {
       color: #fff;
       filter: unset;
@@ -96,17 +109,18 @@ button,
       backdrop-filter: grayscale(1);
     }
   }
-  &.animate:active {
-    transform: scale(0.98, 0.98);
+
+  @if $platform == "windows10" {
+    &.animate:active {
+      transform: scale(0.98, 0.98);
+    }
   }
+  
   &[disabled] {
     @extend .input-field-primary-disabled;
     
-    span {
-      pointer-events: none;
-    }
-    &:active,
-    &:hover {
+    span { pointer-events: none; }
+    &:active, &:hover {
       @extend .input-field-primary-disabled;
     }
   }
@@ -117,9 +131,6 @@ button,
   span {
     transition: opacity ease 0.2s;
   }
-  i.color-primary {
-    color: var(--PrimaryColor);
-  }
   // check if button child span has a sibling of same type
   span:first-of-type:not(:only-of-type) {
     padding-right: 5px;
@@ -127,13 +138,33 @@ button,
 }
 
 @mixin button-mobile() {
-  .app-btn:not(.btn-primary-outline):not(.btn-danger-outline):not(.btn-success-outline) {
-    &:hover {
-      filter: none;
-      border-color: transparent;
+  .app-btn:not([class*="outline"]) {
+    @if $platform == "windows10" {
+      &:hover {
+        filter: none;
+        border-color: transparent;
+      }
+      &:active {
+        filter: contrast(0.4);
+      }
     }
-    &:active {
-      filter: contrast(0.4);
+    @if $platform == "windows11" {
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+}
+
+@if $platform == "windows11" {
+  body.dark-theme {
+    .btn-primary {
+      color: #000;
+      border-bottom-color: rgba(200,200,200,0.5);
+      background-color: var(--PrimaryColorLight);
+    }
+    .btn-primary-outline {
+      border-color: var(--PrimaryColorLight);
     }
   }
 }

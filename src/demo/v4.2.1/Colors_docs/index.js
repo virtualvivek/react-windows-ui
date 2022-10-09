@@ -96,8 +96,8 @@ render() {
         <span className="demo-colors-value">{this.state.color_scheme_val}</span>
       </div>
 
-      <ColorVariables colorName="--color_bg_light" backgroundColor={this.state.color_bg_light_val} />
-      <ColorVariables colorName="--color_button" backgroundColor={this.state.color_button_val} />
+      <ColorVariables colorName="--color_background_default" backgroundColor={this.state.color_bg_light_val} />
+      <ColorVariables colorName="--color_button_default" backgroundColor={this.state.color_button_val} />
       <ColorVariables colorName="--color_button_hover" backgroundColor={this.state.color_button_hover_val} />
       <ColorVariables colorName="--color_day_primary_night_grey" backgroundColor={this.state.color_day_primary_night_grey_val} />
       <ColorVariables colorName="--color_day_primary_night_white" backgroundColor={this.state.color_day_primary_night_white_val} />
@@ -105,7 +105,7 @@ render() {
       <ColorVariables colorName="--color_grey_light_alpha" backgroundColor={this.state.color_grey_light_alpha_val} />
       <ColorVariables colorName="--color_link_bg_active" backgroundColor={this.state.color_link_bg_active_val} />
       <ColorVariables colorName="--color_link_bg_hover" backgroundColor={this.state.color_link_bg_hover_val} />
-      <ColorVariables colorName="--color_navbar_bg" backgroundColor={this.state.color_navbar_bg_val} />
+      <ColorVariables colorName="--color_navbar_bg_default" backgroundColor={this.state.color_navbar_bg_val} />
       <ColorVariables colorName="--color_primary_alpha" backgroundColor={this.state.color_primary_alpha_val} />
       <ColorVariables colorName="--color_text_dark" backgroundColor={this.state.color_text_dark_val} />
 

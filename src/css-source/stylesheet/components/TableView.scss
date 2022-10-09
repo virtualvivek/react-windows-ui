@@ -5,8 +5,8 @@
 .app-table-view {
   border-collapse: collapse;
   th {
-    @extend .transition-background-400ms;
     user-select: none;
+    @extend .transition-background-400ms;
 
     &.sortable:hover {
       cursor: pointer;

@@ -1,7 +1,7 @@
 label.app-checkbox {
   user-select: none;
-  @extend .tap-highlight-none;
   cursor: pointer;
+  @extend .tap-highlight-none;
 
   &:active input[type="checkbox"] {
     transition: 0.02s ease;
@@ -11,11 +11,10 @@ label.app-checkbox {
   input[type="checkbox"] {
     cursor: pointer;
     position: relative;
-    -moz-appearance: none;
     transition: 0.2s ease;
+    -moz-appearance: none;
 
     &::before {
-      @extend .transition-background-400ms;
       width: 16px;
       height: 16px;
       content: "";
@@ -24,7 +23,12 @@ label.app-checkbox {
       margin-left: -3px;
       border-radius: 0;
       border: 2px solid var(--color_button_hover);
-      background-color: var(--color_bg_light);
+      background-color: var(--color_background_default);
+      @extend .transition-background-400ms;
+
+      @if $platform == "windows11" {
+        border-radius: 4px;
+      }
     }
     &:checked {
       &::before {
@@ -38,9 +42,10 @@ label.app-checkbox {
         position: absolute;
         top: -1px;
         left: 3px;
-        border: solid white;
-        border-width: 0 2px 2px 0;
         transform: rotate(45deg);
+        @if $platform == "windows10" { border: solid white; }
+        @if $platform == "windows11" { border: solid var(--color_background_default); }
+        border-width: 0 2px 2px 0;
       }
 
       &:disabled {
@@ -59,5 +64,12 @@ label.app-checkbox {
     &:disabled::before {
       cursor: not-allowed;
     }
+  }
+}
+
+@if $platform == "windows11" {
+  body.dark-theme label.app-checkbox input[type="checkbox"]:checked::before {
+    background: var(--PrimaryColorLight);
+    border: 2px solid var(--PrimaryColorLight);
   }
 }

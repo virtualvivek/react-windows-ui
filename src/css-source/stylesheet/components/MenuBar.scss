@@ -7,6 +7,7 @@
         height: 35px;
         width: inherit;
         box-sizing: border-box;
+        @if $platform == "windows11" { margin-bottom: 1px; }
 
         &:not(:focus) {
           border-color: #99999988;

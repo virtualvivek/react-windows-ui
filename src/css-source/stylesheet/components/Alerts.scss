@@ -1,80 +1,83 @@
 .app-alert {
-  color: #fff;
   @extend .app-dim-overlay;
+  @if $platform == "windows10" { color: #fff; }
+  @if $platform == "windows11" { color: var(--color_text_dark); }
 
   .app-alert-modal {
-    width: 52%;
     z-index: 99;
+    display: flex;
     position: fixed;
-    background: var(--PrimaryColor);
+    overflow: hidden;
+    flex-direction: column;
     box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);
-
-    &.light {
-      color: var(--color_text_dark);
-      background-color: var(--color_grey_light);
-  
-      button {
-        color: var(--color_text_dark);
-        border: 2px solid var(--color_text_dark);
-        
-        &:active {
-          color: var(--color_bg_light);
-          background: var(--color_text_dark) !important;
-        }
-      }
+    @if $platform == "windows10" {
+      width: 52%;
+      background: var(--PrimaryColor);
+    }
+    @if $platform == "windows11" {
+      width: 40%;
+      max-width: 400px;
+      border-radius: 8px;
+      background: var(--color_foreground_default);
     }
   }
 
   h1 {
     margin: 0;
-    font-size: 1.7em;
-    padding: 25px 32px 10px 32px;
+    padding: 25px 30px 10px 30px;
     background-color: transparent;
+    @if $platform == "windows10" { font-size: 1.7em; }
+    @if $platform == "windows11" { font-size: 1.5em; }
   }
   .app-alert-message {
-    min-height: 70px;
     font-size: 1em;
-    padding: 0 32px;
     line-break: auto;
-    text-align: justify;
+    padding: 0 30px 20px 30px;
   }
   .app-alert-btn-container {
+    padding: 15px;
     display: block;
     text-align: right;
-    padding: 0 15px 10px 15px;
-  }
-  button {
-    margin: 10px;
-    color: #fff;
-    font-size: 14px;
-    display: inline;
-    font-weight: 700;
-    padding: 7px 3.4vw;
-    border: 2px solid #fff;
-
-    &:hover {
-      opacity: 0.62;
-    }
-    &:active {
-      opacity: 1;
-      color: var(--PrimaryColor);
-      background: #fff !important;
+    @if $platform == "windows11" {
+      border-top: 1px solid var(--color_link_bg_hover);
+      background-color: var(--color_navbar_bg_default);
     }
   }
-
-  h1,
-  button,
-  .app-alert-btn-container,
-  .app-alert-message {
-    background-color: transparent !important;
+  @if $platform == "windows10" {
+    button {
+      margin: 10px;
+      color: #fff;
+      font-size: 14px;
+      display: inline;
+      font-weight: 700;
+      padding: 7px 3.4vw;
+      border: 2px solid #fff;
+  
+      &:hover {
+        opacity: 0.62;
+      }
+      &:active {
+        opacity: 1;
+        color: var(--PrimaryColor);
+        background: #fff !important;
+      }
+    }
+    button,
+    .app-alert-message {
+      background-color: transparent !important;
+    }
   }
+  @if $platform == "windows11" {
+    button + button {
+      margin-left: 10px;
+    }
+  }
+  
 }
 
-body.dark-theme {
-  .app-alert .app-alert-modal.light {
-    background-color: var(--color_link_bg_active);
-  }
-}
+// body.dark-theme {
+ 
+// }
 
 @mixin alert-mobile() {
   .app-alert {

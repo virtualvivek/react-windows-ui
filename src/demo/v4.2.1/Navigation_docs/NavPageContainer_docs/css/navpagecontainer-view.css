@@ -10,7 +10,7 @@
 .demo-navpagecontainer-navbar {
     width: 60px;
     height: 100%;
-    background-color: var(--color_navbar_bg);
+    background-color: var(--color_navbar_bg_default);
 }
 .demo-navpagecontainer-rows-header {
     display: flex;
@@ -49,7 +49,7 @@
     
     margin: 15px;
     display: flex;
-    background: var(--color_navbar_bg);
+    background: var(--color_navbar_bg_default);
     border: 1px solid var(--color_link_bg_hover);
 }
 .demo-navpagecontainer-page.no-padding{
@@ -63,7 +63,7 @@
 }
 .demo-navpagecontainer-page.no-padding .demo-navpagecontainer-page{
     height: auto;
-    background-color: var(--color_button);
+    background-color: var(--color_button_default);
 }
 
 .demo-navpagecontainer-view i {

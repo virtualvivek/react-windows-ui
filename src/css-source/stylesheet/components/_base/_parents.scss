@@ -14,11 +14,14 @@
 }
 .font-icon-light {
   @extend .font-icon-dark;
-  color: var(--color_bg_light);
+  color: var(--color_background_default);
 }
 
 .color-primary {
   color: var(--PrimaryColor);
+}
+[data-theme="dark"] .color-primary {
+  color: var(--PrimaryColorLight);
 }
 
 .app-align-center {
@@ -93,20 +96,34 @@
 
 
 .input-field-primary {
-  height: 30px;
   width: 270px;  
   line-height: 1;
   font-size: 15px;
   box-shadow: none;
   padding: 0 0 0 10px;
   box-sizing: content-box;
-  border: 2.4px solid #999;
   color: var(--color_text_dark);
-  background: var(--color_bg_light);
+  background: var(--color_background_default);
 
-  &:hover {
-    border-color: #777;
+  @if $platform == "windows10" {
+    height: 30px;
+    border: 2.4px solid #999;
+    &:hover {
+      border-color: #777;
+    }
   }
+  @if $platform == "windows11" {
+    height: 32px;
+    border-radius: 4px;
+    margin-bottom: 1px;
+    border: 1px solid #55555555;
+    border-bottom: 1px solid #777;
+    &:focus {
+      margin-bottom: 0;
+      border-bottom: 2px solid var(--color_day_primary_night_primarylight);
+    }
+  }
+  
   &[disabled] {
     @extend .input-field-primary-disabled;
   }
@@ -152,9 +169,10 @@
   visibility: hidden;
   position: absolute;
   margin: 5px 0 5px 0;
-  background: var(--color_navbar_bg);
-  box-shadow: 0 1px 7px #55555533;
-  border: 1px solid var(--color_button);
+  background: var(--color_navbar_bg_default);
+  box-shadow: 0 4px 7px #55555533;
+  border: 1px solid var(--color_button_default);
+  @if $platform == "windows11" { border-radius: 6px; }
 
   &.show {
     @extend .transition_dropdown_show;
@@ -165,12 +183,16 @@
     }
   }
   li {
-    a, .dropdown-lst-item {
+    a, span {
       display: flex;
-      padding: 10px;
+      line-height: 1;
+      font-size: 15px; 
+      padding: 8px 10px;
+      position: relative;
       align-items: center;
       color: var(--color_text_dark);
       @extend .tap-highlight-none;
+      @if $platform == "windows11" { margin: 5px; border-radius: 4px; }
 
       &:hover {
         background-color: var(--color_link_bg_hover);
@@ -179,8 +201,8 @@
         background-color: var(--color_link_bg_active);
       }
       i {
-        font-size: 18px;
         line-height: 0;
+        font-size: 18px;
         padding-right: 5px;
       }
     }

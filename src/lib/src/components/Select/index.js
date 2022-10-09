@@ -1,6 +1,6 @@
 import React, { useState,useEffect, useMemo, useRef } from "react";
-import { useOutSideClick } from "../_hooks";
 import { ScrollView, getScreenOffset } from "../_api";
+import { useOutSideClick } from "../_hooks";
 
 const Select = (props) => {
   const data_default = [];
@@ -25,7 +25,7 @@ const Select = (props) => {
     }
 
     setItem(props.data);
-  }, [props.data,props.defaultValue,items]);
+  }, [props.data, props.defaultValue, items]);
 
   useMemo(() => { setItem(props.data); }, [props.data]);
 
@@ -44,7 +44,7 @@ const Select = (props) => {
   const toggleDropdown = () => {
     setOpen(!isOpen);
     ScrollView.disableScroll();
-    getScreenOffset(wrapperRef) ? setReverse("reverse") :  setReverse("");
+    getScreenOffset(wrapperRef) ? setReverse("reverse") : setReverse("");
   }
 
 
@@ -58,12 +58,10 @@ const Select = (props) => {
       <ul className={`app-dropdown-list ${isOpen && 'show'} ${isReverse}`}>
         {items.map((item, index) => (
         <li
-          className={`app-dropdown-list-item ${index === selectedItem && 'item-selected'}`}
-          key={index}>
-          <div className="dropdown-lst-item"
-            onClick={() => handleItemClick(item.value)}>
-            {item.icon}{item.label}
-          </div>
+          className={`app-dropdown-list-item${index === selectedItem ? ' selected':''}`}
+          key={index}
+          onClick={() => handleItemClick(item.value)}>
+            <span>{item.icon}{item.label}</span>
         </li>
         ))}
       </ul>

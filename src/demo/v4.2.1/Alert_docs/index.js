@@ -39,17 +39,27 @@ class AlertDocs extends React.Component {
         onBackdropPress={this.toggleAlert}
         title="Alert"
         message="This is alert Box.">
-          <button onClick={this.toggleAlert}>OK</button>
+          <Button
+            type="primary"
+            value="OK to Close"
+            onClick={this.toggleAlert}
+          />
       </Alert>
 
       <Alert
         isVisible={this.state.showAlertLight}
         onBackdropPress={this.toggleAlertLight}
-        setTheme="system"
         title={<><i className="icons10-sun"></i>Alert</>}
         message={<span>This is Light alert Box. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>}>
-          <button onClick={this.toggleAlertLight}>Cancel</button>
-          <button onClick={this.toggleAlertLight}>OK</button>
+          <Button
+            value="Cancel"
+            onClick={this.toggleAlertLight}
+          />
+          <Button
+            type="primary"
+            value="Confirm"
+            onClick={this.toggleAlertLight}
+          />
       </Alert>
 
 
@@ -71,13 +81,12 @@ class AlertDocs extends React.Component {
         {AlertUsageCode}
       </SyntaxHighlighter>
 
-      <h2 className="m-tb-20">Alert with <p className="app-code">system theme</p></h2>
+      <h2 className="m-tb-20">Alert with multiple buttons.</h2>
 
       <Button
-        value="Open Alert System Themed"
+        value="Open Alert Multi Button"
         onClick={this.toggleAlertLight}
       />
-     
       <br/><br/>
 
       <SyntaxHighlighter

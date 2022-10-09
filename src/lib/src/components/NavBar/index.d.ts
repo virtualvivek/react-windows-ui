@@ -9,13 +9,13 @@ import NavBarSubMenu from './NavBarSubMenu'
 import NavBarThemeSwitch from './NavBarThemeSwitch'
 
 export {
-    NavBar,
-    NavBarLink,
-    NavPageContainer,
-    NavPageContainerRight,
-    NavPageContainerInner,
-    NavBarSearchBox,
-    NavBarSearchSuggestion,
-    NavBarSubMenu,
-    NavBarThemeSwitch
+  NavBar,
+  NavBarLink,
+  NavPageContainer,
+  NavPageContainerRight,
+  NavPageContainerInner,
+  NavBarSearchBox,
+  NavBarSearchSuggestion,
+  NavBarSubMenu,
+  NavBarThemeSwitch
 }

@@ -3,7 +3,6 @@ const CheckboxImportCode =
 
 const CheckboxUsageCode =
 `<Checkbox
-  //disabled
   label="Some Text"
   onChange={() => {}}
   defaultChecked={true}
@@ -21,7 +20,7 @@ sed do eiusmod tempor incididunt ut labore.
 
 
 export {
-    CheckboxImportCode,
-    CheckboxUsageCode,
-    CheckboxInlineUsageCode
+  CheckboxImportCode,
+  CheckboxUsageCode,
+  CheckboxInlineUsageCode
 }

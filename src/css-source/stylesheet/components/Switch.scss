@@ -47,13 +47,13 @@
     
     &:checked {
       ~.app-switch-view {
-        background-color: var(--PrimaryColor);
         border-color: var(--PrimaryColor);
+        background-color: var(--PrimaryColor);
 
         &::before {
+          background: #fff;
           color: var(--PrimaryColor);
           transform: translateX(280%);
-          background: #fff;
           transform: translateX(calc(2 * 100% - 3px));
         }
       }
@@ -65,9 +65,9 @@
    
     &:disabled {
       ~.app-switch-view {
-        background-color: var(--color_link_bg_hover);
         cursor: not-allowed;
         border-color: var(--color_link_bg_hover);
+        background-color: var(--color_link_bg_hover);
 
         &::before {
           filter: contrast(0);
@@ -78,14 +78,19 @@
   }
 }
 
-// body.dark-theme {
-//   .app-switch>.app-switch-view {
-//     filter: brightness(1.5);
-//     &:active {
-//       filter: contrast(0.6);
-//     }
-//   }
-// }
+@if $platform == "windows11" {
+  body.dark-theme {
+    .app-switch {
+      input:checked~.app-switch-view {
+        border-color: var(--PrimaryColorLight);
+        background-color: var(--PrimaryColorLight);
+        &::before {
+          background: var(--color_background_default);
+        }
+      }
+    }
+  }
+}
 
 @mixin switch-mobile() {
   .app-switch {

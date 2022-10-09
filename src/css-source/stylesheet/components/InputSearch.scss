@@ -1,53 +1,56 @@
 .app-input-search-bar {
   button {
-    @extend .transition-background-400ms;
     width: 30px;
     height: 30px;
     border: none;
     margin-left: -32px;
-    background-color: var(--color_navbar_bg);
+    background-color: var(--color_navbar_bg_default);
+    @extend .transition-background-400ms;
     
-    &:hover,
-    &:active {
+    &:hover, &:active {
       background-color: var(--PrimaryColor);
     }
     &:active {
       opacity: 0.65;
     }
     &::after {
-      @extend .font-icon-dark;
-      content: "\f1b9";
-      font-size: 18px;
       font-weight: 600;
+      content: "\f1b9";
+      @extend .font-icon-dark;
+      @if $platform == "windows10" { font-size: 18px; }
+      @if $platform == "windows11" { font-size: 16px; }
     }
     &:hover::after {
-      color: var(--color_bg_light) !important;
+      color: #fff;
     }
   }
 }
 
 .app-input-search-box {
-  &::after {
-    @extend .font-icon-dark;
+  &::after { 
     z-index: 1;
-    font-size: 18px;
-    font-weight: 600;
     content: "\f1b9";
+    font-weight: 600;
     margin-left: -29px;
     align-self: center;
+    @extend .font-icon-dark;
+    @if $platform == "windows10" { font-size: 18px; }
+    @if $platform == "windows11" { font-size: 16px; }
   }
 }
 
 .app-input-search-bar,
 .app-input-search-box,
 .app-search-dialog {
+  width: inherit;
   align-items: center;
   display: inline-flex;
 
   input {
-    &:active,
-    &:focus {
-      border-color: var(--PrimaryColor);
+    @if $platform == "windows10" {
+      &:active, &:focus {
+        border-color: var(--PrimaryColor);
+      }
     }
     &::-webkit-search-cancel-button{
       right: 40px;
@@ -60,7 +63,7 @@
   .app-input-search-bar {
     button:not(:active) {
       &:hover {
-        background: var(--color_navbar_bg);
+        background: var(--color_navbar_bg_default);
         &::after {
           color: var(--color_text_dark) !important;
         }

@@ -3,6 +3,10 @@
 }
 ::-webkit-scrollbar-thumb {
   background-color: #88888899;
+
+  @if $platform == "windows11" {
+    border-radius: 2.8px;
+  }
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #9D9D9D99;

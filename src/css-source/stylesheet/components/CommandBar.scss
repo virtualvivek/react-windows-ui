@@ -8,11 +8,24 @@
 
 ul.app-cmdbar-menu-list {
   @extend .app-custom-dropdown-ul;
+  width: max-content;
   max-height: 280px;
+  overflow: visible;
   
   &.leftJustify {
     right: 0;
   }
+}
+ul.app-cmdbar-menu-list .cmdbar-submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.cmdbar-menu-list-item-hr {
+  border: 0;
+  height: 1px;
+  margin: 0 5px;
+  background-color: var(--color_link_bg_active);
 }
 
 .app-cmdbar-menu {
@@ -33,7 +46,7 @@ ul.app-cmdbar-menu-list {
     background: var(--color_grey_light_alpha);
   }
   &:active {
-    background: var(--color_button);
+    background: var(--color_button_default);
   }
   &[disabled] {
     filter: contrast(0);

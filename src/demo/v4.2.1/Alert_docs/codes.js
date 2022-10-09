@@ -3,8 +3,8 @@ const AlertImportCode =
 
 const AlertUsageCode =
 `<Alert
-  title="Alert"
   isVisible={false}
+  title="Alert"
   message="This is message"
   onBackdropPress={() => {}}>
     <button onClick={() => {}}>OK</button>

@@ -15,15 +15,21 @@
     &:active { filter: brightness(0.6); }
 
     &::before {
-      content: '✔';
-      position: relative;
       float: right;
-      font-size: 12px;
       padding: 4px;
       line-height: 1;
+      font-size: 11px;
+      content: "\f12e";
+      font-weight: 800;
+      font-family: icons10;
+      position: relative;
       transition: all 0.2s;
-      color: var(--color_bg_light);
+      color: var(--color_background_default);
       background: var(--color_text_dark);  
+    }
+
+    @if $platform == "windows11" {
+      border-radius: 4px;
     }
   }
   .item:not(:checked) + div::before {
@@ -52,7 +58,7 @@
     div {
       border: 2px solid var(--color_text_dark);
       &::before {
-        content: '▼';
+        content: "\f10c";
       }
     }
   }

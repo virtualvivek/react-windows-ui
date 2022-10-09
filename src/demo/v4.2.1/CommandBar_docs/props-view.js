@@ -50,7 +50,7 @@ const PropsView = () => {
         </tr>
 
 
-        <br/><tr><td><b>CommandBar.MenuItem</b></td><td></td><td></td><td></td></tr>
+        <br/><tr><td><b>CommandBar.MenuItem,<br/>CommandBar.MenuSubItem</b></td><td></td><td></td><td></td></tr>
         <tr>
           <td><p className="app-code">label</p></td>
           <td>string</td>

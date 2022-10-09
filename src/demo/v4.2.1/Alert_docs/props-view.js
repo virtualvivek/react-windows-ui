@@ -32,12 +32,6 @@ const PropsView = () => {
           <td>Set's the alert visiblity</td>
         </tr>
         <tr>
-          <td><p className="app-code">setTheme</p></td>
-          <td>'default' | 'system'</td>
-          <td>'default'</td>
-          <td>Set's the alert theme</td>
-        </tr>
-        <tr>
           <td><p className="app-code">children</p></td>
           <td>ReactNode</td>
           <td>null</td>

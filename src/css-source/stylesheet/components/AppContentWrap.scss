@@ -1,6 +1,15 @@
 .app-section-container {
   padding-left: 290px;
   transition: 0.2s ease;
+  position: absolute;
+  height: auto;
+  top: 0;
+  width: -moz-available;
+  width: -webkit-fill-available;
+
+  @if $platform == "windows11" {
+    background-color: var(--color_navbar_bg_default);
+  }
 
   &.has-padding {
     padding-left: 320px;
@@ -36,7 +45,8 @@
     padding: 50px 0 0 0 !important;
     
     &.has-padding {
-      margin: 0 15px !important;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
     }
   }
   .app-section-container-inner {

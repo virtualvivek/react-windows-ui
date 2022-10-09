@@ -12,13 +12,13 @@
   user-select: none;
   flex-direction: row;
   justify-content: space-between;
-  background-color: var(--color_navbar_bg);
+  background-color: var(--color_navbar_bg_default);
 
   &:hover {
-    background-color: var(--color_navbar_bg);
+    background-color: var(--color_navbar_bg_default);
   }
   &:active {
-    background-color: var(--color_button);
+    background-color: var(--color_button_default);
     @extend .transition-scale-active;
   }
 }

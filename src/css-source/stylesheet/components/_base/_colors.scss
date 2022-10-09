@@ -1,37 +1,81 @@
-:root {
-  /* Day Mode */
-  color-scheme: light;
-
-  --color_bg_light: #FFFFFF;
-  --color_button: #CDCDCD;
-  --color_button_hover: #666666;
-  --color_day_primary_night_grey: var(--PrimaryColor);
-  --color_day_primary_night_white: var(--PrimaryColor);
-  --color_grey_light: #EEEEEE;
-  --color_grey_light_alpha: #EEEEEED1;
-  --color_link_bg_active: #B8B8B8;
-  --color_link_bg_hover: #D8D8D8;
-  --color_navbar_bg: #EEEEEE;
-  --color_primary_alpha: #EEEEEE9C;
-  --color_text_dark: #000000;
+@if $platform == "windows10" {
+  :root {
+    /* Day Mode */
+    color-scheme: light;
+    --color_background_default: #FFFFFF;
+    --color_button_default: #CDCDCD;
+    --color_button_hover: #666666;
+    --color_day_primary_night_grey: var(--PrimaryColor);
+    --color_day_primary_night_primarylight: var(--PrimaryColor);
+    --color_day_primary_night_white: var(--PrimaryColor);
+    --color_foreground_default: #fff;
+    --color_grey_light: #EEEEEE;
+    --color_grey_light_alpha: #EEEEEED1;
+    --color_link_bg_active: #B8B8B8;
+    --color_link_bg_hover: #D8D8D8;
+    --color_navbar_bg_default: #EEEEEE;
+    --color_primary_alpha: #EEEEEE9C;
+    --color_text_dark: #000000;
+  }
+  [data-theme="dark"] {
+    /* Night Mode */
+    color-scheme: dark;
+    --color_background_default: #111111;
+    --color_button_default: #555555;
+    --color_button_hover: #999999;
+    --color_day_primary_night_grey: #403E41;
+    --color_day_primary_night_primarylight: var(--PrimaryColorLight);
+    --color_day_primary_night_white: #FFFFFF;
+    --color_foreground_default: #2B2B2B;
+    --color_grey_light: #444444;
+    --color_grey_light_alpha: #444444D1;
+    --color_link_bg_active: #222222;
+    --color_link_bg_hover: #555555;
+    --color_navbar_bg_default: #403E41;
+    --color_primary_alpha: #EEEEEE9C;
+    --color_text_dark: #FFFFFF;
+  }
 }
 
-[data-theme="dark"] {
-  /* Night Mode */
-  color-scheme: dark;
-  --color_bg_light: #111111;
-  --color_button: #555555;
-  --color_button_hover: #999999;
-  --color_day_primary_night_grey: #403E41;
-  --color_day_primary_night_white: #FFFFFF;
-  --color_grey_light: #444444;
-  --color_grey_light_alpha: #444444D1;
-  --color_link_bg_active: #222222;
-  --color_link_bg_hover: #555555;
-  --color_navbar_bg: #403E41;
-  --color_primary_alpha: #EEEEEE9C;
-  --color_text_dark: #FFFFFF;
+@if $platform == "windows11" {
+  :root {
+    /* Day Mode */
+    color-scheme: light;
+    --color_background_default: #ffffff;
+    --color_button_default: #e9e9e9;
+    --color_button_hover: #666666;
+    --color_day_primary_night_grey: var(--PrimaryColor);
+    --color_day_primary_night_primarylight: var(--PrimaryColor);
+    --color_day_primary_night_white: var(--PrimaryColor);
+    --color_foreground_default: #fff;
+    --color_grey_light: #EEEEEE;
+    --color_grey_light_alpha: #EEEEEED1;
+    --color_link_bg_active: #D8D8D8;
+    --color_link_bg_hover: #E8E8E8;
+    --color_navbar_bg_default: #F3F3F3;
+    --color_primary_alpha: #EEEEEE9C;
+    --color_text_dark: #000000;
+  }
+  [data-theme="dark"] {
+    /* Night Mode */
+    color-scheme: dark;
+    --color_background_default: #111111;
+    --color_button_default: #555555;
+    --color_button_hover: #999999;
+    --color_day_primary_night_grey: #403E41;
+    --color_day_primary_night_primarylight: var(--PrimaryColorLight);
+    --color_day_primary_night_white: #FFFFFF;
+    --color_foreground_default: #2B2B2B;
+    --color_grey_light: #444444;
+    --color_grey_light_alpha: #444444D1;
+    --color_link_bg_active: #262626;
+    --color_link_bg_hover: #2D2D2D;
+    --color_navbar_bg_default: #202020;
+    --color_primary_alpha: #EEEEEE9C;
+    --color_text_dark: #FFFFFF;
+  }
 }
+
 
 .color-danger {
   color: #C50500;
