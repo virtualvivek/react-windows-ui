@@ -165,14 +165,15 @@
   list-style: none;
   overflow-y: auto;
   font-weight: 500;
+  border: 1px solid;
   overflow-x: hidden;
   visibility: hidden;
   position: absolute;
   margin: 5px 0 5px 0;
   background: var(--color_navbar_bg_default);
-  box-shadow: 0 4px 7px #55555533;
-  border: 1px solid var(--color_button_default);
-  @if $platform == "windows11" { border-radius: 6px; }
+  box-shadow: 0 2px 7px #00000044;
+  @if $platform == "windows10" { border-color: var(--color_button_default); }
+  @if $platform == "windows11" { border-color: var(--color_grey_light); border-radius: 6px; }
 
   &.show {
     @extend .transition_dropdown_show;

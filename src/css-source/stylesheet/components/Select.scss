@@ -1,10 +1,9 @@
 .app-dropdown-menu {
   ul.app-dropdown-list {
-    @extend .app-custom-dropdown-ul;
     max-height: 280px;
+    @extend .app-custom-dropdown-ul;
 
     li.app-dropdown-list-item {
-
       &.selected span {
         @if $platform == "windows10" {
           background-color: var(--PrimaryColor);

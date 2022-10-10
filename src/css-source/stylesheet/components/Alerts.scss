@@ -10,6 +10,7 @@
     overflow: hidden;
     flex-direction: column;
     box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);
+    
     @if $platform == "windows10" {
       width: 52%;
       background: var(--PrimaryColor);
@@ -18,23 +19,37 @@
       width: 40%;
       max-width: 400px;
       border-radius: 8px;
+      transition-duration: 0.28s;
+      transform: translate3d(0,-1%,0) scale(1.04);
       background: var(--color_foreground_default);
     }
   }
 
-  h1 {
-    margin: 0;
-    padding: 25px 30px 10px 30px;
-    background-color: transparent;
-    @if $platform == "windows10" { font-size: 1.7em; }
-    @if $platform == "windows11" { font-size: 1.5em; }
+  @if $platform == "windows11" {
+    &.show {
+      .app-alert-modal {
+        transition-duration: 0.28s;
+        transform: translate3d(0,-1%,0) scale(1);
+      }
+    }
   }
-  .app-alert-message {
-    font-size: 1em;
-    line-break: auto;
-    padding: 0 30px 20px 30px;
+
+  .app-alert-header {
+    padding: 20px 30px;
+    h1 {
+      margin: 0;
+      padding-bottom: 10px;
+      background-color: transparent;
+      @if $platform == "windows10" { font-size: 1.7em; }
+      @if $platform == "windows11" { font-size: 1.5em; }
+    }
+    .app-alert-message {
+      font-size: 1em;
+      line-break: auto;
+    }
   }
-  .app-alert-btn-container {
+  
+  .app-alert-footer {
     padding: 15px;
     display: block;
     text-align: right;
@@ -72,12 +87,7 @@
       margin-left: 10px;
     }
   }
-  
 }
-
-// body.dark-theme {
- 
-// }
 
 @mixin alert-mobile() {
   .app-alert {

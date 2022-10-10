@@ -31,10 +31,19 @@ label.app-checkbox {
       }
     }
     &:checked {
-      &::before {
-        background: var(--PrimaryColor);
-        border: 2px solid var(--PrimaryColor);
+      @if $platform == "windows10" {
+        &::before {
+          background: var(--PrimaryColor);
+          border: 2px solid var(--PrimaryColor);
+        }
       }
+      @if $platform == "windows11" {
+        &::before {
+          background: var(--color_day_primary_night_primarylight);
+          border: 2px solid var(--color_day_primary_night_primarylight);
+        }
+      }
+      
       &::after {
         width: 5px;
         height: 10px;
@@ -64,12 +73,5 @@ label.app-checkbox {
     &:disabled::before {
       cursor: not-allowed;
     }
-  }
-}
-
-@if $platform == "windows11" {
-  body.dark-theme label.app-checkbox input[type="checkbox"]:checked::before {
-    background: var(--PrimaryColorLight);
-    border: 2px solid var(--PrimaryColorLight);
   }
 }

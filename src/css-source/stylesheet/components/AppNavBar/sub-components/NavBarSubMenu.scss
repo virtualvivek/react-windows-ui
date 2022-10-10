@@ -5,18 +5,34 @@
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    padding: 14px 25px;
     font-size: 16px;
     font-weight: 500;
     user-select: none;
     justify-content: space-between;
+
+    @if $platform == "windows10" {
+      padding: 14px 25px;
+    }
+    @if $platform == "windows11" {
+      margin: 5px 10px;
+      border-radius: 6px;
+      padding: 12px 20px;
+    }
   
     &:hover { background-color: var(--color_link_bg_hover); }
-    
-    &:active {
-      @extend .transition-scale-active;
-      background-color: var(--color_button_default);
+
+    @if $platform == "windows10" {
+      &:active {
+        @extend .transition-scale-active;
+        background-color: var(--color_button_default);
+      }
     }
+    @if $platform == "windows11" {
+      &:active {
+        opacity: 0.7;
+      }
+    }
+    
   }
   .app-navbar-submenu-content {
     height: 0;
