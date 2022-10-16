@@ -110,7 +110,7 @@ render() {
     <div className="app-hr m-0"></div>
 
     <div className="app-flex app-align-center font-size-16px">
-      <span className="demo-colors-name">--color_background_default<span className="user-select-none">:</span></span>
+      <span className="demo-colors-name">--color_bg_light<span className="user-select-none">:</span></span>
       <span className="demo-colors-box" style={{backgroundColor: this.state.color_bg_light_val}}></span>
       <span className="demo-colors-value">{this.state.color_bg_light_val}</span>
     </div>
@@ -159,7 +159,7 @@ render() {
     <div className="app-hr m-0"></div>
 
     <div className="app-flex app-align-center font-size-16px">
-      <span className="demo-colors-name">--color_button_default<span className="user-select-none">:</span></span>
+      <span className="demo-colors-name">--color_button<span className="user-select-none">:</span></span>
       <span className="demo-colors-box" style={{backgroundColor: this.state.color_button_val}}></span>
       <span className="demo-colors-value">{this.state.color_button_val}</span>
     </div>
