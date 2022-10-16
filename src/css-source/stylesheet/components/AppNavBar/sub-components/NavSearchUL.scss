@@ -2,7 +2,7 @@
   .app-nav-search {
     position: relative;
     ul {
-      @extend .app-custom-dropdown-ul;
+      @extend .app-dropdown-ul-default;
   
       width: 250px;
       max-height: 240px;

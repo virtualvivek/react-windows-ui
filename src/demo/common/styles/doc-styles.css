@@ -24,7 +24,7 @@
   padding: 2px 8px;
   user-select: none;
   border-radius: 20px;
-  color: var(--color_text_dark);
+  color: var(--color_text_default);
   background: var(--color_link_bg_hover);
 }
 .docs-btn-branch-selector:hover {
@@ -38,7 +38,7 @@
 .docs-btn-branch-dialog-txt {
   padding: 5px;
   font-size: 18px;
-  color: var(--color_text_dark);
+  color: var(--color_text_default);
 }
 .docs-btn-branch-dialog-txt:hover {
   background: var(--color_link_bg_hover);

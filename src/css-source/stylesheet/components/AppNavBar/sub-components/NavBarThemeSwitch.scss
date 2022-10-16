@@ -72,7 +72,7 @@
   transition: transform 0.3s ease 0.1s, box-shadow 0.2s ease 0s;
 }
 .app-navbar-theme-switch input:checked + .app-navbar-theme-switch-view:before {
-  background: var(--color_text_dark);
+  background: var(--color_text_default);
   transition: background 0.3s ease 0.1s;
 }
 .app-navbar-theme-switch input:checked + .app-navbar-theme-switch-view:after {

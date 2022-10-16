@@ -4,6 +4,6 @@
   display: inline-block;
   
   ul {
-    @extend .app-custom-dropdown-ul;
+    @extend .app-dropdown-ul-default;
   }
 }

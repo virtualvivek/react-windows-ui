@@ -107,7 +107,7 @@ render() {
       <ColorVariables colorName="--color_link_bg_hover" backgroundColor={this.state.color_link_bg_hover_val} />
       <ColorVariables colorName="--color_navbar_bg_default" backgroundColor={this.state.color_navbar_bg_val} />
       <ColorVariables colorName="--color_primary_alpha" backgroundColor={this.state.color_primary_alpha_val} />
-      <ColorVariables colorName="--color_text_dark" backgroundColor={this.state.color_text_dark_val} />
+      <ColorVariables colorName="--color_text_default" backgroundColor={this.state.color_text_dark_val} />
 
       <div className="app-hr app-m-0"></div>
 

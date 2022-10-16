@@ -28,7 +28,7 @@ button,
   user-select: none;
   transition: 0.2s ease;
   vertical-align: middle;
-  color: var(--color_text_dark);
+  color: var(--color_text_default);
   background-color: var(--color_button_default);
 
   @if $platform == "windows10" {
@@ -117,11 +117,11 @@ button,
   }
   
   &[disabled] {
-    @extend .input-field-primary-disabled;
+    @extend .input-field-default-disabled;
     
     span { pointer-events: none; }
     &:active, &:hover {
-      @extend .input-field-primary-disabled;
+      @extend .input-field-default-disabled;
     }
   }
 

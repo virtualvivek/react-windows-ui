@@ -1,7 +1,7 @@
 .app-dropdown-menu {
   ul.app-dropdown-list {
     max-height: 280px;
-    @extend .app-custom-dropdown-ul;
+    @extend .app-dropdown-ul-default;
 
     li.app-dropdown-list-item {
       &.selected span {

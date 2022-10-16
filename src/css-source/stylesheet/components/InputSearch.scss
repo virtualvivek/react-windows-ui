@@ -65,7 +65,7 @@
       &:hover {
         background: var(--color_navbar_bg_default);
         &::after {
-          color: var(--color_text_dark) !important;
+          color: var(--color_text_default) !important;
         }
       }
     }

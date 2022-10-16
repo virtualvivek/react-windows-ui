@@ -1,7 +1,7 @@
 .app-alert {
   @extend .app-dim-overlay;
   @if $platform == "windows10" { color: #fff; }
-  @if $platform == "windows11" { color: var(--color_text_dark); }
+  @if $platform == "windows11" { color: var(--color_text_default); }
 
   .app-alert-modal {
     z-index: 99;
@@ -35,7 +35,7 @@
   }
 
   .app-alert-header {
-    padding: 20px 30px;
+    padding: 20px 30px 0 30px;
     h1 {
       margin: 0;
       padding-bottom: 10px;
@@ -46,17 +46,14 @@
     .app-alert-message {
       font-size: 1em;
       line-break: auto;
+      max-height: 24vh;
+      overflow-y: scroll;
+      padding-bottom: 20px;
     }
   }
   
   .app-alert-footer {
-    padding: 15px;
-    display: block;
-    text-align: right;
-    @if $platform == "windows11" {
-      border-top: 1px solid var(--color_link_bg_hover);
-      background-color: var(--color_navbar_bg_default);
-    }
+    @extend .app-dialog-footer-default;
   }
   @if $platform == "windows10" {
     button {

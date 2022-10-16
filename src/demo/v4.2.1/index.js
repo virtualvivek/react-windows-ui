@@ -100,21 +100,25 @@ class AppFourTwoOne extends React.Component {
         scheme="system"
       />
 
-      <Dialog style={{flexDirection: "column", display:"flex", padding: 5}}
+      <Dialog
         isVisible={this.state.showDialog}
         onBackdropPress={this.toggleDialog}>
-          <Link
-            to="#"
-            onClick={this.toggleDialog}
-            className="docs-btn-branch-dialog-txt">
-              ‣  version 4.2.1
-          </Link>
-          <Link
-            to="/v4.2.0/home"
-            onClick={this.onBranchChange}
-            className="docs-btn-branch-dialog-txt">
-            ‣  version 4.2.0
-          </Link>
+          <Dialog.Body>
+            <div style={{flexDirection: "column", display:"flex"}}>
+            <Link
+              to="#"
+              onClick={this.toggleDialog}
+              className="docs-btn-branch-dialog-txt">
+                ‣  version 4.2.1
+            </Link>
+            <Link
+              to="/v4.2.0/home"
+              onClick={this.onBranchChange}
+              className="docs-btn-branch-dialog-txt">
+              ‣  version 4.2.0
+            </Link>
+            </div>
+          </Dialog.Body>
       </Dialog>
 
       <NavBar

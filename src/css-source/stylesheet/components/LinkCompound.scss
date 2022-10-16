@@ -3,10 +3,11 @@
     align-items: center;
     display: inline-flex;
     padding: 15px 15px 15px 10px;
-    color: var(--color_text_dark);
+    color: var(--color_text_default);
     border: 2px solid transparent;
     @extend .tap-highlight-none;
     @extend .transition-all-400ms;
+    @if $platform == "windows11" { border-radius: 4px; }
     
     &:hover, &.focused {
       background-color: var(--color_grey_light);
@@ -48,7 +49,7 @@
         font-size: 15px;
         white-space: nowrap;
         line-break: anywhere;
-        color: var(--color_text_dark);
+        color: var(--color_text_default);
       }
       p {
         font-size: 12px;

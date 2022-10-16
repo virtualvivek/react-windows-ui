@@ -67,7 +67,7 @@
 .app-list-item a {
   width: 100%;
   display: flex;
-  color: var(--color_text_dark);
+  color: var(--color_text_default);
 }
 
 @mixin list-item-mobile() {

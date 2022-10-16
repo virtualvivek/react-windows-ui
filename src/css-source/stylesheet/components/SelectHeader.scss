@@ -8,7 +8,7 @@
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  @extend .input-field-primary;
+  @extend .input-field-default;
   @extend .transition-background-400ms;
   @if $platform == "windows10" { height: 30px; }
   @if $platform == "windows11" { height: 32px; }
@@ -16,7 +16,7 @@
 
   select {
     background-color: var(--color_background_default);
-    color: var(--color_text_dark);
+    color: var(--color_text_default);
     @extend .transition-background-400ms;
 
     width: 100%;
@@ -33,7 +33,7 @@
       background-color: var(--color_background_default);
     }
     &[disabled] {
-      @extend .input-field-primary-disabled;
+      @extend .input-field-default-disabled;
     }
   }
   &::after {

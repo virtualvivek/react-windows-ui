@@ -90,3 +90,5 @@ cd ./react-windows-ui/src/cra-template
 
 npx create-react-app my-app --template file:./react-windows-ui/src/cra-template
 
+
+excluding = src/demo/v4.2.0/**

@@ -15,7 +15,7 @@
     --color_link_bg_hover: #D8D8D8;
     --color_navbar_bg_default: #EEEEEE;
     --color_primary_alpha: #EEEEEE9C;
-    --color_text_dark: #000000;
+    --color_text_default: #000000;
   }
   [data-theme="dark"] {
     /* Night Mode */
@@ -33,7 +33,7 @@
     --color_link_bg_hover: #555555;
     --color_navbar_bg_default: #403E41;
     --color_primary_alpha: #EEEEEE9C;
-    --color_text_dark: #FFFFFF;
+    --color_text_default: #FFFFFF;
   }
 }
 
@@ -54,7 +54,7 @@
     --color_link_bg_hover: #E8E8E8;
     --color_navbar_bg_default: #F3F3F3;
     --color_primary_alpha: #EEEEEE9C;
-    --color_text_dark: #000000;
+    --color_text_default: #000000;
   }
   [data-theme="dark"] {
     /* Night Mode */
@@ -72,7 +72,7 @@
     --color_link_bg_hover: #2D2D2D;
     --color_navbar_bg_default: #202020;
     --color_primary_alpha: #EEEEEE9C;
-    --color_text_dark: #FFFFFF;
+    --color_text_default: #FFFFFF;
   }
 }
 

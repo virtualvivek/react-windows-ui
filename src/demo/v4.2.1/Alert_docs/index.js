@@ -39,11 +39,13 @@ class AlertDocs extends React.Component {
         onBackdropPress={this.toggleAlert}
         title="Alert"
         message="This is alert Box.">
-          <Button
-            type="primary"
-            value="OK to Close"
-            onClick={this.toggleAlert}
-          />
+          <Alert.Footer>
+            <Button
+              type="primary"
+              value="OK to Close"
+              onClick={this.toggleAlert}
+            />
+          </Alert.Footer>
       </Alert>
 
       <Alert
@@ -51,15 +53,17 @@ class AlertDocs extends React.Component {
         onBackdropPress={this.toggleAlertLight}
         title={<><i className="icons10-sun"></i>Alert</>}
         message={<span>This is Light alert Box. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>}>
-          <Button
-            value="Cancel"
-            onClick={this.toggleAlertLight}
-          />
-          <Button
-            type="primary"
-            value="Confirm"
-            onClick={this.toggleAlertLight}
-          />
+          <Alert.Footer>
+            <Button
+              value="Cancel"
+              onClick={this.toggleAlertLight}
+            />
+            <Button
+              type="primary"
+              value="Confirm"
+              onClick={this.toggleAlertLight}
+            />
+          </Alert.Footer>
       </Alert>
 
 

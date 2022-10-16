@@ -71,7 +71,7 @@ const PropsView = () => {
         <tr>
           <td><p className="app-code">backgroundColor</p></td>
           <td>CSS Color</td>
-          <td>'color-light-grey'</td>
+          <td>'system default'</td>
           <td>Set's Gauge background-ring/backround color</td>
         </tr>
       </tbody>

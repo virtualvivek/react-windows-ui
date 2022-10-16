@@ -3,10 +3,9 @@
 
   .app-dialog-modal {
     width: 440px;
-    max-height: 54vh;
     z-index: 11;
     position: fixed;
-    overflow-y: auto;
+    overflow: hidden;
     border: 1px solid var(--color_button_default);
     background-color: var(--color_grey_light);
     box-shadow: 0 0 7vh rgba(0, 0, 0, 0.25);
@@ -18,6 +17,18 @@
 
     @if $platform == "windows11" {
       border-radius: 8px;
+    }
+
+    .app-dialog-footer {
+      @extend .app-dialog-footer-default;
+    }
+    .app-dialog-body {
+      max-height: 40vh;
+      overflow: overlay;
+      background-color: var(--color_background_default);
+    }
+    .app-dialog-header {
+      padding: 0 15px;
     }
   }
 

@@ -1,5 +1,5 @@
 .app-input-text {
-  @extend .input-field-primary;
+  @extend .input-field-default;
   @extend .transition-background-400ms;
 
   &:focus {

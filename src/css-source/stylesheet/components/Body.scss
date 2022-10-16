@@ -10,7 +10,7 @@ body {
   
   margin: 0;
   padding: 0;
-  color: var(--color_text_dark);
+  color: var(--color_text_default);
   background-color: var(--color_background_default);  
 }
 body.dark-theme {
@@ -87,6 +87,12 @@ a {
 .app-m-0 {
   margin: 0;
 }
+.app-mt-0 {
+  margin-top: 0;
+}
+.app-mb-0 {
+  margin-bottom: 0;
+}
 .app-mt-10 {
   margin-top: 10px;
 }
@@ -106,6 +112,6 @@ a {
   margin-bottom: 20px;
 }
 
-p.light {
+p.app-para-light {
   font-weight: 100;
 }

@@ -4,13 +4,8 @@ const Accordion = (props) => {
   const panelRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
   const [panelHeight, setPanelHeight] = useState(10);
- 
-  useLayoutEffect(() => {
-    panelRef.current?.childNodes.forEach((node) =>
-      // console.log({ height: node?.clientHeight, width: node?.clientWidth }),
-      setPanelHeight(node?.clientHeight+20),
-    );
-  }, []);
+  const [isHeader, setHeader] = useState(null);
+  const [isPanel, setPanel] = useState(null);
 
   const updateWidth = useCallback(() => {
     setTimeout(()=> {
@@ -38,24 +33,22 @@ const Accordion = (props) => {
     }
   }
 
+  useEffect(() => {
+    Children.forEach(props.children, child => {
+      if (child.type.name === "AccordionHeader") {
+        setHeader(child);
+      }
+      if (child.type.name === "AccordionPanel") {
+        setPanel(child);
+      }
+    });
+  }, [props.children]);
 
-  let _panel, _header;
-
-  Children.forEach(props.children, child => {
-    if (child.type === AccordionHeader) {
-      return _header = child;
-    }
-    if (child.type === AccordionPanel) {
-      return _panel = child;
-    }
-  });
-
-  if (!_header) _header = <div className="app-accordion-title"><span>{props.headerTitle}</span>
-                            {isActive
-                              ? <i className="icons10-angle-up"></i>
-                              : <i className="icons10-angle-down"></i>}
-                          </div>
-  if (!_panel) _panel = <></>
+  useLayoutEffect(() => {
+    panelRef.current?.childNodes.forEach((node) =>
+      setPanelHeight(node?.clientHeight+20),
+    );
+  }, [isPanel]);
 
   return (
     <div
@@ -64,13 +57,19 @@ const Accordion = (props) => {
       <div
         className="app-accordion-header"
         onClick={toggleHeader}>
-        {_header}
+        {isHeader === null ? <div className="app-accordion-title"><span>{props.headerTitle}</span>
+                              {isActive
+                                ? <i className="icons10-angle-up"></i>
+                                : <i className="icons10-angle-down"></i>}
+                              </div>
+                              :
+                              isHeader}
       </div>
       <div className={isActive ? "app-accordion-panel show"
                                : "app-accordion-panel"}
           ref={panelRef}
           style={isActive ? {height: panelHeight} : {height: 0}}>
-        {_panel}
+        {isPanel}
       </div>
     </div>
   );
@@ -80,7 +79,6 @@ Accordion.defaultProps = {
   onCollapse: () => {},
   onExpand: () => {},
 }
-
 
 const AccordionHeader = ({ children }) => <>{children}</>
 const AccordionPanel = ({ children }) => <>{children}</>

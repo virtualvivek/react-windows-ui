@@ -1,13 +1,12 @@
 .app-cmd-bar {
   @extend .transition-background-400ms;
   @extend .app-inline-flex;
-
   width: max-content;
   height: auto;  
 }
 
 ul.app-cmdbar-menu-list {
-  @extend .app-custom-dropdown-ul;
+  @extend .app-dropdown-ul-default;
   width: max-content;
   max-height: 280px;
   overflow: visible;
@@ -40,7 +39,7 @@ ul.app-cmdbar-menu-list .cmdbar-submenu {
   background: none;
   padding: 8px 10px;
   width: max-content;
-  color: var(--color_text_dark);
+  color: var(--color_text_default);
 
   &:hover {
     background: var(--color_grey_light_alpha);

@@ -39,27 +39,37 @@ class DialogDocs extends React.Component {
       <Dialog
         isVisible={this.state.showDialog}
         onBackdropPress={this.toggleDialog}>
-        <ListItem
-          img={Img4}
-          imgBorderRadius={8}
-          title="Magenta Riddim"
-          subtitle="5.6 MB"/>
-        <ListItem
-          img={Img3}
-          imgBorderRadius={8}
-          title="Different World"
-          subtitle="12.0 MB"/>
-        <ListItem
-          img={Img2}
-          imgBorderRadius={8}
-          title="La Familia"
-          subtitle="24 MB"/>
-            
-        <Button
-          style={{margin:'15px',float:'right'}}
-          value="Close"
-          onClick={this.toggleDialog} />
-         
+          <Dialog.Header>
+            <h3>Header</h3>
+          </Dialog.Header>
+          <Dialog.Body>
+            <ListItem
+              img={Img4}
+              imgBorderRadius={8}
+              title="Magenta Riddim"
+              subtitle="5.6 MB"/>
+            <ListItem
+              img={Img3}
+              imgBorderRadius={8}
+              title="Different World"
+              subtitle="12.0 MB"/>
+            <ListItem
+              img={Img2}
+              imgBorderRadius={8}
+              title="La Familia"
+              subtitle="24 MB"/>
+            <ListItem
+              img={Img2}
+              imgBorderRadius={8}
+              title="La Familia"
+              subtitle="24 MB"/>
+          </Dialog.Body>
+          <Dialog.Footer>
+            <Button
+              value="Close"
+              onClick={this.toggleDialog}
+            />
+          </Dialog.Footer>
       </Dialog>
 
       <Dialog

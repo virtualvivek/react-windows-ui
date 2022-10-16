@@ -55,6 +55,7 @@ import GithubIcon from "../assets/static/GithubIcon"
 
 import './_lib/config/app-config.css'
 import './_lib/react-windows-ui.min.css'
+import './_lib/icons/fonts/fonts.min.css'
 import { lib_version } from './values'
 
 class AppFourTwoZero extends React.Component {
