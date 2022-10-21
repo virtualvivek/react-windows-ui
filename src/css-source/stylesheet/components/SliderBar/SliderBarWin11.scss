@@ -48,8 +48,15 @@
   &.slider-round {
     input[type="range"] {
       &::-webkit-slider-thumb {
-        width: 20px !important;
-        height: 20px;
+        width: 8px;
+        height: 26px;
+        border: unset;
+        &:hover {
+          filter: brightness(0.8);
+        }
+        &:active {
+          transform: scale(1, 0.9);
+        }
       }
       &::-moz-range-thumb {
         width: 20px;

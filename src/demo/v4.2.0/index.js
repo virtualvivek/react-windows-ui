@@ -103,7 +103,7 @@ class AppFourTwoZero extends React.Component {
         scheme="system"
       />
 
-      <Dialog style={{flexDirection: "column", display:"flex", padding: 5}}
+      <Dialog style={{flexDirection: "column", display:"flex"}}
         isVisible={this.state.showDialog}
         onBackdropPress={this.toggleDialog}>
           <Link

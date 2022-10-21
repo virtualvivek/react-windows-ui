@@ -42,13 +42,6 @@
         "showBadge": 7
     },
     {
-        "to": "cards",
-        "exact": false,
-        "text": "Cards",
-        "icon": "icons10-film",
-        "showBadge": false
-    },
-    {
         "to": "checkbox",
         "exact": false,
         "text": "Checkbox",

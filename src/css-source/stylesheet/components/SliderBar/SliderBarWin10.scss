@@ -21,12 +21,10 @@
       transition: background 0.15s ease-in-out;
 
       &:hover {
-        background: #555;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.20);
+        filter: brightness(0.8);
       }
       &:active {
-        background: #999;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
+        transform: scale(0.9, 0.9);
       }
     }
     &::-moz-range-thumb {

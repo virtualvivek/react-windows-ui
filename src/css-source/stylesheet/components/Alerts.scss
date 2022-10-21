@@ -95,6 +95,11 @@
       margin: 0;
       transition: all 0.3s ease;
       transform: translateY(-100%);
+      @if $platform == "windows11" {
+        max-width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
     }
 
     &.show {
@@ -102,15 +107,6 @@
         transition: all 0.3s ease;
         transform: translateY(0%);
       }
-    }
-
-    .alert-message {
-      min-height: 50px;
-    }
-
-    button {
-      padding: 3px 30px;
-      margin: 15px 15px 15px 0;
     }
   }
 }

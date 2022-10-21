@@ -20,7 +20,6 @@ import AppThemeDocs from './AppTheme_docs'
 import AppearanceDocs from './Appearance_docs'
 import AvatarViewDocs from './AvatarView_docs'
 import ButtonsDocs from './Buttons_docs'
-import CardDocs from './Card_docs'
 import CheckboxDocs from './Checkbox_docs'
 import ColorsDocs from './Colors_docs'
 import ColorPickerDocs from './ColorPicker_docs'
@@ -251,7 +250,6 @@ class AppFourTwoOne extends React.Component {
         <Route path='appearance' element={<AppearanceDocs/>} />
         <Route path='avatarview' element={<AvatarViewDocs/>} />
         <Route path='buttons' element={<ButtonsDocs/>} />
-        <Route path='cards' element={<CardDocs/>} />
         <Route path='checkbox' element={<CheckboxDocs/>} />
         <Route path='colorpicker' element={<ColorPickerDocs/>} />
         <Route path='commandbar' element={<CommandBarDocs/>} />

@@ -56,6 +56,8 @@ body.dark-theme {
     border-left: none;
     border-right: none;
     border-top: 1px solid var(--color_button_default);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     transform: translateY(100%); //adding full 100% to animate like bottomsheet
   }
 }
