@@ -38,6 +38,8 @@ const InputText = (props) => {
         type={props.type}
         value={props.value}
         onClick={props.onClick}
+        onKeyUp={props.onKeyUp}
+        onKeyDown={props.onKeyDown}
         onChange={props.onChange}
         disabled={props.disabled}
         placeholder={props.placeholder}

@@ -2,6 +2,7 @@
   :root {
     /* Day Mode */
     color-scheme: light;
+    --platform: "windows10";
     --color_background_default: #FFFFFF;
     --color_button_default: #CDCDCD;
     --color_button_hover: #666666;
@@ -20,6 +21,7 @@
   [data-theme="dark"] {
     /* Night Mode */
     color-scheme: dark;
+    --platform: "windows10";
     --color_background_default: #111111;
     --color_button_default: #555555;
     --color_button_hover: #999999;
@@ -41,6 +43,7 @@
   :root {
     /* Day Mode */
     color-scheme: light;
+    --platform: "windows11";
     --color_background_default: #ffffff;
     --color_button_default: #e9e9e9;
     --color_button_hover: #666666;
@@ -59,6 +62,7 @@
   [data-theme="dark"] {
     /* Night Mode */
     color-scheme: dark;
+    --platform: "windows11";
     --color_background_default: #111111;
     --color_button_default: #555555;
     --color_button_hover: #999999;

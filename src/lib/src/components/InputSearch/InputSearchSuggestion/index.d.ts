@@ -8,6 +8,8 @@ export interface InputSearchSuggestionProps {
   width ?: any;
   onClick ?: Function;
   onChange ?: Function;
+  onKeyUp ?: Function;
+  onKeyDown ?: Function;
 }
 declare const InputSearchSuggestion: React.FC<InputSearchSuggestionProps>
 

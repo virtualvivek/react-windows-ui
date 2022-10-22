@@ -66,8 +66,26 @@ const PropsView = () => {
         <tr>
           <td><p className="app-code">onChange</p></td>
           <td>object</td>
-          <td>null</td>
+          <td>[ ]</td>
           <td>Set's Input on Change listener</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onClick</p></td>
+          <td>object</td>
+          <td>[ ]</td>
+          <td>Set's Input on Click listener</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onKeyUp</p></td>
+          <td>object</td>
+          <td>[ ]</td>
+          <td>Set's Input on KeyUp listener</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onKeyDown</p></td>
+          <td>object</td>
+          <td>[ ]</td>
+          <td>Set's Input on KeyDown listener</td>
         </tr>
       </tbody>
     </table>

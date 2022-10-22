@@ -6,7 +6,7 @@ const InputSearchSuggestion = (props) => {
   const inputRef = React.useRef();
 
   const _onChange = (e) => {
-    setSearch(e.target.value);
+    setSearchVal(e.target.value);
     let iswitch = inputRef.current;
     if(!e.target.value || !inputRef.current.hasChildNodes()) {
       iswitch.style.visibility="hidden";
@@ -19,25 +19,27 @@ const InputSearchSuggestion = (props) => {
 
   const search_data = props.data;
   const [teams, setTeams] = React.useState(search_data);
-  const [search, setSearch] = React.useState("");
+  const [search_val, setSearchVal] = React.useState("");
 
   return (
     <div className="app-input-search-suggestion" title={props.tooltip}>
       <div className="app-input-search-box">
         <input
           type="search"
-          value={search}
+          value={search_val}
           style={{ width: props.width }}
-          onClick={props.onClick}
           disabled={props.disabled}
+          onClick={props.onClick}
+          onKeyUp={props.onKeyUp}
+          onKeyDown={props.onKeyDown}
           placeholder={props.placeholder}
           className="app-input-text app-input-search"
           onChange={(e) => {
             _onChange(e)
-            const test = search_data.filter(team => {
+            const lst_data = search_data.filter(team => {
               return team.label.toLowerCase().includes(e.target.value.toLowerCase());
             });
-            setTeams(test);
+            setTeams(lst_data);
           }}
         />
       </div>

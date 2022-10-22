@@ -14,10 +14,11 @@
     display: flex;
     padding: 10px 0;
     align-items: center;
-    justify-content: center;
-    background: var(--color_navbar_bg_default);
-    transform: translateY(-105%);
+    justify-content: center;    
     transition: 0.2s ease;
+    transform: translateY(-105%);
+    @if $platform == "windows10" { background: var(--color_navbar_bg_default); }
+    @if $platform == "windows11" { background: var(--color_link_bg_hover); }
 
     &.show { transform: translateY(0%); }
 

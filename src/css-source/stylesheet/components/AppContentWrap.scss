@@ -16,12 +16,22 @@
   }
 }
 
-.app-section-container-inner {
+.app-section-cntr-inner {
   margin: 0 30px;
 }
 
-// check if .app-section-container-inner has a sibling of same type
-.app-section-container-inner:first-of-type:not(:only-of-type) {
+@if $platform == "windows11" {
+  .app-section-cntr-foreground {
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid var(--color_link_bg_active);
+    background: var(--color_background_default);
+  }
+}
+
+
+// check if .app-section-cntr-inner has a sibling of same type
+.app-section-cntr-inner:first-of-type:not(:only-of-type) {
   width: 70%;
 }
 
@@ -34,7 +44,7 @@
 }
 
 @media screen and (max-width: 70em) {
-  .app-section-container-inner:first-of-type:not(:only-of-type) {
+  .app-section-cntr-inner:first-of-type:not(:only-of-type) {
     width: auto;
   }
 }
@@ -49,7 +59,7 @@
       padding-right: 15px !important;
     }
   }
-  .app-section-container-inner {
+  .app-section-cntr-inner {
     margin: 15px;
   }
 }

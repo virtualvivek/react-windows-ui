@@ -7,6 +7,8 @@ export interface InputTextProps {
   disabled ?: boolean;
   onClick ?: Function;
   onChange ?: Function;
+  onKeyUp ?: Function;
+  onKeyDown ?: Function;
   placeholder ?: string;
   width ?: number | string;
   setStatus ?: "default" | "success" | "danger" | "loading";

@@ -74,6 +74,19 @@ class TextsDocs extends React.Component {
       
         <div className="app-hr"></div>
 
+        <h2>Foreground Container</h2>
+        <p>Shows a foreground container.<br/>It's a windows 11 feature so styles apply only on win11-ui and shows a default view on win10-ui.</p>
+        <div className="app-section-cntr-foreground">
+          <p>You content here.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <br/>
+        <SyntaxHighlighter
+          language="javascript"
+          style={vscDarkPlus}
+          className="code code-container">
+          {TextVarientLightCode}
+        </SyntaxHighlighter>
+
         <br/><br/><br/><br/><br/><br/>
 
       </NavPageContainer>

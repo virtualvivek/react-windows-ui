@@ -4,6 +4,8 @@ export interface InputSearchBoxProps {
   placeholder ?: string;
   onChange ?: Function;
   onClick ?: Function;
+  onKeyUp ?: Function;
+  onKeyDown ?: Function;
   disabled ?: boolean;
   tooltip ?: string;
   value ?: any;

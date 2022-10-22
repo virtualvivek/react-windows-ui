@@ -44,28 +44,40 @@ const PropsView = () => {
           <td>Set's Search if disabled</td>
         </tr>
         <tr>
-          <td><p className="app-code">onClick</p></td>
-          <td>function</td>
-          <td>null</td>
-          <td>onClick listener | For InputSearchBar</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">onSubmit</p></td>
-          <td>function</td>
-          <td>null</td>
-          <td>onSubmit listener | For InputSearchBar</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">onChange</p></td>
-          <td>function</td>
-          <td>null</td>
-          <td>onChange listener | For InputSearchBox</td>
-        </tr>
-        <tr>
           <td><p className="app-code">placeholder</p></td>
           <td>string</td>
           <td>'search here..'</td>
           <td>Set's Search placeholder</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onClick</p></td>
+          <td>function</td>
+          <td>[ ]</td>
+          <td>onClick listener</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onChange</p></td>
+          <td>function</td>
+          <td>[ ]</td>
+          <td>onChange listener</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onKeyUp</p></td>
+          <td>function</td>
+          <td>[ ]</td>
+          <td>onKeyUp listener</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onKeyDown</p></td>
+          <td>function</td>
+          <td>[ ]</td>
+          <td>onKeyDown listener</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onSubmit</p></td>
+          <td>function</td>
+          <td>[ ]</td>
+          <td>onSubmit listener | For InputSearchBar</td>
         </tr>
         <tr>
           <td>

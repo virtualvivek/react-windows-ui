@@ -7,7 +7,6 @@
 .font-size-20px {
   font-size: 20px;
 }
-
 .font-icon-dark {
   font-family: icons10;
   color: var(--color_text_default);
@@ -16,12 +15,8 @@
   @extend .font-icon-dark;
   color: var(--color_background_default);
 }
-
 .color-primary {
-  color: var(--PrimaryColor);
-}
-[data-theme="dark"] .color-primary {
-  color: var(--PrimaryColorLight);
+  color: var(--color_day_primary_night_primarylight);
 }
 
 .app-align-center {

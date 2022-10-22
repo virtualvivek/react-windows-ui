@@ -12,6 +12,8 @@ const InputSearchBox = (props) => {
         value={props.value}
         onClick={props.onClick}
         onChange={props.onChange}
+        onKeyUp={props.onKeyUp}
+        onKeyDown={props.onKeyDown}
         disabled={props.disabled}
         placeholder={props.placeholder}
       />

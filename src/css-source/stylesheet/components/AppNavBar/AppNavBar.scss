@@ -39,17 +39,7 @@
     overflow-x: hidden;
     overflow-y: overlay;
     background-color: var(--color_navbar_bg_default);
-    @if $platform == "windows11" { border-right: 1px solid #77777744; }
-
-    &:after {
-      content: '';
-      height: 100%; //You can change this if you want smaller/bigger borders
-      width: 1px;
-      position: absolute;
-      right: 0;
-      top: 0; // If you want to set a smaller height and center it, change this value
-      background-color: #000000; // The color of your border
-    }
+    @if $platform == "windows11" { box-shadow: 1px 8px 4px -4px var(--color_text_default); }
   }
 
   .app-navbar-topbar-mobile {

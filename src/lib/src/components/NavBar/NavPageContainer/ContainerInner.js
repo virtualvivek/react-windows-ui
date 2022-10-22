@@ -2,7 +2,7 @@ import React from "react";
 
 const ContainerInner = (props) => {
   return (
-    <div className="app-section-container-inner">
+    <div className="app-section-cntr-inner">
       {props.children}
     </div>
   )

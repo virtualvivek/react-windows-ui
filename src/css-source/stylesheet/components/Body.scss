@@ -13,11 +13,6 @@ body {
   color: var(--color_text_default);
   background-color: var(--color_background_default);  
 }
-body.dark-theme {
-  .color-primary {
-    color: var(--PrimaryColorLight);
-  }
-}
 .app-code {
   @extend .transition-background-400ms;
   margin: 0;
@@ -28,14 +23,6 @@ body.dark-theme {
   background-color: var(--color_navbar_bg_default);
 }
 
-.app-container-screen {
-  height: 100vh;
-  background-color: var(--color_background_default);
-
-  &.primary {
-    background-color: var(--color_day_primary_night_grey);
-  }
-}
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.17em; }
