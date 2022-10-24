@@ -49,9 +49,9 @@ const Dialog = (props) => {
   )
 }
 
-const DialogHeader = ({ children }) => <div className="app-dialog-header">{children}</div>;
-const DialogBody = ({ children }) => <div className="app-dialog-body">{children}</div>;
-const DialogFooter = ({ children }) => <div className="app-dialog-footer">{children}</div>;
+const DialogHeader = (props) => <div className="app-dialog-header" style={props.style}>{props.children}</div>;
+const DialogBody = (props) => <div className="app-dialog-body" style={props.style}>{props.children}</div>;
+const DialogFooter = (props) => <div className="app-dialog-footer" style={props.style}>{props.children}</div>;
 
 Dialog.Header = DialogHeader;
 Dialog.Body = DialogBody;

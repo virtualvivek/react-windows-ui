@@ -62,14 +62,16 @@
       font-size: 14px;
       display: inline;
       font-weight: 700;
-      padding: 7px 3.4vw;
+      padding: 7px 2.5vw;
       border: 2px solid #fff;
   
       &:hover {
         opacity: 0.62;
+        border: 2px solid #fff;
       }
       &:active {
         opacity: 1;
+        filter: unset;
         color: var(--PrimaryColor);
         background: #fff !important;
       }

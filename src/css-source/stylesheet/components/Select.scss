@@ -6,6 +6,7 @@
     li.app-dropdown-list-item {
       &.selected span {
         @if $platform == "windows10" {
+          color: #000;
           background-color: var(--PrimaryColor);
           box-shadow: inset 0 0 0 1000px #ffffff99;
         }
@@ -32,12 +33,5 @@
     padding-left: 10px;
     align-items: center;
     display: inline-flex;
-  }
-}
-
-
-body.dark-theme {
-  .app-dropdown-list li.app-dropdown-list-item.selected {
-    box-shadow: unset;
   }
 }

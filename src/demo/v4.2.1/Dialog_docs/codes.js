@@ -3,17 +3,25 @@ const DialogImportCode =
 
 const DialogUsageCode =
 `<Dialog
-  isVisible={this.state.showDialog}
-  onBackdropPress={this.toggleDialog}>
-  <ListItem
-    img={Img4}
-    imgBorderRadius={8}
-    title="Magenta Riddim"
-    subtitle="5.6 MB" /> 
-  <Button
-    style={{margin: '15px', float: 'right'}}
-    value="Close"
-    onClick={this.toggleDialog} />
+  isVisible={true}
+  onBackdropPress={() => {}}>
+    <Dialog.Header>
+      <h3>Header</h3>
+    </Dialog.Header>
+    <Dialog.Body>
+      <ListItem
+        img={Img4}
+        imgBorderRadius={8}
+        title="Magenta Riddim"
+        subtitle="5.6 MB"
+      />
+    </Dialog.Body>
+    <Dialog.Footer>
+      <Button
+        value="Close"
+        onClick={this.toggleDialog}
+      />
+    </Dialog.Footer>
 </Dialog>`;
 
 const DialogConfirmUsageCode =
@@ -21,22 +29,24 @@ const DialogConfirmUsageCode =
   isVisible={true}
   style={{padding:20}}
   onBackdropPress={() => {}}>
-  <h2 style={{margin: 0}}>Dialog Confirm</h2>
-  <p style={{margin: "0 0 40px 0"}}>Are you feel good today?</p>  
-  <div style={{display: "flex", justifyContent: "center"}}>
-    <Button
-      style={{flex: "auto"}}
-      value="Confirm"
-      type="primary"
-      onClick={() => {}}
-    />
-    &nbsp;
-    <Button
-      style={{flex: "auto"}}
-      value="Cancel"
-      onClick={() => {}}
-    />
-  </div>
+    <Dialog.Body style={{padding: 15}}>
+      <h2 className="app-m-0">Dialog Confirm</h2>
+      <p>Are you feel good today?</p>  
+      <div style={{display: "flex", justifyContent: "center"}}>
+        <Button
+          style={{flex: "auto"}}
+          value="Confirm"
+          type="primary"
+          onClick={this.toggleDialogConfirm}
+        />
+        &nbsp;
+        <Button
+          style={{flex: "auto"}}
+          value="Cancel"
+          onClick={this.toggleDialogConfirm}
+          />
+      </div>
+    </Dialog.Body>
 </Dialog>`;
 
 export {

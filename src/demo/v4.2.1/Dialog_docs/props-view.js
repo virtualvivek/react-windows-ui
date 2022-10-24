@@ -22,8 +22,8 @@ const PropsView = () => {
         <tr>
           <td><p className="app-code">style</p></td>
           <td>CSS Property</td>
-          <td>null</td>
-          <td>Set's Dialog container style</td>
+          <td>default</td>
+          <td>Container style for {`<Dialog>`}, {`<Dialog.Header>`}, {`<Dialog.Body>`}, {`<Dialog.Footer>`}</td>
         </tr>
         <tr>
           <td><p className="app-code">onBackdropPress</p></td>

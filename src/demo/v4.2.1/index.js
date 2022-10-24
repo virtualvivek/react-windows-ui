@@ -53,7 +53,7 @@ import Img2 from '../assets/illustration/mountain.jpg'
 import GithubIcon from "../assets/static/GithubIcon"
 
 import '../../lib/config/app-config.css'
-import '../../lib/dist/react-windows-ui-11.min.css'
+import '../../lib/dist/react-windows-ui.min.css'
 
 import { lib_version } from './values'
 

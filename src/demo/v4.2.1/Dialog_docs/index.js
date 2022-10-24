@@ -74,24 +74,25 @@ class DialogDocs extends React.Component {
 
       <Dialog
         isVisible={this.state.showDialogConfirm}
-        onBackdropPress={this.toggleDialogConfirm}
-        style={{padding:20}}>
-        <h2 style={{margin: 0}}>Dialog Confirm</h2>
-        <p style={{margin: "0 0 40px 0"}}>Are you feel good today?</p>  
-        <div style={{display: "flex", justifyContent: "center"}}>
-          <Button
-            style={{flex: "auto"}}
-            value="Confirm"
-            type="primary"
-            onClick={this.toggleDialogConfirm}
-          />
-          &nbsp;
-          <Button
-            style={{flex: "auto"}}
-            value="Cancel"
-            onClick={this.toggleDialogConfirm}
-            />
-        </div>
+        onBackdropPress={this.toggleDialogConfirm}>
+          <Dialog.Body style={{padding: 15}}>
+            <h2 className="app-m-0">Dialog Confirm</h2>
+            <p>Are you feel good today?</p>  
+            <div style={{display: "flex", justifyContent: "center"}}>
+              <Button
+                style={{flex: "auto"}}
+                value="Confirm"
+                type="primary"
+                onClick={this.toggleDialogConfirm}
+              />
+              &nbsp;
+              <Button
+                style={{flex: "auto"}}
+                value="Cancel"
+                onClick={this.toggleDialogConfirm}
+                />
+            </div>
+          </Dialog.Body>
       </Dialog>
 
       <p>A <span className="color-primary">Dialog</span> is a type of modal window that appears in front of app content to provide critical information or ask for a decision.</p>

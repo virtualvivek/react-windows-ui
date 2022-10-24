@@ -26,12 +26,13 @@ render() {
 
     <View
       isVisible={this.state.showView}
+      backgroundColor="#888"
+      backgroundColorHover="#222"
+      backgroundColorActive="#ddd"
       animationType="fade">
-        <div style={{height:150,width:250,backgroundColor: 'var(--PrimaryColor)',
-      justifyContent:'center',alignItems:'center',display:'flex'}}>
-        <span style={{fontSize: 28,color:'#fff'}}>View</span>
+        <div style={{height:150,width:250,justifyContent:'center',alignItems:'center',display:'flex'}}>
+          <span style={{fontSize: 28,color:"var(--color_text_default)"}}>View</span>
         </div>
-      
     </View>
 
     <br/><Button value="Toggle Visibility" onClick={this.toggleView} />

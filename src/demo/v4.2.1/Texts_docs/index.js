@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer } from '../_lib'
+import { NavPageContainer, Button } from '../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { TextHeadingCode, TextHeadingNoMgBottomCode,TextVarientsCode, TextVarientLightCode } from './codes'
@@ -77,6 +77,7 @@ class TextsDocs extends React.Component {
         <h2>Foreground Container</h2>
         <p>Shows a foreground container.<br/>It's a windows 11 feature so styles apply only on win11-ui and shows a default view on win10-ui.</p>
         <div className="app-section-cntr-foreground">
+          <Button/>
           <p>You content here.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <br/>

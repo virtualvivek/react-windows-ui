@@ -33,6 +33,12 @@
     }
   }
   @if $platform == "windows10" {
+    .app-input-label:has(+ .app-input-text:hover) {
+      border-color: #777;
+    }
+    .app-input-label:has(+ .app-input-text:focus) {
+      border-color: #666;
+    }
     .app-input-label + .app-input-text {
       border-left-width: 0;
     }

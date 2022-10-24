@@ -10,11 +10,11 @@
     @if $platform == "windows11" { border-radius: 4px; }
     
     &:hover, &.focused {
-      background-color: var(--color_grey_light);
+      background-color: var(--color_grey_light_alpha);
     }
     &:active {
       @extend .transition-scale-active;
-      background: var(--color_link_bg_hover);
+      filter: contrast(0.8);
     }
     .app-link-compound-container {
       align-items: center;
@@ -77,10 +77,6 @@
         border: 2px solid var(--color_link_bg_active);
         background: var(--color_grey_light) !important;
       }
-    }
-    &.link-border i,
-    i.color-primary {
-      color: var(--PrimaryColor);
     }
 }
 

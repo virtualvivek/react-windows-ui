@@ -6,12 +6,12 @@
   border-bottom: 1px solid var(--color_grey_light);
 
   &:hover:not(.pointer-none) {
-    background-color: var(--color_grey_light);
+    background-color: var(--color_grey_light_alpha);
   }
   &:active:not(.pointer-none) {
+    filter: contrast(0.8);
     transition: 0.04s ease;
     transform: scale(0.998, 0.998);
-    background-color: var(--color_link_bg_hover);
   }
 
   a {

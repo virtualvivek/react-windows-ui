@@ -81,7 +81,7 @@ const PropsView = () => {
         </tr>
         <tr>
           <td>
-            <b>For InputSearchSuggestion</b>
+            <b>For {`<InputSearchSuggestion/>`}</b>
           </td><td></td><td></td><td></td>
         </tr>
         <tr>
