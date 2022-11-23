@@ -38,6 +38,20 @@ const NavBar = (props) => {
   
   const scrollEvent = (e) => { e.target.scrollTop < 50 ? setScrolling(false) : setScrolling(true); }
 
+  function resizedw() {
+    document.getElementById("app-navbar-wrap-id").style.transition = "";
+    document.querySelector("#app-navbar-wrap-id nav").style.transition = "";
+  }
+
+  var on_resizew;
+  window.onresize = function() {
+    clearTimeout(on_resizew);
+    document.getElementById("app-navbar-wrap-id").style.transition = "unset";
+    document.querySelector("#app-navbar-wrap-id nav").style.transition = "unset";
+    on_resizew = setTimeout(resizedw, 100);
+  };
+
+
   return (
     <div
       ref={props.ref}
