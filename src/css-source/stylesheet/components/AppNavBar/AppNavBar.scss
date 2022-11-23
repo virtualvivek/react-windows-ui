@@ -38,8 +38,8 @@
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: overlay;
-    background-color: var(--color_navbar_bg_default);
-    @if $platform == "windows11" { box-shadow: 1px 8px 4px -4px var(--color_text_default); }
+    background-color: var(--color-navbar-bg-default);
+    @if $platform == "windows11" { box-shadow: 1px 8px 4px -4px var(--color-text-default); }
   }
 
   .app-navbar-topbar-mobile {
@@ -50,8 +50,8 @@
     position: fixed;
     padding: 0 10px;
     align-items: center;
-    background-color: var(--color_navbar_bg_default);
-    border-bottom: 1px solid var(--color_link_bg_hover);
+    background-color: var(--color-navbar-bg-default);
+    border-bottom: 1px solid var(--color-link-bg-hover);
 
     .app-navbar-toggle-button {
       padding: 5px;

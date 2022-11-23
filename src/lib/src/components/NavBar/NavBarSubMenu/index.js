@@ -9,7 +9,7 @@ const NavBarSubMenu = (props) => {
     let height_ = 0;
     panelRef.current?.childNodes.forEach((node) => {
         let _platform = window.getComputedStyle(document.documentElement).getPropertyValue("--platform");
-        let _margin = _platform.includes("windows11") ? 5 : 0;
+        let _margin = _platform.includes("windows11") ? 5.5 : 0;
         height_ += node?.clientHeight+_margin;
     });
     setContentHeight(height_);

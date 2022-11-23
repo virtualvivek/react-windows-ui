@@ -10,6 +10,8 @@ export interface SliderBarProps {
   thumbStyle ?: string;
   defaultValue ?: number;
   onChange ?: () => void;
+  onDragStart ?: () => void;
+  onDragEnd ?: () => void;
 }
 declare const SliderBar: React.FC<SliderBarProps>
 

@@ -11,7 +11,7 @@
     position: relative;
     border-radius: 50px;
     transition: 200ms ease-out;
-    border: 2px solid var(--color_text_default);
+    border: 2px solid var(--color-text-default);
 
     &:hover { opacity: 0.7; }
     &:active { filter: contrast(0.5); }
@@ -27,7 +27,7 @@
       border-radius: 50%;
       transition: 200ms;
       will-change: translate;
-      background: var(--color_text_default);
+      background: var(--color-text-default);
     }
   }
 
@@ -66,12 +66,12 @@
     &:disabled {
       ~.app-switch-view {
         cursor: not-allowed;
-        border-color: var(--color_link_bg_hover);
-        background-color: var(--color_link_bg_hover);
+        border-color: var(--color-link-bg-hover);
+        background-color: var(--color-link-bg-hover);
 
         &::before {
           filter: contrast(0);
-          background: var(--color_text_default) !important;
+          background: var(--color-text-default) !important;
         }
       }
     }
@@ -85,7 +85,7 @@
         border-color: var(--PrimaryColorLight);
         background-color: var(--PrimaryColorLight);
         &::before {
-          background: var(--color_background_default);
+          background: var(--color-background-default);
         }
       }
     }

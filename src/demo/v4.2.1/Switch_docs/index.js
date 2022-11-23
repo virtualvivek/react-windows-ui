@@ -89,7 +89,7 @@ render() {
     <label className="app-switch">
       <input type="checkbox" checked="checked" />
       <div className="app-switch-view"></div>
-      <span className="app-switch-label" data-on="On" data-off="Off" style={{width: 150, backgroundColor: "var(--color_link_bg_active)"}}>
+      <span className="app-switch-label" data-on="On" data-off="Off" style={{width: 150, backgroundColor: "var(--color-link-bg-active)"}}>
       </span>
     </label>
     <br/><br/>

@@ -44,7 +44,7 @@ const Select = (props) => {
   const toggleDropdown = () => {
     setOpen(!isOpen);
     ScrollView.disableScroll();
-    getScreenOffset(wrapperRef) ? setReverse("reverse") : setReverse("");
+    getScreenOffset(wrapperRef) ? setReverse(" reverse") : setReverse("");
   }
 
 
@@ -55,7 +55,7 @@ const Select = (props) => {
   return (
     <div className="app-dropdown-menu app-select" ref={wrapperRef} onClick={toggleDropdown}>
       <span>{ilabel}</span>
-      <ul className={`app-dropdown-list ${isOpen && 'show'} ${isReverse}`}>
+      <ul className={`app-dropdown-list ${isOpen && 'show'}${isReverse}`}>
         {items.map((item, index) => (
         <li
           className={`app-dropdown-list-item${index === selectedItem ? ' selected':''}`}

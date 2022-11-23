@@ -31,7 +31,7 @@ render() {
       backgroundColorActive="#ddd"
       animationType="fade">
         <div style={{height:150,width:250,justifyContent:'center',alignItems:'center',display:'flex'}}>
-          <span style={{fontSize: 28,color:"var(--color_text_default)"}}>View</span>
+          <span style={{fontSize: 28,color:"var(--color-text-default)"}}>View</span>
         </div>
     </View>
 

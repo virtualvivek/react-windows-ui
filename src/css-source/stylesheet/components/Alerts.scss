@@ -1,7 +1,7 @@
 .app-alert {
   @extend .app-dim-overlay;
   @if $platform == "windows10" { color: #fff; }
-  @if $platform == "windows11" { color: var(--color_text_default); }
+  @if $platform == "windows11" { color: var(--color-text-default); }
 
   .app-alert-modal {
     z-index: 99;
@@ -9,28 +9,27 @@
     position: fixed;
     overflow: hidden;
     flex-direction: column;
+    transition-duration: 0.28s;
     box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);
     
     @if $platform == "windows10" {
       width: 52%;
       background: var(--PrimaryColor);
+      transform: translate3d(0,-1%,0) scale(1.015);
     }
     @if $platform == "windows11" {
       width: 40%;
       max-width: 400px;
       border-radius: 8px;
-      transition-duration: 0.28s;
       transform: translate3d(0,-1%,0) scale(1.04);
-      background: var(--color_foreground_default);
+      background: var(--color-foreground-default);
     }
   }
 
-  @if $platform == "windows11" {
-    &.show {
-      .app-alert-modal {
-        transition-duration: 0.28s;
-        transform: translate3d(0,-1%,0) scale(1);
-      }
+  &.show {
+    .app-alert-modal {
+      transition-duration: 0.28s;
+      transform: translate3d(0,-1%,0) scale(1);
     }
   }
 
@@ -67,12 +66,13 @@
   
       &:hover {
         opacity: 0.62;
-        border: 2px solid #fff;
+        border: 2px solid #fff !important;
       }
       &:active {
         opacity: 1;
-        filter: unset;
+        filter: unset !important;
         color: var(--PrimaryColor);
+        transform: unset !important;
         background: #fff !important;
       }
     }

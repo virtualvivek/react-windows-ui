@@ -10,7 +10,7 @@
 
   &:hover {
     color: #fff;
-    background-color: var(--color_primary_alpha);
+    background-color: var(--color-primary-alpha);
   }
   &:active {
     transform: scale(0.965, 0.965);
@@ -26,7 +26,7 @@
       background-color: transparent;
     }
     &:active {
-      background-color: var(--color_primary_alpha);
+      background-color: var(--color-primary-alpha);
     }
   }
 }

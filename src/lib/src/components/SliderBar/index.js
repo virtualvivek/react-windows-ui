@@ -2,13 +2,13 @@ import React from "react";
 
 const SliderBar = (props) => {
 
-  const inputRef = React.useRef()
+  const inputRef = React.useRef();
 
   const toggleVisible = () => {
     if(props.showPopupValue) {
       let ipopup = inputRef.current;
-      ipopup.style.visibility="visible";
-      ipopup.style.opacity="1";
+          ipopup.style.visibility="visible";
+          ipopup.style.opacity="1";
     }
   }
   const toggleHidden = () => {
@@ -32,12 +32,14 @@ const SliderBar = (props) => {
         max={props.max}
         step={props.step}
         onChange={props.onChange}
+        onMouseDown={props.onDragStart}
+        onMouseUp={props.onDragEnd}
         defaultValue={props.defaultValue}
         onMouseEnter={() => toggleVisible()}
         onMouseLeave={() => toggleHidden()}
         style={{
-          background:"linear-gradient(90deg, var(--PrimaryColor)"+(props.defaultValue/props.max) * 100+"%, #999999 20.1%)"
-          }}
+          background:"linear-gradient(90deg, var(--color-day-primary-night-primarylight)"+(props.defaultValue/props.max) * 100+"%, #999999 20.1%)"
+        }}
       />
       { props.showValue && (<span> {props.defaultValue}</span>) }
       { props.showPopupValue && (

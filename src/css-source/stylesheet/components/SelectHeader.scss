@@ -15,8 +15,8 @@
   
 
   select {
-    background-color: var(--color_background_default);
-    color: var(--color_text_default);
+    background-color: var(--color-background-default);
+    color: var(--color-text-default);
     @extend .transition-background-400ms;
 
     width: 100%;
@@ -30,7 +30,7 @@
       outline: none;
     }
     option {
-      background-color: var(--color_background_default);
+      background-color: var(--color-background-default);
     }
     &[disabled] {
       @extend .input-field-default-disabled;

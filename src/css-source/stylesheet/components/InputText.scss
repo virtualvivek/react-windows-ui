@@ -24,7 +24,7 @@
   @if $platform == "windows11" {
     .app-input-label:has(+ .app-input-text:focus) {
       margin-bottom: 0;
-      border-bottom: 2px solid var(--color_day_primary_night_primarylight);
+      border-bottom: 2px solid var(--color-day-primary-night-primarylight);
     }
     .app-input-label + .app-input-text {
       border-start-start-radius: 0;
@@ -52,12 +52,12 @@
     width: max-content;
     padding: 0 10px;
     border-right-width: 0 !important;
-    background: var(--color_background_default);
+    background: var(--color-background-default);
     @extend .transition-background-400ms;
 
     @if $platform == "windows10" {
       border: 2px solid #999;
-      background-color: var(--color_grey_light_alpha);
+      background-color: var(--color-grey-light-alpha);
     }
     @if $platform == "windows11" {
       margin-bottom: 1px;

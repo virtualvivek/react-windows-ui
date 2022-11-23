@@ -34,7 +34,7 @@
       justify-content: center;
 
         &:hover { background-color: var(--color_link_bg_hover); }
-        &:active { background-color: var(--color_link_bg_active); }
+        &:active { background-color: var(--color-link-bg-active); }
     }
 
     .app-navbar-submenu-title { 
@@ -58,7 +58,7 @@
       transition: transform 0.2s ease-in-out;
     }
   }
-  .app-navbar-wrap.toggled {
+  .app-navbar-wrap.toggled-float {
     nav {
       transform-origin: 100% 50%;
       transform: translateX(0);

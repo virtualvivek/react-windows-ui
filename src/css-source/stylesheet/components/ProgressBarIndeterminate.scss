@@ -4,7 +4,7 @@
   overflow: hidden;
   display: inline-flex;
   transition: height 0.15s ease-out;
-  background-color: var(--color_button_default);
+  background-color: var(--color-button-default);
   @if $platform == "windows11" { border-radius: 4px; }
 }
 .app-progress-indeterminate:not(.animate) {
@@ -18,10 +18,10 @@
   animation: indeterminateAnimation 1s infinite linear;
   @if $platform == "windows11" {
     border-radius: 4px;
-    background-color: var(--color_day_primary_night_primarylight);
+    background-color: var(--color-day-primary-night-primarylight);
   }
   @if $platform == "windows10" {
-    background-image: radial-gradient(circle at 50% 50%, var(--color_day_primary_night_primarylight) 10%, transparent 90%);
+    background-image: radial-gradient(circle at 50% 50%, var(--color-day-primary-night-primarylight) 10%, transparent 90%);
   }
   
 }

@@ -50,6 +50,18 @@ const PropsView = () => {
           <td>Set's SliderBar onChange listener</td>
         </tr>
         <tr>
+          <td><p className="app-code">onDragStart</p></td>
+          <td>function</td>
+          <td>null</td>
+          <td>Set's SliderBar onDragStart listener</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onDragEnd</p></td>
+          <td>function</td>
+          <td>null</td>
+          <td>Set's SliderBar onDragEnd listener</td>
+        </tr>
+        <tr>
           <td><p className="app-code">showValue</p></td>
           <td>boolean</td>
           <td>true</td>

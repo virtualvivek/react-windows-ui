@@ -11,7 +11,7 @@
           box-shadow: inset 0 0 0 1000px #ffffff99;
         }
         @if $platform == "windows11" {
-          background-color: var(--color_link_bg_hover);
+          background-color: var(--color-link-bg-hover);
           &::before {
             width: 3px;
             height: 18px;
@@ -19,7 +19,7 @@
             position: absolute;
             left: 0;
             border-radius: 50px;
-            background-color: var(--color_day_primary_night_primarylight);
+            background-color: var(--color-day-primary-night-primarylight);
           }
         }
       }

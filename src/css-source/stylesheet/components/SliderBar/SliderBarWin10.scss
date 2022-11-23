@@ -17,14 +17,15 @@
       appearance: none;
       border-radius: 100px;
       -webkit-appearance: none;
-      background: var(--PrimaryColor);
+      background: var(--color-day-primary-night-primarylight);
       transition: background 0.15s ease-in-out;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.20);
 
       &:hover {
-        filter: brightness(0.8);
+        filter: brightness(0.9);
       }
       &:active {
-        transform: scale(0.9, 0.9);
+        transform: scale(0.95, 0.95);
       }
     }
     &::-moz-range-thumb {
@@ -34,7 +35,7 @@
       cursor: pointer;
       user-select: none;
       border-radius: 100px;
-      background: var(--PrimaryColor);
+      background: var(--color-day-primary-night-primarylight);
       transition: background 0.15s ease-in-out;
     }
     &::-moz-range-thumb:hover,
@@ -59,14 +60,14 @@
       &::-webkit-slider-thumb {
         width: 20px !important;
         height: 20px;
-        border: 3px solid var(--PrimaryColor);
-        background: var(--color_background_default);
+        border: 3px solid var(--color-day-primary-night-primarylight);
+        background: var(--color-background-default);
       }
       &::-moz-range-thumb {
         width: 14px;
         height: 14px;
-        border: 3px solid var(--PrimaryColor);
-        background: var(--color_background_default);
+        border: 3px solid var(--color-day-primary-night-primarylight);
+        background: var(--color-background-default);
       }
     }
   }

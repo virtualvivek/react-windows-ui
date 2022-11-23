@@ -11,11 +11,11 @@
       margin-top: -5px;
       overflow: overlay;
       box-shadow: 0 1px 1px #88888877;
-      background: var(--color_background_default);
+      background: var(--color-background-default);
   
       li a {
-        &:hover { background: var(--color_grey_light); }
-        &:active { background: var(--color_link_bg_hover) !important; }
+        &:hover { background: var(--color-grey-light); }
+        &:active { background: var(--color-link-bg-hover) !important; }
       }
     }
   }

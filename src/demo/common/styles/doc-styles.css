@@ -24,22 +24,22 @@
   padding: 2px 8px;
   user-select: none;
   border-radius: 20px;
-  color: var(--color_text_default);
-  background: var(--color_link_bg_hover);
+  color: var(--color-text-default);
+  background: var(--color-link-bg-hover);
 }
 .docs-btn-branch-selector:hover {
   opacity: 0.7;
-  background: var(--color_link_bg_hover);
+  background: var(--color-link-bg-hover);
 }
 .docs-btn-branch-selector:active {
-  background: var(--color_link_bg_active);
+  background: var(--color-link-bg-active);
 }
 
 .docs-btn-branch-dialog-txt {
   padding: 5px;
   font-size: 18px;
-  color: var(--color_text_default);
+  color: var(--color-text-default);
 }
 .docs-btn-branch-dialog-txt:hover {
-  background: var(--color_link_bg_hover);
+  background: var(--color-link-bg-hover);
 }

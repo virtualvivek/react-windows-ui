@@ -10,8 +10,8 @@ body {
   
   margin: 0;
   padding: 0;
-  color: var(--color_text_default);
-  background-color: var(--color_background_default);  
+  color: var(--color-text-default);
+  background-color: var(--color-background-default);  
 }
 .app-code {
   @extend .transition-background-400ms;
@@ -20,7 +20,7 @@ body {
   line-height: 1;
   border-radius: 6px;
   display: inline-block;
-  background-color: var(--color_navbar_bg_default);
+  background-color: var(--color-navbar-bg-default);
 }
 
 h1 { font-size: 2em; }
@@ -55,7 +55,7 @@ a {
     background-color: #DDD;
   }
   &:focus-visible {
-    outline: 2px solid var(--color_button_hover);
+    outline: 2px solid var(--color-button-hover);
   }
 }
 
@@ -64,7 +64,7 @@ a {
   width: 95%;
   height: 1px;
   margin: 10px 10px 10px 0;
-  background: var(--color_button_default);
+  background: var(--color-button-default);
 }
 
 .app-ul-content li {

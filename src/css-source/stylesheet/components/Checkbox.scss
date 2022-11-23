@@ -22,8 +22,8 @@ label.app-checkbox {
       margin-top: -3px;
       margin-left: -3px;
       border-radius: 0;
-      border: 2px solid var(--color_button_hover);
-      background-color: var(--color_background_default);
+      border: 2px solid var(--color-button-hover);
+      background-color: var(--color-background-default);
       @extend .transition-background-400ms;
 
       @if $platform == "windows11" {
@@ -39,8 +39,8 @@ label.app-checkbox {
       }
       @if $platform == "windows11" {
         &::before {
-          background: var(--color_day_primary_night_primarylight);
-          border: 2px solid var(--color_day_primary_night_primarylight);
+          background: var(--color-day-primary-night-primarylight);
+          border: 2px solid var(--color-day-primary-night-primarylight);
         }
       }
       
@@ -53,17 +53,17 @@ label.app-checkbox {
         left: 3px;
         transform: rotate(45deg);
         @if $platform == "windows10" { border: solid white; }
-        @if $platform == "windows11" { border: solid var(--color_background_default); }
+        @if $platform == "windows11" { border: solid var(--color-background-default); }
         border-width: 0 2px 2px 0;
       }
 
       &:disabled {
         &::before {
-          background: var(--color_link_bg_hover);
-          border: 2px solid var(--color_button_hover);
+          background: var(--color-link-bg-hover);
+          border: 2px solid var(--color-button-hover);
         }
         &::after {
-          border: solid var(--color_button_hover);
+          border: solid var(--color-button-hover);
           border-width: 0 2px 2px 0;
         }
       }

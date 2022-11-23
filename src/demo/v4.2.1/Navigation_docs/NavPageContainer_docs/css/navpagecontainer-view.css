@@ -10,7 +10,7 @@
 .demo-navpagecontainer-navbar {
     width: 60px;
     height: 100%;
-    background-color: var(--color_navbar_bg_default);
+    background-color: var(--color-navbar-bg-default);
 }
 .demo-navpagecontainer-rows-header {
     display: flex;
@@ -23,8 +23,8 @@
 .demo-navpagecontainer-rows-header .demo-navpage-item {
     height: 2px;
     width: 10px;
-    border-top: 2px solid var(--color_link_bg_active);
-    border-bottom: 2px solid var(--color_link_bg_active);
+    border-top: 2px solid var(--color-link-bg-active);
+    border-bottom: 2px solid var(--color-link-bg-active);
 }
 
 .demo-navpagecontainer-page-column {
@@ -49,8 +49,8 @@
     
     margin: 15px;
     display: flex;
-    background: var(--color_navbar_bg_default);
-    border: 1px solid var(--color_link_bg_hover);
+    background: var(--color-navbar-bg-default);
+    border: 1px solid var(--color-link-bg-hover);
 }
 .demo-navpagecontainer-page.no-padding{
     margin: 20px 0 0 0;
@@ -63,7 +63,7 @@
 }
 .demo-navpagecontainer-page.no-padding .demo-navpagecontainer-page{
     height: auto;
-    background-color: var(--color_button_default);
+    background-color: var(--color-button-default);
 }
 
 .demo-navpagecontainer-view i {

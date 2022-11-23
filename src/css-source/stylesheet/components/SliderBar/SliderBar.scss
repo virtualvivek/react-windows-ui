@@ -20,7 +20,7 @@
   span {
     line-height: 0;
     font-size: 18px;
-    color: var(--color_text_default);
+    color: var(--color-text-default);
   }
   .app-range-slider-popup {
     padding: 12px 5px;
@@ -32,8 +32,9 @@
     font-size: 12px;
     font-weight: 700;
     transition: 0.08s ease;    
-    background: var(--color_button_default);
-    box-shadow: 0 0 2px var(--color_button_default);
+    background: var(--color-button-default);
+    box-shadow: 0 0 2px var(--color-button-default);
+    @if $platform == "windows11" { border-radius: 4px; }
   }
 }
 

@@ -4,7 +4,7 @@
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
-    background-color: var(--color_link_bg_hover);
+    background-color: var(--color-link-bg-hover);
 }
 .start-view {
     height: 120px;

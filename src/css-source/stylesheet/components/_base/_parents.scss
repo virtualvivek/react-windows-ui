@@ -9,14 +9,14 @@
 }
 .font-icon-dark {
   font-family: icons10;
-  color: var(--color_text_default);
+  color: var(--color-text-default);
 }
 .font-icon-light {
   @extend .font-icon-dark;
-  color: var(--color_background_default);
+  color: var(--color-background-default);
 }
 .color-primary {
-  color: var(--color_day_primary_night_primarylight);
+  color: var(--color-day-primary-night-primarylight);
 }
 
 .app-align-center {
@@ -97,8 +97,8 @@
   box-shadow: none;
   padding: 0 0 0 10px;
   box-sizing: content-box;
-  color: var(--color_text_default);
-  background: var(--color_background_default);
+  color: var(--color-text-default);
+  background: var(--color-background-default);
 
   @if $platform == "windows10" {
     height: 30px;
@@ -115,7 +115,7 @@
     border-bottom: 1px solid #777;
     &:focus {
       margin-bottom: 0;
-      border-bottom: 2px solid var(--color_day_primary_night_primarylight);
+      border-bottom: 2px solid var(--color-day-primary-night-primarylight);
     }
   }
   
@@ -165,9 +165,9 @@
   overflow-x: hidden;
   visibility: hidden;
   position: absolute;
-  background: var(--color_navbar_bg_default);
-  @if $platform == "windows10" { border-color: var(--color_button_default); box-shadow: 0 1px 1px #55555544; }
-  @if $platform == "windows11" { border-color: var(--color_grey_light); border-radius: 6px; box-shadow: 0 2px 7px #22222244; }
+  background: var(--color-navbar-bg-default);
+  @if $platform == "windows10" { border-color: var(--color-button-default); box-shadow: 0 1px 1px #55555544; }
+  @if $platform == "windows11" { border-color: var(--color-grey-light); border-radius: 6px; box-shadow: 0 2px 5px #22222244; }
 
   &.show {
     @extend .transition_dropdown_show;
@@ -185,15 +185,15 @@
       padding: 8px 10px;
       position: relative;
       align-items: center;
-      color: var(--color_text_default);
+      color: var(--color-text-default);
       @extend .tap-highlight-none;
       @if $platform == "windows11" { margin: 5px; border-radius: 4px; }
 
       &:hover {
-        background-color: var(--color_link_bg_hover);
+        background-color: var(--color-link-bg-hover);
       }
       &:active {
-        background-color: var(--color_link_bg_active);
+        background-color: var(--color-link-bg-active);
       }
       i {
         line-height: 0;
@@ -209,7 +209,7 @@
   display: block;
   text-align: right;
   @if $platform == "windows11" {
-    border-top: 1px solid var(--color_link_bg_hover);
-    background-color: var(--color_navbar_bg_default);
+    border-top: 1px solid var(--color-link-bg-hover);
+    background-color: var(--color-navbar-bg-default);
   }
 }

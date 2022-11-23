@@ -4,7 +4,7 @@
     height: 30px;
     border: none;
     margin-left: -32px;
-    background-color: var(--color_navbar_bg_default);
+    background-color: var(--color-navbar-bg-default);
     @extend .transition-background-400ms;
     
     &:hover, &:active {
@@ -27,7 +27,7 @@
 }
 
 .app-input-search-box {
-  &::after { 
+  &::after {
     z-index: 1;
     content: "\f1b9";
     font-weight: 600;
@@ -52,7 +52,8 @@
         border-color: var(--PrimaryColor);
       }
     }
-    &::-webkit-search-cancel-button{
+    &::-webkit-search-cancel-button {
+      filter: grayscale(0.8);
       right: 40px;
       position: relative;
     }
@@ -63,9 +64,9 @@
   .app-input-search-bar {
     button:not(:active) {
       &:hover {
-        background: var(--color_navbar_bg_default);
+        background: var(--color-navbar-bg-default);
         &::after {
-          color: var(--color_text_default) !important;
+          color: var(--color-text-default) !important;
         }
       }
     }

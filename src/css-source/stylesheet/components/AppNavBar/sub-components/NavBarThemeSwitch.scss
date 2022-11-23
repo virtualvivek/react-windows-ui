@@ -12,10 +12,10 @@
   -webkit-tap-highlight-color: transparent;
 
   &:hover {
-    background: var(--color_link_bg_hover);
+    background: var(--color-link-bg-hover);
   }
   &:active {
-    background: var(--color_link_bg_active);
+    background: var(--color-link-bg-active);
   }
 
   span {
@@ -72,7 +72,7 @@
   transition: transform 0.3s ease 0.1s, box-shadow 0.2s ease 0s;
 }
 .app-navbar-theme-switch input:checked + .app-navbar-theme-switch-view:before {
-  background: var(--color_text_default);
+  background: var(--color-text-default);
   transition: background 0.3s ease 0.1s;
 }
 .app-navbar-theme-switch input:checked + .app-navbar-theme-switch-view:after {

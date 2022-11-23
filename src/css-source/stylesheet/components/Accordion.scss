@@ -12,10 +12,10 @@
   user-select: none;
   flex-direction: row;
   justify-content: space-between;
-  @if $platform == "windows10" { background-color: var(--color_navbar_bg_default); }
-  @if $platform == "windows11" { background-color: var(--color_button_default); border-radius: 4px; }
+  @if $platform == "windows10" { background-color: var(--color-navbar-bg-default); }
+  @if $platform == "windows11" { background-color: var(--color-button-default); border-radius: 4px; }
   &:active {
-    background-color: var(--color_button_default);
+    background-color: var(--color-button-default);
     @extend .transition-scale-active;
   }
 }

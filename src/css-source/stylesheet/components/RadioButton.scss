@@ -10,7 +10,7 @@
   cursor: pointer;
   border-radius: 50%;
   transition: 0.2s ease;
-  border: 2px solid var(--color_text_default);
+  border: 2px solid var(--color-text-default);
   
   vertical-align: middle;
   appearance: none;
@@ -18,19 +18,19 @@
   @if $platform == "windows10" {
     &:checked {
       border: 2px solid var(--PrimaryColor);
-      background-color: var(--color_text_default);
-      box-shadow: inset 0 0 0 2.8px var(--color_background_default);
+      background-color: var(--color-text-default);
+      box-shadow: inset 0 0 0 2.8px var(--color-background-default);
     }
   }
   @if $platform == "windows11" {
     &:checked {
       transition: border 0.4s all;
-      border: 4px solid var(--color_day_primary_night_primarylight);
-      box-shadow: inset 0 0 0 2px var(--color_background_default);
+      border: 4px solid var(--color-day-primary-night-primarylight);
+      box-shadow: inset 0 0 0 2px var(--color-background-default);
     }
     &:active {
       transition: 0s ease;
-      border: 6px solid var(--color_day_primary_night_primarylight);
+      border: 6px solid var(--color-day-primary-night-primarylight);
     }
   }
 
@@ -38,8 +38,8 @@
   &:disabled {
     cursor: not-allowed;
     filter: opacity(0.7);
-    border-color: var(--color_button_hover);
-    background-color: var(--color_button_hover);
+    border-color: var(--color-button-hover);
+    background-color: var(--color-button-hover);
   }
 }
 

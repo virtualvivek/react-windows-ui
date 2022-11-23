@@ -1,6 +1,6 @@
 .app-navbar-name {
   font-weight: 500;
-  color: var(--color_text_default);
+  color: var(--color-text-default);
   @extend .transition-background-400ms;
 
   font-size: 16px;
@@ -11,10 +11,10 @@
 
   &::-moz-selection {
     background: transparent;
-    color: var(--color_text_default);
+    color: var(--color-text-default);
   }
   &::selection {
     background: transparent;
-    color: var(--color_text_default);
+    color: var(--color-text-default);
   }
 }

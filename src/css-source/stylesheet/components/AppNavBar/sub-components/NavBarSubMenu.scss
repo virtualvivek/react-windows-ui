@@ -19,12 +19,12 @@
       padding: 12px 20px;
     }
   
-    &:hover { background-color: var(--color_link_bg_hover); }
+    &:hover { background-color: var(--color-link-bg-hover); }
 
     @if $platform == "windows10" {
       &:active {
         @extend .transition-scale-active;
-        background-color: var(--color_button_default);
+        background-color: var(--color-button-default);
       }
     }
     @if $platform == "windows11" {

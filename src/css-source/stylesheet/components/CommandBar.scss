@@ -24,7 +24,7 @@ ul.app-cmdbar-menu-list .cmdbar-submenu {
   border: 0;
   height: 1px;
   margin: 0 5px;
-  background-color: var(--color_link_bg_active);
+  background-color: var(--color-link-bg-active);
 }
 
 .app-cmdbar-menu {
@@ -39,13 +39,13 @@ ul.app-cmdbar-menu-list .cmdbar-submenu {
   background: none;
   padding: 8px 10px;
   width: max-content;
-  color: var(--color_text_default);
+  color: var(--color-text-default);
 
   &:hover {
-    background: var(--color_grey_light_alpha);
+    background: var(--color-grey-light-alpha);
   }
   &:active {
-    background: var(--color_button_default);
+    background: var(--color-button-default);
   }
   &[disabled] {
     filter: contrast(0);

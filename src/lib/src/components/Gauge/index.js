@@ -77,11 +77,11 @@ Gauge.defaultProps = {
   setProgress: 0,
   showValue: true,
   valueUnit: "",
-  valueColor: "var(--color_text_default)",
+  valueColor: "var(--color-text-default)",
   valueFontSize: 25,
   infoFontSize: 14,
   strokeColor: "var(--PrimaryColor)",
-  backgroundColor: "var(--color_grey_light)"
+  backgroundColor: "var(--color-grey-light)"
 }
 
 export default Gauge

@@ -11,13 +11,13 @@
 
     &:hover {
       transition: 0.15s ease;
-      background-color: var(--color_link_bg_hover);
+      background-color: var(--color-link-bg-hover);
     }
     &:active {
       transition: 0s ease;
 
       @if $platform == "windows10" {
-        background-color: var(--color_link_bg_active);
+        background-color: var(--color-link-bg-active);
       }
       @if $platform == "windows11" {
         opacity: 0.7;
@@ -46,7 +46,7 @@
       align-items: center;
       flex-direction: row;
       display: inline-flex;
-      color: var(--color_text_default);
+      color: var(--color-text-default);
 
       @if $platform == "windows10" {
         padding: 12px 25px;
@@ -81,10 +81,10 @@
           }
         }
         @if $platform=="windows11" {
-          background-color: var(--color_link_bg_hover);
+          background-color: var(--color-link-bg-hover);
 
           &::after {
-          height: 22.5px;
+          height: 22px;
           transition: height 0.25s;
           transform: translate3d(0, 0, 0);
           }
@@ -116,7 +116,7 @@
       margin: 2px;
       user-select: none;
       border-radius: 4px;
-      background-color: var(--color_link_bg_hover);
+      background-color: var(--color-link-bg-hover);
     }
   }
 }

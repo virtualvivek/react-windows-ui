@@ -53,7 +53,7 @@ import Img2 from '../assets/illustration/mountain.jpg'
 import GithubIcon from "../assets/static/GithubIcon"
 
 import '../../lib/config/app-config.css'
-import '../../lib/dist/react-windows-ui.min.css'
+import '../../lib/dist/react-windows-ui-11.min.css'
 
 import { lib_version } from './values'
 
@@ -121,6 +121,7 @@ class AppFourTwoOne extends React.Component {
       </Dialog>
 
       <NavBar
+        collapsed
         title={<>React Win UI &nbsp;
           <Link to="#" className="docs-btn-branch-selector" onClick={this.toggleDialog}>
             <span>v{lib_version}&nbsp;<i className="icons10-angle-down"></i></span>

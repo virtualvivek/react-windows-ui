@@ -3,10 +3,10 @@
   cursor: pointer;
 
   &:hover {
-    background-color: var(--color_link_bg_hover);
+    background-color: var(--color-link-bg-hover);
   }
   &:active {
-    background-color: var(--color_link_bg_active);
+    background-color: var(--color-link-bg-active);
   }
   &::after {
     font-size: 24px;

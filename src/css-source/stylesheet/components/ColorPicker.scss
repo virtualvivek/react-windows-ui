@@ -11,7 +11,7 @@
     display: inline-block;
     border: 2px solid transparent;
 
-    &:hover { border: 2px solid var(--color_text_default); }
+    &:hover { border: 2px solid var(--color-text-default); }
     &:active { filter: brightness(0.6); }
 
     &::before {
@@ -24,8 +24,8 @@
       font-family: icons10;
       position: relative;
       transition: all 0.2s;
-      color: var(--color_background_default);
-      background: var(--color_text_default);  
+      color: var(--color-background-default);
+      background: var(--color-text-default);  
     }
 
     @if $platform == "windows11" {
@@ -47,7 +47,7 @@
   }
   div:hover,
   .item:checked + div {
-    border: 2px solid var(--color_text_default);
+    border: 2px solid var(--color-text-default);
   }
 
   &.palette {
@@ -56,7 +56,7 @@
       position: absolute;
     }
     div {
-      border: 2px solid var(--color_text_default);
+      border: 2px solid var(--color-text-default);
       &::before {
         content: "\f10c";
       }

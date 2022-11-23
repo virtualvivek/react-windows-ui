@@ -7,12 +7,14 @@ import CmdBarSubMenu from "./CmdBarSubMenu";
 const CommandBarMenu = (props) => {
 
   let _menu_trigger;
-  const wrapperRef = useRef(null);
+  
   const subMenusRef = useRef([]);
-  const [currentSubMenu, setCurrentSubMenu] = useState(null);
+  const wrapperRef = useRef(null);
+  
   const [isReverse, setReverse] = useState("");
   const [menubar, setMenubar] = useState(false);
   const [isMenuDirection, setMenuDirection] = useState("");
+  const [currentSubMenu, setCurrentSubMenu] = useState(null);
 
   const hideCurrentSubmenu = () => {
     if(currentSubMenu) {
@@ -72,26 +74,33 @@ const CommandBarMenu = (props) => {
                 onClick={() => hideAllMenu()}
                 ref={(el) => (subMenusRef.current[index] = el)}
                 className="app-cmdbar-menu-list cmdbar-submenu">
-            { child.props.children.map((child_, index) => {
-                return [
-                  child_.type === CmdBarSubMenu && (
-                    <CmdBarSubMenu key={index} label={child_.props.label} icon={child_.props.icon}/>
-                  )
-                ]
-              })
-            }
-            </ul>
+                { child.props.children.map((child_, index) => {
+                    return [
+                      child_.type === CmdBarSubMenu && (
+                        <CmdBarSubMenu
+                          key={index}
+                          icon={child_.props.icon}
+                          label={child_.props.label}
+                        />
+                      )
+                    ]
+                  })
+                }
+              </ul>
             : child.props.children
             ? <ul ref={(el) => (subMenusRef.current[index] = el)}
                 className="app-cmdbar-menu-list cmdbar-submenu">
-                <CmdBarSubMenu key={index} label={child.props.children.props.label} icon={child.props.children.props.icon}/>
+                <CmdBarSubMenu
+                  label={child.props.children.props.label}
+                  icon={child.props.children.props.icon}
+                />
               </ul>
             : <></>
           }
         </li>
       ),
       child.type === CommandBarMenuItemDivider && (
-        <CommandBarMenuItemDivider/>
+        <CommandBarMenuItemDivider key={index}/>
       )
     ];
   });
@@ -102,8 +111,8 @@ const CommandBarMenu = (props) => {
     }
   });
   if (!_menu_trigger) _menu_trigger = <button className="app-cmdbar-button">
-                          <i className="icons10-angle-down"></i>
-                        </button>
+                                        <i className="icons10-angle-down"></i>
+                                      </button>
 
 
   return (
@@ -111,24 +120,26 @@ const CommandBarMenu = (props) => {
       <div className="app-cmdbar-menu-trigger" onClick={toggleMenuBar}>
         {_menu_trigger}
       </div>
-      <ul className={ menubar ? `app-cmdbar-menu-list show${isReverse}${isMenuDirection}` : "app-cmdbar-menu-list"}>
+      <ul className={ menubar
+        ? `app-cmdbar-menu-list show${isReverse}${isMenuDirection}`
+        : "app-cmdbar-menu-list"}>
         {renderMenuItems}
       </ul>
     </div>
   )
 }
 
-const CommandBarMenuItemDivider = () => <hr className="cmdbar-menu-list-item-hr"></hr>;
 const CommandBarMenuItem = ({ children }) => <>{children}</>;
 const CommandBarMenuTrigger = ({ children }) => <>{children}</>;
+const CommandBarMenuItemDivider = () => <hr className="cmdbar-menu-list-item-hr"></hr>;
 
 CommandBarMenuItem.defaultProps = {
   onClick: () => {}
 }
 
-CommandBarMenu.MenuItem = CommandBarMenuItem;
-CommandBarMenu.MenuItemDivider = CommandBarMenuItemDivider;
-CommandBarMenu.MenuTrigger = CommandBarMenuTrigger;
 CommandBarMenu.MenuSubItem = CmdBarSubMenu;
+CommandBarMenu.MenuItem = CommandBarMenuItem;
+CommandBarMenu.MenuTrigger = CommandBarMenuTrigger;
+CommandBarMenu.MenuItemDivider = CommandBarMenuItemDivider;
 
 export default CommandBarMenu;

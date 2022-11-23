@@ -3,14 +3,14 @@
     align-items: center;
     display: inline-flex;
     padding: 15px 15px 15px 10px;
-    color: var(--color_text_default);
+    color: var(--color-text-default);
     border: 2px solid transparent;
     @extend .tap-highlight-none;
     @extend .transition-all-400ms;
     @if $platform == "windows11" { border-radius: 4px; }
     
     &:hover, &.focused {
-      background-color: var(--color_grey_light_alpha);
+      background-color: var(--color-grey-light-alpha);
     }
     &:active {
       @extend .transition-scale-active;
@@ -37,7 +37,7 @@
       user-select: none;
       object-fit: cover;
       word-break: break-word;
-      background-color: var(--color_link_bg_hover);
+      background-color: var(--color-link-bg-hover);
     }
     
     .app-link-compound-subcontainer {
@@ -49,7 +49,7 @@
         font-size: 15px;
         white-space: nowrap;
         line-break: anywhere;
-        color: var(--color_text_default);
+        color: var(--color-text-default);
       }
       p {
         font-size: 12px;
@@ -70,12 +70,12 @@
 
     &.link-border {
       &:hover {
-        border: 2px solid var(--color_link_bg_hover);
+        border: 2px solid var(--color-link-bg-hover);
         background: transparent !important;
       }
       &:active {
-        border: 2px solid var(--color_link_bg_active);
-        background: var(--color_grey_light) !important;
+        border: 2px solid var(--color-link-bg-active);
+        background: var(--color-grey-light) !important;
       }
     }
 }
