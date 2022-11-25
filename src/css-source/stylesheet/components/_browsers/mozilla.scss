@@ -11,6 +11,9 @@
   .app-navbar-wrap nav {
     scrollbar-width: thin;
   }
+  .app-navbar-wrap.toggled nav {
+    scrollbar-width: none;
+  }
   .app-navbar-theme-switch {
     margin: 5px 10px 5px 20px;
   }

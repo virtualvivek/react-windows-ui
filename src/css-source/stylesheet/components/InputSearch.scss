@@ -1,27 +1,37 @@
 .app-input-search-bar {
   button {
-    width: 30px;
-    height: 30px;
-    border: none;
-    margin-left: -32px;
+    @if $platform == "windows10" {
+      width: 30px;
+      height: 30px;
+      border: none;
+      margin-left: -32px;
+    }
+    @if $platform == "windows11" {
+      border: none;
+      padding: 4px 6px;
+      margin-left: -34px;
+    }
+    
     background-color: var(--color-navbar-bg-default);
     @extend .transition-background-400ms;
     
     &:hover, &:active {
-      background-color: var(--PrimaryColor);
+      @if $platform == "windows10" { background-color: var(--PrimaryColor); }
+      @if $platform == "windows11" { background-color: var(--color-link-bg-active); }
     }
     &:active {
       opacity: 0.65;
     }
     &::after {
-      font-weight: 600;
       content: "\f1b9";
       @extend .font-icon-dark;
-      @if $platform == "windows10" { font-size: 18px; }
-      @if $platform == "windows11" { font-size: 16px; }
+      @if $platform == "windows10" { font-size: 18px; font-weight: 600; }
+      @if $platform == "windows11" { font-size: 16px; font-weight: 500; }
     }
-    &:hover::after {
-      color: #fff;
+    @if $platform == "windows10" {
+      &:hover::after {
+        color: #fff;
+      }
     }
   }
 }
@@ -30,12 +40,11 @@
   &::after {
     z-index: 1;
     content: "\f1b9";
-    font-weight: 600;
     margin-left: -29px;
     align-self: center;
     @extend .font-icon-dark;
-    @if $platform == "windows10" { font-size: 18px; }
-    @if $platform == "windows11" { font-size: 16px; }
+    @if $platform == "windows10" { font-size: 18px; font-weight: 600; }
+    @if $platform == "windows11" { font-size: 16px; font-weight: 500; }
   }
 }
 
@@ -53,9 +62,13 @@
       }
     }
     &::-webkit-search-cancel-button {
-      filter: grayscale(0.8);
-      right: 40px;
+      -webkit-appearance: none;
+      height: 18px;
+      width: 18px;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
       position: relative;
+      cursor: pointer;
+      right: 40px;
     }
   }
 }

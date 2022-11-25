@@ -1,8 +1,9 @@
 .app-section-container.transition {
+  height: -webkit-fill-available;
+  height: -moz-available;
   width: -webkit-fill-available;
   width: -moz-available;
   position: absolute;
-  height: auto;
   top: 0;
 
   &.transition-left {

@@ -16,11 +16,33 @@ const TextVarientsCode =
 const TextVarientLightCode =
 `<p className="app-para-light">This is light paragraph used to display long text in your windows application.</p>`;
 
+const ForegroundContainerCode =
+`<div className="app-section-cntr-foreground">
+  <>Content</>
+</div>
+`;
+
+const ForegroundContainerFullCode =
+`<NavPageContainer
+  hasPadding
+  animateTransition={true}
+  backgroundColor={"var(--color-navbar-bg-default)"}>
+  <h1>Foreground Usage</h1>
+
+  <div className="app-section-cntr-foreground">
+    <Button/>
+    <p>You content here.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+
+</NavPageContainer>
+`;
 
 
 export {
   TextHeadingCode,
   TextHeadingNoMgBottomCode,
   TextVarientsCode,
-  TextVarientLightCode
+  TextVarientLightCode,
+  ForegroundContainerCode,
+  ForegroundContainerFullCode
 }

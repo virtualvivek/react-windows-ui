@@ -1,8 +1,9 @@
 import React from 'react'
-import { NavPageContainer, Button } from '../_lib'
+import { NavPageContainer, Button, Link } from '../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { TextHeadingCode, TextHeadingNoMgBottomCode,TextVarientsCode, TextVarientLightCode } from './codes'
+import { TextHeadingCode, TextHeadingNoMgBottomCode,TextVarientsCode, TextVarientLightCode, ForegroundContainerCode } from './codes'
+import { lib_version } from '../values'
 
 class TextsDocs extends React.Component {
   render() {
@@ -81,11 +82,14 @@ class TextsDocs extends React.Component {
           <p>You content here.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <br/>
+        <Link to={`/v${lib_version}/fg_cntr_demo`}><b>See Usage.</b></Link>
+        <br/>
+        <br/>
         <SyntaxHighlighter
           language="javascript"
           style={vscDarkPlus}
           className="code code-container">
-          {TextVarientLightCode}
+          {ForegroundContainerCode}
         </SyntaxHighlighter>
 
         <br/><br/><br/><br/><br/><br/>

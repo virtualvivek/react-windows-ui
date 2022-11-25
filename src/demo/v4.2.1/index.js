@@ -41,6 +41,7 @@ import SliderBarDocs from './SliderBar_docs'
 import SwitchDocs from './Switch_docs'
 import TableViewDocs from './TableView_docs'
 import TextsDocs from './Texts_docs'
+import FGCntrDocs from './Texts_docs/FgCntr'
 import ViewDocs from './View_docs'
 
 import AppJsDefault from './_templates/appjs-default'
@@ -238,6 +239,7 @@ class AppFourTwoOne extends React.Component {
 
         <Route path='colors' element={<ColorsDocs/>} />
         <Route path='utilities' element={<TextsDocs/>} />
+        <Route path='fg_cntr_demo' element={<FGCntrDocs/>} />
 
         <Route path='navbar' element={<NavBarDocs/>} />
         <Route path='navbarlink' element={<NavBarLinkDocs/>} />
