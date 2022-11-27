@@ -1,27 +1,12 @@
-import React, { useState } from "react";
-import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
+import React from "react";
 
 const AvatarView = (props) => {
 
-  const [didLoad, setLoad] = useState(false);
-
-  const renderLoader = () => {
-    return  <div className="app-avatar-loader">
-              <div className="app-loader-busy light animate">
-                <LoaderBusyWrapper/>
-              </div>
-            </div>
-  }
-
   const renderDropShadow = () => {
     return <img
-      className={
-        props.size === "small" ? "app-avatar avatar-sm drop-shadow"
-      : props.size === "large" ? "app-avatar avatar-lg drop-shadow"
-      : "app-avatar drop-shadow"
-      }
+      className="app-avatar drop-shadow"
       src={props.src}
-      alt={props.alt}
+      alt="shadow"
       style={{
         width: props.width,
         height: props.height,
@@ -30,18 +15,32 @@ const AvatarView = (props) => {
     />
   }
 
-  const handleOnLoad = () => {
-    setLoad(true);
+  const renderPlaceholder = () => {
+    var str = props.alt;
+    var matches = str.match(/\b(\w)/g);
+    var acronym = matches.join('');
+    acronym =  acronym.substring(0,3);
+
+    return <svg viewBox="0 0 32 32"><text x="50%" y="21" textAnchor="middle">{acronym}</text></svg>;
+  }
+
+  const renderBadge = () => {
+    if(props.showBadge > 0 || props.showBadge !== "") {
+      return <span
+              className={props.badgePosition === "bottom"
+                ? "app-avatar-badge pos-bottom"
+                : "app-avatar-badge"}>
+                {props.showBadge}
+              </span>;
+    }
+    return <></>;
   }
 
   return (
     <div className="app-avatar-container" title={props.tooltip}>
+      { renderPlaceholder() }
       <img
-        className={
-          props.size === "small" ? "app-avatar avatar-sm"
-        : props.size === "large" ? "app-avatar avatar-lg"
-        : "app-avatar"
-        }
+        className="app-avatar"
         src={props.src}
         alt={props.alt}
         style={{
@@ -49,21 +48,21 @@ const AvatarView = (props) => {
           height: props.height,
           objectFit: props.objectFit,
         }}
-        // onLoad={() => setLoad(true)}
-        onLoad={() => { handleOnLoad(); props.onLoad() }}
-        onError={() => { handleOnLoad(); props.onError() }}
+        onLoad={props.onLoad}
+        onError={props.onError}
       />
+      { props.showBadge && renderBadge() }
       { props.showDropShadow && (renderDropShadow()) }
-      { props.isLoading && (renderLoader()) }
-      { didLoad ? <></> : renderLoader() }
     </div>
   )
 }
 
 AvatarView.defaultProps = {
+  width: 72,
+  height: 72,
+  alt: "User",
   isLoading: false,
   objectFit: "cover",
-  alt: "avatar image",
   onLoad: () => {},
   onError: () => {}
 }

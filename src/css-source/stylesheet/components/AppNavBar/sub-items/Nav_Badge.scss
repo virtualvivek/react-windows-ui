@@ -1,15 +1,15 @@
 .app-navbar-wrap .app-badge {
-  height: 18px;
-  width: auto;
+  height: 16px;
+  min-width: 8px;
   position: relative;
   top: -8px;
-  padding: 0 5px;
+  padding: 0 4px;
   margin-left: -10px;
   display: inline-flex;
   align-items: center;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 10px;
   color: white;
   border-radius: 50px;
   background: #ff3b30;
+  justify-content: center;
 }

@@ -16,25 +16,15 @@
     &:active {
       transition: 0s ease;
 
-      @if $platform == "windows10" {
-        background-color: var(--color-link-bg-active);
-      }
-      @if $platform == "windows11" {
-        opacity: 0.7;
-      }
+      @if $platform == "windows10" { background-color: var(--color-link-bg-active); }
+      @if $platform == "windows11" { opacity: 0.7; }
 
       span {
         transform: scale(0.98, 0.98);
         transition: transform 0s ease-in-out;
       }
 
-      @if $platform == "windows11" {
-        a, a.active {
-          &::after {
-            height: 18px;
-          }
-        }
-      }
+      @if $platform == "windows11" { a, a.active { &::after { height: 18px; } } }
     }
 
     a {
@@ -48,12 +38,8 @@
       display: inline-flex;
       color: var(--color-text-default);
 
-      @if $platform == "windows10" {
-        padding: 12px 25px;
-      }
-      @if $platform == "windows11" {
-        padding: 10px 15px;
-      }
+      @if $platform == "windows10" { padding: 12px 25px; }
+      @if $platform == "windows11" { padding: 10px 15px; }
 
       &::after {
         left: 0;

@@ -30,6 +30,7 @@ class AvatarViewDocs extends React.Component {
         size="large"
         tooltip="IronMan"
         showDropShadow={false}
+        showBadge={7}
         isLoading={this.state.stateLoadingImg}
       />
       <br/><br/>

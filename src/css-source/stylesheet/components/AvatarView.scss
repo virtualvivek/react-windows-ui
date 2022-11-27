@@ -2,18 +2,10 @@
   z-index: 1;
   width: 124px;
   height: 124px;
+  color: transparent;
   border-radius: 50%;
-  text-align: center;
-  background: #DDDDDD77;
-
-  &.avatar-lg {
-    width: 164px;
-    height: 164px;
-  }
-  &.avatar-sm {
-    width: 84px;
-    height: 84px;
-  }
+  -moz-user-drag: none;
+  -webkit-user-drag: none;
 
   &.drop-shadow {
     top: 14px;
@@ -21,43 +13,46 @@
     opacity: 0.7;
     filter: blur(8px);
     position: absolute;
+    -moz-user-drag: none;
+    -webkit-user-drag: none;
   }
 }
 .app-avatar-container {
   position: relative;
+  border-radius: 50%;
   display: inline-flex;
   justify-content: center;
+  background: var(--color-button-default);
 
-  .app-avatar-loader {
-    z-index: 2;
-    width: 100%;
-    height: 100%;
+  .app-avatar-badge {
+    z-index: 1;
     position: absolute;
-    text-align: center;
+    right: 0;
+    color: #fff;
+    height: 16px;
+    padding: 0 4px;
+    min-width: 8px;    
+    font-size: 10px;
+    border-radius: 50px;
     align-items: center;
-    border-radius: 50%;
-    background: #44444477;
-    
+    display: inline-flex;
+    justify-content: center;
+    border: 2px solid var(--color-background-default);
+    background: var(--color-day-primary-night-primarylight);
 
-    .app-loader-busy {
-      top: 35%;
-      margin: auto;
+    &.position-bottom {
+      right: unset;
+      left: 0;
     }
   }
-}
 
-
-@mixin avatar-view-mobile() {
-  .app-avatar {
-    width: 104px;
-    height: 104px;
-    &.avatar-lg {
-      width: 144px;
-      height: 144px;
-    }
-    &.avatar-sm {
-      width: 64px;
-      height: 64px;
-    }
+  svg {
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: var(--color-text-default);
   }
 }

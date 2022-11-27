@@ -51,7 +51,7 @@ const PropsView = () => {
           </tr>
           <tr>
             <td><p className="app-code">showBadge</p></td>
-            <td>integer | string</td>
+            <td>boolean |integer | string</td>
             <td>null</td>
             <td>Set's NavBarItem badge</td>
           </tr>

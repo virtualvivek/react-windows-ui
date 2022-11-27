@@ -11,7 +11,7 @@ const NavBarLink = (props) => {
                 {props.showBadge}
             </div>;
     }
-    else return <></>
+    return <></>;
   }
 
   const renderImg = () => {
