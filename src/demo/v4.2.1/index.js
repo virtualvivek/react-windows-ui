@@ -3,60 +3,23 @@ import { Routes, Route, Link } from 'react-router-dom'
 import { AppTheme, SplashScreen, NavBar, NavBarLink,
         NavBarSubMenu, NavBarSearchSuggestion, NavBarThemeSwitch, Dialog } from './_lib'
 
-import Home from './_pages/Home'
-import GettingStarted from './_pages/GettingStarted'
-import Tables from './_pages/Tables'
-import Icons from './_pages/Icons'
+import { Home, GettingStarted } from './pages'
+import { AppearanceDocs, AppThemeDocs, ClassesDocs, FGCntrDocs, ColorsDocs, Icons } from './utilities'
 
-import NavBarDocs from './Navigation_docs/NavBar_docs'
-import NavBarLinkDocs from './Navigation_docs/NavBarLink_docs'
-import NavBarSubMenuDocs from './Navigation_docs/NavBarSubMenu_docs'
-import NavPageContainerDocs from './Navigation_docs/NavPageContainer_docs'
-import SplashScreenDocs from './Navigation_docs/SplashScreen_docs'
+import { NavBarDocs, NavBarLinkDocs, NavBarSubMenuDocs, NavPageContainerDocs, SplashScreenDocs,
+        AccordionDocs, AlertDocs, AvatarViewDocs, ButtonsDocs,
+        CheckboxDocs, ColorPickerDocs, CommandBarDocs, DialogDocs, ImageViewDocs,
+        InputGroupDocs, InputSearchDocs, LinkDocs, LinkCompoundDocs, ListItemDocs, LoadersDocs,
+        MenuBarDocs, ProgressBarDocs, RadioButtonDocs, SelectBoxDocs, SliderBarDocs, SwitchDocs,
+        TableViewDocs, ViewDocs } from './components'
 
-import AccordionDocs from './Accordion_docs'
-import AlertDocs from './Alert_docs'
-import AppThemeDocs from './AppTheme_docs'
-import AppearanceDocs from './Appearance_docs'
-import AvatarViewDocs from './AvatarView_docs'
-import ButtonsDocs from './Buttons_docs'
-import CheckboxDocs from './Checkbox_docs'
-import ColorsDocs from './Colors_docs'
-import ColorPickerDocs from './ColorPicker_docs'
-import CommandBarDocs from './CommandBar_docs'
-import DialogDocs from './Dialog_docs'
-import GaugeDocs from './Gauge_docs'
-import ImageViewDocs from './ImageView_docs'
-import InputGroupDocs from './InputGroup_docs'
-import InputSearchDocs from './InputSearch_docs'
-import LinkDocs from './Link_docs'
-import LinkCompoundDocs from './LinkCompound_docs'
-import ListItemDocs from './ListItem_docs'
-import LoadersDocs from './LoadersDocs'
-import MenuBarDocs from './MenuBar_docs'
-import ProgressBarDocs from './ProgressBar_docs'
-import RadioButtonDocs from './RadioButton_docs'
-import SelectBoxDocs from './SelectBox_docs'
-import SliderBarDocs from './SliderBar_docs'
-import SwitchDocs from './Switch_docs'
-import TableViewDocs from './TableView_docs'
-import TextsDocs from './Texts_docs'
-import FGCntrDocs from './Texts_docs/FgCntr'
-import ViewDocs from './View_docs'
-
-import AppJsDefault from './_templates/appjs-default'
-import AppJsSearchable from './_templates/appjs-searchable'
-import PageJsDefault from './_templates/pagejs-default'
-import PageJsSplit from './_templates/pagejs-split'
-
-import NavBarItem from './index_nav_items.json'
+import { lib_version } from './values'
+import NavBarItem from './index_itms.json'
 import Img2 from '../assets/illustration/mountain.jpg'
 import GithubIcon from "../assets/static/GithubIcon"
 
 import '../../lib/config/app-config.css'
 import '../../lib/dist/react-windows-ui-11.min.css'
-
-import { lib_version } from './values'
 
 class AppFourTwoOne extends React.Component {
 
@@ -81,9 +44,7 @@ class AppFourTwoOne extends React.Component {
 
   onBranchChange = () => {
     this.toggleDialog();
-    setTimeout(() => {
-      window.location.reload();
-    }, 500);
+    setTimeout(() => { window.location.reload(); }, 500);
   }
 
   render() {
@@ -122,7 +83,7 @@ class AppFourTwoOne extends React.Component {
       </Dialog>
 
       <NavBar
-        collapsed
+        // collapsed
         title={<>React Win UI &nbsp;
           <Link to="#" className="docs-btn-branch-selector" onClick={this.toggleDialog}>
             <span>v{lib_version}&nbsp;<i className="icons10-angle-down"></i></span>
@@ -133,7 +94,7 @@ class AppFourTwoOne extends React.Component {
           <div style={{display: "flex", justifyContent: "space-between", width: "calc(100% - 60px)", alignItems: "center"}}>
             <span className="app-navbar-name">React-windows-ui</span>
             <span className="app-navbar-name">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/virtualvivek/react-windows-ui/">
+              <a className="app-link" target="_blank" rel="noopener noreferrer" href="https://github.com/virtualvivek/react-windows-ui/">
                 <GithubIcon width={25} height={25}/>
               </a>
             </span>
@@ -152,7 +113,6 @@ class AppFourTwoOne extends React.Component {
             {label: 'checkbox', link: 'checkbox'},
             {label: 'commandbar', link: 'commandbar'},
             {label: 'dialogs', link: 'dialogs'},
-            {label: 'gauges', link: 'gauges'},
             {label: 'icons', link: 'icons'},
             {label: 'imageview', link: 'imageview'},
             {label: 'inputtext', link: 'input_group'},
@@ -164,126 +124,136 @@ class AppFourTwoOne extends React.Component {
 
         <NavBarThemeSwitch/>
 
-      <NavBarLink
-        exact
-        to="home"
-        text="Home"
-        imgSrc={Img2}
-      />
-      <NavBarLink
-        to="getting_started"
-        text="Getting Started"
-        icon={<i className="icons10-terminal"></i>}
-      />
-
-      <NavBarLink
-        to="colors"
-        text="Colors"
-        icon={<i className="icons10-color-palette"></i>}
-      />
-      <NavBarLink
-        to="utilities"
-        text="Utilities"
-        icon={<i className="icons10-puzzle"></i>}
-      />
-
-      <NavBarSubMenu title="Navigation">
         <NavBarLink
-          to="navbar"
-          text="NavBar"
-          icon={<i className="icons10-map"></i>}
+          exact
+          to="home"
+          text="Home"
+          imgSrc={Img2}
         />
         <NavBarLink
-          to="navbarlink"
-          text="NavBarLink"
-          icon={<i className="icons10-link"></i>}
+          to="getting_started"
+          text="Getting Started"
+          icon={<i className="icons10-terminal"></i>}
         />
-        <NavBarLink
-          to="navbarsubmenu"
-          text="NavBarSubMenu"
-          icon={<i className="icons10-angle-down"></i>}
-        />
-        <NavBarLink
-          to="navpagecontainer"
-          text="NavPageContainer"
-          icon={<i className="icons10-columns"></i>}
-        />
-        <NavBarLink
-          to="splashscreen"
-          text="SplashScreen"
-          icon={<i className="icons10-window"></i>}
-        />
-      </NavBarSubMenu>
 
+        <NavBarSubMenu title="Navigation">
+          <NavBarLink
+            to="navbar"
+            text="NavBar"
+            icon={<i className="icons10-map"></i>}
+          />
+          <NavBarLink
+            to="navbarlink"
+            text="NavBarLink"
+            icon={<i className="icons10-link"></i>}
+          />
+          <NavBarLink
+            to="navbarsubmenu"
+            text="NavBarSubMenu"
+            icon={<i className="icons10-angle-down"></i>}
+          />
+          <NavBarLink
+            to="navpagecontainer"
+            text="NavPageContainer"
+            icon={<i className="icons10-columns"></i>}
+          />
+          <NavBarLink
+            to="splashscreen"
+            text="SplashScreen"
+            icon={<i className="icons10-window"></i>}
+          />
+        </NavBarSubMenu>
 
-      <h1>Components</h1>
-      <div className="app-hr"></div>
-
-      {this.state.filteredData.map((item, key) => {
-        return <NavBarLink
-                  key={key}
-                  to={item.to}
-                  exact={item.exact}
-                  text={item.text}
-                  icon={<i className={item.icon}></i>}
-                  showBadge={item.showBadge}
-                />
-        })
-      }
-          
-      </NavBar>
-
-      <Routes>
-        <Route path="home" element={<Home/>}  exact />
-        <Route path='getting_started' element={<GettingStarted/>} />
-
-        <Route path='colors' element={<ColorsDocs/>} />
-        <Route path='utilities' element={<TextsDocs/>} />
-        <Route path='fg_cntr_demo' element={<FGCntrDocs/>} />
-
-        <Route path='navbar' element={<NavBarDocs/>} />
-        <Route path='navbarlink' element={<NavBarLinkDocs/>} />
-        <Route path='navbarsubmenu' element={<NavBarSubMenuDocs/>} />
-        <Route path='navpagecontainer' element={<NavPageContainerDocs/>} />
-        <Route path='splashscreen' element={<SplashScreenDocs/>} />
-
-        <Route path='accordion' element={<AccordionDocs/>} />
-        <Route path='alerts' element={<AlertDocs/>} />
-        <Route path='apptheme' element={<AppThemeDocs/>} />
-        <Route path='appearance' element={<AppearanceDocs/>} />
-        <Route path='avatarview' element={<AvatarViewDocs/>} />
-        <Route path='buttons' element={<ButtonsDocs/>} />
-        <Route path='checkbox' element={<CheckboxDocs/>} />
-        <Route path='colorpicker' element={<ColorPickerDocs/>} />
-        <Route path='commandbar' element={<CommandBarDocs/>} />
-        <Route path='dialogs' element={<DialogDocs/>} />
-        <Route path='gauges' element={<GaugeDocs/>} />
-        <Route path='imageview' element={<ImageViewDocs/>} />
-        <Route path='input_group' element={<InputGroupDocs/>} />
-        <Route path='inputsearch' element={<InputSearchDocs/>} />
-        <Route path='links' element={<LinkDocs/>} />
-        <Route path='linkcompound' element={<LinkCompoundDocs/>} />
-        <Route path='listitem' element={<ListItemDocs/>} />
-        <Route path='loaders' element={<LoadersDocs/>} />
-        <Route path='menubar' element={<MenuBarDocs/>} />
-        <Route path='progressbar' element={<ProgressBarDocs/>} />
-        <Route path='radio_button' element={<RadioButtonDocs/>} />
-        <Route path='selectbox' element={<SelectBoxDocs/>} />
-        <Route path='sliderbar' element={<SliderBarDocs/>} />
-        <Route path='switch' element={<SwitchDocs/>} />
-        <Route path='tableview' element={<TableViewDocs/>} />
-        <Route path='view_' element={<ViewDocs/>} />
-
-        <Route path='tables' element={<Tables/>} />
-        <Route path='icons' element={<Icons/>} />
-
-        <Route path='AppJsDefault' element={<AppJsDefault/>} />
-        <Route path='AppJsSearchable' element={<AppJsSearchable/>} />
-        <Route path='PageJsDefault' element={<PageJsDefault/>} />
-        <Route path='PageJsSplit' element={<PageJsSplit/>} />      
+        <h1>Utilities</h1>
+        <div className="app-hr"></div>      
         
-      </Routes>
-  </>
+        <NavBarLink
+          to="apptheme"
+          text="AppTheme"
+          icon={<i className="icons10-fantasy"></i>}
+        />
+        <NavBarLink
+          to="appearance"
+          text="Appearance"
+          icon={<i className="icons10-sun"></i>}
+        />
+        <NavBarLink
+          to="utilities"
+          text="Classes"
+          icon={<i className="icons10-puzzle"></i>}
+        />
+        <NavBarLink
+          to="colors"
+          text="Colors"
+          icon={<i className="icons10-color-palette"></i>}
+        />
+
+
+        <h1>Components</h1>
+        <div className="app-hr"></div>
+
+        {this.state.filteredData.map((item, key) => {
+          return <NavBarLink
+                    key={key}
+                    to={item.to}
+                    exact={item.exact}
+                    text={item.text}
+                    icon={<i className={item.icon}></i>}
+                    showBadge={item.showBadge}
+                  />
+          })
+        }
+            
+        </NavBar>
+
+        <Routes>
+          <Route path="home" element={<Home/>}  exact />
+          <Route path='getting_started' element={<GettingStarted/>} />
+
+          {/* Utilities */}
+
+          <Route path='colors' element={<ColorsDocs/>} />
+          <Route path='utilities' element={<ClassesDocs/>} />
+          <Route path='fg_cntr_demo' element={<FGCntrDocs/>} />
+
+          <Route path='navbar' element={<NavBarDocs/>} />
+          <Route path='navbarlink' element={<NavBarLinkDocs/>} />
+          <Route path='navbarsubmenu' element={<NavBarSubMenuDocs/>} />
+          <Route path='navpagecontainer' element={<NavPageContainerDocs/>} />
+          <Route path='splashscreen' element={<SplashScreenDocs/>} />
+
+          {/* Components */}
+
+          <Route path='accordion' element={<AccordionDocs/>} />
+          <Route path='alerts' element={<AlertDocs/>} />
+          <Route path='apptheme' element={<AppThemeDocs/>} />
+          <Route path='appearance' element={<AppearanceDocs/>} />
+          <Route path='avatarview' element={<AvatarViewDocs/>} />
+          <Route path='buttons' element={<ButtonsDocs/>} />
+          <Route path='checkbox' element={<CheckboxDocs/>} />
+          <Route path='colorpicker' element={<ColorPickerDocs/>} />
+          <Route path='commandbar' element={<CommandBarDocs/>} />
+          <Route path='dialogs' element={<DialogDocs/>} />
+          <Route path='imageview' element={<ImageViewDocs/>} />
+          <Route path='input_group' element={<InputGroupDocs/>} />
+          <Route path='inputsearch' element={<InputSearchDocs/>} />
+          <Route path='links' element={<LinkDocs/>} />
+          <Route path='linkcompound' element={<LinkCompoundDocs/>} />
+          <Route path='listitem' element={<ListItemDocs/>} />
+          <Route path='loaders' element={<LoadersDocs/>} />
+          <Route path='menubar' element={<MenuBarDocs/>} />
+          <Route path='progressbar' element={<ProgressBarDocs/>} />
+          <Route path='radio_button' element={<RadioButtonDocs/>} />
+          <Route path='selectbox' element={<SelectBoxDocs/>} />
+          <Route path='sliderbar' element={<SliderBarDocs/>} />
+          <Route path='switch' element={<SwitchDocs/>} />
+          <Route path='tableview' element={<TableViewDocs/>} />
+          <Route path='view_' element={<ViewDocs/>} />
+
+          <Route path='icons' element={<Icons/>} />
+          
+        </Routes>
+      </>
     )
   }
 }

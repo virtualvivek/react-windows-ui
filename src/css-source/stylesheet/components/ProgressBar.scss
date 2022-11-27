@@ -35,9 +35,9 @@
       position: absolute;
       transition: width 1s ease-in-out;
       background-color: var(--PrimaryColor);
-      &::after, &::before {
-        display: none !important;
-      }
+      @if $platform == "windows11" { border-radius: 4px; }
+
+      &::after, &::before { display: none !important; }
     }
 
     &.with-icon {

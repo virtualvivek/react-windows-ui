@@ -18,7 +18,6 @@ import CommandBar from './components/CommandBar'
 import ColorPickerItem from './components/ColorPicker/ColorPickerItem'
 import ColorPickerPalette from './components/ColorPicker/ColorPickerPalette'
 import Dialog from './components/Dialog'
-import Gauge from './components/Gauge'
 import ImageView from './components/ImageView'
 import InputText from './components/InputText'
 import { InputSearchBar, InputSearchBox, InputSearchSuggestion } from './components/InputSearch'
@@ -64,7 +63,6 @@ export {
     ColorPickerItem,
     ColorPickerPalette,
     Dialog,
-    Gauge,
     ImageView,
     InputText,
     InputSearchBar,
