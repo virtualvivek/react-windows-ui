@@ -45,7 +45,6 @@ npx create-react-app MyApp --template windows-ui
 ```
 
 # [Boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
-<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_boilerplate_screen.JPG" width="400" />
 
 
 # Manual Installation
