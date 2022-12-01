@@ -66,31 +66,6 @@ import "react-windows-ui/icons/fonts/fonts.min.css";
 </details>
 
 
-# Configuration
-
-**app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br/><br/>
-By `default` project uses <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/config/app-config.css">app-config.css</a>.<br>
-Or `create` your own config file with custom PrimaryColor/Fontfamily like this below:
-
-<details>
-  <summary><b>app-config.css</b></summary><br/>
-  
-```css
-:root {
-  --PrimaryColor: #0078D7; /* Change of your choice */
-  --PrimaryColorLight: #47aeff;  /* Lighter version of --PrimaryColor for DarkMode */
-}
-body {
-  font-family: "Segoe UI";
-}
-::selection {
-  color: #ffffff;
-  background-color: var(--PrimaryColor);
-}
-```
-</details>
-
-
 # Usage
 
 ```js
@@ -113,29 +88,12 @@ npm start
 ```
 
 
-# View Docs for specific version
-Head to the desired version [Release](https://github.com/virtualvivek/react-windows-ui/releases/). <br/>
-Download the Release and start exploring !
-```html
-cd to-your-downloaded-version
-npm install
-npm start
-```
-
-
 # Links
 Here are some useful links.
 
 * [NPM CRA-Template](https://www.npmjs.com/package/cra-template-windows-ui)
 * [NPM React-Windows-UI Library](https://www.npmjs.com/package/react-windows-ui)
 
-
-# RTL Support
-Distribute layout direction from Right to Left.
-```js
-// include rtl styles at some point, probably during your bootstraping
-import "react-windows-ui/dist/react-windows-ui-rtl.min.css";
-```
 
 # Find this project useful? :heart:
 Support it by joining [**stargazers**](https://github.com/virtualvivek/react-windows-ui/stargazers) for this repository. :star:
