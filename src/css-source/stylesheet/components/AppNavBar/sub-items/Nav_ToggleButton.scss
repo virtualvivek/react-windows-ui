@@ -1,6 +1,7 @@
 .app-navbar-wrap .app-navbar-toggle-button {
-  padding: 15px 25px;
   cursor: pointer;
+  @if $platform=="windows10" { padding: 15px 25px; }
+  @if $platform=="windows11" { padding: 10px 20px; margin: 5px; border-radius: 4px; }
 
   &:hover {
     background-color: var(--color-link-bg-hover);
