@@ -6,7 +6,7 @@ const ImageView = (props) => {
   const [didLoad, setLoad] = useState(false);
 
   const renderLoader = () => {
-    return  <div className="app-image-view-loader">
+    return  <div className="app-img-view-loader">
               <div className="app-loader-busy light animate">
                 <LoaderBusyWrapper/>
               </div>
@@ -23,7 +23,7 @@ const ImageView = (props) => {
 
   return (
     <div
-      className="app-image-view-container"
+      className="app-img-view-container"
       title={props.tooltip}
       style={{
         width: props.width,
@@ -33,7 +33,7 @@ const ImageView = (props) => {
         borderRadius: props.borderRadius
       }}>
       <img
-        className="app-image-view"
+        className="app-img-view"
         src={props.src}
         alt={props.alt}
         style={{
@@ -43,7 +43,7 @@ const ImageView = (props) => {
         onLoad={() => { handleOnLoad(); props.onLoad() }}
         onError={() => { handleOnLoad(); props.onError() }}
       />
-      <div className="app-image-words">
+      <div className="app-img-words">
         <h1>{props.title}</h1>
         <span>{props.subtitle}</span>
       </div>

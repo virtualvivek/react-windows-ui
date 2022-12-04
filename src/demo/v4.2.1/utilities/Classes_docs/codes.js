@@ -17,7 +17,7 @@ const TextVarientLightCode =
 `<p className="app-para-light">This is light paragraph used to display long text in your windows application.</p>`;
 
 const ForegroundContainerCode =
-`<div className="app-section-cntr-foreground">
+`<div className="app-section-container-fg">
   <>Content</>
 </div>
 `;
@@ -29,7 +29,7 @@ const ForegroundContainerFullCode =
   backgroundColor={"var(--color-navbar-bg-default)"}>
   <h1>Foreground Usage</h1>
 
-  <div className="app-section-cntr-foreground">
+  <div className="app-section-container-fg">
     <Button/>
     <p>You content here.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>

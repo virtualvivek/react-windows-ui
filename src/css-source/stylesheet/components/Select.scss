@@ -23,6 +23,19 @@
           }
         }
       }
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+
+  &.app-select-menu ul.app-dropdown-list {
+    width: 104%;
+    margin-top: -40px;
+    margin-left: -7px;
+
+    &.show {
+      @extend .transition_select_show;
     }
   }
   

@@ -89,6 +89,25 @@
   animation-name: transition_dropdown_reverse;
 }
 
+@keyframes transition_select {
+  0% {
+    transform: translate3d(0, 0, -20px) scaleY(0.9);
+    transform-origin: top;
+    pointer-events: none;
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0px);
+    transform-origin: top;
+    pointer-events: auto;
+    opacity: 1;
+  }
+}
+.transition_select_show {
+  animation-name: transition_select;
+  animation-timing-function: cubic-bezier(0, -0.04, 0, 1.19);
+}
+
 
 .input-field-default {
   width: 270px;  
@@ -177,12 +196,13 @@
       bottom: 100%;
     }
   }
+
   li {
     a, span {
       display: flex;
+      padding: 10px;
       line-height: 1;
-      font-size: 15px; 
-      padding: 8px 10px;
+      font-size: 15px;
       position: relative;
       align-items: center;
       color: var(--color-text-default);
@@ -196,6 +216,7 @@
         background-color: var(--color-link-bg-active);
       }
       i {
+        height: 15px;
         line-height: 0;
         font-size: 18px;
         padding-right: 5px;

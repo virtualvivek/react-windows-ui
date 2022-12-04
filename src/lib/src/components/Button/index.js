@@ -23,12 +23,12 @@ const Button = (props) => {
   return (
     <button
       className = {
-        props.type ==="primary" ?  `app-btn animate btn-primary ${toggleLoading}`
-      : props.type ==="danger" ? `app-btn animate btn-danger ${toggleLoading}`
-      : props.type ==="success" ? `app-btn animate btn-success ${toggleLoading}`
-      : props.type ==="primary-outline" ? `app-btn animate btn-primary-outline ${toggleLoading}`
-      : props.type ==="danger-outline" ? `app-btn animate btn-danger-outline ${toggleLoading}`
-      : props.type ==="success-outline" ? `app-btn animate btn-success-outline ${toggleLoading}`
+        props.type ==="primary" ?  `app-btn animate app-btn-primary ${toggleLoading}`
+      : props.type ==="danger" ? `app-btn animate app-btn-danger ${toggleLoading}`
+      : props.type ==="success" ? `app-btn animate app-btn-success ${toggleLoading}`
+      : props.type ==="primary-outline" ? `app-btn animate app-btn-primary-outline ${toggleLoading}`
+      : props.type ==="danger-outline" ? `app-btn animate app-btn-danger-outline ${toggleLoading}`
+      : props.type ==="success-outline" ? `app-btn animate app-btn-success-outline ${toggleLoading}`
       : `app-btn animate ${toggleLoading}`
       }
       style={{

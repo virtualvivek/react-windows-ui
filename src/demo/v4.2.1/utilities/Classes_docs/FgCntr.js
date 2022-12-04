@@ -13,7 +13,7 @@ class FGCntrDocs extends React.Component {
       backgroundColor={"var(--color-navbar-bg-default)"}>
       <h1>Foreground Usage</h1>
 
-      <div className="app-section-cntr-foreground">
+      <div className="app-section-container-fg">
           <Button/>
           <p>You content here.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
