@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, SelectNative,Select } from '../../_lib'
+import { NavPageContainer, SelectNative, Select, SelectText } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { SelectImportCode,SelectUsageCode,
@@ -18,6 +18,19 @@ render() {
     <p>The <span className="color-primary">Select</span> component is used to create a drop-down list to choose one value from multiple.</p>
 
     <Select
+      placeholder="Some Name"
+      //defaultValue="blue"
+      //onChange={(value)=> alert(value)}
+      data={[
+        {label: 'blue', value: 'blue'},
+        {label: 'red', value: 'red'},
+        {label: 'orange', value: 'orange'},
+        {label: 'pink', value: 'pink'},
+        {label: 'green', value: 'green'}
+      ]}
+    />
+
+    <SelectText
       placeholder="Some Name"
       //defaultValue="blue"
       //onChange={(value)=> alert(value)}

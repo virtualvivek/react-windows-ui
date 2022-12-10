@@ -2,14 +2,14 @@ import React, { useState,useEffect, useMemo, useRef } from "react";
 import { ScrollView, getScreenOffset } from "../_api";
 import { useOutSideClick } from "../_hooks";
 
-const Select = (props) => {
+const SelectText = (props) => {
   const data_default = [];
   const [isOpen, setOpen] = useState(false);
   const [isReverse, setReverse] = useState("");
   const [iValue, setIValue] = useState("");
-  const [isShown, setIsShown] = useState(false);
   const [ilabel, setILabel] = useState("Select");
   const [items, setItem] = useState(data_default);
+  const [isShown, setIsShown] = useState(false);
 
   useEffect(() => {
     //Check if any default value is given
@@ -44,11 +44,10 @@ const Select = (props) => {
 
 
   const wrapperRef = useRef(null);
-  //useOutSideClick(wrapperRef, () => console.log('OUTSIDE CLICKED'));
   useOutSideClick(wrapperRef, () => setOpen(false));
 
   return (
-    <div className="app-dropdown-menu app-select-menu" ref={wrapperRef} onClick={toggleDropdown}>
+    <div className="app-dropdown-menu app-select-text" ref={wrapperRef} onClick={toggleDropdown}>
       <span>{ilabel}</span>
       <ul className={`app-dropdown-list ${isOpen && 'show'}${isReverse}`}>
         <li
@@ -70,8 +69,8 @@ const Select = (props) => {
   )
 }
 
-Select.defaultProps = {
+SelectText.defaultProps = {
   onChange: () => {}
 }
 
-export default Select;
+export default SelectText;

@@ -34,6 +34,7 @@ import SliderBar from './components/SliderBar'
 import SplashScreen from './components/SplashScreen'
 import Select from './components/Select'
 import SelectNative from './components/SelectNative'
+import SelectText from './components/SelectText'
 import Switch from './components/Switch'
 import TableView from './components/TableView'
 import View from './components/View'
@@ -81,6 +82,7 @@ export {
     SplashScreen,
     Select,
     SelectNative,
+    SelectText,
     Switch,
     TableView,
     ThemeManager,

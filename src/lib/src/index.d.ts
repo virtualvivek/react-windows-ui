@@ -34,6 +34,7 @@ import RadioButton from './components/RadioButton'
 import SliderBar from './components/SliderBar'
 import Select from './components/Select'
 import SelectNative from './components/SelectNative'
+import SelectText from './components/SelectText'
 import Switch from './components/Switch'
 import TableView from './components/TableView'
 import View from './components/View'
@@ -77,6 +78,7 @@ export {
     SliderBar,
     Select,
     SelectNative,
+    SelectText,
     Switch,
     TableView,
     View
