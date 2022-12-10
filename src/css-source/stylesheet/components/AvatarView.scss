@@ -1,23 +1,25 @@
 .app-avatar {
   z-index: 1;
-  width: 124px;
-  height: 124px;
+  width: 72px;
+  height: 72px;
   color: transparent;
   border-radius: 50%;
   -moz-user-drag: none;
   -webkit-user-drag: none;
 
   &.drop-shadow {
-    top: 14px;
+    top: 12%;
     z-index: 0;    
-    opacity: 0.7;
-    filter: blur(8px);
+    opacity: 0.5;
+    filter: blur(5px);
     position: absolute;
+    transform: scale(0.9);
     -moz-user-drag: none;
     -webkit-user-drag: none;
   }
 }
 .app-avatar-container {
+  width: fit-content;
   position: relative;
   border-radius: 50%;
   display: inline-flex;

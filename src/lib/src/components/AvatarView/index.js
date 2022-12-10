@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 const AvatarView = (props) => {
+
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    imgRef.current.style.opacity = 0;
+  }, []);
 
   const renderDropShadow = () => {
     return <img
@@ -8,8 +14,8 @@ const AvatarView = (props) => {
       src={props.src}
       alt="shadow"
       style={{
-        width: props.width,
-        height: props.height,
+        width: props.size,
+        height: props.size,
         objectFit: props.objectFit,
       }}
     />
@@ -21,7 +27,17 @@ const AvatarView = (props) => {
     var acronym = matches.join('');
     acronym =  acronym.substring(0,3);
 
-    return <svg viewBox="0 0 32 32"><text x="50%" y="21" textAnchor="middle">{acronym}</text></svg>;
+    return <svg viewBox="0 0 36 36"><text x="50%" y="24" textAnchor="middle">{acronym}</text></svg>;
+  }
+
+  const onError_ = () => {
+    props.onError();
+    imgRef.current.style.opacity = 0;
+  }
+
+  const onLoad_ = () => {
+    props.onLoad();
+    imgRef.current.style.opacity = 1;
   }
 
   const renderBadge = () => {
@@ -39,17 +55,17 @@ const AvatarView = (props) => {
   return (
     <div className="app-avatar-container" title={props.tooltip}>
       { renderPlaceholder() }
-      <img
+      <img ref={imgRef}
         className="app-avatar"
         src={props.src}
         alt={props.alt}
         style={{
-          width: props.width,
-          height: props.height,
+          width: props.size,
+          height: props.size,
           objectFit: props.objectFit,
         }}
-        onLoad={props.onLoad}
-        onError={props.onError}
+        onLoad={onLoad_}
+        onError={onError_}
       />
       { props.showBadge && renderBadge() }
       { props.showDropShadow && (renderDropShadow()) }
@@ -58,8 +74,6 @@ const AvatarView = (props) => {
 }
 
 AvatarView.defaultProps = {
-  width: 72,
-  height: 72,
   alt: "User",
   isLoading: false,
   objectFit: "cover",

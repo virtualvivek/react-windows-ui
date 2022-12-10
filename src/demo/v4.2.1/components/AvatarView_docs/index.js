@@ -1,48 +1,45 @@
 import React from 'react'
-import { NavPageContainer, AvatarView, Button } from '../../_lib'
+import { NavPageContainer, AvatarView } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import IronMan from '../../../assets/illustration/ironman.jpg'
 import Img2 from '../../../assets/illustration/2.jpg'
 import Img3 from '../../../assets/illustration/3.jpg'
+import Img4 from '../../../assets/anim_avatar2.jpg'
 import { AvatarViewImportCode, AvatarViewUsageCode, AvatarViewUsageLoadingCode } from './codes'
 import PropsView from './props-view'
 
 class AvatarViewDocs extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      stateLoadingImg: false
-    }
-  }
-
-  setLoading = () => { this.setState({stateLoadingImg: true}) }
-  setRegular = () => { this.setState({stateLoadingImg: false}) }
 
   render() {
     return (
     <NavPageContainer hasPadding animateTransition>
       <h1>AvatarView</h1>
 
+    <div style={{display: "flex", alignItems: "center"}}>
       <AvatarView
-        src={IronMan}
-        size="large"
-        tooltip="IronMan"
-        showDropShadow={false}
-        showBadge={7}
-        isLoading={this.state.stateLoadingImg}
+        src={Img4}
+        alt="Anime"
+        size={120}
+        tooltip="User"
+        showDropShadow
       />
-      <br/><br/>
-      <Button
-        value="set Loading"
-        type="primary"
-        onClick={this.setLoading}/>
-        &nbsp;
-      <Button
-        value="set Regular"
-        type="primary-outline"
-        onClick={this.setRegular}/>
+      &nbsp;&nbsp;
+      <div style={{display: "grid"}}>
+        <AvatarView
+          src={Img2}
+          tooltip="SpiderMan"
+          showBadge={7}
+        />
+        <div style={{height: 8}}></div>
+        <AvatarView
+          alt="Iron Man"
+          size={45}
+          tooltip="IronMan"
+        />
+      </div>
+    </div>
+      
+    
 
       <h2>Import</h2>
 
@@ -73,8 +70,7 @@ class AvatarViewDocs extends React.Component {
 
       <AvatarView
         size="medium"
-        src={Img2}
-        isLoading    
+        src={Img2}  
         showDropShadow />
       <br/><br/>
 

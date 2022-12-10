@@ -36,7 +36,7 @@
       @extend .input-field-default-disabled;
     }
   }
-  &::after {
+  &:not(.app-select-text)::after {
     @extend .font-icon-dark;
     position: absolute;
     content: "\f10c";

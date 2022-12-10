@@ -48,17 +48,11 @@ const SelectText = (props) => {
 
   return (
     <div className="app-dropdown-menu app-select-text" ref={wrapperRef} onClick={toggleDropdown}>
-      <span>{ilabel}</span>
+      <span className="app-dropdown-title">{ilabel}</span>
       <ul className={`app-dropdown-list ${isOpen && 'show'}${isReverse}`}>
-        <li
-          className="app-dropdown-list-item selected"
-          key={"selected"}
-          onClick={() => handleItemClick(iValue, ilabel)}>
-            <span>{ilabel}</span>
-        </li>
         {items.map((item, index) => (
         <li
-          className={`app-dropdown-list-item${item.value === iValue ? ' hidden':''}`}
+          className={`app-dropdown-list-item${item.value === iValue ? ' selected':''}`}
           key={index}
           onClick={() => handleItemClick(item.value, item.label)}>
             <span>{item.icon}{item.label}</span>
