@@ -4,23 +4,26 @@ const AvatarViewImportCode =
 const AvatarViewUsageCode =
 `<AvatarView
   src={Image}
-  size="medium"
-  isLoading={false}
+  size={85}
+  alt="Anime"
   showDropShadow={true}
   tooltip="tooltip title"
 />`;
 
 const AvatarViewUsageLoadingCode =
 `<AvatarView
-  src={Image}
-  size="medium"
-  isLoading={true}
+  src={Img}
+  size={80}  
   showDropShadow={true}
-  tooltip="tooltip title"
+  tooltip="Different World"
+  showBadge // boolean | string
+  badgePosition="bottom" // "top" | "bottom"
+  badgeBackgroundColor={"#16ab9c"}
+  badgeTooltip="online"
 />`;
 
 export {
-    AvatarViewImportCode,
-    AvatarViewUsageCode,
-    AvatarViewUsageLoadingCode
+  AvatarViewImportCode,
+  AvatarViewUsageCode,
+  AvatarViewUsageLoadingCode
 }

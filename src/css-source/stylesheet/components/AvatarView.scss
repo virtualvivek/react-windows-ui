@@ -35,6 +35,7 @@
     padding: 0 4px;
     min-width: 8px;    
     font-size: 10px;
+    user-select: none;
     border-radius: 50px;
     align-items: center;
     display: inline-flex;
@@ -42,9 +43,8 @@
     border: 2px solid var(--color-background-default);
     background: var(--color-day-primary-night-primarylight);
 
-    &.position-bottom {
-      right: unset;
-      left: 0;
+    &.pos-bottom {
+      bottom: 0;
     }
   }
 

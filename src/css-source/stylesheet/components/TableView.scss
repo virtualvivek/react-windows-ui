@@ -1,16 +1,24 @@
 .app-table-view-container {
-  width: 100%;
+  @extend .transition-background-400ms;
+  width: fit-content;
   overflow: auto;
+  border: 1px solid var(--color-link-bg-hover);
+  background-color: var(--color-background-default);
+  @if $platform == "windows11" { border-radius: 4px; }
 }
 .app-table-view {
   border-collapse: collapse;
   th {
-    user-select: none;
-    @extend .transition-background-400ms;
+    font-weight: 600;
 
-    &.sortable:hover {
-      cursor: pointer;
-      background-color: var(--color-grey-light-alpha);
+    &.sortable {
+      &:hover {
+        cursor: pointer;
+        background-color: var(--color-grey-light-alpha);
+      }
+      &:active {
+        user-select: none;
+      }
     }
     &.no-sortable {
       pointer-events: none;
@@ -20,7 +28,8 @@
     min-width: fit-content;
   }
   th, td {
-    padding: 10px;
+    font-size: 15px;
+    padding: 6px 12px;
   }
   td, thead {
     border-bottom: 1px solid var(--color-link-bg-hover);

@@ -1,6 +1,6 @@
 label.app-checkbox {
-  user-select: none;
   cursor: pointer;
+  user-select: none;
   @extend .tap-highlight-none;
 
   &:active input[type="checkbox"] {
@@ -25,10 +25,7 @@ label.app-checkbox {
       border: 2px solid var(--color-button-hover);
       background-color: var(--color-background-default);
       @extend .transition-background-400ms;
-
-      @if $platform == "windows11" {
-        border-radius: 4px;
-      }
+      @if $platform == "windows11" { border-radius: 4px; }
     }
     &:checked {
       @if $platform == "windows10" {
@@ -63,8 +60,7 @@ label.app-checkbox {
           border: 2px solid var(--color-button-hover);
         }
         &::after {
-          border: solid var(--color-button-hover);
-          border-width: 0 2px 2px 0;
+          border-color: var(--color-button-hover);
         }
       }
     }

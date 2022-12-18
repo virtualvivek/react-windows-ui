@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-const Switch = (props) => {
+const ProgressBarIndeterminate = (props) => {
   return (
     <div className={props.isLoading ?
                       "app-progress-indeterminate animate"
@@ -10,8 +10,8 @@ const Switch = (props) => {
   )
 }
 
-Switch.defaultProps = {
+ProgressBarIndeterminate.defaultProps = {
   isLoading: true
 }
 
-export default Switch
+export default ProgressBarIndeterminate;

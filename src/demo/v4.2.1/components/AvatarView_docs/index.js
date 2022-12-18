@@ -19,21 +19,24 @@ class AvatarViewDocs extends React.Component {
       <AvatarView
         src={Img4}
         alt="Anime"
-        size={120}
+        size={140}
         tooltip="User"
-        showDropShadow
       />
       &nbsp;&nbsp;
       <div style={{display: "grid"}}>
         <AvatarView
           src={Img2}
+          size={70}
           tooltip="SpiderMan"
-          showBadge={7}
+          showBadge
+          badgeTooltip="online"
+          badgeBackgroundColor={"#16ab9c"}
         />
         <div style={{height: 8}}></div>
         <AvatarView
           alt="Iron Man"
-          size={45}
+          size={65}
+          showBadge={7}
           tooltip="IronMan"
         />
       </div>
@@ -53,9 +56,10 @@ class AvatarViewDocs extends React.Component {
       <h2>Usage</h2>
 
       <AvatarView
-        src={Img3}
-        size="medium"
-        showDropShadow />
+        size={85}
+        src={Img2}  
+        showDropShadow
+      />
       <br/><br/>
 
       <SyntaxHighlighter
@@ -66,12 +70,18 @@ class AvatarViewDocs extends React.Component {
       </SyntaxHighlighter>
 
       <div className="app-hr"></div>
-      <h2 className="m-tb-20">AvatarView <p className="app-code">state loading</p>:</h2>
+      <h2 className="m-tb-20">AvatarView <p className="app-code">with Badge</p> :</h2>
 
       <AvatarView
-        size="medium"
-        src={Img2}  
-        showDropShadow />
+        src={Img3}
+        size={80}
+        showBadge
+        tooltip="Different World"
+        showDropShadow
+        badgePosition='bottom'
+        badgeTooltip="online"
+        badgeBackgroundColor={"#16ab9c"}
+      />
       <br/><br/>
 
       <SyntaxHighlighter

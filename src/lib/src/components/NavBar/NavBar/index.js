@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ThemeManager } from "../../_api";
+import { ThemeManager } from "../../../api";
 
 const NavBar = (props) => {
 
@@ -60,7 +60,7 @@ const NavBar = (props) => {
       <div className="app-navbar-topbar-mobile">
         <span className="app-navbar-toggle-button" onClick={showSidebar}></span>
         {props.titleBarMobile}
-      </div>  
+      </div>
       <nav className="animate" onScroll={scrollEvent}>
         <div className="app-navbar-header"
           style={ props.shadowOnScroll ?

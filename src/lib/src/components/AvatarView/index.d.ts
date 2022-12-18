@@ -6,9 +6,11 @@ export interface AvatarViewProps {
   src ?: ReactNode;
   tooltip ?: string;
   objectFit ?: string;
-  width ?: number | string;
-  height ?: number | string;
   showBadge ?: boolean | any;
+  badgePosition ?: "bottom" | "top";
+  badgeBackgroundColor ?: any;
+  badgeTooltip ?: string;
+  badgeStyle ?: any;
   
   showBackdropShadow ?: boolean;
   onLoad ?: () => void;

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Appearance } from "../../_api";
+import { Appearance } from "../../../api";
 
 const NavBarThemeSwitch = () => {
 

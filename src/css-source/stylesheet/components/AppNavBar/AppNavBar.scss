@@ -4,20 +4,17 @@
 @import "./sub-items/Nav_ToggleButton.scss";
 @import "./sub-items/Nav_Badge.scss";
 @import "./sub-items/Nav_Hr.scss";
-
 @import "./sub-components/NavBarSubMenu.scss";
 @import "./sub-components/NavHeader.scss";
 @import "./sub-components/NavBarSearchBox.scss";
-@import "./sub-components/NavSearchUL.scss";
 @import "./sub-components/NavBarThemeSwitch.scss";
-
 @import "./navbar-mobile/NavBarMobile.scss";
 
 @import "./AppNavToggled.scss";
 
 .app-navbar-wrap {
   z-index: 9;
-  width: 290px;
+  width: 280px;
   height: 100%;
   overflow-y: overlay;
   transition: 0.2s ease;

@@ -1,6 +1,6 @@
 import React, { useState, useRef, Children, useMemo } from "react";
-import { useOutSideClick } from "../../_hooks";
-import { getScreenOffset } from "../../_api";
+import { useOutSideClick } from "../../../hooks";
+import { getScreenOffset } from "../../../api";
 import { Link } from "react-router-dom";
 import CmdBarSubMenu from "./CmdBarSubMenu";
 

@@ -3,10 +3,7 @@ import React, { useRef, useEffect } from "react";
 const AvatarView = (props) => {
 
   const imgRef = useRef(null);
-
-  useEffect(() => {
-    imgRef.current.style.opacity = 0;
-  }, []);
+  useEffect(() => { imgRef.current.style.opacity = 0; }, []);
 
   const renderDropShadow = () => {
     return <img
@@ -43,6 +40,8 @@ const AvatarView = (props) => {
   const renderBadge = () => {
     if(props.showBadge > 0 || props.showBadge !== "") {
       return <span
+              title={props.badgeTooltip}
+              style={{backgroundColor: props.badgeBackgroundColor, ...props.badgeStyle}}
               className={props.badgePosition === "bottom"
                 ? "app-avatar-badge pos-bottom"
                 : "app-avatar-badge"}>

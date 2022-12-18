@@ -21,9 +21,15 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">size</p></td>
-          <td>small | medium | large</td>
-          <td>medium</td>
+          <td>integer | string</td>
+          <td>default</td>
           <td>Sets the avatar size</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">alt</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Sets avatar alt text</td>
         </tr>
         <tr>
           <td><p className="app-code">tooltip</p></td>
@@ -32,16 +38,59 @@ const PropsView = () => {
           <td>Sets avatar hover tooltip</td>
         </tr>
         <tr>
-          <td><p className="app-code">isLoading</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Sets the avatar loading state</td>
+          <td><p className="app-code">objectFit</p></td>
+          <td>CSS Property</td>
+          <td>default</td>
+          <td>Sets avatar objectFit prop</td>
         </tr>
         <tr>
           <td><p className="app-code">showDropShadow</p></td>
           <td>boolean</td>
           <td>false</td>
           <td>Sets avatar blurred drop shadows</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onLoad</p></td>
+          <td>object</td>
+          <td>null</td>
+          <td>Sets the avatar onLoad listener</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onError</p></td>
+          <td>object</td>
+          <td>null</td>
+          <td>Sets the avatar onError listener</td>
+        </tr>
+
+        <tr>
+          <td><p className="app-code">showBadge</p></td>
+          <td>boolean | string | 'jsx'</td>
+          <td>null</td>
+          <td>Sets avatar's badge visibility & value</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">badgePosition</p></td>
+          <td>"bottom" | "top"</td>
+          <td>"top"</td>
+          <td>Sets avatar's badge position</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">badgeStyle</p></td>
+          <td>object</td>
+          <td>[ ]</td>
+          <td>Sets avatar's badge container style</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">badgeTooltip</p></td>
+          <td>string</td>
+          <td>default</td>
+          <td>Sets avatar's badge tooltip</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">badgeBackgroundColor</p></td>
+          <td>CSS Property</td>
+          <td>default</td>
+          <td>Sets avatar's badge backgroundColor</td>
         </tr>
       </tbody>
     </table>

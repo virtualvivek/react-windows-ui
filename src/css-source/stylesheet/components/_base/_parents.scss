@@ -133,6 +133,7 @@
     border: 1px solid #55555555;
     border-bottom: 1px solid #777;
     &:focus {
+      filter: none;
       margin-bottom: 0;
       border-bottom: 2px solid var(--color-day-primary-night-primarylight);
     }

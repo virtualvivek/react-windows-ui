@@ -1,14 +1,15 @@
 ::-webkit-scrollbar {
-  width: 0.85em;
+  width: 15px;
+  background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #88888899;
-
-  @if $platform == "windows11" {
-    border-radius: 2.8px;
-  }
+  background-color: #777777DD;
+  background-clip: padding-box;
+  border: 6px solid transparent;
+  @if $platform == "windows11" { border-radius: 4px; }
 }
 ::-webkit-scrollbar-thumb:hover {
+  border: 2px solid transparent;
   background-color: #9D9D9D99;
 }
 ::-webkit-scrollbar-thumb:active {
@@ -16,33 +17,37 @@
 }
 
 .app-navbar-wrap nav {
-  &::-webkit-scrollbar {
-    width: 4px;
-    background-color: transparent;
-  }
-  &:hover::-webkit-scrollbar {
-    width: 14px;
-  }
-  &::-webkit-scrollbar-button:single-button {
-    display: none;
-  }
   &::-webkit-scrollbar-thumb {
-    background-color: #99999933;
+    background-color: #99999955;
   }
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: #99999966;
-  }
-  &::-webkit-scrollbar-thumb:active {
-    background-color: #99999988;
-  }
+  // &::-webkit-scrollbar-button:single-button {
+  //   display: none;
+  // }
+  // &::-webkit-scrollbar-thumb {
+  //   border-right: 3px solid #99999955;
+  //   background-color: transparent;
+  // }
+  // &::-webkit-scrollbar-thumb:hover {
+  //   border: 2px solid transparent;
+  //   background-color: #99999944;
+  // }
+  // &::-webkit-scrollbar-thumb:active {
+  //   background-color: #99999966;
+  // }
   //Setting margin-top for laying scrollbar between navigation li items.
   &::-webkit-scrollbar-track {
     margin-top: 102px;
   }
 }
 .app-navbar-wrap.toggled nav {
-  &:hover::-webkit-scrollbar {
-    width: 5px;
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #99999977;
   }
 }
 

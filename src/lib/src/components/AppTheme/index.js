@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Appearance, ThemeManager } from "../_api";
+import { Appearance, ThemeManager } from "../../api";
 
 const AppTheme = React.memo(
   (props) => {

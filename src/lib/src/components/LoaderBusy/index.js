@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
-import { ScrollView } from "../_api";
+import { ScrollView } from "../../api";
 
 const LoaderBusy = (props) => {
 

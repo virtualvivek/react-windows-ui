@@ -24,7 +24,7 @@
         transition: transform 0s ease-in-out;
       }
 
-      @if $platform == "windows11" { a, a.active { &::after { height: 18px; } } }
+      @if $platform == "windows11" { a, a.active { &::after { height: 15px; } } }
     }
 
     a {
@@ -52,9 +52,9 @@
           width: 5px; height: 35px;
         }
         @if $platform=="windows11" {
-          width: 4px;
+          width: 3px;
           height: 10px;
-          border-radius: 22%;
+          border-radius: 40px;
         }
       }
       &.active {
@@ -70,8 +70,8 @@
           background-color: var(--color-link-bg-hover);
 
           &::after {
-          height: 22px;
-          transition: height 0.25s;
+          height: 20px;
+          transition: height 0.1s;
           transform: translate3d(0, 0, 0);
           }
         }
@@ -89,7 +89,7 @@
     }
     span {
       margin: 0 10px;
-      font-size: 16px;
+      font-size: 15px;
       overflow: hidden;
       user-select: none;
       white-space: nowrap;

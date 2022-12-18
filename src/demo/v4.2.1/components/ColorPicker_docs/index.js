@@ -5,17 +5,24 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { ColorPickerItemImportCode, ColorPickerItemUsageCode, ColorPickerPaletteImportCode, ColorPickerPaletteUsageCode } from './codes'
 import PropsViewColorPickerItem from './props-view-color-picker-item'
 import PropsViewColorPickerPalette from './props-view-color-picker-palette'
+import Win11Wall from "../../../assets/win11Wall.jpg"
 import './css/window-view.css'
 
 class ColorPickerDocs extends React.Component {
 
   state = {
-    app_color: '',
-    app_get_theme :''
+    app_color: "",
+    app_get_theme : "",
+    app_platform : "windows10"
   }
 
   changeTheme = (color) => {
     this.setState({app_color: color.target.value});
+  }
+
+  componentDidMount = () => {
+    let _platform = window.getComputedStyle(document.documentElement).getPropertyValue("--platform");
+    _platform.includes("windows11") ? this.setState({ app_platform: "windows11" }) : this.setState({ app_platform: "windows10" });
   }
 
 
@@ -31,19 +38,32 @@ render() {
       colorDarkMode={this.state.app_color}
     />
         
-    <div className="windows-view">
-      <div className="start-view">
-          <div className="tiles-view-right">
-            <div className="white-line"></div>
-            <p></p><p></p><p></p><p></p><p></p><p></p>
-          </div>
-          <div className="tiles-view">
-            <div className="white-line"></div>
-            <p>Aa</p>
-          </div>
+    {this.state.app_platform === "windows10" ?
+      <div className="windows-view">
+        <div className="start-view">
+            <div className="tiles-view-right">
+              <div className="white-line"></div>
+              <p></p><p></p><p></p><p></p><p></p><p></p>
+            </div>
+            <div className="tiles-view">
+              <div className="white-line"></div>
+              <p>Aa</p>
+            </div>
+        </div>
+        <div className="taskbar-view"></div>
       </div>
-      <div className="taskbar-view"></div>
-    </div>
+      :
+      <>
+      <div className="windows-view11">
+        <img src={Win11Wall} alt="win11UI"/>
+        <div className="windows-view11_tile">
+          <div className="windows-view11_button"></div>
+        </div>
+      </div>
+      <br/>
+      </>
+    }
+    
 
     <ColorPickerItem
       defaultChecked

@@ -1,6 +1,6 @@
 import React, { useState,useEffect, useMemo, useRef } from "react";
-import { ScrollView, getScreenOffset } from "../_api";
-import { useOutSideClick } from "../_hooks";
+import { ScrollView, getScreenOffset } from "../../api";
+import { useOutSideClick } from "../../hooks";
 
 const SelectText = (props) => {
   const data_default = [];

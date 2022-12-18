@@ -40,6 +40,7 @@ import {
   SelectText,
   Switch,
   TableView,
+  TextArea,
   ThemeManager,
   View
 } from "../../../lib/src";
@@ -86,6 +87,7 @@ export {
   SelectText,
   Switch,
   TableView,
+  TextArea,
   ThemeManager,
   View
 }

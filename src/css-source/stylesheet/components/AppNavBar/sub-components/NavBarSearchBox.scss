@@ -1,6 +1,6 @@
 .app-navbar-wrap {
   .app-input-search-box {
-    width: 240px;
+    width: 225px;
     user-select: none;
     margin: 10px 0 10px 20px;
     @if $platform == "windows10" { filter: opacity(0.7); }
@@ -19,7 +19,9 @@
     transform: translateY(-105%);
     background: var(--color-navbar-bg-default);
 
-    &.show { transform: translateY(0%); }
+    &.show {
+      transform: translateY(0%);
+    }
 
     .app-input-text {
       width: 50%;
@@ -39,5 +41,37 @@
   }
   .app-search-dialog-trigger {
     display: none;
+  }
+
+  .app-nav-search {
+    position: relative;
+    ul {
+      @extend .app-dropdown-ul-default;
+  
+      width: 235px;
+      max-height: 240px;
+      z-index: 1;
+      left: 20px;
+      margin-top: -5px;
+      overflow: overlay;
+      box-shadow: 0 1px 1px #88888877;
+      background: var(--color-background-default);
+  
+      @if $platform == "windows10" {
+        li a {
+          &:hover { background: var(--color-grey-light); }
+          &:active { background: var(--color-link-bg-hover) !important; }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .app-navbar-wrap.toggled .app-nav-search ul {
+    width: 50%;
+    position: fixed;
+    left: 22.5vw;
+    top: 80px;
   }
 }
