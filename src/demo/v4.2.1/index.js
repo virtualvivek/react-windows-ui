@@ -11,7 +11,7 @@ import { NavBarDocs, NavBarLinkDocs, NavBarSubMenuDocs, NavPageContainerDocs, Sp
         CheckboxDocs, ColorPickerDocs, CommandBarDocs, DialogDocs, ImageViewDocs,
         InputGroupDocs, InputSearchDocs, LinkDocs, LinkCompoundDocs, ListItemDocs, LoadersDocs,
         MenuBarDocs, ProgressBarDocs, RadioButtonDocs, SelectBoxDocs, SliderBarDocs, SwitchDocs,
-        TableViewDocs, ViewDocs } from './components'
+        TableViewDocs } from './components'
 
 import { lib_version } from './values'
 import NavBarItem from './index_itms.json'
@@ -248,7 +248,6 @@ class AppFourTwoOne extends React.Component {
           <Route path='sliderbar' element={<SliderBarDocs/>} />
           <Route path='switch' element={<SwitchDocs/>} />
           <Route path='tableview' element={<TableViewDocs/>} />
-          <Route path='view_' element={<ViewDocs/>} />
 
           <Route path='icons' element={<Icons/>} />
           

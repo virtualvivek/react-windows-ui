@@ -41,8 +41,7 @@ import {
   Switch,
   TableView,
   TextArea,
-  ThemeManager,
-  View
+  ThemeManager
 } from "../../../lib/src";
 
 export {
@@ -88,6 +87,5 @@ export {
   Switch,
   TableView,
   TextArea,
-  ThemeManager,
-  View
+  ThemeManager
 }

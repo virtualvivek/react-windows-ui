@@ -7,15 +7,16 @@ const TextArea = (props) => {
       {...props}
       rows={props.rows}
       cols={props.cols}
+      value={props.value}
+      disabled={props.disabled}
+      onChange={props.onChange}
       placeholder={props.placeholder}>
     </textarea>
   )
 }
 
 TextArea.defaultProps = {
-  rows: 1,
-  cols: 2,
-  placeholder: "Input TextArea"
+  placeholder: "Input Text Area"
 }
 
 export default TextArea;

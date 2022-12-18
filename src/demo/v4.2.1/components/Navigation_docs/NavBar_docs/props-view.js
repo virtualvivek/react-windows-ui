@@ -20,6 +20,12 @@ const PropsView = () => {
           <td>Set's NavBar title.</td>
         </tr>
         <tr>
+          <td><p className="app-code">collapsed</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's NavBar as collapsed.</td>
+        </tr>
+        <tr>
           <td><p className="app-code">children</p></td>
           <td>ReactNode</td>
           <td>[ ]</td>

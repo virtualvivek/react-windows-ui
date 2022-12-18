@@ -1,19 +1,11 @@
 import React from 'react'
 
-export interface InputTextProps {
+export interface TextAreaProps {
   value ?: any;
-  label ?: string;
-  tooltip ?: string;
   disabled ?: boolean;
-  onClick ?: Function;
   onChange ?: Function;
-  onKeyUp ?: Function;
-  onKeyDown ?: Function;
   placeholder ?: string;
-  width ?: number | string;
-  setStatus ?: "default" | "success" | "danger" | "loading";
-  type ?: "text" | "password" | "date" | "time" | "month" | "datetime-local";
 }
-declare const InputText: React.FC<InputTextProps>
+declare const TextArea: React.FC<TextAreaProps>
 
-export default InputText
+export default TextArea

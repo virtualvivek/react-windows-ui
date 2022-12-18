@@ -38,4 +38,3 @@ export { default as SelectText } from "./components/SelectText";
 export { default as Switch } from "./components/Switch";
 export { default as TableView } from "./components/TableView";
 export { default as TextArea } from "./components/TextArea";
-export { default as View } from "./components/View";

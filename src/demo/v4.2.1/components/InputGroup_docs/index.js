@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, InputText } from '../../_lib'
+import { NavPageContainer, InputText, TextArea } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { InputTextImportCode, InputTextUsageCode, InputTextStatusUsageCode,
@@ -102,6 +102,20 @@ render() {
       className="code code-container">
       {InputTextLabelUsageCode}
     </SyntaxHighlighter>
+
+
+    <h2>TextArea</h2>
+
+    <TextArea />
+
+    <h2>Import</h2>
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {InputDateUsageCode}
+    </SyntaxHighlighter>
+    
 
     <h2>Input Date</h2>
 

@@ -159,12 +159,5 @@
       "text": "TableView",
       "icon": "icons10-grid-3",
       "showBadge": false
-  },
-  {
-      "to": "view_",
-      "exact": false,
-      "text": "View",
-      "icon": "icons10-ipad",
-      "showBadge": false
   }
 ]
