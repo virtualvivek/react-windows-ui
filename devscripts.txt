@@ -87,8 +87,10 @@ Testing CRA Template Locally
 =============================
 
 cd ./react-windows-ui/src/cra-template
-
 npx create-react-app my-app --template file:./react-windows-ui/src/cra-template
 
 
+------------------------------------
+Search & Updating Data in VSCode
+------------------------------------
 excluding = src/demo/v4.2.0/**
