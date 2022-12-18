@@ -7,3 +7,4 @@ src/css-source/stylesheet-rtl/** linguist-detectable=false
 
 # treat as docs dir
 src/demo/** linguist-documentation
+src/css-source/stylesheet-rtl/** linguist-documentation
