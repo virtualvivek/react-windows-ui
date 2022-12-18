@@ -4,7 +4,7 @@
 **/*.d.ts linguist-documentation=false
 **/*.d.ts linguist-detectable=true
 src/css-source/stylesheet-rtl/** linguist-detectable=false
+src/css-source/stylesheet/variables/** linguist-detectable=false
 
 # treat as docs dir
 src/demo/** linguist-documentation
-src/css-source/stylesheet-rtl/** linguist-documentation
