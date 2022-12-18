@@ -9,9 +9,8 @@
   outline: none;
   cursor: pointer;
   border-radius: 50%;
+  transition: border 0.2s ease;
   border: 2px solid var(--color-text-default);
-  @if $platform == "windows10" { transition: 0.2s ease; }
-  @if $platform == "windows11" { transition: border 0.2s ease; }
   
   vertical-align: middle;
   appearance: none;
