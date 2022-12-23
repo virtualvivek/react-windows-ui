@@ -16,7 +16,7 @@
     @if $platform == "windows11" {
       margin: 5px 10px;
       border-radius: 6px;
-      padding: 12px 20px;
+      padding: 10px 20px;
     }
   
     &:hover { background-color: var(--color-link-bg-hover); }

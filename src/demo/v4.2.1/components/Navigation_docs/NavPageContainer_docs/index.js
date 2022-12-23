@@ -23,12 +23,10 @@ render() {
         </div>
       </div>
       <div className="demo-navpagecontainer-page-column">
-        <p className="demo-navpagecontainer-toolbar">➖ ⬜ ❌</p>
         <div className="demo-navpagecontainer-page">
           <p>NavPageContainer <span className='color-primary'>hasPadding</span></p>
         </div>
       </div>
-      <i className="icons10-shutdown"></i>
     </div>
 
     <h2>Import</h2>
@@ -59,10 +57,9 @@ render() {
         </div>
       </div>
       <div className="demo-navpagecontainer-page-column">
-        <p className="demo-navpagecontainer-toolbar">➖ ⬜ ❌</p>
         <div className="demo-navpagecontainer-page no-padding">
           <div className="demo-navpagecontainer-page no-padding">
-          <p style={{position:"absolute", top:24, left:40}}>NavPageContainer</p>
+          <p style={{position:"absolute", top: 0, left: 40}}>NavPageContainer</p>
           <p>NavPageContainer.Inner</p>
           </div>
         </div>

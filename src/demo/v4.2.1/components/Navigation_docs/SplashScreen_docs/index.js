@@ -24,7 +24,6 @@ render() {
           <p>SplashScreen</p>
         </div>
       </div>
-      <i className="icons10-shutdown"></i>
     </div>
 
     <h2>Import</h2>
@@ -66,7 +65,6 @@ render() {
           <p><i className="icons10-terminal" style={{fontSize: 28}}></i></p>
         </div>
       </div>
-      <i className="icons10-shutdown"></i>
     </div>
     <br/>
 
@@ -87,7 +85,6 @@ render() {
           <p>Title<br/><span style={{fontWeight: 400, fontSize: 14}}>Subtitle</span></p>
         </div>
       </div>
-      <i className="icons10-shutdown"></i>
     </div>
     <br/>
 
@@ -108,7 +105,6 @@ render() {
           <p><i className="icons10-terminal" style={{fontSize: 28}}></i><br/>Title</p>
         </div>
       </div>
-      <i className="icons10-shutdown"></i>
     </div>
     <br/>
 

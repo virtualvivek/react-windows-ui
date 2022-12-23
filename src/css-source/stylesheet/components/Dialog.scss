@@ -27,6 +27,11 @@
       overflow: overlay;
       background-color: var(--color-background-default);
     }
+    @-moz-document url-prefix() {
+      .app-dialog-body {
+        overflow: auto;
+      }
+    }
     .app-dialog-header {
       padding: 0 15px;
     }

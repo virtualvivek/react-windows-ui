@@ -116,8 +116,8 @@ render() {
       </nav>
     </div>
     <br/>
-    <Button icon={<i className="icons10-plus"></i>} value="" onClick={this.setIncrement}/>&nbsp;
-    <Button icon={<i className="icons10-minus"></i>} value="" onClick={this.setDecrement}/>
+    <Button icon={<i className="icons10-minus"></i>} value="" onClick={this.setDecrement}/>&nbsp;
+    <Button icon={<i className="icons10-plus"></i>} value="" onClick={this.setIncrement}/>
     <br/>
     <br/>
 

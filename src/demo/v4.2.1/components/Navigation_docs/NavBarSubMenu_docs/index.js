@@ -16,7 +16,7 @@ render() {
 
     <div style={{width:290,backgroundColor:'var(--color-navbar-bg-default)'}}>
     <NavBarSubMenu title="Title">
-      <div className="app-navbar-wrap">
+      <div className="app-navbar-wrap" style={{height: 90}}>
       <nav className="animate custom" style={{position:'relative'}}>
         <ul style={{padding:0,margin:0}} className="app-navbar-list">
           <li className="app-navbar-list-item">

@@ -8,4 +8,4 @@ src/css-source/stylesheet/variables/** linguist-detectable=false
 
 # treat as docs dir
 src/demo/v4.2.0** linguist-documentation
-src/demo/v4.2.1** linguist-detectable=false
+src/demo/v4.2.1** linguist-documentation

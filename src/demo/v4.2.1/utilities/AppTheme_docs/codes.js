@@ -3,9 +3,9 @@ const AppThemeImportCode =
 
 const AppThemeUsageCode =
 `<AppTheme
-  scheme={'light'}
-  color={'#16ab9c'}
-  colorDarkMode={'#1ee6d1'}
+  scheme={"light"}
+  color={"#16ab9c"}
+  colorDarkMode={"#1ee6d1"}
   onColorChange={() => {}}
   onSchemeChange={() => {}}
 />`;
@@ -13,8 +13,8 @@ const AppThemeUsageCode =
 const SwitchThemeUsageCode =
 `changeMode = (e) => {
   e.target.checked ?
-    this.setState({app_mode: 'light'}) :
-    this.setState({app_mode: 'dark'})
+    this.setState({app_mode: "light"}) :
+    this.setState({app_mode: "dark"})
 }
 
 return (
