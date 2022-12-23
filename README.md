@@ -2,7 +2,6 @@
   <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="280" /> 
 </p>
 
-
 <h1 align="center">react-windows-ui</h1>
 
 <p align="center">Build full featured <b>Windows fluent UI</b> apps using <b>ReactJS</b>.</p>
@@ -30,9 +29,38 @@
 
 </p>
 
+<h1 align="center"></h1>
 
+<table>
+  <thead>
+    <tr>
+      <th>Windows 10 Style</th>
+      <th>Windows 11 Style</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="350" alt="react-windows-ui"/></td>
+<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="350" alt="react-windows-ui"/></td>
+</tr>
+<tr>
+<td>
 
-<a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="580" alt="react-windows-ui" /></p></a>
+```js
+import "react-windows-ui.min.css";
+```
+
+</td>
+<td>
+	
+```js
+import "react-windows-ui-11.min.css";
+```
+
+</td>
+</tr>
+</tbody>
+</table>
 
 
 # Demo & Docs
