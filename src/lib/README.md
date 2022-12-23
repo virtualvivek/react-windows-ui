@@ -17,8 +17,8 @@
       alt="License: MIT" />
   </a>
   
-  <a href="https://github.com/virtualvivek/react-windows-ui/releases/tag/v4.2.0">
-    <img src="https://img.shields.io/badge/version-4.2.1-darklime.svg?style=flat-square&color=31b57e&logo=git&logoColor=ffffff"
+  <a href="https://github.com/virtualvivek/react-windows-ui/releases/tag/v4.2.4">
+    <img src="https://img.shields.io/badge/version-4.2.4-darklime.svg?style=flat-square&color=31b57e&logo=git&logoColor=ffffff"
       alt="Version" />
   </a>
   
