@@ -4,18 +4,19 @@
   padding: 5px 10px;
   border: none;
   transition: 0.2s ease;
-  color: var(--PrimaryColor);
   background-color: transparent;
   
 
   &:hover {
-    color: #fff;
-    background-color: var(--color-primary-alpha);
+    background-color: var(--color-grey-light-alpha);
   }
   &:active {
     transform: scale(0.965, 0.965);
     transition: 0.02s ease;
-    background-color: var(--PrimaryColor);
+    background-color: var(--color-link-bg-hover);
+  }
+  i {
+    line-height: 0;
   }
 }
 

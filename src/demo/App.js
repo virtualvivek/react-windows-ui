@@ -17,7 +17,7 @@ class App extends React.Component {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/v4.2.0/home" />} />
+        <Route path="/" element={<Navigate to="/v4.2.1/home" />} />
         <Route
           path="/v4.2.0/*"
           element={

@@ -19,7 +19,13 @@ import Img2 from '../assets/illustration/mountain.jpg'
 import GithubIcon from "../assets/static/GithubIcon"
 
 import '../../lib/config/app-config.css'
-import '../../lib/dist/react-windows-ui-11.min.css'
+// import '../../lib/dist/react-windows-ui-11.min.css'
+if (window.location.href.includes("win10")) {
+  import('../../lib/dist/react-windows-ui.min.css');
+}
+else {
+  import('../../lib/dist/react-windows-ui-11.min.css');
+}
 
 class AppFourTwoOne extends React.Component {
 
@@ -51,7 +57,7 @@ class AppFourTwoOne extends React.Component {
   return (
     <>
       <SplashScreen
-        //duration={1200}
+        // duration={1200}
         isVisible={this.state.showSplash}
         title={"react-windows-ui"}
         // logo={<img src={Img2} width={100} height={100} alt="SplashScreen"/>}
