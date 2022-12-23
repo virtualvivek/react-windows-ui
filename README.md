@@ -40,8 +40,8 @@
   </thead>
   <tbody>
 <tr>
-<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="350" alt="react-windows-ui"/></td>
-<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="350" alt="react-windows-ui"/></td>
+<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo_win10.png" width="350" alt="react-windows-ui"/></td>
+<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo_win11.png" width="350" alt="react-windows-ui"/></td>
 </tr>
 <tr>
 <td>
