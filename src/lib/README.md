@@ -65,7 +65,9 @@ import "react-windows-ui-11.min.css";
 <h1 align="center"></h1>
 
 # Site
-https://virtualvivek.github.io/react-windows-ui/
+<b>Win11 Design :</b> https://virtualvivek.github.io/react-windows-ui/
+<br/>
+<b>Win10 Design :</b> https://virtualvivek.github.io/react-windows-ui?win10/
 
 # Getting Started
 You can use `cra-template` to initialize project or use `boilerplate`.
