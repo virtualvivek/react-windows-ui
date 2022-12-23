@@ -31,17 +31,17 @@
 
 <h1 align="center"></h1>
 
-<table>
+<table align="center">
   <thead>
     <tr>
-      <th>Windows 10 Style</th>
-      <th>Windows 11 Style</th>
+      <th>Windows 10 Design</th>
+      <th>Windows 11 Design</th>
     </tr>
   </thead>
   <tbody>
 <tr>
-<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="350" alt="react-windows-ui"/></td>
-<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="350" alt="react-windows-ui"/></td>
+<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo_win10.png" width="350" alt="react-windows-ui"/></td>
+<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo_win11.png" width="350" alt="react-windows-ui"/></td>
 </tr>
 <tr>
 <td>
@@ -61,10 +61,13 @@ import "react-windows-ui-11.min.css";
 </tr>
 </tbody>
 </table>
+<h1 align="center"></h1>
 
 
-# Demo & Docs
-https://virtualvivek.github.io/react-windows-ui/
+# Site
+<b>Win11 Design :</b> https://virtualvivek.github.io/react-windows-ui/
+<br/>
+<b>Win10 Design :</b> https://virtualvivek.github.io/react-windows-ui?win10/
 
 # Getting Started
 You can use `cra-template` to initialize project or use `boilerplate`.

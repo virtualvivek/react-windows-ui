@@ -17,7 +17,7 @@
       alt="License: MIT" />
   </a>
   
-  <a href="https://github.com/virtualvivek/react-windows-ui/releases/tag/v4.2.0">
+  <a href="https://github.com/virtualvivek/react-windows-ui/releases/tag/v4.2.1">
     <img src="https://img.shields.io/badge/version-4.2.1-darklime.svg?style=flat-square&color=31b57e&logo=git&logoColor=ffffff"
       alt="Version" />
   </a>
@@ -29,11 +29,45 @@
    
 </p>
 
-<a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank"><p align="center"><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo.png" width="580" /></p></a>
+<h1 align="center"></h1>
 
+<table align="center">
+  <thead>
+    <tr>
+      <th>Windows 10 Design</th>
+      <th>Windows 11 Design</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo_win10.png" width="350" alt="react-windows-ui"/></td>
+<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo_win11.png" width="350" alt="react-windows-ui"/></td>
+</tr>
+<tr>
+<td>
 
-# Demo & Docs
-https://virtualvivek.github.io/react-windows-ui/
+```js
+import "react-windows-ui.min.css";
+```
+
+</td>
+<td>
+	
+```js
+import "react-windows-ui-11.min.css";
+```
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<h1 align="center"></h1>
+
+# Site
+<b>Win11 Design :</b> https://virtualvivek.github.io/react-windows-ui/
+<br/>
+<b>Win10 Design :</b> https://virtualvivek.github.io/react-windows-ui?win10/
 
 # Getting Started
 You can use `cra-template` to initialize project or use `boilerplate`.
@@ -43,7 +77,6 @@ npx create-react-app MyApp --template windows-ui
 ```
 
 # [Boilerplate](https://github.com/virtualvivek/react-windows-ui-boilerplate)
-<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_boilerplate_screen.JPG" width="400" />
 
 
 # Manual Installation
@@ -62,32 +95,6 @@ import "react-windows-ui/dist/react-windows-ui.min.css";
 import "react-windows-ui/icons/fonts/fonts.min.css";
 ``` 
 </details>
-
-
-# Configuration
-
-**app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app. <br/><br/>
-By `default` project uses <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/src/lib/config/app-config.css">app-config.css</a>.<br>
-Or `create` your own config file with custom PrimaryColor/Fontfamily like this below:
-
-<details>
-  <summary><b>app-config.css</b></summary><br/>
-  
-```css
-:root {
-  --PrimaryColor: #0078D7; /* Change of your choice */
-  --PrimaryColorLight: #47aeff;  /* Lighter version of --PrimaryColor for DarkMode */
-}
-body {
-  font-family: "Segoe UI";
-}
-::selection {
-  color: #ffffff;
-  background-color: var(--PrimaryColor);
-}
-```
-</details>
-
 
 # Usage
 
@@ -111,22 +118,11 @@ npm start
 ```
 
 
-# View Docs for specific version
-Head to the desired version [Release](https://github.com/virtualvivek/react-windows-ui/releases/). <br/>
-Download the Release and start exploring !
-```html
-cd to-your-downloaded-version
-npm install
-npm start
-```
-
-
 # Links
 Here are some useful links.
 
 * [NPM CRA-Template](https://www.npmjs.com/package/cra-template-windows-ui)
 * [NPM React-Windows-UI Library](https://www.npmjs.com/package/react-windows-ui)
-
 
 
 # Find this project useful? :heart:
