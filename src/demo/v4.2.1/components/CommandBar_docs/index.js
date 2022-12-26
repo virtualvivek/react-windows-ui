@@ -100,7 +100,7 @@ render() {
       </CommandBar.MenuTrigger>
       <CommandBar.MenuItem label="Whatsapp">
         <CommandBar.MenuSubItem label="HyperLink"/>
-        <CommandBar.MenuSubItem label="QR Code"/>
+        {/* <CommandBar.MenuSubItem label="QR Code"/> */}
       </CommandBar.MenuItem>
       <CommandBar.MenuItem label="Facebook" />
     </CommandBar.Menu>

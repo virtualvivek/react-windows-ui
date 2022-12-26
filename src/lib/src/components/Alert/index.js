@@ -1,4 +1,4 @@
-import React, { useMemo, Children, useEffect, useState } from "react";
+import React, { useMemo, Children, useLayoutEffect, useState } from "react";
 import { ScrollView } from "../../api";
 
 const Alert = (props) => {
@@ -17,7 +17,7 @@ const Alert = (props) => {
     else {ScrollView.enableScroll(); }
   }, [props.isVisible]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     Children.forEach(props.children, child => {
       if (child.type.name === "AlertFooter") {
         setFooter(child);

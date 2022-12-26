@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const CmdBarSubMenu = (props) => {
+const SubMenuItem = (props) => {
   return (
     <li
       key={props.label}
@@ -15,9 +15,9 @@ const CmdBarSubMenu = (props) => {
   )
 }
 
-CmdBarSubMenu.defaultProps = {
+SubMenuItem.defaultProps = {
   value: "Submit",
   disabled: false
 }
 
-export default CmdBarSubMenu;
+export default SubMenuItem;

@@ -6,13 +6,16 @@ const NavBarSubMenu = (props) => {
   const [contentHeight, setContentHeight] = useState(100);
 
   useLayoutEffect(() => {
-    let height_ = 0;
-    panelRef.current?.childNodes.forEach((node) => {
-        let _platform = window.getComputedStyle(document.documentElement).getPropertyValue("--platform");
-        let _margin = _platform.includes("windows11") ? 5 : 0;
-        height_ += node?.clientHeight+_margin;
-    });
-    setContentHeight(height_);
+    setTimeout(() => {
+      let height_ = 0;
+      panelRef.current?.childNodes.forEach((node) => {
+          let _platform = window.getComputedStyle(document.documentElement).getPropertyValue("--platform");
+          let _margin = _platform.includes("windows11") ? 5 : 0;
+          height_ += node?.clientHeight+_margin;
+      });
+      setContentHeight(height_);
+      console.log("MenuBar");
+    }, 150);
   }, []);
 
 
