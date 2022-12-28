@@ -5,7 +5,7 @@
 
 <p align="center">Build full featured <b>Windows fluent UI</b> apps using <b>ReactJS</b>.</p>
 
-<p align="center"><a href="https://virtualvivek.github.io/react-windows-ui/">Explore Project Docs »</a></p>
+<p align="center"><a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">Explore Project Docs »</a></p>
 <p align="center"><a href="https://virtualvivek.github.io/react-windows-ui?win10/">Win10 Theme</a> · <a href="https://virtualvivek.github.io/react-windows-ui/">Win11 Theme</a></p>
 
 <table align="center">
@@ -57,7 +57,7 @@
 </p>
 
 # Getting Started
-Use `cra-template` to initialize project.
+Install with `cra-template` to initialize project.
 
 ```js
 npx create-react-app MyApp --template windows-ui
