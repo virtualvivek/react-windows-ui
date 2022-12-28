@@ -58,7 +58,7 @@
 </p>
 
 # Getting Started
-You can use `cra-template` to initialize project.
+Use `cra-template` to initialize project.
 
 ```js
 npx create-react-app MyApp --template windows-ui
@@ -68,7 +68,7 @@ npx create-react-app MyApp --template windows-ui
 
 
 # Manual Installation
-You can either manually install it on your porject.
+Install either manually on your porject.
 <details>
 <summary><b>See Manual Method</b></summary>
 <br/>
