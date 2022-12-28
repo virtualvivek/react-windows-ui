@@ -1,76 +1,64 @@
 <p align="center"> 
-  <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="280" /> 
+  <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="250" /> 
 </p>
 <h1 align="center">react-windows-ui</h1>
 
 <p align="center">Build full featured <b>Windows fluent UI</b> apps using <b>ReactJS</b>.</p>
 
-<p align="center">
-	
-  <a href="https://virtualvivek.github.io/react-windows-ui/">
-    <img src="https://img.shields.io/circleci/build/github/virtualvivek/react-windows-ui?style=flat-square&logo=circleci&token=346e79ab71a8d9c3bad22bacbebc7d7c50dae520"
-      alt="Build" />
-  </a>
-	
-  <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
-      alt="License: MIT" />
-  </a>
-  
-  <a href="https://github.com/virtualvivek/react-windows-ui/releases/tag/v4.2.1">
-    <img src="https://img.shields.io/badge/version-4.2.1-darklime.svg?style=flat-square&color=31b57e&logo=git&logoColor=ffffff"
-      alt="Version" />
-  </a>
-  
-  <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-    <img src="https://img.shields.io/badge/react&#8208windows&#8208ui.min.css-50.8 KB-darklime.svg?style=flat-square&color=1572B6&logo=css3&logoColor=ffffff"
-      alt="react-windows-ui.min.css" />
-  </a>
-   
-</p>
+<p align="center"><a href="https://virtualvivek.github.io/react-windows-ui/">Explore Project Docs »</a></p>
+<p align="center"><a href="https://virtualvivek.github.io/react-windows-ui?win10/">Win10 Theme</a> · <a href="https://virtualvivek.github.io/react-windows-ui/">Win11 Theme</a></p>
 
-<h1 align="center"></h1>
 
 <table align="center">
-  <thead>
-    <tr>
-      <th>Windows 10 Design</th>
-      <th>Windows 11 Design</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr>
-<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo_win10.png" width="350" alt="react-windows-ui"/></td>
-<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo_win11.png" width="350" alt="react-windows-ui"/></td>
-</tr>
-<tr>
-<td>
-
-```js
-import "react-windows-ui.min.css";
-```
-
-</td>
-<td>
-	
-```js
-import "react-windows-ui-11.min.css";
-```
-
-</td>
-</tr>
-</tbody>
+  <tr>
+    <th colspan="2">Themes</th>
+  </tr>
+  <tr align="center">
+    <td>Windows 10</td>
+    <td>Windows 11</td>
+  </tr>
+	<tr align="center">
+	<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo_win10.png" width="260" alt="react-windows-ui"/></td>
+	<td><img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_promo_win11.png" width="260" alt="react-windows-ui"/></td>
+	</tr>
+	<tr>
+		<td>
+		<code>import "react-windows-ui.min.css"</code>
+		</td>
+		<td>
+		<code>import "react-windows-ui-11.min.css"</code>
+		</td>
+	</tr>
 </table>
 
 <h1 align="center"></h1>
 
-# Site
-<b>Win11 Design :</b> https://virtualvivek.github.io/react-windows-ui/
-<br/>
-<b>Win10 Design :</b> https://virtualvivek.github.io/react-windows-ui?win10/
+# Status
+<p>
+  <a href="https://virtualvivek.github.io/react-windows-ui/">
+    <img src="https://img.shields.io/circleci/build/github/virtualvivek/react-windows-ui?style=flat-square&logo=circleci&token=346e79ab71a8d9c3bad22bacbebc7d7c50dae520"
+      alt="Build" />
+  </a>
+  <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
+      alt="License: MIT" />
+  </a>
+  <a href="https://github.com/virtualvivek/react-windows-ui/releases/tag/v4.2.1">
+    <img src="https://img.shields.io/badge/version-4.2.1-darklime.svg?style=flat-square&color=31b57e&logo=git&logoColor=ffffff"
+      alt="Version" />
+  </a>
+  <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+    <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat-square&color=1572B6&logo=css3&logoColor=ffffff&label=react-windows-ui.min.css"
+      alt="react-windows-ui.min.css" />
+  </a>
+  <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
+    <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-11.min.css?style=flat-square&color=1d7fa3&logo=css3&logoColor=ffffff&label=react-windows-ui-11.min.css"
+      alt="react-windows-ui.min.css" />
+  </a>
+</p>
 
 # Getting Started
-You can use `cra-template` to initialize project or use `boilerplate`.
+You can use `cra-template` to initialize project.
 
 ```js
 npx create-react-app MyApp --template windows-ui
@@ -80,7 +68,7 @@ npx create-react-app MyApp --template windows-ui
 
 
 # Manual Installation
-If you don't want `cra` or `boilerplate` you can manually install it on your porject.
+You can either manually install it on your porject.
 <details>
 <summary><b>See Manual Method</b></summary>
 <br/>
@@ -118,7 +106,7 @@ npm start
 ```
 
 
-# Links
+# Quick Links
 Here are some useful links.
 
 * [NPM CRA-Template](https://www.npmjs.com/package/cra-template-windows-ui)
