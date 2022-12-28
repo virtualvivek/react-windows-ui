@@ -57,7 +57,7 @@
 </p>
 
 # Getting Started
-Use `cra-template` to initialize project or use `boilerplate`.
+Use `cra-template` to initialize project.
 
 ```js
 npx create-react-app MyApp --template windows-ui
