@@ -8,8 +8,12 @@
     &.selected span {
       @if $platform == "windows10" {
         color: #000;
-        background-color: var(--PrimaryColor);
+        background-color: var(--PrimaryColor) !important;
         box-shadow: inset 0 0 0 1000px #ffffff99;
+
+        &:hover {
+          box-shadow: inset 0 0 0 1000px #ffffff77;
+        }
       }
       @if $platform == "windows11" {
         background-color: var(--color-link-bg-hover);
@@ -51,9 +55,8 @@
   }
 
   &.app-select-menu ul.app-dropdown-list {
-    width: 104%;
-    margin-top: -40px;
-    margin-left: -7px;
+    @if $platform == "windows10" { width: 102%; margin-top: -33px; margin-left: -3px; }
+    @if $platform == "windows11" { width: 104%; margin-top: -40px; margin-left: -6px; }
 
     &.show {
       @extend .transition_select_show;

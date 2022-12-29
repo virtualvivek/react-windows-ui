@@ -6,7 +6,15 @@
   background-color: #777777DD;
   background-clip: padding-box;
   border: 6px solid transparent;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
   @if $platform == "windows11" { border-radius: 4px; }
+}
+::-webkit-scrollbar-thumb:horizontal {
+  border-top-width: 6px;
+  border-bottom-width: 6px;
+  border-left-width: 2px;
+  border-right-width: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
   border: 2px solid transparent;
@@ -15,28 +23,26 @@
 ::-webkit-scrollbar-thumb:active {
   background-color: #999999EE;
 }
+::-webkit-scrollbar-track {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+::-webkit-scrollbar-track:horizontal {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+}
 
 .app-navbar-wrap nav {
   &::-webkit-scrollbar-thumb {
     background-color: #99999955;
   }
-  // &::-webkit-scrollbar-button:single-button {
-  //   display: none;
-  // }
-  // &::-webkit-scrollbar-thumb {
-  //   border-right: 3px solid #99999955;
-  //   background-color: transparent;
-  // }
-  // &::-webkit-scrollbar-thumb:hover {
-  //   border: 2px solid transparent;
-  //   background-color: #99999944;
-  // }
-  // &::-webkit-scrollbar-thumb:active {
-  //   background-color: #99999966;
-  // }
+
   //Setting margin-top for laying scrollbar between navigation li items.
   &::-webkit-scrollbar-track {
-    margin-top: 102px;
+    margin-top: 105px;
   }
 }
 .app-navbar-wrap.toggled nav {
@@ -48,18 +54,5 @@
   }
   &::-webkit-scrollbar-thumb:hover {
     background-color: #99999977;
-  }
-}
-
-@mixin browser-webkit-mobile() {
-  ::-webkit-scrollbar {
-    width: auto;
-  }
-  .app-navbar-wrap nav {
-    overflow-x: overlay !important;
-
-    &::-webkit-scrollbar {
-      height: 5px;
-    }
   }
 }

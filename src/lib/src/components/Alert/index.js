@@ -1,9 +1,7 @@
-import React, { useMemo, Children, useLayoutEffect, useState } from "react";
+import React, { useMemo } from "react";
 import { ScrollView } from "../../api";
 
 const Alert = (props) => {
-
-  const [isFooter, setFooter] = useState(null);
 
   const _onBackdropPress = (event) => {
     event.preventDefault();
@@ -14,16 +12,8 @@ const Alert = (props) => {
 
   useMemo(() => {
     if(props.isVisible) { ScrollView.disableScroll(); }
-    else {ScrollView.enableScroll(); }
+    else { ScrollView.enableScroll(); }
   }, [props.isVisible]);
-
-  useLayoutEffect(() => {
-    Children.forEach(props.children, child => {
-      if (child.type.name === "AlertFooter") {
-        setFooter(child);
-      }
-    });
-  }, [props.children]);
 
   return (
     <div className={props.isVisible ? "app-alert show" : "app-alert"}
@@ -33,7 +23,7 @@ const Alert = (props) => {
           <h1>{props.title}</h1>
           <div className="app-alert-message">{props.message}</div>
         </div>
-        {isFooter}
+        {props.children}
       </div>
     </div>
   )

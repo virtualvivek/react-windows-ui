@@ -48,18 +48,21 @@ const Select = (props) => {
   useOutSideClick(wrapperRef, () => setOpen(false));
 
   return (
-    <div className="app-dropdown-menu app-select-menu" ref={wrapperRef} onClick={toggleDropdown}>
-      <span>{ilabel}</span>
+    <div
+      className="app-dropdown-menu app-select-menu"
+      onClick={toggleDropdown}
+      ref={wrapperRef}>
+      <span title={props.tooltip}>{ilabel}</span>
       <ul className={`app-dropdown-list ${isOpen && 'show'}${isReverse}`}>
         <li
-          className="app-dropdown-list-item selected"
+          className="app-dropdown-list-item"
           key={"selected"}
           onClick={() => handleItemClick(iValue, ilabel)}>
             <span>{ilabel}</span>
         </li>
         {items.map((item, index) => (
         <li
-          className={`app-dropdown-list-item${item.value === iValue ? ' hidden':''}`}
+          className={`app-dropdown-list-item${item.value === iValue ? ' selected':''}`}
           key={index}
           onClick={() => handleItemClick(item.value, item.label)}>
             <span>{item.icon}{item.label}</span>

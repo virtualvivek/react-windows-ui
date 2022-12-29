@@ -4,8 +4,9 @@ const Accordion = (props) => {
   const panelRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
   const [panelHeight, setPanelHeight] = useState(10);
-  const [isHeader, setHeader] = useState(null);
-  const [isPanel, setPanel] = useState(null);
+
+  const _header = Children.map(props.children, child => child.type.displayName === "Header" ? child : null);
+  const _panel = Children.map(props.children, child => child.type.displayName === "Panel" ? child : null);
 
   const updateWidth = useCallback(() => {
     setTimeout(()=> {
@@ -24,31 +25,18 @@ const Accordion = (props) => {
 
   const toggleHeader = () => {
     if(isActive) {
-      setIsActive(false);
-      props.onCollapse();
+      setIsActive(false); props.onCollapse();
     }
     else {
-      setIsActive(true);
-      props.onExpand();
+      setIsActive(true); props.onExpand();
     }
   }
-
-  useEffect(() => {
-    Children.forEach(props.children, child => {
-      if (child.type.name === "AccordionHeader") {
-        setHeader(child);
-      }
-      if (child.type.name === "AccordionPanel") {
-        setPanel(child);
-      }
-    });
-  }, [props.children]);
 
   useLayoutEffect(() => {
     panelRef.current?.childNodes.forEach((node) =>
       setPanelHeight(node?.clientHeight+20),
     );
-  }, [isPanel]);
+  }, []);
 
   return (
     <div
@@ -57,19 +45,21 @@ const Accordion = (props) => {
       <div
         className="app-accordion-header"
         onClick={toggleHeader}>
-        {isHeader === null ? <div className="app-accordion-title"><span>{props.headerTitle}</span>
+        {
+          _header.length === 0
+        ? <div className="app-accordion-title"><span>{props.headerTitle}</span>
                               {isActive
                                 ? <i className="icons10-angle-up"></i>
                                 : <i className="icons10-angle-down"></i>}
                               </div>
-                              :
-                              isHeader}
+        : _header
+        }
       </div>
       <div className={isActive ? "app-accordion-panel show"
                                : "app-accordion-panel"}
           ref={panelRef}
           style={isActive ? {height: panelHeight} : {height: 0}}>
-        {isPanel}
+        {_panel}
       </div>
     </div>
   );
@@ -81,9 +71,12 @@ Accordion.defaultProps = {
 }
 
 const AccordionHeader = ({ children }) => <>{children}</>
-const AccordionPanel = ({ children }) => <>{children}</>
-
+AccordionHeader.displayName = "Header";
 Accordion.Header = AccordionHeader;
+
+
+const AccordionPanel = ({ children }) => <>{children}</>
+AccordionPanel.displayName = "Panel";
 Accordion.Panel = AccordionPanel;
 
 export default Accordion;

@@ -7,7 +7,7 @@ import SubMenuList from "./SubMenuList";
 
 const CommandBarMenu = (props) => {
 
-  let _menu_trigger= <button className="app-cmdbar-button"><i className="icons10-angle-down"></i></button>;
+  let _menu_trigger = <button className="app-cmdbar-button"><i className="icons10-angle-down"></i></button>;
   
   const subMenusRef = useRef([]);
   const wrapperRef = useRef(null);
@@ -87,9 +87,7 @@ const CommandBarMenu = (props) => {
   });
 
   Children.forEach(props.children, child => {
-    if (child.type === CommandBarMenuTrigger) {
-      return _menu_trigger = child;
-    }
+    if (child.type === CommandBarMenuTrigger) { return _menu_trigger = child; }
   });
 
 

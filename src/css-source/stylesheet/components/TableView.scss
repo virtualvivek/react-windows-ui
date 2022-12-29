@@ -1,14 +1,17 @@
 .app-table-view-container {
   @extend .transition-background-400ms;
-  width: fit-content;
-  overflow: auto;
+  min-width: auto;
+  max-width: fit-content;
+  overflow-y: scroll;
   border: 1px solid var(--color-link-bg-hover);
-  border-bottom: 0;
   background-color: var(--color-background-default);
   @if $platform == "windows11" { border-radius: 4px; }
 }
 .app-table-view {
   border-collapse: collapse;
+  tr:last-child td {
+    border: 0;
+  }
   th {
     font-weight: 600;
 

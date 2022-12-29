@@ -2,13 +2,13 @@ import React from "react";
 
 const SelectNative = (props) => {
   return (
-    <div className="app-select-menu">
-      <select name={props.name} disabled={props.disabled}>
+    <div className="app-select-menu" title={props.tooltip}>
+      <select name={props.name} disabled={props.disabled} {...props}>
         {props.data.map(item => (
         <option
           value={item.value}
           key={item.value}>
-            {item.label}
+          {item.label}
         </option>
         ))}
       </select>

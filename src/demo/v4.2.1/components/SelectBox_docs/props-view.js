@@ -32,6 +32,12 @@ const PropsView = () => {
           <td>Set's SelectNative name prop</td>
         </tr>
         <tr>
+          <td><p className="app-code">tooltip</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Set Select's hover tooltip prop</td>
+        </tr>
+        <tr>
           <td><p className="app-code">data ❑</p></td>
           <td>object</td>
           <td>[ ]</td>

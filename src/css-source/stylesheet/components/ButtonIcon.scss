@@ -11,9 +11,9 @@
     background-color: var(--color-grey-light-alpha);
   }
   &:active {
-    transform: scale(0.965, 0.965);
     transition: 0.02s ease;
-    background-color: var(--color-link-bg-hover);
+    background-color: var(--color-link-bg-active);
+    @if $platform == "windows10" { transform: scale(0.965, 0.965); }
   }
   i {
     line-height: 0;

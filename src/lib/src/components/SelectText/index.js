@@ -48,7 +48,7 @@ const SelectText = (props) => {
 
   return (
     <div className="app-dropdown-menu app-select-text" ref={wrapperRef} onClick={toggleDropdown}>
-      <span className="app-dropdown-title">{ilabel}</span>
+      <span className="app-dropdown-title" title={props.tooltip}>{ilabel}</span>
       <ul className={`app-dropdown-list ${isOpen && 'show'}${isReverse}`}>
         {items.map((item, index) => (
         <li
