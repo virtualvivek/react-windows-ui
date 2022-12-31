@@ -21,7 +21,7 @@
   @if $platform == "windows11" {
     &:focus {
       outline: none;
-      border-bottom: 2px solid var(--color-day-primary-night-primarylight);
+      border-bottom: 2px solid var(--color-primary-adaptive);
     }
   }
 }

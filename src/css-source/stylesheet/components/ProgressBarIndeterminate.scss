@@ -18,10 +18,10 @@
   animation: indeterminateAnimation 1s infinite linear;
   @if $platform == "windows11" {
     border-radius: 4px;
-    background-color: var(--color-day-primary-night-primarylight);
+    background-color: var(--color-primary-adaptive);
   }
   @if $platform == "windows10" {
-    background-image: radial-gradient(circle at 50% 50%, var(--color-day-primary-night-primarylight) 10%, transparent 90%);
+    background-image: radial-gradient(circle at 50% 50%, var(--color-primary-adaptive) 10%, transparent 90%);
   }
   
 }

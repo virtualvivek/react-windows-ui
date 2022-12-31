@@ -56,3 +56,15 @@
     background-color: #99999977;
   }
 }
+
+@mixin browser-webkit-mobile() {
+  ::-webkit-scrollbar {
+    height: 5px;
+  }
+  ::-webkit-scrollbar-thumb:horizontal {
+    border: none;
+  }
+  ::-webkit-scrollbar-track:horizontal {
+    margin: 0;
+  }
+}

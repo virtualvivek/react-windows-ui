@@ -24,13 +24,13 @@
   }
   @if $platform == "windows11" {
     &:checked {
-      transition: border 0.2s ease-in;
-      border: 5px solid var(--color-day-primary-night-primarylight);
+      transition: border 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      border: 5px solid var(--color-primary-adaptive);
       box-shadow: inset 0 0 0 2px var(--color-background-default);
     }
     &:active {
       transition: 0s ease;
-      border: 2px solid var(--color-day-primary-night-primarylight);
+      border: 2px solid var(--color-primary-adaptive);
     }
   }
 

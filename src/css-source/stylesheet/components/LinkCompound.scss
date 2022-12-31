@@ -6,15 +6,16 @@
     color: var(--color-text-default);
     border: 2px solid transparent;
     @extend .tap-highlight-none;
-    @extend .transition-all-400ms;
+
+    @if $platform == "windows10" { @extend .transition-all-400ms; }
     @if $platform == "windows11" { border-radius: 4px; }
     
     &:hover, &.focused {
       background-color: var(--color-grey-light-alpha);
     }
     &:active {
-      @extend .transition-scale-active;
       filter: contrast(0.8);
+      @if $platform == "windows10" { @extend .transition-scale-active; }
     }
     .app-link-compound-container {
       align-items: center;
@@ -24,8 +25,8 @@
       font-size: 36px;
       line-height: 1;
 
-      &.bg-primary::before,
-      &.bg-grey::before {
+      &.bg-grey::before,
+      &.bg-primary::before {
         padding: 3px;
         font-size: 30px;
       }
@@ -68,16 +69,33 @@
       max-width: inherit;
     }
 
-    &.link-border {
-      &:hover {
-        border: 2px solid var(--color-link-bg-hover);
-        background: transparent !important;
-      }
-      &:active {
-        border: 2px solid var(--color-link-bg-active);
-        background: var(--color-grey-light) !important;
+    @if $platform == "windows10" {
+      &.link-border {
+        &:hover {
+          border: 2px solid var(--color-link-bg-hover);
+          background: transparent !important;
+        }
+        &:active {
+          border: 2px solid var(--color-link-bg-active);
+          background: var(--color-grey-light) !important;
+        }
       }
     }
+    @if $platform == "windows11" {
+      &.link-border {
+        @extend .transition-background-400ms;
+        border: 1px solid var(--color-link-bg-active);
+        background-color: var(--color-background-default);
+        &:hover {
+          transition: 0s;
+          background-color: #88888822;
+        }
+        &:active {
+          background-color: #77777744;
+        }
+      }
+    }
+    
 }
 
 div.app-link-compound {

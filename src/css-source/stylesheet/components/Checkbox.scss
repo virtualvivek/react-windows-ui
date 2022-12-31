@@ -36,8 +36,8 @@ label.app-checkbox {
       }
       @if $platform == "windows11" {
         &::before {
-          background: var(--color-day-primary-night-primarylight);
-          border: 2px solid var(--color-day-primary-night-primarylight);
+          background: var(--color-primary-adaptive);
+          border: 2px solid var(--color-primary-adaptive);
         }
       }
       

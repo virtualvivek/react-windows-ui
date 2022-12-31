@@ -138,19 +138,22 @@ button,
 }
 
 @mixin button-mobile() {
+  .app-btn {
+    &:hover {
+      opacity: 1;
+    }
+  }
   .app-btn:not([class*="outline"]) {
     @if $platform == "windows10" {
-      &:hover {
+      &:hover:not(:active) {
         filter: none;
         border-color: transparent;
       }
-      &:active {
-        filter: contrast(0.4);
-      }
     }
     @if $platform == "windows11" {
-      &:hover {
+      &:hover:not(:active) {
         filter: none;
+        opacity: 1;
       }
     }
   }

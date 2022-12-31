@@ -16,7 +16,7 @@
   color: var(--color-background-default);
 }
 .color-primary {
-  color: var(--color-day-primary-night-primarylight);
+  color: var(--color-primary-adaptive);
 }
 
 .app-align-center {
@@ -135,7 +135,7 @@
     &:focus {
       filter: none;
       margin-bottom: 0;
-      border-bottom: 2px solid var(--color-day-primary-night-primarylight);
+      border-bottom: 2px solid var(--color-primary-adaptive);
     }
   }
   

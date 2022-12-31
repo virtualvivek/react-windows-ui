@@ -1,19 +1,21 @@
 .app-btn-icon {
-  font-size: 24px;
-  vertical-align: middle;
-  padding: 5px 10px;
   border: none;
-  transition: 0.2s ease;
+  font-size: 24px;
+  padding: 5px 10px;
+  vertical-align: middle;
   background-color: transparent;
+  @if $platform == "windows10" { transition: 0.2s ease; }
   
 
   &:hover {
     background-color: var(--color-grey-light-alpha);
   }
   &:active {
-    transition: 0.02s ease;
     background-color: var(--color-link-bg-active);
-    @if $platform == "windows10" { transform: scale(0.965, 0.965); }
+    @if $platform == "windows10" {
+      transition: 0.02s ease;
+      transform: scale(0.965, 0.965);
+    }
   }
   i {
     line-height: 0;
@@ -22,12 +24,8 @@
 
 @mixin button-icon-mobile() {
   .app-btn-icon {
-    &:hover {
-      color: var(--PrimaryColor);
+    &:hover:not(:active) {
       background-color: transparent;
-    }
-    &:active {
-      background-color: var(--color-primary-alpha);
     }
   }
 }

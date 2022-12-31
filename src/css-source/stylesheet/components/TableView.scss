@@ -2,7 +2,8 @@
   @extend .transition-background-400ms;
   min-width: auto;
   max-width: fit-content;
-  overflow-y: scroll;
+  overflow: overlay;
+  overflow-x: auto;
   border: 1px solid var(--color-link-bg-hover);
   background-color: var(--color-background-default);
   @if $platform == "windows11" { border-radius: 4px; }

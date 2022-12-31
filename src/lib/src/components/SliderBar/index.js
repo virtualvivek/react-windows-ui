@@ -38,7 +38,7 @@ const SliderBar = (props) => {
         onMouseEnter={() => toggleVisible()}
         onMouseLeave={() => toggleHidden()}
         style={{
-          background:"linear-gradient(90deg, var(--color-day-primary-night-primarylight)"+(props.defaultValue/props.max) * 100+"%, #999999 20.1%)"
+          background:"linear-gradient(90deg, var(--color-primary-adaptive)"+(props.defaultValue/props.max) * 100+"%, #999999 20.1%)"
         }}
       />
       { props.showValue && (<span> {props.defaultValue}</span>) }

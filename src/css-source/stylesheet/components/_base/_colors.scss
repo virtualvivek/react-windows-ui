@@ -3,11 +3,12 @@
     /* Day Mode */
     color-scheme: light;
     --platform: "windows10";
+    --color-primary-adaptive: var(--PrimaryColor);
+
     --color-background-default: #FFFFFF;
     --color-button-default: #CDCDCD;
     --color-button-hover: #666666;
     --color-day-primary-night-grey: var(--PrimaryColor);
-    --color-day-primary-night-primarylight: var(--PrimaryColor);
     --color-day-primary-night-white: var(--PrimaryColor);
     --color-foreground-default: #fff;
     --color-grey-light: #EEEEEE;
@@ -22,11 +23,12 @@
     /* Night Mode */
     color-scheme: dark;
     --platform: "windows10";
+    --color-primary-adaptive: var(--PrimaryColorLight);
+
     --color-background-default: #111111;
     --color-button-default: #555555;
     --color-button-hover: #999999;
     --color-day-primary-night-grey: #403E41;
-    --color-day-primary-night-primarylight: var(--PrimaryColorLight);
     --color-day-primary-night-white: #FFFFFF;
     --color-foreground-default: #2B2B2B;
     --color-grey-light: #444444;
@@ -44,11 +46,12 @@
     /* Day Mode */
     color-scheme: light;
     --platform: "windows11";
+    --color-primary-adaptive: var(--PrimaryColor);
+
     --color-background-default: #ffffff;
     --color-button-default: #e9e9e9;
     --color-button-hover: #666666;
     --color-day-primary-night-grey: var(--PrimaryColor);
-    --color-day-primary-night-primarylight: var(--PrimaryColor);
     --color-day-primary-night-white: var(--PrimaryColor);
     --color-foreground-default: #fff;
     --color-grey-light: #EEEEEE;
@@ -63,15 +66,16 @@
     /* Night Mode */
     color-scheme: dark;
     --platform: "windows11";
+    --color-primary-adaptive: var(--PrimaryColorLight);
+
     --color-background-default: #111111;
     --color-button-default: #484848;
     --color-button-hover: #999999;
     --color-day-primary-night-grey: #403E41;
-    --color-day-primary-night-primarylight: var(--PrimaryColorLight);
     --color-day-primary-night-white: #FFFFFF;
     --color-foreground-default: #2B2B2B;
     --color-grey-light: #444444;
-    --color-grey-light-alpha: #444444D1;
+    --color-grey-light-alpha: #44444477;
     --color-link-bg-active: #262626;
     --color-link-bg-hover: #2D2D2D;
     --color-navbar-bg-default: #202020;

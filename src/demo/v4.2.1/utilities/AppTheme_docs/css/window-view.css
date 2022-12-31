@@ -147,5 +147,5 @@ div.windows-view *,
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background: var(--color-day-primary-night-primarylight);
+  background: var(--color-primary-adaptive);
 }

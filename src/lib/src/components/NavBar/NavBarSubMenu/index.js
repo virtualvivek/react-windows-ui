@@ -14,7 +14,6 @@ const NavBarSubMenu = (props) => {
           height_ += node?.clientHeight+_margin;
       });
       setContentHeight(height_);
-      console.log("MenuBar");
     }, 150);
   }, []);
 

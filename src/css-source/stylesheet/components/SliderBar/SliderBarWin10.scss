@@ -17,7 +17,7 @@
       appearance: none;
       border-radius: 100px;
       -webkit-appearance: none;
-      background: var(--color-day-primary-night-primarylight);
+      background: var(--color-primary-adaptive);
       transition: background 0.15s ease-in-out;
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.20);
 
@@ -35,7 +35,7 @@
       cursor: pointer;
       user-select: none;
       border-radius: 100px;
-      background: var(--color-day-primary-night-primarylight);
+      background: var(--color-primary-adaptive);
       transition: background 0.15s ease-in-out;
     }
     &::-moz-range-thumb:hover,
@@ -60,13 +60,13 @@
       &::-webkit-slider-thumb {
         width: 20px !important;
         height: 20px;
-        border: 3px solid var(--color-day-primary-night-primarylight);
+        border: 3px solid var(--color-primary-adaptive);
         background: var(--color-background-default);
       }
       &::-moz-range-thumb {
         width: 14px;
         height: 14px;
-        border: 3px solid var(--color-day-primary-night-primarylight);
+        border: 3px solid var(--color-primary-adaptive);
         background: var(--color-background-default);
       }
     }

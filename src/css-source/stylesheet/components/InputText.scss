@@ -24,7 +24,7 @@
   @if $platform == "windows11" {
     .app-input-label:has(+ .app-input-text:focus) {
       margin-bottom: 0;
-      border-bottom: 2px solid var(--color-day-primary-night-primarylight);
+      border-bottom: 2px solid var(--color-primary-adaptive);
     }
     .app-input-label + .app-input-text {
       border-start-start-radius: 0;
