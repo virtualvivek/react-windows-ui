@@ -15,6 +15,7 @@
     "react",
     "create-react-app",
     "windows-ui",
+    "fluent-ui",
     "template"
   ],
   "author": "Vivek Verma",

@@ -1,16 +1,20 @@
 import React, { ReactNode } from 'react'
 
 export interface AvatarViewProps {
+  size ?: any;
   alt ?: string;
   src ?: ReactNode;
   tooltip ?: string;
   objectFit ?: string;
-  isLoading ?: boolean;
-  width ?: number | string;
-  height ?: number | string;
+  showBadge ?: boolean | any;
+  badgePosition ?: "bottom" | "top";
+  badgeBackgroundColor ?: any;
+  badgeTooltip ?: string;
+  badgeStyle ?: any;
+  
   showBackdropShadow ?: boolean;
-  size ?: "small" | "medium" | "large";
   onLoad ?: () => void;
+  onError ?: () => void;
 }
 declare const AvatarView: React.FC<AvatarViewProps>
 

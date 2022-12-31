@@ -3,6 +3,7 @@ import React, { ReactNode } from 'react'
 export interface NavBarProps {
   title ?: string;
   shadowOnScroll ?: boolean;
+  collapsed ?: boolean;
   titleBarMobile ?: ReactNode;
   goBack ?: () => void;
   children ?: ReactNode;

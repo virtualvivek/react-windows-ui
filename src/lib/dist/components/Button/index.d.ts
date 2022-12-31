@@ -10,7 +10,8 @@ export interface ButtonProps {
   textAlign ?: string;
   type ?: "default" | "primary" | "primary-outline" | "success" | "success-outline" | "danger" | "danger-outline";
   onSubmit ?: any;
-  onClick ?: () => void;
+  onClick ?: any;
+  onDoubleClick ?: any;
   style ?: CSSProperties;
 }
 declare const Button: React.FC<ButtonProps>

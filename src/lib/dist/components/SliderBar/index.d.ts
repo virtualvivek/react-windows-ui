@@ -6,9 +6,12 @@ export interface SliderBarProps {
   step ?: number;
   tooltip ?: string;
   showValue ?: boolean;
+  showPopupValue ?: boolean;
   thumbStyle ?: string;
   defaultValue ?: number;
   onChange ?: () => void;
+  onDragStart ?: () => void;
+  onDragEnd ?: () => void;
 }
 declare const SliderBar: React.FC<SliderBarProps>
 

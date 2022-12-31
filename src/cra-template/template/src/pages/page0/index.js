@@ -14,7 +14,7 @@ const Page0 = () => {
           style={{fontSize: 120,color: '#67DBF9'}}></i>
         <div style={{color: '#fff'}}>
           <h1 className="app-m-0">Welcome to react-windows-ui</h1>
-          <h4>-v4.1.0</h4>
+          <h4>-v4.2.1</h4>
           <br/><br/><br/><br/>
           <h2>Edit App.js and save to see changes.</h2>
           <br/>

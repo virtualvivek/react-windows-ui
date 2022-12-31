@@ -6,7 +6,7 @@ export interface LoaderBusyProps {
   isLoading ?: boolean;
   backgroundColor ?: string;
   onBackdropPress ?: Function;
-  display ?: string;
+  display ?: "default" | "overlay";
   title ?: string;
 }
 declare const LoaderBusy: React.FC<LoaderBusyProps>

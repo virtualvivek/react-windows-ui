@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react'
 
 export interface DialogProps {
   isVisible ?: boolean;
-  showDropShadow ?: boolean;
   children ?: ReactNode;
   onBackdropPress ?: () => void;
 }
