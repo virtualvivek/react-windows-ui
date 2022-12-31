@@ -50,10 +50,10 @@
   <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
     <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-11.min.css?style=flat&color=1d7fa3&logo=css3&logoColor=ffffff&label=react-windows-ui-11.min.css" alt="react-windows-ui-11.min.css" />
   </a>
-	<a href="https://virtualvivek.github.io/react-windows-ui-boilerplate/">
+	<a href="https://github.com/virtualvivek/react-windows-ui-boilerplate/">
     <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui-boilerplate?style=flat&color=ED163A&logo=webpack&logoColor=ffffff&label=boilerplate" alt="Boilerplate" />
   </a>
-	<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/cra-template">
+	<a href="https://www.npmjs.com/package/cra-template-windows-ui">
     <img src="https://img.shields.io/npm/v/cra-template-windows-ui?style=flat&color=7B16FF&logo=react&logoColor=ffffff&label=cra-template" alt="CRA Template" />
   </a>
 </p>
