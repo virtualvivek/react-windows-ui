@@ -53,7 +53,7 @@
 	<a href="https://virtualvivek.github.io/react-windows-ui-boilerplate/">
     <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui-boilerplate?style=flat&color=8DD6F9&logo=webpack&logoColor=ffffff&label=boilerplate" alt="Boilerplate" />
   </a>
-	<a href="https://virtualvivek.github.io/react-windows-ui/src/cra-template">
+	<a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/cra-template">
     <img src="https://img.shields.io/npm/v/cra-template-windows-ui?style=flat&color=7B16FF&logo=react&logoColor=ffffff&label=cra-template" alt="CRA Template" />
   </a>
 </p>
