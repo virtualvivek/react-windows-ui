@@ -35,24 +35,26 @@
 # Status
 <p>
   <a href="https://virtualvivek.github.io/react-windows-ui/">
-    <img src="https://img.shields.io/circleci/build/github/virtualvivek/react-windows-ui?style=flat-square&logo=circleci&token=346e79ab71a8d9c3bad22bacbebc7d7c50dae520"
-      alt="Build" />
+    <img src="https://img.shields.io/circleci/build/github/virtualvivek/react-windows-ui?style=flat&logo=circleci&token=346e79ab71a8d9c3bad22bacbebc7d7c50dae520" alt="Build" />
   </a>
   <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
-      alt="License: MIT" />
+    <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat&color=blue" alt="License: MIT" />
   </a>
-  <a href="https://github.com/virtualvivek/react-windows-ui/releases/tag/v4.2.1">
-    <img src="https://img.shields.io/badge/version-4.2.1-darklime.svg?style=flat-square&color=31b57e&logo=git&logoColor=ffffff"
+	<a href="https://virtualvivek.github.io/react-windows-ui/">
+    <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui?style=flat&color=CB3837&logo=npm&logoColor=ffffff&label=npm"
       alt="Version" />
   </a>
   <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-    <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat-square&color=1572B6&logo=css3&logoColor=ffffff&label=react-windows-ui.min.css"
-      alt="react-windows-ui.min.css" />
+    <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat&color=1572B6&logo=css3&logoColor=ffffff&label=react-windows-ui.min.css" alt="react-windows-ui.min.css" />
   </a>
   <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
-    <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-11.min.css?style=flat-square&color=1d7fa3&logo=css3&logoColor=ffffff&label=react-windows-ui-11.min.css"
-      alt="react-windows-ui-11.min.css" />
+    <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui-11.min.css?style=flat&color=1d7fa3&logo=css3&logoColor=ffffff&label=react-windows-ui-11.min.css" alt="react-windows-ui-11.min.css" />
+  </a>
+	<a href="https://virtualvivek.github.io/react-windows-ui-boilerplate/">
+    <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui-boilerplate?style=flat&color=8DD6F9&logo=webpack&logoColor=ffffff&label=boilerplate" alt="Boilerplate" />
+  </a>
+	<a href="https://virtualvivek.github.io/react-windows-ui/src/cra-template">
+    <img src="https://img.shields.io/npm/v/cra-template-windows-ui?style=flat&color=7B16FF&logo=react&logoColor=ffffff&label=cra-template" alt="CRA Template" />
   </a>
 </p>
 
