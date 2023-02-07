@@ -40,9 +40,9 @@
   <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat&color=blue" alt="License: MIT" />
   </a>
-	<a href="https://virtualvivek.github.io/react-windows-ui/">
+	<a href="https://www.npmjs.com/package/react-windows-ui">
     <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui?style=flat&color=CB3837&logo=npm&logoColor=ffffff&label=npm"
-      alt="Version" />
+      alt="npm" />
   </a>
   <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
     <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat&color=1572B6&logo=css3&logoColor=ffffff&label=react-windows-ui.min.css" alt="react-windows-ui.min.css" />
@@ -106,13 +106,6 @@ cd react-windows-ui
 npm install
 npm start
 ```
-
-
-# Quick Links
-Here are some useful links.
-
-* [NPM CRA-Template](https://www.npmjs.com/package/cra-template-windows-ui)
-* [NPM React-Windows-UI Library](https://www.npmjs.com/package/react-windows-ui)
 
 
 # Find this project useful? :heart:
