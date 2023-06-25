@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const ColorPickerPalette = (props) => {
   const [icolor, setColor] = useState(props.color);
@@ -6,7 +6,6 @@ const ColorPickerPalette = (props) => {
   return (
     <label className="app-color-picker-item palette">
       <input
-        {...props}
         type="color"
         value={icolor}
         disabled={props.disabled}
@@ -15,9 +14,9 @@ const ColorPickerPalette = (props) => {
       />
       <div
       style={{
-        backgroundColor: icolor,
         width: props.width,
-        height: props.height
+        height: props.height,
+        backgroundColor: icolor
       }}>
       </div>
     </label>

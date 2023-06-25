@@ -1,0 +1,24 @@
+.app-input-container {
+  @if $repository == "react-windows-ui" {
+    // Password OFF
+    button.app-input-pass-toggler::after {
+      content: "\f1db";
+      font-family: icons10;
+    }
+    // Password ON
+    input[type="password"] + div .app-input-pass-toggler::after {
+      content: "\f189";
+    }
+  }
+  @if $repository == "windows-ui" {
+    // Password OFF
+    [data-win-toggle="password"]::after {
+      content: "\f1db";
+      font-family: icons10;
+    }
+    // Password ON
+    input[type="password"] + div [data-win-toggle="password"]::after {
+      content: "\f189";
+    }
+  }
+}

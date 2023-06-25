@@ -1,0 +1,68 @@
+.app-progress-container {
+  width: 400px;
+  display: inline-flex;
+  flex-direction: column;
+  transition: height 0.15s ease-out;
+
+  &.hide {
+    height: 0;
+  }
+
+  .app-progress-title,
+  .app-progress-subtitle {
+    line-height: 2;
+    font-weight: 500;
+  }
+  .app-progress-subtitle {
+    opacity: 0.8;
+    font-size: 14px;
+  }
+  
+  .app-progress-bar {
+    width: 100%;
+    height: 5px;
+    overflow: hidden;
+    position: relative;
+    background: var(--color-progress-bg);
+    @if $platform == "windows11" { border-radius: 4px; }
+
+    span {
+      height: 100%;
+      position: absolute;
+      transition: width 1s ease-in-out;
+      background-color: var(--color-primary-adaptive);
+      @if $platform == "windows11" { border-radius: 4px; }
+
+      &.indeterminate {
+        height: 100%;
+        width: 100%;
+        transform-origin: 0% 50%;
+        transition-property: background;
+        animation: indeterminateAnimation 1s infinite linear;
+        @if $platform == "windows11" {
+          border-radius: 4px;
+          background-color: var(--color-primary-adaptive);
+        }
+        @if $platform == "windows10" {
+          background-image: radial-gradient(
+            circle at 50% 50%, 
+            var(--color-primary-adaptive) 10%, 
+            transparent 90%
+          );
+        }
+      }
+    }
+  }
+}
+
+@mixin progress-bar-mobile() {
+  .app-progress-container {
+    width: 80vw;
+  }
+}
+
+@keyframes indeterminateAnimation {
+  0% { transform: translateX(0) scaleX(0); }
+  40% { transform: translateX(0) scaleX(0.5); }
+  100% { transform: translateX(100%) scaleX(0.3); }
+}

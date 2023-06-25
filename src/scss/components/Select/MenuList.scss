@@ -1,0 +1,58 @@
+.app-dropdown-menu,
+.app-select-menu,
+.app-select-text {
+  // Style, Padding for End Arrow & Title Text ------
+  span,
+  &::after {
+    height: inherit;
+    padding-left: 10px;
+    align-items: center;
+    display: inline-flex;
+  }
+}
+
+.app-dropdown-list {
+  max-height: 280px;
+  @extend .app-dropdown-ul-default;
+}
+
+.app-dropdown-list-item {
+  &.selected span {
+    @if $platform == "windows10" {
+      color: #000;
+      background-color: var(--PrimaryColor) !important;
+      box-shadow: inset 0 0 0 1000px #ffffff99;
+
+      &:hover {
+        box-shadow: inset 0 0 0 1000px #ffffff77;
+      }
+    }
+    @if $platform == "windows11" {
+      background-color: var(--color-ui-hover-strong);
+      &::before {
+        width: 3px;
+        height: 18px;
+        content: "";
+        position: absolute;
+        left: 0;
+        border-radius: 50px;
+        background-color: var(--color-primary-adaptive);
+      }
+    }
+  }
+  &.hidden {
+    display: none;
+  }
+}
+
+.app-select-text {
+  // Show Checkbox Icon on Selected Text
+  .app-dropdown-list-item.selected span::before {
+    width: 20px;
+    height: auto;
+    content: "\f12e";
+    position: relative;
+    font-family: "icons10";
+    background: transparent;
+  }
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export interface InputTextProps {
   value ?: any;
@@ -14,6 +14,6 @@ export interface InputTextProps {
   setStatus ?: "default" | "success" | "danger" | "loading";
   type ?: "text" | "password" | "date" | "time" | "month" | "datetime-local";
 }
-declare const InputText: React.FC<InputTextProps>
+declare const InputText: React.FC<InputTextProps>;
 
-export default InputText
+export default InputText;

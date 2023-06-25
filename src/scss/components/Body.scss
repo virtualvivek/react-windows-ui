@@ -1,0 +1,87 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  overflow-y: overlay;
+  scroll-behavior: smooth;
+}
+body {  
+  margin: 0;
+  padding: 0;
+  color: var(--color-text-default);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--color-background-default);  
+}
+.app-code {
+  margin: 0;
+  padding: 5px;
+  line-height: 1;
+  border-radius: 6px;
+  display: inline-block;
+  background-color: var(--color-navbar-bg-default);
+}
+
+@if $platform == "windows10" {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+}
+@if $platform == "windows11" {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+  }
+}
+
+h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
+  opacity: 0.58;
+}
+
+a {
+	outline: none;
+  text-decoration: none;
+}
+
+.app-hr {
+  width: 95%;
+  height: 1px;
+  margin: 10px 10px 10px 0;
+  background: var(--color-progress-bg);
+}
+
+.app-ul-content li {
+  margin-bottom: 0.25rem;
+}
+
+.app-m-0 {
+  margin: 0;
+}
+.app-mt-0 {
+  margin-top: 0;
+}
+.app-mb-0 {
+  margin-bottom: 0;
+}
+.app-mt-10 {
+  margin-top: 10px;
+}
+.app-mb-10 {
+  margin-bottom: 10px;
+}
+.app-mt-15 {
+  margin-top: 15px;
+}
+.app-mb-15 {
+  margin-bottom: 15px;
+}
+.app-mt-20 {
+  margin-top: 20px;
+}
+.app-mb-20 {
+  margin-bottom: 20px;
+}
+
+p.app-para-light {
+  font-weight: 100;
+}

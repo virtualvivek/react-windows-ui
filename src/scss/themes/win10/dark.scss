@@ -1,0 +1,27 @@
+@mixin dark-win10() {
+  [data-theme="dark"] {
+    color-scheme: dark;
+    --platform: "windows10";
+    --color-primary-adaptive: var(--PrimaryColorLight);
+    --color-danger-default: #C50500;
+    --color-success-default: #2C8B2C;
+    --color-scheme-absolute: #000;
+
+    --color-background-default: #111111;
+    --color-button-default: #555555;
+    --color-button-hover: #999999;
+    --color-day-primary-night-grey: #403E41;
+    --color-day-primary-night-white: #FFFFFF;
+    --color-foreground-default: #2B2B2B;
+    --color-foreground-dark: #444444;
+    --color-ui-hover-default: #444444D1;
+    --color-ui-active-default: #222222;
+    --color-ui-hover-strong: #555555;
+    --color-navbar-bg-default: #403E41;
+    --color-primary-alpha: #EEEEEE9C;
+    --color-text-default: #FFFFFF;
+
+    --width-navbar-expanded: 280px;
+    --width-navbar-collapsed: 70px;
+  }
+}

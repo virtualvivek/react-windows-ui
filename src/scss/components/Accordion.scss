@@ -1,0 +1,47 @@
+.app-accordion {
+  overflow: hidden;
+}
+.app-accordion-title {
+  height: 33px;
+  display: flex;
+  padding: 4px 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  @extend .input-btn-default;
+
+  &::after {
+    line-height: 0;
+    content: "\f10c";
+    margin-left: 5px;
+    align-self: center;
+    font-family: icons10;
+    transform-origin: center;
+    transition: transform 167ms cubic-bezier(0, 0, 0, 1);
+  }  
+}
+
+.app-accordion-header[aria-expanded=true] {
+  .app-accordion-title::after {
+    transform: rotate(180deg);
+  }
+}
+
+.app-accordion-panel {
+  height: 0;
+  overflow: hidden;
+  transition: height 243ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+  &.show {
+    height: 500px;
+    transition: height 243ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+}
+
+@mixin accordion-mobile() {
+  .app-accordion-title {
+    &:hover:not(:active) {
+      opacity: 1;
+    }
+  }
+}

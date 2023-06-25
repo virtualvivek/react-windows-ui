@@ -12,7 +12,8 @@ const Dialog = (props) => {
   return (
     <div
       className={props.isVisible ? "app-dialog show" : "app-dialog"}
-      onClick={(event)=>_onBackdropPress(event)}>
+      onClick={(event)=>_onBackdropPress(event)}
+      tabIndex="-1">
       <div
         className={"app-dialog-modal"}
         style={props.style}>

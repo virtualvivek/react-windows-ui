@@ -1,0 +1,9 @@
+.app-dropdown-title {
+  @extend .input-btn-default;
+  padding-right: 40px;
+  line-height: 1;
+}
+
+.app-select-text .app-dropdown-title {
+  font-weight: 500;
+}

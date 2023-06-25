@@ -13,13 +13,12 @@ const TableView = (props) => {
   const [tappedColumn, setTappedColumn] = useState(undefined);
 
   const alphaOrder = (index) => {
-    const myData = [].concat(rows).sort((a, b) => a[index] > b[index] ? 1 : -1)
+    const myData = [].concat(rows).sort((a, b) => a[index] > b[index] ? 1 : -1);
 
     if( tappedColumn === index) {
       setRows(rows_data)
       setTappedColumn(undefined)
-    }
-    else {
+    } else {
       setRows(myData)
       setTappedColumn(index)
     }
@@ -58,8 +57,8 @@ const TableView = (props) => {
 TableView.defaultProps = {
   rows: [],
   columns: [],
-  headerFontSize: 18,
-  rowFontSize: 16
+  rowFontSize: 16,
+  headerFontSize: 18
 }
 
 export default TableView;

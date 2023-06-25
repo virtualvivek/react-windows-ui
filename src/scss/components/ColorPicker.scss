@@ -1,0 +1,64 @@
+.app-color-picker-item {
+  cursor: pointer;
+  padding: 0 4px 2px 0;
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+
+  div {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border: 2px solid transparent;
+
+    &:hover { border: 2px solid var(--color-text-default); }
+    &:active { filter: brightness(0.6); }
+
+    &::before {
+      float: right;
+      padding: 4px;
+      line-height: 1;
+      font-size: 11px;
+      content: "\f12e";
+      font-weight: 800;
+      font-family: icons10;
+      position: relative;
+      transition: all 0.2s;
+      color: var(--color-background-default);
+      background: var(--color-text-default);  
+    }
+
+    @if $platform == "windows11" {
+      border-radius: 4px;
+    }
+  }
+  .item:not(:checked) + div::before {
+    opacity: 0;
+    transform: scale(0);
+    }
+      
+  .item:checked + div::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .item {
+    display: none;
+  }
+  div:hover,
+  .item:checked + div {
+    border: 2px solid var(--color-text-default);
+  }
+
+  &.palette {
+    input[type="color"] {
+      opacity: 0;
+      position: absolute;
+    }
+    div {
+      border: 2px solid var(--color-text-default);
+      &::before {
+        content: "\f10c";
+      }
+    }
+  }
+}

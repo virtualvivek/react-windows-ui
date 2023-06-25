@@ -2,24 +2,26 @@ import React from "react";
 
 const Checkbox = (props) => {
   return (
-    <label className="app-checkbox" title={props.tooltip}>
+    <label>
       <input
+        className="app-checkbox"
         {...props}
         type="checkbox"
         name={props.name}
         value={props.value}
+        title={props.tooltip}
         disabled={props.disabled}
         onChange={props.onChange}
         defaultChecked={props.defaultChecked}
       />
-      {" "+props.label}
+      {props.label && (<span> {props.label}</span>)}
     </label>
   )
 }
 
 Checkbox.defaultProps = {
+  label: "",
   disabled: false,
-  label: ""
 }
 
 export default Checkbox;

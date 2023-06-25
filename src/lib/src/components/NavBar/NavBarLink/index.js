@@ -5,8 +5,7 @@ const NavBarLink = (props) => {
 
   const renderBadge = () => {
     if(props.showBadge > 0 || props.showBadge !== "") {
-      return <div
-              className="app-badge"
+      return <div className="app-badge"
               style={{backgroundColor: props.badgeBackgroundColor}}>
                 {props.showBadge}
             </div>;
@@ -19,8 +18,9 @@ const NavBarLink = (props) => {
       <img
         src={props.imgSrc}
         alt={props.imgAlt}
-        style={{borderRadius:props.imgBorderRadius}} />
-        : ""
+        style={{borderRadius:props.imgBorderRadius}}
+      />
+      : ""
   }
 
   return (
@@ -36,9 +36,9 @@ const NavBarLink = (props) => {
 }
 
 NavBarLink.defaultProps = {
-  text: "link text",
+  to : "#",
   exact: false,
-  to : "#"
+  text: "link text"
 }
 
 export default NavBarLink;

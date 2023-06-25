@@ -74,10 +74,10 @@ const AvatarView = (props) => {
 
 AvatarView.defaultProps = {
   alt: "User",
-  isLoading: false,
-  objectFit: "cover",
   onLoad: () => {},
-  onError: () => {}
+  onError: () => {},
+  isLoading: false,
+  objectFit: "cover"
 }
 
 export default AvatarView;

@@ -1,0 +1,106 @@
+.app-navbar-wrap .app-navbar-list {
+  .app-navbar-list-item {
+    display: flex;
+    transition: 0s ease;
+
+    @if $platform == "windows11" {
+      overflow: hidden;
+      margin: 5px 10px;
+      border-radius: 4px;
+    }
+
+    &:hover {
+      background-color: var(--color-ui-hover-strong);
+    }
+    &:active {
+      @if $platform == "windows10" { background-color: var(--color-ui-active-default); }
+      @if $platform == "windows11" { opacity: 0.7; }
+
+      span {
+        transform: scale(0.98, 0.98);
+        transition: transform 0s ease-in-out;
+      }
+
+      @if $platform == "windows11" { a, a.active { &::after { height: 15px; } } }
+    }
+
+    a {
+      width: 100%;
+      font-weight: 400;
+      background: none;
+      
+      position: relative;
+      align-items: center;
+      flex-direction: row;
+      display: inline-flex;
+      color: var(--color-text-default);
+
+      @if $platform == "windows10" { padding: 12px 25px; }
+      @if $platform == "windows11" { padding: 10px 15px; }
+
+      &::after {
+        left: 0;
+        content: "";
+        position: absolute;
+        background: var(--color-primary-adaptive);
+        transform: translate3d(-200%, 0, 0);
+
+        @if $platform=="windows10" {
+          width: 5px; height: 35px;
+        }
+        @if $platform=="windows11" {
+          width: 3px;
+          height: 10px;
+          transition: all 0.4s;
+          border-radius: 8px;
+        }
+      }
+      &.active {
+        font-weight: 500;
+
+        @if $platform=="windows10" {
+          &::after {
+            transition: transform 0.4s;
+            transform: translate3d(0, 0, 0);
+          }
+        }
+        @if $platform=="windows11" {
+          background-color: var(--color-ui-hover-strong);
+
+          &::after {
+          height: 20px;
+          transition: height 0.1s;
+          transform: translate3d(0, 0, 0);
+          }
+        }
+      }
+      i::before {
+        font-size: 22px;
+        pointer-events: none;
+        text-overflow: unset;
+        line-height: normal;
+      }
+
+      > * {
+        pointer-events: none;
+      }
+    }
+    span {
+      margin: 0 10px;
+      font-size: 15px;
+      overflow: hidden;
+      user-select: none;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      transition: transform 0.4s ease-in-out;
+    }
+    img {
+      width: 18px;
+      height: 18px;
+      margin: 2px;
+      user-select: none;
+      border-radius: 4px;
+      background-color: var(--color-ui-hover-strong);
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.app-loader-busy {
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  align-items: center;
+  display: inline-flex;  
+  transition: opacity 0.4s ease;
+
+  &[data-win-progress] > svg circle {
+    animation: unset;
+  }
+
+  &.light {
+    .app-ldr-busy {
+      stroke: var(--color-scheme-absolute);
+    }
+  }
+
+  &.loader-lg {
+    width: 42px;
+    height: 42px;
+  }
+
+  &.loader-sm {
+    width: 20px;
+    height: 20px;
+  }
+ 
+  &.animate {
+    opacity: 1;
+  }
+
+  .app-ldr-busy {
+    stroke: var(--color-primary-adaptive);
+    fill: none;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+    transition: all 0.2s ease-in-out 0s;
+    animation: 2s linear 0s infinite normal none running loader-spin;
+  }
+
+  @keyframes loader-spin {
+    0% {
+      stroke-dasharray: 0.01px, 43.97px;
+      transform: rotate(0deg);
+    }
+    50% {
+      stroke-dasharray: 21.99px, 21.99px;
+      transform: rotate(450deg);
+    }
+    100% {
+      stroke-dasharray: 0.01px, 43.97px;
+      transform: rotate(1080deg);
+    }
+  }
+}
+
+.app-btn-primary,
+.app-btn-danger,
+.app-btn-success {
+  .app-ldr-busy {
+    stroke: var(--color-scheme-absolute);
+  }
+}
+
+.app-loader-busy-overlay {
+  @extend .app-overlay;
+  
+  z-index: 99;
+  opacity: 0;
+  display: flex;
+  transition: 0.4s;
+  text-align: center;
+  flex-direction: column;
+  visibility: hidden;
+  
+  &.show {
+    opacity: 1;
+    transition: 0.4s;
+    visibility: visible;
+  }
+
+  .app-loader-busy {
+    top: 42%;
+    z-index: 100;
+    margin: 0 auto;
+    filter: drop-shadow(0 4px 4px #44444488);
+  }
+  .title {
+    width: 100%;
+    bottom: 18%;
+    position: absolute;
+    text-align: center;
+    
+    &.text-light {
+      font-size: 1.5em;
+      color: #fff;
+    }
+  }
+}

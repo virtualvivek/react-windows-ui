@@ -1,0 +1,61 @@
+@import "./SliderBarWin10.scss";
+@import "./SliderBarWin11.scss";
+
+.app-range-slider {
+  width: 360px;
+  padding: 5px 0;
+  position: relative;
+  align-items: center;
+  display: inline-flex;
+  -webkit-tap-highlight-color: transparent;
+
+  @if $platform == "windows10" {
+    @include slider-bar-win-10();
+  }
+  @if $platform == "windows11" {
+    @include slider-bar-win-11();
+  }
+
+  span {
+    line-height: 0;
+    font-size: 18px;
+    color: var(--color-text-default);
+  }
+  .app-range-slider-popup {
+    opacity: 0;
+    padding: 12px 5px;
+    visibility: hidden;
+    display: inline-block;
+    position: absolute;
+    top: -40px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: opacity 0.4s ease-out;
+    
+    @if $platform == "windows10" {
+      background: var(--color-button-default);
+      box-shadow: 0 0 2px var(--color-button-default);
+    }
+    @if $platform == "windows11" {
+      border-radius: 4px;
+      background: var(--color-navbar-bg-default);
+      border: 1px solid var(--color-ui-border-default);
+      box-shadow: 0 1px 1px #22222222;
+    }
+  }
+}
+
+@mixin slider-bar-mobile() {
+  .app-range-slider {
+    width: calc(280px + 18%);
+    align-items: flex-start;
+    flex-flow: column-reverse;
+
+    span {
+      line-height: 2.2;
+    }
+    .app-range-slider-popup {
+      display: none;
+    }
+  }
+}

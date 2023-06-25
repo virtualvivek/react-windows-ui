@@ -4,36 +4,29 @@ import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
 const Button = (props) => {
 
   const renderLoader = useMemo(() => {
-    return <div
-        className = {
-            props.type === "primary" ?  "app-loader-busy loader-sm light animate"
-          : props.type === "danger" ? "app-loader-busy loader-sm light animate"
-          : props.type === "success" ? "app-loader-busy loader-sm light animate"
-          : "app-loader-busy loader-sm animate"
-          }>
-      <LoaderBusyWrapper/>
-    </div>
-  }, [props.type])
+    return <div className="app-loader-busy loader-sm animate">
+              <LoaderBusyWrapper/>
+            </div>
+  }, []);
 
   const toggleLoading = useMemo(() => {
-    return props.isLoading ? "btn-is-loading" : "btn-no-loading";
-  }, [props.isLoading])
+    return props.isLoading ? " btn-is-loading" : "";
+  }, [props.isLoading]);
 
-  
   return (
     <button
       className = {
-        props.type ==="primary" ?  `app-btn animate app-btn-primary ${toggleLoading}`
-      : props.type ==="danger" ? `app-btn animate app-btn-danger ${toggleLoading}`
-      : props.type ==="success" ? `app-btn animate app-btn-success ${toggleLoading}`
-      : props.type ==="primary-outline" ? `app-btn animate app-btn-primary-outline ${toggleLoading}`
-      : props.type ==="danger-outline" ? `app-btn animate app-btn-danger-outline ${toggleLoading}`
-      : props.type ==="success-outline" ? `app-btn animate app-btn-success-outline ${toggleLoading}`
-      : `app-btn animate ${toggleLoading}`
+        props.type === "primary" ?  `app-btn app-btn-primary${toggleLoading}`
+      : props.type === "danger" ? `app-btn app-btn-danger${toggleLoading}`
+      : props.type === "success" ? `app-btn app-btn-success${toggleLoading}`
+      : props.type === "primary-outline" ? `app-btn app-btn-outline-primary${toggleLoading}`
+      : props.type === "danger-outline" ? `app-btn app-btn-outline-danger${toggleLoading}`
+      : props.type === "success-outline" ? `app-btn app-btn-outline-success${toggleLoading}`
+      : `app-btn${toggleLoading}`
       }
       style={{
-        width: props.width,
         justifyContent: props.justifyContent,
+        width: props.width,
         ...props.style
       }}
       type="button"
@@ -42,16 +35,14 @@ const Button = (props) => {
       onSubmit={props.onSubmit}
       disabled={props.disabled}
       onDoubleClick={props.onDoubleClick}>
-
-      {props.isLoading && (renderLoader)}
-      {props.icon && (<span>{props.icon}</span>)}
-      {props.value!=="" && (<span>{props.value}</span>)}
+        {props.isLoading && (renderLoader)}
+        {props.icon && (<>{props.icon}</>)}
+        {props.value && (<span>{props.value}</span>)}
     </button>
   )
 }
 
 Button.defaultProps = {
-  value: "Submit",
   disabled: false,
   isLoading: false,
   onClick: () => {},

@@ -1,0 +1,18 @@
+.app-navbar-wrap .app-navbar-toggler {
+  cursor: pointer;
+  @if $platform=="windows10" { padding: 15px 25px; }
+  @if $platform=="windows11" { padding: 10px 15px; margin: 5px 10px; border-radius: 4px; }
+
+  &:hover {
+    background-color: var(--color-ui-hover-strong);
+  }
+  &:active {
+    @if $platform == "windows10" { background-color: var(--color-ui-active-default); }
+    @if $platform == "windows11" { opacity: 0.7; }
+  }
+  &::after {
+    font-size: 22px;
+    content: "\f106";
+    font-family: icons10;
+  }
+}

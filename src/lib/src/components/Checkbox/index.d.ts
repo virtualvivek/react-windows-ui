@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
 export interface CheckboxProps {
-  label ?: string;
-  disabled ?: boolean;
-  defaultChecked ?: boolean;
-  tooltip ?: string;
-  onChange ?: Function;
   name ?: any;
   value ?: any;
+  label ?: string;
+  tooltip ?: string;
+  disabled ?: boolean;
+  onChange ?: Function;
+  defaultChecked ?: boolean;
 }
-declare const Checkbox: React.FC<CheckboxProps>
+declare const Checkbox: React.FC<CheckboxProps>;
 
-export default Checkbox
+export default Checkbox;

@@ -1,0 +1,96 @@
+----------------------------------------------------------------------------
+[ Sass ] -------------
+Installing SASS
+npm install node-sass --save-dev
+
+-effects-
+package.json >
+	"scripts": {
+		"compile:sass": "node-sass src/scss/stylesheet/main.scss src/lib/dist/react-windows-ui.css",
+		},
+
+--compile--
+
+npm run compile:sass
+npm run compile:sass-win10
+npm run compile:sass-rtl
+
+----------------------------------------------------------------------------
+[ GitHub Pages ] ------------
+Installing gh-pages
+npm install gh-pages --save-dev
+
+-effects-
+package.json >
+	"homepage": "https://virtualvivek.github.io/react-windows-ui/",
+	"scripts": {
+		"predeploy": "npm run build",
+    		"deploy": "gh-pages -d build",
+		},
+
+--compile--
+
+npm run deploy
+
+----------------------------------------------------------------------------
+[ Babel ] --------------
+Installing Babel
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+npm i --save-dev babel-preset-minify
+
+-effect-
+package.json >
+	"build:production": "rm -rf dist && SET NODE_ENV=production && babel src/lib/src --out-dir src/lib/dist --copy-files",
+
+[ File Added ] > babel.config.js
+
+--compile--
+
+[ Open Git Bash Terminal ( Choose from dropdown in VS Code ) ]
+
+npm run build:production
+
+----------------------------------------------------------------------------
+
+===========================
+PUBLISHING ./lib
+===========================
+build:production
+	|
+README.md (at ./lib)
+	|
+package.json (at ./lib)
+	|
+Publish @Latest
+
+=============================
+react-windows-ui-boilerplace
+=============================
+Updating ./src
+	|
+README.md
+	|
+Release @Latest
+
+============================
+react-windows-ui
+============================
+package.json
+	|
+README.md
+	|
+Release @Latest
+
+-----------------------------
+
+Testing CRA Template Locally
+=============================
+
+cd ./react-windows-ui/src/cra-template
+npx create-react-app my-app --template file:./react-windows-ui/src/cra-template
+
+
+------------------------------------
+Search & Updating Data in VSCode
+------------------------------------
+excluding = src/demo/v4.2.0/**

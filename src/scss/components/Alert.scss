@@ -1,0 +1,114 @@
+.app-alert {
+  @extend .app-dim-overlay;
+  @if $platform == "windows10" { color: #fff; }
+  @if $platform == "windows11" { color: var(--color-text-default); }
+
+  .app-alert-modal {
+    z-index: 11;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    flex-direction: column;
+    transition-duration: 0.28s;
+    box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);
+    
+    @if $platform == "windows10" {
+      width: 52%;
+      background: var(--PrimaryColor);
+      transform: translate3d(0,-1%,0) scale(1.015);
+    }
+    @if $platform == "windows11" {
+      width: 40%;
+      max-width: 400px;
+      border-radius: 8px;
+      transform: translate3d(0,-1%,0) scale(1.034);
+      background: var(--color-foreground-default);
+    }
+  }
+
+  &.show {
+    .app-alert-modal {
+      transition-duration: 0.28s;
+      transform: translate3d(0,-1%,0) scale(1);
+    }
+  }
+
+  .app-alert-header {
+    padding: 20px 30px 0 30px;
+    h1 {
+      margin: 0;
+      padding-bottom: 10px;
+      background-color: transparent;
+      @if $platform == "windows10" { font-size: 1.7em; }
+      @if $platform == "windows11" { font-size: 1.5em; }
+    }
+    .app-alert-message {
+      font-size: 1em;
+      line-break: auto;
+      max-height: 24vh;
+      overflow-y: auto;
+      padding-bottom: 20px;
+    }
+  }
+  
+  .app-alert-footer {
+    @extend .app-modal-footer-default;
+  }
+  @if $platform == "windows10" {
+    button {
+      margin: 10px;
+      color: #fff;
+      font-size: 14px;
+      display: inline;
+      font-weight: 700;
+      padding: 7px 2.5vw;
+      border: 2px solid #fff;
+  
+      &:hover {
+        opacity: 0.62;
+        border: 2px solid #fff !important;
+      }
+      &:active {
+        opacity: 1;
+        filter: unset !important;
+        color: var(--PrimaryColor);
+        transform: unset !important;
+        background: #fff !important;
+      }
+    }
+    button,
+    .app-alert-message {
+      background-color: transparent !important;
+    }
+  }
+  @if $platform == "windows11" {
+    button + button {
+      margin-left: 10px;
+    }
+  }
+}
+
+@mixin alert-mobile() {
+  .app-alert {
+    .app-alert-modal {
+      width: 100vw !important;
+      left: 0 !important;
+      top: 0;
+      margin: 0;
+      transition: all 0.3s ease;
+      transform: translateY(-100%);
+      @if $platform == "windows11" {
+        max-width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+
+    &.show {
+      .app-alert-modal {
+        transition: all 0.3s ease;
+        transform: translateY(0%);
+      }
+    }
+  }
+}

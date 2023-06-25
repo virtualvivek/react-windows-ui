@@ -1,0 +1,34 @@
+@import "./win10/light.scss";
+@import "./win10/dark.scss";
+@import "./win11/main.scss";
+
+@media (prefers-color-scheme: dark) {
+  :root {
+   --light: ;
+   --dark: initial;
+   color-scheme: dark;
+  }
+}
+@media (prefers-color-scheme: light) {
+    :root {
+    --dark: ;
+    --light: initial;
+    color-scheme: light;
+  }
+}
+[data-theme="dark"] {
+  --light: ;
+  --dark: initial;
+  color-scheme: dark;
+}
+[data-theme="light"] {
+  --dark: ;
+  --light: initial;
+  color-scheme: light;
+}
+
+@if $platform == "windows10" {
+  @include light-win10();
+  @include dark-win10();
+}
+@if $platform == "windows11" { @include colors-win11(); }

@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
 export interface ColorPickerItemProps {
   name ?: string;
-  defaultChecked ?: boolean;
+  color ?: string;
   disabled ?: boolean;
+  onChange ?: Function;
   width ?: number | string;
   height ?: number | string;
-  color ?: string;
-  onChange ?: Function;
+  defaultChecked ?: boolean;
 }
-declare const ColorPickerItem: React.FC<ColorPickerItemProps>
+declare const ColorPickerItem: React.FC<ColorPickerItemProps>;
 
-export default ColorPickerItem
+export default ColorPickerItem;

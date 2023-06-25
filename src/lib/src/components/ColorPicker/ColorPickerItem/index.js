@@ -4,20 +4,19 @@ const ColorPickerItem = (props) => {
   return (
     <label className="app-color-picker-item">
       <input
-        {...props}
         type="radio"
         className="item"
         name={props.name}
-        defaultChecked={props.defaultChecked}
+        value={props.color}
         disabled={props.disabled}
         onChange={props.onChange}
-        value={props.color}
+        defaultChecked={props.defaultChecked}
       />
       <div
       style={{
-        backgroundColor: props.color,
         width: props.width,
-        height: props.height
+        height: props.height,
+        backgroundColor: props.color
       }}>
       </div>
     </label>

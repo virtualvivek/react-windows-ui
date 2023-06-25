@@ -7,8 +7,8 @@ const RadioButton = (props) => {
       title={props.tooltip}>
       <input
         {...props}
-        type="radio"
         className="app-radio"
+        type="radio"
         name={props.name}
         value={props.value}
         disabled={props.disabled}

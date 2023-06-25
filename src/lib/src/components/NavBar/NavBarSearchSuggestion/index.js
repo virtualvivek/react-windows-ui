@@ -3,19 +3,12 @@ import { Link } from "react-router-dom";
 import { useOutSideClick } from "../../../hooks";
 
 const NavBarSearchSuggestion = (props) => {
-
-  const dialogRef = useRef(null);
   const listRef = useRef(null);
-
-  const [menubar, setMenubar] = useState(false);
-  const [is_ulist, setUList] = useState("hide");
-  const showMenuBar = () => setMenubar(!menubar);
-
-  const teams_data = props.data;
-  const [teams, setTeams] = React.useState(teams_data);
-  const [search, setSearch] = React.useState("");  
   
-  useOutSideClick(dialogRef, () => setMenubar(false));
+  const teams_data = props.data;
+  const [is_ulist, setUList] = useState("hide");
+  const [search, setSearch] = React.useState("");
+  const [teams, setTeams] = React.useState(teams_data);
 
   useOutSideClick(listRef, () => setUList("hide"));
   
@@ -24,10 +17,8 @@ const NavBarSearchSuggestion = (props) => {
   }
 
   const _onClickUL = () => {
-    setSearch("");
-    setUList("hide");
+    setSearch(""); setUList("hide");
   }
-
 
   return (
     <div className="app-nav-search" title={props.tooltip}>  
@@ -48,33 +39,6 @@ const NavBarSearchSuggestion = (props) => {
         }}
       />
     </div>
-    <div
-      onClick={showMenuBar}
-      className="app-search-dialog-trigger">
-      <i className="icons10-search"></i>
-    </div>
-    <div
-      className={ menubar ? "app-search-dialog show" : "app-search-dialog"}
-      ref={dialogRef}>
-        <input
-          className="app-input-text"
-          type="search"
-          value={search}
-          placeholder={props.placeholder}
-          onChange={(e) => {
-            toggleVisible(e)
-            const test = teams_data.filter(team => {
-              return team.label.toLowerCase()
-              .includes(e.target.value.toLowerCase());
-            });
-            setTeams(test);
-            setSearch(e.target.value);
-          }}
-        />
-        <button className="font-size-16px" onClick={_onClickUL}>
-          <i className="icons10-cross"></i>
-        </button>
-    </div>
     <ul
       className={is_ulist}
       ref={listRef}
@@ -94,8 +58,8 @@ const NavBarSearchSuggestion = (props) => {
 }
 
 NavBarSearchSuggestion.defaultProps = {
-  placeholder: "Search here..",
-  data: []
+  data: [],
+  placeholder: "Search here.."
 }
 
 export default NavBarSearchSuggestion;

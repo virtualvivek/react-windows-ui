@@ -18,15 +18,8 @@ import NavBarItem from './index_itms.json'
 import Img2 from '../assets/illustration/mountain.jpg'
 import GithubIcon from "../assets/static/GithubIcon"
 
-import '../../lib/config/app-config.css'
-// import '../../lib/dist/react-windows-ui.min.css'
-// import '../../lib/dist/react-windows-ui-11.min.css'
-if (window.location.href.includes("win10")) {
-  import('../../lib/dist/react-windows-ui.min.css');
-}
-else {
-  import('../../lib/dist/react-windows-ui-11.min.css');
-}
+import './_lib/config/app-config.css'
+import './_lib/react-windows-ui.min.css';
 
 class AppFourTwoOne extends React.Component {
 

@@ -1,0 +1,41 @@
+.app-table-view-container {
+  min-width: auto;
+  max-width: fit-content;
+  overflow: overlay;
+  overflow-x: auto;
+  border: 1px solid var(--color-ui-border-default);
+  background-color: var(--color-card-bg-default);
+  @if $platform == "windows11" { border-radius: 4px; }
+}
+.app-table-view {
+  border-collapse: collapse;
+  tr:last-child td {
+    border: 0;
+  }
+  th {
+    font-weight: 600;
+
+    &.sortable {
+      &:hover {
+        cursor: pointer;
+        background-color: var(--color-ui-hover-default);
+      }
+      &:active {
+        user-select: none;
+      }
+    }
+    &.no-sortable {
+      pointer-events: none;
+    }
+  }
+  td {
+    min-width: fit-content;
+  }
+  th, td {
+    font-size: 15px;
+    padding: 6px 12px;
+  }
+  td, thead {
+    border-bottom: 1px solid var(--color-ui-border-default);
+  }
+}

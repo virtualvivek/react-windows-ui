@@ -1,0 +1,35 @@
+.app-dropdown-menu,
+.app-select-menu,
+.app-select-text {
+  padding: 0;
+  width: fit-content;
+  user-select: none;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  @if $platform == "windows10" { height: 30px; }
+  @if $platform == "windows11" { height: 33px; }
+  
+  &::after {
+    right: 10px;
+    font-size: 14px;
+    content: "\f10c";
+    position: absolute;
+    pointer-events: none;
+    font-family: icons10;
+  }
+}
+
+.app-select-menu {
+  select {
+    @extend .input-btn-default;
+    height: 100%;
+    appearance: none;
+    padding: 0 35px 0 10px;
+  
+    &:focus { outline: none; }
+    &[disabled] { @extend .input-field-default-disabled; }
+    option { background-color: var(--color-background-default); }
+  }
+}

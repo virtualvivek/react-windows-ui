@@ -1,0 +1,23 @@
+.app-link {
+  font-weight: 400;
+  display: inline-flex;
+  line-break: anywhere;
+  color: var(--color-primary-adaptive);
+
+  &:hover {
+    filter: contrast(0.4);
+  }
+  &:active {
+    opacity: 0.6;
+    filter: unset;
+  }
+}
+
+@mixin links-mobile() {
+  .app-link {
+    &:hover:not(:active) {
+      filter: unset;
+      opacity: 1;
+    }
+  }
+}

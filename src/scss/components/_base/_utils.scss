@@ -1,0 +1,44 @@
+.app-color-primary {
+  color: var(--color-primary-adaptive);
+}
+.app-color-danger {
+  color: var(--color-danger-default);
+}
+.app-color-success {
+  color: var(--color-success-default);
+}
+.app-bg-danger {
+  background: var(--color-danger-default) !important;
+}
+.app-bg-success {
+  background: var(--color-success-default) !important;
+}
+.app-bg-danger,
+.app-bg-success {
+  color: #fff !important;
+}
+
+.font-size-16px {
+  font-size: 16px !important;
+}
+.font-size-18px {
+  font-size: 18px !important;
+}
+.font-size-20px {
+  font-size: 20px;
+}
+
+.app-align-center {
+  align-items: center;
+}
+.app-flex {
+  display: flex;
+}
+.app-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-inline-flex {
+  display: inline-flex;
+}

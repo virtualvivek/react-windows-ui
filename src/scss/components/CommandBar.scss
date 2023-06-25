@@ -1,0 +1,66 @@
+.app-cmd-bar {
+  @extend .app-inline-flex;
+  width: max-content;
+  height: auto;  
+}
+
+ul.app-cmdbar-menu-list {
+  @extend .app-dropdown-ul-default;
+  width: max-content;
+  max-height: 280px;
+  overflow: visible;
+  
+  &.left-justify {
+    right: 0;
+  }
+  [data-win-toggle="dropdown"]::after {
+    line-height: 0;
+    content: "\f10e";
+    font-family: icons10;
+    padding-inline-start: 5px;
+  }
+}
+ul.app-cmdbar-menu-list .cmdbar-submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.cmdbar-menu-list-item-hr {
+  border: 0;
+  height: 1px;
+  margin: 0 5px;
+  background-color: var(--color-ui-border-default);
+}
+
+.app-cmdbar-menu {
+  position: relative;
+  display: inline-flex;
+}
+
+.app-cmdbar-button {
+  height: 33px;
+  border: none;
+  background: none;
+  padding: 8px 10px;
+  width: max-content;
+  color: var(--color-text-default);
+
+  &:hover {
+    background: var(--color-ui-hover-default);
+  }
+  @if $platform == "windows10" { &:active { background: var(--color-button-default); } }
+  @if $platform == "windows11" { &:active { opacity: 0.7; } }
+  
+  &[disabled] {
+    filter: contrast(0);
+    pointer-events: none;
+  }
+}
+
+@mixin cmdbar-button-mobile() {
+  .app-cmdbar-button {
+    &:hover:not(:active) {
+      background: none;
+    }
+  }
+}

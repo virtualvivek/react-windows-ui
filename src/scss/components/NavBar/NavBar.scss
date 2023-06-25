@@ -1,0 +1,60 @@
+@import "./sub-components/AppName.scss";
+@import "./sub-components/ListItem.scss";
+@import "./sub-components/List.scss";
+@import "./sub-components/ToggleButton.scss";
+@import "./sub-components/Badge.scss";
+@import "./sub-components/Hr_line.scss";
+@import "./sub-components/Overlay.scss";
+@import "./sub-components/SubMenu.scss";
+@import "./sub-components/Header.scss";
+@import "./sub-components/HeaderMobile.scss";
+@import "./sub-components/SearchBox.scss";
+@import "./sub-components/ThemeSwitch.scss";
+@import "./NavBarCollapsed.scss";
+
+.container-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.app-navbar-wrap {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  position: sticky;
+
+  nav {
+    width: var(--width-navbar-expanded);
+    height: inherit;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-navbar-bg-default);
+    // transition: transform 0.2s ease, width 0.2s ease;
+  }
+}
+
+@mixin app-navbar-mobile() {
+  .app-navbar-wrap {
+    z-index: 9;
+    position: unset;
+    nav {
+      z-index: 9;
+      position: fixed;
+      
+      .app-navbar-toggler {
+        @if $platform=="windows10" { padding: 12.5px 20px; margin: 0 5px; }
+        @if $platform=="windows11" { padding: 7.5px 20px; margin: 5px; }
+      }
+      :hover > li,
+      :hover > .app-navbar-toggler,
+      :hover > .app-navbar-submenu-title {
+        background-color: transparent !important;
+      }
+    }
+  } 
+  @if $platform=="windows11" {
+    .app-navbar-wrap .app-navbar-toggler {
+      margin: 0;
+    }
+  }
+}

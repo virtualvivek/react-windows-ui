@@ -1,0 +1,28 @@
+.app-navbar-wrap {
+  .app-navbar-list {
+    margin: 0;
+    height: inherit;
+    list-style: none;
+    padding: 0 0 20px 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: overlay;
+
+    h1 {
+      margin: 0;
+      cursor: default;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 8px 0 8px 24px;
+
+      &::-moz-selection {
+        background: transparent;
+        color: var(--color-text-default);
+      }
+      &::selection {
+        background: transparent;
+        color: var(--color-text-default);
+      }
+    }
+  }
+}

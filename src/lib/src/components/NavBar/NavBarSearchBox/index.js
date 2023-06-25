@@ -14,12 +14,8 @@ const NavBarSearchBox = (props) => {
           setMenubar(menubar)
         }
       }
-      // Bind the event listener
       document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        // Unbind the event listener on clean up
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
+      return () => { document.removeEventListener("mousedown", handleClickOutside); };
     }, [ref]);
   }
   // Step 2. Out Side click Register
@@ -33,9 +29,9 @@ const NavBarSearchBox = (props) => {
     <div className="app-input-search-box">
       <input
         className="app-input-text app-input-search"
-        type="search"
         placeholder={props.placeholder}
         onChange={props.onChange}
+        type="search"
       />
     </div>
     <div
@@ -63,7 +59,7 @@ const NavBarSearchBox = (props) => {
 
 NavBarSearchBox.defaultProps = {
   placeholder: "Search here..",
-  onChange: ()=>{}
+  onChange: () => {}
 }
 
 export default NavBarSearchBox;

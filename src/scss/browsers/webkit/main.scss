@@ -1,0 +1,9 @@
+@import "./scrollbars/win10.scss";
+@import "./scrollbars/win11.scss";
+
+@if $platform == "windows10" {
+  @include scrollbar-win10();
+}
+@if $platform == "windows11" {
+  @include scrollbar-win11();
+}

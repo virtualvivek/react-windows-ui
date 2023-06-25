@@ -1,0 +1,134 @@
+.app-input-text {
+  @extend .input-field-default;
+
+  &:focus {
+    @if $platform == "windows10" { border-color: #666; }
+  }
+}
+
+.app-input-container {
+  position: relative;
+  height: fit-content;
+  display: inline-flex;
+
+  @if $platform == "windows11" {
+    .app-input-label + .app-input-text {
+      border-start-start-radius: 0;
+      border-end-start-radius: 0;
+      border-left-width: 0;
+    }
+  }
+  @if $platform == "windows10" {
+    .app-input-label:has(+ .app-input-text:hover) {
+      border-color: #777;
+    }
+    .app-input-label:has(+ .app-input-text:focus) {
+      border-color: #666;
+    }
+    .app-input-label + .app-input-text {
+      border-left-width: 0;
+    }
+  }
+
+  .app-input-label {
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    place-content: center;
+    width: max-content;
+    padding: 0 10px;
+    border-right-width: 0 !important;
+    background: var(--color-background-default);
+
+    @if $platform == "windows10" {
+      border: 2px solid #999;
+      background-color: var(--color-ui-hover-default);
+    }
+    @if $platform == "windows11" {
+      border-radius: 4px;
+      border-end-end-radius: 0;
+      border-start-end-radius: 0;
+      border: 1px solid var(--color-input-border-default);
+      border-bottom: 1px solid #777;
+    }
+  }
+
+  &.input-success {
+    .app-input-text {
+      @if $platform == "windows10" {
+        border-color: var(--color-success-default);
+      }
+      @if $platform == "windows11" {
+        border-bottom-color: var(--color-success-default);
+        &:focus {
+          background-image: radial-gradient(var(--color-success-default) 100%, transparent 100%);
+        }
+      }
+    }
+    .app-input-end-content {
+      .icons10-status::before {
+        content: "\f12e";
+        padding-right: 5px;
+        color: var(--color-success-default);
+      }
+    }
+  }
+  &.input-danger {
+    .app-input-text {
+      @if $platform == "windows10" {
+        border-color: var(--color-danger-default);
+      }
+      @if $platform == "windows11" {
+        border-bottom-color: var(--color-danger-default);
+        &:focus {
+          background-image: radial-gradient(var(--color-danger-default) 100%, transparent 100%);
+        }
+      }
+    }
+    .app-input-end-content {
+      .icons10-status::before {
+        content: "\f116";
+        padding-right: 5px;
+        color: var(--color-danger-default);
+      }
+    }
+  }
+  &.input-loading {
+    .app-loader-busy {
+      display: inline-flex;
+    }
+  }
+}
+
+.app-input-end-content {
+  gap: 5px;
+  right: 5px;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+
+  button {
+    border: none;
+    font-size: 17px;
+    padding: 2.5px 5px;
+    background: transparent;
+    &:hover {
+      background-color: var(--color-navbar-bg-default);
+    }
+    &:active {
+      opacity: 0.7;
+    }
+  }
+  [data-win-clear="text"] {
+    visibility: hidden;
+    &::after {
+      content: "\f116";
+      font-family: icons10;
+    }
+  }
+  
+  .app-loader-busy {
+    display: none;
+  }
+}

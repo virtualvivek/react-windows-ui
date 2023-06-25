@@ -1,0 +1,142 @@
+[
+  {
+    "to": "accordion",
+    "exact": false,
+    "text": "Accordion",
+    "icon": "icons10-down-squared",
+    "showBadge": false
+  },
+  {
+    "to": "alerts",
+    "exact": false,
+    "text": "Alerts",
+    "icon": "icons10-advertising",
+    "showBadge": false
+  },
+  {
+    "to": "avatarview",
+    "exact": false,
+    "text": "AvatarView",
+    "icon": "icons10-emoji-smile",
+    "showBadge": false
+  },
+  {
+    "to": "buttons",
+    "exact": false,
+    "text": "Buttons",
+    "icon": "icons10-controller",
+    "showBadge": 7
+  },
+  {
+    "to": "checkbox",
+    "exact": false,
+    "text": "Checkbox",
+    "icon": "icons10-checked-2",
+    "showBadge": false
+  },
+  {
+    "to": "colorpicker",
+    "exact": false,
+    "text": "ColorPicker",
+    "icon": "icons10-color-palette",
+    "showBadge": false
+  },
+  {
+    "to": "commandbar",
+    "exact": false,
+    "text": "CommandBar",
+    "icon": "icons10-terminal",
+    "showBadge": false
+  },
+  {
+    "to": "dialogs",
+    "exact": false,
+    "text": "Dialogs",
+    "icon": "icons10-notification-image",
+    "showBadge": false
+  },
+  {
+    "to": "icons",
+    "exact": false,
+    "text": "Icons",
+    "icon": "icons10-deathly-hallows",
+    "showBadge": false
+  },
+  {
+    "to": "imageview",
+    "exact": false,
+    "text": "ImageView",
+    "icon": "icons10-picture",
+    "showBadge": false
+  },
+  {
+    "to": "input_group",
+    "exact": false,
+    "text": "InputText",
+    "icon": "icons10-keyboard",
+    "showBadge": false
+  },
+  {
+    "to": "links",
+    "exact": false,
+    "text": "Link",
+    "icon": "icons10-link",
+    "showBadge": false
+  },
+  {
+    "to": "loaders",
+    "exact": false,
+    "text": "Loaders",
+    "icon": "icons10-tasks",
+    "showBadge": false
+  },
+  {
+    "to": "menubar",
+    "exact": false,
+    "text": "MenuBar",
+    "icon": "icons10-indent",
+    "showBadge": false
+  },
+  {
+    "to": "progressbar",
+    "exact": false,
+    "text": "ProgressBar",
+    "icon": "icons10-bar-chart",
+    "showBadge": false
+  },
+  {
+    "to": "radio_button",
+    "exact": false,
+    "text": "RadioButton",
+    "icon": "icons10-checked",
+    "showBadge": false
+  },
+  {
+    "to": "selectbox",
+    "exact": false,
+    "text": "Select",
+    "icon": "icons10-database",
+    "showBadge": false
+  },
+  {
+    "to": "sliderbar",
+    "exact": false,
+    "text": "SliderBar",
+    "icon": "icons10-arrow-right",
+    "showBadge": false
+  },
+  {
+    "to": "switch",
+    "exact": false,
+    "text": "Switch",
+    "icon": "icons10-touch",
+    "showBadge": false
+  },
+  {
+    "to": "tableview",
+    "exact": false,
+    "text": "TableView",
+    "icon": "icons10-grid-3",
+    "showBadge": false
+  }
+]

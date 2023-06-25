@@ -1,0 +1,9 @@
+.app-navbar-wrap {
+  .app-navbar-header {
+    z-index: 2;
+    display: flex;
+    width: inherit;
+    align-items: center;
+    background-color: var(--color-navbar-bg-default);
+  }
+}

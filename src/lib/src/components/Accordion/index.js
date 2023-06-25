@@ -2,11 +2,11 @@ import React, { useState, useRef, useEffect, Children, useLayoutEffect, useCallb
 
 const Accordion = (props) => {
   const panelRef = useRef(null);
-  const [isActive, setIsActive] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   const [panelHeight, setPanelHeight] = useState(10);
 
   const _header = Children.map(props.children, child => child.type.displayName === "Header" ? child : null);
-  const _panel = Children.map(props.children, child => child.type.displayName === "Panel" ? child : null);
+  const _body = Children.map(props.children, child => child.type.displayName === "Body" ? child : null);
 
   const updateWidth = useCallback(() => {
     setTimeout(()=> {
@@ -24,11 +24,10 @@ const Accordion = (props) => {
   }, [updateWidth]);
 
   const toggleHeader = () => {
-    if(isActive) {
-      setIsActive(false); props.onCollapse();
-    }
-    else {
-      setIsActive(true); props.onExpand();
+    if(isExpanded) {
+      setIsExpanded(false); props.onCollapse();
+    } else {
+      setIsExpanded(true); props.onExpand();
     }
   }
 
@@ -44,22 +43,21 @@ const Accordion = (props) => {
       style={props.style}>
       <div
         className="app-accordion-header"
+        aria-expanded={isExpanded}
         onClick={toggleHeader}>
         {
           _header.length === 0
-        ? <div className="app-accordion-title"><span>{props.headerTitle}</span>
-                              {isActive
-                                ? <i className="icons10-angle-up"></i>
-                                : <i className="icons10-angle-down"></i>}
-                              </div>
+        ? <div className="app-accordion-title">
+            <span>{props.headerTitle}</span>
+          </div>
         : _header
         }
       </div>
-      <div className={isActive ? "app-accordion-panel show"
+      <div className={isExpanded ? "app-accordion-panel show"
                                : "app-accordion-panel"}
           ref={panelRef}
-          style={isActive ? {height: panelHeight} : {height: 0}}>
-        {_panel}
+          style={isExpanded ? {height: panelHeight} : {height: 0}}>
+        {_body}
       </div>
     </div>
   );
@@ -75,8 +73,8 @@ AccordionHeader.displayName = "Header";
 Accordion.Header = AccordionHeader;
 
 
-const AccordionPanel = ({ children }) => <>{children}</>
-AccordionPanel.displayName = "Panel";
-Accordion.Panel = AccordionPanel;
+const AccordionBody = ({ children }) => <>{children}</>
+AccordionBody.displayName = "Body";
+Accordion.Body = AccordionBody;
 
 export default Accordion;

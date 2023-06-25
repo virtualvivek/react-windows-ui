@@ -1,0 +1,14 @@
+.app-dropdown-menu {
+  ul.app-dropdown-list {
+    .app-input-text {
+      width: 100%;
+      height: 33px;
+      border-radius: 6px;
+      @if $platform == "windows11" { margin-bottom: 1px; }
+
+      &:not(:focus) {
+        border-color: #99999988;
+      }
+    }
+  }
+}

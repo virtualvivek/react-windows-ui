@@ -1,0 +1,65 @@
+.app-navbar-theme-switch {
+  display: grid;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 5px 10px;
+  border-radius: 4px;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover { background: var(--color-ui-hover-strong); }
+  &:active {
+    @if $platform == "windows10" { background-color: var(--color-ui-active-default); }
+    @if $platform == "windows11" { opacity: 0.7; }
+  }
+
+  span {
+    width: 100px;
+    line-height: 1;
+    font-size: 15px;
+    user-select: none;
+    padding-left: 10px;
+    position: relative;
+  }
+}
+.app-navbar-theme-switch input {
+  display: none;
+}
+
+.app-navbar-theme-switch input + .app-navbar-theme-switch-icon {
+  gap: 10px;
+  height: 22px;
+  display: flex;
+  font-size: 15px;
+  position: relative;
+  align-items: center;
+}
+
+
+// 🌙 Moon Icon Shown
+input + .app-navbar-theme-switch-icon:before {
+  font-size: 22px;
+  content: "\f120";
+  font-family: icons10;
+}
+input + .app-navbar-theme-switch-icon::after {
+  width: 100px;
+  content: "Day Mode";
+}
+
+// ☀️ Sun Icon Shown
+input:checked + .app-navbar-theme-switch-icon:before {
+  content: "\f18e";
+}
+input:checked + .app-navbar-theme-switch-icon:after {
+  content: "Night Mode";
+}
+
+// Hide Text on NavBar Collapsed
+.app-navbar-wrap.collapsed .app-navbar-theme-switch-icon:after {
+  display: none;
+}

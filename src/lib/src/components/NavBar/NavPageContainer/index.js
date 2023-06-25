@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ContainerInner from "./ContainerInner";
-import ContainerTitleBar from "./ContainerTitleBar";
 
 const NavPageContainer = (props) => {
 
   const { pathname } = useLocation();
 
   useEffect(() => {
-    var element = document.getElementById("app-section-container-id");
+    var element = document.getElementById("app-page-container-id");
     if(element && props.animateTransition) {
       element.classList.add("transition-left");
     }
@@ -22,21 +21,20 @@ const NavPageContainer = (props) => {
   }
 
   return (
-    <div id="app-section-container-id"
+    <main id="app-page-container-id"
       className={ props.hasPadding
-                ? `app-section-container has-padding${setTransition()}`
-                : `app-section-container${setTransition()}`
+                ? `app-page-container has-padding${setTransition()}`
+                : `app-page-container${setTransition()}`
                 }
       style={{
         backgroundColor: props.backgroundColor,
         ...props.style
       }}>
       {props.children}
-    </div>
+    </main>
   )
 }
 
 NavPageContainer.Inner = ContainerInner;
-NavPageContainer.TitleBar = ContainerTitleBar;
 
 export default NavPageContainer;

@@ -1,0 +1,38 @@
+.app-page-container {
+  height: auto;
+  flex: 1 1 auto;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  transition: 0.2s ease;
+
+  &.has-padding {
+    padding: 0 20px 0 35px;
+  }
+}
+
+.app-page-container-inner {
+  padding: 0 20px 0 35px;
+}
+
+@if $platform == "windows11" {
+  .app-page-container-fg {
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid var(--color-ui-border-default);
+    background: var(--color-foreground-default);
+  }
+}
+
+@mixin app-content-wrap-mobile() {
+  .app-page-container {
+    margin: 0 !important;
+    padding-top: 50px !important;
+    
+    &.has-padding {
+      padding: 0 20px;
+    }
+  }
+  .app-page-container-inner {
+    margin: 20px;
+  }
+}

@@ -1,0 +1,36 @@
+.app-input-calendar {
+  @extend .input-field-default;
+}
+.app-input-container input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  margin-right: 4px;
+  height: 20px;
+  width: 25px;
+  z-index: 1;
+  &:hover {
+    border-radius: 4px;
+    filter: brightness(0.96);
+    background-color: var(--color-navbar-bg-default);
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.app-input-container input[type="date"] {
+  position: relative;
+  &:before {
+    z-index: 2;
+    right: 10px;
+    height: 22px;
+    display: flex;
+    line-height: 0;
+    font-size: 17px;
+    content: "\f1cb";
+    position: absolute;
+    align-items: center;
+    font-family: icons10;
+    pointer-events: none;
+  }
+}

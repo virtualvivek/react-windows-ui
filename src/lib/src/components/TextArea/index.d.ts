@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export interface TextAreaProps {
   value ?: any;
@@ -6,6 +6,6 @@ export interface TextAreaProps {
   onChange ?: Function;
   placeholder ?: string;
 }
-declare const TextArea: React.FC<TextAreaProps>
+declare const TextArea: React.FC<TextAreaProps>;
 
-export default TextArea
+export default TextArea;

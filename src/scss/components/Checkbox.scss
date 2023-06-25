@@ -1,0 +1,75 @@
+.app-checkbox {
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    transition: 0.02s ease;
+    transform: scale(0.92, 0.92);
+  }
+
+  &::before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: flex;
+    transition: background 0.1s;
+
+    @if $platform == "windows10" {
+      border-radius: 0;
+      border: 2px solid var(--color-button-hover);
+      background-color: var(--color-background-default);
+    }
+
+    @if $platform == "windows11" {
+      padding: 1px;
+      border-radius: 4px;
+      border: 1px solid var(--color-input-border-strong);
+      background-color: var(--color-ui-hover-default);
+    }
+  }
+  &:checked {
+    @if $platform == "windows10" {
+      &::before {
+        background: var(--PrimaryColor);
+        border: 2px solid var(--PrimaryColor);
+      }
+    }
+    @if $platform == "windows11" {
+      &::before {
+        padding: 0;
+        background: var(--color-primary-adaptive);
+        border: 2px solid var(--color-primary-adaptive);
+      }
+    }
+    
+    &::after {
+      width: 6px;
+      height: 11px;
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      top: 3px;
+      left: 7px;
+      transform: rotate(45deg);
+      @if $platform == "windows10" { border: solid white; }
+      @if $platform == "windows11" { border: solid var(--color-background-default); }
+      border-width: 0 2px 2px 0;
+      border-radius: 1px;
+    }
+
+    &:disabled {
+      opacity: 0.8;
+    }
+  }
+  
+  &:checked:disabled::before,
+  &:disabled::before {
+    cursor: not-allowed;
+  }
+}

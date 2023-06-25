@@ -1,0 +1,20 @@
+.app-navbar-name {
+  font-weight: 500;
+  color: var(--color-text-default);
+
+  font-size: 15px;
+  cursor: default;
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+  padding-inline-start: 10px;
+
+  &::-moz-selection {
+    background: transparent;
+    color: var(--color-text-default);
+  }
+  &::selection {
+    background: transparent;
+    color: var(--color-text-default);
+  }
+}

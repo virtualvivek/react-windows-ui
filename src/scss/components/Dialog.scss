@@ -1,0 +1,68 @@
+.app-dialog {
+  @extend .app-dim-overlay;
+
+  .app-dialog-modal {
+    width: 440px;
+    z-index: 11;
+    position: fixed;
+    overflow: hidden;
+    background-color: var(--color-foreground-dark);
+    box-shadow: 0 0 7vh rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-foreground-dark);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.28s;
+    transform: translateY(24px);
+
+    @if $platform == "windows11" {
+      border-radius: 8px;
+    }
+
+    .app-dialog-footer {
+      @extend .app-modal-footer-default;
+    }
+    .app-dialog-body {
+      max-height: 40vh;
+      overflow: overlay;
+      background-color: var(--color-background-default);
+    }
+    @-moz-document url-prefix() {
+      .app-dialog-body {
+        overflow: auto;
+      }
+    }
+    .app-dialog-header {
+      padding: 0 15px;
+    }
+  }
+
+  &.show .app-dialog-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+body.dark-theme {
+  .app-dialog .app-dialog-modal {
+    background-color: var(--color-navbar-bg-default);
+  }
+}
+
+@mixin dialog-mobile() {
+  .app-dialog .app-dialog-modal {
+    width: 100%;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    left: 0;
+    bottom: 0;
+    top: initial;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid var(--color-foreground-dark);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transform: translateY(100%); //adding full 100% to animate like bottomsheet
+  }
+}

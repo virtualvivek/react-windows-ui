@@ -2,11 +2,11 @@
   "name": "react-windows-ui-app",
   "version": "4.2.1",
   "private": false,
-  "description": "Build full featured Windows fluent UI apps using reactjs.",
+  "description": "Build full featured Windows Fluent UI apps using ReactJS.",
   "keywords": [
     "react",
     "fluentui",
-    "windows10",
+    "windows11",
     "user-interface",
     "react-component",
     "responsive",
@@ -14,7 +14,7 @@
     "electronJS",
     "mobile"
   ],
-  "homepage": "https://virtualvivek.github.io/react-windows-ui/",
+  "homepage": "https://virtualvivek.github.io/react-windows-ui",
   "bugs": {
     "url": "https://github.com/virtualvivek/react-windows-ui/issues"
   },
@@ -24,7 +24,7 @@
     "email": "virtualvivek7@gmail.com"
   },
   "dependencies": {
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
@@ -40,9 +40,9 @@
     "start": "react-scripts start",
     "build:production": "rm -rf dist && SET NODE_ENV=production && babel src/lib/src --out-dir src/lib/dist --copy-files",
     "build": "react-scripts build",
-    "compile:sass": "node-sass src/css-source/stylesheet/main-win10.scss src/lib/dist/react-windows-ui.min.css --output-style compressed",
-    "compile:sass-sunvalley": "node-sass src/css-source/stylesheet/main-win11.scss src/lib/dist/react-windows-ui-11.min.css --output-style compressed",
-    "compile:sass-rtl": "node-sass src/css-source/stylesheet-rtl/main.scss src/lib/dist/react-windows-ui-rtl.min.css --output-style compressed",
+    "compile:sass": "node-sass src/scss/main-win11.scss src/lib/dist/react-windows-ui.min.css --output-style compressed",
+    "compile:sass-win10": "node-sass src/scss/main-win10.scss src/lib/dist/react-windows-ui-10.min.css --output-style compressed",
+    "compile:sass-rtl": "node-sass src/scss/stylesheet-rtl/main.scss src/lib/dist/react-windows-ui-rtl.min.css --output-style compressed",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
@@ -69,6 +69,7 @@
     "@babel/cli": "^7.14.5",
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "babel-preset-minify": "^0.5.1",
     "gh-pages": "^3.2.3",
     "react-error-overlay": "^6.0.9"

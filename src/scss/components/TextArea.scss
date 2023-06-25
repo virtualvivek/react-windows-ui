@@ -1,0 +1,19 @@
+.app-textarea {
+  @extend .input-field-default;
+
+  width: auto;
+  height: auto;
+  cursor: auto;
+  padding: 10px;
+  font-family: inherit;
+  line-height: normal;
+
+  @if $platform == "windows10" {
+    &:hover {
+      border-color: #777;
+    }
+    &:focus {
+      border-color: #666;
+    }
+  }
+}

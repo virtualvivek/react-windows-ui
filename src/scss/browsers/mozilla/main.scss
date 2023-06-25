@@ -1,0 +1,13 @@
+@-moz-document url-prefix() {
+  .app-navbar-wrap * {
+    scrollbar-width: thin;
+  }
+  .app-navbar-wrap.collapsed * {
+    scrollbar-width: none;
+  }
+}
+@mixin browser-mozilla-mobile() {
+  .app-navbar-wrap * {
+    scrollbar-width: none;
+  }
+}

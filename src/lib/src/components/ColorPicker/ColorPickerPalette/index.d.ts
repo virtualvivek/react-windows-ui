@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 export interface ColorPickerPaletteProps {
+  color ?: any;
   disabled ?: boolean;
+  onChange ?: Function;
   width ?: number | string;
   height ?: number | string;
-  color ?: any;
-  onChange ?: Function;
 }
-declare const ColorPickerPalette: React.FC<ColorPickerPaletteProps>
+declare const ColorPickerPalette: React.FC<ColorPickerPaletteProps>;
 
-export default ColorPickerPalette
+export default ColorPickerPalette;

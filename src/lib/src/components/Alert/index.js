@@ -11,13 +11,14 @@ const Alert = (props) => {
   }
 
   useMemo(() => {
-    if(props.isVisible) { ScrollView.disableScroll(); }
-    else { ScrollView.enableScroll(); }
+    props.isVisible ? ScrollView.disableScroll() : ScrollView.enableScroll();
   }, [props.isVisible]);
 
   return (
-    <div className={props.isVisible ? "app-alert show" : "app-alert"}
-      onClick={(event)=>_onBackdropPress(event)}>
+    <div
+      className={props.isVisible ? "app-alert show" : "app-alert"}
+      onClick={(event) => _onBackdropPress(event)}
+      tabIndex="-1">
       <div className="app-alert-modal" aria-modal="true" role="dialog">
         <div className="app-alert-header">
           <h1>{props.title}</h1>
