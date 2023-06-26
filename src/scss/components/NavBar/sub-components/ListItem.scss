@@ -4,8 +4,8 @@
     transition: 0s ease;
 
     @if $platform == "windows11" {
+      margin: 5px;
       overflow: hidden;
-      margin: 5px 10px;
       border-radius: 4px;
     }
 

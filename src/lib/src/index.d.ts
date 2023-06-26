@@ -4,10 +4,8 @@ export { default as AppContainer } from "./components/AppContainer";
 export { default as NavBar } from "./components/NavBar/NavBar";
 export { default as NavBarLink } from "./components/NavBar/NavBarLink";
 export { default as NavBarSubMenu } from "./components/NavBar/NavBarSubMenu";
-export { default as NavBarSearchBox } from "./components/NavBar/NavBarSearchBox";
 export { default as NavPageContainer } from "./components/NavBar/NavPageContainer";
 export { default as NavBarThemeSwitch } from "./components/NavBar/NavBarThemeSwitch";
-export { default as NavBarSearchSuggestion } from "./components/NavBar/NavBarSearchSuggestion";
 
 export { default as Accordion } from "./components/Accordion";
 export { default as AvatarView } from "./components/AvatarView";
@@ -22,7 +20,6 @@ export { default as ImageView } from "./components/ImageView";
 export { default as InputText } from "./components/InputText";
 export { default as InputSearchBar } from "./components/InputSearch/InputSearchBar";
 export { default as InputSearchBox } from "./components/InputSearch/InputSearchBox";
-export { default as InputSearchSuggestion } from "./components/InputSearch/InputSearchSuggestion";
 export { default as Link } from "./components/Link";
 export { default as LoaderBar } from "./components/Loaders/LoaderBar";
 export { default as LoaderBusy } from "./components/Loaders/LoaderBusy";

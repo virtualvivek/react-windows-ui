@@ -3,9 +3,10 @@
     @extend .app-dropdown-ul-default;
   }
   &::after {
-    right: 10px;
+    width: 25px;
+    z-index: 1;
     content: "\f1b9";
-    position: absolute;
+    margin-left: -25px;
     font-family: icons10;
     
     @if $platform == "windows10" { font-size: 18px; font-weight: 600; }

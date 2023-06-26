@@ -14,6 +14,7 @@
     --color-dropdown-menu-bg: var(--dark, #202020) var(--light, #F8F8F8);
     --color-foreground-default: var(--dark, #2B2B2B) var(--light, #fff);
     --color-foreground-dark: var(--dark, #444) var(--light, #EEE);
+    --color-input-bg-default: var(--dark, #11111199) var(--light, #FFFFFF99);
     --color-input-border-default: var(--dark, #303030) var(--light, #55555544);
     --color-input-border-strong: var(--dark, #9A9A9A) var(--light, #8A8A8A);
     --color-ui-active-default: var(--dark, #262626) var(--light, #D8D8D8);
@@ -22,11 +23,11 @@
     --color-progress-bg: var(--dark, #484848) var(--light, #E2E2E2);
     --color-slider-thumb-bg: var(--dark, #454545) var(--light, #FFF);
     --color-text-default: var(--dark, #FFF) var(--light, #000);
-    --color-ui-border-default: var(--dark, #282828) var(--light, #E3E3E3);
+    --color-ui-border-default: var(--dark, #28282899) var(--light, #E3E3E399);
     --color-ui-hover-default: var(--dark, #44444477) var(--light, #EEEEEED1);
     --color-ui-hover-strong: var(--dark, #2D2D2D) var(--light, #E8E8E8);
 
-    --width-navbar-expanded: 280px;
-    --width-navbar-collapsed: 70px;
+    --width-navbar-expanded: 270px;
+    --width-navbar-collapsed: 60px;
   }
 }

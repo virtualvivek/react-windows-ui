@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const NavBar = (props) => {
 
@@ -21,18 +21,23 @@ const NavBar = (props) => {
     }
     // If Click is Made on <Large Screen Device> --------
     else {
-      toggleLargeNavbar(()=> setSidebarCollapsed(sidebar_collapsed ? false : true))
+      toggleLargeNavbar(()=> setSidebarCollapsed(sidebar_collapsed ? false : true));
     }
   }
 
   const onUlClickItems = (e) => {
     if (e.target && e.target.matches("a")) {
       var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-      if(width < 760) {
-        setSidebarFloatCollapsed("");
-      }
+      if(width < 760) { setSidebarFloatCollapsed(""); }
     }
   }
+
+  useEffect(()=> {
+    let NavSearch = document.getElementById("app-navbar-list").getElementsByClassName("app-input-search-box")[0];
+    NavSearch.addEventListener("click", () => {
+      if(sidebar_collapsed) { setSidebarCollapsed(false); }
+    });
+  }, [sidebar_collapsed]);
   
   const scrollEvent = (e) => { e.target.scrollTop < 50 ? setScrolling(false) : setScrolling(true); }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { AppContainer, SplashScreen, NavBar, NavBarLink,
-        NavBarSubMenu, NavBarSearchSuggestion, NavBarThemeSwitch, Dialog } from "./_lib";
+        NavBarSubMenu, NavBarThemeSwitch, Dialog, InputSearchBox } from "./_lib";
 import {
   Home,
   GettingStarted,
@@ -110,8 +110,8 @@ class AppFourTwoTwo extends React.Component {
       </Dialog>
 
       <NavBar
-        collapsed
-        title={<>React Win UI &nbsp;
+        // collapsed
+        title={<>React Win UI
           <Link to="#" className="docs-btn-branch-selector" onClick={this.toggleDialog}>
             <span>v{lib_version}&nbsp;<i className="icons10-angle-down"></i></span>
           </Link>
@@ -127,10 +127,9 @@ class AppFourTwoTwo extends React.Component {
             </span>
           </div>}>
 
-        <NavBarSearchSuggestion
+        <InputSearchBox
           placeholder={`Search Docs v${lib_version}`}
-          tooltip="Search Docs"
-          data={[
+          suggest={[
             {label: 'home', link: '#', icon: <i className="icons10-home"></i>},
             {label: 'alert', link: 'alerts'},
             {label: 'accordion', link: 'accordion'},
@@ -159,7 +158,7 @@ class AppFourTwoTwo extends React.Component {
         <NavBarLink
           to="getting_started"
           text="Getting Started"
-          icon={<i className="icons10-terminal"></i>}
+          icon={<i className="icons10-navigation"></i>}
         />
 
         <NavBarSubMenu title="Navigation">

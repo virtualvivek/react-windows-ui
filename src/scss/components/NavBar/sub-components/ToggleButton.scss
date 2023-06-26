@@ -1,7 +1,7 @@
 .app-navbar-wrap .app-navbar-toggler {
   cursor: pointer;
   @if $platform=="windows10" { padding: 15px 25px; }
-  @if $platform=="windows11" { padding: 10px 15px; margin: 5px 10px; border-radius: 4px; }
+  @if $platform=="windows11" { padding: 10px 15px; margin: 5px; border-radius: 4px; }
 
   &:hover {
     background-color: var(--color-ui-hover-strong);

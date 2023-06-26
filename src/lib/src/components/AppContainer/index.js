@@ -15,7 +15,7 @@ const AppContainer = (props) => {
       case "light": Appearance.setLightScheme(); break;
       default: {
         window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => handleThemeEvent(e));
-        return () => window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change", handleThemeEvent );
+        return () => window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change", handleThemeEvent());
       }
     }
   }, []);

@@ -81,7 +81,7 @@
   padding: 0 0 0 10px;
   color: var(--color-text-default);
   -webkit-tap-highlight-color: transparent;
-  background: var(--color-background-default);
+  background: var(--color-input-bg-default);
 
   @if $platform == "windows10" {
     height: 30px;
@@ -149,6 +149,7 @@
   display: none;
   margin: 5px 0;
   width: inherit;
+  max-height: 37vh;
   list-style: none;
   overflow-y: auto;
   font-weight: 500;

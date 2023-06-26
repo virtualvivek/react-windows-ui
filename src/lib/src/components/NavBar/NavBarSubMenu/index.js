@@ -1,16 +1,13 @@
-import React, { useState, useRef, useLayoutEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const NavBarSubMenu = (props) => {
-  const panelRef = useRef(null);
+  const panelRef = useRef();
   const [isActive, setIsActive] = useState(false);
   const [contentHeight, setContentHeight] = useState(100);
 
-  useLayoutEffect(() => {
-    setTimeout(() => {
-      setContentHeight(panelRef.current.scrollHeight);
-    }, 150);
+  useEffect(() => {
+    setTimeout(() => setContentHeight(panelRef.current?.scrollHeight), 150);
   }, []);
-
 
   return (
     <div className="app-navbar-submenu">
