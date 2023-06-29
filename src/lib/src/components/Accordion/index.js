@@ -42,6 +42,7 @@ const Accordion = (props) => {
       className="app-accordion"
       style={props.style}>
       <div
+        style={props.headerStyle}
         className="app-accordion-header"
         aria-expanded={isExpanded}
         onClick={toggleHeader}>
@@ -53,10 +54,10 @@ const Accordion = (props) => {
         : _header
         }
       </div>
-      <div className={isExpanded ? "app-accordion-panel show"
-                               : "app-accordion-panel"}
+      <div className={isExpanded ? "app-accordion-body show"
+                               : "app-accordion-body"}
           ref={panelRef}
-          style={isExpanded ? {height: panelHeight} : {height: 0}}>
+          style={{height: isExpanded ? panelHeight : 0}}>
         {_body}
       </div>
     </div>

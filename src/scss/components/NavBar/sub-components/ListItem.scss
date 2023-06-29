@@ -1,27 +1,23 @@
 .app-navbar-wrap .app-navbar-list {
   .app-navbar-list-item {
     display: flex;
-    transition: 0s ease;
 
     @if $platform == "windows11" {
       margin: 5px;
       overflow: hidden;
       border-radius: 4px;
     }
-
-    &:hover {
-      background-color: var(--color-ui-hover-strong);
-    }
     &:active {
-      @if $platform == "windows10" { background-color: var(--color-ui-active-default); }
-      @if $platform == "windows11" { opacity: 0.7; }
-
-      span {
-        transform: scale(0.98, 0.98);
-        transition: transform 0s ease-in-out;
+      @if $platform == "windows10" {
+        background-color: var(--color-ui-active-default);
+        span {
+          transform: scale(0.98, 0.98);
+        }
       }
-
-      @if $platform == "windows11" { a, a.active { &::after { height: 15px; } } }
+      @if $platform == "windows11" {
+        opacity: 0.7;
+        a.active::after { height: 15px; }
+      }
     }
 
     a {
@@ -34,6 +30,8 @@
       flex-direction: row;
       display: inline-flex;
       color: var(--color-text-default);
+      
+      &:hover { background-color: var(--color-ui-hover-strong); }
 
       @if $platform == "windows10" { padding: 12px 25px; }
       @if $platform == "windows11" { padding: 10px 15px; }
@@ -92,7 +90,6 @@
       user-select: none;
       white-space: nowrap;
       text-overflow: ellipsis;
-      transition: transform 0.4s ease-in-out;
     }
     img {
       width: 18px;

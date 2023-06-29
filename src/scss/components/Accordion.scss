@@ -1,6 +1,9 @@
 .app-accordion {
   overflow: hidden;
 }
+.app-accordion-header {
+  width: fit-content;
+}
 .app-accordion-title {
   height: 33px;
   display: flex;
@@ -13,7 +16,7 @@
   &::after {
     line-height: 0;
     content: "\f10c";
-    margin-left: 5px;
+    margin-left: 15px;
     align-self: center;
     font-family: icons10;
     transform-origin: center;
@@ -27,7 +30,7 @@
   }
 }
 
-.app-accordion-panel {
+.app-accordion-body {
   height: 0;
   overflow: hidden;
   transition: height 243ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;

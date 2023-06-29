@@ -1,9 +1,8 @@
 import React from 'react';
-import { NavPageContainer, Button, Link } from '../../_lib';
+import { NavPageContainer } from '../../_lib';
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { TextHeadingCode, TextHeadingNoMgBottomCode,TextVarientsCode, TextVarientLightCode, ForegroundContainerCode } from './codes';
-import { lib_version } from '../../values';
+import { TextHeadingCode, TextHeadingNoMgBottomCode,TextVarientsCode, TextVarientLightCode } from './codes';
 
 class ClassesDocs extends React.Component {
   render() {
@@ -52,8 +51,8 @@ class ClassesDocs extends React.Component {
         
         <h2>Paragraph varients</h2>
         <p>This is paragraph used to display long text.</p>
-        <p className="color-success">This is success paragraph used to display success text.</p>
-        <p className="color-danger">This is danger paragraph used to display danger text.</p>
+        <p className="app-color-success">This is success paragraph used to display success text.</p>
+        <p className="app-color-danger">This is danger paragraph used to display danger text.</p>
 
         <SyntaxHighlighter
           language="javascript"
@@ -72,27 +71,7 @@ class ClassesDocs extends React.Component {
           {TextVarientLightCode}
         </SyntaxHighlighter>
 
-      
-        <div className="app-hr"></div>
-
-        <h2>Foreground Container</h2>
-        <p>Shows a foreground container.<br/>It's a windows 11 feature so styles apply only on win11-ui and shows a default view on win10-ui.</p>
-        <div className="app-section-container-fg">
-          <Button/>
-          <p>You content here.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <br/>
-        <Link to={`/v${lib_version}/fg_cntr_demo`}><b>See Usage.</b></Link>
-        <br/>
-        <br/>
-        <SyntaxHighlighter
-          language="javascript"
-          style={vscDarkPlus}
-          className="code code-container">
-          {ForegroundContainerCode}
-        </SyntaxHighlighter>
-
-        <br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
 
       </NavPageContainer>
     );

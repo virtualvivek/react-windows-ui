@@ -1,18 +1,18 @@
-import React from 'react'
+import React from "react";
 
 export interface InputSearchBarProps {
-  placeholder ?: string;
-  onSubmit ?: Function;
-  onChange ?: Function;
-  onClick ?: Function;
-  onKeyUp ?: Function;
-  onKeyDown ?: Function;
-  disabled ?: boolean;
-  tooltip ?: string;
+  name ?: any;
   value ?: any;
   width ?: any;
-  name ?: any;
+  tooltip ?: string;
+  disabled ?: boolean;
+  onClick ?: Function;
+  onKeyUp ?: Function;
+  onSubmit ?: Function;
+  onChange ?: Function;
+  onKeyDown ?: Function;
+  placeholder ?: string;
 }
-declare const InputSearchBar: React.FC<InputSearchBarProps>
+declare const InputSearchBar: React.FC<InputSearchBarProps>;
 
-export default InputSearchBar
+export default InputSearchBar;

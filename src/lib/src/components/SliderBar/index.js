@@ -2,49 +2,57 @@ import React from "react";
 
 const SliderBar = (props) => {
 
-  const inputRef = React.useRef();
+  const popupRef = React.useRef();
 
   const toggleVisible = () => {
-    if(props.showPopupValue) {
-      let ipopup = inputRef.current;
+    if(props.showPopupValue && popupRef.current.visibility!=="visible") {
+      let ipopup = popupRef.current;
           ipopup.style.visibility="visible";
           ipopup.style.opacity="1";
     }
   }
   const toggleHidden = () => {
     if(props.showPopupValue) {
-      let ipopup = inputRef.current;
+      let ipopup = popupRef.current;
           ipopup.style.visibility="hidden";
           ipopup.style.opacity="0";
     }
   }
 
+  const _onChange = (e) => {
+    toggleVisible();
+    props.onChange(e);
+  }
+
   return (
     <div
+      title={props.tooltip}
+      style={{width: props.width}}
       className={
         props.thumbStyle === "round" ? "app-range-slider slider-round"
       : props.thumbStyle === "round-border" ? "app-range-slider slider-round-border"
       : "app-range-slider" }
-      title={props.tooltip}>
+      data-win-orient={props.orientation === "vertical" ? "vertical": "horizontal"}>
       <input
         type="range"
         min={props.min}
         max={props.max}
         step={props.step}
-        onChange={props.onChange}
-        onMouseDown={props.onDragStart}
         onMouseUp={props.onDragEnd}
+        onMouseDown={props.onDragStart}
+        onTouchStart={props.onDragStart}
+        onTouchEnd={props.onDragEnd}
+        onChange={(e) => _onChange(e)}
         defaultValue={props.defaultValue}
-        onMouseEnter={() => toggleVisible()}
+        onMouseEnter={props.onMouseEnter}
         onMouseLeave={() => toggleHidden()}
         style={{
           background:"linear-gradient(90deg, var(--color-primary-adaptive)"+(props.defaultValue/props.max) * 100+"%, #999999 20.1%)"
         }}
       />
-      { props.showValue && (<span> {props.defaultValue}</span>) }
       { props.showPopupValue && (
         <span
-          ref={inputRef}
+          ref={popupRef}
           className="app-range-slider-popup"
           style={{ left: (props.defaultValue/props.max) *72+"%" }}>
             {props.defaultValue}
@@ -59,7 +67,7 @@ SliderBar.defaultProps = {
   max: 500,
   step: 1,
   defaultValue: 0,
-  showValue: true,
+  onChange: () => {},
   showPopupValue: true
 }
 

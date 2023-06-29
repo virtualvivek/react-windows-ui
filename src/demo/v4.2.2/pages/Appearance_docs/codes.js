@@ -9,20 +9,22 @@ const AppearanceUsageCode =
 }`;
 
 const AppearanceGetColorSchemeCode =
-`static getColorScheme()`;
+`static getColorScheme(); // "light", "dark", "system"`;
 
 const AppearanceSetDarkSchemeCode =
-`static setDarkScheme()`;
+`static setDarkScheme();`;
 
 const AppearanceSetLightSchemeCode =
-`static setLightScheme()`;
+`static setLightScheme();`;
 
-
+const AppearanceSetSystemSchemeCode =
+`static setSystemScheme();`;
 
 export {
   AppearanceImportCode,
   AppearanceUsageCode,
   AppearanceGetColorSchemeCode,
   AppearanceSetDarkSchemeCode,
-  AppearanceSetLightSchemeCode
+  AppearanceSetLightSchemeCode,
+  AppearanceSetSystemSchemeCode
 }

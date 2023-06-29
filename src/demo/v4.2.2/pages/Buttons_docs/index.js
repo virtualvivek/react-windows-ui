@@ -27,9 +27,7 @@ class ButtonsDocs extends React.Component {
 
   return (
     <NavPageContainer
-      animateTransition>
-
-    <NavPageContainer.Inner>
+      animateTransition hasPadding>
 
       <h1>Buttons</h1>
 
@@ -277,7 +275,6 @@ class ButtonsDocs extends React.Component {
 
 
         <br/><br/><br/><br/>
-      </NavPageContainer.Inner>
 
       </NavPageContainer>
     );

@@ -22,7 +22,8 @@
       font-weight: 800;
       font-family: icons10;
       position: relative;
-      transition: all 0.2s;
+      transition: transform 0.18s;
+      border-bottom-left-radius: 4px;
       color: var(--color-background-default);
       background: var(--color-text-default);  
     }
@@ -33,12 +34,13 @@
   }
   .item:not(:checked) + div::before {
     opacity: 0;
-    transform: scale(0);
+    transform: scaleX(0);
     }
       
   .item:checked + div::before {
     opacity: 1;
-    transform: scale(1);
+    transform: scaleX(1);
+    transform-origin: right;
   }
 
   .item {

@@ -30,9 +30,11 @@ const AccordionDocs = () => {
 
       <h2>Usage</h2>
 
-      <Accordion headerTitle="Some Title" style={{width: "280px"}}>
+      <Accordion
+        headerTitle="Some Title"
+        headerStyle={{width: "250px"}}>
         <Accordion.Body>
-          <p>
+          <p style={{width: "270px"}}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -50,17 +52,14 @@ const AccordionDocs = () => {
         {AccordionUsageCode}
       </SyntaxHighlighter>
 
-      <h3 className="m-tb-20">Accordion <p className="app-code">focused false</p></h3>
+      <h3 className="m-tb-20">Accordion with <p className="app-code">Custom Header</p></h3>
 
-      <Accordion
-        style={{width: "270px"}}
-        onCollapse={() => {}}
-        onExpand={() => {}}>
+      <Accordion>
         <Accordion.Header>
           <Button value="Click"/>
         </Accordion.Header>
         <Accordion.Body>
-          <p>
+          <p style={{width: "270px"}}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam.
@@ -80,7 +79,7 @@ const AccordionDocs = () => {
       <PropsView/>
 
 
-    <br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
     </NavPageContainer>
   );
 }

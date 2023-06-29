@@ -20,9 +20,9 @@ const PropsView = () => {
           <td>Set's accordion title if not using custom Header.</td>
         </tr>
         <tr>
-          <td><p className="app-code">style</p></td>
-          <td>object</td>
-          <td>null</td>
+          <td><p className="app-code">headerStyle</p></td>
+          <td>CSSProperties</td>
+          <td>{`{ }`}</td>
           <td>Set's accordion container style.</td>
         </tr>
         <tr>
@@ -38,13 +38,13 @@ const PropsView = () => {
           <td>Set's accordion onExpand listener.</td>
         </tr>
         <tr>
-          <td><p className="app-code">Accordion.Header</p></td>
+          <td><p className="app-code">Accordion.<b>Header</b></p></td>
           <td>ReactNode</td>
           <td>[ ]</td>
           <td>Set's accordion custom header component.</td>
         </tr>
         <tr>
-          <td><p className="app-code">Accordion.Panel</p></td>
+          <td><p className="app-code">Accordion.<b>Body</b></p></td>
           <td>ReactNode</td>
           <td>[ ]</td>
           <td>Set's accordion panel component.</td>

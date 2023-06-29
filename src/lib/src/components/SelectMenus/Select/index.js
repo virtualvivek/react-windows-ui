@@ -51,7 +51,7 @@ const Select = (props) => {
       className={`${props.type === "text" ? "app-select-text" : "app-select-menu"}`}
       onClick={toggleDropdown}
       ref={wrapperRef}>
-      <span class="app-dropdown-title" title={props.tooltip}>{ilabel}</span>
+      <span className="app-dropdown-title" title={props.tooltip}>{ilabel}</span>
       <ul className={`app-dropdown-list ${isOpen && "show"}${isReverse}`}>
         {items.map((item, index) => (
           <li

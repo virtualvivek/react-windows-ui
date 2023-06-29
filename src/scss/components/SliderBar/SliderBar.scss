@@ -2,12 +2,27 @@
 @import "./SliderBarWin11.scss";
 
 .app-range-slider {
-  width: 360px;
+  width: 140px;
   padding: 5px 0;
   position: relative;
   align-items: center;
   display: inline-flex;
   -webkit-tap-highlight-color: transparent;
+
+  &[data-win-orient="vertical"] {
+    padding: 50% 0;
+    display: table-cell;
+
+    input[type="range"] {
+      display: block;
+      margin-top: -50%;
+      transform-origin: top left;
+      transform: rotate(-90deg) translate(-100%);
+
+      // transform: rotate(90deg);
+      // display: block;
+    }
+  }
 
   @if $platform == "windows10" {
     @include slider-bar-win-10();
@@ -16,13 +31,9 @@
     @include slider-bar-win-11();
   }
 
-  span {
-    line-height: 0;
-    font-size: 18px;
-    color: var(--color-text-default);
-  }
   .app-range-slider-popup {
     opacity: 0;
+    line-height: 0;
     padding: 12px 5px;
     visibility: hidden;
     display: inline-block;
@@ -51,9 +62,6 @@
     align-items: flex-start;
     flex-flow: column-reverse;
 
-    span {
-      line-height: 2.2;
-    }
     .app-range-slider-popup {
       display: none;
     }

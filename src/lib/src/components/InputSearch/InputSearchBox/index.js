@@ -20,16 +20,16 @@ const InputSearchBox = (props) => {
   return (
     <div className="app-input-search-box" title={props.tooltip}>
       <input className="app-input-text"
-        ref={inputRef}
         style={{ width: props.width }}
+        ref={inputRef}
         type="search"
         name={props.name}
         value={props.value}
         onClick={props.onClick}
         onKeyUp={props.onKeyUp}
         onKeyDown={props.onKeyDown}
-        disabled={props.disabled}
         placeholder={props.placeholder}
+        disabled={props.disabled}
         onChange={(e) => {
           _onChange(e)
           const lst_data = props.suggest.filter(data => {
@@ -54,9 +54,9 @@ const InputSearchBox = (props) => {
 }
 
 InputSearchBox.defaultProps = {
-  placeholder: "Search here..",
+  suggest: [],
   onChange: () => {},
-  suggest: []
+  placeholder: "Search here..",
 }
 
 export default InputSearchBox;

@@ -2,7 +2,7 @@ import React from 'react'
 import { NavPageContainer, AppTheme, ColorPickerItem } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { AppThemeImportCode, AppThemeUsageCode, SwitchThemeUsageCode } from './codes'
+import { AppThemeImportCode, AppThemeUsageCode } from './codes'
 import PropsView from './props-view'
 import Win11Wall from "../../../assets/win11Wall.jpg"
 import './css/window-view.css'
@@ -96,16 +96,7 @@ class AppThemeDocs extends React.Component {
       <h2>Props</h2>
       <PropsView />
 
-      <h2>Usage</h2>
-
-      <SyntaxHighlighter
-        language="javascript"
-        style={vscDarkPlus}
-        className="code code-container">
-        {SwitchThemeUsageCode}
-      </SyntaxHighlighter>
-
-      <br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/>
 
     </NavPageContainer>
     );

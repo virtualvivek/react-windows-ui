@@ -10,27 +10,7 @@ const AppThemeUsageCode =
   onSchemeChange={() => {}}
 />`;
 
-const SwitchThemeUsageCode =
-`changeMode = (e) => {
-  e.target.checked ?
-    this.setState({app_mode: "light"}) :
-    this.setState({app_mode: "dark"})
-}
-
-return (
-  <div>
-    <AppTheme
-      scheme={this.state.app_mode}
-    />
-    <Switch
-      onChange={(e) => {this.changeMode(e)}}
-    />
-  </div>
-)`;
-
-
 export {
     AppThemeImportCode,
-    AppThemeUsageCode,
-    SwitchThemeUsageCode
+    AppThemeUsageCode
 }

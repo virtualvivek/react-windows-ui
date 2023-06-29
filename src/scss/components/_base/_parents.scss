@@ -41,18 +41,6 @@
   animation-name: transition_dropdown_reverse;
 }
 
-.input-field-focused,
-.app-input-container:focus-within .app-input-label {
-  filter: none;
-  outline: none;
-  border-bottom-color: var(--color-primary-adaptive);
-  background-image: radial-gradient(var(--color-primary-adaptive) 100%, transparent 100%);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100% 1px;
-  transition: 0s;
-}
-
 .input-btn-default {
   cursor: pointer;
   font-size: 15px;
@@ -71,6 +59,16 @@
   &:active {
     filter: brightness(0.85);
   }
+}
+
+.input-field-focused,
+.app-input-container:focus-within .app-input-label {
+  filter: none;
+  outline: none;
+  border-bottom-color: var(--color-primary-adaptive);
+  background-image: radial-gradient(var(--color-primary-adaptive) 100%, transparent 100%);
+  transition: 0s;
+  background-position-y: bottom;
 }
 
 .input-field-default {
@@ -95,7 +93,11 @@
     height: 33px;
     border-radius: 4px;
     border: 1px solid var(--color-input-border-default);
-    border-bottom: 1px solid #777;
+    background-image: radial-gradient(#777 100%, transparent 100%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 1px;
+    background-position-y: calc(100% + 1px);
     &:focus { @extend .input-field-focused; }
   }
   

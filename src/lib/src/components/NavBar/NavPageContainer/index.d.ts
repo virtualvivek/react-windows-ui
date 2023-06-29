@@ -6,6 +6,6 @@ export interface NavPageContainerProps {
   children ?: ReactNode;
   animateTransition ?: boolean;
 }
-declare const NavPageContainer: React.FC<NavPageContainerProps>
+declare const NavPageContainer: React.FC<NavPageContainerProps>;
 
 export default NavPageContainer;

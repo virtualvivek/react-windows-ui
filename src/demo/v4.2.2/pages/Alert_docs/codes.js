@@ -3,10 +3,10 @@ const AlertImportCode =
 
 const AlertUsageCode =
 `<Alert
-  isVisible={false}
-  onBackdropPress={() => {}}
   title="Alert"
-  message="This is alert Box.">
+  isVisible={false}
+  message="This is alert Box."
+  onBackdropPress={() => {}}>
     <Alert.Footer>
       <Button
         type="primary"

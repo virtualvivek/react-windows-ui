@@ -35,7 +35,7 @@ class ImageViewDocs extends React.Component {
         tooltip="ImageView tooltip title"
       />
 
-    <NavPageContainer.Inner>
+    <div style={{padding: 25}}>
 
       {/* <h1>ImageView</h1> */}
       <br/>
@@ -125,7 +125,7 @@ class ImageViewDocs extends React.Component {
       <h2>Props</h2>
       <PropsView/>
 
-    </NavPageContainer.Inner>
+    </div>
     
 
 
@@ -135,4 +135,4 @@ class ImageViewDocs extends React.Component {
  }
 }
 
-export default ImageViewDocs
+export default ImageViewDocs;

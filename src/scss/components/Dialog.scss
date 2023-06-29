@@ -12,8 +12,8 @@
 
     opacity: 0;
     visibility: hidden;
-    transition: all 0.28s;
-    transform: translateY(24px);
+    transition: all 0.24s;
+    transform: translateY(20px) scale(0.96);
 
     @if $platform == "windows11" {
       border-radius: 8px;
@@ -40,7 +40,7 @@
   &.show .app-dialog-modal {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 

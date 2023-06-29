@@ -9,7 +9,7 @@
     position: fixed;
     overflow: hidden;
     flex-direction: column;
-    transition-duration: 0.28s;
+    transition-duration: 0.24s;
     box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);
     
     @if $platform == "windows10" {
@@ -28,7 +28,7 @@
 
   &.show {
     .app-alert-modal {
-      transition-duration: 0.28s;
+      // transition-duration: 0.28s;
       transform: translate3d(0,-1%,0) scale(1);
     }
   }

@@ -16,7 +16,6 @@ import {
   NavBarSubMenuDocs,
   NavPageContainerDocs,
   SplashScreenDocs,
-  FGCntrDocs,
 
   AccordionDocs,
   AlertDocs,
@@ -238,7 +237,6 @@ class AppFourTwoTwo extends React.Component {
 
           <Route path='colors' element={<ColorsDocs/>} />
           <Route path='utilities' element={<ClassesDocs/>} />
-          <Route path='fg_cntr_demo' element={<FGCntrDocs/>} />
 
           <Route path='navbar' element={<NavBarDocs/>} />
           <Route path='navbarlink' element={<NavBarLinkDocs/>} />

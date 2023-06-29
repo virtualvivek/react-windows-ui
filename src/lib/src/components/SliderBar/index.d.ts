@@ -1,17 +1,18 @@
 import React from "react";
 
 export interface SliderBarProps {
+  width ?: any;
   min ?: number;
   max ?: number;
   step ?: number;
   tooltip ?: string;
   thumbStyle ?: string;
-  showValue ?: boolean;
   showPopupValue ?: boolean;
   defaultValue ?: number;
   onChange ?: () => void;
   onDragEnd ?: () => void;
   onDragStart ?: () => void;
+  orientation ?: "vertical" | "horizontal";
 }
 declare const SliderBar: React.FC<SliderBarProps>;
 

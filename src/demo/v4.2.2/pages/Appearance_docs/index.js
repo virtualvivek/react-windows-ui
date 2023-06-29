@@ -3,7 +3,7 @@ import { NavPageContainer } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { AppearanceImportCode,AppearanceUsageCode,
-  AppearanceGetColorSchemeCode,AppearanceSetDarkSchemeCode,AppearanceSetLightSchemeCode } from './codes'
+  AppearanceGetColorSchemeCode,AppearanceSetDarkSchemeCode,AppearanceSetLightSchemeCode, AppearanceSetSystemSchemeCode } from './codes'
 
 class AppearanceDocs extends React.Component {
 
@@ -68,6 +68,17 @@ render() {
       style={vscDarkPlus}
       className="code code-container">
       {AppearanceSetLightSchemeCode}
+    </SyntaxHighlighter>
+
+
+    <div className="app-hr"></div>
+    <h2><p className="app-code">setSystemScheme()</p></h2>
+    <p>Set's app to <i>system</i> color scheme.</p>
+    <SyntaxHighlighter
+      language="javascript"
+      style={vscDarkPlus}
+      className="code code-container">
+      {AppearanceSetSystemSchemeCode}
     </SyntaxHighlighter>
 
 
