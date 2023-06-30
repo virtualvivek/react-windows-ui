@@ -34,7 +34,7 @@
   }
   .item:not(:checked) + div::before {
     opacity: 0;
-    transform: scaleX(0);
+    transform: scaleX(0.5);
     }
       
   .item:checked + div::before {

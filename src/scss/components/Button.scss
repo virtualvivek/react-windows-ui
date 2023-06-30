@@ -21,7 +21,7 @@ button,
 }
 
 .app-btn {
-  height: 33px;
+  min-height: 33px;
   vertical-align: middle;
 
   @if $platform == "windows10" {

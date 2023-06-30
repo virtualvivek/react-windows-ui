@@ -34,6 +34,23 @@ class AlertDocs extends React.Component {
         onClick={this.toggleAlert}
       />
 
+      <div class="app-alert-bar alert-secondary" role="alert">
+        <div class="app-alert-bar-content">
+          <strong>Title</strong>
+          <span>This is a text</span>
+        </div>
+        <button class="app-btn app-btn-primary">Button Regular</button>
+        <button data-win-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      <div class="app-alert-bar alert-success" role="alert">
+        <div class="app-alert-bar-content">
+          <strong>Title</strong>
+          <span>This is a text</span>
+        </div>
+        <button data-win-dismiss="alert" aria-label="Close"></button>
+      </div>
+
       <Alert
         isVisible={this.state.showAlert}
         onBackdropPress={this.toggleAlert}

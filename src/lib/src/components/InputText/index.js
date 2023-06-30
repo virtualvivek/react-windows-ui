@@ -17,7 +17,7 @@ const InputText = (props) => {
 
   const renderStatus = useMemo(() => {
     if(props.setStatus === "success" || props.setStatus === "danger") {
-      return <i className="icons10-keyboard font-size-18px"></i>;
+      return <i className="icons10-status"></i>;
     }
     else if(props.setStatus === "loading") {
       return <div className="app-loader-busy loader-sm animate">
@@ -25,7 +25,7 @@ const InputText = (props) => {
             </div>
     }
     return <></>;
-  }, [props.setStatus])
+  }, [props.setStatus]);
 
   return (
     <div
@@ -45,15 +45,11 @@ const InputText = (props) => {
         placeholder={props.placeholder}
         style={{ width: props.width }}
       />
-      <div className="app-input-status-container">
+      <div className="app-input-end-content">
         {renderStatus}
         {
           props.type==="password" && (
-            <button
-              className="app-input-text-unmask"
-              type="button"
-              onClick={toggleInput}
-            />
+            <button data-win-toggle="password" onClick={toggleInput}/>
           )
         }
       </div>

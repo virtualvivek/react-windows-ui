@@ -65,8 +65,8 @@ const Accordion = (props) => {
 }
 
 Accordion.defaultProps = {
-  onCollapse: () => {},
   onExpand: () => {},
+  onCollapse: () => {},
 }
 
 const AccordionHeader = ({ children }) => <>{children}</>

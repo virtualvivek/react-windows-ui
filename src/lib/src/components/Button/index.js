@@ -29,7 +29,6 @@ const Button = (props) => {
         width: props.width,
         ...props.style
       }}
-      type="button"
       title={props.tooltip}
       onClick={props.onClick}
       onSubmit={props.onSubmit}

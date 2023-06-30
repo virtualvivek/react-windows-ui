@@ -1,7 +1,7 @@
-import React, { useState, useRef, useMemo } from 'react';
-import { Link } from 'react-router-dom';
-import { useOutSideClick } from '../../hooks';
-import { getScreenOffset, ScrollView } from '../../api';
+import React, { useState, useRef, useMemo } from "react";
+import { Link } from "react-router-dom";
+import { useOutSideClick } from "../../hooks";
+import { getScreenOffset, ScrollView } from "../../api";
 
 const MenuBar = (props) => {
 

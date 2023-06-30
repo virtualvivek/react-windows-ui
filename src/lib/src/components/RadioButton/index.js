@@ -2,12 +2,10 @@ import React from "react";
 
 const RadioButton = (props) => {
   return (
-    <label
-      className="app-radio-button"
-      title={props.tooltip}>
+    <label title={props.tooltip}>
       <input
         {...props}
-        className="app-radio"
+        class="app-radio-button"
         type="radio"
         name={props.name}
         value={props.value}
@@ -15,7 +13,7 @@ const RadioButton = (props) => {
         onChange={props.onChange}
         defaultChecked={props.defaultChecked}
       />
-      <span>{" "+props.label}</span>
+      {props.label && (<span> {props.label}</span>)}
     </label>
   )
 }
