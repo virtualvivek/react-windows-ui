@@ -5,17 +5,17 @@ const AppContainer = (props) => {
 
   const handleThemeEvent = (e) => {
     const newColorScheme = e.matches ? "dark" : "light";
-    newColorScheme === "dark" ? Appearance.setDarkScheme() : Appearance.setLightScheme();
+    newColorScheme === "dark" ? Appearance.setDarkScheme(false) : Appearance.setLightScheme(false);
   };
 
   useEffect(() => {
     let theme = Appearance.getColorScheme();
     switch(theme) {
-      case "dark": Appearance.setDarkScheme(); break;
-      case "light": Appearance.setLightScheme(); break;
+      case "dark": Appearance.setDarkScheme(false); break;
+      case "light": Appearance.setLightScheme(false); break;
       default: {
         window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => handleThemeEvent(e));
-        return () => window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change", handleThemeEvent());
+        return () => window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change", (e) => handleThemeEvent(e));
       }
     }
   }, []);

@@ -21,6 +21,7 @@ const NavPageContainer = (props) => {
 
   return (
     <main
+      role="main"
       id="app-page-container-id"
       className={ props.hasPadding
                   ? `app-page-container has-padding${setTransition()}`

@@ -68,6 +68,8 @@
   border-bottom-color: var(--color-primary-adaptive);
   background-image: radial-gradient(var(--color-primary-adaptive) 100%, transparent 100%);
   transition: 0s;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
   background-position-y: bottom;
 }
 
@@ -159,6 +161,7 @@
   overflow-x: hidden;
   visibility: hidden;
   position: absolute;
+  min-width: -webkit-fill-available;
   -webkit-tap-highlight-color: transparent;
   background: var(--color-dropdown-menu-bg);
 

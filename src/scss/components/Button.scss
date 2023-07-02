@@ -126,7 +126,7 @@ button,
   }
   // If Icon is the only child i.e its a IconButton.
   &:has(i:only-child) {
-    padding: 6px;
+    padding: 0px 5px;
   }
 }
 

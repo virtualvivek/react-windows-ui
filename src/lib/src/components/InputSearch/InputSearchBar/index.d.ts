@@ -1,6 +1,7 @@
 import React from "react";
 
 export interface InputSearchBarProps {
+  ref ?: any;
   name ?: any;
   value ?: any;
   width ?: any;

@@ -21,14 +21,14 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">style</p></td>
-          <td>CSS Property</td>
-          <td>default</td>
-          <td>Container style for {`<Dialog>`}, {`<Dialog.Header>`}, {`<Dialog.Body>`}, {`<Dialog.Footer>`}</td>
+          <td>CSSProperties</td>
+          <td>{`{ }`}</td>
+          <td>Container styles for {`<Dialog>`}, {`<Dialog.Header>`}, {`<Dialog.Body>`}, {`<Dialog.Footer>`}</td>
         </tr>
         <tr>
           <td><p className="app-code">onBackdropPress</p></td>
           <td>function</td>
-          <td>undefined</td>
+          <td>null</td>
           <td>Callback on backdrop press</td>
         </tr>
       </tbody>

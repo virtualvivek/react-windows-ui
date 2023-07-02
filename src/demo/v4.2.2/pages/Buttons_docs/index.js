@@ -2,10 +2,10 @@ import React from 'react'
 import { Button, NavPageContainer } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { ButtonImportCode,ButtonAsIconCode,ButtonIconImportCode,ButtonDefaultCode,
+import { ButtonImportCode,ButtonDefaultCode,
          ButtonIconPrimary,ButtonPrimary,ButtonPrimaryOutline,
          ButtonIconCode,ButtonSuccessCode,
-         ButtonDangerCode } from './codes'
+         ButtonDangerCode, ButtonTypesCode } from './codes'
 import PropsView from './props-view'
 
 class ButtonsDocs extends React.Component {
@@ -31,7 +31,6 @@ class ButtonsDocs extends React.Component {
 
       <h1>Buttons</h1>
 
-      <h3>States</h3>
         <Button
           value="Button Regular"
           type="primary"
@@ -39,24 +38,20 @@ class ButtonsDocs extends React.Component {
           isLoading={this.state.stateLoading}
           tooltip="Button tooltip title"/>
 
-        <span>&nbsp; &nbsp;  set states</span>
+        <span>&nbsp; &nbsp; Set state</span>
         <br/><br/>
-
         <Button
-          value="loading"
-          type="primary-outline"
+          value="Loading"
           onClick={this.setLoading}
         />
-          &nbsp;
+        &nbsp;
         <Button
-          value="disabled"
-          type="primary-outline"
+          value="Disabled"
           onClick={this.setDisabled}
         />
-          &nbsp;
+        &nbsp;
         <Button
-          value="regular"
-          type="primary-outline"
+          value="Regular"
           onClick={this.setRegular}
         />
 
@@ -71,7 +66,39 @@ class ButtonsDocs extends React.Component {
           {ButtonImportCode}
         </SyntaxHighlighter>
 
+        <div className="app-hr"></div>
         <h2>Usage</h2>
+
+
+        <Button
+          value="Default Button"
+        />
+        &nbsp;&nbsp;
+        <Button
+          type="primary"
+          value="Primary Button"
+        />
+        &nbsp;&nbsp;
+        <Button
+          type="subtle"
+          value="Subtle Button"
+        />
+        &nbsp;&nbsp;
+        <Button
+          type="primary-outline"
+          value="Primary Outline Button"
+        /><br/><br/>
+
+        <SyntaxHighlighter
+          language="javascript"
+          style={dracula}
+          className="code code-container">
+          {ButtonTypesCode}
+        </SyntaxHighlighter>
+
+        <div className="app-hr"></div>
+
+        <h3>Button Default</h3>
 
         <Button
           value="Default Button"
@@ -101,26 +128,6 @@ class ButtonsDocs extends React.Component {
           className="code code-container">
           {ButtonDefaultCode}
         </SyntaxHighlighter>
-
-        <h2>Button as only Icon:</h2>
-
-        <Button
-          icon={<i className="icons10-plus"></i>}
-          value=""
-        />
-        &nbsp;&nbsp;
-        <Button
-          icon={<i className="icons10-controller"></i>}
-          value=""
-        />
-        <br/><br/>
-        <SyntaxHighlighter
-          language="javascript"
-          style={dracula}
-          className="code code-container">
-          {ButtonAsIconCode}
-        </SyntaxHighlighter>
-       
       
         <div className="app-hr"></div>
         <h2 className="m-t-15">Button icon primary:</h2>
@@ -239,26 +246,28 @@ class ButtonsDocs extends React.Component {
 
 
         <div className="app-hr"></div>
-        <h1 className="m-b-15">Button Icon</h1>
+        <h1 className="m-b-15">Button as Icon:</h1>
 
         <Button
           icon={<i className="icons10-home"></i>}
-          tooltip="ButtonIcon tooltip title" />
+          tooltip="ButtonIcon tooltip title"
+        />
+        &nbsp;&nbsp;
         <Button
-          icon={<i className="icons10-share"></i>} />
+          type="primary"
+          icon={<i className="icons10-share"></i>}
+        />
+        &nbsp;&nbsp;
         <Button
-          icon={<i className="icons10-plus"></i>} />
+          type="subtle"
+          icon={<i className="icons10-plus"></i>}
+        />
+        &nbsp;&nbsp;
         <Button
-          icon={<i className="icons10-fingerprint"></i>} />
+          type="primary-outline"
+          icon={<i className="icons10-fingerprint"></i>}
+        />
         <br/>
-
-        <h2>Import</h2>
-        <SyntaxHighlighter
-          language="javascript"
-          style={dracula}
-          className="code code-container">
-          {ButtonIconImportCode}
-        </SyntaxHighlighter>
 
         <h2>Usage</h2>
         <SyntaxHighlighter

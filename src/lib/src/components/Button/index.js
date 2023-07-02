@@ -19,6 +19,7 @@ const Button = (props) => {
         props.type === "primary" ?  `app-btn app-btn-primary${toggleLoading}`
       : props.type === "danger" ? `app-btn app-btn-danger${toggleLoading}`
       : props.type === "success" ? `app-btn app-btn-success${toggleLoading}`
+      : props.type === "subtle" ? `app-btn app-btn-subtle${toggleLoading}`
       : props.type === "primary-outline" ? `app-btn app-btn-outline-primary${toggleLoading}`
       : props.type === "danger-outline" ? `app-btn app-btn-outline-danger${toggleLoading}`
       : props.type === "success-outline" ? `app-btn app-btn-outline-success${toggleLoading}`
@@ -29,6 +30,7 @@ const Button = (props) => {
         width: props.width,
         ...props.style
       }}
+      type={props.type}
       title={props.tooltip}
       onClick={props.onClick}
       onSubmit={props.onSubmit}
@@ -42,6 +44,7 @@ const Button = (props) => {
 }
 
 Button.defaultProps = {
+  type: "button",
   disabled: false,
   isLoading: false,
   onClick: () => {},

@@ -2,14 +2,15 @@ import React from 'react'
 import { NavPageContainer, Button, Alert } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { AlertImportCode, AlertUsageCode, AlertLightUsageCode } from './codes'
+import { AlertImportCode, AlertUsageCode, AlertLightUsageCode, AlertCustomHeaderUsageCode } from './codes'
 import PropsView from './props-view'
 
 class AlertDocs extends React.Component {
 
   state = {
     showAlert: false,
-    showAlertLight: false
+    showAlertLight: false,
+    showAlertCustomHeader: false
   }
 
   toggleAlert = () => {
@@ -24,6 +25,12 @@ class AlertDocs extends React.Component {
       else    this.setState({showAlertLight: true});
   }
 
+  toggleAlertCustomHeader = () => {
+      if(this.state.showAlertCustomHeader)
+              this.setState({showAlertCustomHeader: false});
+      else    this.setState({showAlertCustomHeader: true});
+  }
+
   render() {
     return (
     <NavPageContainer hasPadding animateTransition>
@@ -34,8 +41,8 @@ class AlertDocs extends React.Component {
         onClick={this.toggleAlert}
       />
 
-      <div class="app-alert-bar alert-secondary" role="alert">
-        <div class="app-alert-bar-content">
+      <div className="app-alert-bar alert-secondary" role="alert">
+        <div className="app-alert-bar-content">
           <strong>Title</strong>
           <span>This is a text</span>
         </div>
@@ -102,20 +109,52 @@ class AlertDocs extends React.Component {
         {AlertUsageCode}
       </SyntaxHighlighter>
 
-      <h2 className="m-tb-20">Alert with multiple buttons.</h2>
+      <h2 className="m-tb-20">Alert with <p className="app-code">Multi Buttons</p> :</h2>
 
       <Button
         value="Open Alert Multi Button"
         onClick={this.toggleAlertLight}
       />
       <br/><br/>
-
       <SyntaxHighlighter
         language="javascript"
         style={vscDarkPlus}
         className="code code-container">
         {AlertLightUsageCode}
       </SyntaxHighlighter>
+
+      <h2 className="m-tb-20">Alert with <p className="app-code">Header Component</p> :</h2>
+
+      <Alert
+        isVisible={this.state.showAlertCustomHeader}
+        onBackdropPress={this.toggleAlertCustomHeader}>
+          <Alert.Header>
+            <p style={{padding: 10}}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </Alert.Header>
+          <Alert.Footer>
+            <Button
+              type="primary"
+              value="OK to Close"
+              onClick={this.toggleAlertCustomHeader}
+            />
+          </Alert.Footer>
+      </Alert>
+
+      <Button
+        value="Open Alert with Header Component"
+        onClick={this.toggleAlertCustomHeader}
+      />
+      <br/><br/>
+      <SyntaxHighlighter
+        language="javascript"
+        style={vscDarkPlus}
+        className="code code-container">
+        {AlertCustomHeaderUsageCode}
+      </SyntaxHighlighter>
+
 
       <h2>Props</h2>
       <PropsView/>

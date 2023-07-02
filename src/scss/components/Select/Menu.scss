@@ -8,8 +8,6 @@
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  @if $platform == "windows10" { height: 30px; }
-  @if $platform == "windows11" { height: 33px; }
   
   &::after {
     right: 10px;
@@ -27,6 +25,8 @@
     height: 100%;
     appearance: none;
     padding: 0 35px 0 10px;
+    @if $platform == "windows10" { height: 30px; }
+    @if $platform == "windows11" { height: 33px; }
   
     &:focus { outline: none; }
     &[disabled] { @extend .input-field-default-disabled; }

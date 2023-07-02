@@ -1,9 +1,6 @@
 const ButtonImportCode = 
 `import { Button } from "react-windows-ui";`;
 
-const ButtonIconImportCode =
-`import { ButtonIcon } from "react-windows-ui";`;
-
 const ButtonDefaultCode =
 `<Button
   isLoading={false}
@@ -13,10 +10,21 @@ const ButtonDefaultCode =
   icon={<i className="icons10-plus"></i>}
 />`;
 
-const ButtonAsIconCode =
+const ButtonTypesCode =
 `<Button
-  value=""
-  icon={<i className="icons10-controller"></i>}
+  value="Default Button"
+/>
+<Button
+  type="primary"
+  value="Primary Button"
+/>
+<Button
+  type="subtle"
+  value="Subtle Button"
+/>
+<Button
+  type="primary-outline"
+  value="Primary Outline Button"
 />`;
 
 const ButtonIconPrimary =
@@ -43,10 +51,23 @@ const ButtonPrimaryOutline =
 />`;
 
 const ButtonIconCode =
-`<ButtonIcon
-  onClick={() => {}}
-  tooltip="Some tooltip text"
+`<Button
+  icon={<i className="icons10-home"></i>}
+/>
+
+<Button
+  type="primary"
+  icon={<i className="icons10-share"></i>}
+/>
+
+<Button
+  type="subtle"
   icon={<i className="icons10-plus"></i>}
+/>
+
+<Button
+  type="primary-outline"
+  icon={<i className="icons10-fingerprint"></i>}
 />`;
 
 const ButtonSuccessCode =
@@ -70,8 +91,7 @@ const ButtonDangerCode =
 
 export {
   ButtonImportCode,
-  ButtonAsIconCode,
-  ButtonIconImportCode,
+  ButtonTypesCode,
   ButtonDefaultCode,
   ButtonIconPrimary,
   ButtonPrimary,

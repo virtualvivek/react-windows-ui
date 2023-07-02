@@ -68,9 +68,9 @@ const CommandBarMenu = (props) => {
             onClick={child.props.children
               ? () => openSubMenu(index)
               : () => _onItemClick(child.props)}
-            to={child.props.link ? child.props.link : "#"}>
+            to={child.props.link ? child.props.link : "#"}
+            {...(child.props.children && { "data-win-toggle":"dropdown" })}>
             {child.props.icon}{child.props.label}
-            {child.props.children ? <i className="icons10-angle-right"></i>:<></>}
           </Link>
           <SubMenuList
             ref={(el) => (subMenusRef.current[index] = el)}

@@ -2,6 +2,7 @@ import React, { ReactNode, CSSProperties } from "react";
 
 export interface ButtonProps {
   width ?: number | string;
+  type ?: string;
   value ?: string;
   tooltip ?: string;
   icon ?: ReactNode;

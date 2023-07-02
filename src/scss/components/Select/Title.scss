@@ -2,8 +2,12 @@
   @extend .input-btn-default;
   padding-right: 40px;
   line-height: 1;
+  @if $platform == "windows10" { height: 30px; }
+  @if $platform == "windows11" { height: 33px; }
 }
 
 .app-select-text .app-dropdown-title {
+  border: none;
   font-weight: 500;
+  background-color: transparent;
 }

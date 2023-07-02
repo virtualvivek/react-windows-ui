@@ -7,7 +7,7 @@ const ColorPickerItemImportCode =
 const ColorPickerPaletteUsageCode =
 `<ColorPickerPalette
   color="#6632a8"
-  onChange={ (color) => this.function(color) }
+  onChange={(color) => function(color)}
 />`;
 
 const ColorPickerItemUsageCode =
@@ -15,7 +15,7 @@ const ColorPickerItemUsageCode =
   name="1"
   color="#6632a8"
   defaultChecked={true}
-  onChange={ (color) => this.function(color) }
+  onChange={(color) => function(color)}
 />`;
 
 

@@ -1,10 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, forwardRef } from "react";
 import { Link } from "react-router-dom";
 
-const InputSearchBox = (props) => {
-  const inputRef = useRef();
-  const suggestRef = useRef();
+const InputSearchBox = forwardRef((props, ref) => {
 
+  const suggestRef = useRef();
   const [suggestData, setSuggestData] = React.useState(props.suggest);
 
   const _onChange = (e) => {
@@ -21,7 +20,7 @@ const InputSearchBox = (props) => {
     <div className="app-input-search-box" title={props.tooltip}>
       <input className="app-input-text"
         style={{ width: props.width }}
-        ref={inputRef}
+        ref={ref}
         type="search"
         name={props.name}
         value={props.value}
@@ -51,7 +50,7 @@ const InputSearchBox = (props) => {
       </ul>
     </div>
   )
-}
+})
 
 InputSearchBox.defaultProps = {
   suggest: [],

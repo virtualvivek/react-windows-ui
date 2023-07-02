@@ -1,22 +1,35 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const TextArea = (props) => {
+const TextArea = (props, ref) => {
   return (
     <textarea
-      className="app-textarea"
-      {...props}
+      className={
+        `app-textarea`+
+        `${props.resizer ? "" : " resizer-none"}`+
+        `${
+          props.resize === "none" ? " resize-none" :
+          props.resize === "horizontal" ? " resize-horizontal" :
+          props.resize === "vertical" ? " resize-vertical" : ""
+        }`
+      }
+      ref={ref}
       rows={props.rows}
       cols={props.cols}
       value={props.value}
+      title={props.tooltip}
       disabled={props.disabled}
       onChange={props.onChange}
-      placeholder={props.placeholder}>
+      onResize={props.onResize}
+      readOnly={props.readOnly}
+      placeholder={props.placeholder}
+      defaultValue={props.defaultValue}>
     </textarea>
   )
 }
 
-TextArea.defaultProps = {
-  placeholder: "Input Text Area"
-}
+export default forwardRef(TextArea);
 
-export default TextArea;
+TextArea.defaultProps = {
+  resizer: true,
+  placeholder: "Enter Here"
+}

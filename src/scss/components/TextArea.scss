@@ -8,12 +8,15 @@
   font-family: inherit;
   line-height: normal;
 
+  &.resizer-none {
+    &::-webkit-resizer { display: none; }
+  }
+  &.resize-none { resize: none; }
+  &.resize-vertical { resize: vertical; }
+  &.resize-horizontal { resize: horizontal; }
+
   @if $platform == "windows10" {
-    &:hover {
-      border-color: #777;
-    }
-    &:focus {
-      border-color: #666;
-    }
+    &:hover { border-color: #777; }
+    &:focus { border-color: #666; }
   }
 }

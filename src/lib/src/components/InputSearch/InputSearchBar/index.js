@@ -1,9 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const InputSearchBar = (props) => {
+const InputSearchBar = forwardRef((props, ref) => {
   return (
     <div className="app-input-search-bar" title={props.tooltip}>
       <input
+        ref={ref}
         style={{ width: props.width }}
         className="app-input-text"
         type="search"
@@ -22,7 +23,7 @@ const InputSearchBar = (props) => {
       </button>
     </div>
   )
-}
+})
 
 InputSearchBar.defaultProps = {
   placeholder: "Search here..",

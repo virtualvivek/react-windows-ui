@@ -59,7 +59,9 @@ input:checked + .app-navbar-theme-switch-icon:after {
   content: "Night Mode";
 }
 
-// Hide Text on NavBar Collapsed
-.app-navbar-wrap.collapsed .app-navbar-theme-switch-icon:after {
-  display: none;
+// On NavBar Collapsed --
+@media only screen and (min-width: 760px) {
+  .app-navbar-wrap.collapsed .app-navbar-theme-switch-icon:after {
+    display: none;
+  }
 }

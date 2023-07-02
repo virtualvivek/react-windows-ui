@@ -63,10 +63,12 @@
 }
 
 // On NavBar Collapsed --
-.app-navbar-wrap.collapsed {
-  .app-navbar-submenu-title {
-    justify-content: center;
-    &::after { font-size: 18px; }
-    > :first-child { display: none; }
+@media only screen and (min-width: 760px) {
+  .app-navbar-wrap.collapsed {
+    .app-navbar-submenu-title {
+      justify-content: center;
+      &::after { font-size: 18px; }
+      > :first-child { display: none; }
+    }
   }
 }

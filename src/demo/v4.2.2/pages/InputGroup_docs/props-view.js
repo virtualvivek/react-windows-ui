@@ -53,14 +53,14 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">setStatus</p></td>
-          <td>'default' | 'success' <br/> 'danger' | 'loading'</td>
-          <td>'default'</td>
+          <td>"default" | "success" <br/> "danger" | "loading"</td>
+          <td>"default"</td>
           <td>Set's Input status</td>
         </tr>
         <tr>
           <td><p className="app-code">placeholder</p></td>
           <td>string</td>
-          <td>'Enter a text'</td>
+          <td>"Enter a text"</td>
           <td>Set's Input placeholder</td>
         </tr>
         <tr>

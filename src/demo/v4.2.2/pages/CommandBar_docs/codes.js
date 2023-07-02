@@ -3,7 +3,7 @@ const CommandBarImportCode =
 
 const CommandBarUsageCode =
 `<CommandBar>
-  <CommandBar.Button value="New" icon={<i className="icons10-plus color-primary"></i>}/>
+  <CommandBar.Button value="New" icon={<i className="icons10-plus app-color-primary"></i>}/>
 
   <CommandBar.SplitDivider/>
 
@@ -19,15 +19,15 @@ const CommandBarUsageCode =
 const CommandBarButtonUsageCode =
 `<CommandBar.Button
   value="Upload"
-  icon={<i className="icons10-upload color-primary"></i>}
+  icon={<i className="icons10-upload app-color-primary"></i>}
 />`;
 
 const CommandBarDropdownUsageCode =
 `<CommandBar.Menu>
-  <CommandBar.MenuTrigger>
+  <CommandBar.MenuTrigger> // You can use any Custom Element as Trigger
     <CommandBar.Button
       value="Share"
-      icon={<i className="icons10-angle-down color-primary"></i>}
+      icon={<i className="icons10-angle-down app-color-primary"></i>}
     />
   </CommandBar.MenuTrigger>
   <CommandBar.MenuItem label="Whatsapp">
@@ -39,7 +39,7 @@ const CommandBarDropdownUsageCode =
 
 const CommandBarSplitUsageCode =
 `<CommandBar>
-  <CommandBar.Button value="New" icon={<i className="icons10-plus color-primary"></i>}/>
+  <CommandBar.Button value="New" icon={<i className="icons10-plus app-color-primary"></i>}/>
 
   <CommandBar.SplitDivider/>
 

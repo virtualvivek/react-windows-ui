@@ -19,7 +19,7 @@ render() {
     <h1>CommandBar</h1>
 
     <CommandBar>
-      <CommandBar.Button value="New" icon={<i className="icons10-plus color-primary"></i>}/>
+      <CommandBar.Button value="New" icon={<i className="icons10-plus app-color-primary"></i>}/>
       
       <CommandBar.SplitDivider/>
 
@@ -31,11 +31,11 @@ render() {
         <CommandBar.MenuItem label="Document" />
       </CommandBar.Menu>
 
-      <CommandBar.Button value="Upload" icon={<i className="icons10-upload color-primary"></i>}/>
+      <CommandBar.Button value="Upload" icon={<i className="icons10-upload app-color-primary"></i>}/>
 
       <CommandBar.Menu>
         <CommandBar.MenuTrigger>
-          <CommandBar.Button value="Share" icon={<i className="icons10-angle-down color-primary"></i>}/>
+          <CommandBar.Button value="Share" icon={<i className="icons10-angle-down app-color-primary"></i>}/>
         </CommandBar.MenuTrigger>
         <CommandBar.MenuItem label="Whatsapp" />
         <CommandBar.MenuItem label="Facebook" />
@@ -59,6 +59,19 @@ render() {
 
     <h2>Usage</h2>
 
+    <CommandBar>
+      <CommandBar.Button value="New" icon={<i className="icons10-plus app-color-primary"></i>}/> 
+      <CommandBar.SplitDivider/>
+      <CommandBar.Menu menuDirection="leftJustify">
+        <CommandBar.MenuItem label="File" icon={<i className="icons10-file"></i>} />
+        <CommandBar.MenuItem label="Folder" onClick={() => alert("Hi")} />
+        <CommandBar.MenuItemDivider/>
+        <CommandBar.MenuItem label="Image" />
+        <CommandBar.MenuItem label="Document" />
+      </CommandBar.Menu>
+    </CommandBar>
+    <br/><br/>
+
     <SyntaxHighlighter
       language="javascript"
       style={vscDarkPlus}
@@ -76,7 +89,7 @@ render() {
 
     <CommandBar.Button
       value="Upload"
-      icon={<i className="icons10-upload color-primary"></i>}
+      icon={<i className="icons10-upload app-color-primary"></i>}
     />
     <br/><br/>
 
@@ -96,7 +109,7 @@ render() {
 
     <CommandBar.Menu>
       <CommandBar.MenuTrigger>
-        <CommandBar.Button value="Share" icon={<i className="icons10-angle-down color-primary"></i>}/>
+        <CommandBar.Button value="Share" icon={<i className="icons10-angle-down app-color-primary"></i>}/>
       </CommandBar.MenuTrigger>
       <CommandBar.MenuItem label="Whatsapp">
         <CommandBar.MenuSubItem label="HyperLink"/>
@@ -119,7 +132,7 @@ render() {
     <h2>CommandBar as <p className="app-code">Split Mode</p> :</h2>
 
     <CommandBar>
-      <CommandBar.Button value="New" icon={<i className="icons10-plus color-primary"></i>}/>
+      <CommandBar.Button value="New" icon={<i className="icons10-plus app-color-primary"></i>}/>
       
       <CommandBar.SplitDivider/>
   
@@ -141,8 +154,6 @@ render() {
       {CommandBarSplitUsageCode}
     </SyntaxHighlighter>
     <div className="app-hr"></div>
-
-
 
     <h2>Props</h2>
     <PropsView />

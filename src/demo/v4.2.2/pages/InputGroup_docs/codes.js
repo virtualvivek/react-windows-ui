@@ -3,6 +3,7 @@ const InputTextImportCode =
 
 const InputTextUsageCode =
 `<InputText
+  clearButton={true}
   placeholder="Enter a text"
   tooltip="InputText tooltip title"
 />`;
