@@ -15,23 +15,21 @@ const PropsView = () => {
       <tbody>
         <tr>
           <td><p className="app-code">ref</p></td>
-          <td>function</td>
+          <td>object</td>
           <td>null</td>
-          <td>Set's Input refrence value</td>
+          <td>Set's Input refrence object.</td>
         </tr>
         <tr>
           <td><p className="app-code">value</p></td>
-          <td>input values</td>
+          <td>string</td>
           <td>null</td>
-          <td>Set's Input value prop</td>
+          <td>Set's Input value prop.</td>
         </tr>
         <tr>
           <td><p className="app-code">type</p></td>
-          <td>text  ⠀⠀| password <br/>
-              date  ⠀    | time <br/>
-              month | datetime-local</td>
-          <td>text</td>
-          <td>Set's Input type</td>
+          <td>"text" | "password"</td>
+          <td>"text"</td>
+          <td>Set's Input type.</td>
         </tr>
         <tr>
           <td><p className="app-code">width</p></td>
@@ -44,6 +42,12 @@ const PropsView = () => {
           <td>string</td>
           <td>null</td>
           <td>Set's Input label text</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">clearButton</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's Input has clear button.</td>
         </tr>
         <tr>
           <td><p className="app-code">disabled</p></td>
@@ -64,26 +68,56 @@ const PropsView = () => {
           <td>Set's Input placeholder</td>
         </tr>
         <tr>
+          <td><p className="app-code">tooltip</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Set's Input hover tooltip.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">autoFocus</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's Input focused on Page Mount.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onFocus</p></td>
+          <td>function</td>
+          <td>[ ]</td>
+          <td>Set's Input onFocus event listener.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">readOnly</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's Input if readOnly.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">defaultValue</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Set's Input defaultValue.</td>
+        </tr>
+        <tr>
           <td><p className="app-code">onChange</p></td>
-          <td>object</td>
+          <td>function</td>
           <td>[ ]</td>
           <td>Set's Input on Change listener</td>
         </tr>
         <tr>
           <td><p className="app-code">onClick</p></td>
-          <td>object</td>
+          <td>function</td>
           <td>[ ]</td>
           <td>Set's Input on Click listener</td>
         </tr>
         <tr>
           <td><p className="app-code">onKeyUp</p></td>
-          <td>object</td>
+          <td>function</td>
           <td>[ ]</td>
           <td>Set's Input on KeyUp listener</td>
         </tr>
         <tr>
           <td><p className="app-code">onKeyDown</p></td>
-          <td>object</td>
+          <td>function</td>
           <td>[ ]</td>
           <td>Set's Input on KeyDown listener</td>
         </tr>

@@ -1,19 +1,22 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState } from 'react'
 import { NavPageContainer, InputText, TextArea, InputSearchBox } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { InputTextImportCode, InputTextUsageCode, InputTextStatusUsageCode,
-  InputTextPasswordUsageCode, InputTextLabelUsageCode, InputDateUsageCode } from './codes'
+  InputTextPasswordUsageCode, InputTextLabelUsageCode, InputDateUsageCode, ExampleUsageCode } from './codes'
 import PropsView from './props-view'
 
 const InputGroupDocs = () => {
   const [inputVal, setInputVal] = useState("Inputs");
 
-  const kk = useRef();
+  const _onChange = (value) => {
+    setInputVal(value);
+  }
 
-  useEffect(()=> {
-    console.log(kk.current.value);
-  }, [])
+  // const kk = useRef();
+  // useEffect(()=> {
+  //   console.log(kk.current.value);
+  // }, [])
 
   return (
     <NavPageContainer
@@ -23,11 +26,22 @@ const InputGroupDocs = () => {
       <p className="font-size-18px">The <span className="app-color-primary">Input</span> elements are used to create interactive controls for forms in order to accept data from the user.</p>
 
       <InputText
-      ref={kk}
         clearButton={true}
         value={inputVal}
-        onChange={(e)=>setInputVal(e.target.value)}
+        onChange={(e) => _onChange(e.target.value)}
+        // onClearButtonClick={() => {}}
       />
+      <span>&nbsp;&nbsp;  Edit Text.</span>
+      <br/><br/>
+      <details>
+        <summary>Example Usage</summary>
+        <SyntaxHighlighter
+          language="javascript"
+          style={vscDarkPlus}
+          className="code code-container">
+          {ExampleUsageCode}
+        </SyntaxHighlighter>
+      </details>
 
       <h1>InputText</h1>
       <h2>Import</h2>
@@ -116,8 +130,11 @@ const InputGroupDocs = () => {
         {InputTextLabelUsageCode}
       </SyntaxHighlighter>
 
+      <h2>Props</h2>
+      <PropsView />
 
-      <h2>TextArea</h2>
+      <div className="app-hr"></div>
+      <h1>TextArea</h1>
 
       <TextArea
       
@@ -153,8 +170,7 @@ const InputGroupDocs = () => {
       <div className="app-hr"></div>
 
 
-      <h2>Props</h2>
-      <PropsView />
+      
 
       <br/><br/><br/><br/><br/><br/>
 

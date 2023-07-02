@@ -1,4 +1,4 @@
-import React, { useRef, useMemo, forwardRef } from "react";
+import React, { useRef, useMemo, forwardRef, useEffect, useCallback } from "react";
 import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
 
 const InputText = forwardRef((props, ref) => {
@@ -6,8 +6,16 @@ const InputText = forwardRef((props, ref) => {
   const inputTxtRef = ref ?? _ref;
   const clrBtnRef = useRef();
 
+  const {
+    onClearButtonClick,
+    clearButton,
+    setStatus,
+    onChange,
+    label,
+  } = props;
+
   const renderLabel = () => {
-    return <span className="app-input-label">{props.label}</span>
+    return <span className="app-input-label">{label}</span>
   }
 
   const toggleInput = () => {
@@ -20,49 +28,45 @@ const InputText = forwardRef((props, ref) => {
   }
 
   const renderStatus = useMemo(() => {
-    if(props.setStatus === "success" || props.setStatus === "danger") {
+    if(setStatus === "success" || setStatus === "danger") {
       return <i className="icons10-status"></i>;
     }
-    else if(props.setStatus === "loading") {
+    else if(setStatus === "loading") {
       return <div className="app-loader-busy loader-sm animate">
               <LoaderBusyWrapper/>
             </div>
     }
     return <></>;
-  }, [props.setStatus]);
+  }, [setStatus]);
 
-
-  const clearTxt = () => {
-    inputTxtRef.current.value = "";
-    clrBtnRef.current.style.visibility = "";
-    // props.onChange();
-  }
-
+  const clearTxtChange = useCallback((event) => onChange(event), [onChange]);
+  
   const renderClearButton = useMemo(() => {
-    return props.clearButton
+    const clearTxt = () => {
+      inputTxtRef.current.value = "";
+      clrBtnRef.current.style.visibility = "";
+      onClearButtonClick();
+      const event = { target: { value: "" } };
+      clearTxtChange(event);
+    }
+    return clearButton
           ? <button ref={clrBtnRef} type="button" onClick={clearTxt} data-win-clear="text"/>
           : <></>
-  }, [props.clearButton]);
+  }, [clearButton, inputTxtRef, onClearButtonClick, clearTxtChange]);
 
-  // useMemo(()=>{
-  //   console.log("KK");
-  // }, [props.onChange])
-
-  const _onChange = () => {
-    console.log("KK");
-    if(props.clearButton) {
+  useEffect(() => {
+    if(clearButton) {
       (inputTxtRef.current.value.trim()!=="")
       ? clrBtnRef.current.style.visibility = "visible"
       : clrBtnRef.current.style.visibility = "";
     }
-    // props.onChange();
-  }
+  }, [onChange, clearButton, clrBtnRef, inputTxtRef]);
 
   return (
     <div
-      className={`app-input-container ${props.setStatus !== "default" ? "input-"+props.setStatus : ""}`}
+      className={`app-input-container ${setStatus !== "default" ? "input-"+setStatus : ""}`}
       title={props.tooltip}>
-      {props.label && (renderLabel())}
+      {label && (renderLabel())}
       <input
         className="app-input-text"
         key={props.key}
@@ -83,7 +87,6 @@ const InputText = forwardRef((props, ref) => {
         placeholder={props.placeholder}
         defaultValue={props.defaultValue}
         autoComplete={props.autoComplete}
-        onChangeCapture={() => _onChange()}
         autoCapitalize={props.autoCapitalize}
       />
       <div className="app-input-end-content">
@@ -97,9 +100,9 @@ const InputText = forwardRef((props, ref) => {
 
 InputText.defaultProps = {
   type: "text",
-  onChange: () => {},
   setStatus: "default",
-  placeholder: "Input Text"
+  placeholder: "Input Text",
+  onClearButtonClick: () => {}
 }
 
 export default InputText;

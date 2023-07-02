@@ -36,6 +36,27 @@ const InputDateUsageCode =
   tooltip="InputDate tooltip title"
 />`;
 
+const ExampleUsageCode =
+`const [inputVal, setInputVal] = useState("Inputs");
+
+const _onChange = (value) => {
+  setInputVal(value);
+  inputRef.current.value; // You can also fetch value this way.
+}
+
+return (
+  <h1>{inputVal}</h1>
+
+  <InputText
+    ref={inputRef}
+    clearButton={true}
+    value={inputVal}
+    onChange={(e) => _onChange(e.target.value)}
+    // onClearButtonClick={() => {}}
+  />
+)`;
+
+
 
 export {
   InputTextImportCode,
@@ -43,5 +64,6 @@ export {
   InputTextStatusUsageCode,
   InputTextPasswordUsageCode,
   InputTextLabelUsageCode,
-  InputDateUsageCode
+  InputDateUsageCode,
+  ExampleUsageCode
 }
