@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { AppContainer, SplashScreen, NavBar, NavBarLink,
         NavBarSubMenu, NavBarThemeSwitch, Dialog, InputSearchBox } from "./_lib";
 import {
@@ -47,60 +47,56 @@ import GithubIcon from "../assets/static/GithubIcon";
 import "../../lib/config/app-config.css";
 import "../../lib/dist/react-windows-ui.min.css";
 
-class AppFourTwoTwo extends React.Component {
+const AppFourTwoTwo = () => {
 
-  constructor() {
-    super();
-    this.state = {
-      showSplash: true,
-      data: NavBarItem,
-      filteredData: NavBarItem
-    }
+  const navigate = useNavigate();
+  const [route, setRoute] = useState("home");
+  const [showSplash, setSplash] = useState(true);
+  const [showDialog, setShowDialog] = useState(false);
+
+  useEffect(() => setSplash(false), []);
+
+  const toggleDialog = () => {
+    setShowDialog(!showDialog);
   }
 
-  componentDidMount() {
-    this.setState({ showSplash: false});
-  }
-
-  toggleDialog = () => {
-    if(this.state.showDialog)
-            this.setState({showDialog: false});
-    else    this.setState({showDialog: true});
-  }
-
-  onBranchChange = () => {
-    this.toggleDialog();
+  const onBranchChange = () => {
+    toggleDialog();
     setTimeout(() => { window.location.reload(); }, 500);
   }
 
-  render() {
+  const _navigate = (route) => {
+    navigate(route);
+    setRoute(route);
+  }
+
   return (
     <AppContainer>
       <SplashScreen
-        isVisible={this.state.showSplash}
+        isVisible={showSplash}
         title={"react-windows-ui"}
       />
 
       <Dialog
-        isVisible={this.state.showDialog}
-        onBackdropPress={this.toggleDialog}>
+        isVisible={showDialog}
+        onBackdropPress={toggleDialog}>
           <Dialog.Body>
             <div style={{flexDirection: "column", display:"flex"}}>
             <Link
               to="#"
-              onClick={this.toggleDialog}
+              onClick={toggleDialog}
               className="docs-btn-branch-dialog-txt">
                 <b>‣  version 4.2.2</b>
             </Link>
             <Link
               to="/v4.2.1/home"
-              onClick={this.toggleDialog}
+              onClick={toggleDialog}
               className="docs-btn-branch-dialog-txt">
                 ‣  version 4.2.1
             </Link>
             <Link
               to="/v4.2.0/home"
-              onClick={this.onBranchChange}
+              onClick={onBranchChange}
               className="docs-btn-branch-dialog-txt">
               ‣  version 4.2.0
             </Link>
@@ -111,7 +107,7 @@ class AppFourTwoTwo extends React.Component {
       <NavBar
         // collapsed
         title={<>React Win UI
-          <Link to="#" className="docs-btn-branch-selector" onClick={this.toggleDialog}>
+          <Link to="#" className="docs-btn-branch-selector" onClick={toggleDialog}>
             <span>v{lib_version}&nbsp;<i className="icons10-angle-down"></i></span>
           </Link>
         </>}
@@ -129,34 +125,35 @@ class AppFourTwoTwo extends React.Component {
         <InputSearchBox
           placeholder={`Search Docs v${lib_version}`}
           suggest={[
-            {label: 'home', link: '#', icon: <i className="icons10-home"></i>},
-            {label: 'alert', link: 'alerts'},
-            {label: 'accordion', link: 'accordion'},
-            {label: 'apperarance', link: 'appearance'},
-            {label: 'avatarview', link: 'avatarview'},
-            {label: 'buttons', link: 'buttons'},
-            {label: 'checkbox', link: 'checkbox'},
-            {label: 'commandbar', link: 'commandbar'},
-            {label: 'dialogs', link: 'dialogs'},
-            {label: 'icons', link: 'icons'},
-            {label: 'imageview', link: 'imageview'},
-            {label: 'inputtext', link: 'input_group'},
-            {label: 'menubar', link: 'menubar'},
-            {label: 'select', link: 'selectbox'}
+            {text: "home", onClick: () => alert("Hi"), icon: <i className="icons10-home"></i>},
+            {text: "alert", link: 'alerts'},
+            {text: "accordion", link: 'accordion'},
+            {text: "apperarance", link: 'appearance'},
+            {text: "avatarview", link: 'avatarview'},
+            {text: "buttons", link: 'buttons'},
+            {text: "checkbox", link: 'checkbox'},
+            {text: "commandbar", link: 'commandbar'},
+            {text: "dialogs", link: 'dialogs'},
+            {text: "icons", link: 'icons'},
+            {text: "imageview", link: 'imageview'},
+            {text: "inputtext", link: 'input_group'},
+            {text: "menubar", link: 'menubar'},
+            {text: "select", link: 'selectbox'}
           ]}
         />
 
         <NavBarThemeSwitch/>
 
         <NavBarLink
-          exact
-          to="home"
           text="Home"
           imgSrc={Img2}
+          active={route === "home" ?? true}
+          onClick={() => _navigate("home")}
         />
         <NavBarLink
-          to="getting_started"
           text="Getting Started"
+          active={route === "getting_started" ?? true}
+          onClick={() => _navigate("getting_started")}
           icon={<i className="icons10-navigation"></i>}
         />
 
@@ -194,6 +191,8 @@ class AppFourTwoTwo extends React.Component {
         <NavBarLink
           to="apptheme"
           text="AppTheme"
+          active={route === "apptheme" ?? true}
+          onClick={() => _navigate("apptheme")}
           icon={<i className="icons10-fantasy"></i>}
         />
         <NavBarLink
@@ -215,16 +214,17 @@ class AppFourTwoTwo extends React.Component {
         <h1>Components</h1>
         <div className="app-hr"></div>
 
-        {this.state.filteredData.map((item, key) => {
+        {NavBarItem.map((item, key) => {
           return <NavBarLink
                     key={key}
-                    to={item.to}
                     text={item.text}
                     exact={item.exact}
                     showBadge={item.showBadge}
+                    active={route === item.to ?? true}
+                    onClick={() => _navigate(item.to)}
                     icon={<i className={item.icon}></i>}
                   />
-          })
+                })
         }
             
         </NavBar>
@@ -270,9 +270,8 @@ class AppFourTwoTwo extends React.Component {
 
           <Route path='icons' element={<Icons/>} />
         </Routes>
-      </AppContainer>
-    )
-  }
+    </AppContainer>
+  )
 }
 
 export default AppFourTwoTwo;

@@ -1,6 +1,7 @@
 .app-navbar-wrap .app-navbar-list {
   .app-navbar-list-item {
     display: flex;
+    cursor: pointer;
 
     @if $platform == "windows11" {
       margin: 5px;

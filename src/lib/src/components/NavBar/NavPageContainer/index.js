@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 const NavPageContainer = (props) => {
-
-  const { pathname } = useLocation();
 
   useEffect(() => {
     var element = document.getElementById("app-page-container-id");
@@ -13,7 +10,7 @@ const NavPageContainer = (props) => {
     if(props.scrollTopOnMount) {
       window.scrollTo({ top: 0, left: 0, behavior: "instant"});
     }
-  }, [pathname, props.animateTransition, props.scrollTopOnMount]);
+  }, [props.animateTransition, props.scrollTopOnMount]);
 
   const setTransition = () => {
     return props.animateTransition ? " transition" : "";

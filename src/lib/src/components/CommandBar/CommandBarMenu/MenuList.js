@@ -1,13 +1,11 @@
 import React, { forwardRef, useImperativeHandle, useRef } from "react";
-import SubMenuListItem from "./SubMenuListItem";
+import MenuItem from "./MenuItem";
 
-function SubMenuList(props, myRef) {
+function MenuList(props, myRef) {
   const inputRef = useRef(null);
 
   useImperativeHandle(myRef, () => ({
-    toggleShow: () => {
-      inputRef.current.classList.toggle("show");
-    }
+    toggleShow: () => { inputRef.current.classList.toggle("show"); }
   }));
 
   return (
@@ -20,8 +18,8 @@ function SubMenuList(props, myRef) {
       ? <>
         { props.listData.children.map((child_, index) => {
             return [
-              child_.type === SubMenuListItem && (
-                <SubMenuListItem
+              child_.type === MenuItem && (
+                <MenuItem
                   key={index}
                   icon={child_.props.icon}
                   label={child_.props.label}
@@ -33,7 +31,7 @@ function SubMenuList(props, myRef) {
         </>
         // If there is only single child of sub child li
         : props.listData.children
-          ? <SubMenuListItem
+          ? <MenuItem
               label={props.listData.children.props.label}
               icon={props.listData.children.props.icon}
             />
@@ -43,4 +41,4 @@ function SubMenuList(props, myRef) {
   )
 }
 
-export default forwardRef(SubMenuList);
+export default forwardRef(MenuList);

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavPageContainer, InputText, TextArea, InputSearchBox } from '../../_lib'
+import { NavPageContainer, InputText, TextArea } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { InputTextImportCode, InputTextUsageCode, InputTextStatusUsageCode,

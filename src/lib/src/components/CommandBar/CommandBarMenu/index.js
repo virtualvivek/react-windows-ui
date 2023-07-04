@@ -1,9 +1,7 @@
 import React, { useState, useRef, Children, useMemo } from "react";
 import { useOutSideClick } from "../../../hooks";
 import { getScreenOffset } from "../../../api";
-import { Link } from "react-router-dom";
-import SubMenuItem from "./SubMenuItem";
-import SubMenuList from "./SubMenuList";
+import MenuList from "./MenuList";
 
 const CommandBarMenu = (props) => {
 
@@ -29,13 +27,11 @@ const CommandBarMenu = (props) => {
     hideCurrentSubmenu();
   }
 
-  useOutSideClick(wrapperRef, () => {
-    hideAllMenu();
-  });
+  useOutSideClick(wrapperRef, () => hideAllMenu());
 
   const toggleMenuBar = () => {
     setMenubar(!menubar);
-    getScreenOffset(wrapperRef) ? setReverse(" reverse") :  setReverse("");
+    getScreenOffset(wrapperRef) ? setReverse(" reverse") : setReverse("");
   }
 
   const openSubMenu = (indx) => {
@@ -53,9 +49,7 @@ const CommandBarMenu = (props) => {
   }
 
   useMemo(() => {
-    props.menuDirection === "leftJustify"
-      ? setMenuDirection(" leftJustify")
-      : setMenuDirection("");
+    props.menuDirection === "leftJustify" ? setMenuDirection(" leftJustify") : setMenuDirection("");
   }, [props.menuDirection]);
 
   const renderMenuItems = props.children.map((child, index) => {
@@ -64,15 +58,13 @@ const CommandBarMenu = (props) => {
         <li
           key={child.props.label}
           className="cmdbar-menu-list-item">
-          <Link
-            onClick={child.props.children
+          <span onClick={child.props.children
               ? () => openSubMenu(index)
               : () => _onItemClick(child.props)}
-            to={child.props.link ? child.props.link : "#"}
-            {...(child.props.children && { "data-win-toggle":"dropdown" })}>
+            {...(child.props.children && { "data-win-toggle": "dropdown" })}>
             {child.props.icon}{child.props.label}
-          </Link>
-          <SubMenuList
+          </span>
+          <MenuList
             ref={(el) => (subMenusRef.current[index] = el)}
             listData={child.props}
             listIndex={index-1}
@@ -113,7 +105,6 @@ CommandBarMenuItem.defaultProps = {
   onClick: () => {}
 }
 
-CommandBarMenu.MenuSubItem = SubMenuItem;
 CommandBarMenu.MenuItem = CommandBarMenuItem;
 CommandBarMenu.MenuTrigger = CommandBarMenuTrigger;
 CommandBarMenu.MenuItemDivider = CommandBarMenuItemDivider;

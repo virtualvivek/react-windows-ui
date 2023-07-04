@@ -1,5 +1,4 @@
 import React, { useState, useRef, useMemo } from "react";
-import { Link } from "react-router-dom";
 import { useOutSideClick } from "../../hooks";
 import { getScreenOffset, ScrollView } from "../../api";
 
@@ -55,11 +54,9 @@ const MenuBar = (props) => {
         <li
           className="app-dropdown-list-item"
           key={item.label}>
-          <Link
-            to={item.link ? item.link : "#"}
-            onClick={item.onClick}>
+          <span onClick={item.onClick}>
             {item.icon}{item.label}
-          </Link>
+          </span>
         </li>
         ))}
       </ul>

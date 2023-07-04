@@ -1,44 +1,58 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 const NavBarLink = (props) => {
 
+  const {
+    icon,
+    text,
+    href,
+    active,
+    imgSrc,
+    imgAlt,
+    onClick,
+    showBadge,
+    imgBorderRadius,
+    badgeBackgroundColor
+  } = props;
+
   const renderBadge = () => {
-    if(props.showBadge > 0 || props.showBadge !== "") {
+    if(showBadge > 0 || showBadge !== "") {
       return <div className="app-badge"
-              style={{backgroundColor: props.badgeBackgroundColor}}>
-                {props.showBadge}
+              style={{backgroundColor: badgeBackgroundColor}}>
+                {showBadge}
             </div>;
     }
     return <></>;
   }
 
   const renderImg = () => {
-    return props.imgSrc ?
+    return imgSrc ?
       <img
-        src={props.imgSrc}
-        alt={props.imgAlt}
-        style={{borderRadius:props.imgBorderRadius}}
+        src={imgSrc}
+        alt={imgAlt}
+        style={{borderRadius: imgBorderRadius}}
       />
       : ""
   }
 
   return (
     <li className="app-navbar-list-item">
-      <NavLink to={props.to} exact={`${props.exact}`}>
-        {props.icon}
+      <a
+        {...(active && { "aria-current": "page", className: "active", "aria-selected": "true" })}
+        onClick={onClick}
+        href={href}>
+        {icon}
         {renderImg()}
-        <span>{props.text}</span>
-        {props.showBadge ? renderBadge() : ""}
-      </NavLink>
+        <span>{text}</span>
+        {showBadge ? renderBadge() : ""}
+      </a>
     </li>
   )
 }
 
 NavBarLink.defaultProps = {
-  to : "#",
-  exact: false,
-  text: "link text"
+  text: "Nav Link",
+  onClick: () => {},
 }
 
 export default NavBarLink;

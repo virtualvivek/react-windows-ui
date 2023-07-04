@@ -52,7 +52,6 @@ return (
     clearButton={true}
     value={inputVal}
     onChange={(e) => _onChange(e.target.value)}
-    // onClearButtonClick={() => {}}
   />
 )`;
 

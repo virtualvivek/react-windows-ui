@@ -1,9 +1,10 @@
 import React, { ReactNode } from "react";
 
 export interface NavBarLinkProps {
-  to ?: string;
+  href ?: any;
   text ?: string;
-  exact ?: boolean;
+  active ?: boolean;
+  onClick ?: Function;
   imgSrc ?: string | any;
   icon ?: ReactNode | any;
   showBadge ?: number | string;

@@ -1,5 +1,4 @@
 import React, { useRef, forwardRef } from "react";
-import { Link } from "react-router-dom";
 
 const InputSearchBox = forwardRef((props, ref) => {
 
@@ -8,11 +7,9 @@ const InputSearchBox = forwardRef((props, ref) => {
 
   const _onChange = (e) => {
     let listSuggest = suggestRef.current;
-    if(!e.target.value || !listSuggest.hasChildNodes()) {
-      listSuggest.className = "";
-    } else {
-      listSuggest.className = "show";
-    }
+    (!e.target.value || !listSuggest.hasChildNodes())
+      ? listSuggest.className = ""
+      : listSuggest.className = "show";
     props.onChange();
   }
 
@@ -32,19 +29,15 @@ const InputSearchBox = forwardRef((props, ref) => {
         onChange={(e) => {
           _onChange(e)
           const lst_data = props.suggest.filter(data => {
-            return data.label.toLowerCase().includes(e.target.value.toLowerCase());
+            return data.text.toLowerCase().includes(e.target.value.toLowerCase());
           });
           setSuggestData(lst_data);
         }}
       />
       <ul ref={suggestRef} style={{ width: props.width }}>
         {suggestData.map((item) => (
-          <li
-            className="option"
-            key={item.label}>
-              <Link to={item.link} onClick={item.onClick}>
-                {item.icon}{item.label}
-              </Link>
+          <li className="option" key={item.text}>
+            <span onClick={item.onClick}>{item.icon}{item.text}</span>
           </li>
         ))}
       </ul>

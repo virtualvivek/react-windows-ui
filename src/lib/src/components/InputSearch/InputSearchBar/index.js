@@ -4,17 +4,17 @@ const InputSearchBar = forwardRef((props, ref) => {
   return (
     <div className="app-input-search-bar" title={props.tooltip}>
       <input
-        ref={ref}
-        style={{ width: props.width }}
         className="app-input-text"
+        ref={ref}
         type="search"
         name={props.name}
         value={props.value}
         onClick={props.onClick}
+        disabled={props.disabled}
         onChange={props.onChange}
         onKeyUp={props.onKeyUp}
         onKeyDown={props.onKeyDown}
-        disabled={props.disabled}
+        style={{ width: props.width }}
         placeholder={props.placeholder}
       />
       <button
@@ -26,8 +26,8 @@ const InputSearchBar = forwardRef((props, ref) => {
 })
 
 InputSearchBar.defaultProps = {
-  placeholder: "Search here..",
-  onSubmit: () => {}
+  onSubmit: () => {},
+  placeholder: "Search here.."
 }
 
 export default InputSearchBar;

@@ -13,8 +13,7 @@ const CommandBarButton = (props) => {
 }
 
 CommandBarButton.defaultProps = {
-  value: "Submit",
-  disabled: false
+  value: "Title"
 }
 
 export default CommandBarButton;
