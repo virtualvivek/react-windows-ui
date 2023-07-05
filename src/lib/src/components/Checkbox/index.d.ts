@@ -1,6 +1,7 @@
 import React from "react";
 
 export interface CheckboxProps {
+  ref ?: any;
   name ?: any;
   value ?: any;
   label ?: string;

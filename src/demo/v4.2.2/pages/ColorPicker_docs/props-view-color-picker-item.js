@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const PropsViewColorPickerItem = () => {
   return (
@@ -21,31 +21,31 @@ const PropsViewColorPickerItem = () => {
         </tr>
         <tr>
           <td><p className="app-code">color</p></td>
-          <td>CSS Color Value</td>
-          <td>'#eee'</td>
-          <td>Set's ColorPickerItem color prop</td>
+          <td>CSS Color</td>
+          <td>"#eee"</td>
+          <td>Set's ColorPickerItem color prop.</td>
         </tr>
         <tr>
           <td><p className="app-code">disabled</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Set's ColorPickerItem disabled state</td>
+          <td>Set's ColorPickerItem disabled state.</td>
         </tr>
         <tr>
           <td><p className="app-code">onChange</p></td>
           <td>function</td>
           <td>null</td>
-          <td>Set's ColorPickerItem onChange listener</td>
+          <td>Set's ColorPickerItem onChange listener.</td>
         </tr>
         <tr>
           <td><p className="app-code">defaultChecked</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Set's ColorPickerItem checked prop</td>
+          <td>Set's ColorPickerItem checked prop.</td>
         </tr>
       </tbody>
     </table>
     </div>
   );
 }
-export default PropsViewColorPickerItem
+export default PropsViewColorPickerItem;

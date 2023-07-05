@@ -2,11 +2,10 @@
   --noise: url("../../../../assets/static/noise.png");
 }
 .home-header {
-  width: 255px;
   color: #fff;
   margin: auto;
   display: flex;
-  padding: 15px;
+  padding: 20px;
   font-size: 42px;
   text-align: center;
   align-items: center;
@@ -53,7 +52,6 @@
 }
 
 .root-flex-subcontainer-home {
-  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center; 

@@ -41,7 +41,7 @@ class AlertDocs extends React.Component {
         onClick={this.toggleAlert}
       />
 
-      <div className="app-alert-bar alert-secondary" role="alert">
+      {/* <div className="app-alert-bar alert-secondary" role="alert">
         <div className="app-alert-bar-content">
           <strong>Title</strong>
           <span>This is a text</span>
@@ -56,7 +56,7 @@ class AlertDocs extends React.Component {
           <span>This is a text</span>
         </div>
         <button data-win-dismiss="alert" aria-label="Close"></button>
-      </div>
+      </div> */}
 
       <Alert
         isVisible={this.state.showAlert}

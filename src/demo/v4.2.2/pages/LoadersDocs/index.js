@@ -51,7 +51,7 @@ render() {
         
     <p>The <span className="app-color-primary">Loaders</span> are progress view that alerts a user to wait for an activity to complete.</p>
 
-    <h2>LoaderBar</h2>
+    <h1>LoaderBar</h1>
 
     <h2>Import</h2>
 
@@ -83,7 +83,7 @@ render() {
 
   
     <div className="app-hr"></div>
-    <h2>LoaderBusy</h2>
+    <h1>LoaderBusy</h1>
 
     <h2>Import</h2>
 
@@ -128,7 +128,7 @@ render() {
 
   
     <div className="app-hr"></div>
-    <h2>LoaderBusy <p className="app-code">Overlay</p> :</h2>
+    <h1>LoaderBusy <p className="app-code">Overlay</p> :</h1>
 
     <LoaderBusy
       isLoading={this.state.showLoaderBusyFull}
@@ -149,7 +149,7 @@ render() {
     </SyntaxHighlighter>
 
     <div className="app-hr"></div>
-    <h2>LoaderBusy <p className="app-code">Overlay</p>&nbsp;<p className="app-code">Custom Background Color</p> :</h2>
+    <h1>LoaderBusy <p className="app-code">Overlay</p>&nbsp;<p className="app-code">Custom Bg Color</p> :</h1>
 
     <LoaderBusy
       isLoading={this.state.showLoaderBusyFullCustom}

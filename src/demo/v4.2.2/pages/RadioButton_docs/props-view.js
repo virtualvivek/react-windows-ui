@@ -14,46 +14,52 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
+          <td><p className="app-code">ref</p></td>
+          <td>object</td>
+          <td>null</td>
+          <td>Set's RadioButton access refrence object.</td>
+        </tr>
+        <tr>
           <td><p className="app-code">defaultChecked</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Set's RadioButton default checked</td>
+          <td>Set's RadioButton default checked.</td>
         </tr>
         <tr>
           <td><p className="app-code">label</p></td>
           <td>string</td>
           <td>null</td>
-          <td>Set's RadioButton text label</td>
+          <td>Set's RadioButton text label.</td>
         </tr>
         <tr>
           <td><p className="app-code">value</p></td>
           <td>any</td>
           <td>null</td>
-          <td>Set's RadioButton value prop</td>
+          <td>Set's RadioButton value prop.</td>
         </tr>
         <tr>
           <td><p className="app-code">name</p></td>
           <td>string | integer</td>
           <td>null</td>
-          <td>Set's RadioButton name prop</td>
+          <td>Set's RadioButton name prop.</td>
         </tr>
         <tr>
           <td><p className="app-code">tooltip</p></td>
           <td>string</td>
           <td>null</td>
-          <td>Set's RadioButton hover tooptip text</td>
+          <td>Set's RadioButton hover tooptip text.</td>
         </tr>
         <tr>
           <td><p className="app-code">disabled</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Set's RadioButton disabled state</td>
+          <td>Set's RadioButton disabled state.</td>
         </tr>
         <tr>
           <td><p className="app-code">onChange</p></td>
           <td>null</td>
           <td>object</td>
-          <td>Set's RadioButton on change listener</td>
+          <td>Set's RadioButton on change listener.</td>
         </tr>
       </tbody>
     </table>

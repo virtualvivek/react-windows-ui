@@ -17,49 +17,49 @@ const PropsView = () => {
           <td><p className="app-code">defaultValue</p></td>
           <td>string - oneof data value</td>
           <td>null</td>
-          <td>Set's Select default selected value</td>
+          <td>Set's Select default selected value.</td>
         </tr>
         <tr>
           <td><p className="app-code">onChange</p></td>
           <td>function</td>
           <td>null</td>
-          <td>Set's Select onChange listener</td>
+          <td>Set's Select onChange listener.</td>
         </tr>
         <tr>
           <td><p className="app-code">name</p></td>
           <td>string | integer</td>
           <td>null</td>
-          <td>Set's SelectNative name prop</td>
+          <td>Set's SelectNative name prop.</td>
         </tr>
         <tr>
           <td><p className="app-code">tooltip</p></td>
           <td>string</td>
           <td>null</td>
-          <td>Set Select's hover tooltip prop</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">data ❑</p></td>
-          <td>object</td>
-          <td>[ ]</td>
-          <td>Set's Select/SelectNative data</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">data ▶ label</p></td>
-          <td>integer | string</td>
-          <td>null</td>
-          <td>Set's Select/SelectNative data item label</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">data ▶ value</p></td>
-          <td>integer | string</td>
-          <td>null</td>
-          <td>Set's Select/SelectNative data item value</td>
+          <td>Set Select's hover tooltip prop.</td>
         </tr>
         <tr>
           <td><p className="app-code">disabled</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Set's Select/SelectNative disabled state</td>
+          <td>Set's Select/SelectNative disabled state.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">data ❑</p></td>
+          <td>object</td>
+          <td>[ ]</td>
+          <td>Set's Select/SelectNative data.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">data ▶ label</p></td>
+          <td>integer | string</td>
+          <td>null</td>
+          <td>Set's Select/SelectNative data item label.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">data ▶ value</p></td>
+          <td>integer | string</td>
+          <td>null</td>
+          <td>Set's Select/SelectNative data item value.</td>
         </tr>
       </tbody>
     </table>

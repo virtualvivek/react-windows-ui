@@ -2,20 +2,16 @@ import React from "react";
 
 const ProgressBar = (props) => {
   return (
-    <div className="app-progress-container" title={props.tooltip}>
-
-      {props.icon && (<div className="app-progress-icon">{props.icon}</div>)}
-      
+    <div
+      className={`app-progress-container${props.setProgress==="hidden" ? "hide":""}`}
+      title={props.tooltip}>
       <div className="app-progress-content">
         <span className="app-progress-title">{props.title}</span>
-        <div
-          className={props.showIcon ? "app-progress-bar with-icon" : "app-progress-bar"}
-          style={{
-            height: props.height
-          }}>
+        <div className="app-progress-bar" style={{height: props.height}}>
           <span role="progressbar"
+            {...(props.setProgress === "indeterminate" && { "className": "indeterminate" })}
             style={{
-              width: props.setProgress+"%",
+              width: props.setProgress !== "indeterminate" ? props.setProgress+"%" : "",
               backgroundColor: props.color
             }}>
           </span>
@@ -28,7 +24,6 @@ const ProgressBar = (props) => {
 
 ProgressBar.defaultProps = {
   setProgress: 0,
-  showIcon: false
 }
 
 export default ProgressBar;

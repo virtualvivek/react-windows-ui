@@ -19,43 +19,32 @@ const LoaderBusy = (props) => {
   }
 
   const renderLoader = () => {
-    return <div
-            className={ props.setTheme === "light"
+    return <div className={ props.setTheme === "light"
               ? `app-loader-busy${isOverlay()} light${setSize()}${toggleLoading()}`
               : `app-loader-busy${isOverlay()}${setSize()}${toggleLoading()}`}>
             <LoaderBusyWrapper/>
-          </div>
+           </div>
   }
 
   useMemo(() => {
     if(props.display === "overlay") {
-      if(props.isLoading) { ScrollView.disableScroll(); }
-      else {ScrollView.enableScroll(); }
+      props.isLoading ? ScrollView.disableScroll() : ScrollView.enableScroll();
     }
   }, [props.isLoading, props.display]);
 
   const renderLoaderFullScreen = () => {
   return <>
     <div
-      className={
-      props.isLoading
-      ? "app-dim-overlay show"
-      : "app-dim-overlay"
-      }
+      className={props.isLoading ? "app-dim-overlay show" : "app-dim-overlay"}
       style={{
         backgroundColor: props.backgroundColor
       }}>
     </div>
     <div
       onClick={ props.onBackdropPress }
-      className={ props.isLoading
-        ? "app-loader-busy-overlay show"
-        : "app-loader-busy-overlay"}>
+      className={ props.isLoading ? "app-loader-busy-overlay show" : "app-loader-busy-overlay"}>
       {renderLoader()}
-      <span className={ props.setTheme === "light"
-        ? "title text-light"
-        : "title"
-        }>
+      <span className={ props.setTheme === "light" ? "title text-light" : "title"}>
         {props.title}
       </span>
     </div>
@@ -65,17 +54,14 @@ const LoaderBusy = (props) => {
 
   return (
     <>
-    { props.display === "overlay"
-      ? renderLoaderFullScreen()
-      : renderLoader()
-    }
+    { props.display === "overlay" ? renderLoaderFullScreen() : renderLoader() }
     </>
   )
 }
 
 LoaderBusy.defaultProps = {
-  backgroundColor: "var(--color-grey-light-alpha)",
-  isLoading: true
+  isLoading: true,
+  backgroundColor: "var(--color-ui-hover-default)",
 }
 
 export default LoaderBusy;

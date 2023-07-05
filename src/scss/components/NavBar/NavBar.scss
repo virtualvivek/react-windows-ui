@@ -29,6 +29,8 @@
     display: flex;
     flex-direction: column;
     background-color: var(--color-navbar-bg-default);
+    /* prevent overscroll bounce on addressBar*/
+    -webkit-overflow-scrolling: touch;
     // transition: transform 0.2s ease, width 0.2s ease;
   }
 }

@@ -28,7 +28,7 @@ class Home extends React.Component {
         <div style={{display:"flex",flexDirection:"column"}}>
           <div className="home-header">
             <ReactIcon/>
-            <span>&nbsp;   +   &nbsp;</span>
+            <span>&nbsp;+&nbsp;</span>
             <WinIcon/>
           </div>
 
@@ -63,7 +63,7 @@ class Home extends React.Component {
           <div style={{display: "flex",flexDirection: "column",paddingLeft: "5%", justifyContent: "flex-start"}}>
             <h1 className="home-title">react-windows-ui</h1>
             <span style={{maxWidth: 340, marginBottom: 24}}>Build Windows fluent UI apps using ReactJS. Provides a set of accessible, reusable, and composable React components.</span>
-            <Button type="primary-outline" value={`Github Release v${lib_version}`}/>
+            {/* <Button type="primary-outline" value={`Github Release v${lib_version}`}/> */}
           </div>
       </div>
 
@@ -71,7 +71,7 @@ class Home extends React.Component {
         language="javascript"
         style={vscDarkPlus}
         className="code code-container home-code">
-        {`$ npx create-react-app MyApp --template windows-ui`}
+        {`$ npm install react-windows-ui`}
       </SyntaxHighlighter>
 
       </div>

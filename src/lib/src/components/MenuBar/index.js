@@ -23,18 +23,17 @@ const MenuBar = (props) => {
   }, [menubar]);
 
 
-  const teams_data = props.data
-  const [teams, setTeams] = useState(teams_data)
-  const [search, setSearch] = useState("")
+  const teams_data = props.data;
+  const [teams, setTeams] = useState(teams_data);
+  const [search, setSearch] = useState("");
 
 
   return (
-    <div className="app-dropdown-menu app-menubar" onClick={toggleMenuBar} ref={wrapperRef}>
-      <span>{props.label}</span>
+    <div className="app-dropdown-menu" onClick={toggleMenuBar} ref={wrapperRef}>
+      <span className="app-dropdown-title">{props.label}</span>
       <ul className={ menubar ? `app-dropdown-list show ${isReverse}` : "app-dropdown-list"}>
         {props.showSearchBar && (
-        <div className="app-input-search-box"
-          onClick={(e) => {e.stopPropagation()}}>
+        <div className="app-input-search-box" onClick={(e) => {e.stopPropagation()}}>
           <input
             className="app-input-text app-input-search"
             type="search"
@@ -51,13 +50,11 @@ const MenuBar = (props) => {
         </div>
         )}
         {teams.map(item => (
-        <li
-          className="app-dropdown-list-item"
-          key={item.label}>
-          <span onClick={item.onClick}>
-            {item.icon}{item.label}
-          </span>
-        </li>
+          <li className="app-dropdown-list-item" key={item.label}>
+            <span onClick={item.onClick}>
+              {item.icon}{item.label}
+            </span>
+          </li>
         ))}
       </ul>
     </div>

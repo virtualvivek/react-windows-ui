@@ -16,50 +16,44 @@ const PropsView = () => {
         <tr>
           <td><p className="app-code">label</p></td>
           <td>string</td>
-          <td>'Select'</td>
-          <td>Set's MenuBar label</td>
+          <td>"Select"</td>
+          <td>Set's MenuBar label.</td>
         </tr>
         <tr>
           <td><p className="app-code">searchPlaceholder</p></td>
           <td>string</td>
-          <td>'search here'</td>
-          <td>Set's MenuBar Search placeholder</td>
+          <td>"Search here"</td>
+          <td>Set's MenuBar Search placeholder.</td>
         </tr>
         <tr>
           <td><p className="app-code">showSearchBar</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Toggle's MenuBar Search Input visibility</td>
+          <td>Toggle's MenuBar Search Input visibility.</td>
         </tr>
         <tr>
           <td><p className="app-code">data ❑</p></td>
           <td>object</td>
           <td>[ ]</td>
-          <td>Set's MenuBar menu items</td>
+          <td>Set's MenuBar menu items.</td>
         </tr>
         <tr>
           <td><p className="app-code">data {'▶'} label</p></td>
           <td>integer | string</td>
           <td>null</td>
-          <td>Set's MenuBar item label</td>
+          <td>Set's MenuBar item label.</td>
         </tr>
         <tr>
           <td><p className="app-code">data {'▶'} icon</p></td>
           <td>ReactNode</td>
           <td>null</td>
-          <td>Set's MenuBar item icon</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">data {'▶'} link</p></td>
-          <td>link href string</td>
-          <td>'#'</td>
-          <td>Set's MenuBar item link</td>
+          <td>Set's MenuBar item icon.</td>
         </tr>
         <tr>
           <td><p className="app-code">data {'▶'} onClick</p></td>
           <td>function</td>
           <td>null</td>
-          <td>Set's MenuBar item onClick listner</td>
+          <td>Set's MenuBar item onClick listner.</td>
         </tr>
       </tbody>
     </table>

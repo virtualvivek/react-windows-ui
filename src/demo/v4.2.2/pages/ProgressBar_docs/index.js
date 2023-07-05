@@ -5,7 +5,7 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { ProgressBarImportCode,ProgressBarUsageCode,ProgressBarTitleUsageCode,
         ProgressBarTitleSubtitleUsageCode,ProgressBarIconUsageCode,
         ProgressBarCustomColorUsageCode,ProgressBarCustomHeightUsageCode,
-        ProgressBarIndeterminateImportCode,ProgressBarIndeterminateUsageCode } from './codes'
+        ProgressBarIndeterminateUsageCode } from './codes'
 import PropsView from './props-view'
 
 class ProgressBarDocs extends React.Component {
@@ -13,7 +13,6 @@ class ProgressBarDocs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showProgressIndeterminate: true,
       ProgressBar1: 46,
     }
   }
@@ -21,12 +20,6 @@ class ProgressBarDocs extends React.Component {
   setProgress2 = () => { this.setState({ProgressBar1:2}) }
   setProgress50 = () => { this.setState({ProgressBar1:50}) }
   setProgress99 = () => { this.setState({ProgressBar1:99}) }
-
-  toggleProgressIndeterminate = () => {
-    if(this.state.showProgressIndeterminate)
-          this.setState({showProgressIndeterminate: false});
-    else  this.setState({showProgressIndeterminate: true});
-  }
 
 render() {
   return (
@@ -69,7 +62,7 @@ render() {
     <h2>Usage</h2>
 
     <ProgressBar
-      setProgress={this.state.ProgressBar1}
+      setProgress={75}
       tooltip="ProgressBar tooltip title"/><br/><br/>
 
     <SyntaxHighlighter
@@ -85,7 +78,7 @@ render() {
 
     <ProgressBar
       title="Title"
-      setProgress={80}/><br/><br/>
+      setProgress={60}/><br/><br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -162,25 +155,13 @@ render() {
 
 
     <div className="app-hr"></div>
-    <h1>ProgressBarIndeterminate</h1>
+    <h1>ProgressBar as <p className="app-code">Indeterminate</p> :</h1>
 
-    <h2>Import</h2>
-
-    <SyntaxHighlighter
-      language="javascript"
-      style={vscDarkPlus}
-      className="code code-container">
-      {ProgressBarIndeterminateImportCode}
-    </SyntaxHighlighter>
+    <ProgressBar
+      setProgress={"indeterminate"}
+    />
 
     <h2>Usage</h2>
-
-    {/* <ProgressBarIndeterminate
-      isLoading={this.state.showProgressIndeterminate}/><br/><br/> */}
-    <Button
-      value="Toggle Loading"
-      icon={<i className="icons10-resize-horizontal"></i>}
-      onClick={this.toggleProgressIndeterminate}/><br/><br/>
 
     <SyntaxHighlighter
       language="javascript"

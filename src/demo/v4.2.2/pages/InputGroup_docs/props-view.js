@@ -17,7 +17,7 @@ const PropsView = () => {
           <td><p className="app-code">ref</p></td>
           <td>object</td>
           <td>null</td>
-          <td>Set's Input refrence object.</td>
+          <td>Set's Input access refrence object.</td>
         </tr>
         <tr>
           <td><p className="app-code">value</p></td>
@@ -35,13 +35,13 @@ const PropsView = () => {
           <td><p className="app-code">width</p></td>
           <td>CSS Property</td>
           <td>'270px'</td>
-          <td>Set's Input background-ring/backround color</td>
+          <td>Set's Input container width.</td>
         </tr>
         <tr>
           <td><p className="app-code">label</p></td>
           <td>string</td>
           <td>null</td>
-          <td>Set's Input label text</td>
+          <td>Set's Input label text.</td>
         </tr>
         <tr>
           <td><p className="app-code">clearButton</p></td>
@@ -53,19 +53,19 @@ const PropsView = () => {
           <td><p className="app-code">disabled</p></td>
           <td>boolean</td>
           <td>false</td>
-          <td>Set's Input state disabled</td>
+          <td>Set's Input state disabled.</td>
         </tr>
         <tr>
           <td><p className="app-code">setStatus</p></td>
           <td>"default" | "success" <br/> "danger" | "loading"</td>
           <td>"default"</td>
-          <td>Set's Input status</td>
+          <td>Set's Input status.</td>
         </tr>
         <tr>
           <td><p className="app-code">placeholder</p></td>
           <td>string</td>
           <td>"Enter a text"</td>
-          <td>Set's Input placeholder</td>
+          <td>Set's Input placeholder.</td>
         </tr>
         <tr>
           <td><p className="app-code">tooltip</p></td>
@@ -101,25 +101,25 @@ const PropsView = () => {
           <td><p className="app-code">onChange</p></td>
           <td>function</td>
           <td>[ ]</td>
-          <td>Set's Input on Change listener</td>
+          <td>Set's Input on Change listener.</td>
         </tr>
         <tr>
           <td><p className="app-code">onClick</p></td>
           <td>function</td>
           <td>[ ]</td>
-          <td>Set's Input on Click listener</td>
+          <td>Set's Input on Click listener.</td>
         </tr>
         <tr>
           <td><p className="app-code">onKeyUp</p></td>
           <td>function</td>
           <td>[ ]</td>
-          <td>Set's Input on KeyUp listener</td>
+          <td>Set's Input on KeyUp listener.</td>
         </tr>
         <tr>
           <td><p className="app-code">onKeyDown</p></td>
           <td>function</td>
           <td>[ ]</td>
-          <td>Set's Input on KeyDown listener</td>
+          <td>Set's Input on KeyDown listener.</td>
         </tr>
       </tbody>
     </table>

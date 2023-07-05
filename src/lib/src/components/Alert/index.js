@@ -1,7 +1,14 @@
-import React, { useMemo } from "react";
+import React, { forwardRef, useMemo, useState, useImperativeHandle } from "react";
 import { ScrollView } from "../../api";
 
-const Alert = (props) => {
+const Alert = forwardRef((props, ref) => {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  const open = () => { setIsVisible(true); }
+  const close = () => { setIsVisible(false); }
+
+  useImperativeHandle(ref, () => ({ open, close }));
 
   const _onBackdropPress = (event) => {
     event.preventDefault();
@@ -9,12 +16,13 @@ const Alert = (props) => {
   }
 
   useMemo(() => {
-    props.isVisible ? ScrollView.disableScroll() : ScrollView.enableScroll();
-  }, [props.isVisible]);
+    (props.isVisible || isVisible) ? ScrollView.disableScroll() : ScrollView.enableScroll();
+  }, [props.isVisible, isVisible]);
 
   return (
     <div
-      className={props.isVisible ? "app-alert show" : "app-alert"}
+      ref={ref}
+      className={(props.isVisible || isVisible) ? "app-alert show" : "app-alert"}
       onClick={(event) => _onBackdropPress(event)}
       tabIndex="-1">
       <div className="app-alert-modal" aria-modal="true" role="dialog">
@@ -30,7 +38,7 @@ const Alert = (props) => {
       </div>
     </div>
   )
-}
+});
 
 const AlertHeader = ({ children }) => <div className="app-alert-haeder">{children}</div>;
 const AlertFooter = ({ children }) => <div className="app-alert-footer">{children}</div>;

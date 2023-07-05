@@ -18,9 +18,9 @@ const PropsCmdMenuTrigger = () => {
             <td>ReactNode</td>
             <td>
               <button
-              class="app-cmdbar-button"
+              className="app-cmdbar-button"
               style={{background: "var(--color-ui-hover-default)"}}>
-                <i class="icons10-angle-down"></i>
+                <i className="icons10-angle-down"></i>
               </button>
             </td>
             <td>Set's CommandBar Menu Custom Trigger Component.</td>

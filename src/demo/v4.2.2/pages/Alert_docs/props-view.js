@@ -14,6 +14,12 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
+          <td><p className="app-code">ref</p></td>
+          <td>object</td>
+          <td>null</td>
+          <td>Set's alert refrence object.</td>
+        </tr>
+        <tr>
           <td><p className="app-code">title</p></td>
           <td>string | 'jsx'</td>
           <td>null</td>
@@ -44,10 +50,22 @@ const PropsView = () => {
           <td>Set's the alert footer children.</td>
         </tr>
         <tr>
+          <td><p className="app-code">ref.<b>open()</b></p></td>
+          <td>function</td>
+          <td>default</td>
+          <td>Set's alert open using ref.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">ref.<b>close()</b></p></td>
+          <td>function</td>
+          <td>default</td>
+          <td>Set's alert close using ref.</td>
+        </tr>
+        <tr>
           <td><p className="app-code">onBackdropPress.</p></td>
           <td>function</td>
           <td>undefined</td>
-          <td>Callback on backdrop press</td>
+          <td>Callback on backdrop press.</td>
         </tr>
       </tbody>
     </table>

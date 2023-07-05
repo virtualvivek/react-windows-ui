@@ -1,9 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const Checkbox = (props) => {
+const Checkbox = forwardRef((props, ref) => {
   return (
     <label>
       <input
+        ref={ref}
         className="app-checkbox"
         {...props}
         type="checkbox"
@@ -17,11 +18,6 @@ const Checkbox = (props) => {
       {props.label && (<span> {props.label}</span>)}
     </label>
   )
-}
-
-Checkbox.defaultProps = {
-  label: "",
-  disabled: false,
-}
+});
 
 export default Checkbox;

@@ -30,6 +30,9 @@ const PropsView = () => {
           <td>
             <b>columns  ❑</b>
           </td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
         <tr>
           <td><p className="app-code">columns ▶ title</p></td>
@@ -49,7 +52,6 @@ const PropsView = () => {
           <td>true</td>
           <td>Set's Selected column to show sort icon</td>
         </tr>
-
       </tbody>
     </table>
     </div>

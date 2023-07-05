@@ -14,6 +14,12 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
+          <td><p className="app-code">ref</p></td>
+          <td>object</td>
+          <td>null</td>
+          <td>Set's button access refrence object.</td>
+        </tr>
+        <tr>
           <td><p className="app-code">value</p></td>
           <td>string</td>
           <td>"Submit"</td>
@@ -82,7 +88,7 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">justifyContent</p></td>
-          <td>"center" | "start"</td>
+          <td>CSSProperties</td>
           <td>"center"</td>
           <td>Set's button text alignment.</td>
         </tr>

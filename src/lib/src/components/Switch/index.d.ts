@@ -1,6 +1,7 @@
 import React from "react";
 
 export interface SwitchProps {
+  ref ?: any;
   label ?: boolean;
   tooltip ?: string;
   labelOn ?: string;

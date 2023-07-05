@@ -57,6 +57,7 @@ class CommandBarDocs extends React.Component {
       </SyntaxHighlighter>
 
       <h2>Usage</h2>
+      <div className="app-hr"></div>
 
       {/* --------------------------------------------------- */}
 

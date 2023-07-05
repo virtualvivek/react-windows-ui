@@ -1,15 +1,16 @@
 import React, { ReactNode, CSSProperties } from "react";
 
 export interface ButtonProps {
-  width ?: number | string;
+  ref ?: any;
   type ?: string;
   value ?: string;
   tooltip ?: string;
   icon ?: ReactNode;
   disabled ?: boolean;
-  textAlign ?: string;
+  justifyContent ?: CSSProperties;
   isLoading ?: boolean;
   style ?: CSSProperties;
+  width ?: number | string;
 
   onClick ?: any;
   onSubmit ?: any;

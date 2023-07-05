@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 
 export interface AlertProps {
+  ref ?: any;
   title ?: string;
   message ?: string;
   isVisible ?: boolean;

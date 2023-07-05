@@ -1,7 +1,19 @@
-import React, { useMemo } from "react";
+import React, { forwardRef, useMemo } from "react";
 import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
 
-const Button = (props) => {
+const Button = forwardRef((props, ref) => {
+
+  const {
+    type,
+    icon,
+    value,
+    tooltip,
+    onClick,
+    onSubmit,
+    disabled,
+    isLoading,
+    onDoubleClick,
+  } = props;
 
   const renderLoader = useMemo(() => {
     return <div className="app-loader-busy loader-sm animate">
@@ -10,19 +22,20 @@ const Button = (props) => {
   }, []);
 
   const toggleLoading = useMemo(() => {
-    return props.isLoading ? " btn-is-loading" : "";
-  }, [props.isLoading]);
+    return isLoading ? " btn-is-loading" : "";
+  }, [isLoading]);
 
   return (
     <button
+      ref={ref}
       className = {
-        props.type === "primary" ?  `app-btn app-btn-primary${toggleLoading}`
-      : props.type === "danger" ? `app-btn app-btn-danger${toggleLoading}`
-      : props.type === "success" ? `app-btn app-btn-success${toggleLoading}`
-      : props.type === "subtle" ? `app-btn app-btn-subtle${toggleLoading}`
-      : props.type === "primary-outline" ? `app-btn app-btn-outline-primary${toggleLoading}`
-      : props.type === "danger-outline" ? `app-btn app-btn-outline-danger${toggleLoading}`
-      : props.type === "success-outline" ? `app-btn app-btn-outline-success${toggleLoading}`
+        type === "primary" ?  `app-btn app-btn-primary${toggleLoading}`
+      : type === "danger" ? `app-btn app-btn-danger${toggleLoading}`
+      : type === "success" ? `app-btn app-btn-success${toggleLoading}`
+      : type === "subtle" ? `app-btn app-btn-subtle${toggleLoading}`
+      : type === "primary-outline" ? `app-btn app-btn-outline-primary${toggleLoading}`
+      : type === "danger-outline" ? `app-btn app-btn-outline-danger${toggleLoading}`
+      : type === "success-outline" ? `app-btn app-btn-outline-success${toggleLoading}`
       : `app-btn${toggleLoading}`
       }
       style={{
@@ -30,18 +43,18 @@ const Button = (props) => {
         width: props.width,
         ...props.style
       }}
-      type={props.type}
-      title={props.tooltip}
-      onClick={props.onClick}
-      onSubmit={props.onSubmit}
-      disabled={props.disabled}
-      onDoubleClick={props.onDoubleClick}>
-        {props.isLoading && (renderLoader)}
-        {props.icon && (<>{props.icon}</>)}
-        {props.value && (<span>{props.value}</span>)}
+      type={type}
+      title={tooltip}
+      onClick={onClick}
+      onSubmit={onSubmit}
+      disabled={disabled}
+      onDoubleClick={onDoubleClick}>
+        {isLoading && (renderLoader)}
+        {icon && (<>{icon}</>)}
+        {value && (<span>{value}</span>)}
     </button>
   )
-}
+});
 
 Button.defaultProps = {
   type: "button",
