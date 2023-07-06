@@ -3,8 +3,8 @@ import React from "react"
 const SvgComponent = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width={68} height={68} {...props}>
     <linearGradient id="gradient" x2="0.5" y2="1">
-      <stop offset="5%" stop-color="var(--PrimaryColorLight)"/>
-      <stop offset="95%" stop-color="var(--PrimaryColor)"/>
+      <stop offset="5%" stopColor="var(--PrimaryColorLight)"/>
+      <stop offset="95%" stopColor="var(--PrimaryColor)"/>
     </linearGradient>
     <path
       fill="url(#gradient)"

@@ -1,7 +1,10 @@
 .template-container {
   display: flex;
-  gap: 5%;
   flex-wrap: wrap;
+}
+
+.template-container .true {
+  border-color: var(--color-success-default) !important;
 }
 
 .template-desktop {
@@ -24,23 +27,23 @@
 }
 
 .temp-toggler {
+  height: 5px;
   font-size: 22px;
   line-height: 0;
-  height: 5px;
 }
 
 .temp-navitem {
   font-size: 18px;
   padding: 5px;
   margin: 5px;
-  padding-left: 10px;
   gap: 10px;
   display: flex;
-  align-items: center;
-  border-radius: 4px;
   cursor: pointer;
-  border: 1px solid transparent;
+  border-radius: 4px;
+  padding-left: 10px;
+  align-items: center;
   user-select: none;
+  border: 1px solid transparent;
 }
 
 .temp-navimg {
@@ -50,32 +53,42 @@
 
 .temp-navitem-active::before {
   content: " ";
-    background-color: var(--color-primary-adaptive);
-    height: 13px;
-    width: 2.2px;
-    margin-left: -15px;
+  height: 13px;
+  width: 2.2px;
+  margin-left: -15px;
+  background-color: var(--color-primary-adaptive);
 }
 
 .temp-navsearch {
-  background-color: var(--color-input-bg-default);
   border-radius: 4px;
+  background-color: var(--color-input-bg-default);
   border: 1px solid var(--color-input-border-default);
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #77777788;
 }
 
 .template-page-container {
   width: 200px;
+  border: 1px solid transparent;
+}
+
+.template-page-container span {
+  padding: 15px;
+  font-size: 18px;
+  user-select: none;
+  position: relative;
+  display: inline-flex;
 }
 
 .temp-title {
-  margin: 0 0 0 5px;
-  padding-left: 10px;
-  border-bottom: 1px solid var(--color-progress-bg) !important;
   line-height: 2;
-  font-weight: 600;
   cursor: pointer;
-  border: 1px solid transparent;
+  font-weight: 600;
+  user-select: none;
+  margin: 0 0 0 5px;
   border-radius: 4px;
+  padding-left: 10px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--color-progress-bg) !important;
 }
 
 .template-page-container {
@@ -84,13 +97,24 @@
 
 .temp-divider {
   width: 1px;
-    background: #000;
-    margin: 10% 0;
+  background: #000;
+  margin: 45px 15px;
 }
 
+.code-container.getting-started {
+  width: 44vw;
+  max-height: 65vh;
+  resize: auto;
+}
 
 .template-page-container:hover,
 .temp-navitem:hover,
 .temp-title:hover {
-  border: 1px solid var(--color-text-default) !important;
+  border: 1px solid var(--color-success-default) !important;
+}
+
+.template-page-container:active,
+.temp-navitem:active,
+.temp-title:active {
+  opacity: 0.7;
 }

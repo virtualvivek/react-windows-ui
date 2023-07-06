@@ -40,6 +40,10 @@
     background-color: var(--dark, #dddddd99) var(--light, #777777ee);
   }
 
+  ::-webkit-scrollbar-thumb:active {
+    background-color: var(--dark, #dddddd77) var(--light, #77777799) !important;
+  }
+
   ::-webkit-scrollbar-button:single-button {
     display: block;
     block-size: 14px;

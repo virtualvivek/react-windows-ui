@@ -53,11 +53,13 @@ class Home extends React.Component {
             />
           </div>
         </div>
-        <GithubIcon/>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/virtualvivek/react-windows-ui/">
+          <GithubIcon/>
+        </a>
       </div>
 
       <div style={{display: "flex",flexDirection: "column",paddingLeft: 45, justifyContent: "flex-start"}}>
-        <h1 className="home-title">react-windows-ui <span className="home-card-version">{lib_version}</span></h1>
+        <h1 className="home-title">react-windows-ui <span className="home-card-version"><a target="_blank" rel="noopener noreferrer" href="https://github.com/virtualvivek/react-windows-ui/releases/latest">{lib_version}</a></span></h1>
         <span style={{maxWidth: "70%", fontSize: 28}}>Build Windows fluent UI apps using ReactJS. <br/>Provides a set of accessible, reusable, and composable React components.</span>
       </div>
 

@@ -142,7 +142,7 @@ const AppFourTwoTwo = () => {
           ]}
         />
 
-        <NavBarThemeSwitch/>
+        <NavBarThemeSwitch />
 
         <NavBarLink
           text="Home"

@@ -7,7 +7,6 @@
   div {
     height: 40px;
     width: 40px;
-    display: inline-block;
     border: 2px solid transparent;
 
     &:hover { border: 2px solid var(--color-text-default); }

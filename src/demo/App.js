@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 
 const AppFourTwoZero = React.lazy(() => import("./v4.2.0"));
 const AppFourTwoOne = React.lazy(() => import("./v4.2.1"));
@@ -21,7 +21,7 @@ const Splash = () => {
 class App extends React.Component {
   render() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/v4.2.2/home" />}/>
         <Route
@@ -37,7 +37,7 @@ class App extends React.Component {
           element={<React.Suspense fallback={<Splash/>}><AppFourTwoTwo/></React.Suspense>}
         />
       </Routes>
-    </Router>
+    </HashRouter>
     )
   }
 }
