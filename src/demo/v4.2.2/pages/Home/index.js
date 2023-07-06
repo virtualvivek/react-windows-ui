@@ -1,9 +1,10 @@
 import React from 'react'
-import { NavPageContainer, ColorPickerItem, ColorPickerPalette, AppTheme, Button } from '../../_lib'
+import { NavPageContainer, ColorPickerItem, ColorPickerPalette, AppTheme } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import ReactIcon from '../../../assets/static/ReactIcon'
 import WinIcon from '../../../assets/static/WinIcon'
+import GithubIcon from "../../../assets/static/GithubIcon"
 import './css/home.css'
 import { lib_version } from '../../values'
 
@@ -11,7 +12,7 @@ import { lib_version } from '../../values'
 class Home extends React.Component {
 
   state = {
-    app_color: '', app_mode: ''
+    app_color: ""
   }
 
   changeTheme = (color) => { this.setState({app_color: color.target.value}); }
@@ -21,50 +22,43 @@ class Home extends React.Component {
     <NavPageContainer>
       <AppTheme color={this.state.app_color} />
 
-      <div className="root-flex-container-home">
-        
-      <div className="root-flex-subcontainer-home">
-        
-        <div style={{display:"flex",flexDirection:"column"}}>
-          <div className="home-header">
-            <ReactIcon/>
-            <span>&nbsp;+&nbsp;</span>
-            <WinIcon/>
-          </div>
-
-          <div className="home-color-picker">
+      <div style={{padding: 45, display:"flex", width:"100%", alignItems: "center", justifyContent: "space-between"}}>
+        <div className="home-header">
+          <ReactIcon/>
+          <span>&nbsp;+&nbsp;</span>
+          <WinIcon/>
+        </div>
+        <div style={{flex: 0.9, display:"flex"}}>
+          <div className="home-color-picker-grid">
             <ColorPickerItem
               defaultChecked
               name="1"
               color="#0078D7"
-              onChange={ (color) => this.changeTheme(color)}/>
-            <ColorPickerItem
-              name="1"
-              color="#6632a8"
-              onChange={ (color) => this.changeTheme(color)}/>
+              onChange={ (color) => this.changeTheme(color)}
+            />
             <ColorPickerItem
               name="1"
               color="#881798"
-              onChange={ (color) => this.changeTheme(color)}/>
+              onChange={ (color) => this.changeTheme(color)}
+            />
             <ColorPickerItem
               name="1"
               color="#00B294"
-              onChange={ (color) => this.changeTheme(color)}/>
-            <ColorPickerItem
-              name="1"
-              color="#69797E"
-              onChange={ (color) => this.changeTheme(color)}/>
+              onChange={ (color) => this.changeTheme(color)}
+            />
             <ColorPickerPalette
               name="1"
               color="#5ebd06"
-              onChange={ (color) => this.changeTheme(color)}/>
+              onChange={ (color) => this.changeTheme(color)}
+            />
           </div>
-          </div>
-          <div style={{display: "flex",flexDirection: "column",paddingLeft: "5%", justifyContent: "flex-start"}}>
-            <h1 className="home-title">react-windows-ui</h1>
-            <span style={{maxWidth: 340, marginBottom: 24}}>Build Windows fluent UI apps using ReactJS. Provides a set of accessible, reusable, and composable React components.</span>
-            {/* <Button type="primary-outline" value={`Github Release v${lib_version}`}/> */}
-          </div>
+        </div>
+        <GithubIcon/>
+      </div>
+
+      <div style={{display: "flex",flexDirection: "column",paddingLeft: 45, justifyContent: "flex-start"}}>
+        <h1 className="home-title">react-windows-ui <span className="home-card-version">{lib_version}</span></h1>
+        <span style={{maxWidth: "70%", fontSize: 28}}>Build Windows fluent UI apps using ReactJS. <br/>Provides a set of accessible, reusable, and composable React components.</span>
       </div>
 
       <SyntaxHighlighter
@@ -73,8 +67,6 @@ class Home extends React.Component {
         className="code code-container home-code">
         {`$ npm install react-windows-ui`}
       </SyntaxHighlighter>
-
-      </div>
 
 
       <div className="backdrop-overlay">

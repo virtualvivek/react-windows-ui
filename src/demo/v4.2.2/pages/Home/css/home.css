@@ -3,59 +3,41 @@
 }
 .home-header {
   color: #fff;
-  margin: auto;
   display: flex;
-  padding: 20px;
-  font-size: 42px;
+  padding: 15px;
+  font-size: 32px;
+  font-weight: 800;
   text-align: center;
+  width: fit-content;
   align-items: center;
-  margin-bottom: 25px;
-  border-radius: 14px;
+  border-radius: 12px;
   justify-content: center;
   background-color: #222;
-  box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
-              0 5.48831px 5.48831px rgb(0 0 0 / 4%),
-              0 13.7208px 10.9766px rgb(0 0 0 / 5%),
-              0 20.5812px 20.5812px rgb(0 0 0 / 6%),
-              0 41.1623px 41.1623px rgb(0 0 0 / 7%),
-              0 96.0454px 89.1851px rgb(0 0 0 / 9%);
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 28%);
 }
 .home-title {
+  margin: 0;
+  font-size: 60px;
   font-weight: 800;
-  font-size: 2.5rem;
-  margin: -10px 0 0 0;
-}
-.home-color-picker {
-  margin: auto;
-  text-align: center;
-}
-.link-container {
-  width: fit-content;
-  margin: auto;
-  margin-top: 15px;
-  text-align: center;
-}
-.link-container a:hover {
-  background-color: transparent;
 }
 
-.home-header * {
-  transition: 0.5s ease;
+.home-card-version {
+  bottom: 25px;
+  font-size: 16px;
+  padding: 4px 8px;
+  position: relative;
+  border-radius: 28px;
+  background: var(--color-card-bg-default);
 }
 
-.root-flex-container-home {
-  height: 95vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+.home-color-picker-grid {
+  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  grid-template-rows: repeat(2, minmax(auto, 1fr));
 }
 
-.root-flex-subcontainer-home {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; 
-}
+
 
 
 /* New Styles */
@@ -153,24 +135,12 @@ body.dark-theme .backdrop  .acrylic-material::before {
 }
 
 .home-code {
-  width: 675px;
-  margin-top: 12% !important;
-  margin-left: 8px !important;
+  width: 400px;
+  margin: 45px !important;
 }
 
 
 @media only screen and (max-width: 1000px) {
-  .root-flex-container-home {
-    height: 85vh;
-  }
-  .root-flex-subcontainer-home {
-    width: fit-content;
-    flex-direction: column;
-  }
-  .home-code {
-    width: 295px;
-    margin-top: 40px !important;
-  }
   .home-title {
     margin-top: 15px;
     font-size: 2.2rem;
