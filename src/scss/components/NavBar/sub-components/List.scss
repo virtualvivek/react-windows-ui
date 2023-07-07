@@ -13,16 +13,17 @@
       cursor: default;
       font-size: 15px;
       font-weight: 700;
-      padding: 8px 0 8px 24px;
+      padding: 8px 20px;
+      user-select: none;
 
-      &::-moz-selection {
-        background: transparent;
-        color: var(--color-text-default);
-      }
-      &::selection {
-        background: transparent;
-        color: var(--color-text-default);
-      }
+      // &::-moz-selection {
+      //   background: transparent;
+      //   color: var(--color-text-default);
+      // }
+      // &::selection {
+      //   background: transparent;
+      //   color: var(--color-text-default);
+      // }
     }
   }
 }

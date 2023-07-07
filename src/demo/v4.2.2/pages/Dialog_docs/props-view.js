@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const PropsView = () => {
   return (
@@ -36,4 +36,4 @@ const PropsView = () => {
     </div>
   );
 }
-export default PropsView
+export default PropsView;

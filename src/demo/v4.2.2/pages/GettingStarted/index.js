@@ -2,33 +2,77 @@ import React, { useState } from "react";
 import { NavPageContainer} from "../../_lib";
 import { Prism as SyntaxHighlighter} from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { UIAppJS, NavBarSearch, NavBarThemeSwitch, NavBarSubMenu, NavBarLink, NavBarTitle } from "./codes/gettingStarted";
+import { UIAppJS, NavBarSearch, NavBarThemeSwitch, NavBarSubMenu,
+        NavBarLink, NavBarLinkImg, NavBarTitle, PageContainer } from "./codes/gettingStarted";
 import "./css/desktop.css";
 import Img1 from "../../../assets/illustration/mountain.jpg";
+import { NavBarProps, NavBarLinkProps, SubMenuProps,
+        ThemeSwitchProps, NavBarSearchProps, PageContainerProps } from "./props";
 
 const GettingStarted = () => {
 
   const [uiTemplate, setUITemplate] = useState(UIAppJS);
   const [uiTitle, setUITitle] = useState("App.js");
+  const [uiProps, setUIProps] = useState(NavBarProps);
 
   const setUI = (title) => {
     switch(title) {
-      case "App.js": setUITemplate(UIAppJS); setUITitle("App.js"); break;
-      case "NavBarSearch": setUITemplate(NavBarSearch); setUITitle("NavBarSearch"); break;
-      case "NavBarThemeSwitch": setUITemplate(NavBarThemeSwitch); setUITitle("NavBarThemeSwitch"); break;
-      case "NavBarSubMenu": setUITemplate(NavBarSubMenu); setUITitle("NavBarSubMenu"); break;
-      case "NavBarLink": setUITemplate(NavBarLink); setUITitle("NavBarLink"); break;
-      case "NavBarTitle": setUITemplate(NavBarTitle); setUITitle("NavBarTitle"); break;
+      case "App.js": {
+        setUITemplate(UIAppJS);
+        setUITitle("App.js");
+        setUIProps(NavBarProps);
+        break;
+      }
+      case "NavBarSearch": {
+        setUITemplate(NavBarSearch);
+        setUITitle("NavBarSearch");
+        setUIProps(NavBarSearchProps);
+        break;
+      }
+      case "NavBarThemeSwitch": {
+        setUITemplate(NavBarThemeSwitch);
+        setUITitle("NavBarThemeSwitch");
+        setUIProps(ThemeSwitchProps);
+        break;
+      }
+      case "NavBarSubMenu": {
+        setUITemplate(NavBarSubMenu);
+        setUITitle("NavBarSubMenu");
+        setUIProps(SubMenuProps);
+        break;
+      }
+      case "NavBarLink": {
+        setUITemplate(NavBarLink);
+        setUITitle("NavBarLink");
+        setUIProps(NavBarLinkProps);
+        break;
+      }
+      case "NavBarLinkImg": {
+        setUITemplate(NavBarLinkImg);
+        setUITitle("NavBarLinkImg");
+        setUIProps(NavBarLinkProps);
+        break;
+      }
+      case "NavBarTitle": {
+        setUITemplate(NavBarTitle);
+        setUITitle("NavBarTitle");
+        setUIProps(<></>);
+        break;
+      }
+      case "PageContainer": {
+        setUITemplate(PageContainer);
+        setUITitle("PageContainer");
+        setUIProps(PageContainerProps);
+        break;
+      }
       default: break;
     }
   }
 
   return (
-    <NavPageContainer
-      hasPadding
-      animateTransition>
+    <NavPageContainer hasPadding animateTransition>
 
-      <h1>{uiTitle}</h1>
+      <h2>{uiTitle}</h2>
 
       <div className="template-container">
         <div className="template-desktop">
@@ -41,7 +85,7 @@ const GettingStarted = () => {
             <div
               className={`temp-navitem temp-navsearch ${uiTitle === "NavBarSearch" ?? true}`}
               onClick={() => setUI("NavBarSearch")}>
-              <span>Search</span>
+              <span>Search</span><i className="icons10-search"></i>
             </div>
             <div
               className={`temp-navitem temp-navlink ${uiTitle === "NavBarThemeSwitch" ?? true}`}
@@ -62,16 +106,17 @@ const GettingStarted = () => {
               <i className="icons10-puzzle"></i><span>Page 1</span>
             </div>
             <div
-              className={`temp-navitem temp-navlink ${uiTitle === "NavBarSearch" ?? true}`}
-              onClick={() => setUI("NavBarSearch")}>
+              className={`temp-navitem temp-navlink ${uiTitle === "NavBarLinkImg" ?? true}`}
+              onClick={() => setUI("NavBarLinkImg")}>
               <img src={Img1} alt="img" className="temp-navimg" /><span>Page 2</span>
             </div>
           </div>
-          <div className={`template-page-container ${uiTitle === "NavBarSearch" ?? true}`}>
+          <div
+            className={`template-page-container ${uiTitle === "PageContainer" ?? true}`}
+            onClick={() => setUI("PageContainer")}>
             <span>Page Container</span>
           </div>
         </div>
-        
         <div className="temp-divider"></div>
         <div>
           <SyntaxHighlighter
@@ -81,11 +126,13 @@ const GettingStarted = () => {
             {uiTemplate}
           </SyntaxHighlighter>
         </div>
+        <div>
+          {uiProps}
+        </div>
       </div>
-
-    <br/><br/>
+      <br/><br/>
     </NavPageContainer>
   )
 }
 
-export default GettingStarted
+export default GettingStarted;

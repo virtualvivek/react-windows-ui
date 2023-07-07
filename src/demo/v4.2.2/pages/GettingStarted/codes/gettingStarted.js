@@ -111,9 +111,32 @@ const NavBarLink =
 />
 `
 
+const NavBarLinkImg = 
+`import { NavBarLink } from "react-windows-ui";
+
+<NavBarLink
+  text="Page1"
+  active={true}
+  imgSrc={Img1}
+  imgAlt="Img alt text"
+  onClick={() => {}}
+  icon={<i className="icons10-home"></i>}
+/>
+`
+
 const NavBarTitle = 
 `<h1>Title</h1>
 <div className="app-hr"></div>
+`
+
+const PageContainer = 
+`import { NavPageContainer } from "react-windows-ui";
+
+<NavPageContainer
+  hasPadding={true}
+  animateTransition={true}>
+  <>children ..</>
+</NavPageContainer>
 `
 
 export {
@@ -122,5 +145,7 @@ export {
   NavBarThemeSwitch,
   NavBarSubMenu,
   NavBarLink,
-  NavBarTitle
+  NavBarLinkImg,
+  NavBarTitle,
+  PageContainer
 }

@@ -157,59 +157,30 @@ const AppFourTwoTwo = () => {
           icon={<i className="icons10-navigation"></i>}
         />
 
-        <NavBarSubMenu title="Navigation">
+        <NavBarSubMenu title="Utilities">
           <NavBarLink
-            to="navbar"
-            text="NavBar"
-            icon={<i className="icons10-map"></i>}
+            to="apptheme"
+            text="AppTheme"
+            active={route === "apptheme" ?? true}
+            onClick={() => _navigate("apptheme")}
+            icon={<i className="icons10-fantasy"></i>}
           />
           <NavBarLink
-            to="navbarlink"
-            text="NavBarLink"
-            icon={<i className="icons10-link"></i>}
+            to="appearance"
+            text="Appearance"
+            icon={<i className="icons10-sun"></i>}
           />
           <NavBarLink
-            to="navbarsubmenu"
-            text="NavBarSubMenu"
-            icon={<i className="icons10-angle-down"></i>}
+            to="utilities"
+            text="Classes"
+            icon={<i className="icons10-puzzle"></i>}
           />
           <NavBarLink
-            to="navpagecontainer"
-            text="NavPageContainer"
-            icon={<i className="icons10-columns"></i>}
+            to="colors"
+            text="Colors"
+            icon={<i className="icons10-color-palette"></i>}
           />
-          <NavBarLink
-            to="splashscreen"
-            text="SplashScreen"
-            icon={<i className="icons10-window"></i>}
-          />
-        </NavBarSubMenu>
-
-        <h1>Utilities</h1>
-        <div className="app-hr"></div>
-        
-        <NavBarLink
-          to="apptheme"
-          text="AppTheme"
-          active={route === "apptheme" ?? true}
-          onClick={() => _navigate("apptheme")}
-          icon={<i className="icons10-fantasy"></i>}
-        />
-        <NavBarLink
-          to="appearance"
-          text="Appearance"
-          icon={<i className="icons10-sun"></i>}
-        />
-        <NavBarLink
-          to="utilities"
-          text="Classes"
-          icon={<i className="icons10-puzzle"></i>}
-        />
-        <NavBarLink
-          to="colors"
-          text="Colors"
-          icon={<i className="icons10-color-palette"></i>}
-        />
+        </NavBarSubMenu>        
 
         <h1>Components</h1>
         <div className="app-hr"></div>
