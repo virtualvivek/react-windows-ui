@@ -35,7 +35,7 @@
 # Status
 <p>
   <a href="https://virtualvivek.github.io/react-windows-ui/">
-    <img src="https://img.shields.io/circleci/build/github/virtualvivek/react-windows-ui?style=flat&logo=circleci&token=346e79ab71a8d9c3bad22bacbebc7d7c50dae520" alt="Build" />
+    <img src="https://img.shields.io/circleci/build/github/virtualvivek/react-windows-ui?style=flat&logo=circleci&token=6fe7637a17a269e8b002b11474d70c9d25c71f30" alt="Build" />
   </a>
   <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat&color=blue" alt="License: MIT" />
