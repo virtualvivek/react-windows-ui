@@ -33,8 +33,8 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">width</p></td>
-          <td>CSS Property</td>
-          <td>'270px'</td>
+          <td>CSSProperties</td>
+          <td>"270px"</td>
           <td>Set's Input container width.</td>
         </tr>
         <tr>
@@ -44,16 +44,22 @@ const PropsView = () => {
           <td>Set's Input label text.</td>
         </tr>
         <tr>
-          <td><p className="app-code">clearButton</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's Input has clear button.</td>
+          <td><p className="app-code">defaultValue</p></td>
+          <td>string</td>
+          <td>null</td>
+          <td>Set's Input defaultValue.</td>
         </tr>
         <tr>
           <td><p className="app-code">disabled</p></td>
           <td>boolean</td>
           <td>false</td>
           <td>Set's Input state disabled.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">clearButton</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's Input has clear button.</td>
         </tr>
         <tr>
           <td><p className="app-code">setStatus</p></td>
@@ -92,12 +98,6 @@ const PropsView = () => {
           <td>Set's Input if readOnly.</td>
         </tr>
         <tr>
-          <td><p className="app-code">defaultValue</p></td>
-          <td>string</td>
-          <td>null</td>
-          <td>Set's Input defaultValue.</td>
-        </tr>
-        <tr>
           <td><p className="app-code">onChange</p></td>
           <td>function</td>
           <td>[ ]</td>
@@ -120,6 +120,12 @@ const PropsView = () => {
           <td>function</td>
           <td>[ ]</td>
           <td>Set's Input on KeyDown listener.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">onClearButtonClick</p></td>
+          <td>function</td>
+          <td>[ ]</td>
+          <td>Set's Input onClearButtonClick listener.</td>
         </tr>
       </tbody>
     </table>

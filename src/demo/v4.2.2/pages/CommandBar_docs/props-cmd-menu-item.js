@@ -33,7 +33,7 @@ const PropsCmdMenuItem = () => {
           </tr>
           <tr>
             <td><p className="app-code">onClick</p></td>
-            <td>Function</td>
+            <td>function</td>
             <td>{`{ }`}</td>
             <td>Set's CommandBar MennItem onClick listener.</td>
           </tr>

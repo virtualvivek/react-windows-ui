@@ -1,32 +1,42 @@
 import React, { forwardRef } from "react";
 
 const Switch = forwardRef((props, ref) => {
+
+  const {
+    tooltip,
+    label,
+    labelOn,
+    labelOff,
+    labelPosition,
+    labelFixedWidth,
+    ...otherProps
+  } = props;
+
   return (
-    <label
-      className="app-switch"
-      title={props.tooltip}>
+    <label className="app-switch" title={tooltip}>
       <input
         ref={ref}
+        {...otherProps}
         type="checkbox"
         disabled={props.disabled}
         onChange={props.onChange}
         defaultChecked={props.defaultChecked}
       />
-      {props.label && props.labelPosition === "start" && (
+      {label && labelPosition === "start" && (
         <span
           className="app-switch-label"
-          data-on={props.labelOn}
-          data-off={props.labelOff}
-          style={{ width: props.labelFixedWidth }}>
+          data-on={labelOn}
+          data-off={labelOff}
+          style={{ width: labelFixedWidth }}>
         </span>
       )}
       <div className="app-switch-view"></div>
-      {props.label && props.labelPosition === "end" && (
+      {label && labelPosition === "end" && (
         <span
           className="app-switch-label"
-          data-on={props.labelOn}
-          data-off={props.labelOff}
-          style={{ width: props.labelFixedWidth }}>
+          data-on={labelOn}
+          data-off={labelOff}
+          style={{ width: labelFixedWidth }}>
         </span>
       )}
     </label>

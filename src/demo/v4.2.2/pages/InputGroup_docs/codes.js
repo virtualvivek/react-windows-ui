@@ -36,6 +36,12 @@ const InputDateUsageCode =
   tooltip="InputDate tooltip title"
 />`;
 
+const InputTextAreaUsageCode =
+`<TextArea
+  resizer={false}
+  defaultValue={"Hello World"}
+/>`;
+
 const ExampleUsageCode =
 `const [inputVal, setInputVal] = useState("Inputs");
 
@@ -64,5 +70,6 @@ export {
   InputTextPasswordUsageCode,
   InputTextLabelUsageCode,
   InputDateUsageCode,
+  InputTextAreaUsageCode,
   ExampleUsageCode
 }

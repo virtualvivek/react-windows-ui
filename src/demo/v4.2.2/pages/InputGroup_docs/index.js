@@ -3,8 +3,10 @@ import { NavPageContainer, InputText, TextArea } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { InputTextImportCode, InputTextUsageCode, InputTextStatusUsageCode,
-  InputTextPasswordUsageCode, InputTextLabelUsageCode, InputDateUsageCode, ExampleUsageCode } from './codes'
+  InputTextPasswordUsageCode, InputTextLabelUsageCode, InputDateUsageCode,
+  InputTextAreaUsageCode, ExampleUsageCode } from './codes'
 import PropsView from './props-view'
+import TextAreaProps from './textarea-props'
 
 const InputGroupDocs = () => {
   const [inputVal, setInputVal] = useState("Inputs");
@@ -56,7 +58,7 @@ const InputGroupDocs = () => {
       <h2>Usage</h2>
 
       <InputText
-        clearButton={true}
+        clearButton
         placeholder="Enter a text"
         tooltip="InputText tooltip title"
       />
@@ -137,9 +139,8 @@ const InputGroupDocs = () => {
       <h1>TextArea</h1>
 
       <TextArea
-      
-      defaultValue={"Hi"}
         resizer={false}
+        defaultValue={"Hello World"}
       />
 
       <h2>Import</h2>
@@ -147,10 +148,13 @@ const InputGroupDocs = () => {
         language="javascript"
         style={vscDarkPlus}
         className="code code-container">
-        {InputDateUsageCode}
+        {InputTextAreaUsageCode}
       </SyntaxHighlighter>
-      
 
+      <h2>Props</h2>
+      <TextAreaProps />
+      
+      <div className="app-hr"></div>
       <h2>Input Date</h2>
 
       <h2>Import</h2>
@@ -159,6 +163,13 @@ const InputGroupDocs = () => {
         type="date"
         placeholder="Select Date"
         tooltip="InputDate tooltip title" />
+
+      <InputText
+        type="datetime-local"
+        placeholder="Select Date"
+        tooltip="InputDate tooltip title" />
+
+
       <br/><br/>
       <SyntaxHighlighter
         language="javascript"

@@ -17,7 +17,7 @@
   ::-webkit-scrollbar:hover {
     background: var(--scrollbar-caret-bottom) bottom center/contain no-repeat,
                 var(--scrollbar-caret-top) top center/contain no-repeat,
-                transparent;          
+                transparent;
   }
 
   ::-webkit-scrollbar:horizontal:hover {
@@ -29,7 +29,7 @@
   ::-webkit-scrollbar-thumb {
     border-block: none;
     border-radius: 7px;
-    background: var(--dark, #dddddd88) var(--light, #777777dd);
+    background: var(--dark, #eeeeee99) var(--light, #777777dd);
     background-clip: padding-box;
     border: 6px solid transparent;
   }

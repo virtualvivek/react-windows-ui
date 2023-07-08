@@ -4,7 +4,6 @@ import { ScrollView } from "../../api";
 const Alert = forwardRef((props, ref) => {
 
   const [isVisible, setIsVisible] = useState(false);
-
   const open = () => { setIsVisible(true); }
   const close = () => { setIsVisible(false); }
 
@@ -21,10 +20,10 @@ const Alert = forwardRef((props, ref) => {
 
   return (
     <div
-      ref={ref}
       className={(props.isVisible || isVisible) ? "app-alert show" : "app-alert"}
       onClick={(event) => _onBackdropPress(event)}
-      tabIndex="-1">
+      tabIndex="-1"
+      ref={ref}>
       <div className="app-alert-modal" aria-modal="true" role="dialog">
         {
           (props.title || props.message) && (

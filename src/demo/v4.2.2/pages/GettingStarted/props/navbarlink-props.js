@@ -47,7 +47,7 @@ const NavBarLink = () => {
           </tr>
           <tr>
             <td><p className="app-code">imgBorderRadius</p></td>
-            <td>CSS Property</td>
+            <td>CSSProperties</td>
             <td>4px</td>
             <td>Set's <b>NavBarItem</b> image border radius.</td>
           </tr>

@@ -21,6 +21,7 @@ export interface InputTextProps {
   clearButton ?: boolean;
   autoComplete ?: string;
   width ?: number | string;
+  onClearButtonClick ?: Function;
   setStatus ?: "default" | "success" | "danger" | "loading";
   type ?: "text" | "password" | "date" | "time" | "month" | "datetime-local";
 }

@@ -1,10 +1,19 @@
 import React, { forwardRef } from "react";
 
 const InputSearchBar = forwardRef((props, ref) => {
+
+  const {
+    width,
+    tooltip,
+    onSubmit,
+    ...otherProps
+  } = props;
+
   return (
-    <div className="app-input-search-bar" title={props.tooltip}>
+    <div className="app-input-search-bar" title={tooltip}>
       <input
         className="app-input-text"
+        {...otherProps}
         ref={ref}
         type="search"
         name={props.name}
@@ -12,15 +21,10 @@ const InputSearchBar = forwardRef((props, ref) => {
         onClick={props.onClick}
         disabled={props.disabled}
         onChange={props.onChange}
-        onKeyUp={props.onKeyUp}
-        onKeyDown={props.onKeyDown}
-        style={{ width: props.width }}
+        style={{ width: width }}
         placeholder={props.placeholder}
       />
-      <button
-        type="submit"
-        onClick={() => props.onSubmit(props.value)}>
-      </button>
+      <button type="submit" onClick={() => onSubmit(props.value)}></button>
     </div>
   )
 })

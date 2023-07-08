@@ -17,7 +17,7 @@ const ThemeSwitchProps = () => {
       <tbody>
         <tr>
           <td><p className="app-code">onChange</p></td>
-          <td>Function</td>
+          <td>function</td>
           <td>null</td>
           <td>Set's <b>NavBarThemeSwitch</b> onChange listener.</td>
         </tr>

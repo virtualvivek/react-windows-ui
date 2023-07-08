@@ -37,7 +37,7 @@ const PageContainerProps = () => {
         </tr>
         <tr>
           <td><p className="app-code">backgroundColor</p></td>
-          <td>CSS Property</td>
+          <td>CSSProperties</td>
           <td>system default</td>
           <td>Set's <b>NavPageContainer</b> backgroundColor.</td>
         </tr>

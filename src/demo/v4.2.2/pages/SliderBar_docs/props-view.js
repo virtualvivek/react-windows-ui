@@ -39,8 +39,8 @@ const PropsView = () => {
         </tr>
         <tr>
           <td><p className="app-code">thumbStyle</p></td>
-          <td>'default' | 'round' | 'round-border'</td>
-          <td>'default'</td>
+          <td>"default" | "round" | "round-border"</td>
+          <td>"default"</td>
           <td>Set's SliderBar thumb style</td>
         </tr>
         <tr>

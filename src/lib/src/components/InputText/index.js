@@ -1,4 +1,4 @@
-import React, { useRef, useMemo, forwardRef, useEffect, useCallback } from "react";
+import React, { useRef, useMemo, forwardRef, useCallback } from "react";
 import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
 
 const InputText = forwardRef((props, ref) => {
@@ -11,12 +11,14 @@ const InputText = forwardRef((props, ref) => {
     clearButton,
     setStatus,
     onChange,
+    tooltip,
     label,
+    type,
+    width,
+    ...otherProps
   } = props;
 
-  const renderLabel = () => {
-    return <span className="app-input-label">{label}</span>
-  }
+  const renderLabel = () => { return <span className="app-input-label">{label}</span> }
 
   const toggleInput = () => {
     let input = inputTxtRef.current;
@@ -24,7 +26,7 @@ const InputText = forwardRef((props, ref) => {
   }
 
   const RenderPassToggler = () => {
-    return props.type==="password" ? <button data-win-toggle="password" onClick={toggleInput}/> : <></>;
+    return type==="password" ? <button data-win-toggle="password" onClick={toggleInput}/> : <></>;
   }
 
   const renderStatus = useMemo(() => {
@@ -39,55 +41,43 @@ const InputText = forwardRef((props, ref) => {
     return <></>;
   }, [setStatus]);
 
-  const clearTxtChange = useCallback((event) => onChange(event), [onChange]);
+  const clearTxt = useCallback(() => {
+    inputTxtRef.current.value = "";
+    clrBtnRef.current.style.visibility = "";
+    const event = { target: { value: "" } };
+    onChange(event);
+    onClearButtonClick();
+  }, [onClearButtonClick, inputTxtRef, onChange]);
   
   const renderClearButton = useMemo(() => {
-    const clearTxt = () => {
-      inputTxtRef.current.value = "";
-      clrBtnRef.current.style.visibility = "";
-      onClearButtonClick();
-      const event = { target: { value: "" } };
-      clearTxtChange(event);
-    }
     return clearButton
           ? <button ref={clrBtnRef} type="button" onClick={clearTxt} data-win-clear="text"/>
           : <></>
-  }, [clearButton, inputTxtRef, onClearButtonClick, clearTxtChange]);
+  }, [clearButton, clearTxt]);
 
-  useEffect(() => {
+  const _onChange = (e) => {
+    onChange(e);
     if(clearButton) {
-      (inputTxtRef.current.value.trim()!=="")
+      (inputTxtRef.current.value!=="")
       ? clrBtnRef.current.style.visibility = "visible"
       : clrBtnRef.current.style.visibility = "";
     }
-  }, [onChange, clearButton, clrBtnRef, inputTxtRef]);
+  }
 
   return (
     <div
       className={`app-input-container ${setStatus !== "default" ? "input-"+setStatus : ""}`}
-      title={props.tooltip}>
+      title={tooltip}>
       {label && (renderLabel())}
       <input
         className="app-input-text"
-        key={props.key}
+        {...otherProps}
         ref={inputTxtRef}
         type={props.type}
         name={props.name}
         value={props.value}
-        onClick={props.onClick}
-        onFocus={props.onFocus}
-        onKeyUp={props.onKeyUp}
-        onInput={props.onInput}
-        readOnly={props.readOnly}
-        onChange={props.onChange}
-        disabled={props.disabled}
-        autoFocus={props.autoFocus}
-        onKeyDown={props.onKeyDown}
-        style={{ width: props.width }}
-        placeholder={props.placeholder}
-        defaultValue={props.defaultValue}
-        autoComplete={props.autoComplete}
-        autoCapitalize={props.autoCapitalize}
+        onChange={(e) => _onChange(e)}
+        style={{ width: width }}
       />
       <div className="app-input-end-content">
         {renderClearButton}
@@ -102,6 +92,7 @@ InputText.defaultProps = {
   type: "text",
   setStatus: "default",
   placeholder: "Input Text",
+  onChange: () => {},
   onClearButtonClick: () => {}
 }
 

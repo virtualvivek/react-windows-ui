@@ -46,7 +46,7 @@ const PropsView = () => {
         <tr>
           <td><p className="app-code">height</p></td>
           <td>integer | string</td>
-          <td>'5px'</td>
+          <td>"5px"</td>
           <td>Set's ProgressBar height.</td>
         </tr>
       </tbody>
