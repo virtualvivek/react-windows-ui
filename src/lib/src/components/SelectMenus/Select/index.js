@@ -23,7 +23,7 @@ const Select = (props) => {
     }
   }, [props.data, props.defaultValue, items]);
 
-  useMemo(() => { setItem(props.data); }, [props.data]);
+  useMemo(() => setItem(props.data), [props.data]);
 
   useMemo(() => { if(!isOpen) { ScrollView.enableScroll(); } }, [isOpen]);
   

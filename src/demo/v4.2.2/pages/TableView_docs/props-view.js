@@ -17,22 +17,43 @@ const PropsView = () => {
           <td><p className="app-code">columns</p></td>
           <td>object</td>
           <td>[ ]</td>
-          <td>Populates's TableView columns</td>
+          <td>Populates's TableView columns.</td>
         </tr>
         <tr>
           <td><p className="app-code">rows</p></td>
           <td>object</td>
           <td>[ ]</td>
-          <td>Populates's TableView rows</td>
+          <td>Populates's TableView rows.</td>
         </tr>
-
         <tr>
-          <td>
-            <b>columns  ❑</b>
-          </td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><p className="app-code">headerFontSize</p></td>
+          <td>CSS FontSize</td>
+          <td>18</td>
+          <td>Populates's TableView header fontSize.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">rowFontSize</p></td>
+          <td>CSS FontSize</td>
+          <td>16</td>
+          <td>Populates's TableView rows fontSize.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">TableHeaderComponent</p></td>
+          <td>ReactNode</td>
+          <td>null</td>
+          <td>Render TableView's Header Component.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">TableFooterComponent</p></td>
+          <td>ReactNode</td>
+          <td>null</td>
+          <td>Render TableView's Footer Component.</td>
+        </tr>
+        <tr>
+          <td><p className="app-code">columns  ❑</p></td>
+          <td>object</td>
+          <td>[ ]</td>
+          <td>Set's TableView list columns data.</td>
         </tr>
         <tr>
           <td><p className="app-code">columns ▶ title</p></td>
@@ -44,13 +65,13 @@ const PropsView = () => {
           <td><p className="app-code">columns ▶ sortable</p></td>
           <td>boolean</td>
           <td>true</td>
-          <td>Set's Selected column is sortable</td>
+          <td>Set's Selected column is sortable.</td>
         </tr>
         <tr>
           <td><p className="app-code">columns ▶ showSortIcon</p></td>
           <td>boolean</td>
           <td>true</td>
-          <td>Set's Selected column to show sort icon</td>
+          <td>Set's Selected column to show sort icon.</td>
         </tr>
       </tbody>
     </table>

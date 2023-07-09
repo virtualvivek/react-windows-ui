@@ -1,18 +1,31 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const SliderBar = (props) => {
+const SliderBar = forwardRef((props, ref) => {
+
+  const {
+    showPopupValue,
+    thumbStyle,
+    tooltip,
+    orientation,
+    defaultValue,
+    onChange,
+    width,
+    min,
+    max,
+    ...otherProps
+  } = props;
 
   const popupRef = React.useRef();
 
   const toggleVisible = () => {
-    if(props.showPopupValue && popupRef.current.visibility!=="visible") {
+    if(showPopupValue && popupRef.current.visibility!=="visible") {
       let ipopup = popupRef.current;
           ipopup.style.visibility="visible";
           ipopup.style.opacity="1";
     }
   }
   const toggleHidden = () => {
-    if(props.showPopupValue) {
+    if(showPopupValue) {
       let ipopup = popupRef.current;
           ipopup.style.visibility="hidden";
           ipopup.style.opacity="0";
@@ -21,50 +34,50 @@ const SliderBar = (props) => {
 
   const _onChange = (e) => {
     toggleVisible();
-    props.onChange(e);
+    onChange(e);
   }
 
   return (
     <div
-      title={props.tooltip}
-      style={{width: props.width}}
-      className={
-        props.thumbStyle === "round" ? "app-range-slider slider-round"
-      : props.thumbStyle === "round-border" ? "app-range-slider slider-round-border"
-      : "app-range-slider" }
-      data-win-orient={props.orientation === "vertical" ? "vertical": "horizontal"}>
+      title={tooltip}
+      style={{width: width}}
+      className={`app-range-slider${thumbStyle === "round" ? " slider-round"
+      : thumbStyle === "round-border" ? " slider-round-border" : ""}`}
+      data-win-orient={orientation === "vertical" ? "vertical": "horizontal"}>
       <input
+        {...otherProps}
+        ref={ref}
         type="range"
-        min={props.min}
-        max={props.max}
+        min={min}
+        max={max}
         step={props.step}
         onMouseUp={props.onDragEnd}
         onMouseDown={props.onDragStart}
         onTouchStart={props.onDragStart}
         onTouchEnd={props.onDragEnd}
         onChange={(e) => _onChange(e)}
-        defaultValue={props.defaultValue}
+        defaultValue={defaultValue}
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={() => toggleHidden()}
         style={{
-          background:"linear-gradient(90deg, var(--color-primary-adaptive)"+(props.defaultValue/props.max) * 100+"%, #999999 20.1%)"
+          background: `linear-gradient(90deg, var(--color-primary-adaptive) ${(defaultValue/max)*100}%, #999999 20.1%)`
         }}
       />
-      { props.showPopupValue && (
+      { showPopupValue && (
         <span
           ref={popupRef}
           className="app-range-slider-popup"
-          style={{ left: (props.defaultValue/props.max) *72+"%" }}>
-            {props.defaultValue}
+          style={{ left: (defaultValue/max)*72+"%" }}>
+          {defaultValue}
         </span>
       )}
     </div>
   )
-}
+});
 
 SliderBar.defaultProps = {
   min: 0,
-  max: 500,
+  max: 100,
   step: 1,
   defaultValue: 0,
   onChange: () => {},

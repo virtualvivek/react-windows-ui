@@ -30,32 +30,33 @@ render() {
     animateTransition={false}>
     <h1 style={{color: this.state.app_color}}>ColorPicker</h1>
 
-    <ColorPickerItem
-      defaultChecked
-      name="1"
-      color="#6632a8"
-      onChange={ (color) => this.changeTheme(color)}/>
-    <ColorPickerItem
-      name="1"
-      color="#881798"
-      onChange={ (color) => this.changeTheme(color)}/>
-    <ColorPickerItem
-      name="1"
-      color="#038387"
-      onChange={ (color) => this.changeTheme(color)}/>
-    <ColorPickerItem
-      name="1"
-      color="#00B294"
-      onChange={ (color) => this.changeTheme(color)}/>
-    <ColorPickerItem
-      name="1"
-      color="#69797E"
-      onChange={ (color) => this.changeTheme(color)}/>
-    <ColorPickerPalette
-      color="#0078D7"
-      onChange={ (color) => this.changeTheme(color)}/>
-
-    <br/>
+    <div style={{display:"flex", gap: 5}}>
+      <ColorPickerItem
+        defaultChecked
+        name="1"
+        color="#6632a8"
+        onChange={ (color) => this.changeTheme(color)}/>
+      <ColorPickerItem
+        name="1"
+        color="#881798"
+        onChange={ (color) => this.changeTheme(color)}/>
+      <ColorPickerItem
+        name="1"
+        color="#038387"
+        onChange={ (color) => this.changeTheme(color)}/>
+      <ColorPickerItem
+        name="1"
+        color="#00B294"
+        onChange={ (color) => this.changeTheme(color)}/>
+      <ColorPickerItem
+        name="1"
+        color="#69797E"
+        onChange={ (color) => this.changeTheme(color)}/>
+      <ColorPickerPalette
+        color="#0078D7"
+        onChange={ (color) => this.changeTheme(color)}/>
+    </div>
+    
     <p><span className="app-color-primary">ColorPickerItem</span> is a component used to let user choose a value from a number of Color Items.</p>
 
     <h2>ColorPickerItem</h2>

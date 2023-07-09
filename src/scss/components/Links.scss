@@ -13,6 +13,18 @@
   }
 }
 
+.app-link-subtle {
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: var(--color-text-default);
+  &:hover {
+    background-color: var(--color-ui-hover-default);
+  }
+  &:active {
+    filter: brightness(0.8);
+  }
+}
+
 @mixin links-mobile() {
   .app-link {
     &:hover:not(:active) {

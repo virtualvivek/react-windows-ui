@@ -20,7 +20,14 @@ ul.app-cmdbar-menu-list {
     padding-inline-start: 5px;
   }
 }
+
+.cmdbar-menu-list-item {
+  position: relative;
+}
+
 ul.app-cmdbar-menu-list .cmdbar-submenu {
+  box-shadow: 2px 2px 5px #22222244;
+  border-top-left-radius: 0;
   position: absolute;
   left: 100%;
   top: 0;

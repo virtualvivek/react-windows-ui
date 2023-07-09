@@ -75,6 +75,7 @@ class CommandBarDocs extends React.Component {
           <CommandBar.Button value="Share" icon={<i className="icons10-angle-down app-color-primary"></i>}/>
         </CommandBar.MenuTrigger>
         <CommandBar.MenuItem label="Instagram"/>
+        <CommandBar.MenuItemDivider/>
         <CommandBar.MenuItem label="Facebook" />
         <CommandBar.MenuItem label="Whatsapp">
           <CommandBar.MenuItem label="HyperLink"/>

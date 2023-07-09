@@ -3,7 +3,6 @@ const SliderBarImportCode =
 
 const SliderBarUsageCode =
 `<SliderBar
-  showValue={false}
   tooltip="SliderBar tooltip title"
   defaultValue={this.state.SliderVal}
   onChange={(e) => {this.onChangeSlider(e)}}

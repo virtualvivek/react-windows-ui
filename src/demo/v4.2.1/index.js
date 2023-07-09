@@ -19,7 +19,7 @@ import Img2 from '../assets/illustration/mountain.jpg'
 import GithubIcon from "../assets/static/GithubIcon"
 
 import './_lib/config/app-config.css'
-import './_lib/react-windows-ui.min.css';
+import './_lib/react-windows-ui-11.min.css'
 
 class AppFourTwoOne extends React.Component {
 
@@ -66,6 +66,12 @@ class AppFourTwoOne extends React.Component {
         onBackdropPress={this.toggleDialog}>
           <Dialog.Body>
             <div style={{flexDirection: "column", display:"flex"}}>
+            <Link
+              to="/v4.2.2/home"
+              onClick={this.onBranchChange}
+              className="docs-btn-branch-dialog-txt">
+              ‣  version 4.2.2
+            </Link>
             <Link
               to="#"
               onClick={this.toggleDialog}

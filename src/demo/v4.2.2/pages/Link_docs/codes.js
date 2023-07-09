@@ -1,16 +1,14 @@
 const LinkImportCode =
-`import { Link } from "react-windows-ui";`;
+`import { Link } from "react-router-dom";`;
 
 const LinkUsageCode =
-`<Link to="#">This is a Link</Link>`;
+`<Link className="app-link" to="#">This is a Link</Link>`;
 
-const LinkInlineUsageCode =
-`<p>
-  Lorem ipsum dolor sit <Link to="#">This is a Link</Link> adipiscing elit.
-</p>`;
+const LinkSubtleUsageCode =
+`<Link className="app-link-subtle" to="#">This is a Subtle Link</Link>`;
 
 export {
-    LinkImportCode,
-    LinkUsageCode,
-    LinkInlineUsageCode
+  LinkImportCode,
+  LinkUsageCode,
+  LinkSubtleUsageCode
 }

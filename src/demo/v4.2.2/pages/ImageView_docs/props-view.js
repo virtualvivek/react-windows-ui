@@ -34,13 +34,13 @@ const PropsView = () => {
         <tr>
           <td><p className="app-code">alt</p></td>
           <td>string</td>
-          <td>'image'</td>
+          <td>"image"</td>
           <td>Set's ImageView alt text.</td>
         </tr>
         <tr>
           <td><p className="app-code">objectFit</p></td>
           <td>CSSProperties</td>
-          <td>'cover'</td>
+          <td>"cover"</td>
           <td>Set's ImageView objectFit property.</td>
         </tr>
         <tr>

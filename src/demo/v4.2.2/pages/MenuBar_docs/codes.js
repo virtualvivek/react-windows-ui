@@ -20,7 +20,7 @@ const MenuBarOnClickUsageCode =
     {label: "peach", onClick: () => funcName},
     {label: "orange", onClick: () => funcName},
     {label: "banana", onClick: () => funcName},
-    {label: "apple", onClick: () => funcName, icon:<i className="icons10-camera"></i>}
+    {label: "apple", onClick: () => funcName, icon: <i className="icons10-camera"></i>}
   ]}
 />`;
 

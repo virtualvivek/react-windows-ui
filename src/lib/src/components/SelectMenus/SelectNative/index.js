@@ -8,12 +8,14 @@ const SelectNative = (props) => {
     tooltip,
     disabled,
     onChange,
-    onClick
+    onClick,
+    ...otherProps
   } = props;
 
   return (
     <div className="app-select-menu" title={tooltip}>
       <select
+        {...otherProps}
         name={name}
         disabled={disabled}
         onChange={onChange}

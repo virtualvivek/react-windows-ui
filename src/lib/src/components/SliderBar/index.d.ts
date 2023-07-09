@@ -1,6 +1,7 @@
 import React from "react";
 
 export interface SliderBarProps {
+  ref ?: any;
   width ?: any;
   min ?: number;
   max ?: number;

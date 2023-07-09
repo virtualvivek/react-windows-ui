@@ -16,6 +16,7 @@ const CommandBarDropdownUsageCode =
     />
   </CommandBar.MenuTrigger>
   <CommandBar.MenuItem label="Instagram"/>
+  <CommandBar.MenuItemDivider/>
   <CommandBar.MenuItem label="Facebook" />
   <CommandBar.MenuItem label="Whatsapp">
     <CommandBar.MenuItem label="HyperLink"/> // Nesting MenuItem

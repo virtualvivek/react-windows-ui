@@ -4,9 +4,18 @@ const TableViewImportCode =
 const TableViewUsageCode =
 `<TableView
   columns={[
-    { 'title':'Fruits' },
-    { 'title':'Energy (KCal)','showSortIcon': true },
-    { 'title':'Color','showSortIcon': false, 'sortable': false },
+    {
+      "title": "Fruits",
+      "showSortIcon": false
+    },
+    {
+      "title": "Energy (KCal)",
+      "showSortIcon": true
+    },
+    { "title": "Color",
+      "showSortIcon": false,
+      "sortable": false
+    },
   ]}
   rows={[
     [ "Papaya", 11845, "Orange" ],

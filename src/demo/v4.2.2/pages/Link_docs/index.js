@@ -1,20 +1,23 @@
 import React from 'react'
-import { NavPageContainer,Link } from '../../_lib'
+import { NavPageContainer } from '../../_lib'
+import { Link } from 'react-router-dom'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import PropsView from './props-view'
-import { LinkImportCode,LinkUsageCode,LinkInlineUsageCode } from './codes'
+import { LinkImportCode, LinkUsageCode, LinkSubtleUsageCode } from './codes'
 
 const LinkDocs = () => {
   return (
     <NavPageContainer hasPadding>
       <h1>Link</h1>
 
-      <p><span className="app-color-primary">Links</span> are accessible elements used primarily for navigation.<br/>This component is styled to resemble a hyperlink and semantically renders an {'<a>'}.</p>
+      <p><span className="app-color-primary">Links</span> are accessible elements used primarily for navigation.<br/>Style any component either from a <i>routing library</i> or an <i>{`<a>`}</i> with <b>className="app-link"</b>.</p>
       <div className="app-hr"></div>
-      <Link to="#">This is a Link</Link>
-      <br/><br/>
-      <Link to="#"><b>This is a Bold Link</b></Link>
+
+      <div className="app-alert-bar alert-secondary" role="alert">
+        <div className="app-alert-bar-content">
+          <span>This project uses <i>"react-router-dom"</i> but you can use any routing library.</span>
+        </div>
+      </div>
 
       <h2>Import</h2>
 
@@ -27,7 +30,8 @@ const LinkDocs = () => {
 
       <h2>Usage</h2>
 
-      <Link to="#">This is a Link</Link><br/><br/>
+      <Link className="app-link" to="#">This is a Link</Link><br/>
+      <Link className="app-link" to="#"><b>This is a Bold Link</b></Link><br/><br/>
 
       <SyntaxHighlighter
         language="javascript"
@@ -36,26 +40,18 @@ const LinkDocs = () => {
         {LinkUsageCode}
       </SyntaxHighlighter>
 
-      <div className="app-hr"></div>
-
-      <h2>Link <p className="app-code">Inline</p> :</h2>
-
-      <p>
-        Lorem ipsum dolor sit <Link to="#">This is a Link</Link> adipiscing elit.
-      </p>
-
+      <h2>Link as <span className="app-code">Subtle</span>:</h2>
+      <Link className="app-link-subtle" to="#">This is a Subtle Link</Link><br/><br/>
       <SyntaxHighlighter
         language="javascript"
         style={vscDarkPlus}
         className="code code-container">
-        {LinkInlineUsageCode}
+        {LinkSubtleUsageCode}
       </SyntaxHighlighter>
 
+      <div className="app-hr"></div>
 
-      <h2>Props</h2>
-      <PropsView />
-
-    <br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/>
     </NavPageContainer>
   );
 }

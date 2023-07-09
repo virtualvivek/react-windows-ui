@@ -1,20 +1,32 @@
 import React, { forwardRef } from "react";
 
 const RadioButton = forwardRef((props, ref) => {
+
+  const {
+    name,
+    value,
+    label,
+    tooltip,
+    disabled,
+    onChange,
+    defaultChecked,
+    ...otherProps
+  } = props;
+
   return (
-    <label title={props.tooltip}>
+    <label title={tooltip}>
       <input
         ref={ref}
-        {...props}
+        {...otherProps}
         className="app-radio-button"
         type="radio"
-        name={props.name}
-        value={props.value}
-        disabled={props.disabled}
-        onChange={props.onChange}
-        defaultChecked={props.defaultChecked}
+        name={name}
+        value={value}
+        disabled={disabled}
+        onChange={onChange}
+        defaultChecked={defaultChecked}
       />
-      {props.label && (<span> {props.label}</span>)}
+      {label && (<span> {label}</span>)}
     </label>
   )
 });

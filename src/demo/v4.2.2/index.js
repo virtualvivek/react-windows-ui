@@ -46,6 +46,7 @@ import GithubIcon from "../assets/static/GithubIcon";
 
 import "../../lib/config/app-config.css";
 import "../../lib/dist/react-windows-ui.min.css";
+import "./_lib/styles/doc-styles.css";
 
 const AppFourTwoTwo = () => {
 
@@ -90,7 +91,7 @@ const AppFourTwoTwo = () => {
             </Link>
             <Link
               to="/v4.2.1/home"
-              onClick={toggleDialog}
+              onClick={onBranchChange}
               className="docs-btn-branch-dialog-txt">
                 ‣  version 4.2.1
             </Link>
