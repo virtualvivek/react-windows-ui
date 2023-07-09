@@ -24,7 +24,7 @@
 </p>
 
 # Features
- - Provides Native Sense Windows UI Controls.
+ - Provides Native feel Windows UI Controls.
  - Comparably small CSS file size.
  - Cleaner HTML.
  - Works with any <b>Routing Library</b>.
@@ -42,7 +42,7 @@ import "react-windows-ui/config/app-config.css";
 import "react-windows-ui/dist/react-windows-ui.min.css";
 import "react-windows-ui/icons/winui-icons.min.css";
 ```
-## 🚀 [See `App.js` code & more »](https://virtualvivek.github.io/react-windows-ui/v4.2.2/getting_started)
+## 🚀 [See `App.js` code & more »](https://virtualvivek.github.io/react-windows-ui/#/v4.2.2/getting_started)
 
 # Usage
 
