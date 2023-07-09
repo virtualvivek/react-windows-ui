@@ -21,7 +21,7 @@
     background-color: var(--color-ui-hover-default);
   }
   &:active {
-    filter: brightness(0.8);
+    opacity: 0.8;
   }
 }
 
