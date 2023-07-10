@@ -4,8 +4,7 @@
 <h1 align="center">react-windows-ui</h1>
 
 <p align="center">Build full featured <b>Windows fluent UI</b> apps using <b>ReactJS</b>.</p>
-
-<p align="center"><a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">Explore Project Docs »</a></p>
+<p align="center"><a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">« Explore Project Docs »</a></p>
 
 # Status
 <p>
@@ -25,13 +24,13 @@
 </p>
 
 # Features
- - Provides Native Sense Windows UI Controls.
+ - Provides Native feel Windows UI Controls.
  - Comparably small CSS file size.
  - Cleaner HTML.
  - Works with any <b>Routing Library</b>.
 
 # Works fluently with
-<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="150" /> <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="150" /> 
+<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_vitejs.svg" width="100" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_nextjs.svg" width="200" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_cra.svg" width="100" />
 
 # Getting Started
 ```ruby
@@ -41,8 +40,9 @@ npm install react-windows-ui
 // Be sure to include styles at some point, probably during your bootstraping
 import "react-windows-ui/config/app-config.css";
 import "react-windows-ui/dist/react-windows-ui.min.css";
-import "react-windows-ui/icons/fonts/fonts.min.css";
+import "react-windows-ui/icons/winui-icons.min.css";
 ```
+## 🚀 [See `App.js` code & more »](https://virtualvivek.github.io/react-windows-ui/#/v4.2.2/getting_started)
 
 # Usage
 
@@ -57,7 +57,7 @@ const App = () => (
 );
 ```
 
-# Run Demo Locally
+# Run Locally
 ```html
 git clone https://github.com/virtualvivek/react-windows-ui.git
 cd react-windows-ui
