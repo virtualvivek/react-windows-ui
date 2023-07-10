@@ -9,12 +9,7 @@ const DialogUsageCode =
       <h3>Header</h3>
     </Dialog.Header>
     <Dialog.Body>
-      <ListItem
-        img={Img4}
-        imgBorderRadius={8}
-        title="Magenta Riddim"
-        subtitle="5.6 MB"
-      />
+      <p style={{padding: 10}}>Helow World.</p>
     </Dialog.Body>
     <Dialog.Footer>
       <Button

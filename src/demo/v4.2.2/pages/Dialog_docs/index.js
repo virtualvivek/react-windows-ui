@@ -43,7 +43,7 @@ class DialogDocs extends React.Component {
             <h3>Header</h3>
           </Dialog.Header>
           <Dialog.Body>
-          
+            <p style={{padding: 10}}>Helow World.</p>
           </Dialog.Body>
           <Dialog.Footer>
             <Button

@@ -1,0 +1,34 @@
+@mixin win11-dark() {
+  [data-theme="dark"] {
+    color-scheme: dark;
+    --platform: "windows11";
+    
+    --color-danger-default: #FF99A3;
+    --color-success-default: #6ACB5D;
+    --color-scheme-absolute: #000;
+
+    --color-background-default: #111;
+    --color-button-default: #3E3E3EDD;
+    --color-card-bg-default: #272727DD;
+    --color-day-primary-night-grey: #403E41;
+    --color-day-primary-night-white: #FFF;
+    --color-dropdown-menu-bg: #1A1A1A;
+    --color-foreground-default: #2B2B2B;
+    --color-foreground-dark: #444444;
+    --color-input-bg-default: #11111199;
+    --color-input-border-default: #77777744;
+    --color-input-border-strong: #9A9A9A;
+    --color-ui-active-default: #262626;
+    --color-navbar-bg-default: #202020;
+    --color-primary-adaptive: var(--PrimaryColorLight);
+    --color-progress-bg: #484848;
+    --color-scroll-thumb: #EEEEEE99;
+    --color-scroll-thumb-active: #DDDDDD77;
+    --color-scroll-thumb-hover: #DDDDDD99;
+    --color-slider-thumb-bg: #454545;
+    --color-text-default: #FFF;
+    --color-ui-border-default: #32323299;
+    --color-ui-hover-default: #44444477;
+    --color-ui-hover-strong: #37373788;
+  }
+}

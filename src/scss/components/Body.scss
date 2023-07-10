@@ -22,8 +22,6 @@ body {
   display: inline-block;
   background-color: var(--color-button-default);
   border: 1px solid var(--color-ui-border-default);
-  // border-bottom-color: var(--dark, var(--color-ui-border-default)) var(--light, rgba(0,0,0,0.15));
-  // border-top-color: var(--dark, rgba(117,117,117,0.22)) var(--light, var(--color-ui-border-default));
 }
 
 @if $platform == "windows10" {

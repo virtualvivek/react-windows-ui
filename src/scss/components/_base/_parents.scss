@@ -50,8 +50,8 @@
   color: var(--color-text-default);
   background-color: var(--color-button-default);
   border-color: rgba(0,0,0,0.08);
-  border-bottom-color: var(--dark, rgba(0,0,0,0.08)) var(--light, rgba(0,0,0,0.2));
-  border-top-color: var(--dark, rgba(117,117,117,0.22)) var(--light, rgba(0,0,0,0.08));
+  border-bottom-color: rgba(0,0,0,0.2);
+  border-top-color: rgba(0,0,0,0.08);
   &:hover {
     opacity: 0.85;
     filter: brightness(0.95);
@@ -59,6 +59,11 @@
   &:active {
     filter: brightness(0.85);
   }
+}
+
+.dark-theme .input-btn-default {
+  border-bottom-color: rgba(0,0,0,0.08);
+  border-top-color: rgba(117,117,117,0.22);
 }
 
 .input-field-focused,
@@ -162,6 +167,7 @@
   visibility: hidden;
   position: absolute;
   min-width: -webkit-fill-available;
+  min-width: -moz-available;
   -webkit-tap-highlight-color: transparent;
   background: var(--color-dropdown-menu-bg);
 

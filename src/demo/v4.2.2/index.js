@@ -82,7 +82,7 @@ const AppFourTwoTwo = () => {
         isVisible={showDialog}
         onBackdropPress={toggleDialog}>
           <Dialog.Body>
-            <div style={{flexDirection: "column", display:"flex"}}>
+            <div style={{flexDirection: "column", display: "flex"}}>
             <Link
               to="#"
               onClick={toggleDialog}
@@ -160,25 +160,24 @@ const AppFourTwoTwo = () => {
 
         <NavBarSubMenu title="Utilities">
           <NavBarLink
-            to="apptheme"
             text="AppTheme"
             active={route === "apptheme" ?? true}
             onClick={() => _navigate("apptheme")}
             icon={<i className="icons10-fantasy"></i>}
           />
           <NavBarLink
-            to="appearance"
             text="Appearance"
+            onClick={() => _navigate("appearance")}
             icon={<i className="icons10-sun"></i>}
           />
           <NavBarLink
-            to="utilities"
             text="Classes"
+            onClick={() => _navigate("utilities")}
             icon={<i className="icons10-puzzle"></i>}
           />
           <NavBarLink
-            to="colors"
             text="Colors"
+            onClick={() => _navigate("colors")}
             icon={<i className="icons10-color-palette"></i>}
           />
         </NavBarSubMenu>        
