@@ -29,8 +29,8 @@
  - Cleaner HTML.
  - Works with any <b>Routing Library</b>.
 
-# Works fluently with
-<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_vitejs.svg" width="100" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_nextjs.svg" width="200" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_cra.svg" width="100" />
+# Works with
+<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_vitejs.svg" width="90" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_nextjs.svg" width="180" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_cra.svg" width="90" />
 
 # Getting Started
 ```ruby
