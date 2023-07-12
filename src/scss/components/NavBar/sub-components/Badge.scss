@@ -1,15 +1,23 @@
 .app-navbar-wrap .app-badge {
-  height: 16px;
-  min-width: 8px;
   position: relative;
+  height: 16px;
+  padding: 1px 5px;
+  color: #fff;
   top: -8px;
-  padding: 0 4px;
+  font-size: 10px;
   margin-left: -10px;
+  border-radius: 28px;
   display: inline-flex;
   align-items: center;
-  font-size: 10px;
-  color: white;
-  border-radius: 50px;
   background: #ff3b30;
   justify-content: center;
+}
+
+.app-navbar-wrap.collapsed .app-badge {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: none;
+  max-width: 22px;
+  display: inline-block;
 }

@@ -29,8 +29,9 @@
     display: flex;
     flex-direction: column;
     background-color: var(--color-navbar-bg-default);
+    overscroll-behavior: contain;
     /* prevent overscroll bounce on addressBar*/
-    -webkit-overflow-scrolling: touch;
+    // -webkit-overflow-scrolling: touch;
     // transition: transform 0.2s ease, width 0.2s ease;
   }
 }
@@ -40,23 +41,20 @@
     z-index: 9;
     position: unset;
     nav {
-      z-index: 9;
+      z-index: 10;
       position: fixed;
+      overflow: hidden;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
       
       .app-navbar-toggler {
         @if $platform=="windows10" { padding: 12.5px 20px; margin: 0 5px; }
-        @if $platform=="windows11" { padding: 7.5px 20px; margin: 5px; }
       }
       :hover > li,
       :hover > .app-navbar-toggler,
       :hover > .app-navbar-submenu-title {
         background-color: transparent !important;
       }
-    }
-  } 
-  @if $platform=="windows11" {
-    .app-navbar-wrap .app-navbar-toggler {
-      margin: 0;
     }
   }
 }
