@@ -30,7 +30,7 @@
  - Works with any <b>Routing Library</b>.
 
 # Works with
-<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_vitejs.svg" width="90" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_nextjs.svg" width="180" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_cra.svg" width="90" />
+<img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_vitejs.svg" width="90" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_nextjs.svg" width="90" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/support_cra.svg" width="90" />
 
 # Getting Started
 ```ruby
