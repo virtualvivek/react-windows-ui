@@ -18,6 +18,7 @@
     <img src="https://img.shields.io/github/package-json/v/virtualvivek/react-windows-ui?style=flat-square&color=CB3837&logo=npm&logoColor=ffffff&label=npm"
       alt="npm" />
   </a>
+	<br/>
   <a href="https://github.com/virtualvivek/react-windows-ui/tree/main/src/lib/dist">
     <img src="https://img.shields.io/github/size/virtualvivek/react-windows-ui/src/lib/dist/react-windows-ui.min.css?style=flat-square&color=1572B6&logo=css3&logoColor=ffffff&label=react-windows-ui.min.css" alt="react-windows-ui.min.css" />
   </a>
