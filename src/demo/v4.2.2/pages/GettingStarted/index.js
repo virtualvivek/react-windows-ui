@@ -126,9 +126,9 @@ const GettingStarted = () => {
             {uiTemplate}
           </SyntaxHighlighter>
         </div>
-        <div>
-          {uiProps}
-        </div>
+      </div>
+      <div>
+        {uiProps}
       </div>
       <br/><br/>
     </NavPageContainer>
