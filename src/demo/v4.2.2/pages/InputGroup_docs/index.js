@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
-import { NavPageContainer, InputText, TextArea } from '../../_lib'
+import { NavPageContainer, InputText, TextArea, InputSearchBar, InputSearchBox } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { InputTextImportCode, InputTextUsageCode, InputTextStatusUsageCode,
   InputTextPasswordUsageCode, InputTextLabelUsageCode, InputDateUsageCode,
-  InputTextAreaUsageCode, ExampleUsageCode } from './codes'
+  InputTextAreaUsageCode, InputSearchBarUsageCode, InputSearchBoxUsageCode,
+  ExampleUsageCode } from './codes'
 import PropsView from './props-view'
-import TextAreaProps from './textarea-props'
+import TextAreaProps from './props-textarea'
+import DateProps from './props-date'
 
 const InputGroupDocs = () => {
   const [inputVal, setInputVal] = useState("Inputs");
@@ -63,18 +65,7 @@ const InputGroupDocs = () => {
         tooltip="InputText tooltip title"
       />
 
-      {/* <InputSearchBox
-        placeholder="Enter to Search"
-        suggest={[
-          {label: "apple", link: "#", icon: <i className="icons10-baby"></i>},
-          {label: "orange", link: "#", onClick: this.function},
-          {label: "banana", link: "#"},
-          {label: "peach", link: "#"},
-        ]}
-      /> */}
-
       <br/><br/>
-
 
       <SyntaxHighlighter
         language="javascript"
@@ -143,7 +134,7 @@ const InputGroupDocs = () => {
         defaultValue={"Hello World"}
       />
 
-      <h2>Import</h2>
+      <h2>Usage</h2>
       <SyntaxHighlighter
         language="javascript"
         style={vscDarkPlus}
@@ -155,22 +146,36 @@ const InputGroupDocs = () => {
       <TextAreaProps />
       
       <div className="app-hr"></div>
-      <h2>Input Date</h2>
+      <h2>Input as Calendars:</h2>
+      
+      <div style={{display: "grid", gap: 5}}>
+        <InputText
+          type="date"
+          placeholder="Select Date"
+          tooltip="InputDate tooltip title" />
+      
+        <InputText
+          type="datetime-local"
+          placeholder="Select Date"
+          tooltip="InputDate tooltip title" />
+      
+        <InputText
+          type="week"
+          placeholder="Select Date"
+          tooltip="InputDate tooltip title" />
+      
+        <InputText
+          type="month"
+          placeholder="Select Date"
+          tooltip="InputDate tooltip title" />
+      
+        <InputText
+          type="time"
+          placeholder="Select Date"
+          tooltip="InputDate tooltip title" />
+      </div>
 
-      <h2>Import</h2>
-
-      <InputText
-        type="date"
-        placeholder="Select Date"
-        tooltip="InputDate tooltip title" />
-
-      <InputText
-        type="datetime-local"
-        placeholder="Select Date"
-        tooltip="InputDate tooltip title" />
-
-
-      <br/><br/>
+      <br/>
       <SyntaxHighlighter
         language="javascript"
         style={vscDarkPlus}
@@ -178,10 +183,55 @@ const InputGroupDocs = () => {
         {InputDateUsageCode}
       </SyntaxHighlighter>
 
+      <h2>Props</h2>
+      <DateProps/>
+
       <div className="app-hr"></div>
 
 
-      
+      <h1>InputSearchBar</h1>
+      <h2>Usage</h2>
+
+      <InputSearchBar
+        placeholder="Search here"
+        // onSubmit={(e) => {alert(e.target.value)}}
+        // onChange={(e) => {alert(e.target.value)}}
+      />
+
+      <br/><br/>
+      <SyntaxHighlighter
+        language="javascript"
+        style={vscDarkPlus}
+        className="code code-container">
+        {InputSearchBarUsageCode}
+      </SyntaxHighlighter>
+
+      <h1>InputSearchBox</h1>
+      <h2>Usage</h2>
+
+      <InputSearchBox
+        placeholder="Enter to Search"
+        // onChange={(e) => {alert(e.target.value)}}
+      />
+      &nbsp;&nbsp;
+      <InputSearchBox
+        placeholder="Enter with Suggestions"
+        suggest={[
+          {text: "apple", onClick: () => {}, icon: <i className="icons10-home"></i>},
+          {text: "orange", onClick: () => {}},
+          {text: "banana", onClick: () => {}},
+          {text: "peach", onClick: () => {}}
+        ]}
+      />
+
+      <br/><br/>
+      <SyntaxHighlighter
+        language="javascript"
+        style={vscDarkPlus}
+        className="code code-container">
+        {InputSearchBoxUsageCode}
+      </SyntaxHighlighter>
+
 
       <br/><br/><br/><br/><br/><br/>
 

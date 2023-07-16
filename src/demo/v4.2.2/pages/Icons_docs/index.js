@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavPageContainer } from '../../_lib';
-import IconsView from '../../../common/Icons';
+import IconsView from './Icons';
 
 const Icons = () => {
   return (

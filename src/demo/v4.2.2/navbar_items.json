@@ -52,21 +52,21 @@
     "to": "dialogs",
     "exact": false,
     "text": "Dialogs",
-    "icon": "icons10-notification-image",
+    "icon": "icons10-notification",
     "showBadge": false
   },
   {
     "to": "icons",
     "exact": false,
     "text": "Icons",
-    "icon": "icons10-deathly-hallows",
+    "icon": "icons10-collection",
     "showBadge": false
   },
   {
     "to": "imageview",
     "exact": false,
     "text": "ImageView",
-    "icon": "icons10-picture",
+    "icon": "icons10-image",
     "showBadge": false
   },
   {
@@ -129,7 +129,7 @@
     "to": "switch",
     "exact": false,
     "text": "Switch",
-    "icon": "icons10-touch",
+    "icon": "icons10-toggle",
     "showBadge": false
   },
   {

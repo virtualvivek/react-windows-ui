@@ -2,7 +2,7 @@ import React from 'react';
 import { NavPageContainer } from '../../_lib';
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { TextHeadingCode, TextHeadingNoMgBottomCode,TextVarientsCode, TextVarientLightCode } from './codes';
+import { TextHeadingCode,TextVarientsCode, TextVarientLightCode } from './codes';
 
 class ClassesDocs extends React.Component {
   render() {
@@ -24,7 +24,8 @@ class ClassesDocs extends React.Component {
         </SyntaxHighlighter>
             
         <div className="app-hr"></div>
-        <h2>Margin Notation</h2>
+
+        {/* <h2>Margin Notation</h2>
 
         <ul className="app-ul-content">
           <li><span className='app-code'>.app-m-0</span> - class that set margin=0</li>
@@ -47,7 +48,7 @@ class ClassesDocs extends React.Component {
           style={vscDarkPlus}
           className="code code-container">
           {TextHeadingNoMgBottomCode}
-        </SyntaxHighlighter>
+        </SyntaxHighlighter> */}
         
         <h2>Paragraph varients</h2>
         <p>This is paragraph used to display long text.</p>

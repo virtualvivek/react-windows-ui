@@ -12,15 +12,27 @@ import { lib_version } from '../../values'
 class Home extends React.Component {
 
   state = {
-    app_color: ""
+    app_color: "",
+    app_color_dark: ""
   }
 
   changeTheme = (color) => { this.setState({app_color: color.target.value}); }
+
+  changeTheme = (color, colorDark = "#d927f2") => {
+    this.setState({
+      app_color: color.target.value,
+      app_color_dark: colorDark
+    });
+  }
   
   render() {
   return (
     <NavPageContainer>
-      <AppTheme color={this.state.app_color} />
+
+       <AppTheme
+        color={this.state.app_color}
+        colorDarkMode={this.state.app_color_dark}
+      />
 
       <div style={{padding: 45, display:"flex", width:"100%", alignItems: "center", justifyContent: "space-between"}}>
         <div className="home-header">
@@ -34,22 +46,22 @@ class Home extends React.Component {
               defaultChecked
               name="1"
               color="#0078D7"
-              onChange={ (color) => this.changeTheme(color)}
+              onChange={ (color) => this.changeTheme(color, "#60CDFF")}
             />
             <ColorPickerItem
               name="1"
               color="#881798"
-              onChange={ (color) => this.changeTheme(color)}
+              onChange={ (color) => this.changeTheme(color, "#d927f2")}
             />
             <ColorPickerItem
               name="1"
               color="#00B294"
-              onChange={ (color) => this.changeTheme(color)}
+              onChange={ (color) => this.changeTheme(color, "#02f7ce")}
             />
-            <ColorPickerPalette
+            <ColorPickerItem
               name="1"
-              color="#5ebd06"
-              onChange={ (color) => this.changeTheme(color)}
+              color="#69797E"
+              onChange={ (color) => this.changeTheme(color, "#b8cdd4")}
             />
           </div>
         </div>

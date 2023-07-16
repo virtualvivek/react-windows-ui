@@ -36,11 +36,42 @@ const InputDateUsageCode =
   tooltip="InputDate tooltip title"
 />`;
 
+const InputSearchBarUsageCode =
+`import { InputSearchBar } from "react-windows-ui";
+
+<InputSearchBar
+  placeholder="Search here"
+  onSubmit={(e) => { function(e.target.value) }}
+  onChange={(e) => { function(e.target.value) }}
+/>`;
+
+const InputSearchBoxUsageCode =
+`import { InputSearchBox } from "react-windows-ui";
+
+<InputSearchBox
+  placeholder="Enter to Search"
+  onChange={(e) => { function(e.target.value) }}
+/>
+
+<InputSearchBox
+  placeholder="Enter with Suggestions"
+  suggest={[
+    {text: "apple", onClick: () => {}, icon: <i className="icons10-home"></i>},
+    {text: "orange", onClick: () => {}},
+    {text: "banana", onClick: () => {}},
+    {text: "peach", onClick: () => {}}
+  ]}
+/>`;
+
 const InputTextAreaUsageCode =
-`<TextArea
+`import { TextArea } from "react-windows-ui";
+
+<TextArea
   resizer={false}
   defaultValue={"Hello World"}
 />`;
+
+
 
 const ExampleUsageCode =
 `const [inputVal, setInputVal] = useState("Inputs");
@@ -71,5 +102,7 @@ export {
   InputTextLabelUsageCode,
   InputDateUsageCode,
   InputTextAreaUsageCode,
+  InputSearchBarUsageCode,
+  InputSearchBoxUsageCode,
   ExampleUsageCode
 }

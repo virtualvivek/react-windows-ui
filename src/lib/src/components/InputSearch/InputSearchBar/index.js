@@ -24,7 +24,9 @@ const InputSearchBar = forwardRef((props, ref) => {
         style={{ width: width }}
         placeholder={props.placeholder}
       />
-      <button type="submit" onClick={() => onSubmit(props.value)}></button>
+      <div className="app-input-end-content">
+        <button type="submit" onClick={() => onSubmit(props.value)}></button>
+      </div>
     </div>
   )
 })

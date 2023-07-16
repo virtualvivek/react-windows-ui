@@ -4,31 +4,6 @@
 @import "./win11/light.scss";
 @import "./win11/dark.scss";
 
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//    --light: false;
-//    --dark: ;
-//    color-scheme: dark;
-//   }
-// }
-// @media (prefers-color-scheme: light) {
-//     :root {
-//     --dark: false;
-//     --light: ;
-//     color-scheme: light;
-//   }
-// }
-// [data-theme="dark"] {
-//   --light: false;
-//   --dark: ;
-//   color-scheme: dark;
-// }
-// [data-theme="light"] {
-//   --dark: false;
-//   --light: ;
-//   color-scheme: light;
-// }
-
 @if $platform == "windows10" {
   @include light-win10();
   @include dark-win10();

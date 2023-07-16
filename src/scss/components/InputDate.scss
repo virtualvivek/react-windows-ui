@@ -40,6 +40,6 @@
 }
 
 .app-input-container input[type^="date"]:before,
-.app-input-container input[type="week"]:before,
-.app-input-container input[type="month"]:before { content: "\f1cb"; }
+.app-input-container input[type="week"]:before { content: "\f1cb"; }
+.app-input-container input[type="month"]:before { content: "\f1e3"; }
 .app-input-container input[type="time"]:before { content: "\f13c"; }

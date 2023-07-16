@@ -47,6 +47,7 @@ import GithubIcon from "../assets/static/GithubIcon";
 import "../../lib/config/app-config.css";
 import "../../lib/dist/react-windows-ui.min.css";
 import "./_lib/styles/doc-styles.css";
+import "../../lib/icons/winui-icons.min.css";
 
 const AppFourTwoTwo = () => {
 

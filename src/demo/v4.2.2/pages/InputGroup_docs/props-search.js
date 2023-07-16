@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-const PropsView = () => {
+const SearchProps = () => {
   return (
     <div className="app-table-view-container">
     <table className="app-table-view">
@@ -14,20 +14,17 @@ const PropsView = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">title</p></td>
-          <td>string</td>
-          <td>null</td>
-          <td>Set's NavBarSubMenu Title</td>
-        </tr>
-        <tr>
-          <td><p className="app-code">children</p></td>
-          <td>ReactNode</td>
-          <td>null</td>
-          <td>Set's NavBarSubMenu children</td>
+          <td><p className="app-code">type</p></td>
+          <td>
+            "date" | "datetime-local"<br/>
+            "week" | "month" | "time"
+          </td>
+          <td>"date"</td>
+          <td>Set's InputText type prop as date.</td>
         </tr>
       </tbody>
     </table>
     </div>
   );
 }
-export default PropsView
+export default SearchProps;

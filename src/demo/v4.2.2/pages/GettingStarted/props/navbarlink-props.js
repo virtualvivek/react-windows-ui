@@ -8,10 +8,10 @@ const NavBarLink = () => {
       <table className="app-table-view">
         <thead>
           <tr className="app-table-tr">
-            <th className="" align="left">Prop</th>
-            <th className="" align="left">Type</th>
-            <th className="" align="left">Default</th>
-            <th className="" align="left">Description</th>
+            <th align="left">Prop</th>
+            <th align="left">Type</th>
+            <th align="left">Default</th>
+            <th align="left">Description</th>
           </tr>
         </thead>
         <tbody>

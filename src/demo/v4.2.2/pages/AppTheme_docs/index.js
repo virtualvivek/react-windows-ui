@@ -41,37 +41,40 @@ class AppThemeDocs extends React.Component {
       </div>
       <br/>
 
-      <ColorPickerItem
-        defaultChecked
-        name="1"
-        color="#0078D7"
-        onChange={ (color) => this.changeTheme(color, "#47aeff")}
-      />
-      <ColorPickerItem
-        name="1"
-        color="#6632a8"
-        onChange={ (color) => this.changeTheme(color, "#9549f5")}
-      />
-      <ColorPickerItem
-        name="1"
-        color="#881798"
-        onChange={ (color) => this.changeTheme(color, "#d927f2")}
-      />
-      <ColorPickerItem
-        name="1"
-        color="#038387"
-        onChange={ (color) => this.changeTheme(color, "#05ebf2")}
-      />
-      <ColorPickerItem
-        name="1"
-        color="#00B294"
-        onChange={ (color) => this.changeTheme(color, "#02f7ce")}
-      />
-      <ColorPickerItem
-        name="1"
-        color="#69797E"
-        onChange={ (color) => this.changeTheme(color, "#b8cdd4")}
-      />
+      <div style={{display: "flex", gap: 5}}>  
+        <ColorPickerItem
+          defaultChecked
+          name="1"
+          color="#0078D7"
+          onChange={ (color) => this.changeTheme(color, "#47aeff")}
+        />
+        <ColorPickerItem
+          name="1"
+          color="#6632a8"
+          onChange={ (color) => this.changeTheme(color, "#9549f5")}
+        />
+        <ColorPickerItem
+          name="1"
+          color="#881798"
+          onChange={ (color) => this.changeTheme(color, "#d927f2")}
+        />
+        <ColorPickerItem
+          name="1"
+          color="#038387"
+          onChange={ (color) => this.changeTheme(color, "#05ebf2")}
+        />
+        <ColorPickerItem
+          name="1"
+          color="#00B294"
+          onChange={ (color) => this.changeTheme(color, "#02f7ce")}
+        />
+        <ColorPickerItem
+          name="1"
+          color="#69797E"
+          onChange={ (color) => this.changeTheme(color, "#b8cdd4")}
+        />
+      </div>
+
 
       <p><span className="app-color-primary">AppTheme</span> is a component used for changing <b>App's primary color</b> and <b>Light/Dark Mode</b> at Runtime.</p>
 

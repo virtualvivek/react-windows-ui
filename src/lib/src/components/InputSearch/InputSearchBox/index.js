@@ -18,7 +18,7 @@ const InputSearchBox = forwardRef((props, ref) => {
     (!e.target.value || !listSuggest.hasChildNodes())
       ? listSuggest.className = ""
       : listSuggest.className = "show";
-    onChange();
+    onChange(e);
   }
 
   return (
