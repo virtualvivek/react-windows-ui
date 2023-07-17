@@ -1,31 +1,12 @@
-.demo-colors-container {
-  font-size: 15px !important;
-}
-.demo-colors-container .app-hr{
-  width: 450px;
-  font-size: 15px !important;
-}
-.demo-colors-name {
-  margin-right: 10px;
-  width: 240px;
-}
 .demo-colors-value {
+  font-size: 12.5px;
   font-style: italic;
-  margin-left: 5px;
 }
 
 .demo-colors-box {
   width: 15px;
   height: 15px;
-  margin: 2px 10px;
+  margin: 0 8px 0 0;
+  display: inline-flex;
   border: 1px solid #77777777;
-}
-
-@media only screen and (max-width: 760px) {
-  .demo-colors-name {
-    width: 48%;
-  }
-  .demo-colors-container .app-hr{
-    width: 90%;
-  }
 }

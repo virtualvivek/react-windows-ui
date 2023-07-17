@@ -52,7 +52,7 @@ const AccordionDocs = () => {
         {AccordionUsageCode}
       </SyntaxHighlighter>
 
-      <h3 className="m-tb-20">Accordion with <p className="app-code">Custom Header</p></h3>
+      <h3 className="m-tb-20">Accordion with <p className="app-code">Custom Header</p> :</h3>
 
       <Accordion>
         <Accordion.Header>

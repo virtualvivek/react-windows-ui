@@ -49,6 +49,10 @@
     block-size: 14px;
   }
 
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+
   .app-navbar-wrap .app-navbar-list {
     &::-webkit-scrollbar-thumb {
       background-color: #99999966;

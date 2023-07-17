@@ -1,116 +1,57 @@
 import React from 'react'
-import { NavPageContainer, Switch } from '../../_lib'
-import { ColorVariables } from '../../../common/components'
+import { NavPageContainer } from '../../_lib'
+import ColorVariables from './ColorVariables'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import './colors_docs_styles.css'
 
 class ColorsDocs extends React.Component {
 
-  constructor(props) {
-    super(props);
-    let PrimaryColor = window.getComputedStyle(document.documentElement).getPropertyValue('--PrimaryColor');
-    let PrimaryColorLight = window.getComputedStyle(document.documentElement).getPropertyValue('--PrimaryColorLight');
-    let alphaColor = window.getComputedStyle(document.documentElement).getPropertyValue('--color-primary-alpha');
-
-    this.state = {
-      primaryColor_val: PrimaryColor,
-      primaryColorLight_val: PrimaryColorLight,
-
-      color_scheme_val: 'light',
-      color_bg_light_val: '#FFFFFF',
-      color_text_dark_val :'#000000',
-      color_navbar_bg_val: '#EEEEEE',
-      color_grey_light_val: '#EEEEEE',
-      color_grey_light_alpha_val: '#EEEEEED1',
-      color_link_bg_hover_val: '#D8D8D8',
-      color_link_bg_active_val: '#B8B8B8',
-      color_button_val: '#d9d9d9',
-      color_button_hover_val: '#666666',
-      color_day_primary_night_white_val : PrimaryColor,
-      color_day_primary_night_grey_val: PrimaryColor,
-      color_primary_alpha_val: alphaColor,
-    }
-  }
-
-
-  changeMode = (e) => {
-    let PrimaryColor = window.getComputedStyle(document.documentElement).getPropertyValue('--PrimaryColor');
-    e.target.checked ?
-      this.setState({
-        color_scheme_val: 'dark',
-        color_bg_light_val: '#111111',
-        color_text_dark_val :'#FFFFFF',
-        color_navbar_bg_val: '#403E41',
-        color_grey_light_val: '#444444',
-        color_grey_light_alpha_val: '#444444D1',
-        color_link_bg_hover_val: '#555555',
-        color_link_bg_active_val: '#222222',
-        color_button_val: '#555555',
-        color_button_hover_val: '#999999',
-        color_day_primary_night_white_val : '#FFFFFF',
-        color_day_primary_night_grey_val: '#403E41'
-      })
-      :
-      this.setState({
-        color_scheme_val: 'light',
-        color_bg_light_val: '#FFFFFF',
-        color_text_dark_val :'#000000',
-        color_navbar_bg_val: '#EEEEEE',
-        color_grey_light_val: '#EEEEEE',
-        color_grey_light_alpha_val: '#EEEEEED1',
-        color_link_bg_hover_val: '#D8D8D8',
-        color_link_bg_active_val: '#B8B8B8',
-        color_button_val: '#d9d9d9',
-        color_button_hover_val: '#666666',
-        color_day_primary_night_white_val : PrimaryColor,
-        color_day_primary_night_grey_val: PrimaryColor
-      })
-  }
-
 render() {
   return (
-  <NavPageContainer
-    hasPadding
-    animateTransition={false}>
+  <NavPageContainer hasPadding animateTransition={false}>
     <h1>Colors</h1>
 
     <p>Use the provided <span className="app-color-primary">Color </span>variables accross your app that adapt changes as per the color scheme to either <b>light</b> or <b>dark</b>.<br/></p>
-        
-   
-    <h2><Switch labelOn="Dark" labelOff="Light" onChange={(e) => {this.changeMode(e)}}/></h2>
-    
 
-    <div className="demo-colors-container">
-
-      <ColorVariables colorName="--PrimaryColor" backgroundColor={this.state.primaryColor_val} />
-      <ColorVariables colorName="--PrimaryColorLight" backgroundColor={this.state.primaryColorLight_val} />
-
-      <div className="app-hr app-m-0"></div>
-      <p>Color values when app scheme is <b>{this.state.color_scheme_val}</b></p>
-    
-      <div className="app-hr app-m-0"></div>
-      <div className="app-flex app-align-center">
-        <span className="demo-colors-name">color-scheme<span className="user-select-none"><span className="user-select-none">:</span></span></span>
-        <span className="demo-colors-box" style={{backgroundColor: this.state.color_navbar_bg_val}}></span>
-        <span className="demo-colors-value">{this.state.color_scheme_val}</span>
-      </div>
-
-      <ColorVariables colorName="--color-background-default" backgroundColor={this.state.color_bg_light_val} />
-      <ColorVariables colorName="--color-button-default" backgroundColor={this.state.color_button_val} />
-      <ColorVariables colorName="--color-button-hover" backgroundColor={this.state.color_button_hover_val} />
-      <ColorVariables colorName="--color-day-primary-night-grey" backgroundColor={this.state.color_day_primary_night_grey_val} />
-      <ColorVariables colorName="--color-day-primary-night-white" backgroundColor={this.state.color_day_primary_night_white_val} />
-      <ColorVariables colorName="--color-grey-light" backgroundColor={this.state.color_grey_light_val} />
-      <ColorVariables colorName="--color-grey-light-alpha" backgroundColor={this.state.color_grey_light_alpha_val} />
-      <ColorVariables colorName="--color-link-bg-active" backgroundColor={this.state.color_link_bg_active_val} />
-      <ColorVariables colorName="--color-link-bg-hover" backgroundColor={this.state.color_link_bg_hover_val} />
-      <ColorVariables colorName="--color-navbar-bg-default" backgroundColor={this.state.color_navbar_bg_val} />
-      <ColorVariables colorName="--color-primary-alpha" backgroundColor={this.state.color_primary_alpha_val} />
-      <ColorVariables colorName="--color-text-default" backgroundColor={this.state.color_text_dark_val} />
-
-      <div className="app-hr app-m-0"></div>
-
+    <div className="app-table-view-container" style={{display: "list-item", maxHeight: 400, overflowY: "scroll"}}>
+      <table className="app-table-view">
+        <thead>
+          <tr className="app-table-tr">
+            <th align="left">CSS Color Name</th>
+            <th align="left">Light</th>
+            <th align="left">Dark</th>
+          </tr>
+        </thead>
+        <tbody>
+          {/* <tr><ColorVariables colorName="--PrimaryColor" colorLight="#0078D7" colorDark="#0078D7"/></tr> */}
+          {/* <tr><ColorVariables colorName="--PrimaryColorLight" colorLight="#60CDFF" colorDark="#60CDFF"/></tr> */}
+          <tr><ColorVariables colorName="--color-primary-adaptive" colorLight="var(--PrimaryColor)" colorDark="var(--PrimaryColorLight)"/></tr>
+          <tr><ColorVariables colorName="--color-scheme-absolute" colorLight="#FFF" colorDark="#000"/></tr>
+          <tr><ColorVariables colorName="--color-background-default" colorLight="#FFF" colorDark="#111"/></tr>
+          <tr><ColorVariables colorName="--color-button-default" colorLight="#FEFEFEDD" colorDark="#3E3E3EDD"/></tr>
+          <tr><ColorVariables colorName="--color-card-bg-default" colorLight="#FBFBFBDD" colorDark="#272727DD"/></tr>
+          <tr><ColorVariables colorName="--color-day-primary-night-grey" colorLight="var(--PrimaryColor)" colorDark="#403E41"/></tr>
+          <tr><ColorVariables colorName="--color-day-primary-night-white" colorLight="var(--PrimaryColor)" colorDark="#FFF"/></tr>
+          <tr><ColorVariables colorName="--color-dropdown-menu-bg" colorLight="#F8F8F8" colorDark="#1A1A1A"/></tr>
+          <tr><ColorVariables colorName="--color-foreground-default" colorLight="#FFF" colorDark="#2B2B2B"/></tr>
+          <tr><ColorVariables colorName="--color-foreground-dark" colorLight="#EEEEEE" colorDark="#444444"/></tr>
+          <tr><ColorVariables colorName="--color-input-bg-default" colorLight="#FFFFFF99" colorDark="#11111199"/></tr>
+          <tr><ColorVariables colorName="--color-input-border-default" colorLight="#55555544" colorDark="#77777744"/></tr>
+          <tr><ColorVariables colorName="--color-input-border-strong" colorLight="#8A8A8A" colorDark="#9A9A9A"/></tr>
+          <tr><ColorVariables colorName="--color-ui-active-default" colorLight="#D8D8D8" colorDark="#262626"/></tr>
+          <tr><ColorVariables colorName="--color-navbar-bg-default" colorLight="#F3F3F3" colorDark="#202020"/></tr>
+          <tr><ColorVariables colorName="--color-progress-bg" colorLight="#E2E2E2" colorDark="#484848"/></tr>
+          <tr><ColorVariables colorName="--color-scroll-thumb" colorLight="#777777DD" colorDark="#EEEEEE99"/></tr>
+          <tr><ColorVariables colorName="--color-scroll-thumb-active" colorLight="#77777799" colorDark="#DDDDDD77"/></tr>
+          <tr><ColorVariables colorName="--color-scroll-thumb-hover" colorLight="#777777EE" colorDark="#DDDDDD99"/></tr>
+          <tr><ColorVariables colorName="--color-slider-thumb-bg" colorLight="#FFF" colorDark="#454545"/></tr>
+          <tr><ColorVariables colorName="--color-text-default" colorLight="#000" colorDark="#FFF"/></tr>
+          <tr><ColorVariables colorName="--color-ui-border-default" colorLight="#E3E3E399" colorDark="#32323299"/></tr>
+          <tr><ColorVariables colorName="--color-ui-hover-default" colorLight="#EEEEEED1" colorDark="#44444477"/></tr>
+          <tr><ColorVariables colorName="--color-ui-hover-strong" colorLight="#E1E0E088" colorDark="#37373788"/></tr>
+        </tbody>
+      </table>
     </div>
 
     <h1>Create your own color variables.</h1>

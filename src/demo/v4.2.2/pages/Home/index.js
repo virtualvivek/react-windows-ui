@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavPageContainer, ColorPickerItem, ColorPickerPalette, AppTheme } from '../../_lib'
+import { NavPageContainer, ColorPickerItem, AppTheme } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import ReactIcon from '../../../assets/static/ReactIcon'
