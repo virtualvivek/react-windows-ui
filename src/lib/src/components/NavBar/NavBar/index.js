@@ -30,7 +30,7 @@ const NavBar = (props) => {
 
   useEffect(()=> {
     let NavSearch = document.getElementById("app-navbar-list").getElementsByClassName("app-input-search-box")[0];
-    NavSearch.addEventListener("click", () => {
+    NavSearch?.addEventListener("click", () => {
       if(sidebar_collapsed) { setSidebarCollapsed(false); }
     });
   }, [sidebar_collapsed]);

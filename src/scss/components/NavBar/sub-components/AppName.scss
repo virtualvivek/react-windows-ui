@@ -7,7 +7,7 @@
   white-space: nowrap;
   display: inline-block;
   text-overflow: ellipsis;
-  padding-inline-start: 10px;
+  // padding-inline-start: 10px;
 
   &::-moz-selection {
     background: transparent;
@@ -17,4 +17,8 @@
     background: transparent;
     color: var(--color-text-default);
   }
+}
+
+@media only screen and (max-width: 760px) {
+  .app-navbar-name { padding-inline-start: 5px; }
 }

@@ -1,6 +1,13 @@
 :root {
   --noise: url("../../../../assets/static/noise.png");
 }
+.home-header-container {
+  padding: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .home-header {
   color: #fff;
   display: flex;
@@ -15,10 +22,24 @@
   background-color: #222;
   box-shadow: 0px 2px 2px rgb(0 0 0 / 18%);
 }
+
+.home-title-container {
+  display: flex;
+  padding-block: 5vh;
+  flex-direction: column;
+  padding-left: 45px;
+  justify-content: flex-start;
+}
+
 .home-title {
   margin: 0;
   font-size: 60px;
   font-weight: 800;
+}
+
+.home-subtitle {
+  max-width: 70%;
+  font-size: 26px;
 }
 
 .home-card-version {
@@ -137,10 +158,33 @@ body.dark-theme .backdrop  .acrylic-material::before {
   margin: 45px !important;
 }
 
-
+/* Tablets */
 @media only screen and (max-width: 1000px) {
   .home-title {
     font-size: 2.2rem;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 760px) {
+  .home-github-icon {
+    display: none;
+  }
+  .home-header-container {
+    padding: 25px;
+  }
+  .home-title-container {
+    padding-left: 25px;
+  }
+  .home-title {
+    font-size: 1.9rem;
+  }
+  .home-subtitle {
+    font-size: 22px;
+  }
+  .home-code {
+    width: fit-content !important;
+    margin: 25px !important;
   }
 }
 

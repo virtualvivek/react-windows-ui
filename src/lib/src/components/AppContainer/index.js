@@ -21,7 +21,7 @@ const AppContainer = (props) => {
   }, []);
 
   return (
-    <div className="container-flex-row" style={props.style}>
+    <div className="app-container-flex-row" style={props.style}>
       {props.children}
     </div>
   );

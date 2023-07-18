@@ -168,16 +168,19 @@ const AppFourTwoTwo = () => {
           />
           <NavBarLink
             text="Appearance"
+            active={route === "appearance" ?? true}
             onClick={() => _navigate("appearance")}
             icon={<i className="icons10-sun"></i>}
           />
           <NavBarLink
             text="Classes"
+            active={route === "utilities" ?? true}
             onClick={() => _navigate("utilities")}
             icon={<i className="icons10-puzzle"></i>}
           />
           <NavBarLink
             text="Colors"
+            active={route === "colors" ?? true}
             onClick={() => _navigate("colors")}
             icon={<i className="icons10-color-palette"></i>}
           />

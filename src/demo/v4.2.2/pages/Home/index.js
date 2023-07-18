@@ -34,7 +34,7 @@ class Home extends React.Component {
         colorDarkMode={this.state.app_color_dark}
       />
 
-      <div style={{padding: 45, display:"flex", width:"100%", alignItems: "center", justifyContent: "space-between"}}>
+      <div className="home-header-container">
         <div className="home-header">
           <ReactIcon/>
           <span>&nbsp;+&nbsp;</span>
@@ -65,14 +65,14 @@ class Home extends React.Component {
             />
           </div>
         </div>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/virtualvivek/react-windows-ui/">
+        <a target="_blank" className="home-github-icon" rel="noopener noreferrer" href="https://github.com/virtualvivek/react-windows-ui/">
           <GithubIcon/>
         </a>
       </div>
 
-      <div style={{display: "flex",flexDirection: "column",paddingLeft: 45, justifyContent: "flex-start"}}>
+      <div className="home-title-container">
         <h1 className="home-title">react-windows-ui <span className="home-card-version"><a target="_blank" rel="noopener noreferrer" href="https://github.com/virtualvivek/react-windows-ui/releases/latest">{lib_version}</a></span></h1>
-        <span style={{maxWidth: "70%", fontSize: 28}}>Build Windows fluent UI apps using ReactJS. <br/>Provides a set of accessible, reusable, and composable React components.</span>
+        <span className="home-subtitle">Build Windows fluent UI apps using ReactJS. <br/>Provides a set of accessible, reusable, and composable React components.</span>
       </div>
 
       <SyntaxHighlighter

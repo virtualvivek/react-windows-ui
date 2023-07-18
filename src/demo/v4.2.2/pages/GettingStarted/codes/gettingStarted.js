@@ -1,64 +1,68 @@
 const UIAppJS =
-`import React, { useState, useEffect } from "react";
+`import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import { SplashScreen, NavBar, NavBarLink, NavBarThemeSwitch } from "react-windows-ui";
+import { AppContainer, NavBar, NavBarLink, NavBarThemeSwitch, NavPageContainer } from "react-windows-ui";
 
-const Page0 = () => {return (<div style={{backgroundColor: "blueviolet"}}></div>)};
-const Page1 = () => {return (<div style={{backgroundColor: "red"}}></div>)};
-const Page2 = () => {return (<div style={{backgroundColor: "green"}}></div>)};
+import "react-windows-ui/config/app-config.css";
+import "react-windows-ui/dist/react-windows-ui.min.css";
+import "react-windows-ui/icons/winui-icons.min.css";
 
 const App = () => {
+  return (
+    <BrowserRouter basename={'/'}>
+      <NavBarRoutes/>  
+    </BrowserRouter>
+  )
+}
 
-  useEffect(() => setSplash(false), []);
+const Page0 = () => {return (<NavPageContainer style={{backgroundColor: "blueviolet"}}></NavPageContainer>)};
+const Page1 = () => {return (<NavPageContainer style={{backgroundColor: "red"}}></NavPageContainer>)};
+const Page2 = () => {return (<NavPageContainer style={{backgroundColor: "green"}}></NavPageContainer>)};
+
+const NavBarRoutes = () => {
 
   const navigate = useNavigate();
-  const [splash, setSplash] = useState(true);
+  const [route, setRoute] = useState("/");
   const _navigate = (route) => {
     navigate(route);
     setRoute(route);
   }
-
+  
   return (
-    <BrowserRouter basename={'/'}>
-      <SplashScreen // Optional Component
-        isVisible={splash}
-        title={"App Name"}
-        // duration={1000} Additional delay before page loads.
-      />
+    <AppContainer>
       <NavBar
         title="App Name"
         shadowOnScroll={true}
-        titleBarMobile={
-          <div style={{display: "flex", justifyContent: "space-between"}}>
-            <span className="app-navbar-name">React-windows-ui</span>
-          </div>}>
+        titleBarMobile={<div><span className="app-navbar-name">React-windows-ui</span></div>}>
 
         <NavBarThemeSwitch/>
         <h1>Pages</h1>
         <div className="app-hr"></div>
         <NavBarLink
           text="Home"
-          active={route === "home" ?? true}
+          active={route === "/" ?? true}
           onClick={() => _navigate("/")}
           icon={<i className="icons10-home"></i>}
         />
         <NavBarLink
           text="Page1"
-          onClick={() => _navigate("/page1")}
+          active={route === "page1" ?? true}
+          onClick={() => _navigate("page1")}
           icon={<i className="icons10-grid-2"></i>}
         />
         <NavBarLink
           text="Page2"
-          onClick={() => _navigate("/page2")}
+          active={route === "page2" ?? true}
+          onClick={() => _navigate("page2")}
           icon={<i className="icons10-columns"></i>}
         />
       </NavBar>
       <Routes>
-        <Route path="/" element={<Page0/>}  exact />
-        <Route path="/page1" element={<Page1/>} />
-        <Route path="/page2" element={<Page2/>} />
+        <Route path="/" element={<Page0/>} exact/>
+        <Route path="page1" element={<Page1/>} />
+        <Route path="page2" element={<Page2/>} />
       </Routes>
-    </BrowserRouter>
+    </AppContainer>
   )
 }
     
