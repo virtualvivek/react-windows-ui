@@ -1,16 +1,17 @@
-import React from 'react'
+import React from "react";
 
 export interface SwitchProps {
-  defaultChecked ?: boolean;
-  disabled ?: boolean;
-  labelOn ?: string;
-  labelOff ?: string;
+  ref ?: any;
   label ?: boolean;
   tooltip ?: string;
+  labelOn ?: string;
+  labelOff ?: string;
+  disabled ?: boolean;
   onChange ?: () => void;
+  defaultChecked ?: boolean;
   labelPosition ?: "start" | "end";
   labelFixedWidth ?: number | string;
 }
-declare const Switch: React.FC<SwitchProps>
+declare const Switch: React.FC<SwitchProps>;
 
-export default Switch
+export default Switch;

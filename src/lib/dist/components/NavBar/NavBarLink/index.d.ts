@@ -1,14 +1,15 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from "react";
 
 export interface NavBarLinkProps {
-  showBadge ?: number | string;
-  imgSrc ?: string | any;
+  href ?: any;
   text ?: string;
-  exact ?: boolean;
-  to ?: string;
+  active ?: boolean;
+  onClick ?: Function;
+  imgSrc ?: string | any;
   icon ?: ReactNode | any;
+  showBadge ?: number | string;
   badgeBackgroundColor ?: string | any;
 }
-declare const NavBarLink: React.FC<NavBarLinkProps>
+declare const NavBarLink: React.FC<NavBarLinkProps>;
 
-export default NavBarLink
+export default NavBarLink;

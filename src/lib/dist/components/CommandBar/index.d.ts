@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from "react";
 
 export interface CommandBarProps {
-  backgroundColor ?: string;
   children ?: ReactNode;
+  backgroundColor ?: string;
 }
-declare const CommandBar: React.FC<CommandBarProps>
+declare const CommandBar: React.FC<CommandBarProps>;
 
-export default CommandBar
+export default CommandBar;

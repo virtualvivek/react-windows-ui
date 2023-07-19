@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { ReactNode } from "react";
 
 export interface TableViewProps {
-  columns ?: string[];
   rows ?: string[];
+  columns ?: string[];
+  rowFontSize ?: any;
+  headerFontSize ?: any;
+  TableHeaderComponent ?: ReactNode;
+  TableFooterComponent ?: ReactNode;
 }
-declare const TableView: React.FC<TableViewProps>
+declare const TableView: React.FC<TableViewProps>;
 
-export default TableView
+export default TableView;

@@ -44,7 +44,7 @@ package.json >
 
 [ File Added ] > babel.config.js
 
---compile--
+--Compile Production--
 
 [ Open Git Bash Terminal ( Choose from dropdown in VS Code ) ]
 

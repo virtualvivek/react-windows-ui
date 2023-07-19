@@ -1,19 +1,23 @@
-import React, { ReactNode, CSSProperties } from 'react'
+import React, { ReactNode, CSSProperties } from "react";
 
 export interface ButtonProps {
-  width ?: number | string;
+  ref ?: any;
+  type ?: string;
   value ?: string;
-  disabled ?: boolean;
   tooltip ?: string;
-  isLoading ?: boolean;
   icon ?: ReactNode;
-  textAlign ?: string;
-  type ?: "default" | "primary" | "primary-outline" | "success" | "success-outline" | "danger" | "danger-outline";
-  onSubmit ?: any;
-  onClick ?: any;
-  onDoubleClick ?: any;
+  disabled ?: boolean;
+  justifyContent ?: CSSProperties;
+  isLoading ?: boolean;
   style ?: CSSProperties;
-}
-declare const Button: React.FC<ButtonProps>
+  width ?: number | string;
 
-export default Button
+  onClick ?: any;
+  onSubmit ?: any;
+  onDoubleClick ?: any;
+
+  type ?: "default" | "primary" | "primary-outline" | "success" | "success-outline" | "danger" | "danger-outline" | "subtle";
+}
+declare const Button: React.FC<ButtonProps>;
+
+export default Button;

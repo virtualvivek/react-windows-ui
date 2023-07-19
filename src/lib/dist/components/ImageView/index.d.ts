@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from "react";
 
 export interface ImageViewProps {
   alt ?: string;
@@ -16,6 +16,6 @@ export interface ImageViewProps {
   margin ?: number | string;
   borderRadius ?: number | string;
 }
-declare const ImageView: React.FC<ImageViewProps>
+declare const ImageView: React.FC<ImageViewProps>;
 
-export default ImageView
+export default ImageView;

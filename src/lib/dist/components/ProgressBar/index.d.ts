@@ -1,15 +1,13 @@
-import React, { ReactNode } from 'react'
+import React from "react";
 
 export interface ProgressBarProps {
-  height ?: number | string;
-  icon ?: ReactNode;
-  showIcon ?: boolean;
-  setProgress ?: number | string;
-  color ?: string | any;
   title ?: string;
-  subtitle ?: string;
   tooltip ?: string;
+  subtitle ?: string;
+  color ?: string | any;
+  height ?: number | string;
+  setProgress ?: number | "hidden" | "indeterminate";
 }
-declare const ProgressBar: React.FC<ProgressBarProps>
+declare const ProgressBar: React.FC<ProgressBarProps>;
 
-export default ProgressBar
+export default ProgressBar;

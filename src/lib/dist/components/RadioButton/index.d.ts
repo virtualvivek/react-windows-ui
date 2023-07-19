@@ -1,6 +1,7 @@
-import React from 'react'
+import React from "react";
 
 export interface RadioButtonProps {
+  ref ?: any;
   value ?: any;
   name ?: string;
   label ?: string;
@@ -9,6 +10,6 @@ export interface RadioButtonProps {
   defaultChecked ?: boolean;
   onChange ?: () => void;
 }
-declare const RadioButton: React.FC<RadioButtonProps>
+declare const RadioButton: React.FC<RadioButtonProps>;
 
-export default RadioButton
+export default RadioButton;

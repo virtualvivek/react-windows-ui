@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 export interface NavBarThemeSwitchProps {
-   //no props
+   onChange ?: Function;
 }
-declare const NavBarThemeSwitch: React.FC<NavBarThemeSwitchProps>
+declare const NavBarThemeSwitch: React.FC<NavBarThemeSwitchProps>;
 
-export default NavBarThemeSwitch
+export default NavBarThemeSwitch;

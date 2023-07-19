@@ -1,11 +1,11 @@
-import React, { FC } from 'react'
+import React, { FC } from "react";
 
 export interface MenuBarProps {
   label ?: string;
   data ?: string[];
-  searchPlaceholder ?: string;
   showSearchBar ?: boolean;
+  searchPlaceholder ?: string;
 }
-declare const MenuBar: FC<MenuBarProps>
+declare const MenuBar: FC<MenuBarProps>;
 
-export default MenuBar
+export default MenuBar;

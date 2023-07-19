@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 export interface AppThemeProps {
   color ?: any;
   colorDarkMode ?: any;
-  scheme ?: "light" | "dark" | "system";
   onColorChange ?: () => void;
   onSchemeChange ?: () => void;
+  scheme ?: "light" | "dark" | "system" | "current";
 }
-declare const AppTheme: React.FC<AppThemeProps>
+declare const AppTheme: React.FC<AppThemeProps>;
 
-export default AppTheme
+export default AppTheme;
