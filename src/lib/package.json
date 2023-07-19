@@ -1,6 +1,6 @@
 {
   "name": "react-windows-ui",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "Build full featured Windows fluent UI apps using reactjs.",
   "main": "dist/index.js",
   "scripts": {
@@ -16,7 +16,6 @@
     "windows",
     "ui",
     "fluentui",
-    "windows10",
     "windows11",
     "user-interface",
     "react-component",
@@ -47,8 +46,8 @@
     ]
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0"
+    "react": "*",
+    "react-dom": "*",
+    "react-router-dom": "*"
   }
 }
