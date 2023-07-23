@@ -46,7 +46,6 @@ import "react-windows-ui/icons/winui-icons.min.css";
 ## 🚀 [See `App.js` code & more »](https://virtualvivek.github.io/react-windows-ui/#/v4.2.2/getting_started)
 
 # Usage
-
 ```js
 import { Button, InputText } from "react-windows-ui";
 
