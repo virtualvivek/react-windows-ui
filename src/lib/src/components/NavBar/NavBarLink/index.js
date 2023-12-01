@@ -1,5 +1,7 @@
 import React from "react";
 
+const isJavaScriptProtocol = /^[\u0000-\u001F ]*j[\r\n\t]*a[\r\n\t]*v[\r\n\t]*a[\r\n\t]*s[\r\n\t]*c[\r\n\t]*r[\r\n\t]*i[\r\n\t]*p[\r\n\t]*t[\r\n\t]*\:/i
+
 const NavBarLink = (props) => {
 
   const {
@@ -12,8 +14,14 @@ const NavBarLink = (props) => {
     onClick,
     showBadge,
     imgBorderRadius,
-    badgeBackgroundColor
+    badgeBackgroundColor,
+    allowJavaScriptUrls = true
   } = props;
+
+  if (isJavaScriptProtocol.test(href) && !allowJavaScriptUrls) {
+    console.warn(`NavBarLink has blocked a javascript: URL as a security precaution`);
+    return null;
+  }
 
   const renderBadge = () => {
     if(showBadge > 0 || showBadge !== "") {
