@@ -2,37 +2,24 @@
   .app-navbar-submenu-title {
     display: flex;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
     user-select: none;
     flex-direction: row;
     justify-content: space-between;
-
-    @if $platform == "windows10" {
-      padding: 14px 25px;
-    }
-    @if $platform == "windows11" {
-      margin: 5px;
-      overflow: hidden;
-      border-radius: 4px;
-      padding: 10px 15px;
-    }
+    margin: 5px;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 5px;
+    padding: 8px 14px;
+    
   
     &:hover {
       background-color: var(--color-ui-hover-strong);
     }
-
-    @if $platform == "windows10" {
-      &:active {
-        @extend .transition-scale-active;
-        transition: 0s ease;
-        background-color: var(--color-button-default);
-      }
-    }
-    @if $platform == "windows11" {
-      &:active {
-        opacity: 0.7;
-        transition: 0s ease;
-      }
+   
+    &:active {
+      opacity: 0.7;
+      transition: 0s ease;
     }
 
     &::after {
@@ -67,8 +54,12 @@
   .app-navbar-wrap.collapsed {
     .app-navbar-submenu-title {
       justify-content: center;
-      &::after { font-size: 18px; }
-      > :first-child { display: none; }
+      &::after {
+        font-size: 20px;
+      }
+      > :first-child {
+        display: none;
+      }
     }
   }
 }

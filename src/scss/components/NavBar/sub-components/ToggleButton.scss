@@ -1,18 +1,24 @@
 .app-navbar-wrap .app-navbar-toggler {
+  margin: 5px;
   cursor: pointer;
-  @if $platform=="windows10" { padding: 15px 25px; }
-  @if $platform=="windows11" { padding: 10px 15px; margin: 5px; border-radius: 4px; }
+  padding: 8px 10px;
+  border-radius: 5px;
 
   &:hover {
     background-color: var(--color-ui-hover-strong);
   }
   &:active {
-    @if $platform == "windows10" { background-color: var(--color-ui-active-default); }
-    @if $platform == "windows11" { opacity: 0.7; }
+    opacity: 0.7;
+    &::after {
+      transform: scaleX(0.64);
+      transition: transform 20ms ease-in;
+    }
   }
   &::after {
-    font-size: 22px;
+    display: block;
+    font-size: 20px;
     content: "\f106";
     font-family: icons10;
+    transition: transform 160ms ease-out;
   }
 }

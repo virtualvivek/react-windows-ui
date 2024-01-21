@@ -6,51 +6,30 @@ button,
   align-items: center;
   justify-content: center;
   -webkit-tap-highlight-color: transparent;
-
-  @if $platform == "windows11" {
-    @extend .input-btn-default;
-  }
+  @extend .input-btn-default;
 
   &:focus, &:active, &:focus:active {
     outline: none;
   }
   &:focus-visible {
-    @if $platform == "windows10" { transition: 0s ease; }
     outline: 1px solid var(--color-text-default);
   }
 }
 
 .app-btn {
-  min-height: 33px;
+  min-height: 32px;
+  padding: 6px 11px;
   vertical-align: middle;
-
-  @if $platform == "windows10" {
-    padding: 5px 15px;
-    transition: 0.2s ease;
-    border: 2px solid transparent;
-    &:hover {
-      filter: opacity(0.8);
-      border-color: var(--color-button-hover);
-    }
-    &:active {
-      filter: contrast(0.4);
-      transition: 0.02s ease;
-      border: 2px solid transparent;
-    }
-  }
-
-  @if $platform == "windows11" {
-    padding: 6px 11px;
-  }
   
   &.btn-is-loading {
     cursor: auto;
-    span { opacity: 0; }
+    span {
+      opacity: 0;
+    }
   }
 
   &.app-btn-primary {
-    @if $platform == "windows10" { background-color: var(--PrimaryColor); }
-    @if $platform == "windows11" { background-color: var(--color-primary-adaptive); }
+    background-color: var(--color-primary-adaptive);
   }
   &.app-btn-subtle {
     border-color: transparent;
@@ -62,14 +41,9 @@ button,
 
   &.app-btn-outline-primary {
     color: var(--color-day-primary-night-white);
-    @if $platform == "windows10" {
-      border: 2px solid var(--PrimaryColor);
-      &:active { background-color: var(--PrimaryColor); }
-    }
-    @if $platform == "windows11" {
-      border: 1px solid var(--color-primary-adaptive);
-      &:active { background-color: var(--color-primary-adaptive); }
-    }
+    border: 1px solid var(--color-primary-adaptive);
+    &:active { background-color: var(--color-primary-adaptive); }
+    
   }
   &.app-btn-outline-danger {
     color: var(--color-danger-default);
@@ -100,15 +74,12 @@ button,
     }
   }
 
-  @if $platform == "windows10" {
-    &.animate:active {
-      transform: scale(0.98, 0.98);
-    }
-  }
-  
+ 
   &[disabled] {
     @extend .input-field-default-disabled;
-    span { pointer-events: none; }
+    span {
+      pointer-events: none;
+    }
     &:active, &:hover {
       @extend .input-field-default-disabled;
     }
@@ -122,11 +93,12 @@ button,
   }
   // If Icon is the only child
   i:only-child {
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 0;
   }
   // If Icon is the only child i.e its a IconButton.
   &:has(i:only-child) {
-    padding: 0px 5px;
+    padding: 0px 7px;
   }
 }
 
@@ -137,22 +109,14 @@ button,
     }
   }
   .app-btn:not([class*="outline"]) {
-    @if $platform == "windows10" {
-      &:hover:not(:active) {
-        filter: none;
-        border-color: transparent;
-      }
-    }
-    @if $platform == "windows11" {
-      &:hover:not(:active) {
-        filter: none;
-        opacity: 1;
-      }
+    &:hover:not(:active) {
+      filter: none;
+      opacity: 1;
     }
   }
 }
 
-@if $platform == "windows11" {
+
   body.dark-theme {
     .app-btn-primary,
     .app-btn-danger,
@@ -161,4 +125,3 @@ button,
       border-bottom-color: #{"hsla(0, 0%, 0%, 14%)"};
     }
   }
-}

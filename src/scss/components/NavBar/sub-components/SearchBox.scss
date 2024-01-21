@@ -3,8 +3,7 @@
     width: -webkit-fill-available;
     width: -moz-available;
     user-select: none;
-    margin: 5px 20px;
-    @if $platform == "windows10" { filter: opacity(0.7); }
+    margin: 5px 15px;
   }
 }
 
@@ -13,21 +12,27 @@
   .app-navbar-wrap.collapsed {
     .app-input-search-box {
       margin: 5px;
+      padding: 8px 10px;
       width: fit-content;
-      border-radius: 4px;
-      padding: 10px 15px;
+      border-radius: 5px;
 
-      &:hover { background-color: var(--color-ui-hover-strong); }
-      &:active { opacity: 0.7; }
+      &:hover {
+        background-color: var(--color-ui-hover-strong);
+      }
+      &:active {
+        opacity: 0.7;
+      }
 
       &::after {
         width: auto;
         margin: unset;
-        font-size: 22px;
+        font-size: 20px;
         position: initial;
       }
       
-      input { display: none; }
+      input {
+        display: none;
+      }
     }
   }
 }

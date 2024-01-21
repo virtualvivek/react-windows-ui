@@ -24,3 +24,5 @@ yarn-debug.log*
 yarn-error.log*
 
 debug.log
+
+/src/lib_4.2.2

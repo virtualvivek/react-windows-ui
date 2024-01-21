@@ -45,7 +45,7 @@ ul.app-cmdbar-menu-list .cmdbar-submenu {
 }
 
 .app-cmdbar-button {
-  height: 33px;
+  height: 32px;
   border: none;
   background: none;
   padding: 8px 10px;
@@ -55,8 +55,7 @@ ul.app-cmdbar-menu-list .cmdbar-submenu {
   &:hover {
     background: var(--color-ui-hover-default);
   }
-  @if $platform == "windows10" { &:active { background: var(--color-button-default); } }
-  @if $platform == "windows11" { &:active { opacity: 0.7; } }
+  &:active { opacity: 0.7; }
   
   &[disabled] {
     filter: contrast(0);

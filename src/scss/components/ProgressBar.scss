@@ -24,14 +24,14 @@
     overflow: hidden;
     position: relative;
     background: var(--color-progress-bg);
-    @if $platform == "windows11" { border-radius: 4px; }
+    border-radius: 4px;
 
     span {
       height: 100%;
       position: absolute;
       transition: width 1s ease-in-out;
       background-color: var(--color-primary-adaptive);
-      @if $platform == "windows11" { border-radius: 4px; }
+      border-radius: 4px;
 
       &.indeterminate {
         height: 100%;
@@ -39,17 +39,11 @@
         transform-origin: 0% 50%;
         transition-property: background;
         animation: indeterminateAnimation 1s infinite linear;
-        @if $platform == "windows11" {
+        
           border-radius: 4px;
           background-color: var(--color-primary-adaptive);
-        }
-        @if $platform == "windows10" {
-          background-image: radial-gradient(
-            circle at 50% 50%, 
-            var(--color-primary-adaptive) 10%, 
-            transparent 90%
-          );
-        }
+        
+        
       }
     }
   }

@@ -19,33 +19,16 @@
     content: "";
     display: flex;
     transition: background 0.1s;
-
-    @if $platform == "windows10" {
-      border-radius: 0;
-      border: 2px solid var(--color-button-hover);
-      background-color: var(--color-background-default);
-    }
-
-    @if $platform == "windows11" {
-      padding: 1px;
-      border-radius: 4px;
-      border: 1px solid var(--color-input-border-strong);
-      background-color: var(--color-ui-hover-default);
-    }
+    padding: 1px;
+    border-radius: 4px;
+    border: 1px solid var(--color-input-border-strong);
+    background-color: var(--color-ui-hover-default);
   }
   &:checked {
-    @if $platform == "windows10" {
-      &::before {
-        background: var(--PrimaryColor);
-        border: 2px solid var(--PrimaryColor);
-      }
-    }
-    @if $platform == "windows11" {
-      &::before {
-        padding: 0;
-        background: var(--color-primary-adaptive);
-        border: 2px solid var(--color-primary-adaptive);
-      }
+    &::before {
+      padding: 0;
+      background: var(--color-primary-adaptive);
+      border: 2px solid var(--color-primary-adaptive);
     }
     
     &::after {
@@ -57,8 +40,7 @@
       top: 3px;
       left: 7px;
       transform: rotate(45deg);
-      @if $platform == "windows10" { border: solid white; }
-      @if $platform == "windows11" { border: solid var(--color-background-default); }
+      border: solid var(--color-background-default);
       border-width: 0 2px 2px 0;
       border-radius: 1px;
     }

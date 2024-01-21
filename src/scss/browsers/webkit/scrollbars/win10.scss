@@ -9,7 +9,7 @@
     border: 6px solid transparent;
     border-top-width: 2px;
     border-bottom-width: 2px;
-    @if $platform == "windows11" { border-radius: 4px; }
+    border-radius: 4px;
   }
   ::-webkit-scrollbar-thumb:horizontal {
     border-top-width: 6px;

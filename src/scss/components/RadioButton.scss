@@ -10,15 +10,8 @@
   transition: border 0.2s ease;
   -webkit-tap-highlight-color: transparent; 
 
-  @if $platform == "windows10" {
-    border: 2px solid var(--color-text-default);
-    &:checked {
-      border: 2px solid var(--PrimaryColor);
-      background-color: var(--color-text-default);
-      box-shadow: inset 0 0 0 2.8px var(--color-background-default);
-    }
-  }
-  @if $platform == "windows11" {
+  
+ 
     background: var(--color-ui-hover-default);
     border: 1px solid var(--color-input-border-strong);
 
@@ -34,7 +27,7 @@
       transition: 0s ease;
       border: 1px solid var(--color-primary-adaptive);
     }
-  }
+  
 
   
   &:disabled {

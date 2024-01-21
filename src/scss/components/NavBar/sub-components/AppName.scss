@@ -1,12 +1,10 @@
 .app-navbar-name {
-  font-weight: 500;
-  color: var(--color-text-default);
-
-  font-size: 15px;
+  font-size: 14px;
   cursor: default;
   white-space: nowrap;
   display: inline-block;
   text-overflow: ellipsis;
+  color: var(--color-text-default);
   // padding-inline-start: 10px;
 
   &::-moz-selection {
@@ -20,5 +18,7 @@
 }
 
 @media only screen and (max-width: 760px) {
-  .app-navbar-name { padding-inline-start: 5px; }
+  .app-navbar-name {
+    padding-inline-start: 5px;
+  }
 }

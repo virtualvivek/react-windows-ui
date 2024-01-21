@@ -44,9 +44,7 @@
       border-top-right-radius: 6px;
       border-bottom-right-radius: 6px;
       
-      .app-navbar-toggler {
-        @if $platform=="windows10" { padding: 12.5px 20px; margin: 0 5px; }
-      }
+      
       :hover > li,
       :hover > .app-navbar-toggler,
       :hover > .app-navbar-submenu-title {

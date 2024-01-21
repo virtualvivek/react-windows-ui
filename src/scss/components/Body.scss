@@ -31,16 +31,12 @@ body.modal-open {
   border: 1px solid var(--color-ui-border-default);
 }
 
-@if $platform == "windows10" {
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-  }
-}
-@if $platform == "windows11" {
+
+
   h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
   }
-}
+
 
 h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
   opacity: 0.58;

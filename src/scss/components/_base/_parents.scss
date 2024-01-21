@@ -43,10 +43,10 @@
 
 .input-btn-default {
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
   border: 1px solid;
   user-select: none;
-  border-radius: 4px;
+  border-radius: 5px;
   color: var(--color-text-default);
   background-color: var(--color-button-default);
   border-color: rgba(0,0,0,0.08);
@@ -54,10 +54,10 @@
   border-top-color: rgba(0,0,0,0.08);
   &:hover {
     opacity: 0.85;
-    filter: brightness(0.95);
+    filter: brightness(0.9);
   }
   &:active {
-    filter: brightness(0.85);
+    filter: brightness(0.8);
   }
 }
 
@@ -68,60 +68,50 @@
 
 .input-field-focused,
 .app-input-container:focus-within .app-input-label {
-  filter: none;
   outline: none;
-  border-bottom-color: var(--color-primary-adaptive);
-  background-image: radial-gradient(var(--color-primary-adaptive) 100%, transparent 100%);
   transition: 0s;
-  background-repeat: no-repeat;
-  background-size: 100% 1px;
-  background-position-y: bottom;
+  background: var(--color-input-bg-focused);
+  background-position-y: bottom !important;
+  border-bottom-color: var(--color-primary-adaptive) !important;
+  background-image: radial-gradient(var(--color-primary-adaptive) 100%, transparent 100%) !important;
 }
 
 .input-field-default {
   width: inherit;
   line-height: 1;
-  font-size: 15px;
+  font-size: 14px;
   box-shadow: none;
   padding: 0 0 0 10px;
   color: var(--color-text-default);
   -webkit-tap-highlight-color: transparent;
   background: var(--color-input-bg-default);
-
-  @if $platform == "windows10" {
-    height: 30px;
-    border: 2.4px solid #999;
-    &:hover {
-      border-color: #777;
-    }
-  }
-
-  @if $platform == "windows11" {
-    height: 33px;
-    border-radius: 4px;
-    border: 1px solid var(--color-input-border-default);
-    background-image: radial-gradient(#777 100%, transparent 100%);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100% 1px;
-    background-position-y: calc(100% + 1px);
-    &:focus { @extend .input-field-focused; }
-  }
   
+  
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid var(--color-input-border-default);
+  background-image: radial-gradient(var(--color-input-border-bottom) 100%, transparent 100%) !important;
+  background-repeat: no-repeat !important;
+  background-position: bottom !important;
+  background-size: 100% 1px !important;
+  background-position-y: calc(100% + 1px) !important;
+  &:hover:not(:focus) {
+    background: var(--color-input-bg-hover);
+  }
+  &:focus {
+    border: 1px solid var(--color-input-border-focused);
+    @extend .input-field-focused;
+  }
   &[disabled] {
     @extend .input-field-default-disabled;
+  }
+  &::placeholder {
+    color: var(--color-input-placeholder);
   }
 }
 .input-field-default-disabled {
   cursor: not-allowed !important;
   filter: contrast(0.6) !important;
-}
-.app-textarea,
-.app-input-text,
-.app-input-calendar {
-  &:hover:not(:focus-within) {
-    filter: contrast(0.97);
-  }
 }
 
 
@@ -170,16 +160,9 @@
   min-width: -moz-available;
   -webkit-tap-highlight-color: transparent;
   background: var(--color-dropdown-menu-bg);
-
-  @if $platform == "windows10" {
-    box-shadow: 0 1px 1px #55555544;
-    border-color: var(--color-button-default);
-    }
-  @if $platform == "windows11" {
-    border-radius: 6px;
-    box-shadow: 0 2px 5px #22222244;
-    border-color: var(--color-ui-border-default);
-  }
+  border-radius: 6px;
+  box-shadow: 0 2px 5px #22222244;
+  border-color: var(--color-ui-border-default);
 
   &.show {
     @extend .transition_dropdown_show;
@@ -200,18 +183,12 @@
       align-items: center;
       color: var(--color-text-default);
       -webkit-tap-highlight-color: transparent;
-      
-      @if $platform == "windows10" {
-        padding: 10px 12px;
-        &:active { background-color: var(--color-ui-active-default); }
+      margin: 5px;
+      padding: 10px;
+      border-radius: 4px;
+      &:active {
+        opacity: 0.7;
       }
-      @if $platform == "windows11" {
-        margin: 5px;
-        padding: 10px;
-        border-radius: 4px;
-        &:active { opacity: 0.7; }
-      }
-
       &:hover {
         background-color: var(--color-ui-hover-strong);
       }
@@ -228,8 +205,6 @@
   padding: 15px;
   display: block;
   text-align: right;
-  @if $platform == "windows11" {
-    border-top: 1px solid var(--color-ui-hover-strong);
-    background-color: var(--color-navbar-bg-default);
-  }
+  border-top: 1px solid var(--color-ui-hover-strong);
+  background-color: var(--color-navbar-bg-default);
 }

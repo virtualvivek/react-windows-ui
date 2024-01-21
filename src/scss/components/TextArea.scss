@@ -15,8 +15,5 @@
   &.resize-vertical { resize: vertical; }
   &.resize-horizontal { resize: horizontal; }
 
-  @if $platform == "windows10" {
-    &:hover { border-color: #777; }
-    &:focus { border-color: #666; }
-  }
+  
 }

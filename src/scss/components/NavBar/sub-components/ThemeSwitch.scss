@@ -2,8 +2,8 @@
   margin: 5px;
   display: grid;
   cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 4px;
+  padding: 8px 10px;
+  border-radius: 5px;
   position: relative;
   align-items: center;
   flex-direction: row;
@@ -11,16 +11,17 @@
   justify-content: flex-start;
   -webkit-tap-highlight-color: transparent;
 
-  &:hover { background: var(--color-ui-hover-strong); }
+  &:hover {
+    background: var(--color-ui-hover-strong);
+  }
   &:active {
-    @if $platform == "windows10" { background-color: var(--color-ui-active-default); }
-    @if $platform == "windows11" { opacity: 0.7; }
+    opacity: 0.7;
   }
 
   span {
     width: 100px;
     line-height: 1;
-    font-size: 15px;
+    font-size: 14px;
     user-select: none;
     padding-left: 10px;
     position: relative;
@@ -42,7 +43,7 @@
 
 // 🌙 Moon Icon Shown
 input + .app-navbar-theme-switch-icon:before {
-  font-size: 22px;
+  font-size: 20px;
   content: "\f120";
   font-family: icons10;
 }

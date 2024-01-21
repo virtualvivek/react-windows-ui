@@ -1,5 +1,8 @@
 @media only screen and (min-width: 760px) {
   .app-navbar-wrap.collapsed {
+    ::-webkit-scrollbar {
+      inline-size: 0px;
+    }
     nav ul h1,
     nav a span,
     .app-navbar-name {
@@ -7,7 +10,7 @@
     }
 
     nav {
-      width: 62px;
+      width: 50px;
       li a {
         text-overflow: clip;
       }

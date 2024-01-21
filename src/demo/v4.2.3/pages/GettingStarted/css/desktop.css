@@ -1,0 +1,134 @@
+.template-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.code-container.getting-started {
+  width: 44vw;
+  height: 60vh;
+  resize: auto;
+}
+
+.template-container .true {
+  border-color: var(--color-success-default) !important;
+}
+
+.template-desktop {
+  border-radius: 12px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5px 0;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  border: 8px solid #000;
+}
+
+.template-navbar {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-navbar-bg-default);
+}
+
+.temp-toggler {
+  height: 5px;
+  font-size: 22px;
+  line-height: 0;
+}
+
+.temp-navitem {
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px;
+  gap: 10px;
+  display: flex;
+  cursor: pointer;
+  border-radius: 4px;
+  padding-left: 10px;
+  align-items: center;
+  user-select: none;
+  border: 2px solid transparent;
+}
+
+.temp-navimg {
+  width: 16px;
+  border-radius: 4px;
+}
+
+.temp-navitem-active::before {
+  content: " ";
+  height: 13px;
+  width: 2.2px;
+  margin-left: -15px;
+  background-color: var(--color-primary-adaptive);
+}
+
+.temp-navsearch {
+  border-radius: 4px;
+  justify-content: space-between;
+  background-color: var(--color-input-bg-default);
+  border: 1px solid var(--color-input-border-default);
+  border-bottom: 1px solid #77777788;
+  margin: 6px;
+}
+
+.temp-navsearch:hover {
+  margin: 5px;
+}
+
+.temp-navsearch.true {
+  border-width: 2px;
+  margin: 5px;
+}
+
+.template-page-container {
+  width: 200px;
+  border: 2px solid transparent;
+}
+
+.template-page-container span {
+  padding: 15px;
+  font-size: 18px;
+  user-select: none;
+  position: relative;
+  display: inline-flex;
+}
+
+.temp-title {
+  line-height: 2;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+  margin: 0 5px 0 5px;
+  border-radius: 4px;
+  margin-bottom: 1px;
+  padding-left: 10px;
+  border: 2px solid transparent;
+  border-bottom: 1px solid var(--color-progress-bg) !important;
+}
+.temp-title:hover {
+  margin-bottom: 0;
+}
+
+.template-page-container {
+  cursor: pointer;
+}
+
+.temp-divider {
+  width: 1px;
+  background: #000;
+  margin: 45px 15px;
+}
+
+.template-page-container:hover,
+.temp-navitem:hover,
+.temp-title:hover {
+  border: 2px solid var(--color-success-default) !important;
+}
+
+.template-page-container:active,
+.temp-navitem:active,
+.temp-title:active {
+  opacity: 0.7;
+}

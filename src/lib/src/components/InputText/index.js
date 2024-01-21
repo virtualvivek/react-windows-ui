@@ -43,8 +43,10 @@ const InputText = forwardRef((props, ref) => {
 
   const clearTxt = useCallback(() => {
     inputTxtRef.current.value = "";
-    clrBtnRef.current.style.visibility = "";
-    const event = { target: { value: "" } };
+    clrBtnRef.current.classList.remove("show");
+    const event = {
+      target: { value: "" }
+    };
     onChange(event);
     onClearButtonClick();
   }, [onClearButtonClick, inputTxtRef, onChange]);
@@ -59,8 +61,8 @@ const InputText = forwardRef((props, ref) => {
     onChange(e);
     if(clearButton) {
       (inputTxtRef.current.value!=="")
-      ? clrBtnRef.current.style.visibility = "visible"
-      : clrBtnRef.current.style.visibility = "";
+      ? clrBtnRef.current.classList.add("show")
+      : clrBtnRef.current.classList.remove("show")
     }
   }
 

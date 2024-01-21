@@ -5,12 +5,10 @@
   &::after {
     width: 25px;
     z-index: 1;
+    font-size: 16px;
     content: "\f1b9";
     margin-left: -25px;
     font-family: icons10;
-    
-    @if $platform == "windows10" { font-size: 18px; font-weight: 600; }
-    @if $platform == "windows11" { font-size: 16px; font-weight: 500; }
   }
 }
 
@@ -28,11 +26,6 @@
   position: relative;
 
   input {
-    @if $platform == "windows10" {
-      &:active, &:focus {
-        border-color: var(--PrimaryColor);
-      }
-    }
     &::-webkit-search-cancel-button {
       -webkit-appearance: none;
       position: relative;

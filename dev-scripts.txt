@@ -12,7 +12,6 @@ package.json >
 --compile--
 
 npm run compile:sass
-npm run compile:sass-win10
 npm run compile:sass-rtl
 
 ----------------------------------------------------------------------------

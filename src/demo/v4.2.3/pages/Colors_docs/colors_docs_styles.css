@@ -1,0 +1,11 @@
+.demo-colors-value {
+  font-style: italic;
+}
+
+.demo-colors-box {
+  width: 15px;
+  height: 15px;
+  margin: 0 8px 0 0;
+  display: inline-flex;
+  border: 1px solid #77777777;
+}

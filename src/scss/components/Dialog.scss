@@ -15,9 +15,9 @@
     transition: all 0.24s;
     transform: translateY(20px) scale(0.98);
 
-    @if $platform == "windows11" {
+    
       border-radius: 8px;
-    }
+    
 
     .app-dialog-footer {
       @extend .app-modal-footer-default;

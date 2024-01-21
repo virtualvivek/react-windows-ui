@@ -1,14 +1,5 @@
-@import "./win10/light.scss";
-@import "./win10/dark.scss";
-@import "./win11/main.scss";
-@import "./win11/light.scss";
-@import "./win11/dark.scss";
+@import "./light.scss";
+@import "./dark.scss";
 
-@if $platform == "windows10" {
-  @include light-win10();
-  @include dark-win10();
-}
-@if $platform == "windows11" {
-  @include win11-light();
-  @include win11-dark();
-}
+@include colors-light();
+@include colors-dark();

@@ -11,8 +11,7 @@
     position: relative;
     border-radius: 50px;
     transition: 200ms ease-out;
-    @if $platform == "windows10" { width: 44px; border: 2px solid var(--color-text-default); }
-    @if $platform == "windows11" { width: 42px; border: 1px solid var(--color-text-default); }
+    width: 42px; border: 1px solid var(--color-text-default);
 
     &:hover {
       opacity: 0.8;
@@ -50,22 +49,14 @@
     // State UnChecked
     &:checked {
       ~.app-switch-view {
-        @if $platform == "windows10" {
-          border-color: var(--PrimaryColor);
-          background-color: var(--PrimaryColor);
-          &::before {
-            background: #fff;
-            transform: translateX(calc(2 * 100% - 3px));
-          }
-        }
-        @if $platform == "windows11" {
+        
           border-color: var(--color-primary-adaptive);
           background-color: var(--color-primary-adaptive);
           &::before {
             background: var(--color-background-default);
             transform: translateX(calc(2 * 100% - 5px));
           }
-        }
+        
       }
       ~span::before {
         display: block;
@@ -81,6 +72,68 @@
     }
   }
 }
+
+    .toggle-switch {
+      -webkit-user-drag: none;
+      box-sizing: border-box;
+      align-items: center;
+      appearance: none;
+      block-size: 20px;
+      border-radius: 20px;
+      display: inline-flex;
+      inline-size: 40px;
+      line-height: 20px;
+      margin: 0;
+      outline: none;
+      position: relative;
+      user-select: none;
+      border: 1px solid var(--color-text-default);
+
+      &:before {
+        background: var(--color-text-default);
+        block-size: 12px;
+        border-radius: 7px;
+        content: "";
+        inline-size: 12px;
+        inset-inline-start: 3px;
+        position: absolute;
+        transition: 100ms ease-out;
+        will-change: translate;
+      }
+
+      &:hover {
+        background-color: #77777755;
+        &:before {
+          block-size: 14px;
+          inline-size: 14px;
+        }
+      }
+
+      &:active {
+        &:before {
+          block-size: 14px;
+          inline-size: 17px;
+        }
+      }
+
+      // State Checked ----------
+      &:checked {
+        border: none;
+        background-color: var(--color-primary-adaptive);
+
+        &:before {
+          background: var(--color-background-default);
+          transform: translate(20px);
+        }
+
+        &:active {
+          &::before {
+            margin-inline-start: -4px;
+          }
+        }
+      }
+    }
+    
 
 @mixin switch-mobile() {
   .app-switch {

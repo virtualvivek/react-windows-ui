@@ -5,7 +5,7 @@
   overflow-x: auto;
   border: 1px solid var(--color-ui-border-default);
   background-color: var(--color-card-bg-default);
-  @if $platform == "windows11" { border-radius: 4px; }
+  border-radius: 4px;
 }
 .app-table-view {
   border-collapse: collapse;
