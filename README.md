@@ -1,4 +1,5 @@
-<p align="center">
+<p align="center">                     
+	
   <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="250" />
 </p>
 <h1 align="center">react-windows-ui</h1>
@@ -46,7 +47,6 @@ import "react-windows-ui/icons/winui-icons.min.css";
 ## 🚀 [See `App.js` code & more »](https://virtualvivek.github.io/react-windows-ui/#/v4.2.2/getting_started)
 
 # Usage
-
 ```js
 import { Button, InputText } from "react-windows-ui";
 
