@@ -37,7 +37,7 @@ import {
   SliderBarDocs,
   SwitchDocs,
   TableViewDocs
-} from "./pages";
+} from "./docs";
 
 import { lib_version } from "./values";
 import NavBarItem from "./navbar_items.json";
@@ -46,7 +46,6 @@ import GithubIcon from "../assets/static/GithubIcon";
 
 import "../../lib/config/app-config.css";
 import "../../lib/dist/react-windows-ui.min.css";
-import "./_lib/styles/doc-styles.css";
 import "../../lib/icons/winui-icons.min.css";
 
 const AppFourTwoThree = () => {

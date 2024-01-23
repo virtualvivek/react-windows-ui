@@ -44,10 +44,9 @@ import NavBarItem from "./navbar_items.json";
 import Img2 from "../assets/illustration/mountain.jpg";
 import GithubIcon from "../assets/static/GithubIcon";
 
-import "../../lib/config/app-config.css";
-import "../../lib/dist/react-windows-ui.min.css";
-import "./_lib/styles/doc-styles.css";
-import "../../lib/icons/winui-icons.min.css";
+import "./_lib/config/app-config.css";
+import "./_lib/react-windows-ui.min.css";
+import "./_lib/icons/winui-icons.min.css";
 
 const AppFourTwoTwo = () => {
 

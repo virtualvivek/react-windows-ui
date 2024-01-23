@@ -13,15 +13,7 @@ const Switch = forwardRef((props, ref) => {
   } = props;
 
   return (
-    <label className="app-switch" title={tooltip}>
-      <input
-        ref={ref}
-        {...otherProps}
-        type="checkbox"
-        disabled={props.disabled}
-        onChange={props.onChange}
-        defaultChecked={props.defaultChecked}
-      />
+    <label className="app-switch-container" title={tooltip}>
       {label && labelPosition === "start" && (
         <span
           className="app-switch-label"
@@ -30,7 +22,17 @@ const Switch = forwardRef((props, ref) => {
           style={{ width: labelFixedWidth }}>
         </span>
       )}
-      <div className="app-switch-view"></div>
+
+      <input
+        ref={ref}
+        {...otherProps}
+        type="checkbox"
+        class="app-switch"
+        disabled={props.disabled}
+        onChange={props.onChange}
+        defaultChecked={props.defaultChecked}
+      />
+
       {label && labelPosition === "end" && (
         <span
           className="app-switch-label"

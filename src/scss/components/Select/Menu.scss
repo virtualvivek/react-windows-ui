@@ -22,14 +22,18 @@
 .app-select-menu {
   select {
     @extend .input-btn-default;
-    height: 100%;
+    height: 32px;
     appearance: none;
     padding: 0 35px 0 10px;
   
-    height: 33px;
-  
-    &:focus { outline: none; }
-    &[disabled] { @extend .input-field-default-disabled; }
-    option { background-color: var(--color-background-default); }
+    &:focus {
+      outline: none;
+    }
+    &[disabled] {
+      @extend .input-field-default-disabled;
+    }
+    option {
+      background-color: var(--color-background-default);
+    }
   }
 }

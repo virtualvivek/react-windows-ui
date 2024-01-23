@@ -1,16 +1,11 @@
 .app-checkbox {
   cursor: pointer;
   position: relative;
-  transition: 0.2s ease;
   -moz-appearance: none;
   -webkit-appearance: none;
 
   &:hover {
     opacity: 0.8;
-  }
-  &:active {
-    transition: 0.02s ease;
-    transform: scale(0.92, 0.92);
   }
 
   &::before {
@@ -18,11 +13,22 @@
     height: 20px;
     content: "";
     display: flex;
-    transition: background 0.1s;
     padding: 1px;
     border-radius: 4px;
     border: 1px solid var(--color-input-border-strong);
     background-color: var(--color-ui-hover-default);
+  }
+  &::after {
+    width: 0px;
+    height: 8.5px;
+    content: "";
+    top: 5.4px;
+    left: 3.4px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    transition: width 0.24s;
+    background-image: url("data:image/svg+xml,%3Csvg width='14px' height='10px' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='1,5 6,9 14,1' style='fill:none;stroke:black;stroke-width:1.6'/%3E%3C/svg%3E");
   }
   &:checked {
     &::before {
@@ -32,17 +38,7 @@
     }
     
     &::after {
-      width: 6px;
-      height: 11px;
-      content: "";
-      pointer-events: none;
-      position: absolute;
-      top: 3px;
-      left: 7px;
-      transform: rotate(45deg);
-      border: solid var(--color-background-default);
-      border-width: 0 2px 2px 0;
-      border-radius: 1px;
+      width: 12px;
     }
 
     &:disabled {
@@ -54,4 +50,7 @@
   &:disabled::before {
     cursor: not-allowed;
   }
+}
+[data-theme="light"] .app-checkbox::after {
+  filter: invert(1);
 }

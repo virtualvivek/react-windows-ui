@@ -18,19 +18,17 @@
 
 .app-dropdown-list-item {
   &.selected span {
+    background-color: var(--color-ui-hover-strong);
     
-    
-      background-color: var(--color-ui-hover-strong);
-      &::before {
-        width: 3px;
-        height: 18px;
-        content: "";
-        position: absolute;
-        left: 0;
-        border-radius: 50px;
-        background-color: var(--color-primary-adaptive);
-      }
-    
+    &::before {
+      width: 3px;
+      height: 18px;
+      content: "";
+      position: absolute;
+      left: 0;
+      border-radius: 50px;
+      background-color: var(--color-primary-adaptive);
+    }
   }
   &.hidden {
     display: none;

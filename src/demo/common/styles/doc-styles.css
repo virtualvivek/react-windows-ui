@@ -23,6 +23,7 @@
   font-size: 13px;
   padding: 2px 8px;
   user-select: none;
+  margin-left: 10px;
   border-radius: 20px;
   color: var(--color-text-default);
   background: var(--color-link-bg-hover);

@@ -1,6 +1,6 @@
 @mixin scrollbar-win11() {
   ::-webkit-scrollbar {
-    inline-size: 15px;
+    inline-size: 14px;
     background-color: transparent;
   }
 
@@ -20,6 +20,8 @@
                 transparent;
   }
 
+
+
   ::-webkit-scrollbar:horizontal:hover {
     background: var(--scrollbar-caret-bottom) left center/contain no-repeat,
                 var(--scrollbar-caret-top) right center/contain no-repeat,
@@ -28,7 +30,7 @@
 
   ::-webkit-scrollbar-thumb {
     border-block: none;
-    border-radius: 7px;
+    border-radius: 9px;
     background: var(--color-scroll-thumb);
     background-clip: padding-box;
     border: 6px solid transparent;
