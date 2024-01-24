@@ -31,37 +31,47 @@ button,
   &.app-btn-primary {
     background-color: var(--color-primary-adaptive);
   }
-  &.app-btn-subtle {
-    border-color: transparent;
-    background-color: transparent;
-    &:hover { background-color: var(--color-ui-hover-default); } 
-  }
-  &.app-btn-success { background: var(--color-success-default); }
-  &.app-btn-danger { background: var(--color-danger-default); }
-
   &.app-btn-outline-primary {
     color: var(--color-day-primary-night-white);
     border: 1px solid var(--color-primary-adaptive);
-    &:active { background-color: var(--color-primary-adaptive); }
-    
+    &:active {
+      background-color: var(--color-primary-adaptive);
+    }
   }
-  &.app-btn-outline-danger {
-    color: var(--color-danger-default);
-    border-color: var(--color-danger-default);
-    &:active { background-color: var(--color-danger-default); }
+  
+  &.app-btn-success {
+    background: var(--color-success-default);
   }
   &.app-btn-outline-success {
     color: var(--color-success-default);
     border-color: var(--color-success-default);
-    &:active { background-color: var(--color-success-default); }
+    &:active {
+      background-color: var(--color-success-default);
+    }
   }
-
-  &.app-btn-primary,
-  &.app-btn-danger,
-  &.app-btn-success {
-    color: var(--color-scheme-absolute);
-    border-color: rgba(255, 255, 255, 0.08);
-    border-bottom-color: rgba(0, 0, 0, 0.8);
+  
+  &.app-btn-danger {
+    background: var(--color-danger-default);
+  }
+  &.app-btn-outline-danger {
+    color: var(--color-danger-default);
+    border-color: var(--color-danger-default);
+    &:active {
+      background-color: var(--color-danger-default);
+    }
+  }
+  
+  &.app-btn-subtle {
+    border-color: transparent;
+    background-color: transparent;
+    &:hover {
+      opacity: 1;
+      background-color: var(--color-ui-hover-default);
+    } 
+  }
+  
+  &[class*="-btn-"]:hover:not(:active) {
+    filter: none;
   }
   &[class*="outline"] {
     background-color: transparent;
@@ -73,7 +83,6 @@ button,
       backdrop-filter: grayscale(1);
     }
   }
-
  
   &[disabled] {
     @extend .input-field-default-disabled;
@@ -91,16 +100,25 @@ button,
   span {
     transition: opacity ease 0.2s;
   }
-  // If Icon is the only child
+  // If icon is the only child
   i:only-child {
     font-size: 18px;
     line-height: 0;
   }
-  // If Icon is the only child i.e its a IconButton.
+  // If icon is the only child i.e its a IconButton.
   &:has(i:only-child) {
     padding: 0px 7px;
   }
 }
+
+.app-btn-primary,
+.app-btn-danger,
+.app-btn-success {
+  color: var(--color-scheme-absolute);
+  border-color: rgba(255, 255, 255, 0.08);
+  border-bottom-color: rgba(0, 0, 0, 0.6);
+}
+
 
 @mixin button-mobile() {
   .app-btn {

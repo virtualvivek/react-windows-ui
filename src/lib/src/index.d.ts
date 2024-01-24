@@ -11,6 +11,7 @@ export { default as Accordion } from "./components/Accordion";
 export { default as AvatarView } from "./components/AvatarView";
 export { default as Alert } from "./components/Alert";
 export { default as Button } from "./components/Button";
+export { default as ButtonGroup } from "./components/ButtonGroup";
 export { default as Checkbox } from "./components/Checkbox";
 export { default as CommandBar } from "./components/CommandBar";
 export { default as ColorPickerItem } from "./components/ColorPicker/ColorPickerItem";

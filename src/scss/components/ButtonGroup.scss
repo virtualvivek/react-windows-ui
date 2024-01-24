@@ -1,0 +1,11 @@
+.app-btn-group {
+  button:first-child {
+    border-start-end-radius: 0;
+    border-end-end-radius: 0;
+  }
+
+  button:last-child {
+    border-start-start-radius: 0;
+    border-end-start-radius: 0;
+  }
+}
