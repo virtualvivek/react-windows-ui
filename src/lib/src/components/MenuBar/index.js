@@ -9,7 +9,7 @@ const MenuBar = (props) => {
 
   // # Click Outside Register Code
   const wrapperRef = useRef(null);
-  useOutSideClick(wrapperRef, () => setMenubar(false));
+  useOutSideClick([wrapperRef], () => setMenubar(false));
   //--------------------------------------------------------------------
 
   const toggleMenuBar = () => {

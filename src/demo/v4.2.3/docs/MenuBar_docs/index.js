@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { NavPageContainer, MenuBar } from '../../_lib'
+import MenuBary from '../../../../lib/src/components/MenuBary'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { MenuBarImportCode,MenuBarUsageCode,MenuBarOnClickUsageCode } from './codes'
 import PropsView from './props-view'
 
-class MenuBarDocs extends React.Component {
+const MenuBarDocs = () => {
 
-  sayhellow = () =>{alert("clicked")}
+  const anchorRef = useRef(null);
+  const dialogRef = useRef();
+  const sayhellow = () => {alert("clicked")}
 
-render() {
+  const handleButtonClick = () => {
+    dialogRef.current.openDialog();
+  };
+
   return (
   <NavPageContainer
     hasPadding
@@ -22,11 +28,24 @@ render() {
       label="Select a fruit"
       data={[
         {label: 'apple', link: '#', icon:<i className="icons10-camera"></i>},
-        {label: 'orange', link: '#',onClick:this.sayhellow},
+        {label: 'orange', link: '#',onClick:sayhellow},
         {label: 'banana', link: '#'},
         {label: 'peach', link: '#'},
         ]}
     />
+
+    <button onClick={handleButtonClick} ref={anchorRef}>Hi</button>
+    <MenuBary.Dialog
+      ref={dialogRef}
+      anchorRef={anchorRef}>
+      <h1>Hi</h1>
+      <MenuBary.List>
+        <MenuBary.ListItem title="Hi"/>
+        <MenuBary.Divider/>
+        <MenuBary.ListItem title="Hi"/>
+      </MenuBary.List>
+    </MenuBary.Dialog>
+    
     
     <h2>Import</h2>
 
@@ -55,9 +74,9 @@ render() {
       showSearchBar={true}
       data={[
         {label: 'apple', icon:<i className="icons10-camera"></i>},
-        {label: 'orange', onClick:this.sayhellow},
-        {label: 'banana', onClick:this.sayhellow},
-        {label: 'peach', onClick:this.sayhellow},
+        {label: 'orange', onClick:sayhellow},
+        {label: 'banana', onClick:sayhellow},
+        {label: 'peach', onClick:sayhellow},
       ]}
     />
     <br/><br/>
@@ -77,7 +96,6 @@ render() {
 
   </NavPageContainer>
 );
-}
 }
 
 export default MenuBarDocs

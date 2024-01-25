@@ -14,9 +14,9 @@ const IconsView = () => {
         <div className="app-alert-bar-content">
           <span>If you are looking for an icon not available in this project take a look at complete </span>
           <span>icons at: <a className="app-link" target="_blank" rel="noopener noreferrer" href="https://master--628d031b55e942004ac95df1.chromatic.com/?path=/docs/concepts-developer-icons-icons-catalog--page">
-            <b>@fluentui/react-icons</b>
+            @fluentui/react-icons
           </a> • <a className="app-link" target="_blank" rel="noopener noreferrer" href="https://github.com/microsoft/fluentui-system-icons">
-            <b>repository</b>
+            repository
           </a>.</span>
         </div>
       </div>
