@@ -1,0 +1,64 @@
+.app-menu-select {
+  padding: 0;
+  width: fit-content;
+  user-select: none;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // style, padding for end arrow & title ------
+  span,
+  &::after {
+    align-items: center;
+    display: inline-flex;
+  }
+
+  .app-menu-list {
+    @extend .app-dropdown-ul-default;
+  }
+
+  .app-menu-list-item {
+    &.selected span {
+      background-color: var(--color-ui-hover-strong);
+      
+      &::before {
+        width: 3px;
+        height: 18px;
+        content: "";
+        position: absolute;
+        left: 0;
+        border-radius: 50px;
+        background-color: var(--color-primary-adaptive);
+      }
+    }
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
+.app-menu-title {
+  @extend .input-btn-default;
+  padding-right: 32px;
+  height: 32px;
+  padding-left: 10px;
+
+  &::after {
+    right: 10px;
+    font-size: 14px;
+    content: "\f10c";
+    position: absolute;
+    pointer-events: none;
+    font-family: icons10;
+  }
+}
+
+select.app-menu-title {
+  appearance: none;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: center;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+}

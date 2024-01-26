@@ -1,11 +1,6 @@
-.app-dropdown-title {
+.app-menu-title {
   @extend .input-btn-default;
   padding-right: 40px;
   line-height: 1;
   height: 32px;
-}
-
-.app-select-text .app-dropdown-title {
-  border: none;
-  background-color: transparent;
 }

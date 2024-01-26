@@ -1,7 +1,6 @@
 import React from "react";
 
 const SelectNative = (props) => {
-
   const {
     data,
     name,
@@ -13,20 +12,19 @@ const SelectNative = (props) => {
   } = props;
 
   return (
-    <div className="app-select-menu" title={tooltip}>
-      <select
-        {...otherProps}
-        name={name}
-        disabled={disabled}
-        onChange={onChange}
-        onClick={onClick}>
-        {data.map(item => (
-          <option value={item.value} key={item.value}>
-            {item.label}
-          </option>
-        ))}
-      </select>
-    </div>
+    <select className="app-menu-title"
+      {...otherProps}
+      title={tooltip}
+      name={name}
+      disabled={disabled}
+      onChange={onChange}
+      onClick={onClick}>
+      {data.map(item => (
+        <option value={item.value} key={item.value}>
+          {item.label}
+        </option>
+      ))}
+    </select>
   )
 }
 

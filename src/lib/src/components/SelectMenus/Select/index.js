@@ -48,15 +48,15 @@ const Select = (props) => {
 
   return (
     <div
-      className={`${props.type === "text" ? "app-select-text" : "app-select-menu"}`}
+      className="app-menu-select"
       onClick={toggleDropdown}
       ref={wrapperRef}>
-      <span className="app-dropdown-title" title={props.tooltip}>{ilabel}</span>
-      <ul className={`app-dropdown-list ${isOpen && "show"}${isReverse}`}>
+      <span className="app-menu-title" title={props.tooltip}>{ilabel}</span>
+      <ul className={`app-menu-list${isOpen ? " show":""}${isReverse}`}>
         {items.map((item, index) => (
           <li
             key={index}
-            className={`app-dropdown-list-item${item.value === iValue ? " selected":""}`}
+            className={`app-menu-list-item${item.value === iValue ? " selected":""}`}
             onClick={() => handleItemClick(item.value, item.label)}>
             <span>{item.icon}{item.label}</span>
           </li>
