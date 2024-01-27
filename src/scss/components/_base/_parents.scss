@@ -50,8 +50,8 @@
   color: var(--color-text-default);
   background-color: var(--color-button-default);
   border-color: rgba(0,0,0,0.08);
-  border-bottom-color: rgba(0,0,0,0.2);
-  border-top-color: rgba(0,0,0,0.08);
+  border-bottom-color: var(--color-button-border-bottom-defult);
+  border-top-color: var(--color-button-border-top-default);
   &:hover {
     opacity: 0.85;
     filter: brightness(0.9);
@@ -59,11 +59,6 @@
   &:active {
     filter: brightness(0.8);
   }
-}
-
-.dark-theme .input-btn-default {
-  border-bottom-color: rgba(0,0,0,0.08);
-  border-top-color: rgba(117,117,117,0.22);
 }
 
 .input-field-focused,

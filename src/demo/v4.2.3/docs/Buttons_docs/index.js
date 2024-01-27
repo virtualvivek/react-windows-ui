@@ -34,11 +34,11 @@ class ButtonsDocs extends React.Component {
       <ButtonGroup>
       <Button
           value="Loading"
-          
+          type="subtle"
         />
         <Button
           icon={<i className="icons10-share"></i>}
-          
+          type="subtle"
         />
       </ButtonGroup>
 

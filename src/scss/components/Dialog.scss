@@ -9,15 +9,11 @@
     background-color: var(--color-foreground-dark);
     box-shadow: 0 0 7vh rgba(0, 0, 0, 0.25);
     border: 1px solid var(--color-foreground-dark);
-
     opacity: 0;
     visibility: hidden;
     transition: all 0.24s;
     transform: translateY(20px) scale(0.98);
-
-    
-      border-radius: 8px;
-    
+    border-radius: 8.6px;
 
     .app-dialog-footer {
       @extend .app-modal-footer-default;

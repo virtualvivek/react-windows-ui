@@ -28,7 +28,7 @@
       align-self: center;
       font-family: icons10;
       transform-origin: center;
-      transition: transform 167ms cubic-bezier(0, 0, 0, 1);
+      transition: transform 167ms cubic-bezier(0, 0, 0, 1) 0.2s; // delay of 0.2s
     }
 
     &[aria-expanded=true] {

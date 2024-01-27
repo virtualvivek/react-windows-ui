@@ -2,10 +2,12 @@
   button:first-child {
     border-start-end-radius: 0;
     border-end-end-radius: 0;
+    border-inline-end-color: var(--color-button-border-top-default);
   }
 
   button:last-child {
     border-start-start-radius: 0;
     border-end-start-radius: 0;
+    border-inline-start: 0;
   }
 }

@@ -21,19 +21,25 @@
   .app-menu-list-item {
     &.selected span {
       background-color: var(--color-ui-hover-strong);
-      
       &::before {
         width: 3px;
-        height: 18px;
+        height: 15px;
         content: "";
         position: absolute;
         left: 0;
-        border-radius: 50px;
+        border-radius: 8px;
         background-color: var(--color-primary-adaptive);
       }
     }
     &.hidden {
       display: none;
+    }
+    span {
+      &:active {
+        &::before {
+          height: 10.5px;
+        }
+      }
     }
   }
 }
@@ -43,22 +49,17 @@
   padding-right: 32px;
   height: 32px;
   padding-left: 10px;
-
-  &::after {
-    right: 10px;
-    font-size: 14px;
-    content: "\f10c";
-    position: absolute;
-    pointer-events: none;
-    font-family: icons10;
-  }
 }
 
-select.app-menu-title {
+.app-menu-title {
   appearance: none;
   background-repeat: no-repeat;
   background-repeat: no-repeat;
-  background-position-x: 100%;
+  background-position-x: calc(100% - 10px);
   background-position-y: center;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-image: url('data:image/svg+xml,<svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.14645 5.64645C3.34171 5.45118 3.65829 5.45118 3.85355 5.64645L8 9.79289L12.1464 5.64645C12.3417 5.45118 12.6583 5.45118 12.8536 5.64645C13.0488 5.84171 13.0488 6.15829 12.8536 6.35355L8.35355 10.8536C8.15829 11.0488 7.84171 11.0488 7.64645 10.8536L3.14645 6.35355C2.95118 6.15829 2.95118 5.84171 3.14645 5.64645Z" fill="%23000000"/></svg>');
+}
+
+[data-theme="dark"] .app-menu-title {
+  background-image: url('data:image/svg+xml,<svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.14645 5.64645C3.34171 5.45118 3.65829 5.45118 3.85355 5.64645L8 9.79289L12.1464 5.64645C12.3417 5.45118 12.6583 5.45118 12.8536 5.64645C13.0488 5.84171 13.0488 6.15829 12.8536 6.35355L8.35355 10.8536C8.15829 11.0488 7.84171 11.0488 7.64645 10.8536L3.14645 6.35355C2.95118 6.15829 2.95118 5.84171 3.14645 5.64645Z" fill="%23ffffff"/></svg>');
 }

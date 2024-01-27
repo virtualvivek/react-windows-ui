@@ -1,22 +1,3 @@
-.app-dropdown-menu {
-  ul.app-dropdown-list {
-    .app-input-text {
-      width: 100%;
-      height: 32px;
-      border-radius: 6px;
-      margin-bottom: 1px;
-
-      &:not(:focus) {
-        border-color: #99999988;
-      }
-    }
-  }
-}
-
-.app-menu-title {
-
-}
-
 .app-menu-dialog {
   z-index: 99;
   max-height: 37vh;

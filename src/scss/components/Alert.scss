@@ -1,6 +1,5 @@
 .app-alert {
   @extend .app-dim-overlay;
-  
   color: var(--color-text-default);
 
   .app-alert-modal {
@@ -13,7 +12,7 @@
     box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);
     width: 40%;
     max-width: 400px;
-    border-radius: 8px;
+    border-radius: 8.6px;
     transform: translate3d(0,-1%,0) scale(1.034);
     background: var(--color-foreground-default);
   }
@@ -31,10 +30,10 @@
       margin: 0;
       padding-bottom: 10px;
       background-color: transparent;
-      font-size: 1.5em;
+      font-size: 18.6px;
     }
     .app-alert-message {
-      font-size: 1em;
+      font-size: 14.6px;
       line-break: auto;
       max-height: 24vh;
       overflow-y: auto;
@@ -45,11 +44,9 @@
   .app-alert-footer {
     @extend .app-modal-footer-default;
   }
-  
-  
-    button + button {
-      margin-left: 10px;
-    }
+  button + button {
+    margin-left: 10px;
+  }
   
 }
 
@@ -65,9 +62,7 @@
       max-width: 100%;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
-      
     }
-
     &.show {
       .app-alert-modal {
         transition: all 0.3s ease;

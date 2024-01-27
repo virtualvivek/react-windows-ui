@@ -77,12 +77,3 @@
     padding-inline-start: 8px;
   }
 }
-
-
-@mixin switch-mobile() {
-  .app-switch-container {
-    > .app-switch:hover {
-      opacity: 1;
-    }
-  }
-}
