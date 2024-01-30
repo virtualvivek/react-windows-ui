@@ -19,7 +19,6 @@ import {
 
   AccordionDocs,
   AlertDocs,
-  AvatarViewDocs,
   ButtonsDocs,
   CheckboxDocs,
   ColorPickerDocs,
@@ -165,44 +164,41 @@ const AppFourTwoThree = () => {
 
         <Routes>
           <Route path="home" element={<Home/>}  exact />
-          <Route path='getting_started' element={<GettingStarted/>} />
+          <Route path="getting_started" element={<GettingStarted/>} />
 
           {/* Utilities */}
+          <Route path="colors" element={<ColorsDocs/>} />
+          <Route path="utilities" element={<ClassesDocs/>} />
 
-          <Route path='colors' element={<ColorsDocs/>} />
-          <Route path='utilities' element={<ClassesDocs/>} />
-
-          <Route path='navbar' element={<NavBarDocs/>} />
-          <Route path='navbarlink' element={<NavBarLinkDocs/>} />
-          <Route path='navbarsubmenu' element={<NavBarSubMenuDocs/>} />
-          <Route path='navpagecontainer' element={<NavPageContainerDocs/>} />
-          <Route path='splashscreen' element={<SplashScreenDocs/>} />
+          <Route path="navbar" element={<NavBarDocs/>} />
+          <Route path="navbarlink" element={<NavBarLinkDocs/>} />
+          <Route path="navbarsubmenu" element={<NavBarSubMenuDocs/>} />
+          <Route path="navpagecontainer" element={<NavPageContainerDocs/>} />
+          <Route path="splashscreen" element={<SplashScreenDocs/>} />
 
           {/* Components */}
+          <Route path="accordion" element={<AccordionDocs/>} />
+          <Route path="alerts" element={<AlertDocs/>} />
+          <Route path="apptheme" element={<AppThemeDocs/>} />
+          <Route path="appearance" element={<AppearanceDocs/>} />
+          <Route path="buttons" element={<ButtonsDocs/>} />
+          <Route path="checkbox" element={<CheckboxDocs/>} />
+          <Route path="colorpicker" element={<ColorPickerDocs/>} />
+          <Route path="commandbar" element={<CommandBarDocs/>} />
+          <Route path="dialogs" element={<DialogDocs/>} />
+          <Route path="imageview" element={<ImageViewDocs/>} />
+          <Route path="input_group" element={<InputGroupDocs/>} />
+          <Route path="links" element={<LinkDocs/>} />
+          <Route path="loaders" element={<LoadersDocs/>} />
+          <Route path="menubar" element={<MenuBarDocs/>} />
+          <Route path="progressbar" element={<ProgressBarDocs/>} />
+          <Route path="radio_button" element={<RadioButtonDocs/>} />
+          <Route path="selectbox" element={<SelectBoxDocs/>} />
+          <Route path="sliderbar" element={<SliderBarDocs/>} />
+          <Route path="switch" element={<SwitchDocs/>} />
+          <Route path="tableview" element={<TableViewDocs/>} />
 
-          <Route path='accordion' element={<AccordionDocs/>} />
-          <Route path='alerts' element={<AlertDocs/>} />
-          <Route path='apptheme' element={<AppThemeDocs/>} />
-          <Route path='appearance' element={<AppearanceDocs/>} />
-          <Route path='avatarview' element={<AvatarViewDocs/>} />
-          <Route path='buttons' element={<ButtonsDocs/>} />
-          <Route path='checkbox' element={<CheckboxDocs/>} />
-          <Route path='colorpicker' element={<ColorPickerDocs/>} />
-          <Route path='commandbar' element={<CommandBarDocs/>} />
-          <Route path='dialogs' element={<DialogDocs/>} />
-          <Route path='imageview' element={<ImageViewDocs/>} />
-          <Route path='input_group' element={<InputGroupDocs/>} />
-          <Route path='links' element={<LinkDocs/>} />
-          <Route path='loaders' element={<LoadersDocs/>} />
-          <Route path='menubar' element={<MenuBarDocs/>} />
-          <Route path='progressbar' element={<ProgressBarDocs/>} />
-          <Route path='radio_button' element={<RadioButtonDocs/>} />
-          <Route path='selectbox' element={<SelectBoxDocs/>} />
-          <Route path='sliderbar' element={<SliderBarDocs/>} />
-          <Route path='switch' element={<SwitchDocs/>} />
-          <Route path='tableview' element={<TableViewDocs/>} />
-
-          <Route path='icons' element={<Icons/>} />
+          <Route path="icons" element={<Icons/>} />
         </Routes>
     </AppContainer>
   )

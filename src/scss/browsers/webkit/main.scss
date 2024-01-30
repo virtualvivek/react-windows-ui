@@ -1,4 +1,3 @@
-@import "./scrollbars/win10.scss";
-@import "./scrollbars/win11.scss";
+@import "./scrollbars.scss";
 
-@include scrollbar-win11();
+@include scrollbar();

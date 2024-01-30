@@ -14,13 +14,6 @@
     "showBadge": false
   },
   {
-    "to": "avatarview",
-    "exact": false,
-    "text": "AvatarView",
-    "icon": "icons10-emoji-smile",
-    "showBadge": false
-  },
-  {
     "to": "buttons",
     "exact": false,
     "text": "Buttons",

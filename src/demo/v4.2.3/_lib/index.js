@@ -10,7 +10,6 @@ import {
   
   Accordion,
   Appearance,
-  AvatarView,
   Alert,
   Button,
   ButtonGroup,
@@ -50,7 +49,6 @@ export {
   
   Accordion,
   Appearance,
-  AvatarView,
   Alert,
   Button,
   ButtonGroup,

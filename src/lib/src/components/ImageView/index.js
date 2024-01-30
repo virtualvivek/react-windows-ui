@@ -3,6 +3,20 @@ import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
 
 const ImageView = (props) => {
 
+  const {
+    src,
+    alt,
+    objectFit,
+    tooltip,
+    width,
+    height,
+    margin,
+    padding,
+    borderRadius,
+    isLoading,
+    ...otherProps
+  } = props;
+
   const [didLoad, setLoad] = useState(false);
 
   const renderLoader = () => {
@@ -12,10 +26,6 @@ const ImageView = (props) => {
               </div>
             </div>
   }
-
-  const renderShadow = () => {
-    return <div className="shadow"></div>
-  }
   
   const handleOnLoad = () => {
     setLoad(true);
@@ -24,32 +34,27 @@ const ImageView = (props) => {
   return (
     <div
       className="app-img-view-container"
-      title={props.tooltip}
+      title={tooltip}
       style={{
-        width: props.width,
-        height: props.height,
-        margin: props.margin,
-        padding: props.padding,
-        borderRadius: props.borderRadius
+        width: width,
+        height: height,
+        margin: margin,
+        padding: padding,
+        borderRadius: borderRadius
       }}>
       <img
         className="app-img-view"
-        src={props.src}
-        alt={props.alt}
+        src={src}
+        alt={alt}
+        {...otherProps}
         style={{
-          objectFit: props.objectFit
+          objectFit: objectFit
         }}
         // onLoad={() => setLoad(true)}
         onLoad={() => { handleOnLoad(); props.onLoad() }}
         onError={() => { handleOnLoad(); props.onError() }}
       />
-      <div className="app-img-words">
-        <h1>{props.title}</h1>
-        <span>{props.subtitle}</span>
-      </div>
-      
-      { props.insetShadow ? renderShadow() : "" }
-      { props.isLoading ? renderLoader() : "" }
+      { isLoading ? renderLoader() : "" }
       { didLoad ? "" : renderLoader() }
     </div>
   )

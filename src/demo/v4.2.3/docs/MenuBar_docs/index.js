@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import { NavPageContainer, MenuBar } from '../../_lib'
-import MenuBary from '../../../../lib/src/components/MenuBary'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { MenuBarImportCode,MenuBarUsageCode,MenuBarOnClickUsageCode } from './codes'
@@ -24,27 +23,23 @@ const MenuBarDocs = () => {
         
     <p>A <span className="app-color-primary">MenuBar</span> is a graphical control element which contains drop-down menus</p>
 
-    <MenuBar
-      label="Select a fruit"
-      data={[
-        {label: 'apple', link: '#', icon:<i className="icons10-camera"></i>},
-        {label: 'orange', link: '#',onClick:sayhellow},
-        {label: 'banana', link: '#'},
-        {label: 'peach', link: '#'},
-        ]}
-    />
-
     <button onClick={handleButtonClick} ref={anchorRef}>Hi</button>
-    <MenuBary.Dialog
+    
+    <MenuBar.Dialog
       ref={dialogRef}
       anchorRef={anchorRef}>
       <h1>Hi</h1>
-      <MenuBary.List>
-        <MenuBary.ListItem title="Hi"/>
-        <MenuBary.Divider/>
-        <MenuBary.ListItem title="Hi"/>
-      </MenuBary.List>
-    </MenuBary.Dialog>
+      <MenuBar.List>
+        <MenuBar.ListItem title="Hi"/>
+        <MenuBar.Divider/>
+        <MenuBar.ListItem title="Hi"/>
+        <MenuBar.SubMenu title="Yo">
+          <MenuBar.ListItem title="Sub Child"/>
+        </MenuBar.SubMenu>
+        <MenuBar.ListItem title="Hi"/>
+        <MenuBar.ListItem title="Hi"/>
+      </MenuBar.List>
+    </MenuBar.Dialog>
     
     
     <h2>Import</h2>

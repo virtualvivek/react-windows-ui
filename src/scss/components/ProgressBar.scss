@@ -1,57 +1,32 @@
-.app-progress-container {
-  width: 400px;
-  display: inline-flex;
-  flex-direction: column;
+.app-progress-bar {
+  width: 100%;
+  height: 5px;
+  overflow: hidden;
+  position: relative;
+  background: var(--color-progress-bg);
+  border-radius: 4px;
   transition: height 0.15s ease-out;
 
   &.hide {
     height: 0;
   }
 
-  .app-progress-title,
-  .app-progress-subtitle {
-    line-height: 2;
-    font-weight: 500;
-  }
-  .app-progress-subtitle {
-    opacity: 0.8;
-    font-size: 14px;
-  }
-  
-  .app-progress-bar {
-    width: 100%;
-    height: 5px;
-    overflow: hidden;
-    position: relative;
-    background: var(--color-progress-bg);
+  span {
+    height: 100%;
+    position: absolute;
+    transition: width 1s ease-in-out;
+    background-color: var(--color-primary-adaptive);
     border-radius: 4px;
 
-    span {
+    &.indeterminate {
       height: 100%;
-      position: absolute;
-      transition: width 1s ease-in-out;
-      background-color: var(--color-primary-adaptive);
+      width: 100%;
+      transform-origin: 0% 50%;
+      transition-property: background;
+      animation: indeterminateAnimation 1s infinite linear;
       border-radius: 4px;
-
-      &.indeterminate {
-        height: 100%;
-        width: 100%;
-        transform-origin: 0% 50%;
-        transition-property: background;
-        animation: indeterminateAnimation 1s infinite linear;
-        
-          border-radius: 4px;
-          background-color: var(--color-primary-adaptive);
-        
-        
-      }
+      background-color: var(--color-primary-adaptive);
     }
-  }
-}
-
-@mixin progress-bar-mobile() {
-  .app-progress-container {
-    width: 80vw;
   }
 }
 

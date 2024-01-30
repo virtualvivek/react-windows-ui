@@ -16,13 +16,19 @@ const MenuDialog = forwardRef((props, ref) => {
 
   useImperativeHandle(ref, () => ({
     openDialog: () => {
-      if (anchorRef.current) {
+      if (anchorRef.current && dialogRef.current) {
         const rect = anchorRef.current.getBoundingClientRect();
-        dialogRef.current.style.top = `${rect.bottom+5}px`; // Position below the button
-        dialogRef.current.style.left = `${rect.left}px`; // Align with the left of the button
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+        dialogRef.current.style.top = `${rect.bottom + scrollTop + 5}px`; // Adjusted for vertical scroll
+        dialogRef.current.style.left = `${rect.left + scrollLeft}px`; // Adjusted for horizontal scroll
+
+        setShow(" show");
+        getScreenOffset(dialogRef) ? setReverse(" reverse") : setReverse("");
+      } else {
+        console.error("anchorRef or ref should not be empty for MenuBar.Dialog");
       }
-      setShow(" show");
-      getScreenOffset(dialogRef) ? setReverse(" reverse") :  setReverse("");
     },
     closeDialog: () => {
       setShow("");

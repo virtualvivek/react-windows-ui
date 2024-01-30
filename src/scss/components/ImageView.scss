@@ -3,6 +3,8 @@
   width: 100%;
   height: 100%;
   text-align: center;
+  -moz-user-drag: none;
+  -webkit-user-drag: none;
   background: #DDDDDD77;
 }
 .app-img-view-container {
@@ -23,30 +25,6 @@
     .app-loader-busy {
       top: 35%;
       margin: auto;
-    }
-  }
-  .shadow {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    box-shadow: inset 0 -50px 50px 0 #000000;
-  }
-  .app-img-words {
-    width: auto;
-    z-index: 2;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding-left: 5%;
-    padding-bottom: 4%;
-    filter: drop-shadow(2px 2px 2px #000000);
-    
-    h1 {
-      margin: 0;
     }
   }
 }

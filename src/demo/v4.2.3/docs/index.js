@@ -9,7 +9,6 @@ export { default as Icons } from "./Icons_docs";
 
 export { default as AccordionDocs } from "./Accordion_docs";
 export { default as AlertDocs } from "./Alert_docs";
-export { default as AvatarViewDocs } from "./AvatarView_docs";
 export { default as ButtonsDocs } from "./Buttons_docs";
 export { default as CheckboxDocs } from "./Checkbox_docs";
 export { default as ColorPickerDocs } from "./ColorPicker_docs";

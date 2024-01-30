@@ -1,4 +1,4 @@
-@mixin scrollbar-win11() {
+@mixin scrollbar() {
   ::-webkit-scrollbar {
     inline-size: 14px;
     background-color: transparent;
@@ -19,8 +19,6 @@
                 var(--scrollbar-caret-top) top center/contain no-repeat,
                 transparent;
   }
-
-
 
   ::-webkit-scrollbar:horizontal:hover {
     background: var(--scrollbar-caret-bottom) left center/contain no-repeat,

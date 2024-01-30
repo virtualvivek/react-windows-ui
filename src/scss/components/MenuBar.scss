@@ -1,6 +1,6 @@
 .app-menu-dialog {
   z-index: 99;
-  max-height: 37vh;
+  max-height: 75vh;
   overflow-y: auto;
   border: 1px solid;
   overflow-x: hidden;
@@ -29,6 +29,28 @@
     @extend .app-dropdown-ul-default-item;
   }
 }
+
+.app-menu-list-item {
+  position: relative;
+  .app-menu-list {
+    box-shadow: 2px 2px 5px #22222244;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    border: 1px solid var(--color-ui-border-default);
+    border-radius: 6px;
+    background: azure;
+    margin-top: -7px;
+  }
+
+  [data-win-toggle="dropdown"]::after {
+    line-height: 0;
+    content: "\f10e";
+    font-family: icons10;
+    padding-inline-start: 5px;
+  }
+}
+
 
 .app-menu-divider {
   border: 0;
