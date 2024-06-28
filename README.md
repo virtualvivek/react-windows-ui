@@ -1,10 +1,10 @@
-<p align="center">                     
+<p align="center">                         
 	
   <img src="https://github.com/virtualvivek/react-windows-ui/blob/main/markdown/md_img_header.png" width="250" />
 </p>
 <h1 align="center">react-windows-ui</h1>
 
-<p align="center">Build full featured <b>Windows fluent UI</b> apps using <b>ReactJS</b>.</p>
+<p align="center">Build Windows native look & feel apps using ReactJS.</p>
 <p align="center"><a href="https://virtualvivek.github.io/react-windows-ui/" target="_blank">« Explore Project Docs »</a></p>
 
 # Status
@@ -72,4 +72,4 @@ Support it by joining [**stargazers**](https://github.com/virtualvivek/react-win
 # License
 
 **`react-windows-ui`** is licensed under **`MIT license`**. View [license](https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE).<br>
-Copyright (c) 2021-22 [**virtualvivek**](https://github.com/virtualvivek).
+Copyright (c) 2021-24 [**virtualvivek**](https://github.com/virtualvivek).
