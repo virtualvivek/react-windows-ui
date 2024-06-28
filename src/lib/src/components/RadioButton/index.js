@@ -18,7 +18,7 @@ const RadioButton = forwardRef((props, ref) => {
       <input
         ref={ref}
         {...otherProps}
-        className="app-radio-button"
+        className="ui-radio-btn"
         type="radio"
         name={name}
         value={value}

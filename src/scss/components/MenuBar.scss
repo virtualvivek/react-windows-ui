@@ -1,4 +1,4 @@
-.app-menu-dialog {
+.ui-menu-dialog {
   z-index: 99;
   max-height: 75vh;
   overflow-y: auto;
@@ -26,13 +26,13 @@
     list-style: none;
   }
   li {
-    @extend .app-dropdown-ul-default-item;
+    @extend .ui-dropdown-ul-default-item;
   }
 }
 
-.app-menu-list-item {
+.ui-menu-list-item {
   position: relative;
-  .app-menu-list {
+  .ui-menu-list {
     box-shadow: 2px 2px 5px #22222244;
     position: fixed;
     left: 100%;
@@ -52,7 +52,7 @@
 }
 
 
-.app-menu-divider {
+.ui-menu-divider {
   border: 0;
   height: 1px;
   margin: 0 5px;

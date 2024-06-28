@@ -35,23 +35,23 @@ class AlertDocs extends React.Component {
     return (
     <NavPageContainer hasPadding animateTransition>
       <h1>Alerts</h1>
-      <p><span className="app-color-primary">Alert</span> component is used to interrupt the user with a mandatory confirmation or action.</p>
+      <p><span className="ui-color-primary">Alert</span> component is used to interrupt the user with a mandatory confirmation or action.</p>
       <Button
         value="Open Alert Default" 
         onClick={this.toggleAlert}
       />
 
-      {/* <div className="app-alert-bar alert-secondary" role="alert">
-        <div className="app-alert-bar-content">
+      {/* <div className="ui-alert-bar alert-secondary" role="alert">
+        <div className="ui-alert-bar-content">
           <strong>Title</strong>
           <span>This is a text</span>
         </div>
-        <button className="app-btn app-btn-primary">Button Regular</button>
+        <button className="ui-btn ui-btn-primary">Button Regular</button>
         <button data-win-dismiss="alert" aria-label="Close"></button>
       </div>
 
-      <div className="app-alert-bar alert-success" role="alert">
-        <div className="app-alert-bar-content">
+      <div className="ui-alert-bar alert-success" role="alert">
+        <div className="ui-alert-bar-content">
           <strong>Title</strong>
           <span>This is a text</span>
         </div>
@@ -109,7 +109,7 @@ class AlertDocs extends React.Component {
         {AlertUsageCode}
       </SyntaxHighlighter>
 
-      <h2 className="m-tb-20">Alert with <p className="app-code">Multi Buttons</p> :</h2>
+      <h2 className="m-tb-20">Alert with <p className="ui-code">Multi Buttons</p> :</h2>
 
       <Button
         value="Open Alert Multi Button"
@@ -123,7 +123,7 @@ class AlertDocs extends React.Component {
         {AlertLightUsageCode}
       </SyntaxHighlighter>
 
-      <h2 className="m-tb-20">Alert with <p className="app-code">Header Component</p> :</h2>
+      <h2 className="m-tb-20">Alert with <p className="ui-code">Header Component</p> :</h2>
 
       <Alert
         isVisible={this.state.showAlertCustomHeader}

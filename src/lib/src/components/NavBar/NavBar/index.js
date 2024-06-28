@@ -29,7 +29,7 @@ const NavBar = (props) => {
   }
 
   useEffect(()=> {
-    let NavSearch = document.getElementById("app-navbar-list").getElementsByClassName("app-input-search-box")[0];
+    let NavSearch = document.getElementById("ui-navbar-list").getElementsByClassName("ui-input-search-box")[0];
     NavSearch?.addEventListener("click", () => {
       if(sidebar_collapsed) { setSidebarCollapsed(false); }
     });
@@ -51,30 +51,30 @@ const NavBar = (props) => {
     <aside
       ref={props.ref}
       role="navigation"
-      id="app-navbar-wrap"
+      id="ui-navbar-wrap"
       className={sidebar_collapsed
-      ? `app-navbar-wrap collapsed${sidebar_float_collapsed}`
-      : `app-navbar-wrap${sidebar_float_collapsed}`}>
-      <div className="app-navbar-header-mobile">
-        <span className="app-navbar-toggler" onClick={showSidebar} aria-label="Toggle navigation"></span>
+      ? `ui-navbar-wrap collapsed${sidebar_float_collapsed}`
+      : `ui-navbar-wrap${sidebar_float_collapsed}`}>
+      <div className="ui-navbar-header-mobile">
+        <span className="ui-navbar-toggler" onClick={showSidebar} aria-label="Toggle navigation"></span>
         {props.titleBarMobile}
       </div>
-      <nav className="app-navbar" ref={navRef}>
+      <nav className="ui-navbar" ref={navRef}>
         <div
-          className="app-navbar-header"
+          className="ui-navbar-header"
           style={ props.shadowOnScroll ?
                   isScrolling
                   ? { boxShadow: "0 4px 8px -8px #77777777" }
                   : { boxShadow : "" }
                   : { boxShadow: "" }
                 }>
-          <span className="app-navbar-toggler" onClick={showSidebar} aria-label="Toggle navigation"></span>
-          <span className="app-navbar-name">{props.title}</span>
+          <span className="ui-navbar-toggler" onClick={showSidebar} aria-label="Toggle navigation"></span>
+          <span className="ui-navbar-name">{props.title}</span>
         </div>
         <ul
-          id="app-navbar-list"
+          id="ui-navbar-list"
           onScroll={scrollEvent}
-          className="app-navbar-list"
+          className="ui-navbar-list"
           onClick={(e) => onUlClickItems(e)}>
             {props.children}
         </ul>
@@ -82,8 +82,8 @@ const NavBar = (props) => {
       <div
         onClick={showSidebar}
         className={sidebar_float_collapsed === " collapsed-float"
-          ? "app-navbar-overlay show"
-          : "app-navbar-overlay"}>
+          ? "ui-navbar-overlay show"
+          : "ui-navbar-overlay"}>
       </div>
     </aside>
   );

@@ -1,22 +1,22 @@
-.app-input-text {
+.ui-input-text {
   &:not(:focus) + div [data-win-clear="text"] {
     opacity: 0;
   }
   @extend .input-field-default;
 }
 
-.app-input-container {
+.ui-input-container {
   position: relative;
   height: fit-content;
   display: inline-flex;
   
-  .app-input-label + .app-input-text {
+  .ui-input-label + .ui-input-text {
     border-start-start-radius: 0;
     border-end-start-radius: 0;
     border-left-width: 0;
   }
 
-  .app-input-label {
+  .ui-input-label {
     display: flex;
     font-size: 15px;
     align-items: center;
@@ -33,13 +33,13 @@
   }
 
   &.input-success {
-    .app-input-text {
+    .ui-input-text {
       background-image: radial-gradient(var(--color-success-default) 100%, transparent 100%);
       &:focus {
         border-bottom-color: var(--color-success-default);
       }
     }
-    .app-input-end-content {
+    .ui-input-end-content {
       .icons10-status::before {
         content: "\f12e";
         padding-right: 5px;
@@ -48,13 +48,13 @@
     }
   }
   &.input-danger {
-    .app-input-text {
+    .ui-input-text {
       background-image: radial-gradient(var(--color-danger-default) 100%, transparent 100%);
       &:focus {
         border-bottom-color: var(--color-danger-default);
       }
     }
-    .app-input-end-content {
+    .ui-input-end-content {
       .icons10-status::before {
         content: "\f116";
         padding-right: 5px;
@@ -63,13 +63,13 @@
     }
   }
   &.input-loading {
-    .app-loader-busy {
+    .ui-loader-busy {
       display: inline-flex;
     }
   }
 }
 
-.app-input-end-content {
+.ui-input-end-content {
   gap: 5px;
   right: 5px;
   height: 100%;
@@ -100,7 +100,7 @@
     }
   }
   
-  .app-loader-busy {
+  .ui-loader-busy {
     display: none;
   }
 }

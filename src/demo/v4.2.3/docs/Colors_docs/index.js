@@ -12,12 +12,12 @@ render() {
   <NavPageContainer hasPadding animateTransition={false}>
     <h1>Colors</h1>
 
-    <p>Use the provided <span className="app-color-primary">Color </span>variables accross your app that adapt changes as per the color scheme to either <b>light</b> or <b>dark</b>.<br/></p>
+    <p>Use the provided <span className="ui-color-primary">Color </span>variables accross your app that adapt changes as per the color scheme to either <b>light</b> or <b>dark</b>.<br/></p>
 
-    <div className="app-table-view-container" style={{display: "list-item", maxHeight: 400, overflowY: "scroll"}}>
-      <table className="app-table-view">
+    <div className="ui-table-view-container" style={{display: "list-item", maxHeight: 400, overflowY: "scroll"}}>
+      <table className="ui-table-view">
         <thead>
-          <tr className="app-table-tr">
+          <tr className="ui-table-tr">
             <th align="left">CSS Color Name</th>
             <th align="left">Light</th>
             <th align="left">Dark</th>
@@ -55,7 +55,7 @@ render() {
     </div>
 
     <h1>Create your own color variables.</h1>
-    <p>Define your own <span className="app-color-primary">color variables </span>at anywhere like below:</p>
+    <p>Define your own <span className="ui-color-primary">color variables </span>at anywhere like below:</p>
     
     <SyntaxHighlighter
       language="css"

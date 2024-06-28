@@ -41,7 +41,7 @@ const SliderBar = forwardRef((props, ref) => {
     <div
       title={tooltip}
       style={{width: width}}
-      className={`app-range-slider${thumbStyle === "round" ? " slider-round"
+      className={`ui-range-slider${thumbStyle === "round" ? " slider-round"
       : thumbStyle === "round-border" ? " slider-round-border" : ""}`}
       data-win-orient={orientation === "vertical" ? "vertical": "horizontal"}>
       <input
@@ -66,7 +66,7 @@ const SliderBar = forwardRef((props, ref) => {
       { showPopupValue && (
         <span
           ref={popupRef}
-          className="app-range-slider-popup"
+          className="ui-range-slider-popup"
           style={{ left: (defaultValue/max)*72+"%" }}>
           {defaultValue}
         </span>

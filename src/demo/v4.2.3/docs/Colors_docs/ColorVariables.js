@@ -3,7 +3,7 @@ import React from "react";
 const ColorVariables = (props) => {
   return (
     <>
-      <td><p className="app-code">{props.colorName}</p></td>
+      <td><p className="ui-code">{props.colorName}</p></td>
       <td>
         <span className="demo-colors-box" style={{backgroundColor: props.colorLight}}></span>
         <span className="demo-colors-value">{props.colorLight}</span>

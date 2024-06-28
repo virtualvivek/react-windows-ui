@@ -15,7 +15,7 @@ render() {
     animateTransition={false}>
     <h1>Select</h1>
 
-    <p>The <span className="app-color-primary">Select</span> component is used to create a drop-down list to choose one value from multiple.</p>
+    <p>The <span className="ui-color-primary">Select</span> component is used to create a drop-down list to choose one value from multiple.</p>
 
     <Select
       placeholder="Some Name"
@@ -64,7 +64,7 @@ render() {
 
 
     <h1>SelectNative</h1>
-    <p>The <span className="app-color-primary">SelectNative</span> renders native {`<select>`} component.</p>
+    <p>The <span className="ui-color-primary">SelectNative</span> renders native {`<select>`} component.</p>
 
     <SelectNative
       name="Some Name"

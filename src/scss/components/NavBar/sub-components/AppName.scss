@@ -1,4 +1,4 @@
-.app-navbar-name {
+.ui-navbar-name {
   font-size: 14px;
   cursor: default;
   white-space: nowrap;
@@ -18,7 +18,7 @@
 }
 
 @media only screen and (max-width: 760px) {
-  .app-navbar-name {
+  .ui-navbar-name {
     padding-inline-start: 5px;
   }
 }

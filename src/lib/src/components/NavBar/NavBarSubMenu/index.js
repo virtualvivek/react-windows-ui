@@ -10,18 +10,18 @@ const NavBarSubMenu = (props) => {
   }, []);
 
   return (
-    <div className="app-navbar-submenu">
+    <div className="ui-navbar-submenu">
       <div
         aria-expanded={isActive}
-        className="app-navbar-submenu-title"
+        className="ui-navbar-submenu-title"
         onClick={() => setIsActive(!isActive)}>
         <div>{props.title}</div>
       </div>
       <div
         ref={panelRef}
         style={isActive ? {height: contentHeight} : {height: ""}}
-        className={isActive ? "app-navbar-submenu-content show"
-                            : "app-navbar-submenu-content"}>
+        className={isActive ? "ui-navbar-submenu-content show"
+                            : "ui-navbar-submenu-content"}>
         {props.children}
       </div>
     </div>

@@ -5,7 +5,7 @@ const Checkbox = forwardRef((props, ref) => {
     <label>
       <input
         ref={ref}
-        className="app-checkbox"
+        className="ui-checkbox"
         {...props}
         type="checkbox"
         name={props.name}

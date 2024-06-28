@@ -16,16 +16,16 @@ render() {
 
     <div style={{width:290,backgroundColor:'var(--color-navbar-bg-default)'}}>
     <NavBarSubMenu title="Title">
-      <div className="app-navbar-wrap" style={{height: 90}}>
+      <div className="ui-navbar-wrap" style={{height: 90}}>
       <nav className="animate custom" style={{position:'relative'}}>
-        <ul style={{padding:0,margin:0}} className="app-navbar-list">
-          <li className="app-navbar-list-item">
+        <ul style={{padding:0,margin:0}} className="ui-navbar-list">
+          <li className="ui-navbar-list-item">
             <a href="#/navbar" aria-current="page" className="active">
               <i className="icons10-add"></i>
               <span>NavItem1</span>
             </a>
           </li>
-          <li className="app-navbar-list-item">
+          <li className="ui-navbar-list-item">
             <a href="#/navbar">
               <i className="icons10-user"></i>
               <span>NavItem2</span>
@@ -57,7 +57,7 @@ render() {
     </SyntaxHighlighter>
 
   
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
 
     <h2>Props</h2>
     <PropsView />

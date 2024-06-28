@@ -2,8 +2,8 @@
   @include browser-webkit-mobile();
   @include browser-mozilla-mobile();
 
-  @include app-content-wrap-mobile();
-  @include app-navbar-mobile();
+  @include ui-content-wrap-mobile();
+  @include ui-navbar-mobile();
   
   @include accordion-mobile();
   @include alert-mobile();

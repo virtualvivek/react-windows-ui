@@ -1,4 +1,4 @@
-.app-table-view-container {
+.ui-table-view-container {
   min-width: auto;
   max-width: fit-content;
   overflow: overlay;
@@ -7,7 +7,7 @@
   background-color: var(--color-card-bg-default);
   border-radius: 4px;
 }
-.app-table-view {
+.ui-table-view {
   border-collapse: collapse;
   tr:last-child td {
     border: 0;

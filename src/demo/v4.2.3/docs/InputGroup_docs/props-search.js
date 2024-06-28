@@ -2,10 +2,10 @@ import React from "react";
 
 const SearchProps = () => {
   return (
-    <div className="app-table-view-container">
-    <table className="app-table-view">
+    <div className="ui-table-view-container">
+    <table className="ui-table-view">
       <thead>
-        <tr className="app-table-tr">
+        <tr className="ui-table-tr">
           <th align="left">Prop</th>
           <th align="left">Type</th>
           <th align="left">Default</th>
@@ -14,7 +14,7 @@ const SearchProps = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">type</p></td>
+          <td><p className="ui-code">type</p></td>
           <td>
             "date" | "datetime-local"<br/>
             "week" | "month" | "time"

@@ -1,4 +1,4 @@
-.app-menu-select {
+.ui-menu-select {
   // Style, Padding for End Arrow & Title Text ------
   span,
   &::after {
@@ -8,7 +8,7 @@
     display: inline-flex;
   }
 
-  .app-menu-list-item {
+  .ui-menu-list-item {
     &.selected span {
       background-color: var(--color-ui-hover-strong);
       
@@ -26,8 +26,8 @@
       display: none;
     }
   }
-  .app-menu-list {
-    @extend .app-dropdown-ul-default;
+  .ui-menu-list {
+    @extend .ui-dropdown-ul-default;
   }
 }
 
@@ -35,9 +35,9 @@
 
 
 
-.app-select-text {
+.ui-select-text {
   // Show Checkbox Icon on Selected Text
-  .app-dropdown-list-item.selected span::before {
+  .ui-dropdown-list-item.selected span::before {
     width: 20px;
     height: auto;
     content: "\f12e";

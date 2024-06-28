@@ -47,7 +47,7 @@ render() {
       </SyntaxHighlighter>
 
     
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
 
       <h2>Props</h2>
       <PropsView />

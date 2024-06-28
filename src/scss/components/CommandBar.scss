@@ -1,11 +1,11 @@
-.app-cmd-bar {
-  @extend .app-inline-flex;
+.ui-cmd-bar {
+  @extend .ui-inline-flex;
   width: max-content;
   height: auto;  
 }
 
-ul.app-cmdbar-menu-list {
-  @extend .app-dropdown-ul-default;
+ul.ui-cmdbar-menu-list {
+  @extend .ui-dropdown-ul-default;
   width: max-content;
   max-height: 280px;
   overflow: visible;
@@ -25,7 +25,7 @@ ul.app-cmdbar-menu-list {
   position: relative;
 }
 
-ul.app-cmdbar-menu-list .cmdbar-submenu {
+ul.ui-cmdbar-menu-list .cmdbar-submenu {
   box-shadow: 2px 2px 5px #22222244;
   border-top-left-radius: 0;
   position: absolute;
@@ -39,12 +39,12 @@ ul.app-cmdbar-menu-list .cmdbar-submenu {
   background-color: var(--color-ui-border-default);
 }
 
-.app-cmdbar-menu {
+.ui-cmdbar-menu {
   position: relative;
   display: inline-flex;
 }
 
-.app-cmdbar-button {
+.ui-cmdbar-button {
   height: 32px;
   border: none;
   background: none;
@@ -64,7 +64,7 @@ ul.app-cmdbar-menu-list .cmdbar-submenu {
 }
 
 @mixin cmdbar-button-mobile() {
-  .app-cmdbar-button {
+  .ui-cmdbar-button {
     &:hover:not(:active) {
       background: none;
     }

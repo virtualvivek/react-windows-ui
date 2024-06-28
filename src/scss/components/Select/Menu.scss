@@ -1,4 +1,4 @@
-.app-menu-select {
+.ui-menu-select {
   padding: 0;
   width: fit-content;
   user-select: none;
@@ -17,7 +17,7 @@
   }
 }
 
-.app-select-menu {
+.ui-select-menu {
   select {
     @extend .input-btn-default;
     height: 32px;

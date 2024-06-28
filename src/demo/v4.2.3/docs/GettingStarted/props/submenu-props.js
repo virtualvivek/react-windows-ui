@@ -4,10 +4,10 @@ const SubMenuProps = () => {
   return (
     <>
     <h2>Props</h2>
-    <div className="app-table-view-container">
-    <table className="app-table-view">
+    <div className="ui-table-view-container">
+    <table className="ui-table-view">
       <thead>
-        <tr className="app-table-tr">
+        <tr className="ui-table-tr">
           <th align="left">Prop</th>
           <th align="left">Type</th>
           <th align="left">Default</th>
@@ -16,13 +16,13 @@ const SubMenuProps = () => {
       </thead>
       <tbody>
         <tr>
-          <td><p className="app-code">title</p></td>
+          <td><p className="ui-code">title</p></td>
           <td>string</td>
           <td>null</td>
           <td>Set's <b>NavBarSubMenu</b> Title.</td>
         </tr>
         <tr>
-          <td><p className="app-code">children</p></td>
+          <td><p className="ui-code">children</p></td>
           <td>ReactNode</td>
           <td>null</td>
           <td>Set's <b>NavBarSubMenu</b> children.</td>

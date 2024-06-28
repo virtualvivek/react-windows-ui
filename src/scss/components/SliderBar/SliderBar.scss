@@ -1,6 +1,6 @@
 @import "./SliderBarUI.scss";
 
-.app-range-slider {
+.ui-range-slider {
   width: 140px;
   padding: 5px 0;
   position: relative;
@@ -25,7 +25,7 @@
 
   @include slider-bar-ui();
 
-  .app-range-slider-popup {
+  .ui-range-slider-popup {
     top: -40px;
     opacity: 0;
     line-height: 0;
@@ -44,12 +44,12 @@
 }
 
 @mixin slider-bar-mobile() {
-  .app-range-slider {
+  .ui-range-slider {
     width: calc(280px + 18%);
     align-items: flex-start;
     flex-flow: column-reverse;
 
-    .app-range-slider-popup {
+    .ui-range-slider-popup {
       display: none;
     }
   }

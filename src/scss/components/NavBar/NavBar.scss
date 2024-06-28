@@ -13,7 +13,7 @@
 @import "./NavBarCollapsed.scss";
 
 
-.app-navbar-wrap {
+.ui-navbar-wrap {
   top: 0;
   left: 0;
   height: 100vh;
@@ -33,8 +33,8 @@
   }
 }
 
-@mixin app-navbar-mobile() {
-  .app-navbar-wrap {
+@mixin ui-navbar-mobile() {
+  .ui-navbar-wrap {
     z-index: 9;
     position: unset;
     nav {
@@ -46,8 +46,8 @@
       
       
       :hover > li,
-      :hover > .app-navbar-toggler,
-      :hover > .app-navbar-submenu-title {
+      :hover > .ui-navbar-toggler,
+      :hover > .ui-navbar-submenu-title {
         background-color: transparent !important;
       }
     }

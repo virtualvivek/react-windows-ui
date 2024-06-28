@@ -3,7 +3,7 @@ const UIAppJS =
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { AppContainer, NavBar, NavBarLink, NavBarThemeSwitch, NavPageContainer } from "react-windows-ui";
 
-import "react-windows-ui/config/app-config.css";
+import "react-windows-ui/config/ui-config.css";
 import "react-windows-ui/dist/react-windows-ui.min.css";
 import "react-windows-ui/icons/winui-icons.min.css";
 
@@ -33,11 +33,11 @@ const NavBarRoutes = () => {
       <NavBar
         title="App Name"
         shadowOnScroll={true}
-        titleBarMobile={<div><span className="app-navbar-name">React-windows-ui</span></div>}>
+        titleBarMobile={<div><span className="ui-navbar-name">React-windows-ui</span></div>}>
 
         <NavBarThemeSwitch/>
         <h1>Pages</h1>
-        <div className="app-hr"></div>
+        <div className="ui-hr"></div>
         <NavBarLink
           text="Home"
           active={route === "/" ?? true}
@@ -130,7 +130,7 @@ const NavBarLinkImg =
 
 const NavBarTitle = 
 `<h1>Title</h1>
-<div className="app-hr"></div>
+<div className="ui-hr"></div>
 `
 
 const PageContainer = 

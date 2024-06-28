@@ -1,7 +1,7 @@
-.app-dialog {
-  @extend .app-dim-overlay;
+.ui-dialog {
+  @extend .ui-dim-overlay;
 
-  .app-dialog-modal {
+  .ui-dialog-modal {
     width: 440px;
     z-index: 11;
     position: fixed;
@@ -15,25 +15,25 @@
     transform: translateY(20px) scale(0.98);
     border-radius: 8.6px;
 
-    .app-dialog-footer {
-      @extend .app-modal-footer-default;
+    .ui-dialog-footer {
+      @extend .ui-modal-footer-default;
     }
-    .app-dialog-body {
+    .ui-dialog-body {
       max-height: 40vh;
       overflow: overlay;
       background-color: var(--color-background-default);
     }
     @-moz-document url-prefix() {
-      .app-dialog-body {
+      .ui-dialog-body {
         overflow: auto;
       }
     }
-    .app-dialog-header {
+    .ui-dialog-header {
       padding: 0 15px;
     }
   }
 
-  &.show .app-dialog-modal {
+  &.show .ui-dialog-modal {
     opacity: 1;
     visibility: visible;
     transform: translateY(0) scale(1);
@@ -41,13 +41,13 @@
 }
 
 body.dark-theme {
-  .app-dialog .app-dialog-modal {
+  .ui-dialog .ui-dialog-modal {
     background-color: var(--color-navbar-bg-default);
   }
 }
 
 @mixin dialog-mobile() {
-  .app-dialog .app-dialog-modal {
+  .ui-dialog .ui-dialog-modal {
     width: 100%;
     width: -webkit-fill-available;
     width: -moz-available;

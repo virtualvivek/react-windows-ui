@@ -28,9 +28,9 @@ render() {
     animateTransition={false}>
     <h1>ProgressBar</h1>
         
-    <p>A <span className="app-color-primary">ProgressBar</span> can be used to show a user how far along he/she is in a process</p>
+    <p>A <span className="ui-color-primary">ProgressBar</span> can be used to show a user how far along he/she is in a process</p>
 
-    <h1 className="app-m-0" style={{fontSize:56}}>
+    <h1 className="ui-m-0" style={{fontSize:56}}>
       {this.state.ProgressBar1}%
     </h1>
 
@@ -73,8 +73,8 @@ render() {
     </SyntaxHighlighter>
 
   
-    <div className="app-hr"></div>
-    <h2>ProgressBar with <p className="app-code">title</p> :</h2>
+    <div className="ui-hr"></div>
+    <h2>ProgressBar with <p className="ui-code">title</p> :</h2>
 
     <ProgressBar
       title="Title"
@@ -88,8 +88,8 @@ render() {
     </SyntaxHighlighter>
 
 
-    <div className="app-hr"></div>
-    <h2>ProgressBar with <p className="app-code">title & subtitle</p> :</h2>
+    <div className="ui-hr"></div>
+    <h2>ProgressBar with <p className="ui-code">title & subtitle</p> :</h2>
 
     <ProgressBar
       title="Title"
@@ -104,8 +104,8 @@ render() {
     </SyntaxHighlighter>
 
 
-    <div className="app-hr"></div>
-    <h2>ProgressBar with <p className="app-code">icon</p> :</h2>
+    <div className="ui-hr"></div>
+    <h2>ProgressBar with <p className="ui-code">icon</p> :</h2>
 
     <ProgressBar
       icon={<i className="icons10-hdd"></i>}
@@ -121,8 +121,8 @@ render() {
       {ProgressBarIconUsageCode}
     </SyntaxHighlighter>
 
-    <div className="app-hr"></div>
-    <h2>ProgressBar with <p className="app-code">custom color</p> :</h2>
+    <div className="ui-hr"></div>
+    <h2>ProgressBar with <p className="ui-code">custom color</p> :</h2>
 
     <ProgressBar
       setProgress={29}
@@ -139,8 +139,8 @@ render() {
       {ProgressBarCustomColorUsageCode}
     </SyntaxHighlighter>
 
-    <div className="app-hr"></div>
-    <h2>ProgressBar with <p className="app-code">custom height</p> :</h2>
+    <div className="ui-hr"></div>
+    <h2>ProgressBar with <p className="ui-code">custom height</p> :</h2>
 
     <ProgressBar
       setProgress={29}
@@ -154,8 +154,8 @@ render() {
     </SyntaxHighlighter>
 
 
-    <div className="app-hr"></div>
-    <h1>ProgressBar as <p className="app-code">Indeterminate</p> :</h1>
+    <div className="ui-hr"></div>
+    <h1>ProgressBar as <p className="ui-code">Indeterminate</p> :</h1>
 
     <ProgressBar
       setProgress={"indeterminate"}
@@ -171,7 +171,7 @@ render() {
     </SyntaxHighlighter>
 
 
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
     <h2>Props</h2>
     <PropsView />
 

@@ -1,9 +1,9 @@
 import React from "react";
 
-const isJavaScriptProtocol = /^[\u0000-\u001F ]*j[\r\n\t]*a[\r\n\t]*v[\r\n\t]*a[\r\n\t]*s[\r\n\t]*c[\r\n\t]*r[\r\n\t]*i[\r\n\t]*p[\r\n\t]*t[\r\n\t]*\:/i
+// eslint-disable-next-line
+const isJavaScriptProtocol = /^[\u0000-\u001F ]*j[\r\n\t]*a[\r\n\t]*v[\r\n\t]*a[\r\n\t]*s[\r\n\t]*c[\r\n\t]*r[\r\n\t]*i[\r\n\t]*p[\r\n\t]*t[\r\n\t]*\:/i;
 
 const NavBarLink = (props) => {
-
   const {
     icon,
     text,
@@ -25,9 +25,10 @@ const NavBarLink = (props) => {
 
   const renderBadge = () => {
     if(showBadge > 0 || showBadge !== "") {
-      return <div className="app-badge"
+      return <div
+              className="ui-badge"
               style={{backgroundColor: badgeBackgroundColor}}>
-                {showBadge}
+              {showBadge}
             </div>;
     }
     return <></>;
@@ -44,7 +45,7 @@ const NavBarLink = (props) => {
   }
 
   return (
-    <li className="app-navbar-list-item">
+    <li className="ui-navbar-list-item">
       <a
         {...(active && { "aria-current": "page", className: "active", "aria-selected": "true" })}
         onClick={onClick}

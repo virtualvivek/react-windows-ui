@@ -57,7 +57,7 @@ render() {
         onChange={ (color) => this.changeTheme(color)}/>
     </div>
     
-    <p><span className="app-color-primary">ColorPickerItem</span> is a component used to let user choose a value from a number of Color Items.</p>
+    <p><span className="ui-color-primary">ColorPickerItem</span> is a component used to let user choose a value from a number of Color Items.</p>
 
     <h2>ColorPickerItem</h2>
 
@@ -89,7 +89,7 @@ render() {
       color="#0078D7"
       onChange={()=> {}}/>
 
-    <p><span className="app-color-primary">ColorPickerPalette</span> is a component used to let user choose a color from Color Palette.</p>
+    <p><span className="ui-color-primary">ColorPickerPalette</span> is a component used to let user choose a color from Color Palette.</p>
 
     <h2>Import</h2>
 

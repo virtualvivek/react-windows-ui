@@ -7,7 +7,7 @@ const AvatarView = (props) => {
 
   const renderDropShadow = () => {
     return <img
-      className="app-avatar drop-shadow"
+      className="ui-avatar drop-shadow"
       src={props.src}
       alt="shadow"
       style={{
@@ -43,8 +43,8 @@ const AvatarView = (props) => {
               title={props.badgeTooltip}
               style={{backgroundColor: props.badgeBackgroundColor, ...props.badgeStyle}}
               className={props.badgePosition === "bottom"
-                ? "app-avatar-badge pos-bottom"
-                : "app-avatar-badge"}>
+                ? "ui-avatar-badge pos-bottom"
+                : "ui-avatar-badge"}>
                 {props.showBadge}
               </span>;
     }
@@ -52,10 +52,10 @@ const AvatarView = (props) => {
   }
 
   return (
-    <div className="app-avatar-container" title={props.tooltip}>
+    <div className="ui-avatar-container" title={props.tooltip}>
       { renderPlaceholder() }
       <img ref={imgRef}
-        className="app-avatar"
+        className="ui-avatar"
         src={props.src}
         alt={props.alt}
         style={{

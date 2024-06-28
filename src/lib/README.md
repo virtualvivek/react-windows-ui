@@ -39,7 +39,7 @@ npm install react-windows-ui
 ```
 ```js
 // Be sure to include styles at some point, probably during your bootstraping
-import "react-windows-ui/config/app-config.css";
+import "react-windows-ui/config/ui-config.css";
 import "react-windows-ui/dist/react-windows-ui.min.css";
 import "react-windows-ui/icons/winui-icons.min.css";
 ```

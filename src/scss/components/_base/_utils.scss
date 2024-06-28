@@ -1,20 +1,20 @@
-.app-color-primary {
+.ui-color-primary {
   color: var(--color-primary-adaptive);
 }
-.app-color-danger {
+.ui-color-danger {
   color: var(--color-danger-default);
 }
-.app-color-success {
+.ui-color-success {
   color: var(--color-success-default);
 }
-.app-bg-danger {
+.ui-bg-danger {
   background: var(--color-danger-default) !important;
 }
-.app-bg-success {
+.ui-bg-success {
   background: var(--color-success-default) !important;
 }
-.app-bg-danger,
-.app-bg-success {
+.ui-bg-danger,
+.ui-bg-success {
   color: #fff !important;
 }
 
@@ -28,17 +28,17 @@
   font-size: 20px;
 }
 
-.app-align-center {
+.ui-align-center {
   align-items: center;
 }
-.app-flex {
+.ui-flex {
   display: flex;
 }
-.app-flex-center {
+.ui-flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.app-inline-flex {
+.ui-inline-flex {
   display: inline-flex;
 }

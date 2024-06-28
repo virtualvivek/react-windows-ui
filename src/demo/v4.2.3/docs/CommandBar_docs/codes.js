@@ -4,7 +4,7 @@ const CommandBarImportCode =
 const CommandBarButtonUsageCode =
 `<CommandBar.Button
   value="Upload"
-  icon={<i className="icons10-upload app-color-primary"></i>}
+  icon={<i className="icons10-upload ui-color-primary"></i>}
 />`;
 
 const CommandBarDropdownUsageCode =
@@ -12,7 +12,7 @@ const CommandBarDropdownUsageCode =
   <CommandBar.MenuTrigger> // You can use any Custom Element as Trigger
     <CommandBar.Button
       value="Share"
-      icon={<i className="icons10-angle-down app-color-primary"></i>}
+      icon={<i className="icons10-angle-down ui-color-primary"></i>}
     />
   </CommandBar.MenuTrigger>
   <CommandBar.MenuItem label="Instagram"/>
@@ -25,7 +25,7 @@ const CommandBarDropdownUsageCode =
 
 const CommandBarSplitUsageCode =
 `<CommandBar>
-  <CommandBar.Button value="New" icon={<i className="icons10-plus app-color-primary"></i>}/>
+  <CommandBar.Button value="New" icon={<i className="icons10-plus ui-color-primary"></i>}/>
 
   <CommandBar.SplitDivider/>
 

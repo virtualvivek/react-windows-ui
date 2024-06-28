@@ -66,7 +66,7 @@ class ButtonsDocs extends React.Component {
           onClick={this.setRegular}
         />
 
-        <div className="app-hr"></div>
+        <div className="ui-hr"></div>
 
         <h2>Import</h2>
 
@@ -77,7 +77,7 @@ class ButtonsDocs extends React.Component {
           {ButtonImportCode}
         </SyntaxHighlighter>
 
-        <div className="app-hr"></div>
+        <div className="ui-hr"></div>
         <h2>Usage</h2>
 
 
@@ -107,7 +107,7 @@ class ButtonsDocs extends React.Component {
           {ButtonTypesCode}
         </SyntaxHighlighter>
 
-        <div className="app-hr"></div>
+        <div className="ui-hr"></div>
 
         <h3>Button Default</h3>
 
@@ -140,7 +140,7 @@ class ButtonsDocs extends React.Component {
           {ButtonDefaultCode}
         </SyntaxHighlighter>
       
-        <div className="app-hr"></div>
+        <div className="ui-hr"></div>
         <h2 className="m-t-15">Button icon primary:</h2>
 
         <Button
@@ -165,8 +165,8 @@ class ButtonsDocs extends React.Component {
         </SyntaxHighlighter>
         
        
-        <div className="app-hr"></div>
-        <h2>Button <p className="app-code">Primary</p>:</h2>
+        <div className="ui-hr"></div>
+        <h2>Button <p className="ui-code">Primary</p>:</h2>
       
         <Button
           type="primary"
@@ -188,8 +188,8 @@ class ButtonsDocs extends React.Component {
           {ButtonPrimary}
         </SyntaxHighlighter>
        
-        <div className="app-hr"></div>
-        <h2>Button <p className="app-code">Primary Outline</p>:</h2>
+        <div className="ui-hr"></div>
+        <h2>Button <p className="ui-code">Primary Outline</p>:</h2>
 
         <Button
           type="primary-outline"
@@ -210,7 +210,7 @@ class ButtonsDocs extends React.Component {
           {ButtonPrimaryOutline}
         </SyntaxHighlighter>
 
-        <div className="app-hr"></div>
+        <div className="ui-hr"></div>
         <h2 className="m-b-15">Button Success</h2>
 
         <Button
@@ -233,7 +233,7 @@ class ButtonsDocs extends React.Component {
         </SyntaxHighlighter>
        
       
-        <div className="app-hr"></div>
+        <div className="ui-hr"></div>
         <h2 className="m-b-15">Button Danger</h2>
 
         <Button
@@ -256,7 +256,7 @@ class ButtonsDocs extends React.Component {
         </SyntaxHighlighter>
 
 
-        <div className="app-hr"></div>
+        <div className="ui-hr"></div>
         <h1 className="m-b-15">Button as Icon:</h1>
 
         <Button
@@ -288,7 +288,7 @@ class ButtonsDocs extends React.Component {
           {ButtonIconCode}
         </SyntaxHighlighter>
 
-        <div className="app-hr"></div>
+        <div className="ui-hr"></div>
 
         <h2>Props</h2>
         <PropsView/>

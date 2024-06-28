@@ -12,7 +12,7 @@ const SelectNative = (props) => {
   } = props;
 
   return (
-    <select className="app-menu-title"
+    <select className="ui-menu-title"
       {...otherProps}
       title={tooltip}
       name={name}

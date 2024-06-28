@@ -10,11 +10,11 @@ const LinkDocs = () => {
     <NavPageContainer hasPadding>
       <h1>Link</h1>
 
-      <p><span className="app-color-primary">Links</span> are accessible elements used primarily for navigation.<br/>Style any component either from a <i>routing library</i> or an <i>{`<a>`}</i> with <b>className="app-link"</b>.</p>
-      <div className="app-hr"></div>
+      <p><span className="ui-color-primary">Links</span> are accessible elements used primarily for navigation.<br/>Style any component either from a <i>routing library</i> or an <i>{`<a>`}</i> with <b>className="ui-link"</b>.</p>
+      <div className="ui-hr"></div>
 
-      <div className="app-alert-bar alert-secondary" role="alert">
-        <div className="app-alert-bar-content">
+      <div className="ui-alert-bar alert-secondary" role="alert">
+        <div className="ui-alert-bar-content">
           <span>This project uses <i>"react-router-dom"</i> but you can use any routing library.</span>
         </div>
       </div>
@@ -30,8 +30,8 @@ const LinkDocs = () => {
 
       <h2>Usage</h2>
 
-      <Link className="app-link" to="#">This is a Link</Link><br/>
-      <Link className="app-link" to="#"><b>This is a Bold Link</b></Link><br/><br/>
+      <Link className="ui-link" to="#">This is a Link</Link><br/>
+      <Link className="ui-link" to="#"><b>This is a Bold Link</b></Link><br/><br/>
 
       <SyntaxHighlighter
         language="javascript"
@@ -40,8 +40,8 @@ const LinkDocs = () => {
         {LinkUsageCode}
       </SyntaxHighlighter>
 
-      <h2>Link as <span className="app-code">Subtle</span>:</h2>
-      <Link className="app-link-subtle" to="#">This is a Subtle Link</Link><br/><br/>
+      <h2>Link as <span className="ui-code">Subtle</span>:</h2>
+      <Link className="ui-link-subtle" to="#">This is a Subtle Link</Link><br/><br/>
       <SyntaxHighlighter
         language="javascript"
         style={vscDarkPlus}
@@ -49,7 +49,7 @@ const LinkDocs = () => {
         {LinkSubtleUsageCode}
       </SyntaxHighlighter>
 
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
 
       <br/><br/><br/><br/><br/>
     </NavPageContainer>

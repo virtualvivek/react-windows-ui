@@ -12,7 +12,7 @@ function MenuList(props, myRef) {
     <ul
       ref={inputRef}
       onClick={props.onItemClick}
-      className="app-cmdbar-menu-list cmdbar-submenu">
+      className="ui-cmdbar-menu-list cmdbar-submenu">
       {/* If there are multiple sub child if li */}
       {Array.isArray(props.listData.children)
       ? <>

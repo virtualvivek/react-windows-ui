@@ -19,7 +19,7 @@ render() {
     hasPadding
     animateTransition={false}>
     <h1>InputSearch</h1>
-    <p><span className="app-color-primary">InputSearch</span>  defines a text field for entering a search string.</p>
+    <p><span className="ui-color-primary">InputSearch</span>  defines a text field for entering a search string.</p>
         
     <h2>InputSearchBar</h2>
 
@@ -50,7 +50,7 @@ render() {
     </SyntaxHighlighter>
 
   
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
     <h2>InputSearchBox</h2>
 
     <InputSearchBox
@@ -81,7 +81,7 @@ render() {
 
 
   
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
     <h2>InputSearchSuggestion</h2>
 
     <InputSearchSuggestion

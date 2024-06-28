@@ -8,13 +8,13 @@ const LoaderBar = (props) => {
 
   return (
     <div className={props.isLoading
-      ? `app-loader-bar animate${setTheme()}`
-      : `app-loader-bar${setTheme()}`
+      ? `ui-loader-bar animate${setTheme()}`
+      : `ui-loader-bar${setTheme()}`
       }>
-      <div className="app-ldr-bar ball-1"></div>
-      <div className="app-ldr-bar ball-2"></div>
-      <div className="app-ldr-bar ball-3"></div>
-      <div className="app-ldr-bar ball-4"></div>
+      <div className="ui-ldr-bar ball-1"></div>
+      <div className="ui-ldr-bar ball-2"></div>
+      <div className="ui-ldr-bar ball-3"></div>
+      <div className="ui-ldr-bar ball-4"></div>
     </div>
   )
 }

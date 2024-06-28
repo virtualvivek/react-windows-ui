@@ -1,10 +1,10 @@
-.app-input-calendar {
+.ui-input-calendar {
   @extend .input-field-default;
 }
-.app-input-container input[type^="date"]::-webkit-calendar-picker-indicator,
-.app-input-container input[type="month"]::-webkit-calendar-picker-indicator,
-.app-input-container input[type="week"]::-webkit-calendar-picker-indicator,
-.app-input-container input[type="time"]::-webkit-calendar-picker-indicator {
+.ui-input-container input[type^="date"]::-webkit-calendar-picker-indicator,
+.ui-input-container input[type="month"]::-webkit-calendar-picker-indicator,
+.ui-input-container input[type="week"]::-webkit-calendar-picker-indicator,
+.ui-input-container input[type="time"]::-webkit-calendar-picker-indicator {
   color: transparent;
   background: none;
   margin-right: 4px;
@@ -20,10 +20,10 @@
   }
 }
 
-.app-input-container input[type^="date"],
-.app-input-container input[type="month"],
-.app-input-container input[type="week"],
-.app-input-container input[type="time"] {
+.ui-input-container input[type^="date"],
+.ui-input-container input[type="month"],
+.ui-input-container input[type="week"],
+.ui-input-container input[type="time"] {
   position: relative;
   &:before {
     z-index: 1;
@@ -39,7 +39,7 @@
   }
 }
 
-.app-input-container input[type^="date"]:before,
-.app-input-container input[type="week"]:before { content: "\f1cb"; }
-.app-input-container input[type="month"]:before { content: "\f1e3"; }
-.app-input-container input[type="time"]:before { content: "\f13c"; }
+.ui-input-container input[type^="date"]:before,
+.ui-input-container input[type="week"]:before { content: "\f1cb"; }
+.ui-input-container input[type="month"]:before { content: "\f1e3"; }
+.ui-input-container input[type="time"]:before { content: "\f13c"; }

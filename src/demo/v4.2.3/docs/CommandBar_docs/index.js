@@ -21,7 +21,7 @@ class CommandBarDocs extends React.Component {
       <h1>CommandBar</h1>
 
       <CommandBar>
-        <CommandBar.Button value="New" icon={<i className="icons10-plus app-color-primary"></i>}/>
+        <CommandBar.Button value="New" icon={<i className="icons10-plus ui-color-primary"></i>}/>
         
         <CommandBar.SplitDivider/>
 
@@ -33,11 +33,11 @@ class CommandBarDocs extends React.Component {
           <CommandBar.MenuItem label="Document" />
         </CommandBar.Menu>
 
-        <CommandBar.Button value="Upload" icon={<i className="icons10-upload app-color-primary"></i>}/>
+        <CommandBar.Button value="Upload" icon={<i className="icons10-upload ui-color-primary"></i>}/>
 
         <CommandBar.Menu>
           <CommandBar.MenuTrigger>
-            <CommandBar.Button value="Share" icon={<i className="icons10-angle-down app-color-primary"></i>}/>
+            <CommandBar.Button value="Share" icon={<i className="icons10-angle-down ui-color-primary"></i>}/>
           </CommandBar.MenuTrigger>
           <CommandBar.MenuItem label="Whatsapp" />
           <CommandBar.MenuItem label="Facebook" />
@@ -45,7 +45,7 @@ class CommandBarDocs extends React.Component {
 
       </CommandBar>
 
-      <p><span className="app-color-primary">CommandBar</span> is a surface that houses commands that operate on the content of the window.<br/></p>
+      <p><span className="ui-color-primary">CommandBar</span> is a surface that houses commands that operate on the content of the window.<br/></p>
     
       <h2>Import</h2>
 
@@ -57,14 +57,14 @@ class CommandBarDocs extends React.Component {
       </SyntaxHighlighter>
 
       <h2>Usage</h2>
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
 
       {/* --------------------------------------------------- */}
 
-      <h1>CommandBar as <p className="app-code">Menu</p> :</h1>
+      <h1>CommandBar as <p className="ui-code">Menu</p> :</h1>
 
-      <div className="app-alert-bar alert-secondary" role="alert">
-        <div className="app-alert-bar-content">
+      <div className="ui-alert-bar alert-secondary" role="alert">
+        <div className="ui-alert-bar-content">
           <span>You can render any components as <b>{`<CommandBar.MenuTrigger>`}.</b></span>
         </div>
       </div>
@@ -72,7 +72,7 @@ class CommandBarDocs extends React.Component {
 
       <CommandBar.Menu>
         <CommandBar.MenuTrigger>
-          <CommandBar.Button value="Share" icon={<i className="icons10-angle-down app-color-primary"></i>}/>
+          <CommandBar.Button value="Share" icon={<i className="icons10-angle-down ui-color-primary"></i>}/>
         </CommandBar.MenuTrigger>
         <CommandBar.MenuItem label="Instagram"/>
         <CommandBar.MenuItemDivider/>
@@ -98,15 +98,15 @@ class CommandBarDocs extends React.Component {
       <PropsCmdMenuTrigger/>
       <h2>CommandBar.<b>MenuItem</b> :</h2>
       <PropsCmdMenuItem/>
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
 
       {/* --------------------------------------------------- */}
     
-      <h1>CommandBar as <p className="app-code">Button</p> :</h1>
+      <h1>CommandBar as <p className="ui-code">Button</p> :</h1>
 
       <CommandBar.Button
         value="Upload"
-        icon={<i className="icons10-upload app-color-primary"></i>}
+        icon={<i className="icons10-upload ui-color-primary"></i>}
       />
       <br/><br/>
 
@@ -119,14 +119,14 @@ class CommandBarDocs extends React.Component {
 
       <h2>Props</h2>
       <PropsCmdBtn />
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
 
       {/* --------------------------------------------------- */}
 
-      <h1>CommandBar as <p className="app-code">Split Mode</p> :</h1>
+      <h1>CommandBar as <p className="ui-code">Split Mode</p> :</h1>
 
       <CommandBar>
-        <CommandBar.Button value="New" icon={<i className="icons10-plus app-color-primary"></i>}/>
+        <CommandBar.Button value="New" icon={<i className="icons10-plus ui-color-primary"></i>}/>
         
         <CommandBar.SplitDivider/>
 

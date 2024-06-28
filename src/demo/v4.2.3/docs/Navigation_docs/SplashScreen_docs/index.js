@@ -43,7 +43,7 @@ render() {
       className="code code-container">
       {SplashScreenUsageCode}
     </SyntaxHighlighter>
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
 
     <h4><b>Edit ./public/index.html</b></h4>
     <p>Below code helps to display some content before page mounts.</p>
@@ -54,9 +54,9 @@ render() {
       className="code code-container">
       {SplashScreenPublicCode}
     </SyntaxHighlighter>
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
 
-    <h2>SplashScreen with a <span className='app-code'>Logo</span></h2>
+    <h2>SplashScreen with a <span className='ui-code'>Logo</span></h2>
 
     <div className="demo-splash-navpagecontainer-view">
       <div className="demo-splash-navpagecontainer-page-column">
@@ -74,9 +74,9 @@ render() {
       className="code code-container">
       {SplashScreenLogoUsageCode}
     </SyntaxHighlighter>
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
 
-    <h2>SplashScreen with a <span className='app-code'>Title & Subtitle</span></h2>
+    <h2>SplashScreen with a <span className='ui-code'>Title & Subtitle</span></h2>
 
     <div className="demo-splash-navpagecontainer-view">
       <div className="demo-splash-navpagecontainer-page-column">
@@ -94,9 +94,9 @@ render() {
       className="code code-container">
       {SplashScreenTitleSubtitleUsageCode}
     </SyntaxHighlighter>
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
 
-    <h2>SplashScreen with a <span className='app-code'>Logo & Title</span></h2>
+    <h2>SplashScreen with a <span className='ui-code'>Logo & Title</span></h2>
 
     <div className="demo-splash-navpagecontainer-view">
       <div className="demo-splash-navpagecontainer-page-column">
@@ -114,7 +114,7 @@ render() {
       className="code code-container">
       {SplashScreenLogoTitleUsageCode}
     </SyntaxHighlighter>
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
 
 
     <h2>Props</h2>

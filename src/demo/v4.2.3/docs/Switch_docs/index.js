@@ -16,7 +16,7 @@ render() {
     animateTransition={false}>
     <h1>Switch</h1>
 
-    <p>A <span className="app-color-primary">Switch</span> is a simple component used for activating one of two predefined options. Commonly used as an on/off button.</p>
+    <p>A <span className="ui-color-primary">Switch</span> is a simple component used for activating one of two predefined options. Commonly used as an on/off button.</p>
         
     <Switch
       defaultChecked={true}
@@ -64,8 +64,8 @@ render() {
     </SyntaxHighlighter>
 
   
-    <div className="app-hr"></div>
-    <h2>Switch with <p className="app-code">no label</p> :</h2>
+    <div className="ui-hr"></div>
+    <h2>Switch with <p className="ui-code">no label</p> :</h2>
 
     <p>To remove label just pass prop <b>{'label={false}'}</b>:</p>
 
@@ -83,8 +83,8 @@ render() {
      {SwitchNoLabelUsageCode}
     </SyntaxHighlighter>
 
-    <div className="app-hr"></div>
-    <h2>Switch with <p className="app-code">label fixed width</p> :</h2>
+    <div className="ui-hr"></div>
+    <h2>Switch with <p className="ui-code">label fixed width</p> :</h2>
 
     <Switch
       labelOn="On"
@@ -101,8 +101,8 @@ render() {
      {SwitchLabelFixedWidthUsageCode}
     </SyntaxHighlighter>
 
-    <div className="app-hr"></div>
-    <h2>Switch with <p className="app-code">label position "start"</p> :</h2>
+    <div className="ui-hr"></div>
+    <h2>Switch with <p className="ui-code">label position "start"</p> :</h2>
     <Switch
       onChange={() => {}}
       labelFixedWidth={28}

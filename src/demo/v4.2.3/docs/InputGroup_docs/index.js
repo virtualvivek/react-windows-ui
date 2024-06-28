@@ -27,7 +27,7 @@ const InputGroupDocs = () => {
       hasPadding
       animateTransition={false}>
       <h1>{inputVal}</h1>
-      <p className="font-size-18px">The <span className="app-color-primary">Input</span> elements are used to create interactive controls for forms in order to accept data from the user.</p>
+      <p className="font-size-18px">The <span className="ui-color-primary">Input</span> elements are used to create interactive controls for forms in order to accept data from the user.</p>
 
       <InputText
         clearButton={true}
@@ -126,7 +126,7 @@ const InputGroupDocs = () => {
       <h2>Props</h2>
       <PropsView />
 
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
       <h1>TextArea</h1>
 
       <TextArea
@@ -145,7 +145,7 @@ const InputGroupDocs = () => {
       <h2>Props</h2>
       <TextAreaProps />
       
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
       <h2>Input as Calendars:</h2>
       
       <div style={{display: "grid", gap: 5}}>
@@ -186,7 +186,7 @@ const InputGroupDocs = () => {
       <h2>Props</h2>
       <DateProps/>
 
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
 
 
       <h1>InputSearchBar</h1>

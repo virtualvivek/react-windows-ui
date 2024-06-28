@@ -11,15 +11,15 @@ const NavBarThemeSwitch = (props) => {
   }
 
   return (
-    <label className="app-navbar-theme-switch" >
+    <label className="ui-navbar-theme-switch" >
       <input
         ref={inputRef}
         type="checkbox"
         onClick={toggleDayNight}
         // onChange={toggleDayNight}
-        id="app-navbar-theme-switch"
+        id="ui-navbar-theme-switch"
       />
-      <div className="app-navbar-theme-switch-icon"></div>
+      <div className="ui-navbar-theme-switch-icon"></div>
     </label>
   )
 }

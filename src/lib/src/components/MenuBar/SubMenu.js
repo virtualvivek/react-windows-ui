@@ -11,7 +11,7 @@ const SubMenu = (props) => {
   } = props;
 
   const view = useCallback(() => (
-    <ul className="app-menu-list" aria-hidden={"false"}>
+    <ul className="ui-menu-list" aria-hidden={"false"}>
       {children}
     </ul>
   ), [children]);
@@ -32,7 +32,7 @@ const SubMenu = (props) => {
   
 
   return (
-    <li className="app-menu-list-item" key={title}>
+    <li className="ui-menu-list-item" key={title}>
       <span onClick={onClick} data-win-toggle="dropdown">
         {icon}{title}
       </span>

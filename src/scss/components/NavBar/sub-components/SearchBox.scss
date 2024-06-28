@@ -1,5 +1,5 @@
-.app-navbar-wrap {
-  .app-input-search-box {
+.ui-navbar-wrap {
+  .ui-input-search-box {
     width: -webkit-fill-available;
     width: -moz-available;
     user-select: none;
@@ -9,8 +9,8 @@
 
 // On NavBar Collapsed --
 @media only screen and (min-width: 760px) {
-  .app-navbar-wrap.collapsed {
-    .app-input-search-box {
+  .ui-navbar-wrap.collapsed {
+    .ui-input-search-box {
       margin: 5px;
       padding: 8px 10px;
       width: fit-content;

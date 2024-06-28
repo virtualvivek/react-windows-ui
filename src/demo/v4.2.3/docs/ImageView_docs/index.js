@@ -61,7 +61,7 @@ class ImageViewDocs extends React.Component {
         type="primary-outline"
         onClick={this.setRegular}/>
 
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
 
       <h2>Import</h2>
 
@@ -81,9 +81,9 @@ class ImageViewDocs extends React.Component {
         {ImageViewUsageCode}
       </SyntaxHighlighter>
 
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
 
-      <h2>ImageView with <p className="app-code">Inset Shadow</p> :</h2>
+      <h2>ImageView with <p className="ui-code">Inset Shadow</p> :</h2>
 
       <ImageView
         src={Img4}
@@ -101,9 +101,9 @@ class ImageViewDocs extends React.Component {
         {ImageViewShadowInsetUsageCode}
       </SyntaxHighlighter>
 
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
 
-      <h2>ImageView with <p className="app-code">Title and Subtitle</p> :</h2>
+      <h2>ImageView with <p className="ui-code">Title and Subtitle</p> :</h2>
 
       <ImageView
         src={Img4}

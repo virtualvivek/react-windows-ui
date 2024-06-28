@@ -36,16 +36,16 @@ render() {
 
     <h1>NavBarLink</h1>
 
-    <div className="app-navbar-wrap">
+    <div className="ui-navbar-wrap">
       <nav className="animate custom" style={{position:'relative'}}>
-        <ul style={{padding:0, margin:0}} className="app-navbar-list">
-          <li className="app-navbar-list-item">
+        <ul style={{padding:0, margin:0}} className="ui-navbar-list">
+          <li className="ui-navbar-list-item">
             <a rel="noopener noreferrer" href={`#/v${lib_version}/navbarlink`} className="active">
               <i className="icons10-add"></i>
               <span>NavItem1</span>
             </a>
           </li>
-          <li className="app-navbar-list-item">
+          <li className="ui-navbar-list-item">
             <a rel="noopener noreferrer" href={`#/v${lib_version}/navbarlink`}>
               <i className="icons10-user"></i>
               <span>NavItem2</span>
@@ -73,14 +73,14 @@ render() {
       {NavBarLinkUsageCode}
     </SyntaxHighlighter>
 
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
 
-    <h2>NavBarLink with <span className="app-code">Image</span> :</h2>
+    <h2>NavBarLink with <span className="ui-code">Image</span> :</h2>
 
-    <div className="app-navbar-wrap">
+    <div className="ui-navbar-wrap">
       <nav className="animate custom" style={{position:'relative'}}>
-        <ul style={{padding:0, margin:0}} className="app-navbar-list">
-          <li className="app-navbar-list-item">
+        <ul style={{padding:0, margin:0}} className="ui-navbar-list">
+          <li className="ui-navbar-list-item">
           <a rel="noopener noreferrer" href={`#/v${lib_version}/navbarlink`}>
             <img src={Img1} alt="img"/>
             <span>NavItem 1</span>
@@ -98,18 +98,18 @@ render() {
       {NavBarLinkImgUsageCode}
     </SyntaxHighlighter>
 
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
 
-    <h2>NavBarLink show <span className="app-code">Badge</span> :</h2>
+    <h2>NavBarLink show <span className="ui-code">Badge</span> :</h2>
 
-    <div className="app-navbar-wrap">
+    <div className="ui-navbar-wrap">
       <nav className="animate custom" style={{position:'relative'}}>
-        <ul style={{padding:0, margin:0}} className="app-navbar-list">
-          <li className="app-navbar-list-item">
+        <ul style={{padding:0, margin:0}} className="ui-navbar-list">
+          <li className="ui-navbar-list-item">
           <a rel="noopener noreferrer" href={`#/v${lib_version}/navbarlink`}>
             <i className="icons10-user"></i>
             <span>NavItem1</span>
-            {this.state.badgeVal > 0 ? <div className="app-badge">{this.state.badgeVal}</div> : <></>}
+            {this.state.badgeVal > 0 ? <div className="ui-badge">{this.state.badgeVal}</div> : <></>}
           </a>
           </li>
         </ul>

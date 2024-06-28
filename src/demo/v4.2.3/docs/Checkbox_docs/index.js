@@ -63,8 +63,8 @@ render() {
     </SyntaxHighlighter>
 
   
-    <div className="app-hr"></div>
-    <h2>Checkbox <p className="app-code">Inline</p> :</h2>
+    <div className="ui-hr"></div>
+    <h2>Checkbox <p className="ui-code">Inline</p> :</h2>
 
 
     <p>Lorem ipsum dolor sit amet&nbsp;

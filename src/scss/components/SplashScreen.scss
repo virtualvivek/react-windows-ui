@@ -1,5 +1,5 @@
-.app-splash-screen {
-  @extend .app-overlay;
+.ui-splash-screen {
+  @extend .ui-overlay;
 
   z-index: 999;
   display: flex;

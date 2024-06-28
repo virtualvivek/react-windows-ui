@@ -5,7 +5,7 @@ const Link = (props) => {
   return (
     <LinkRouter
       to={props.to}
-      className="app-link"
+      className="ui-link"
       style={props.style}
       {...props}>
       {props.children}

@@ -14,7 +14,7 @@ const AccordionDocs = () => {
       overscroll>
       <h1>Accordion</h1>
 
-      <p><span className="app-color-primary">
+      <p><span className="ui-color-primary">
         Accordion</span> component is used to show (and hide) content, it collapsed on hide and expand on show state.
       </p>
       
@@ -52,7 +52,7 @@ const AccordionDocs = () => {
         {AccordionUsageCode}
       </SyntaxHighlighter>
 
-      <h3 className="m-tb-20">Accordion with <p className="app-code">Custom Header</p> :</h3>
+      <h3 className="m-tb-20">Accordion with <p className="ui-code">Custom Header</p> :</h3>
 
       <Accordion>
         <Accordion.Header>

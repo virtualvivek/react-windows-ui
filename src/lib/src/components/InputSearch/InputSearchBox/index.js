@@ -22,8 +22,8 @@ const InputSearchBox = forwardRef((props, ref) => {
   }
 
   return (
-    <div className="app-input-search-box" title={tooltip}>
-      <input className="app-input-text"
+    <div className="ui-input-search-box" title={tooltip}>
+      <input className="ui-input-text"
         style={{ width: width }}
         ref={ref}
         {...otherProps}

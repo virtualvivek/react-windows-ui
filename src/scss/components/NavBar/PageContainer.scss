@@ -1,4 +1,4 @@
-.app-page-container {
+.ui-page-container {
   height: auto;
   flex: 1 1 auto;
   width: -moz-available;
@@ -10,8 +10,8 @@
   }
 }
 
-@mixin app-content-wrap-mobile() {
-  .app-page-container {
+@mixin ui-content-wrap-mobile() {
+  .ui-page-container {
     margin: 0 !important;
     padding-top: 50px !important; //for NavigationBar
     

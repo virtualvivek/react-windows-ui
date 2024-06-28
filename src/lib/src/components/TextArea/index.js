@@ -11,7 +11,7 @@ const TextArea = (props, ref) => {
   return (
     <textarea
       className={
-        `app-textarea`+
+        `ui-textarea`+
         `${resizer ? "" : " resizer-none"}`+
         `${
           resize === "none" ? " resize-none" :

@@ -25,7 +25,7 @@ const DialogConfirmUsageCode =
   style={{padding:20}}
   onBackdropPress={() => {}}>
     <Dialog.Body style={{padding: 15}}>
-      <h2 className="app-m-0">Dialog Confirm</h2>
+      <h2 className="ui-m-0">Dialog Confirm</h2>
       <p>Are you feel good today?</p>  
       <div style={{display: "flex", justifyContent: "center"}}>
         <Button

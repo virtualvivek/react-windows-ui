@@ -62,7 +62,7 @@
 }
 
 .input-field-focused,
-.app-input-container:focus-within .app-input-label {
+.ui-input-container:focus-within .ui-input-label {
   outline: none;
   transition: 0s;
   background: var(--color-input-bg-focused);
@@ -110,15 +110,15 @@
 }
 
 
-.app-overlay {
+.ui-overlay {
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
 }
-.app-dim-overlay {
-  @extend .app-overlay;
+.ui-dim-overlay {
+  @extend .ui-overlay;
   z-index: 10;
   opacity: 0;
   visibility: hidden;
@@ -134,7 +134,7 @@
   }
 }
 
-.app-dropdown-ul-default-item {
+.ui-dropdown-ul-default-item {
   a, span {
     display: flex;
     line-height: 1;
@@ -161,7 +161,7 @@
 }
 
 
-.app-dropdown-ul-default {
+.ui-dropdown-ul-default {
   top: 100%;
   padding: 0;
   cursor: auto;
@@ -194,12 +194,12 @@
   }
 
   li {
-    @extend .app-dropdown-ul-default-item;
+    @extend .ui-dropdown-ul-default-item;
   }
 }
 
 
-.app-modal-footer-default {
+.ui-modal-footer-default {
   padding: 15px;
   display: block;
   text-align: right;

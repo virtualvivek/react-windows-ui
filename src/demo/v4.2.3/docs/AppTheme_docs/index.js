@@ -76,7 +76,7 @@ class AppThemeDocs extends React.Component {
       </div>
 
 
-      <p><span className="app-color-primary">AppTheme</span> is a component used for changing <b>App's primary color</b> and <b>Light/Dark Mode</b> at Runtime.</p>
+      <p><span className="ui-color-primary">AppTheme</span> is a component used for changing <b>App's primary color</b> and <b>Light/Dark Mode</b> at Runtime.</p>
 
       <h2>Import</h2>
 

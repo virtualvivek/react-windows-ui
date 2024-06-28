@@ -37,7 +37,7 @@ const MenuDialog = forwardRef((props, ref) => {
 
   return (
     <div ref={dialogRef}
-      className={`app-menu-dialog${isShow}${isReverse}`}>
+      className={`ui-menu-dialog${isShow}${isReverse}`}>
       {children}
     </div>
   );

@@ -49,7 +49,7 @@ render() {
     animateTransition={false}>
     <h1>Loaders</h1>
         
-    <p>The <span className="app-color-primary">Loaders</span> are progress view that alerts a user to wait for an activity to complete.</p>
+    <p>The <span className="ui-color-primary">Loaders</span> are progress view that alerts a user to wait for an activity to complete.</p>
 
     <h1>LoaderBar</h1>
 
@@ -82,7 +82,7 @@ render() {
     </SyntaxHighlighter>
 
   
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
     <h1>LoaderBusy</h1>
 
     <h2>Import</h2>
@@ -96,7 +96,7 @@ render() {
 
     <h2>Usage</h2>
 
-    <div className="app-flex">
+    <div className="ui-flex">
       &nbsp;&nbsp;&nbsp;
       <LoaderBusy
         size="large"
@@ -127,8 +127,8 @@ render() {
     </SyntaxHighlighter>
 
   
-    <div className="app-hr"></div>
-    <h1>LoaderBusy <p className="app-code">Overlay</p> :</h1>
+    <div className="ui-hr"></div>
+    <h1>LoaderBusy <p className="ui-code">Overlay</p> :</h1>
 
     <LoaderBusy
       isLoading={this.state.showLoaderBusyFull}
@@ -148,8 +148,8 @@ render() {
       {LoaderBusyFullscreenUsageCode}
     </SyntaxHighlighter>
 
-    <div className="app-hr"></div>
-    <h1>LoaderBusy <p className="app-code">Overlay</p>&nbsp;<p className="app-code">Custom Bg Color</p> :</h1>
+    <div className="ui-hr"></div>
+    <h1>LoaderBusy <p className="ui-code">Overlay</p>&nbsp;<p className="ui-code">Custom Bg Color</p> :</h1>
 
     <LoaderBusy
       isLoading={this.state.showLoaderBusyFullCustom}
@@ -171,12 +171,12 @@ render() {
       {LoaderBusyFullscreenCustomUsageCode}
     </SyntaxHighlighter>
 
-    <div className="app-hr"></div>
-    <h2>Loaders <p className="app-code">{`setTheme={'light'}`}</p> :</h2>
-    <div className="app-align-center"
+    <div className="ui-hr"></div>
+    <h2>Loaders <p className="ui-code">{`setTheme={'light'}`}</p> :</h2>
+    <div className="ui-align-center"
       style={{width:'80%',borderRadius: 12, backgroundColor: "var(--PrimaryColor)"}}>
       <br/><br/>
-      <div className="app-flex">
+      <div className="ui-flex">
         &nbsp;&nbsp;&nbsp;&nbsp;
         <LoaderBusy
           setTheme="light"
@@ -199,7 +199,7 @@ render() {
       <br/><br/>
     </div>
 
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
     <h2>Props</h2>
     <PropsView />
 

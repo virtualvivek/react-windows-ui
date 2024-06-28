@@ -57,7 +57,7 @@ class DialogDocs extends React.Component {
         isVisible={this.state.showDialogConfirm}
         onBackdropPress={this.toggleDialogConfirm}>
           <Dialog.Body style={{padding: 15}}>
-            <h2 className="app-m-0">Dialog Confirm</h2>
+            <h2 className="ui-m-0">Dialog Confirm</h2>
             <p>Are you feel good today?</p>  
             <div style={{display: "flex", justifyContent: "center"}}>
               <Button
@@ -76,7 +76,7 @@ class DialogDocs extends React.Component {
           </Dialog.Body>
       </Dialog>
 
-      <p>A <span className="app-color-primary">Dialog</span> is a type of modal window that appears in front of app content to provide critical information or ask for a decision.</p>
+      <p>A <span className="ui-color-primary">Dialog</span> is a type of modal window that appears in front of app content to provide critical information or ask for a decision.</p>
 
       <Button
         value="Open Dialog"
@@ -100,9 +100,9 @@ class DialogDocs extends React.Component {
         {DialogUsageCode}
       </SyntaxHighlighter>
 
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
 
-      <h2>Dialog <p className="app-code">Confirm</p> :</h2>
+      <h2>Dialog <p className="ui-code">Confirm</p> :</h2>
 
       <Button
         value="Open Dialog Confirm"

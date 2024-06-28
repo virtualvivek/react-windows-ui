@@ -7,8 +7,8 @@ const setDarkScheme = (saveChanges = true) => {
   document.body.classList.add("dark-theme");
   document.documentElement.setAttribute("data-theme", "dark");
 
-  if(document.getElementById("app-navbar-theme-switch")) {
-    document.getElementById("app-navbar-theme-switch").checked = true;
+  if(document.getElementById("ui-navbar-theme-switch")) {
+    document.getElementById("ui-navbar-theme-switch").checked = true;
   }
   if(saveChanges) { localStorage.setItem("lc_storage_theme_key", "dark"); }
   return "";
@@ -18,8 +18,8 @@ const setLightScheme = (saveChanges = true) => {
   document.body.classList.remove("dark-theme");
   document.documentElement.setAttribute("data-theme", "light");
 
-  if(document.getElementById("app-navbar-theme-switch")) {
-    document.getElementById("app-navbar-theme-switch").checked = false;
+  if(document.getElementById("ui-navbar-theme-switch")) {
+    document.getElementById("ui-navbar-theme-switch").checked = false;
   }
   if(saveChanges) { localStorage.setItem("lc_storage_theme_key", "light"); }
   return "";

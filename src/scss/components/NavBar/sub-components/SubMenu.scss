@@ -1,5 +1,5 @@
-.app-navbar-submenu {
-  .app-navbar-submenu-title {
+.ui-navbar-submenu {
+  .ui-navbar-submenu-title {
     display: flex;
     cursor: pointer;
     font-size: 14px;
@@ -37,7 +37,7 @@
       }
     }
   }
-  .app-navbar-submenu-content {
+  .ui-navbar-submenu-content {
     height: 0;
     overflow: hidden;
     transition: height 243ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -51,8 +51,8 @@
 
 // On NavBar Collapsed --
 @media only screen and (min-width: 760px) {
-  .app-navbar-wrap.collapsed {
-    .app-navbar-submenu-title {
+  .ui-navbar-wrap.collapsed {
+    .ui-navbar-submenu-title {
       justify-content: center;
       &::after {
         font-size: 20px;

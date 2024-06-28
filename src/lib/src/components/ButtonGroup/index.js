@@ -9,7 +9,7 @@ const ButtonGroup = (props, ref) => {
 
   return (
     <div
-      className="app-btn-group"
+      className="ui-btn-group"
       {...otherProps}
       ref={ref}>
       {children}

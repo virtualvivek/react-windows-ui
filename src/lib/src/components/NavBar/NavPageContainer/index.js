@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const NavPageContainer = (props) => {
 
   useEffect(() => {
-    var element = document.getElementById("app-page-container");
+    var element = document.getElementById("ui-page-container");
     if(element && props.animateTransition) {
       element.classList.add("transition-left");
     }
@@ -19,10 +19,10 @@ const NavPageContainer = (props) => {
   return (
     <main
       role="main"
-      id="app-page-container"
+      id="ui-page-container"
       className={ props.hasPadding
-                  ? `app-page-container has-padding${setTransition()}`
-                  : `app-page-container${setTransition()}`
+                  ? `ui-page-container has-padding${setTransition()}`
+                  : `ui-page-container${setTransition()}`
                 }
       style={{
         backgroundColor: props.backgroundColor,

@@ -1,11 +1,11 @@
 @media only screen and (min-width: 760px) {
-  .app-navbar-wrap.collapsed {
+  .ui-navbar-wrap.collapsed {
     ::-webkit-scrollbar {
       inline-size: 0px;
     }
     nav ul h1,
     nav a span,
-    .app-navbar-name {
+    .ui-navbar-name {
       display: none;
     }
 
@@ -14,7 +14,7 @@
       li a {
         text-overflow: clip;
       }
-      .app-hr {
+      .ui-hr {
         width: 56px;
         margin-left: 8px;
       }
@@ -25,9 +25,9 @@
 
 // For Mobile device show Sliding NavBar
 @media only screen and (max-width: 760px) {
-  .app-navbar-wrap {
+  .ui-navbar-wrap {
     overflow-x: hidden;
-    .app-navbar-header-mobile {
+    .ui-navbar-header-mobile {
       display: flex !important;
     }
     nav {
@@ -36,7 +36,7 @@
       transition: transform 0.2s ease-in-out;
     }
   }
-  .app-navbar-wrap.collapsed-float {
+  .ui-navbar-wrap.collapsed-float {
     nav {
       transform-origin: 100% 50%;
       transform: translateX(0);

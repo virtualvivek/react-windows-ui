@@ -1,4 +1,4 @@
-.app-navbar-wrap .app-badge {
+.ui-navbar-wrap .ui-badge {
   position: relative;
   height: 16px;
   padding: 1px 5px;
@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.app-navbar-wrap.collapsed .app-badge {
+.ui-navbar-wrap.collapsed .ui-badge {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

@@ -1,9 +1,9 @@
-.app-navbar-wrap nav.animate.custom .app-navbar-header {
+.ui-navbar-wrap nav.animate.custom .ui-navbar-header {
   position: absolute;
 }
 
 @media only screen and (max-width: 760px) {
-  .app-navbar-wrap nav.animate.custom {
+  .ui-navbar-wrap nav.animate.custom {
     transform-origin: unset;
     transform: unset;
     transition: unset;

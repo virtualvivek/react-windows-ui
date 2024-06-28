@@ -2,10 +2,10 @@ import React from "react";
 
 const PropsCmdMenuTrigger = () => {
   return (
-    <div className="app-table-view-container">
-      <table className="app-table-view">
+    <div className="ui-table-view-container">
+      <table className="ui-table-view">
         <thead>
-          <tr className="app-table-tr">
+          <tr className="ui-table-tr">
             <th align="left">Prop</th>
             <th align="left">Type</th>
             <th align="left">Default</th>
@@ -14,11 +14,11 @@ const PropsCmdMenuTrigger = () => {
         </thead>
         <tbody>
           <tr>
-            <td><p className="app-code">children</p></td>
+            <td><p className="ui-code">children</p></td>
             <td>ReactNode</td>
             <td>
               <button
-              className="app-cmdbar-button"
+              className="ui-cmdbar-button"
               style={{background: "var(--color-ui-hover-default)"}}>
                 <i className="icons10-angle-down"></i>
               </button>

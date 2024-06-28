@@ -20,8 +20,8 @@ const ImageView = (props) => {
   const [didLoad, setLoad] = useState(false);
 
   const renderLoader = () => {
-    return  <div className="app-img-view-loader">
-              <div className="app-loader-busy light animate">
+    return  <div className="ui-img-view-loader">
+              <div className="ui-loader-busy light animate">
                 <LoaderBusyWrapper/>
               </div>
             </div>
@@ -33,7 +33,7 @@ const ImageView = (props) => {
 
   return (
     <div
-      className="app-img-view-container"
+      className="ui-img-view-container"
       title={tooltip}
       style={{
         width: width,
@@ -43,7 +43,7 @@ const ImageView = (props) => {
         borderRadius: borderRadius
       }}>
       <img
-        className="app-img-view"
+        className="ui-img-view"
         src={src}
         alt={alt}
         {...otherProps}

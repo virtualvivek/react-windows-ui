@@ -1,10 +1,10 @@
-.app-switch-container {
+.ui-switch-container {
   user-select: none;
   align-items: center;
   display: inline-flex;
   -webkit-tap-highlight-color: transparent;
 
-  .app-switch {
+  .ui-switch {
     -webkit-user-drag: none;
     box-sizing: border-box;
     align-items: center;
@@ -69,10 +69,10 @@
   >span::before {
     content: attr(data-off);
   }
-  .app-switch-label {
+  .ui-switch-label {
     padding-inline-end: 8px;
   }
-  .app-switch-label:last-child  {
+  .ui-switch-label:last-child  {
     padding-inline-end: 0;
     padding-inline-start: 8px;
   }

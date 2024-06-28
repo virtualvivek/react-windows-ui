@@ -23,25 +23,25 @@ class ClassesDocs extends React.Component {
           {TextHeadingCode}
         </SyntaxHighlighter>
             
-        <div className="app-hr"></div>
+        <div className="ui-hr"></div>
 
         {/* <h2>Margin Notation</h2>
 
-        <ul className="app-ul-content">
-          <li><span className='app-code'>.app-m-0</span> - class that set margin=0</li>
-          <li><span className='app-code'>.app-mt-0</span> - class that set margin-top=0</li>
-          <li><span className='app-code'>.app-mb-0</span> - class that set margin-bottom=0</li>
-          <li><span className='app-code'>.app-mt-10</span> - class that set margin-top=10</li>
-          <li><span className='app-code'>.app-mb-10</span> - class that set margin-bottom=10</li>
-          <li><span className='app-code'>.app-mt-15</span> - class that set margin-top=15</li>
-          <li><span className='app-code'>.app-mb-15</span> - class that set margin-bottom=15</li>
-          <li><span className='app-code'>.app-mt-20</span> - class that set margin-top=20</li>
-          <li><span className='app-code'>.app-mb-20</span> - class that set margin-bottom=20</li>
+        <ul className="ui-ul-content">
+          <li><span className='ui-code'>.ui-m-0</span> - class that set margin=0</li>
+          <li><span className='ui-code'>.ui-mt-0</span> - class that set margin-top=0</li>
+          <li><span className='ui-code'>.ui-mb-0</span> - class that set margin-bottom=0</li>
+          <li><span className='ui-code'>.ui-mt-10</span> - class that set margin-top=10</li>
+          <li><span className='ui-code'>.ui-mb-10</span> - class that set margin-bottom=10</li>
+          <li><span className='ui-code'>.ui-mt-15</span> - class that set margin-top=15</li>
+          <li><span className='ui-code'>.ui-mb-15</span> - class that set margin-bottom=15</li>
+          <li><span className='ui-code'>.ui-mt-20</span> - class that set margin-top=20</li>
+          <li><span className='ui-code'>.ui-mb-20</span> - class that set margin-bottom=20</li>
         </ul>
 
-        <h3 className="app-m-0">Example Heading with no margin bottom.</h3>
+        <h3 className="ui-m-0">Example Heading with no margin bottom.</h3>
 
-        <h2 className="app-mb-0">Heading Text</h2>
+        <h2 className="ui-mb-0">Heading Text</h2>
         
         <SyntaxHighlighter
           language="javascript"
@@ -52,8 +52,8 @@ class ClassesDocs extends React.Component {
         
         <h2>Paragraph varients</h2>
         <p>This is paragraph used to display long text.</p>
-        <p className="app-color-success">This is success paragraph used to display success text.</p>
-        <p className="app-color-danger">This is danger paragraph used to display danger text.</p>
+        <p className="ui-color-success">This is success paragraph used to display success text.</p>
+        <p className="ui-color-danger">This is danger paragraph used to display danger text.</p>
 
         <SyntaxHighlighter
           language="javascript"
@@ -63,7 +63,7 @@ class ClassesDocs extends React.Component {
         </SyntaxHighlighter>
         
         <h3>Text Light</h3>
-        <p className="app-para-light">This is light paragraph used to display long text.</p>
+        <p className="ui-para-light">This is light paragraph used to display long text.</p>
 
         <SyntaxHighlighter
           language="javascript"

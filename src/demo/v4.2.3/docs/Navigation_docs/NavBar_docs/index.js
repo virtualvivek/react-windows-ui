@@ -16,26 +16,26 @@ render() {
     animateTransition={false}>
     <h1>NavBar</h1>
 
-    <div className="app-navbar-wrap">
+    <div className="ui-navbar-wrap">
     <nav className="animate custom" style={{position:'relative', zIndex: 1}}>
-      <div className="app-navbar-header">
-        <span className="app-navbar-toggle-button"></span>
-        <span className="app-navbar-name">React Windows UI</span>
+      <div className="ui-navbar-header">
+        <span className="ui-navbar-toggle-button"></span>
+        <span className="ui-navbar-name">React Windows UI</span>
       </div>
-      <ul style={{padding:0}} className="app-navbar-list">
-        <li className="app-navbar-list-item">
+      <ul style={{padding:0}} className="ui-navbar-list">
+        <li className="ui-navbar-list-item">
           <a rel="noopener noreferrer" href={`#/v${lib_version}/navbar`}><i className="icons10-home"></i>
           <span>Home</span></a>
         </li>
         <h1>Title</h1>
-        <div className="app-hr"></div>
-        <li className="app-navbar-list-item">
+        <div className="ui-hr"></div>
+        <li className="ui-navbar-list-item">
           <a rel="noopener noreferrer" href={`#/v${lib_version}/navbar`} className="active">
             <i className="icons10-add"></i>
             <span>NavItem1</span>
           </a>
         </li>
-        <li className="app-navbar-list-item">
+        <li className="ui-navbar-list-item">
           <a rel="noopener noreferrer" href={`#/v${lib_version}/navbar`}>
             <i className="icons10-user"></i>
             <span>NavItem2</span>
@@ -72,7 +72,7 @@ render() {
       {NavBarExampleUsageCode}
     </SyntaxHighlighter>
 
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
 
     <h2>Props</h2>
     <PropsView />

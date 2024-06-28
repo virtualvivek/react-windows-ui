@@ -2,7 +2,7 @@ import React from "react";
 
 const MenuDivider = (props) => {
   return (
-    <><hr class="app-menu-divider"/></>
+    <><hr class="ui-menu-divider"/></>
   );
 };
 

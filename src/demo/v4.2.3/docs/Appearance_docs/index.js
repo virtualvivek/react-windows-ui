@@ -14,7 +14,7 @@ render() {
     animateTransition={false}>
     <h1>Appearance</h1>
         
-   <p>The <span className="app-color-primary">Appearance</span> module exposes information about the user's appearance preferences,<br/> such as their preferred color scheme (light or dark).</p>
+   <p>The <span className="ui-color-primary">Appearance</span> module exposes information about the user's appearance preferences,<br/> such as their preferred color scheme (light or dark).</p>
 
     <h2>Import</h2>
 
@@ -35,11 +35,11 @@ render() {
     </SyntaxHighlighter>
 
   
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
 
     <h2><b>Methods</b></h2>
 
-    <h2><p className="app-code">getColorScheme()</p></h2>
+    <h2><p className="ui-code">getColorScheme()</p></h2>
     <p>Indicates the current either system or user preferred color scheme.</p>
     <SyntaxHighlighter
       language="javascript"
@@ -49,8 +49,8 @@ render() {
     </SyntaxHighlighter>
 
 
-    <div className="app-hr"></div>
-    <h2><p className="app-code">setDarkScheme()</p></h2>
+    <div className="ui-hr"></div>
+    <h2><p className="ui-code">setDarkScheme()</p></h2>
     <p>Set's app to <i>dark</i> color scheme.</p>
     <SyntaxHighlighter
       language="javascript"
@@ -60,8 +60,8 @@ render() {
     </SyntaxHighlighter>
 
 
-    <div className="app-hr"></div>
-    <h2><p className="app-code">setLightScheme()</p></h2>
+    <div className="ui-hr"></div>
+    <h2><p className="ui-code">setLightScheme()</p></h2>
     <p>Set's app to <i>light</i> color scheme.</p>
     <SyntaxHighlighter
       language="javascript"
@@ -71,8 +71,8 @@ render() {
     </SyntaxHighlighter>
 
 
-    <div className="app-hr"></div>
-    <h2><p className="app-code">setSystemScheme()</p></h2>
+    <div className="ui-hr"></div>
+    <h2><p className="ui-code">setSystemScheme()</p></h2>
     <p>Set's app to <i>system</i> color scheme.</p>
     <SyntaxHighlighter
       language="javascript"

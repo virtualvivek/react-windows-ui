@@ -47,7 +47,7 @@ render() {
       {NavPageContainerUsageCode}
     </SyntaxHighlighter>
   
-    <div className="app-hr"></div>
+    <div className="ui-hr"></div>
     <h2>NavPageContainer: hasPadding={`false`}</h2>
 
     <div className="demo-navpagecontainer-view">

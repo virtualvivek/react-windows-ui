@@ -9,7 +9,7 @@ const MenuListItem = (props) => {
   } = props;
 
   return (
-    <li className="app-menu-list-item" key={title}>
+    <li className="ui-menu-list-item" key={title}>
       <span onClick={onClick}>
         {icon}{title}
       </span>

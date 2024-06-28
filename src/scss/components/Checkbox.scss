@@ -1,4 +1,4 @@
-.app-checkbox {
+.ui-checkbox {
   cursor: pointer;
   position: relative;
   -moz-appearance: none;
@@ -51,6 +51,6 @@
     cursor: not-allowed;
   }
 }
-[data-theme="light"] .app-checkbox::after {
+[data-theme="light"] .ui-checkbox::after {
   filter: invert(1);
 }

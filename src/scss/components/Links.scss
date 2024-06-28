@@ -1,4 +1,4 @@
-.app-link {
+.ui-link {
   font-weight: 400;
   display: inline-flex;
   line-break: anywhere;
@@ -13,7 +13,7 @@
   }
 }
 
-.app-link-subtle {
+.ui-link-subtle {
   padding: 4px 6px;
   border-radius: 4px;
   color: var(--color-text-default);
@@ -26,7 +26,7 @@
 }
 
 @mixin links-mobile() {
-  .app-link {
+  .ui-link {
     &:hover:not(:active) {
       filter: unset;
       opacity: 1;

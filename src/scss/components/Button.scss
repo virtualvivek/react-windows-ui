@@ -1,5 +1,5 @@
 button,
-.app-btn {
+.ui-btn {
   gap: 5px;
   grid-gap: 5px;
   display: inline-flex;
@@ -16,7 +16,7 @@ button,
   }
 }
 
-.app-btn {
+.ui-btn {
   min-height: 32px;
   padding: 6px 11px;
   vertical-align: middle;
@@ -28,10 +28,10 @@ button,
     }
   }
 
-  &.app-btn-primary {
+  &.ui-btn-primary {
     background-color: var(--color-primary-adaptive);
   }
-  &.app-btn-outline-primary {
+  &.ui-btn-outline-primary {
     color: var(--color-day-primary-night-white);
     border: 1px solid var(--color-primary-adaptive);
     &:active {
@@ -39,10 +39,10 @@ button,
     }
   }
   
-  &.app-btn-success {
+  &.ui-btn-success {
     background: var(--color-success-default);
   }
-  &.app-btn-outline-success {
+  &.ui-btn-outline-success {
     color: var(--color-success-default);
     border-color: var(--color-success-default);
     &:active {
@@ -50,10 +50,10 @@ button,
     }
   }
   
-  &.app-btn-danger {
+  &.ui-btn-danger {
     background: var(--color-danger-default);
   }
-  &.app-btn-outline-danger {
+  &.ui-btn-outline-danger {
     color: var(--color-danger-default);
     border-color: var(--color-danger-default);
     &:active {
@@ -61,7 +61,7 @@ button,
     }
   }
   
-  &.app-btn-subtle {
+  &.ui-btn-subtle {
     border-color: transparent;
     background-color: transparent;
     &:hover {
@@ -94,7 +94,7 @@ button,
     }
   }
 
-  .app-loader-busy {
+  .ui-loader-busy {
     position: absolute;
   }
   span {
@@ -111,9 +111,9 @@ button,
   }
 }
 
-.app-btn-primary,
-.app-btn-danger,
-.app-btn-success {
+.ui-btn-primary,
+.ui-btn-danger,
+.ui-btn-success {
   color: var(--color-scheme-absolute);
   border-color: rgba(255, 255, 255, 0.08);
   border-bottom-color: rgba(0, 0, 0, 0.6);
@@ -121,12 +121,12 @@ button,
 
 
 @mixin button-mobile() {
-  .app-btn {
+  .ui-btn {
     &:hover {
       opacity: 1;
     }
   }
-  .app-btn:not([class*="outline"]) {
+  .ui-btn:not([class*="outline"]) {
     &:hover:not(:active) {
       filter: none;
       opacity: 1;
@@ -136,9 +136,9 @@ button,
 
 
   body.dark-theme {
-    .app-btn-primary,
-    .app-btn-danger,
-    .app-btn-success {
+    .ui-btn-primary,
+    .ui-btn-danger,
+    .ui-btn-success {
       border-color: #{"hsla(0, 0%, 100%, 8%)"};
       border-bottom-color: #{"hsla(0, 0%, 0%, 14%)"};
     }

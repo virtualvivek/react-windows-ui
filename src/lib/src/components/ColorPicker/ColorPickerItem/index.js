@@ -2,7 +2,7 @@ import React from "react";
 
 const ColorPickerItem = (props) => {
   return (
-    <label className="app-color-picker-item">
+    <label className="ui-color-picker-item">
       <input
         type="radio"
         className="item"

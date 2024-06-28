@@ -1,5 +1,5 @@
-.app-navbar-wrap {
-  .app-navbar-header-mobile {
+.ui-navbar-wrap {
+  .ui-navbar-header-mobile {
     left: 0;
     z-index: 5;
     width: 100%;
@@ -11,7 +11,7 @@
     background-color: var(--color-navbar-bg-default);
     border-bottom: 1px solid var(--color-ui-hover-strong);
 
-    .app-navbar-toggler {
+    .ui-navbar-toggler {
       padding: 5px;
     }
   }

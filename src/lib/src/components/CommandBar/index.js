@@ -5,7 +5,7 @@ import CommandBarMenu from "./CommandBarMenu";
 const CommandBar = (props) => {
   return (
     <div
-      className="app-cmd-bar"
+      className="ui-cmd-bar"
       style={{backgroundColor: props.backgroundColor, ...props.style}}>
       {props.children}
     </div>

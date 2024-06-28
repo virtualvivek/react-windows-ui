@@ -10,12 +10,12 @@ const IconsView = () => {
 
       <p><b>react-windows-ui</b> comes with the free <b>font</b> set of fluent icons.</p>
 
-      <div className="app-alert-bar alert-secondary" role="alert">
-        <div className="app-alert-bar-content">
+      <div className="ui-alert-bar alert-secondary" role="alert">
+        <div className="ui-alert-bar-content">
           <span>If you are looking for an icon not available in this project take a look at complete </span>
-          <span>icons at: <a className="app-link" target="_blank" rel="noopener noreferrer" href="https://master--628d031b55e942004ac95df1.chromatic.com/?path=/docs/concepts-developer-icons-icons-catalog--page">
+          <span>icons at: <a className="ui-link" target="_blank" rel="noopener noreferrer" href="https://master--628d031b55e942004ac95df1.chromatic.com/?path=/docs/concepts-developer-icons-icons-catalog--page">
             @fluentui/react-icons
-          </a> • <a className="app-link" target="_blank" rel="noopener noreferrer" href="https://github.com/microsoft/fluentui-system-icons">
+          </a> • <a className="ui-link" target="_blank" rel="noopener noreferrer" href="https://github.com/microsoft/fluentui-system-icons">
             repository
           </a>.</span>
         </div>
@@ -42,37 +42,37 @@ const IconsView = () => {
       </div>
 
       <div style={{display: "flex", alignItems: "center"}}>
-        <i className="icons10-car app-color-primary" style={{fontSize: 28, marginRight: 15}}></i>
+        <i className="icons10-car ui-color-primary" style={{fontSize: 28, marginRight: 15}}></i>
         <SyntaxHighlighter
           language="javascript"
           style={vscDarkPlus}
           className="code code-container">
-          {`<i className="icons10-car app-color-primary"></i>`}
+          {`<i className="icons10-car ui-color-primary"></i>`}
         </SyntaxHighlighter>
       </div>
 
       <div style={{display: "flex", alignItems: "center"}}>
-        <i className="icons10-checked app-color-success" style={{fontSize: 28, marginRight: 15}}></i>
+        <i className="icons10-checked ui-color-success" style={{fontSize: 28, marginRight: 15}}></i>
         <SyntaxHighlighter
           language="javascript"
           style={vscDarkPlus}
           className="code code-container">
-          {`<i className="icons10-checked app-color-success"></i>`}
+          {`<i className="icons10-checked ui-color-success"></i>`}
         </SyntaxHighlighter>
       </div>
 
       <div style={{display: "flex", alignItems: "center"}}>
-        <i className="icons10-bell-disabled app-color-danger" style={{fontSize: 28, marginRight: 15}}></i>
+        <i className="icons10-bell-disabled ui-color-danger" style={{fontSize: 28, marginRight: 15}}></i>
         <SyntaxHighlighter
           language="javascript"
           style={vscDarkPlus}
           className="code code-container">
-          {`<i className="icons10-bell-disabled app-color-danger"></i>`}
+          {`<i className="icons10-bell-disabled ui-color-danger"></i>`}
         </SyntaxHighlighter>
       </div>
 
 
-      <div className="app-hr"></div>
+      <div className="ui-hr"></div>
 
       <br/>
       <div className="glyph">

@@ -28,7 +28,7 @@ class SliderBarDocs extends React.Component {
         animateTransition={false}>
         <h1>SliderBar</h1>
             
-        <h1 className="app-m-0 color-primary"
+        <h1 className="ui-m-0 color-primary"
           style={{fontSize:46}}>
             {this.state.Slider1}%
         </h1>
@@ -73,8 +73,8 @@ class SliderBarDocs extends React.Component {
         </SyntaxHighlighter>
 
       
-        <div className="app-hr"></div>
-        <h2>SliderBar <p className="app-code">Round</p> varient :</h2>
+        <div className="ui-hr"></div>
+        <h2>SliderBar <p className="ui-code">Round</p> varient :</h2>
 
         <SliderBar
           step={4}
@@ -92,8 +92,8 @@ class SliderBarDocs extends React.Component {
         </SyntaxHighlighter>
 
 
-        <div className="app-hr"></div>
-        <h2>SliderBar <p className="app-code">Round Border</p> varient :</h2>
+        <div className="ui-hr"></div>
+        <h2>SliderBar <p className="ui-code">Round Border</p> varient :</h2>
 
         <SliderBar
           showPopupValue={false}

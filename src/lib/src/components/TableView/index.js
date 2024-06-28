@@ -26,11 +26,11 @@ const TableView = (props) => {
   }
 
   return (
-    <div className="app-table-view-container">
+    <div className="ui-table-view-container">
     {props.TableHeaderComponent}
-    <table className="app-table-view">
+    <table className="ui-table-view">
       <thead style={{ fontSize: props.headerFontSize }}>
-        <tr className="app-table-tr">
+        <tr className="ui-table-tr">
         {props.columns.map((item, index) => (
           <th
             className={ item.sortable === false ? "no-sortable" : "sortable" }

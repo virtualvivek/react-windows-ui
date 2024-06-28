@@ -7,7 +7,7 @@ const MenuList = (props) => {
   } = props;
 
   return (
-    <ul className="app-menu-list">
+    <ul className="ui-menu-list">
       {children}
     </ul>
   );

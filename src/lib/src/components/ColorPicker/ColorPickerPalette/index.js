@@ -12,7 +12,7 @@ const ColorPickerPalette = (props) => {
   const [icolor, setColor] = useState(color);
 
   return (
-    <label className="app-color-picker-item palette">
+    <label className="ui-color-picker-item palette">
       <input
         type="color"
         value={icolor}

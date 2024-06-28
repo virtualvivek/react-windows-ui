@@ -16,7 +16,7 @@ const Button = forwardRef((props, ref) => {
   } = props;
 
   const renderLoader = useMemo(() => {
-    return <div className="app-loader-busy loader-sm animate">
+    return <div className="ui-loader-busy loader-sm animate">
               <LoaderBusyWrapper/>
             </div>
   }, []);
@@ -29,14 +29,14 @@ const Button = forwardRef((props, ref) => {
     <button
       ref={ref}
       className = {
-        type === "primary" ?  `app-btn app-btn-primary${toggleLoading}`
-      : type === "danger" ? `app-btn app-btn-danger${toggleLoading}`
-      : type === "success" ? `app-btn app-btn-success${toggleLoading}`
-      : type === "subtle" ? `app-btn app-btn-subtle${toggleLoading}`
-      : type === "primary-outline" ? `app-btn app-btn-outline-primary${toggleLoading}`
-      : type === "danger-outline" ? `app-btn app-btn-outline-danger${toggleLoading}`
-      : type === "success-outline" ? `app-btn app-btn-outline-success${toggleLoading}`
-      : `app-btn${toggleLoading}`
+        type === "primary" ?  `ui-btn ui-btn-primary${toggleLoading}`
+      : type === "danger" ? `ui-btn ui-btn-danger${toggleLoading}`
+      : type === "success" ? `ui-btn ui-btn-success${toggleLoading}`
+      : type === "subtle" ? `ui-btn ui-btn-subtle${toggleLoading}`
+      : type === "primary-outline" ? `ui-btn ui-btn-outline-primary${toggleLoading}`
+      : type === "danger-outline" ? `ui-btn ui-btn-outline-danger${toggleLoading}`
+      : type === "success-outline" ? `ui-btn ui-btn-outline-success${toggleLoading}`
+      : `ui-btn${toggleLoading}`
       }
       style={{
         justifyContent: props.justifyContent,

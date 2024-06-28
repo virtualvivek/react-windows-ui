@@ -20,8 +20,8 @@ const LoaderBusy = (props) => {
 
   const renderLoader = () => {
     return <div className={ props.setTheme === "light"
-              ? `app-loader-busy${isOverlay()} light${setSize()}${toggleLoading()}`
-              : `app-loader-busy${isOverlay()}${setSize()}${toggleLoading()}`}>
+              ? `ui-loader-busy${isOverlay()} light${setSize()}${toggleLoading()}`
+              : `ui-loader-busy${isOverlay()}${setSize()}${toggleLoading()}`}>
             <LoaderBusyWrapper/>
            </div>
   }
@@ -35,14 +35,14 @@ const LoaderBusy = (props) => {
   const renderLoaderFullScreen = () => {
   return <>
     <div
-      className={props.isLoading ? "app-dim-overlay show" : "app-dim-overlay"}
+      className={props.isLoading ? "ui-dim-overlay show" : "ui-dim-overlay"}
       style={{
         backgroundColor: props.backgroundColor
       }}>
     </div>
     <div
       onClick={ props.onBackdropPress }
-      className={ props.isLoading ? "app-loader-busy-overlay show" : "app-loader-busy-overlay"}>
+      className={ props.isLoading ? "ui-loader-busy-overlay show" : "ui-loader-busy-overlay"}>
       {renderLoader()}
       <span className={ props.setTheme === "light" ? "title text-light" : "title"}>
         {props.title}

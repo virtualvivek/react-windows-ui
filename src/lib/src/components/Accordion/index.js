@@ -39,23 +39,23 @@ const Accordion = (props) => {
 
   return (
     <div
-      className="app-accordion"
+      className="ui-accordion"
       style={props.style}>
       <div
         style={props.headerStyle}
-        className="app-accordion-header"
+        className="ui-accordion-header"
         aria-expanded={isExpanded}
         onClick={toggleHeader}>
         {
           _header.length === 0
-        ? <div className="app-accordion-title">
+        ? <div className="ui-accordion-title">
             <span>{props.headerTitle}</span>
           </div>
         : _header
         }
       </div>
-      <div className={isExpanded ? "app-accordion-body show"
-                               : "app-accordion-body"}
+      <div className={isExpanded ? "ui-accordion-body show"
+                               : "ui-accordion-body"}
           ref={panelRef}
           style={{height: isExpanded ? panelHeight : 0}}>
         {_body}

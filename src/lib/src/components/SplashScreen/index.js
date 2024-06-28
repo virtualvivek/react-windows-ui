@@ -15,7 +15,7 @@ const SplashScreen = (props) => {
         ? { display: "flex", backgroundColor: props.backgroundColor }
         : { display: "none" }
       }
-      className="app-splash-screen app-flex-center">
+      className="ui-splash-screen ui-flex-center">
       {props.logo && (<>{props.logo}</>)}
       {props.title && (<h1 className="color-white">{props.title}</h1>)}
       {props.subtitle && (<h3 className="color-white">{props.subtitle}</h3>)}

@@ -11,7 +11,7 @@ const ProgressBar = (props) => {
   return (
     <div
       title={tooltip}
-      className={`app-progress-bar${props.setProgress === "hidden" ? "hide":""}`}
+      className={`ui-progress-bar${props.setProgress === "hidden" ? "hide":""}`}
       style={{
           height: height,
           width: width

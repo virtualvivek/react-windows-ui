@@ -1,6 +1,6 @@
-.app-input-search-box {
+.ui-input-search-box {
   ul {
-    @extend .app-dropdown-ul-default;
+    @extend .ui-dropdown-ul-default;
   }
   &::after {
     width: 25px;
@@ -12,15 +12,15 @@
   }
 }
 
-.app-input-search-bar {
+.ui-input-search-bar {
   button::after {
     content: "\f1b9";
     font-family: icons10;
   }
 }
 
-.app-input-search-bar,
-.app-input-search-box {
+.ui-input-search-bar,
+.ui-input-search-box {
   align-items: center;
   display: inline-flex;
   position: relative;
@@ -39,7 +39,7 @@
 }
 
 @mixin input-search-mobile() {
-  .app-input-search-bar {
+  .ui-input-search-bar {
     button:not(:active) {
       &:hover {
         background: var(--color-navbar-bg-default);

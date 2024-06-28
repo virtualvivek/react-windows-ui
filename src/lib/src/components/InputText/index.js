@@ -18,7 +18,7 @@ const InputText = forwardRef((props, ref) => {
     ...otherProps
   } = props;
 
-  const renderLabel = () => { return <span className="app-input-label">{label}</span> }
+  const renderLabel = () => { return <span className="ui-input-label">{label}</span> }
 
   const toggleInput = () => {
     let input = inputTxtRef.current;
@@ -34,7 +34,7 @@ const InputText = forwardRef((props, ref) => {
       return <i className="icons10-status"></i>;
     }
     else if(setStatus === "loading") {
-      return <div className="app-loader-busy loader-sm animate">
+      return <div className="ui-loader-busy loader-sm animate">
               <LoaderBusyWrapper/>
             </div>
     }
@@ -68,11 +68,11 @@ const InputText = forwardRef((props, ref) => {
 
   return (
     <div
-      className={`app-input-container ${setStatus !== "default" ? "input-"+setStatus : ""}`}
+      className={`ui-input-container ${setStatus !== "default" ? "input-"+setStatus : ""}`}
       title={tooltip}>
       {label && (renderLabel())}
       <input
-        className="app-input-text"
+        className="ui-input-text"
         {...otherProps}
         ref={inputTxtRef}
         type={props.type}
@@ -81,7 +81,7 @@ const InputText = forwardRef((props, ref) => {
         onChange={(e) => _onChange(e)}
         style={{ width: width }}
       />
-      <div className="app-input-end-content">
+      <div className="ui-input-end-content">
         {renderClearButton}
         {renderStatus}
         <RenderPassToggler/>

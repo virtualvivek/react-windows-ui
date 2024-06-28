@@ -5,7 +5,7 @@ import MenuList from "./MenuList";
 
 const CommandBarMenu = (props) => {
 
-  let _menu_trigger = <button className="app-cmdbar-button"><i className="icons10-angle-down"></i></button>;
+  let _menu_trigger = <button className="ui-cmdbar-button"><i className="icons10-angle-down"></i></button>;
   
   const subMenusRef = useRef([]);
   const wrapperRef = useRef(null);
@@ -84,13 +84,13 @@ const CommandBarMenu = (props) => {
 
 
   return (
-    <div ref={wrapperRef} className="app-cmdbar-menu">
-      <div className="app-cmdbar-menu-trigger" onClick={toggleMenuBar}>
+    <div ref={wrapperRef} className="ui-cmdbar-menu">
+      <div className="ui-cmdbar-menu-trigger" onClick={toggleMenuBar}>
         {_menu_trigger}
       </div>
       <ul className={ menubar
-        ? `app-cmdbar-menu-list show${isReverse}${isMenuDirection}`
-        : "app-cmdbar-menu-list"}>
+        ? `ui-cmdbar-menu-list show${isReverse}${isMenuDirection}`
+        : "ui-cmdbar-menu-list"}>
         {renderMenuItems}
       </ul>
     </div>

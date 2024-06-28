@@ -17,7 +17,7 @@ const NavBarExampleUsageCode =
   shadowOnScroll={true}
   titleBarMobile={
     <div>
-      <span className="app-navbar-name">React-windows-ui</span>
+      <span className="ui-navbar-name">React-windows-ui</span>
     </div>
   }>
   ....

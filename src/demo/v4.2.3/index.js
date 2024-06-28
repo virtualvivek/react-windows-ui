@@ -73,9 +73,9 @@ const AppFourTwoThree = () => {
         shadowOnScroll={true}
         titleBarMobile={
           <div style={{display: "flex", justifyContent: "space-between", width: "calc(100% - 60px)", alignItems: "center"}}>
-            <span className="app-navbar-name">React-windows-ui</span>
-            <span className="app-navbar-name">
-              <a className="app-link" target="_blank" rel="noopener noreferrer" href="https://github.com/virtualvivek/react-windows-ui/">
+            <span className="ui-navbar-name">React-windows-ui</span>
+            <span className="ui-navbar-name">
+              <a className="ui-link" target="_blank" rel="noopener noreferrer" href="https://github.com/virtualvivek/react-windows-ui/">
                 <GithubIcon width={25} height={25}/>
               </a>
             </span>
@@ -144,7 +144,7 @@ const AppFourTwoThree = () => {
         </NavBarSubMenu>        
 
         <h1>Components</h1>
-        <div className="app-hr"></div>
+        <div className="ui-hr"></div>
 
         {
         NavBarItem.map((item, key) => {

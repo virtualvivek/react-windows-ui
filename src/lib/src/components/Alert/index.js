@@ -20,16 +20,16 @@ const Alert = forwardRef((props, ref) => {
 
   return (
     <div
-      className={(props.isVisible || isVisible) ? "app-alert show" : "app-alert"}
+      className={(props.isVisible || isVisible) ? "ui-alert show" : "ui-alert"}
       onClick={(event) => _onBackdropPress(event)}
       tabIndex="-1"
       ref={ref}>
-      <div className="app-alert-modal" aria-modal="true" role="dialog">
+      <div className="ui-alert-modal" aria-modal="true" role="dialog">
         {
           (props.title || props.message) && (
-            <div className="app-alert-header">
+            <div className="ui-alert-header">
               {props.title && <h1>{props.title}</h1>}
-              {props.message && <div className="app-alert-message">{props.message}</div>}
+              {props.message && <div className="ui-alert-message">{props.message}</div>}
             </div>
           )
         }
@@ -39,8 +39,8 @@ const Alert = forwardRef((props, ref) => {
   )
 });
 
-const AlertHeader = ({ children }) => <div className="app-alert-haeder">{children}</div>;
-const AlertFooter = ({ children }) => <div className="app-alert-footer">{children}</div>;
+const AlertHeader = ({ children }) => <div className="ui-alert-haeder">{children}</div>;
+const AlertFooter = ({ children }) => <div className="ui-alert-footer">{children}</div>;
 
 Alert.Header = AlertHeader;
 Alert.Footer = AlertFooter;

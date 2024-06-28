@@ -3,7 +3,7 @@ import React from "react";
 const CommandBarButton = (props) => {
   return (
     <button
-      className="app-cmdbar-button"
+      className="ui-cmdbar-button"
       onClick={props.onClick}
       disabled={props.disabled}>
       {props.icon}

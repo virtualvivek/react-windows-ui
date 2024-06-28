@@ -21,7 +21,7 @@ const MenuBarDocs = () => {
     animateTransition={false}>
     <h1>MenuBar</h1>
         
-    <p>A <span className="app-color-primary">MenuBar</span> is a graphical control element which contains drop-down menus</p>
+    <p>A <span className="ui-color-primary">MenuBar</span> is a graphical control element which contains drop-down menus</p>
 
     <button onClick={handleButtonClick} ref={anchorRef}>Hi</button>
     
@@ -61,8 +61,8 @@ const MenuBarDocs = () => {
     </SyntaxHighlighter>
 
   
-    <div className="app-hr"></div>
-    <h2>MenuBar with <p className="app-code">onClick Listener</p> :</h2>
+    <div className="ui-hr"></div>
+    <h2>MenuBar with <p className="ui-code">onClick Listener</p> :</h2>
 
     <MenuBar
       label="Select a fruit"
