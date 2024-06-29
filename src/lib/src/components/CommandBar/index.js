@@ -16,9 +16,9 @@ const CommandBarSplitDivider = () => <hr></hr>;
 
 CommandBar.Button = CommandBarButton;
 CommandBar.Menu = CommandBarMenu;
-CommandBar.MenuItem = CommandBarMenu.MenuItem;
-CommandBar.MenuTrigger = CommandBarMenu.MenuTrigger;
+CommandBar.Menu.Item = CommandBarMenu.MenuItem;
+CommandBar.Menu.ItemDivider = CommandBarMenu.MenuItemDivider;
+CommandBar.Menu.Trigger = CommandBarMenu.MenuTrigger;
 CommandBar.SplitDivider = CommandBarSplitDivider;
-CommandBar.MenuItemDivider = CommandBarMenu.MenuItemDivider;
 
 export default CommandBar;

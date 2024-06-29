@@ -2,7 +2,7 @@ import React from 'react';
 import { NavPageContainer } from '../../_lib';
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { TextHeadingCode,TextVarientsCode, TextVarientLightCode } from './codes';
+import { TextHeadingCode,TextVarientsCode } from './codes';
 
 class ClassesDocs extends React.Component {
   render() {
@@ -60,16 +60,6 @@ class ClassesDocs extends React.Component {
           style={vscDarkPlus}
           className="code code-container">
           {TextVarientsCode}
-        </SyntaxHighlighter>
-        
-        <h3>Text Light</h3>
-        <p className="ui-para-light">This is light paragraph used to display long text.</p>
-
-        <SyntaxHighlighter
-          language="javascript"
-          style={vscDarkPlus}
-          className="code code-container">
-          {TextVarientLightCode}
         </SyntaxHighlighter>
 
         <br/><br/><br/><br/><br/>

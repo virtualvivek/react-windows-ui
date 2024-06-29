@@ -15,9 +15,9 @@ const AccordionUsageCode =
 
 const AccordionUsageFocusedFalseCode =
 `<Accordion>
-  <Accordion.Header>
+  <Accordion.Trigger>
     <Button value="Click"/>
-  </Accordion.Header>
+  </Accordion.Trigger>
   <Accordion.Body>
     <p style={{width: "270px"}}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -5,11 +5,11 @@ const Accordion = (props) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [panelHeight, setPanelHeight] = useState(10);
 
-  const _header = Children.map(props.children, child => child.type.displayName === "Header" ? child : null);
+  const _header = Children.map(props.children, child => child.type.displayName === "Trigger" ? child : null);
   const _body = Children.map(props.children, child => child.type.displayName === "Body" ? child : null);
 
   const updateWidth = useCallback(() => {
-    setTimeout(()=> {
+    setTimeout(() => {
       panelRef.current?.childNodes.forEach((node) => {
         setPanelHeight(node?.clientHeight+20);
       });
@@ -33,7 +33,7 @@ const Accordion = (props) => {
 
   useLayoutEffect(() => {
     panelRef.current?.childNodes.forEach((node) =>
-      setPanelHeight(node?.clientHeight+20),
+      setPanelHeight(node?.clientHeight+20)
     );
   }, []);
 
@@ -69,9 +69,9 @@ Accordion.defaultProps = {
   onCollapse: () => {},
 }
 
-const AccordionHeader = ({ children }) => <>{children}</>
-AccordionHeader.displayName = "Header";
-Accordion.Header = AccordionHeader;
+const AccordionTrigger = ({ children }) => <>{children}</>
+AccordionTrigger.displayName = "Trigger";
+Accordion.Trigger = AccordionTrigger;
 
 
 const AccordionBody = ({ children }) => <>{children}</>

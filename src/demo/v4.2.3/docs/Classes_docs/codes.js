@@ -13,13 +13,9 @@ const TextVarientsCode =
 <p className="ui-color-danger">This is danger paragraph used to display danger text.</p>
 `;
 
-const TextVarientLightCode =
-`<p className="ui-para-light">This is light paragraph used to display long text.</p>`;
-
 
 export {
   TextHeadingCode,
   TextHeadingNoMgBottomCode,
-  TextVarientsCode,
-  TextVarientLightCode
+  TextVarientsCode
 }

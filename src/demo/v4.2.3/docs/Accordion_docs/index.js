@@ -55,9 +55,9 @@ const AccordionDocs = () => {
       <h3 className="m-tb-20">Accordion with <p className="ui-code">Custom Header</p> :</h3>
 
       <Accordion>
-        <Accordion.Header>
+        <Accordion.Trigger>
           <Button value="Click"/>
-        </Accordion.Header>
+        </Accordion.Trigger>
         <Accordion.Body>
           <p style={{width: "270px"}}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

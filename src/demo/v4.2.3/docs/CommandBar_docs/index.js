@@ -26,21 +26,21 @@ class CommandBarDocs extends React.Component {
         <CommandBar.SplitDivider/>
 
         <CommandBar.Menu menuDirection="leftJustify">
-          <CommandBar.MenuItem label="File" icon={<i className="icons10-file"></i>} />
-          <CommandBar.MenuItem label="Folder" onClick={() => alert("Hi")} />
-          <CommandBar.MenuItemDivider/>
-          <CommandBar.MenuItem label="Image" />
-          <CommandBar.MenuItem label="Document" />
+          <CommandBar.Menu.Item label="File" icon={<i className="icons10-file"></i>} />
+          <CommandBar.Menu.Item label="Folder" onClick={() => alert("Hi")} />
+          <CommandBar.Menu.ItemDivider/>
+          <CommandBar.Menu.Item label="Image" />
+          <CommandBar.Menu.Item label="Document" />
         </CommandBar.Menu>
 
         <CommandBar.Button value="Upload" icon={<i className="icons10-upload ui-color-primary"></i>}/>
 
         <CommandBar.Menu>
-          <CommandBar.MenuTrigger>
+          <CommandBar.Menu.Trigger>
             <CommandBar.Button value="Share" icon={<i className="icons10-angle-down ui-color-primary"></i>}/>
-          </CommandBar.MenuTrigger>
-          <CommandBar.MenuItem label="Whatsapp" />
-          <CommandBar.MenuItem label="Facebook" />
+          </CommandBar.Menu.Trigger>
+          <CommandBar.Menu.Item label="Whatsapp" />
+          <CommandBar.Menu.Item label="Facebook" />
         </CommandBar.Menu>
 
       </CommandBar>
@@ -71,16 +71,16 @@ class CommandBarDocs extends React.Component {
       <br/>
 
       <CommandBar.Menu>
-        <CommandBar.MenuTrigger>
+        <CommandBar.Menu.Trigger>
           <CommandBar.Button value="Share" icon={<i className="icons10-angle-down ui-color-primary"></i>}/>
-        </CommandBar.MenuTrigger>
-        <CommandBar.MenuItem label="Instagram"/>
-        <CommandBar.MenuItemDivider/>
-        <CommandBar.MenuItem label="Facebook" />
-        <CommandBar.MenuItem label="Whatsapp">
-          <CommandBar.MenuItem label="HyperLink"/>
+        </CommandBar.Menu.Trigger>
+        <CommandBar.Menu.Item label="Instagram"/>
+        <CommandBar.Menu.ItemDivider/>
+        <CommandBar.Menu.Item label="Facebook" />
+        <CommandBar.Menu.Item label="Whatsapp">
+          <CommandBar.Menu.Item label="HyperLink"/>
           {/* <CommandBar.MenuItem label="QR Code"/> */}
-        </CommandBar.MenuItem>
+        </CommandBar.Menu.Item>
       </CommandBar.Menu>
       <br/><br/>
 
@@ -131,10 +131,10 @@ class CommandBarDocs extends React.Component {
         <CommandBar.SplitDivider/>
 
         <CommandBar.Menu menuDirection="leftJustify">
-          <CommandBar.MenuItem label="File" icon={<i className="icons10-file"></i>} />
-          <CommandBar.MenuItem label="Folder" onClick={() => alert("Hi")} />
-          <CommandBar.MenuItem label="Image" />
-          <CommandBar.MenuItem label="Document" />
+          <CommandBar.Menu.Item label="File" icon={<i className="icons10-file"></i>} />
+          <CommandBar.Menu.Item label="Folder" onClick={() => alert("Hi")} />
+          <CommandBar.Menu.Item label="Image" />
+          <CommandBar.Menu.Item label="Document" />
         </CommandBar.Menu>
       </CommandBar>
 

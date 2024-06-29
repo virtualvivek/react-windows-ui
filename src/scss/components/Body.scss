@@ -35,10 +35,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
-  opacity: 0.58;
-}
-
 a {
 	outline: none;
   text-decoration: none;
@@ -81,8 +77,4 @@ a {
 }
 .ui-mb-20 {
   margin-bottom: 20px;
-}
-
-p.ui-para-light {
-  font-weight: 100;
 }
