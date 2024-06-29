@@ -15,8 +15,8 @@ const MenuBar = (props) => {
 
 MenuBar.Dialog = MenuDialog;
 MenuBar.List = MenuList;
-MenuBar.ListItem = MenuListItem;
-MenuBar.Divider = MenuDivider;
-MenuBar.SubMenu = SubMenu;
+MenuBar.List.Item = MenuListItem;
+MenuBar.List.Item.Divider = MenuDivider;
+MenuBar.List.Item.SubMenu = SubMenu;
 
 export default MenuBar;

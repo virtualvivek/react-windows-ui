@@ -2,6 +2,7 @@ import React, { useState, useRef, Children, useMemo } from "react";
 import { useOutSideClick } from "../../../hooks";
 import { getScreenOffset } from "../../../api";
 import MenuList from "./MenuList";
+import MenuItem from "./MenuItem";
 
 const CommandBarMenu = (props) => {
 
@@ -55,22 +56,24 @@ const CommandBarMenu = (props) => {
   const renderMenuItems = props.children.map((child, index) => {
     return [
       child.type === CommandBarMenuItem && (
-        <li
-          key={child.props.label}
-          className="cmdbar-menu-list-item">
-          <span onClick={child.props.children
-              ? () => openSubMenu(index)
-              : () => _onItemClick(child.props)}
-            {...(child.props.children && { "data-win-toggle": "dropdown" })}>
-            {child.props.icon}{child.props.label}
-          </span>
+        <MenuItem
+          icon={child.props.icon}
+          label={child.props.label}
+          onClick={() => _onItemClick(child.props)}
+        />
+      ),
+      child.type === CommandBarSubMenu && (
+        <MenuItem
+          icon={child.props.icon}
+          label={child.props.label}
+          onClick={() => openSubMenu(index)}>
           <MenuList
-            ref={(el) => (subMenusRef.current[index] = el)}
-            listData={child.props}
             listIndex={index-1}
+            listData={child.props}
             onItemClick={() => hideAllMenu()}
+            ref={(el) => (subMenusRef.current[index] = el)}
           />
-        </li>
+        </MenuItem>
       ),
       child.type === CommandBarMenuItemDivider && (
         <CommandBarMenuItemDivider key={index}/>
@@ -98,6 +101,7 @@ const CommandBarMenu = (props) => {
 }
 
 const CommandBarMenuItem = ({ children }) => <>{children}</>;
+const CommandBarSubMenu = ({ children }) => <>{children}</>;
 const CommandBarMenuTrigger = ({ children }) => <>{children}</>;
 const CommandBarMenuItemDivider = () => <hr className="cmdbar-menu-list-item-hr"></hr>;
 
@@ -108,5 +112,6 @@ CommandBarMenuItem.defaultProps = {
 CommandBarMenu.MenuItem = CommandBarMenuItem;
 CommandBarMenu.MenuTrigger = CommandBarMenuTrigger;
 CommandBarMenu.MenuItemDivider = CommandBarMenuItemDivider;
+CommandBarMenu.SubMenu = CommandBarSubMenu;
 
 export default CommandBarMenu;

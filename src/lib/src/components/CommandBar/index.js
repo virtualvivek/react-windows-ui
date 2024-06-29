@@ -1,6 +1,6 @@
 import React from "react";
-import CommandBarButton from "./CommandBarButton";
-import CommandBarMenu from "./CommandBarMenu";
+import CommandBarButton from "./Button";
+import CommandBarMenu from "./Menu";
 
 const CommandBar = (props) => {
   return (
@@ -15,10 +15,12 @@ const CommandBar = (props) => {
 const CommandBarSplitDivider = () => <hr></hr>;
 
 CommandBar.Button = CommandBarButton;
+CommandBar.SplitDivider = CommandBarSplitDivider;
+
 CommandBar.Menu = CommandBarMenu;
 CommandBar.Menu.Item = CommandBarMenu.MenuItem;
-CommandBar.Menu.ItemDivider = CommandBarMenu.MenuItemDivider;
+CommandBar.Menu.SubMenu = CommandBarMenu.SubMenu;
 CommandBar.Menu.Trigger = CommandBarMenu.MenuTrigger;
-CommandBar.SplitDivider = CommandBarSplitDivider;
+CommandBar.Menu.Item.Divider = CommandBarMenu.MenuItemDivider;
 
 export default CommandBar;

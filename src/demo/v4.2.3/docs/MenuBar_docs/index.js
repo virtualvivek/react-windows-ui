@@ -28,16 +28,15 @@ const MenuBarDocs = () => {
     <MenuBar.Dialog
       ref={dialogRef}
       anchorRef={anchorRef}>
-      <h1>Hi</h1>
       <MenuBar.List>
-        <MenuBar.ListItem title="Hi"/>
-        <MenuBar.Divider/>
-        <MenuBar.ListItem title="Hi"/>
-        <MenuBar.SubMenu title="Yo">
-          <MenuBar.ListItem title="Sub Child"/>
-        </MenuBar.SubMenu>
-        <MenuBar.ListItem title="Hi"/>
-        <MenuBar.ListItem title="Hi"/>
+        <MenuBar.List.Item title="Hi"/>
+        <MenuBar.List.Item.Divider/>
+        <MenuBar.List.Item title="Hi"/>
+        <MenuBar.List.Item.SubMenu title="Yo">
+          <MenuBar.List.Item title="Sub Child"/>
+        </MenuBar.List.Item.SubMenu>
+        <MenuBar.List.Item title="Hi"/>
+        <MenuBar.List.Item title="Hi"/>
       </MenuBar.List>
     </MenuBar.Dialog>
     

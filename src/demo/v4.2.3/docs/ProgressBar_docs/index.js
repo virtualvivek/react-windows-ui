@@ -2,8 +2,7 @@ import React from 'react'
 import { NavPageContainer,ProgressBar,Button } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { ProgressBarImportCode,ProgressBarUsageCode,ProgressBarTitleUsageCode,
-        ProgressBarTitleSubtitleUsageCode,ProgressBarIconUsageCode,
+import { ProgressBarImportCode,ProgressBarUsageCode,
         ProgressBarCustomColorUsageCode,ProgressBarCustomHeightUsageCode,
         ProgressBarIndeterminateUsageCode } from './codes'
 import PropsView from './props-view'
@@ -36,19 +35,22 @@ render() {
 
     <ProgressBar
       setProgress={this.state.ProgressBar1}
-      tooltip="ProgressBar tooltip title"/>
-    <br/><br/>
+      tooltip="ProgressBar tooltip title"
+    />
+    <br/>
     <Button
       value="set 2%"
       onClick={this.setProgress2}/>
       &nbsp;
     <Button
       value="set 50%"
-      onClick={this.setProgress50}/>
+      onClick={this.setProgress50}
+    />
       &nbsp;
     <Button
       value="set 99%"
-      onClick={this.setProgress99}/>
+      onClick={this.setProgress99}
+    />
     
     <h2>Import</h2>
 
@@ -63,7 +65,9 @@ render() {
 
     <ProgressBar
       setProgress={75}
-      tooltip="ProgressBar tooltip title"/><br/><br/>
+      tooltip="ProgressBar tooltip title"
+    />
+    <br/>
 
     <SyntaxHighlighter
       language="javascript"
@@ -72,66 +76,19 @@ render() {
       {ProgressBarUsageCode}
     </SyntaxHighlighter>
 
-  
     <div className="ui-hr"></div>
-    <h2>ProgressBar with <p className="ui-code">title</p> :</h2>
-
-    <ProgressBar
-      title="Title"
-      setProgress={60}/><br/><br/>
-
-    <SyntaxHighlighter
-      language="javascript"
-      style={vscDarkPlus}
-      className="code code-container">
-      {ProgressBarTitleUsageCode}
-    </SyntaxHighlighter>
-
-
-    <div className="ui-hr"></div>
-    <h2>ProgressBar with <p className="ui-code">title & subtitle</p> :</h2>
-
-    <ProgressBar
-      title="Title"
-      subtitle="Subtitle"
-      setProgress={46}/><br/><br/>
-
-    <SyntaxHighlighter
-      language="javascript"
-      style={vscDarkPlus}
-      className="code code-container">
-      {ProgressBarTitleSubtitleUsageCode}
-    </SyntaxHighlighter>
-
-
-    <div className="ui-hr"></div>
-    <h2>ProgressBar with <p className="ui-code">icon</p> :</h2>
-
-    <ProgressBar
-      icon={<i className="icons10-hdd"></i>}
-      showIcon={true}
-      title="Drive C:"
-      subtitle="primary storage"
-      setProgress={54}/><br/><br/>
-
-    <SyntaxHighlighter
-      language="javascript"
-      style={vscDarkPlus}
-      className="code code-container">
-      {ProgressBarIconUsageCode}
-    </SyntaxHighlighter>
-
-    <div className="ui-hr"></div>
-    <h2>ProgressBar with <p className="ui-code">custom color</p> :</h2>
+    <h2>ProgressBar with <p className="ui-code">custom colors</p> :</h2>
 
     <ProgressBar
       setProgress={29}
-      color={"#2C8B2C"}/>
+      color={"#2C8B2C"}
+    />
     <br/>
     <ProgressBar
       setProgress={67}
-      color={"#C50500"}/>
-    <br/><br/>
+      color={"#C50500"}
+    />
+    <br/>
     <SyntaxHighlighter
       language="javascript"
       style={vscDarkPlus}
@@ -144,8 +101,9 @@ render() {
 
     <ProgressBar
       setProgress={29}
-      height={15}/>
-    <br/><br/>
+      height={15}
+    />
+    <br/>
     <SyntaxHighlighter
       language="javascript"
       style={vscDarkPlus}
@@ -169,7 +127,6 @@ render() {
       className="code code-container">
       {ProgressBarIndeterminateUsageCode}
     </SyntaxHighlighter>
-
 
     <div className="ui-hr"></div>
     <h2>Props</h2>

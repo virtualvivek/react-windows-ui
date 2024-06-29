@@ -24,12 +24,17 @@
     width: max-content;
     padding: 0 10px;
     border-right-width: 0 !important;
-    background: var(--color-background-default);
-    border-radius: 4px;
+    // background: var(--color-background-default);
+    border-radius: 5px;
     border-end-end-radius: 0;
     border-start-end-radius: 0;
     border: 1px solid var(--color-input-border-default);
-    border-bottom: 1px solid #777;
+    // border-bottom: 1px solid #777;
+    background-image: radial-gradient(var(--color-input-border-bottom) 100%, transparent 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: bottom !important;
+    background-size: 100% 1px !important;
+    background-position-y: calc(100% + 1px) !important;
   }
 
   &.input-success {

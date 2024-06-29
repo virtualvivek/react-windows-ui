@@ -65,9 +65,10 @@
 .ui-input-container:focus-within .ui-input-label {
   outline: none;
   transition: 0s;
-  background: var(--color-input-bg-focused);
+  border: 1px solid var(--color-input-border-focused);
+  background-color: var(--color-input-bg-focused);
   background-position-y: bottom !important;
-  border-bottom-color: var(--color-primary-adaptive) !important;
+  border-bottom-color: var(--color-primary-adaptive);
   background-image: radial-gradient(var(--color-primary-adaptive) 100%, transparent 100%) !important;
 }
 
@@ -79,21 +80,21 @@
   padding: 0 0 0 10px;
   color: var(--color-text-default);
   -webkit-tap-highlight-color: transparent;
-  background: var(--color-input-bg-default);
+  background-color: var(--color-input-bg-default);
   
   height: 32px;
   border-radius: 5px;
   border: 1px solid var(--color-input-border-default);
-  background-image: radial-gradient(var(--color-input-border-bottom) 100%, transparent 100%) !important;
+  background-image: radial-gradient(var(--color-input-border-bottom) 100%, transparent 100%);
   background-repeat: no-repeat !important;
   background-position: bottom !important;
   background-size: 100% 1px !important;
   background-position-y: calc(100% + 1px) !important;
   &:hover:not(:focus) {
-    background: var(--color-input-bg-hover);
+    background-color: var(--color-input-bg-hover);
   }
   &:focus {
-    border: 1px solid var(--color-input-border-focused);
+    //border: 1px solid var(--color-input-border-focused);
     @extend .input-field-focused;
   }
   &[disabled] {

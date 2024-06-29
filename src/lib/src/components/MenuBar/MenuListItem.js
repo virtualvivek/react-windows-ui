@@ -1,7 +1,6 @@
 import React from "react";
 
 const MenuListItem = (props) => {
-
   const {
     title,
     icon,
