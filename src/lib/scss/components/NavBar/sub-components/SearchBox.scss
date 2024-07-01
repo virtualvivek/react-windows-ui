@@ -4,6 +4,11 @@
     width: -moz-available;
     user-select: none;
     margin: 5px 15px;
+
+    ul {
+      min-width: -webkit-fill-available;
+      min-width: -moz-available;
+    }
   }
 }
 

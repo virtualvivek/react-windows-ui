@@ -25,20 +25,17 @@ const MenuBarDocs = () => {
 
     <button onClick={handleButtonClick} ref={anchorRef}>Hi</button>
     
-    <MenuBar.Dialog
+    <MenuBar
       ref={dialogRef}
       anchorRef={anchorRef}>
-      <MenuBar.List>
-        <MenuBar.List.Item title="Hi"/>
-        <MenuBar.List.Item.Divider/>
-        <MenuBar.List.Item title="Hi"/>
-        <MenuBar.List.Item.SubMenu title="Yo">
-          <MenuBar.List.Item title="Sub Child"/>
-        </MenuBar.List.Item.SubMenu>
-        <MenuBar.List.Item title="Hi"/>
-        <MenuBar.List.Item title="Hi"/>
-      </MenuBar.List>
-    </MenuBar.Dialog>
+      <MenuBar.Item label="Instagram" onClick={sayhellow}/>
+      <MenuBar.Item.Divider/>
+      <MenuBar.Item label="Facebook"/>
+      <MenuBar.Item.SubMenu label="Whatsapp">
+        <MenuBar.Item label="Hyperlink"/>
+      </MenuBar.Item.SubMenu>
+      <MenuBar.Item label="Telegram"/>
+    </MenuBar>
     
     
     <h2>Import</h2>
@@ -63,7 +60,7 @@ const MenuBarDocs = () => {
     <div className="ui-hr"></div>
     <h2>MenuBar with <p className="ui-code">onClick Listener</p> :</h2>
 
-    <MenuBar
+    {/* <MenuBar
       label="Select a fruit"
       showSearchBar={true}
       data={[
@@ -72,7 +69,7 @@ const MenuBarDocs = () => {
         {label: 'banana', onClick:sayhellow},
         {label: 'peach', onClick:sayhellow},
       ]}
-    />
+    /> */}
     <br/><br/>
 
     <SyntaxHighlighter

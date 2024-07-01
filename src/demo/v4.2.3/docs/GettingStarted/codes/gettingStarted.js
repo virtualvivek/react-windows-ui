@@ -3,7 +3,7 @@ const UIAppJS =
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { AppContainer, NavBar, NavBarLink, NavBarThemeSwitch, NavPageContainer } from "react-windows-ui";
 
-import "react-windows-ui/config/ui-config.css";
+import "react-windows-ui/config/app-config.css";
 import "react-windows-ui/dist/react-windows-ui.min.css";
 import "react-windows-ui/icons/winui-icons.min.css";
 

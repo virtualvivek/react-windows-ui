@@ -176,8 +176,6 @@
   overflow-x: hidden;
   visibility: hidden;
   position: absolute;
-  min-width: -webkit-fill-available;
-  min-width: -moz-available;
   -webkit-tap-highlight-color: transparent;
   background: var(--color-dropdown-menu-bg);
   border-radius: 6px;
@@ -192,9 +190,14 @@
       top: unset;
     }
   }
-
   li {
     @extend .ui-dropdown-ul-default-item;
+  }
+  hr {
+    border: 0;
+    height: 1px;
+    margin: 0 5px;
+    background-color: var(--color-ui-border-default);
   }
 }
 
