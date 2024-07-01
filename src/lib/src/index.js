@@ -14,7 +14,6 @@ export { default as Alert } from "./components/Alert";
 export { default as Button } from "./components/Button";
 export { default as ButtonGroup } from "./components/ButtonGroup";
 export { default as Checkbox } from "./components/Checkbox";
-export { default as CommandBar } from "./components/CommandBar";
 export { default as ColorPickerItem } from "./components/ColorPicker/ColorPickerItem";
 export { default as ColorPickerPalette } from "./components/ColorPicker/ColorPickerPalette";
 export { default as Dialog } from "./components/Dialog";

@@ -1,11 +1,16 @@
 import React from 'react'
-import { NavPageContainer } from '../../_lib'
+import { NavPageContainer, Appearance } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { AppearanceImportCode,AppearanceUsageCode,
-  AppearanceGetColorSchemeCode,AppearanceSetDarkSchemeCode,AppearanceSetLightSchemeCode, AppearanceSetSystemSchemeCode } from './codes'
+         AppearanceGetColorSchemeCode,AppearanceSetDarkSchemeCode,
+         AppearanceSetLightSchemeCode, AppearanceSetSystemSchemeCode } from './codes'
 
 class AppearanceDocs extends React.Component {
+
+  componentDidMount = () => {
+    console.log(Appearance.getColorScheme());
+  }
 
 render() {
   return (

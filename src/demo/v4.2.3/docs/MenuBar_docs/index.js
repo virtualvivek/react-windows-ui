@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { NavPageContainer, MenuBar } from '../../_lib'
+import { NavPageContainer, MenuBar, ButtonGroup, Button } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { MenuBarImportCode,MenuBarUsageCode,MenuBarOnClickUsageCode } from './codes'
@@ -58,18 +58,29 @@ const MenuBarDocs = () => {
 
   
     <div className="ui-hr"></div>
-    <h2>MenuBar with <p className="ui-code">onClick Listener</p> :</h2>
+    <h2>MenuBar as <p className="ui-code">CommandBar</p> :</h2>
 
-    {/* <MenuBar
-      label="Select a fruit"
-      showSearchBar={true}
-      data={[
-        {label: 'apple', icon:<i className="icons10-camera"></i>},
-        {label: 'orange', onClick:sayhellow},
-        {label: 'banana', onClick:sayhellow},
-        {label: 'peach', onClick:sayhellow},
-      ]}
-    /> */}
+    <ButtonGroup>
+      <Button
+        value="New"
+        type="subtle"
+        icon={<i className="icons10-plus ui-color-primary"></i>}
+      />
+      <Button
+        icon={<i className="icons10-angle-down"></i>}
+        type="subtle"
+      />
+    </ButtonGroup>
+    <Button
+      value="Upload"
+      type="subtle"
+      icon={<i className="icons10-upload ui-color-primary"></i>}
+    />
+    <Button
+      value="Upload"
+      type="subtle"
+      icon={<i className="icons10-share ui-color-primary"></i>}
+    />
     <br/><br/>
 
     <SyntaxHighlighter

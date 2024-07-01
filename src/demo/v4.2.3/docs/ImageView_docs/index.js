@@ -29,9 +29,6 @@ class ImageViewDocs extends React.Component {
         src={IronMan}
         width={'100%'}
         height={'240px'}
-        insetShadow
-        title="ImageView"
-        subtitle="A component for displaying different types of images, including network images, static resources."
         tooltip="ImageView tooltip title"
       />
 
@@ -45,7 +42,6 @@ class ImageViewDocs extends React.Component {
         width={'228px'}
         height={'180px'}
         borderRadius={18}
-        title="Skrillex"
         tooltip='This is a tooltip'
         isLoading={this.state.stateLoadingImg}
       />
@@ -90,8 +86,6 @@ class ImageViewDocs extends React.Component {
         width={'200px'}
         height={'200px'}
         borderRadius={18}
-        title="Skrillex"
-        insetShadow={true}
       />
 
       <SyntaxHighlighter
@@ -110,9 +104,6 @@ class ImageViewDocs extends React.Component {
         width={'200px'}
         height={'200px'}
         borderRadius={18}
-        title="Title Text"
-        subtitle="Subtitle text"
-        insetShadow={true}
       />
 
       <SyntaxHighlighter

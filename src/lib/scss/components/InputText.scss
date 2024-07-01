@@ -39,7 +39,7 @@
 
   &.input-success {
     .ui-input-text {
-      background-image: radial-gradient(var(--color-success-default) 100%, transparent 100%);
+      background-image: radial-gradient(var(--color-success-default) 100%, transparent 100%) !important;
       &:focus {
         border-bottom-color: var(--color-success-default);
       }
@@ -54,7 +54,7 @@
   }
   &.input-danger {
     .ui-input-text {
-      background-image: radial-gradient(var(--color-danger-default) 100%, transparent 100%);
+      background-image: radial-gradient(var(--color-danger-default) 100%, transparent 100%) !important;
       &:focus {
         border-bottom-color: var(--color-danger-default);
       }

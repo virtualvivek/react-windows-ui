@@ -102,8 +102,7 @@ button,
   }
   // If icon is the only child
   i:only-child {
-    font-size: 18px;
-    line-height: 0;
+    font-size: 16px;
   }
   // If icon is the only child i.e its a IconButton.
   &:has(i:only-child) {

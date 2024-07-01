@@ -35,13 +35,6 @@
     "showBadge": false
   },
   {
-    "to": "commandbar",
-    "exact": false,
-    "text": "CommandBar",
-    "icon": "icons10-terminal",
-    "showBadge": false
-  },
-  {
     "to": "dialogs",
     "exact": false,
     "text": "Dialogs",
