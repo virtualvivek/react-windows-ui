@@ -32,11 +32,7 @@ button,
     background-color: var(--color-primary-adaptive);
   }
   &.ui-btn-outline-primary {
-    color: var(--color-day-primary-night-white);
-    border: 1px solid var(--color-primary-adaptive);
-    &:active {
-      background-color: var(--color-primary-adaptive);
-    }
+    color: var(--color-primary-adaptive);
   }
   
   &.ui-btn-success {
@@ -44,10 +40,7 @@ button,
   }
   &.ui-btn-outline-success {
     color: var(--color-success-default);
-    border-color: var(--color-success-default);
-    &:active {
-      background-color: var(--color-success-default);
-    }
+    border-bottom-color: var(--color-button-border-bottom-success);
   }
   
   &.ui-btn-danger {
@@ -55,10 +48,7 @@ button,
   }
   &.ui-btn-outline-danger {
     color: var(--color-danger-default);
-    border-color: var(--color-danger-default);
-    &:active {
-      background-color: var(--color-danger-default);
-    }
+    border-bottom-color: var(--color-button-border-bottom-danger);
   }
   
   &.ui-btn-subtle {
@@ -70,18 +60,11 @@ button,
     } 
   }
   
-  &[class*="-btn-"]:hover:not(:active) {
+  &.ui-btn-primary:hover:not(:active),
+  &.ui-btn-success:hover:not(:active),
+  &.ui-btn-danger:hover:not(:active),
+  &.ui-btn-subtle:hover:not(:active) {
     filter: none;
-  }
-  &[class*="outline"] {
-    background-color: transparent;
-    &:active {
-      filter: unset;
-      color: var(--color-scheme-absolute);
-    }
-    &[disabled] {
-      backdrop-filter: grayscale(1);
-    }
   }
  
   &[disabled] {

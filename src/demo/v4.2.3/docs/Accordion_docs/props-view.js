@@ -38,10 +38,10 @@ const PropsView = () => {
           <td>Set's accordion onExpand listener.</td>
         </tr>
         <tr>
-          <td><p className="ui-code">Accordion.<b>Header</b></p></td>
+          <td><p className="ui-code">Accordion.<b>Trigger</b></p></td>
           <td>ReactNode</td>
           <td>[ ]</td>
-          <td>Set's accordion custom header component.</td>
+          <td>Set's accordion custom trigger component.</td>
         </tr>
         <tr>
           <td><p className="ui-code">Accordion.<b>Body</b></p></td>
