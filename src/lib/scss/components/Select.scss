@@ -46,9 +46,10 @@
 
 .ui-menu-title {
   @extend .input-btn-default;
-  padding-right: 32px;
   height: 32px;
+  outline: none;
   padding-left: 10px;
+  padding-right: 32px;
 }
 
 .ui-menu-title {

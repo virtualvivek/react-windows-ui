@@ -2,8 +2,14 @@ import React, { forwardRef, useMemo, useState, useImperativeHandle } from "react
 import { ScrollView } from "../../api";
 
 const Alert = forwardRef((props, ref) => {
+  const {
+    title,
+    message,
+    children,
+    isVisible
+  } = props;
 
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisibLe, setIsVisible] = useState(false);
   const open = () => { setIsVisible(true); }
   const close = () => { setIsVisible(false); }
 
@@ -15,25 +21,25 @@ const Alert = forwardRef((props, ref) => {
   }
 
   useMemo(() => {
-    (props.isVisible || isVisible) ? ScrollView.disableScroll() : ScrollView.enableScroll();
-  }, [props.isVisible, isVisible]);
+    (isVisible || isVisibLe) ? ScrollView.disableScroll() : ScrollView.enableScroll();
+  }, [isVisible, isVisibLe]);
 
   return (
     <div
-      className={(props.isVisible || isVisible) ? "ui-alert show" : "ui-alert"}
-      onClick={(event) => _onBackdropPress(event)}
+      ref={ref}
       tabIndex="-1"
-      ref={ref}>
+      onClick={(event) => _onBackdropPress(event)}
+      className={(isVisible || isVisibLe) ? "ui-alert show" : "ui-alert"}>
       <div className="ui-alert-modal" aria-modal="true" role="dialog">
         {
-          (props.title || props.message) && (
+          (title || message) && (
             <div className="ui-alert-header">
-              {props.title && <h1>{props.title}</h1>}
-              {props.message && <div className="ui-alert-message">{props.message}</div>}
+              {title && <h1>{title}</h1>}
+              {message && <div className="ui-alert-message">{message}</div>}
             </div>
           )
         }
-        {props.children}
+        {children}
       </div>
     </div>
   )

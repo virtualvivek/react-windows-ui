@@ -12,13 +12,14 @@ const SelectNative = (props) => {
   } = props;
 
   return (
-    <select className="ui-menu-title"
+    <select
+      className="ui-menu-title"
       {...otherProps}
-      title={tooltip}
       name={name}
+      title={tooltip}
+      onClick={onClick}
       disabled={disabled}
-      onChange={onChange}
-      onClick={onClick}>
+      onChange={onChange}>
       {data.map(item => (
         <option value={item.value} key={item.value}>
           {item.label}

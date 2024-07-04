@@ -3,6 +3,13 @@ import { ScrollView, getScreenOffset } from "../../../api";
 import { useOutSideClick } from "../../../hooks";
 
 const Select = (props) => {
+  const {
+    data,
+    trigger,
+    tooltip,
+    defaultValue
+  } = props;
+
   const data_default = [];
   const [iValue, setIValue] = useState("");
   const [isOpen, setOpen] = useState(false);
@@ -13,17 +20,17 @@ const Select = (props) => {
 
   useEffect(() => {
     //Check if any default value is given --
-    if(props.defaultValue) {
-      let defaultLabel = items.find(x => x.value === props.defaultValue).label;
-      setIValue(props.defaultValue);
+    if(defaultValue) {
+      let defaultLabel = items.find(x => x.value === defaultValue).label;
+      setIValue(defaultValue);
       setILabel(defaultLabel);
     } else {
       setILabel(items[0].label);
       setIValue(items[0].value);
     }
-  }, [props.data, props.defaultValue, items]);
+  }, [data, defaultValue, items]);
 
-  useMemo(() => setItem(props.data), [props.data]);
+  useMemo(() => setItem(data), [data]);
 
   useMemo(() => { if(!isOpen) { ScrollView.enableScroll(); } }, [isOpen]);
   
@@ -35,7 +42,7 @@ const Select = (props) => {
   }
 
   const toggleDropdown = () => {
-    !isShown ? setItem(props.data) : setIsShown(true);
+    !isShown ? setItem(data) : setIsShown(true);
     setOpen(!isOpen);
     getScreenOffset(wrapperRef) ? setReverse(" reverse") : setReverse("");
     ScrollView.disableScroll();
@@ -48,10 +55,14 @@ const Select = (props) => {
 
   return (
     <div
-      className="ui-menu-select"
+      ref={wrapperRef}
       onClick={toggleDropdown}
-      ref={wrapperRef}>
-      <span className="ui-menu-title" title={props.tooltip}>{ilabel}</span>
+      className="ui-menu-select">
+      {
+        trigger
+         ? <>{trigger}</>
+         : <span className="ui-menu-title" title={tooltip}>{ilabel}</span>
+      }
       <ul className={`ui-menu-list${isOpen ? " show":""}${isReverse}`}>
         {items.map((item, index) => (
           <li

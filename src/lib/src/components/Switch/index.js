@@ -1,7 +1,6 @@
 import React, { forwardRef } from "react";
 
 const Switch = forwardRef((props, ref) => {
-
   const {
     tooltip,
     label,

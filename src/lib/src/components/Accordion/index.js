@@ -1,12 +1,19 @@
 import React, { useState, useRef, useEffect, Children, useLayoutEffect, useCallback } from "react";
 
 const Accordion = (props) => {
+  const {
+    style,
+    children,
+    headerStyle,
+    headerTitle
+  } = props;
+  
   const panelRef = useRef(null);
   const [isExpanded, setIsExpanded] = useState(false);
   const [panelHeight, setPanelHeight] = useState(10);
 
-  const _header = Children.map(props.children, child => child.type.displayName === "Trigger" ? child : null);
-  const _body = Children.map(props.children, child => child.type.displayName === "Body" ? child : null);
+  const _header = Children.map(children, child => child.type.displayName === "Trigger" ? child : null);
+  const _body = Children.map(children, child => child.type.displayName === "Body" ? child : null);
 
   const updateWidth = useCallback(() => {
     setTimeout(() => {
@@ -40,22 +47,22 @@ const Accordion = (props) => {
   return (
     <div
       className="ui-accordion"
-      style={props.style}>
+      style={style}>
       <div
-        style={props.headerStyle}
+        style={headerStyle}
         className="ui-accordion-header"
         aria-expanded={isExpanded}
         onClick={toggleHeader}>
         {
           _header.length === 0
         ? <div className="ui-accordion-title">
-            <span>{props.headerTitle}</span>
+            <span>{headerTitle}</span>
           </div>
         : _header
         }
       </div>
       <div className={isExpanded ? "ui-accordion-body show"
-                               : "ui-accordion-body"}
+                                 : "ui-accordion-body"}
           ref={panelRef}
           style={{height: isExpanded ? panelHeight : 0}}>
         {_body}

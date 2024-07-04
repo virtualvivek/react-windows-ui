@@ -2,7 +2,6 @@ import React, { forwardRef, useMemo } from "react";
 import LoaderBusyWrapper from "../_common/LoaderBusyWrapper";
 
 const Button = forwardRef((props, ref) => {
-
   const {
     type,
     icon,

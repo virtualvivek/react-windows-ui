@@ -33,8 +33,7 @@ render() {
     <Select
       type="text"
       placeholder="Some Name"
-      //defaultValue="blue"
-      //onChange={(value)=> alert(value)}
+      trigger={<span>Hi</span>}
       data={[
         {label: 'blue', value: 'blue'},
         {label: 'red', value: 'red'},

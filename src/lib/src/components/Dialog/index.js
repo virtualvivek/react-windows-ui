@@ -3,7 +3,7 @@ import { ScrollView } from "../../api";
 
 const Dialog = forwardRef((props, ref) => {
 
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisibLe, setIsVisible] = useState(false);
   const open = () => { setIsVisible(true); }
   const close = () => { setIsVisible(false); }
 
@@ -17,12 +17,12 @@ const Dialog = forwardRef((props, ref) => {
   useImperativeHandle(ref, () => ({ open, close }));
 
   useMemo(() => {
-    (props.isVisible || isVisible) ? ScrollView.disableScroll() : ScrollView.enableScroll();
-  }, [props.isVisible, isVisible]);
+    (props.isVisible || isVisibLe) ? ScrollView.disableScroll() : ScrollView.enableScroll();
+  }, [props.isVisible, isVisibLe]);
 
   return (
     <div
-      className={(props.isVisible || isVisible) ? "ui-dialog show" : "ui-dialog"}
+      className={(props.isVisible || isVisibLe) ? "ui-dialog show" : "ui-dialog"}
       onClick={(event)=>_onBackdropPress(event)}
       tabIndex="-1"
       ref={ref}>

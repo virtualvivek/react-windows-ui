@@ -12,6 +12,7 @@ const SliderBar = forwardRef((props, ref) => {
     width,
     min,
     max,
+    ticks,
     ...otherProps
   } = props;
 
@@ -71,6 +72,15 @@ const SliderBar = forwardRef((props, ref) => {
           {defaultValue}
         </span>
       )}
+      {
+        ticks && (
+          <div className="ui-datalist">
+            {ticks.map((tick, index) => (
+              <p key={index} value={tick}></p>
+            ))}
+          </div>
+        )
+      }
     </div>
   )
 });

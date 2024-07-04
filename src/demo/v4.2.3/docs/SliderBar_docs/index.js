@@ -35,6 +35,8 @@ class SliderBarDocs extends React.Component {
 
         <SliderBar
           tooltip="SliderBar tooltip title"
+          ticks={[0, 50, 100]}
+          step="10"
           defaultValue={this.state.Slider1}
           onChange={(e) => {this.onChangeSlider1(e)}}
         />
