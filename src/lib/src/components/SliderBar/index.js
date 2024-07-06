@@ -3,16 +3,16 @@ import React, { forwardRef } from "react";
 const SliderBar = forwardRef((props, ref) => {
 
   const {
-    showPopupValue,
-    thumbStyle,
-    tooltip,
-    orientation,
-    defaultValue,
-    onChange,
-    width,
     min,
     max,
+    step,
+    width,
     ticks,
+    tooltip,
+    onChange,
+    orientation,
+    defaultValue,
+    showPopupValue,
     ...otherProps
   } = props;
 
@@ -42,8 +42,7 @@ const SliderBar = forwardRef((props, ref) => {
     <div
       title={tooltip}
       style={{width: width}}
-      className={`ui-range-slider${thumbStyle === "round" ? " slider-round"
-      : thumbStyle === "round-border" ? " slider-round-border" : ""}`}
+      className="ui-range-slider"
       data-win-orient={orientation === "vertical" ? "vertical": "horizontal"}>
       <input
         {...otherProps}
@@ -51,13 +50,13 @@ const SliderBar = forwardRef((props, ref) => {
         type="range"
         min={min}
         max={max}
-        step={props.step}
+        step={step}
+        defaultValue={defaultValue}
         onMouseUp={props.onDragEnd}
         onMouseDown={props.onDragStart}
         onTouchStart={props.onDragStart}
         onTouchEnd={props.onDragEnd}
         onChange={(e) => _onChange(e)}
-        defaultValue={defaultValue}
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={() => toggleHidden()}
         style={{
@@ -86,9 +85,9 @@ const SliderBar = forwardRef((props, ref) => {
 });
 
 SliderBar.defaultProps = {
+  step: 1,
   min: 0,
   max: 100,
-  step: 1,
   defaultValue: 0,
   onChange: () => {},
   showPopupValue: true

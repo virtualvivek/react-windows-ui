@@ -16,19 +16,9 @@ const SliderBarRoundUsageCode =
   onChange={(e) => {this.onChangeSlider(e)}}
 />`;
 
-const SliderBarRoundBorderUsageCode =
-`<SliderBar
-  thumbStyle="round-border"
-  showPopupValue={false}
-  defaultValue={this.state.Slider}
-  onChange={(e) => {this.onChangeSlider(e)}}
-/>`;
-
-
 
 export {
   SliderBarImportCode,
   SliderBarUsageCode,
-  SliderBarRoundUsageCode,
-  SliderBarRoundBorderUsageCode
+  SliderBarRoundUsageCode
 }

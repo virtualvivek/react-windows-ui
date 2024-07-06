@@ -2,7 +2,7 @@ import React from 'react'
 import { NavPageContainer, SliderBar } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { SliderBarImportCode,SliderBarUsageCode,SliderBarRoundUsageCode,SliderBarRoundBorderUsageCode } from './codes'
+import { SliderBarImportCode,SliderBarUsageCode,SliderBarRoundUsageCode } from './codes'
 import PropsView from './props-view'
 
 class SliderBarDocs extends React.Component {
@@ -10,15 +10,13 @@ class SliderBarDocs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      Slider1: 56,
+      Slider1: 50,
       Slider2: 40,
-      Slider3: 28,
     }
   }
 
   onChangeSlider1 = (e) => { this.setState({Slider1:e.target.value}) }
   onChangeSlider2 = (e) => { this.setState({Slider2:e.target.value}) }
-  onChangeSlider3 = (e) => { this.setState({Slider3:e.target.value}) }
 
 
   render() {
@@ -34,16 +32,15 @@ class SliderBarDocs extends React.Component {
         </h1>
 
         <SliderBar
-          tooltip="SliderBar tooltip title"
-          ticks={[0, 50, 100]}
           step="10"
           defaultValue={this.state.Slider1}
+          tooltip="SliderBar tooltip title"
           onChange={(e) => {this.onChangeSlider1(e)}}
         />
 
         <h2>Import</h2>
 
-        <input type="range" min="0" max="100" step="10" list="tickmarks"/>
+        {/* <input type="range" min="0" max="100" step="1" list="tickmarks"/>
         <datalist id="tickmarks">
           <option value="0"></option>
           <option value="10"></option>
@@ -56,7 +53,7 @@ class SliderBarDocs extends React.Component {
           <option value="80"></option>
           <option value="90"></option>
           <option value="100"></option>
-        </datalist>
+        </datalist> */}
 
         <SyntaxHighlighter
           language="javascript"
@@ -76,12 +73,14 @@ class SliderBarDocs extends React.Component {
 
       
         <div className="ui-hr"></div>
-        <h2>SliderBar <p className="ui-code">Round</p> varient :</h2>
+        <h2>SliderBar <p className="ui-code">with</p> ticks :</h2>
 
         <SliderBar
-          step={4}
-          thumbStyle="round"
+          step="10"
+          width="200px"
+          ticks={[0, 50, 100]}
           defaultValue={this.state.Slider2}
+          tooltip="SliderBar tooltip title"
           onChange={(e) => {this.onChangeSlider2(e)}}
         />
         <br/><br/>
@@ -91,25 +90,6 @@ class SliderBarDocs extends React.Component {
           style={vscDarkPlus}
           className="code code-container">
           {SliderBarRoundUsageCode}
-        </SyntaxHighlighter>
-
-
-        <div className="ui-hr"></div>
-        <h2>SliderBar <p className="ui-code">Round Border</p> varient :</h2>
-
-        <SliderBar
-          showPopupValue={false}
-          thumbStyle="round-border"
-          defaultValue={this.state.Slider3}
-          onChange={(e) => {this.onChangeSlider3(e)}}
-        />
-        <br/><br/>
-
-        <SyntaxHighlighter
-          language="javascript"
-          style={vscDarkPlus}
-          className="code code-container">
-          {SliderBarRoundBorderUsageCode}
         </SyntaxHighlighter>
 
 

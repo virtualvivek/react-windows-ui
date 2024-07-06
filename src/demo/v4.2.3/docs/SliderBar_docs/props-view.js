@@ -49,12 +49,12 @@ const PropsView = () => {
           <td>null</td>
           <td>Set's SliderBar hover tooltip.</td>
         </tr>
-        <tr>
+        {/* <tr>
           <td><p className="ui-code">thumbStyle</p></td>
           <td>"default" | "round" | "round-border"</td>
           <td>"default"</td>
           <td>Set's SliderBar thumb style.</td>
-        </tr>
+        </tr> */}
         <tr>
           <td><p className="ui-code">onChange</p></td>
           <td>function</td>
