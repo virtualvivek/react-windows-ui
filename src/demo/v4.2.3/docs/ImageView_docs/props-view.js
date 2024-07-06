@@ -50,28 +50,10 @@ const PropsView = () => {
           <td>Set's ImageView loading state.</td>
         </tr>
         <tr>
-          <td><p className="ui-code">title</p></td>
-          <td>string</td>
-          <td>null</td>
-          <td>Set's ImageView title.</td>
-        </tr>
-        <tr>
-          <td><p className="ui-code">subtitle</p></td>
-          <td>string</td>
-          <td>null</td>
-          <td>Set's ImageView subtitle.</td>
-        </tr>
-        <tr>
           <td><p className="ui-code">tooltip</p></td>
           <td>string</td>
           <td>null</td>
           <td>Set's ImageView hover tooltip.</td>
-        </tr>
-        <tr>
-          <td><p className="ui-code">insetShadow</p></td>
-          <td>boolean</td>
-          <td>false</td>
-          <td>Set's ImageView inset shadow.</td>
         </tr>
         <tr>
           <td><p className="ui-code">onLoad</p></td>

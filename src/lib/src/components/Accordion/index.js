@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect, Children, useLayoutEffect, useCallback } from "react";
 
-const Accordion = (props) => {
-  const {
-    style,
-    children,
-    headerStyle,
-    headerTitle
-  } = props;
+const Accordion = ({
+  style,
+  children,
+  headerStyle,
+  headerTitle,
+  onExpand = () => {},
+  onCollapse = () => {},
+}) => {
   
   const panelRef = useRef(null);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -31,12 +32,9 @@ const Accordion = (props) => {
   }, [updateWidth]);
 
   const toggleHeader = () => {
-    if(isExpanded) {
-      setIsExpanded(false); props.onCollapse();
-    } else {
-      setIsExpanded(true); props.onExpand();
-    }
-  }
+    setIsExpanded(!isExpanded);
+    isExpanded ? onCollapse() : onExpand();
+  };
 
   useLayoutEffect(() => {
     panelRef.current?.childNodes.forEach((node) =>
@@ -46,23 +44,22 @@ const Accordion = (props) => {
 
   return (
     <div
-      className="ui-accordion"
-      style={style}>
+      className="ui-accordion" style={style}>
       <div
         style={headerStyle}
         className="ui-accordion-header"
         aria-expanded={isExpanded}
         onClick={toggleHeader}>
-        {
-          _header.length === 0
-        ? <div className="ui-accordion-title">
+        {_header.length === 0 ? (
+          <div className="ui-accordion-title">
             <span>{headerTitle}</span>
           </div>
-        : _header
-        }
+        ) : (
+          _header
+        )}
       </div>
-      <div className={isExpanded ? "ui-accordion-body show"
-                                 : "ui-accordion-body"}
+      <div
+          className={isExpanded ? "ui-accordion-body show" : "ui-accordion-body"}
           ref={panelRef}
           style={{height: isExpanded ? panelHeight : 0}}>
         {_body}
@@ -71,15 +68,9 @@ const Accordion = (props) => {
   );
 }
 
-Accordion.defaultProps = {
-  onExpand: () => {},
-  onCollapse: () => {},
-}
-
 const AccordionTrigger = ({ children }) => <>{children}</>
 AccordionTrigger.displayName = "Trigger";
 Accordion.Trigger = AccordionTrigger;
-
 
 const AccordionBody = ({ children }) => <>{children}</>
 AccordionBody.displayName = "Body";

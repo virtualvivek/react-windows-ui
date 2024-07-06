@@ -2,10 +2,8 @@ import React from 'react'
 import { Button, NavPageContainer, ButtonGroup } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus as dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { ButtonImportCode,ButtonDefaultCode,
-         ButtonIconPrimary,ButtonPrimary,ButtonPrimaryOutline,
-         ButtonIconCode,ButtonSuccessCode,
-         ButtonDangerCode, ButtonTypesCode } from './codes'
+import { ButtonImportCode, ButtonVarientCode,
+         ButtonIconCode, ButtonTypesCode } from './codes'
 import PropsView from './props-view'
 
 class ButtonsDocs extends React.Component {
@@ -19,35 +17,35 @@ class ButtonsDocs extends React.Component {
     }
   }
 
-  setDisabled = () => { this.setState({stateLoading: false,stateDisabled: true}) }
-  setLoading = () => { this.setState({stateLoading: true,stateDisabled: false}) }
-  setRegular = () => { this.setState({stateLoading: false,stateDisabled: false}) }
+  setDisabled = () => { this.setState({stateLoading: false, stateDisabled: true}) }
+  setLoading = () => { this.setState({stateLoading: true, stateDisabled: false}) }
+  setRegular = () => { this.setState({stateLoading: false, stateDisabled: false}) }
 
   render() {
+    return (
+      <NavPageContainer
+        animateTransition hasPadding>
 
-  return (
-    <NavPageContainer
-      animateTransition hasPadding>
+        <h1>Buttons</h1>
 
-      <h1>Buttons</h1>
-
-      <ButtonGroup>
-      <Button
-          value="Loading"
-          type="subtle"
-        />
-        <Button
-          icon={<i className="icons10-share"></i>}
-          type="subtle"
-        />
-      </ButtonGroup>
+        <ButtonGroup>
+          <Button
+            value="Loading"
+            type="subtle"
+          />
+          <Button
+            icon={<i className="icons10-share"></i>}
+            type="subtle"
+          />
+        </ButtonGroup>
 
         <Button
           value="Button Regular"
           type="primary"
           disabled={this.state.stateDisabled}
           isLoading={this.state.stateLoading}
-          tooltip="Button tooltip title"/>
+          tooltip="Button tooltip title"
+        />
 
         <span>&nbsp; &nbsp; Set state</span>
         <br/><br/>
@@ -67,7 +65,6 @@ class ButtonsDocs extends React.Component {
         />
 
         <div className="ui-hr"></div>
-
         <h2>Import</h2>
 
         <SyntaxHighlighter
@@ -94,11 +91,8 @@ class ButtonsDocs extends React.Component {
           type="subtle"
           value="Subtle Button"
         />
-        &nbsp;&nbsp;
-        <Button
-          type="primary-outline"
-          value="Primary Outline Button"
-        /><br/><br/>
+        
+        <br/><br/>
 
         <SyntaxHighlighter
           language="javascript"
@@ -108,111 +102,36 @@ class ButtonsDocs extends React.Component {
         </SyntaxHighlighter>
 
         <div className="ui-hr"></div>
-
-        <h3>Button Default</h3>
+        <h3>Button Varients</h3>
 
         <Button
           value="Default Button"
-        />
-        <br/><br/>
-
-        <Button
-          icon={<i className="icons10-plus"></i>}
-          value="Default Button"
-        />
-        <br/><br/>
-
-        <Button
-          disabled
-          value="Disabled Button"
         />
         &nbsp;&nbsp;
         <Button
           isLoading
           value="Loading Button"
         />
-        <br/><br/>
-
-        <SyntaxHighlighter
-          language="javascript"
-          style={dracula}
-          className="code code-container">
-          {ButtonDefaultCode}
-        </SyntaxHighlighter>
-      
-        <div className="ui-hr"></div>
-        <h2 className="m-t-15">Button icon primary:</h2>
-
+        &nbsp;&nbsp;
         <Button
-          icon={<i className="icons10-plus color-primary"></i>}
-          value="Primary Icon"
+          type="primary"
+          value="Primary Button"
+          icon={<i className="icons10-fantasy"></i>}
         />
         &nbsp;&nbsp;
+        <Button
+          type="primary-outline"
+          value="Primary Button"
+          icon={<i className="icons10-fantasy"></i>}
+        />
+        <br/><br/>
         <Button
           width={155}
-          justifyContent={'start'}
-          icon={<i className="icons10-plus color-primary"></i>}
           value="Align Start"
-        />
-
-        <br/><br/>
-        
-        <SyntaxHighlighter
-          language="javascript"
-          style={dracula}
-          className="code code-container">
-          {ButtonIconPrimary}
-        </SyntaxHighlighter>
-        
-       
-        <div className="ui-hr"></div>
-        <h2>Button <p className="ui-code">Primary</p>:</h2>
-      
-        <Button
-          type="primary"
-          icon={<i className="icons10-fantasy"></i>}
-          value="Primary Button"
+          justifyContent={'start'}
+          icon={<i className="icons10-plus ui-color-primary"></i>}
         />
         &nbsp;&nbsp;
-        <Button
-          type="primary"
-          isLoading
-          value="Loading Button"
-        />
-        <br/><br/>
-        
-        <SyntaxHighlighter
-          language="javascript"
-          style={dracula}
-          className="code code-container">
-          {ButtonPrimary}
-        </SyntaxHighlighter>
-       
-        <div className="ui-hr"></div>
-        <h2>Button <p className="ui-code">Primary Outline</p>:</h2>
-
-        <Button
-          type="primary-outline"
-          value="Primary Button"
-        />
-        &nbsp;&nbsp;
-        <Button
-          type="primary-outline"
-          icon={<i className="icons10-fantasy"></i>}
-          value="Primary Button"
-        />
-        <br/><br/>
-      
-        <SyntaxHighlighter
-          language="javascript"
-          style={dracula}
-          className="code code-container">
-          {ButtonPrimaryOutline}
-        </SyntaxHighlighter>
-
-        <div className="ui-hr"></div>
-        <h2 className="m-b-15">Button Success</h2>
-
         <Button
           type="success"
           value="Success Button"
@@ -220,22 +139,10 @@ class ButtonsDocs extends React.Component {
         &nbsp;&nbsp;
         <Button
           type="success-outline"
-          icon={<i className="icons10-checkmark"></i>}
           value="Success Button"
+          icon={<i className="icons10-checkmark"></i>}
         />
         <br/><br/>
-        
-        <SyntaxHighlighter
-          language="javascript"
-          style={dracula}
-          className="code code-container">
-          {ButtonSuccessCode}
-        </SyntaxHighlighter>
-       
-      
-        <div className="ui-hr"></div>
-        <h2 className="m-b-15">Button Danger</h2>
-
         <Button
           type="danger"
           value="Danger Button"
@@ -243,18 +150,18 @@ class ButtonsDocs extends React.Component {
         &nbsp;&nbsp;
         <Button
           type="danger-outline"
-          icon={<i className="icons10-cross"></i>}
           value="Danger Button"
-        />        
+          icon={<i className="icons10-cross"></i>}
+        />
+
         <br/><br/>
 
         <SyntaxHighlighter
           language="javascript"
           style={dracula}
           className="code code-container">
-          {ButtonDangerCode}
+          {ButtonVarientCode}
         </SyntaxHighlighter>
-
 
         <div className="ui-hr"></div>
         <h1 className="m-b-15">Button as Icon:</h1>
@@ -289,16 +196,13 @@ class ButtonsDocs extends React.Component {
         </SyntaxHighlighter>
 
         <div className="ui-hr"></div>
-
         <h2>Props</h2>
         <PropsView/>
 
-
         <br/><br/><br/><br/>
-
       </NavPageContainer>
     );
   }
 }
 
-export default ButtonsDocs
+export default ButtonsDocs;

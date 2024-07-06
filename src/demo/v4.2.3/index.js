@@ -8,7 +8,6 @@ import {
 
   AppThemeDocs,
   AppearanceDocs,
-  ClassesDocs,
   ColorsDocs,
 
   NavBarDocs,
@@ -129,12 +128,6 @@ const AppFourTwoThree = () => {
             icon={<i className="icons10-sun"></i>}
           />
           <NavBarLink
-            text="Classes"
-            active={route === "utilities" ?? true}
-            onClick={() => _navigate("utilities")}
-            icon={<i className="icons10-puzzle"></i>}
-          />
-          <NavBarLink
             text="Colors"
             active={route === "colors" ?? true}
             onClick={() => _navigate("colors")}
@@ -167,7 +160,6 @@ const AppFourTwoThree = () => {
 
           {/* Utilities */}
           <Route path="colors" element={<ColorsDocs/>} />
-          <Route path="utilities" element={<ClassesDocs/>} />
 
           <Route path="navbar" element={<NavBarDocs/>} />
           <Route path="navbarlink" element={<NavBarLinkDocs/>} />

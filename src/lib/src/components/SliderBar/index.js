@@ -1,20 +1,21 @@
 import React, { forwardRef } from "react";
 
-const SliderBar = forwardRef((props, ref) => {
-
-  const {
-    min,
-    max,
-    step,
-    width,
-    ticks,
-    tooltip,
-    onChange,
-    orientation,
-    defaultValue,
-    showPopupValue,
-    ...otherProps
-  } = props;
+const SliderBar = forwardRef(({
+  step = 1,
+  min = 0,
+  max = 100,
+  defaultValue = 0,
+  onChange = () => {},
+  showPopupValue = true,
+  width,
+  ticks,
+  tooltip,
+  orientation,
+  onDragEnd,
+  onDragStart,
+  onMouseEnter,
+  ...otherProps
+}, ref) => {
 
   const popupRef = React.useRef();
 
@@ -52,12 +53,12 @@ const SliderBar = forwardRef((props, ref) => {
         max={max}
         step={step}
         defaultValue={defaultValue}
-        onMouseUp={props.onDragEnd}
-        onMouseDown={props.onDragStart}
-        onTouchStart={props.onDragStart}
-        onTouchEnd={props.onDragEnd}
+        onMouseUp={onDragEnd}
+        onMouseDown={onDragStart}
+        onTouchStart={onDragStart}
+        onTouchEnd={onDragEnd}
         onChange={(e) => _onChange(e)}
-        onMouseEnter={props.onMouseEnter}
+        onMouseEnter={onMouseEnter}
         onMouseLeave={() => toggleHidden()}
         style={{
           background: `linear-gradient(90deg, var(--color-primary-adaptive) ${(defaultValue/max)*100}%, #999999 20.1%)`
@@ -83,14 +84,5 @@ const SliderBar = forwardRef((props, ref) => {
     </div>
   )
 });
-
-SliderBar.defaultProps = {
-  step: 1,
-  min: 0,
-  max: 100,
-  defaultValue: 0,
-  onChange: () => {},
-  showPopupValue: true
-}
 
 export default SliderBar;

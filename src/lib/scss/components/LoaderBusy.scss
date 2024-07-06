@@ -11,10 +11,8 @@
     animation: unset;
   }
 
-  &.light {
-    .ui-ldr-busy {
-      stroke: #fff;
-    }
+  &.light .ui-ldr-busy {
+    stroke: #fff;
   }
 
   &.loader-lg {
@@ -63,41 +61,5 @@
 .ui-btn-success {
   .ui-ldr-busy {
     stroke: var(--color-scheme-absolute);
-  }
-}
-
-.ui-loader-busy-overlay {
-  @extend .ui-overlay;
-  
-  z-index: 99;
-  opacity: 0;
-  display: flex;
-  transition: 0.4s;
-  text-align: center;
-  flex-direction: column;
-  visibility: hidden;
-  
-  &.show {
-    opacity: 1;
-    transition: 0.4s;
-    visibility: visible;
-  }
-
-  .ui-loader-busy {
-    top: 42%;
-    z-index: 100;
-    margin: 0 auto;
-    filter: drop-shadow(0 4px 4px #44444488);
-  }
-  .title {
-    width: 100%;
-    bottom: 18%;
-    position: absolute;
-    text-align: center;
-    
-    &.text-light {
-      font-size: 1.5em;
-      color: #fff;
-    }
   }
 }

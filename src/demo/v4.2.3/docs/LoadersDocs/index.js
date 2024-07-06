@@ -2,8 +2,8 @@ import React from 'react'
 import { NavPageContainer, LoaderBar, LoaderBusy, Button } from '../../_lib'
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { LoaderBarImportCode,LoaderBusyImportCode,LoaderBarUsageCode,
-LoaderBusyUsageCode,LoaderBusyFullscreenUsageCode,LoaderBusyFullscreenCustomUsageCode } from './codes'
+import { LoaderBarImportCode, LoaderBusyImportCode,
+         LoaderBarUsageCode, LoaderBusyUsageCode } from './codes'
 import PropsView from './props-view'
 
 class LoadersDocs extends React.Component {
@@ -11,8 +11,6 @@ class LoadersDocs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showLoaderBusyFull: false,
-      showLoaderBusyFullCustom: false,
       showLoaderBar: true,
       showLoaderBusy: true,
     }
@@ -22,18 +20,6 @@ class LoadersDocs extends React.Component {
     if(this.state.showLoaderBar)
           this.setState({showLoaderBar: false});
     else  this.setState({showLoaderBar: true});
-  }
-
-  toggleLoaderBusyFull = () => {
-    if(this.state.showLoaderBusyFull)
-          this.setState({showLoaderBusyFull: false});
-    else  this.setState({showLoaderBusyFull: true});
-  }
-
-  toggleLoaderBusyFullCustom = () => {
-    if(this.state.showLoaderBusyFullCustom)
-          this.setState({showLoaderBusyFullCustom: false});
-    else  this.setState({showLoaderBusyFullCustom: true});
   }
 
   toggleLoaderBusy = () => {
@@ -126,53 +112,8 @@ render() {
       {LoaderBusyUsageCode}
     </SyntaxHighlighter>
 
-  
     <div className="ui-hr"></div>
-    <h1>LoaderBusy <p className="ui-code">Overlay</p> :</h1>
-
-    <LoaderBusy
-      isLoading={this.state.showLoaderBusyFull}
-      onBackdropPress={this.toggleLoaderBusyFull}
-      display="overlay"
-    />
-    <Button
-      value="Open overlay Loader"
-      onClick={this.toggleLoaderBusyFull}
-    />
-    <br/><br/>
-
-    <SyntaxHighlighter
-      language="javascript"
-      style={vscDarkPlus}
-      className="code code-container">
-      {LoaderBusyFullscreenUsageCode}
-    </SyntaxHighlighter>
-
-    <div className="ui-hr"></div>
-    <h1>LoaderBusy <p className="ui-code">Overlay</p>&nbsp;<p className="ui-code">Custom Bg Color</p> :</h1>
-
-    <LoaderBusy
-      isLoading={this.state.showLoaderBusyFullCustom}
-      onBackdropPress={this.toggleLoaderBusyFullCustom}
-      display="overlay"
-      backgroundColor="var(--PrimaryColor)"
-      setTheme="light"
-      title="Tap anywhere to dismiss"
-    />
-    <Button
-      value="Open custom overlay loader" 
-      onClick={this.toggleLoaderBusyFullCustom}
-    /><br/><br/>
-
-    <SyntaxHighlighter
-      language="javascript"
-      style={vscDarkPlus}
-      className="code code-container">
-      {LoaderBusyFullscreenCustomUsageCode}
-    </SyntaxHighlighter>
-
-    <div className="ui-hr"></div>
-    <h2>Loaders <p className="ui-code">{`setTheme={'light'}`}</p> :</h2>
+    <h2>Loaders <p className="ui-code">{`setTheme={"light"}`}</p> :</h2>
     <div className="ui-align-center"
       style={{width:'80%',borderRadius: 12, backgroundColor: "var(--PrimaryColor)"}}>
       <br/><br/>
@@ -210,4 +151,4 @@ render() {
 }
 }
 
-export default LoadersDocs
+export default LoadersDocs;

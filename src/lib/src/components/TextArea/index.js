@@ -1,18 +1,26 @@
 import React, { forwardRef } from "react";
 
-const TextArea = (props, ref) => {
-
-  const {
-    resize,
-    resizer,
-    ...otherProps
-  } = props;
-
+const TextArea = forwardRef(({
+  rows,
+  cols,
+  value,
+  tooltip,
+  resize,
+  resizer = true,
+  disabled,
+  readOnly,
+  onChange,
+  onResize,
+  placeholder = "Enter Here",
+  defaultValue,
+  ...otherProps
+}, ref) => {
+  
   return (
     <textarea
       className={
-        `ui-textarea`+
-        `${resizer ? "" : " resizer-none"}`+
+        `ui-textarea` +
+        `${resizer ? "" : " resizer-none"}` +
         `${
           resize === "none" ? " resize-none" :
           resize === "horizontal" ? " resize-horizontal" :
@@ -21,23 +29,18 @@ const TextArea = (props, ref) => {
       }
       {...otherProps}
       ref={ref}
-      rows={props.rows}
-      cols={props.cols}
-      value={props.value}
-      title={props.tooltip}
-      disabled={props.disabled}
-      onChange={props.onChange}
-      onResize={props.onResize}
-      readOnly={props.readOnly}
-      placeholder={props.placeholder}
-      defaultValue={props.defaultValue}>
+      rows={rows}
+      cols={cols}
+      value={value}
+      title={tooltip}
+      disabled={disabled}
+      onChange={onChange}
+      onResize={onResize}
+      readOnly={readOnly}
+      placeholder={placeholder}
+      defaultValue={defaultValue}>
     </textarea>
-  )
-}
+  );
+});
 
-export default forwardRef(TextArea);
-
-TextArea.defaultProps = {
-  resizer: true,
-  placeholder: "Enter Here"
-}
+export default TextArea;

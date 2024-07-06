@@ -1,13 +1,13 @@
 import React, { forwardRef, useMemo, useState, useImperativeHandle } from "react";
 import { ScrollView } from "../../api";
 
-const Alert = forwardRef((props, ref) => {
-  const {
-    title,
-    message,
-    children,
-    isVisible
-  } = props;
+const Alert = forwardRef(({
+  title,
+  message,
+  children,
+  isVisible = false,
+  onBackdropPress = () => {}
+}, ref) => {
 
   const [isVisibLe, setIsVisible] = useState(false);
   const open = () => { setIsVisible(true); }
@@ -15,9 +15,9 @@ const Alert = forwardRef((props, ref) => {
 
   useImperativeHandle(ref, () => ({ open, close }));
 
-  const _onBackdropPress = (event) => {
+  const _onBackdropPressEvent = (event) => {
     event.preventDefault();
-    if(event.target === event.currentTarget) { props.onBackdropPress(); } 
+    if(event.target === event.currentTarget) { onBackdropPress(); } 
   }
 
   useMemo(() => {
@@ -28,7 +28,7 @@ const Alert = forwardRef((props, ref) => {
     <div
       ref={ref}
       tabIndex="-1"
-      onClick={(event) => _onBackdropPress(event)}
+      onClick={(event) => _onBackdropPressEvent(event)}
       className={(isVisible || isVisibLe) ? "ui-alert show" : "ui-alert"}>
       <div className="ui-alert-modal" aria-modal="true" role="dialog">
         {
@@ -50,10 +50,5 @@ const AlertFooter = ({ children }) => <div className="ui-alert-footer">{children
 
 Alert.Header = AlertHeader;
 Alert.Footer = AlertFooter;
-
-Alert.defaultProps = {
-  isVisible: false,
-  onBackdropPress: () => {}
-}
 
 export default Alert;

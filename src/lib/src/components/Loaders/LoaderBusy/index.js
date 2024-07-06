@@ -1,67 +1,32 @@
-import React, { useMemo } from "react";
+import React from "react";
 import LoaderBusyWrapper from "../../_common/LoaderBusyWrapper";
-import { ScrollView } from "../../../api";
 
-const LoaderBusy = (props) => {
+const LoaderBusy = ({
+  size,
+  setTheme,
+  isLoading = true,
+  ...otherProps
+}) => {
 
-  const toggleLoading = () => {
-    return props.isLoading ? " animate" : "";
-  }
+  const toggleLoading = () => (isLoading ? " animate" : "");
 
   const setSize = () => {
-    if(props.size === "large") return " loader-lg";
-    else if (props.size === "small") return " loader-sm";
-    else return "";
-  }
+    if (size === "large") return " loader-lg";
+    if (size === "small") return " loader-sm";
+    return "";
+  };
 
-  const isOverlay = () => {
-    return props.display === "overlay" ? " loader-lg" : "";
-  }
-
-  const renderLoader = () => {
-    return <div className={ props.setTheme === "light"
-              ? `ui-loader-busy${isOverlay()} light${setSize()}${toggleLoading()}`
-              : `ui-loader-busy${isOverlay()}${setSize()}${toggleLoading()}`}>
-            <LoaderBusyWrapper/>
-           </div>
-  }
-
-  useMemo(() => {
-    if(props.display === "overlay") {
-      props.isLoading ? ScrollView.disableScroll() : ScrollView.enableScroll();
-    }
-  }, [props.isLoading, props.display]);
-
-  const renderLoaderFullScreen = () => {
-  return <>
+  const renderLoader = () => (
     <div
-      className={props.isLoading ? "ui-dim-overlay show" : "ui-dim-overlay"}
-      style={{
-        backgroundColor: props.backgroundColor
-      }}>
+      className={
+        `ui-loader-busy ${setTheme === "light" ? "light" : ""}${setSize()}${toggleLoading()}`
+      }
+      {...otherProps}>
+      <LoaderBusyWrapper />
     </div>
-    <div
-      onClick={ props.onBackdropPress }
-      className={ props.isLoading ? "ui-loader-busy-overlay show" : "ui-loader-busy-overlay"}>
-      {renderLoader()}
-      <span className={ props.setTheme === "light" ? "title text-light" : "title"}>
-        {props.title}
-      </span>
-    </div>
-    </>
-  }
+  );
 
-
-  return (
-    <>
-    { props.display === "overlay" ? renderLoaderFullScreen() : renderLoader() }
-    </>
-  )
-}
-
-LoaderBusy.defaultProps = {
-  isLoading: true,
-  backgroundColor: "var(--color-ui-hover-default)",
-}
+  return <>{renderLoader()}</>;
+};
 
 export default LoaderBusy;

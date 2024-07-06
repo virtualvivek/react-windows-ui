@@ -1,15 +1,17 @@
 import React, { forwardRef } from "react";
 
-const Switch = forwardRef((props, ref) => {
-  const {
-    tooltip,
-    label,
-    labelOn,
-    labelOff,
-    labelPosition,
-    labelFixedWidth,
-    ...otherProps
-  } = props;
+const Switch = forwardRef(({
+  tooltip,
+  disabled,
+  label = true,
+  labelOn = "On",
+  labelOff = "Off",
+  defaultChecked,
+  labelFixedWidth,
+  onChange = () => {},
+  labelPosition = "end",
+  ...otherProps
+}, ref) => {
 
   return (
     <label className="ui-switch-container" title={tooltip}>
@@ -26,10 +28,10 @@ const Switch = forwardRef((props, ref) => {
         ref={ref}
         {...otherProps}
         type="checkbox"
-        class="ui-switch"
-        disabled={props.disabled}
-        onChange={props.onChange}
-        defaultChecked={props.defaultChecked}
+        className="ui-switch"
+        disabled={disabled}
+        onChange={onChange}
+        defaultChecked={defaultChecked}
       />
 
       {label && labelPosition === "end" && (
@@ -43,13 +45,5 @@ const Switch = forwardRef((props, ref) => {
     </label>
   )
 });
-
-Switch.defaultProps = {
-  label: true,
-  labelOn: "On",
-  labelOff: "Off",
-  onChange: () => {},
-  labelPosition: "end"
-}
 
 export default Switch;

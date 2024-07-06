@@ -1,15 +1,6 @@
 const ButtonImportCode = 
 `import { Button } from "react-windows-ui";`;
 
-const ButtonDefaultCode =
-`<Button
-  isLoading={false}
-  onClick={() => {}}
-  value="Default Button"
-  tooltip="some tooltip text"
-  icon={<i className="icons10-plus"></i>}
-/>`;
-
 const ButtonTypesCode =
 `<Button
   value="Default Button"
@@ -27,27 +18,55 @@ const ButtonTypesCode =
   value="Primary Outline Button"
 />`;
 
-const ButtonIconPrimary =
+const ButtonVarientCode =
 `<Button
-  onClick={() => {}}
-  justifyContent={"start"}
-  value="Button Aligned Start"
-  icon={<i className="icons10-plus color-primary"></i>}
-/>`;
+  value="Default Button"
+/>
 
-const ButtonPrimary =
-`<Button
+<Button
+  isLoading
+  value="Loading Button"
+/>
+
+<Button
   type="primary"
   value="Primary Button"
-  onClick={() => {}}
-/>`;
+  icon={<i className="icons10-fantasy"></i>}
+/>
 
-const ButtonPrimaryOutline =
-`<Button
-  onClick={() => {}}
+<Button
   type="primary-outline"
-  value="Primary Outline"
-  //icon={<i className="icons10-plus"></i>}
+  value="Primary Button"
+  icon={<i className="icons10-fantasy"></i>}
+/>
+
+<Button
+  width={155}
+  value="Align Start"
+  justifyContent={'start'}
+  icon={<i className="icons10-plus ui-color-primary"></i>}
+/>
+
+<Button
+  type="success"
+  value="Success Button"
+/>
+
+<Button
+  type="success-outline"
+  value="Success Button"
+  icon={<i className="icons10-checkmark"></i>}
+/>
+
+<Button
+  type="danger"
+  value="Danger Button"
+/>
+
+<Button
+  type="danger-outline"
+  value="Danger Button"
+  icon={<i className="icons10-cross"></i>}
 />`;
 
 const ButtonIconCode =
@@ -70,33 +89,10 @@ const ButtonIconCode =
   icon={<i className="icons10-fingerprint"></i>}
 />`;
 
-const ButtonSuccessCode =
-`<Button
-  type="success"
-  onClick={() => {}}
-  value="Success Button"
-  //type="success-outline"
-  //icon={<i className="icons10-checkmark"></i>}
-/>`;
-
-const ButtonDangerCode =
-`<Button
-  type="danger"
-  onClick={() => {}}
-  value="Danger Button"
-  //type="danger-outline"
-  //icon={<i className="icons10-cross"></i>}
-/>`;
-
 
 export {
   ButtonImportCode,
   ButtonTypesCode,
-  ButtonDefaultCode,
-  ButtonIconPrimary,
-  ButtonPrimary,
-  ButtonPrimaryOutline,
+  ButtonVarientCode,
   ButtonIconCode,
-  ButtonSuccessCode,
-  ButtonDangerCode
 }
