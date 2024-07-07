@@ -16,8 +16,8 @@
     --color-button-border-outline: rgba(117,117,117,0.22);
     --color-card-bg-default: #272727DD;
     --color-day-primary-night-grey: #403E41;
-    --color-day-primary-night-white: #FFF;
-    --color-dropdown-menu-bg: #1A1A1A;
+    --color-day-primary-night-white: #FFFFFF;
+    --color-dropdown-menu-bg: 26, 26, 26; //#1A1A1A;
     --color-foreground-default: #2B2B2B;
     --color-foreground-dark: #444444;
     --color-input-bg-default: #292929B3;
@@ -30,6 +30,8 @@
     --color-input-placeholder: #D1D1D1;
     --color-input-clear-bg: #2F2F2F;
     --color-ui-active-default: #262626;
+    --color-model-ui-bg: 43, 43, 43;
+    --color-model-footer-bg: rgba(20, 20, 20, 0.6);
     --color-navbar-bg-default: #202020;
     --color-primary-adaptive: var(--PrimaryColorLight);
     --color-progress-bg: #484848;
@@ -38,7 +40,8 @@
     --color-scroll-thumb-hover: #DDDDDD99;
     --color-slider-thumb-bg: #454545;
     --color-slider-tick-bg: #DDDDDDDD;
-    --color-text-default: #FFF;
+    --color-switch-ui: #FFFFFF;
+    --color-text-default: #FFFFFF;
     --color-ui-border-default: #32323299;
     --color-ui-hover-default: #44444477;
     --color-ui-hover-strong: #37373788;

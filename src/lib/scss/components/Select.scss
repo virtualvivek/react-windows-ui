@@ -16,6 +16,10 @@
 
   .ui-menu-list {
     @extend .ui-dropdown-ul-default;
+    &.show.reverse {
+      bottom: 100%;
+      top: unset;
+    }
   }
 
   .ui-menu-list-item {

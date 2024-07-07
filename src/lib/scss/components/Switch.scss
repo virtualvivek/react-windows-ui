@@ -18,10 +18,10 @@
     outline: none;
     position: relative;
     user-select: none;
-    border: 1px solid var(--color-text-default);
+    border: 1px solid var(--color-switch-ui);
 
     &:before {
-      background: var(--color-text-default);
+      background: var(--color-switch-ui);
       block-size: 12px;
       border-radius: 7px;
       content: "";
@@ -32,7 +32,7 @@
       will-change: translate;
     }
     &:hover {
-      background-color: #77777755;
+      background-color: var(--color-ui-hover-default);
       &:before {
         block-size: 14px;
         inline-size: 14px;

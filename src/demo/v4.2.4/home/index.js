@@ -54,7 +54,7 @@ class Home extends React.Component {
               to="#"
               onClick={()=>this.toggleDialog()}
               className="docs-btn-branch-dialog-txt">
-                <b>‣  version 4.2.3</b>
+                <b>‣  version 4.2.4</b>
             </Link>
             <Link
               to="/v4.2.2/home"
@@ -117,7 +117,7 @@ class Home extends React.Component {
       <div className="home-title-container">
         <h1 className="home-title">react-windows-ui 
           <span className="home-card-version">
-            <span onClick={()=>this.toggleDialog()}>{lib_version}</span>
+            <span onClick={()=>this.toggleDialog()}>{lib_version} 🡫</span>
           </span>
         </h1>
         <span className="home-subtitle">Build Windows fluent UI apps using ReactJS. <br/>Provides a set of accessible, reusable, and composable React components.</span>
@@ -218,4 +218,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home
+export default Home;

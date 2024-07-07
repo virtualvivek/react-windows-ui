@@ -16,7 +16,7 @@ const PropsView = () => {
         <tr>
           <td><p className="ui-code">defaultValue</p></td>
           <td>string - oneof data value</td>
-          <td>null</td>
+          <td>1st Element</td>
           <td>Set's Select default selected value.</td>
         </tr>
         <tr>

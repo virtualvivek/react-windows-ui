@@ -1,11 +1,11 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 export interface SelectProps {
   data : string[];
   tooltip ?: string;
   defaultValue ?: string;
   onChange ?: () => void;
-  type ?: "default" | "text";
+  trigger ?: ReactNode;
 }
 declare const Select: React.FC<SelectProps>;
 

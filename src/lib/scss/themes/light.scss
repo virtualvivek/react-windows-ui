@@ -17,7 +17,7 @@
     --color-card-bg-default: #FBFBFBDD;
     --color-day-primary-night-grey: var(--PrimaryColor);
     --color-day-primary-night-white: var(--PrimaryColor);
-    --color-dropdown-menu-bg: #F8F8F8;
+    --color-dropdown-menu-bg: 248, 248, 248; //#F8F8F8
     --color-foreground-default: #FFF;
     --color-foreground-dark: #EEEEEE;
     --color-input-bg-default: #FFFFFF99;
@@ -30,6 +30,8 @@
     --color-input-placeholder: #828282;
     --color-input-clear-bg: #2F2F2F;
     --color-ui-active-default: #D8D8D8;
+    --color-model-ui-bg: 255, 255, 255;
+    --color-model-footer-bg: rgba(221, 221, 221, 0.6);
     --color-navbar-bg-default: #F3F3F3;
     --color-primary-adaptive: var(--PrimaryColor);
     --color-progress-bg: #E2E2E2;
@@ -38,7 +40,8 @@
     --color-scroll-thumb-hover: #777777EE;
     --color-slider-thumb-bg: #FFF;
     --color-slider-tick-bg: #777777DD;
-    --color-text-default: #000;
+    --color-switch-ui: #575757;
+    --color-text-default: #000000;
     --color-ui-border-default: #E3E3E399;
     --color-ui-hover-default: #EEEEEED1;
     --color-ui-hover-strong: #E1E0E088;

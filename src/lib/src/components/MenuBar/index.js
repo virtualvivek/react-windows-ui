@@ -1,4 +1,4 @@
-import React, { forwardRef, useImperativeHandle, useState, useRef, useMemo } from "react";
+import React, { forwardRef, useImperativeHandle, useState, useRef, useMemo, useLayoutEffect } from "react";
 import { useOutSideClick } from "../../hooks";
 import { getScreenOffset } from "../../api";
 import MenuList from "./Menu/MenuList";
@@ -6,6 +6,7 @@ import MenuItem from "./Menu/MenuItem";
 
 const MenuBar = forwardRef((props, ref) => {
   const {
+    children,
     anchorRef,
     menuDirection
   } = props;
@@ -20,15 +21,7 @@ const MenuBar = forwardRef((props, ref) => {
   useImperativeHandle(ref, () => ({
     openDialog: () => {
       if (anchorRef.current && dialogRef.current) {
-        const rect = anchorRef.current.getBoundingClientRect();
-        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-        dialogRef.current.style.top = `${rect.bottom + scrollTop}px`; // Adjusted for vertical scroll
-        dialogRef.current.style.left = `${rect.left + scrollLeft}px`; // Adjusted for horizontal scroll
-
         setShow(" show");
-        getScreenOffset(dialogRef) ? setReverse(" reverse") : setReverse("");
       } else {
         console.error("anchorRef or ref should not be empty for MenuBar Dialog");
       }
@@ -37,6 +30,25 @@ const MenuBar = forwardRef((props, ref) => {
       setShow("");
     },
   }));
+
+  useLayoutEffect(() => {
+    if (isShow === " show" && dialogRef.current) {
+      // Measure dialog height synchronously after render
+      const dialogHeight = dialogRef.current.getBoundingClientRect().height;
+      const rect = anchorRef.current.getBoundingClientRect();
+      const scrollLeft = document.documentElement.scrollLeft;
+      const scrollTop = document.documentElement.scrollTop;
+
+      if (getScreenOffset(anchorRef)) {
+        setReverse(" reverse");
+        dialogRef.current.style.top = `${rect.top + scrollTop - (dialogHeight + 10)}px`;
+      } else {
+        setReverse("");
+        dialogRef.current.style.top = `${rect.bottom + scrollTop}px`; // Adjusted for vertical scroll
+      }
+      dialogRef.current.style.left = `${rect.left + scrollLeft}px`; // Adjusted for horizontal scroll
+    }
+  }, [isShow, anchorRef, dialogRef]);
 
   const hideCurrentSubmenu = () => {
     if(currentSubMenu) {
@@ -71,7 +83,7 @@ const MenuBar = forwardRef((props, ref) => {
   }, [menuDirection]);
 
 
-  const renderItems = props.children.map((child, index) => {
+  const renderItems = children.map((child, index) => {
     return [
       child.type === UiMenuItem && (
         <MenuItem
@@ -105,7 +117,7 @@ const MenuBar = forwardRef((props, ref) => {
   return (
     <ul
       ref={dialogRef}
-      className={`ui-menu-list-dialog${isShow}${isReverse}${isMenuDirection}`}>
+      className={`ui-menu-list-dialog${isShow}${isReverse}${isMenuDirection} ui-backdrop-blur`}>
       {renderItems}
     </ul>
   );

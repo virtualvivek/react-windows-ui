@@ -1,5 +1,5 @@
 :root {
-  --noise: url("../../../assets/static/backdrop.jpg");
+  --noise: url("../../../assets/static/noise.png");
 }
 .home-header-container {
   padding: 45px;
@@ -43,11 +43,14 @@
 }
 
 .home-card-version {
+  left: 25px;
   bottom: 25px;
+  cursor: pointer;
   font-size: 16px;
   padding: 4px 8px;
   position: relative;
   border-radius: 28px;
+  color: var(--color-primary-adaptive);
   background: var(--color-card-bg-default);
 }
 
@@ -109,7 +112,7 @@
   transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
-  background: var(--noise) center/cover no-repeat;
+  background: url(../../../assets/static/backdrop.jpg) center/cover no-repeat;
 }
 
 .backdrop .acrylic-material,

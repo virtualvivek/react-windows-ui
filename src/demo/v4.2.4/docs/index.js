@@ -1,4 +1,3 @@
-export { default as Home } from "./Home";
 export { default as GettingStarted } from "./GettingStarted";
 
 export { default as AppearanceDocs } from "./Appearance_docs";

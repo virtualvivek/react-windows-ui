@@ -177,17 +177,20 @@
   visibility: hidden;
   position: absolute;
   -webkit-tap-highlight-color: transparent;
-  background: var(--color-dropdown-menu-bg);
+  background: rgba($color: var(--color-dropdown-menu-bg), $alpha: 1.0);
   border-radius: 6px;
   box-shadow: 0 2px 5px #22222244;
   border-color: var(--color-ui-border-default);
+
+  &.ui-backdrop-blur {
+    backdrop-filter: blur(12px);
+    background: rgba($color: var(--color-dropdown-menu-bg), $alpha: 0.86);
+  }
 
   &.show {
     @extend .transition_dropdown_show;
     &.reverse {
       @extend .transition_dropdown_show_reverse;
-      bottom: 100%;
-      top: unset;
     }
   }
   li {
@@ -207,5 +210,5 @@
   display: block;
   text-align: right;
   border-top: 1px solid var(--color-ui-hover-strong);
-  background-color: var(--color-navbar-bg-default);
+  background-color: var(--color-model-footer-bg);
 }

@@ -4,7 +4,7 @@ import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 const AppFourTwoZero = React.lazy(() => import("./v4.2.0"));
 const AppFourTwoOne = React.lazy(() => import("./v4.2.1"));
 const AppFourTwoTwo = React.lazy(() => import("./v4.2.2"));
-const AppFourTwoThree = React.lazy(() => import("./v4.2.3"));
+const AppFourTwoFour = React.lazy(() => import("./v4.2.4"));
 
 const Splash = () => {
   return <div style={{
@@ -24,7 +24,7 @@ class App extends React.Component {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/v4.2.3/home" />}/>
+        <Route path="/" element={<Navigate to="/v4.2.4/home" />}/>
         <Route
           path="/v4.2.0/*"
           element={<React.Suspense fallback={<Splash/>}><AppFourTwoZero/></React.Suspense>}
@@ -38,8 +38,8 @@ class App extends React.Component {
           element={<React.Suspense fallback={<Splash/>}><AppFourTwoTwo/></React.Suspense>}
         />
         <Route
-          path="/v4.2.3/*"
-          element={<React.Suspense fallback={<Splash/>}><AppFourTwoThree/></React.Suspense>}
+          path="/v4.2.4/*"
+          element={<React.Suspense fallback={<Splash/>}><AppFourTwoFour/></React.Suspense>}
         />
       </Routes>
     </HashRouter>

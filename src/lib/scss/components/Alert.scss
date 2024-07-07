@@ -14,8 +14,13 @@
     max-width: 400px;
     border-radius: 8.6px;
     transform: translate3d(0,-1%,0) scale(1.034);
-    background: var(--color-foreground-default);
-  }
+    background: rgba($color: var(--color-model-ui-bg), $alpha: 1.0);
+
+    &.ui-backdrop-blur {
+      backdrop-filter: blur(12px);
+      background: rgba($color: var(--color-model-ui-bg), $alpha: 0.84);
+    }
+  }  
 
   &.show {
     .ui-alert-modal {

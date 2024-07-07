@@ -2,18 +2,23 @@
   @extend .ui-dim-overlay;
 
   .ui-dialog-modal {
+    opacity: 0;
     width: 440px;
     z-index: 11;
     position: fixed;
     overflow: hidden;
-    background-color: var(--color-foreground-dark);
-    box-shadow: 0 0 7vh rgba(0, 0, 0, 0.25);
-    border: 1px solid var(--color-foreground-dark);
-    opacity: 0;
     visibility: hidden;
+    border-radius: 8.6px;
     transition: all 0.24s;
     transform: translateY(20px) scale(0.98);
-    border-radius: 8.6px;
+    box-shadow: 0 0 7vh rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-foreground-dark);
+    background: rgba($color: var(--color-model-ui-bg), $alpha: 1.0);
+
+    &.ui-backdrop-blur {
+      backdrop-filter: blur(12px);
+      background: rgba($color: var(--color-model-ui-bg), $alpha: 0.84);
+    }
 
     .ui-dialog-footer {
       @extend .ui-modal-footer-default;
@@ -21,15 +26,11 @@
     .ui-dialog-body {
       max-height: 40vh;
       overflow: overlay;
-      background-color: var(--color-background-default);
     }
     @-moz-document url-prefix() {
       .ui-dialog-body {
         overflow: auto;
       }
-    }
-    .ui-dialog-header {
-      padding: 0 15px;
     }
   }
 
@@ -37,12 +38,6 @@
     opacity: 1;
     visibility: visible;
     transform: translateY(0) scale(1);
-  }
-}
-
-body.dark-theme {
-  .ui-dialog .ui-dialog-modal {
-    background-color: var(--color-navbar-bg-default);
   }
 }
 

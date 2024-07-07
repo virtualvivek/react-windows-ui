@@ -39,11 +39,9 @@ class DialogDocs extends React.Component {
       <Dialog
         isVisible={this.state.showDialog}
         onBackdropPress={this.toggleDialog}>
-          <Dialog.Header>
+          <Dialog.Body style={{padding: 15}}>
             <h3>Header</h3>
-          </Dialog.Header>
-          <Dialog.Body>
-            <p style={{padding: 10}}>Helow World.</p>
+            <p>Helow World.</p>
           </Dialog.Body>
           <Dialog.Footer>
             <Button

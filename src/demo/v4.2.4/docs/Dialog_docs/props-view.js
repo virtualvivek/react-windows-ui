@@ -32,6 +32,30 @@ const PropsView = () => {
           <td>Container styles for Dialog, Dialog.<b>Header</b>, Dialog.<b>Body</b>, Dialog.<b>Footer</b>.</td>
         </tr>
         <tr>
+          <td><p className="ui-code">Dialog.<b>Body</b></p></td>
+          <td>ReactNode</td>
+          <td>null</td>
+          <td>Set's the dialog header children.</td>
+        </tr>
+        <tr>
+          <td><p className="ui-code">Dialog.<b>Footer</b></p></td>
+          <td>ReactNode</td>
+          <td>null</td>
+          <td>Set's the dialog footer children.</td>
+        </tr>
+        <tr>
+          <td><p className="ui-code">ref.<b>open()</b></p></td>
+          <td>function</td>
+          <td>default</td>
+          <td>Set's dialog open using ref.</td>
+        </tr>
+        <tr>
+          <td><p className="ui-code">ref.<b>close()</b></p></td>
+          <td>function</td>
+          <td>default</td>
+          <td>Set's dialog close using ref.</td>
+        </tr>
+        <tr>
           <td><p className="ui-code">onBackdropPress</p></td>
           <td>function</td>
           <td>null</td>
