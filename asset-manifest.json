@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-windows-ui/static/css/main.f4434028.css",
-    "main.js": "/react-windows-ui/static/js/main.43c8e8d6.js",
+    "main.js": "/react-windows-ui/static/js/main.ba302c0c.js",
     "static/css/29.bcda3099.chunk.css": "/react-windows-ui/static/css/29.bcda3099.chunk.css",
     "static/js/29.69decbf2.chunk.js": "/react-windows-ui/static/js/29.69decbf2.chunk.js",
     "static/css/945.6f82c362.chunk.css": "/react-windows-ui/static/css/945.6f82c362.chunk.css",
@@ -9,7 +9,7 @@
     "static/css/800.6f659163.chunk.css": "/react-windows-ui/static/css/800.6f659163.chunk.css",
     "static/js/800.45a95ee7.chunk.js": "/react-windows-ui/static/js/800.45a95ee7.chunk.js",
     "static/css/351.6df43f7b.chunk.css": "/react-windows-ui/static/css/351.6df43f7b.chunk.css",
-    "static/js/351.a0effdd9.chunk.js": "/react-windows-ui/static/js/351.a0effdd9.chunk.js",
+    "static/js/351.284ae87e.chunk.js": "/react-windows-ui/static/js/351.284ae87e.chunk.js",
     "static/js/157.0d2b7e05.chunk.js": "/react-windows-ui/static/js/157.0d2b7e05.chunk.js",
     "static/js/153.ce1be58b.chunk.js": "/react-windows-ui/static/js/153.ce1be58b.chunk.js",
     "static/js/482.7de25a14.chunk.js": "/react-windows-ui/static/js/482.7de25a14.chunk.js",
@@ -22,7 +22,7 @@
     "static/media/mountain.jpg": "/react-windows-ui/static/media/mountain.b79b96f0e1f61ee1f239.jpg",
     "index.html": "/react-windows-ui/index.html",
     "main.f4434028.css.map": "/react-windows-ui/static/css/main.f4434028.css.map",
-    "main.43c8e8d6.js.map": "/react-windows-ui/static/js/main.43c8e8d6.js.map",
+    "main.ba302c0c.js.map": "/react-windows-ui/static/js/main.ba302c0c.js.map",
     "29.bcda3099.chunk.css.map": "/react-windows-ui/static/css/29.bcda3099.chunk.css.map",
     "29.69decbf2.chunk.js.map": "/react-windows-ui/static/js/29.69decbf2.chunk.js.map",
     "945.6f82c362.chunk.css.map": "/react-windows-ui/static/css/945.6f82c362.chunk.css.map",
@@ -30,13 +30,13 @@
     "800.6f659163.chunk.css.map": "/react-windows-ui/static/css/800.6f659163.chunk.css.map",
     "800.45a95ee7.chunk.js.map": "/react-windows-ui/static/js/800.45a95ee7.chunk.js.map",
     "351.6df43f7b.chunk.css.map": "/react-windows-ui/static/css/351.6df43f7b.chunk.css.map",
-    "351.a0effdd9.chunk.js.map": "/react-windows-ui/static/js/351.a0effdd9.chunk.js.map",
+    "351.284ae87e.chunk.js.map": "/react-windows-ui/static/js/351.284ae87e.chunk.js.map",
     "157.0d2b7e05.chunk.js.map": "/react-windows-ui/static/js/157.0d2b7e05.chunk.js.map",
     "153.ce1be58b.chunk.js.map": "/react-windows-ui/static/js/153.ce1be58b.chunk.js.map",
     "482.7de25a14.chunk.js.map": "/react-windows-ui/static/js/482.7de25a14.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4434028.css",
-    "static/js/main.43c8e8d6.js"
+    "static/js/main.ba302c0c.js"
   ]
 }
