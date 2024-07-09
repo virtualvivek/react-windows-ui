@@ -43,7 +43,7 @@
     "compile:sass": "node-sass src/lib/scss/main.scss src/lib/dist/react-windows-ui.min.css --output-style compressed",
     "compile:sass-rtl": "node-sass src/lib/scss/stylesheet-rtl/main.scss src/lib/dist/react-windows-ui-rtl.min.css --output-style compressed",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build -r https://github.com/virtualvivek/react-windows-ui",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

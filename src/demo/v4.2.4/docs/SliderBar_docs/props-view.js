@@ -58,7 +58,7 @@ const PropsView = () => {
         <tr>
           <td><p className="ui-code">onChange</p></td>
           <td>function</td>
-          <td>null</td>
+          <td>default</td>
           <td>Set's SliderBar onChange listener.</td>
         </tr>
         <tr>

@@ -35,7 +35,13 @@ const PropsView = () => {
           <td><p className="ui-code">tooltip</p></td>
           <td>string</td>
           <td>null</td>
-          <td>Set Select's hover tooltip prop.</td>
+          <td>Set's Select hover tooltip prop.</td>
+        </tr>
+        <tr>
+          <td><p className="ui-code">backdropBlur</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's Select backdrop blur.</td>
         </tr>
         <tr>
           <td><p className="ui-code">disabled</p></td>

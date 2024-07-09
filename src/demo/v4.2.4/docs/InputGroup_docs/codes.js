@@ -78,7 +78,7 @@ const ExampleUsageCode =
 
 const _onChange = (value) => {
   setInputVal(value);
-  inputRef.current.value; // You can also fetch value this way.
+  // inputRef.current.value; // You can also fetch value this way.
 }
 
 return (

@@ -1,11 +1,13 @@
 .ui-input-search-box {
   ul {
     @extend .ui-dropdown-ul-default;
+    min-width: -webkit-fill-available;
+    min-width: -moz-available;
   }
   &::after {
     width: 25px;
     z-index: 1;
-    font-size: 16px;
+    font-size: 15px;
     content: "\f1b9";
     margin-left: -25px;
     font-family: icons10;

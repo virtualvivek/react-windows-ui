@@ -59,6 +59,7 @@ class AlertDocs extends React.Component {
       </div> */}
 
       <Alert
+        backdropBlur
         isVisible={this.state.showAlert}
         onBackdropPress={this.toggleAlert}
         title="Alert"

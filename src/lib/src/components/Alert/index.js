@@ -6,6 +6,7 @@ const Alert = forwardRef(({
   message,
   children,
   isVisible = false,
+  backdropBlur = false,
   onBackdropPress = () => {}
 }, ref) => {
 
@@ -30,7 +31,7 @@ const Alert = forwardRef(({
       tabIndex="-1"
       onClick={(event) => _onBackdropPressEvent(event)}
       className={(isVisible || isVisibLe) ? "ui-alert show" : "ui-alert"}>
-      <div className="ui-alert-modal ui-backdrop-blur" aria-modal="true" role="dialog">
+      <div className={`ui-alert-modal${backdropBlur?" ui-backdrop-blur":""}`} aria-modal="true" role="dialog">
         {
           (title || message) && (
             <div className="ui-alert-header">

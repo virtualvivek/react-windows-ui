@@ -6,7 +6,7 @@ npm install node-sass --save-dev
 -effects-
 package.json >
 	"scripts": {
-		"compile:sass": "node-sass src/lib/scss/stylesheet/main.scss src/lib/dist/react-windows-ui.css",
+		"compile:sass": "node-sass src/lib/scss/main.scss src/lib/dist/react-windows-ui.min.css --output-style compressed",
 		},
 
 --compile--

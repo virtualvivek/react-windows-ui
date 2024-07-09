@@ -1,7 +1,6 @@
 @mixin colors-dark() {
   [data-theme="dark"] {
     color-scheme: dark;
-    --platform: "windows11";
     
     --color-danger-default: #FF99A3;
     --color-success-default: #6ACB5D;
@@ -28,7 +27,6 @@
     --color-input-border-bottom: #999;
     --color-input-border-strong: #9A9A9A;
     --color-input-placeholder: #D1D1D1;
-    --color-input-clear-bg: #2F2F2F;
     --color-ui-active-default: #262626;
     --color-model-ui-bg: 43, 43, 43;
     --color-model-footer-bg: rgba(20, 20, 20, 0.6);

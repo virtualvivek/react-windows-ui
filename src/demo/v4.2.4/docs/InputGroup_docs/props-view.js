@@ -88,7 +88,7 @@ const PropsView = () => {
         <tr>
           <td><p className="ui-code">onFocus</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>Set's Input onFocus event listener.</td>
         </tr>
         <tr>
@@ -100,31 +100,31 @@ const PropsView = () => {
         <tr>
           <td><p className="ui-code">onChange</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>Set's Input on Change listener.</td>
         </tr>
         <tr>
           <td><p className="ui-code">onClick</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>Set's Input on Click listener.</td>
         </tr>
         <tr>
           <td><p className="ui-code">onKeyUp</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>Set's Input on KeyUp listener.</td>
         </tr>
         <tr>
           <td><p className="ui-code">onKeyDown</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>Set's Input on KeyDown listener.</td>
         </tr>
         <tr>
           <td><p className="ui-code">onClearButtonClick</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>Set's Input onClearButtonClick listener.</td>
         </tr>
       </tbody>

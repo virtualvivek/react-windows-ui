@@ -1,7 +1,6 @@
 @mixin colors-light() {
   :root {
     color-scheme: light;
-    --platform: "windows11";
     
     --color-danger-default: #C50500;
     --color-success-default: #2C8B2C;
@@ -28,7 +27,6 @@
     --color-input-border-bottom: #666;
     --color-input-border-strong: #8A8A8A;
     --color-input-placeholder: #828282;
-    --color-input-clear-bg: #2F2F2F;
     --color-ui-active-default: #D8D8D8;
     --color-model-ui-bg: 255, 255, 255;
     --color-model-footer-bg: rgba(221, 221, 221, 0.6);

@@ -5,6 +5,7 @@ const Dialog = forwardRef(({
   style,
   children,
   isVisible = false,
+  backdropBlur = false,
   onBackdropPress = () => {}
 }, ref) => {
 
@@ -32,7 +33,7 @@ const Dialog = forwardRef(({
       tabIndex="-1"
       ref={ref}>
       <div
-        className={"ui-dialog-modal ui-backdrop-blur"}
+        className={`ui-dialog-modal${backdropBlur?" ui-backdrop-blur":""}`}
         style={style}>
         {children}
       </div>

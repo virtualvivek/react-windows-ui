@@ -1,46 +1,52 @@
-// left: 37, up: 38, right: 39, down: 40,
-// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-function preventDefault(e) {
-  e.preventDefault();
+function getScrollbarWidth() {
+  if (navigator.maxTouchPoints > 0) {
+    // Touch device detected, scrollbar width is effectively 0
+    return 0;
+  }
+  // Create a temporary div container
+  const div = document.createElement("div");
+  // Apply styles to the div to make it scrollable
+  div.style.position = "absolute";
+  div.style.top = "-9999px";
+  div.style.width = "50px";
+  div.style.height = "50px";
+  div.style.overflowY = "scroll";
+  div.style.visibility = "hidden"; // Hide the div to avoid affecting the layout
+  // Append the div to the body
+  document.body.appendChild(div);
+  // Calculate the scrollbar width
+  const scrollbarWidth = div.offsetWidth - div.clientWidth;
+  // Remove the div from the body
+  document.body.removeChild(div);
+  
+  return scrollbarWidth;
 }
 
-function preventDefaultForScrollKeys(e) {
-  if (keys[e.keyCode]) {
-    preventDefault(e);
-    return false;
+function hasVerticalScrollbar(element) {
+  return element.scrollHeight > element.clientHeight;
+}
+
+function setHeaderMobilePadding(paddingRight) {
+  let headerMobile = document.getElementsByClassName("ui-navbar-header-mobile")[0];
+  if(headerMobile) {
+    headerMobile.style.paddingRight = `${paddingRight}px`;
   }
 }
 
-// modern Chrome requires { passive: false } when adding event
-var supportsPassive = false;
-
-try {
-  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-    get: function () { supportsPassive = true; return "" } 
-  }));
-} catch(e) {}
-
-var wheelOpt = supportsPassive ? { passive: false } : false;
-var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
-
 const disableScroll = () => {
-  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-  
-  return "";
+  const container = document.body;
+  if (hasVerticalScrollbar(container)) {
+    const scrollbarWidth = getScrollbarWidth();
+    document.body.style.paddingRight = `${scrollbarWidth}px`;
+    setHeaderMobilePadding(scrollbarWidth);
+  }
+  document.body.classList.add("modal-open");
 }
 
 const enableScroll = () => {
-  window.removeEventListener('DOMMouseScroll', preventDefault, false);
-  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
-  window.removeEventListener('touchmove', preventDefault, wheelOpt);
-  window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
-
-  return "";
+  document.body.style.paddingRight = '';
+  setHeaderMobilePadding(0);
+  document.body.classList.remove("modal-open");
 }
 
 const ScrollView = {

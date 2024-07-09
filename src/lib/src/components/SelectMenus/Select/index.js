@@ -7,7 +7,8 @@ const Select = (props) => {
     data,
     trigger,
     tooltip,
-    defaultValue
+    defaultValue,
+    backdropBlur = false,
   } = props;
 
   const data_default = [];
@@ -32,7 +33,9 @@ const Select = (props) => {
 
   useMemo(() => setItem(data), [data]);
 
-  useMemo(() => { if(!isOpen) { ScrollView.enableScroll(); } }, [isOpen]);
+  useMemo(() => {
+    isOpen ? ScrollView.disableScroll() :  ScrollView.enableScroll();
+  }, [isOpen]);
   
   const handleItemClick = (value, label) => {
     setILabel(label);
@@ -45,7 +48,6 @@ const Select = (props) => {
     !isShown ? setItem(data) : setIsShown(true);
     setOpen(!isOpen);
     getScreenOffset(wrapperRef) ? setReverse(" reverse") : setReverse("");
-    ScrollView.disableScroll();
   }
 
 
@@ -63,7 +65,7 @@ const Select = (props) => {
          ? <>{trigger}</>
          : <span className="ui-menu-title" title={tooltip}>{ilabel}</span>
       }
-      <ul className={`ui-menu-list${isOpen ? " show":""}${isReverse}`}>
+      <ul className={`ui-menu-list${isOpen ? " show":""}${isReverse}${backdropBlur?" ui-backdrop-blur":""}`}>
         {items.map((item, index) => (
           <li
             key={index}

@@ -64,13 +64,13 @@ const TextAreaProps = () => {
         <tr>
           <td><p className="ui-code">onChange</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>Set's TextArea on Change listener.</td>
         </tr>
         <tr>
           <td><p className="ui-code">onResize</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>Set's TextArea on Resize listener.</td>
         </tr>
         <tr>

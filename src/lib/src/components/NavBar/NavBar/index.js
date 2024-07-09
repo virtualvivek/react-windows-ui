@@ -1,7 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
+import ScrollView from "../../../api/ScrollView";
 
 const NavBar = (props) => {
 
+  const prevWidth = useRef(window.innerWidth);
   const navRef = useRef(null);
   const [isScrolling, setScrolling] = useState(false);
   const [sidebar_collapsed, setSidebarCollapsed] = useState(props.collapsed ? true:false);
@@ -38,12 +40,27 @@ const NavBar = (props) => {
   const scrollEvent = (e) => { e.target.scrollTop < 50 ? setScrolling(false) : setScrolling(true); }
 
 
-  function resizedw() { navRef.current.style.transition = ""; }
-  var on_resizew;
+  useEffect(() => {
+    sidebar_float_collapsed === " collapsed-float"
+      ? ScrollView.disableScroll()
+      : ScrollView.enableScroll();
+  }, [sidebar_float_collapsed]);
+
+  // Once resize completes --
+  function resizedw() {
+    navRef.current.style.transition = "";
+    setSidebarFloatCollapsed("");
+  }
+  var resizeTimer;
   window.onresize = function() {
-    clearTimeout(on_resizew);
-    navRef.current.style.transition = "unset";
-    on_resizew = setTimeout(resizedw, 100);
+    const currentWidth = window.innerWidth;
+    if (prevWidth.current !== currentWidth) {
+      clearTimeout(resizeTimer);
+      navRef.current.style.transition = "unset";
+      resizeTimer = setTimeout(resizedw, 100);
+      // Update the last width to the current width
+      prevWidth.current = currentWidth;
+    }
   };
 
 

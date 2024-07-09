@@ -37,15 +37,14 @@ const InputGroupDocs = () => {
       />
       <span>&nbsp;&nbsp;  Edit Text.</span>
       <br/><br/>
-      <details>
-        <summary>Example Usage</summary>
-        <SyntaxHighlighter
-          language="javascript"
-          style={vscDarkPlus}
-          className="code code-container">
-          {ExampleUsageCode}
-        </SyntaxHighlighter>
-      </details>
+     
+      <SyntaxHighlighter
+        language="javascript"
+        style={vscDarkPlus}
+        className="code code-container">
+        {ExampleUsageCode}
+      </SyntaxHighlighter>
+      
 
       <h1>InputText</h1>
       <h2>Import</h2>

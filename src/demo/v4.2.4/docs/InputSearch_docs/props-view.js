@@ -52,31 +52,31 @@ const PropsView = () => {
         <tr>
           <td><p className="ui-code">onClick</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>onClick listener</td>
         </tr>
         <tr>
           <td><p className="ui-code">onChange</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>onChange listener</td>
         </tr>
         <tr>
           <td><p className="ui-code">onKeyUp</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>onKeyUp listener</td>
         </tr>
         <tr>
           <td><p className="ui-code">onKeyDown</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>onKeyDown listener</td>
         </tr>
         <tr>
           <td><p className="ui-code">onSubmit</p></td>
           <td>function</td>
-          <td>[ ]</td>
+          <td>default</td>
           <td>onSubmit listener | For InputSearchBar</td>
         </tr>
         <tr>
@@ -111,7 +111,7 @@ const PropsView = () => {
         <tr>
           <td><p className="ui-code">data ▶ onClick</p></td>
           <td>function</td>
-          <td>null</td>
+          <td>default</td>
           <td>Set's Search data item onClick</td>
         </tr>
       </tbody>

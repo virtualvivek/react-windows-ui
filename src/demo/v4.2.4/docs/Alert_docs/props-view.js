@@ -62,6 +62,12 @@ const PropsView = () => {
           <td>Set's alert close using ref.</td>
         </tr>
         <tr>
+          <td><p className="ui-code">backdropBlur</p></td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Set's alert backdrop blur.</td>
+        </tr>
+        <tr>
           <td><p className="ui-code">onBackdropPress</p></td>
           <td>function</td>
           <td>undefined</td>

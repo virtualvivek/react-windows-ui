@@ -1,4 +1,4 @@
-import React, { forwardRef, useImperativeHandle, useState, useRef, useMemo, useLayoutEffect } from "react";
+import React, { forwardRef, useImperativeHandle, useState, useRef, useMemo, useEffect } from "react";
 import { useOutSideClick } from "../../hooks";
 import { getScreenOffset } from "../../api";
 import MenuList from "./Menu/MenuList";
@@ -8,7 +8,8 @@ const MenuBar = forwardRef((props, ref) => {
   const {
     children,
     anchorRef,
-    menuDirection
+    menuDirection,
+    backdropBlur = false,
   } = props;
   
   const subMenusRef = useRef([]);
@@ -31,7 +32,7 @@ const MenuBar = forwardRef((props, ref) => {
     },
   }));
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (isShow === " show" && dialogRef.current) {
       // Measure dialog height synchronously after render
       const dialogHeight = dialogRef.current.getBoundingClientRect().height;
@@ -117,7 +118,7 @@ const MenuBar = forwardRef((props, ref) => {
   return (
     <ul
       ref={dialogRef}
-      className={`ui-menu-list-dialog${isShow}${isReverse}${isMenuDirection} ui-backdrop-blur`}>
+      className={`ui-menu-list-dialog${isShow}${isReverse}${isMenuDirection}${backdropBlur?" ui-backdrop-blur":""}`}>
       {renderItems}
     </ul>
   );

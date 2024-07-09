@@ -4,17 +4,20 @@
 body {  
   margin: 0;
   padding: 0;
+  max-height: 100vh;
   overflow-y: overlay;
   overflow-x: hidden;
   scroll-behavior: smooth;
   color: var(--color-text-default);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-  background-color: var(--color-background-default);  
+  background-color: var(--color-background-default);
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
-body.modal-open {
-  overflow: hidden;
-}
+
 // On Mobiles if NavBar is open stop main-page scrolling
 @media only screen and (max-width: 760px) {
   body:has( aside.collapsed-float) {
