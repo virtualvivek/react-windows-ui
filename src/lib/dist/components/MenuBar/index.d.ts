@@ -1,11 +1,10 @@
-import React, { FC } from "react";
+import React from "react";
 
-export interface MenuBarProps {
-  label ?: string;
-  data ?: string[];
-  showSearchBar ?: boolean;
-  searchPlaceholder ?: string;
+export interface MennuBarProps {
+  anchorRef ?: any;
+  backdropBlur ?: boolean;
+  menuDirection ?: string;
 }
-declare const MenuBar: FC<MenuBarProps>;
+declare const MennuBar: React.FC<MennuBarProps>;
 
-export default MenuBar;
+export default MennuBar;

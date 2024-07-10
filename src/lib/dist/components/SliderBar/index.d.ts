@@ -7,7 +7,6 @@ export interface SliderBarProps {
   max ?: number;
   step ?: number;
   tooltip ?: string;
-  thumbStyle ?: string;
   showPopupValue ?: boolean;
   defaultValue ?: number;
   onChange ?: () => void;

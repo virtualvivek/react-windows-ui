@@ -42,8 +42,8 @@ package.json >
 	"build:production": "rm -rf dist && SET NODE_ENV=production && babel src/lib/src --out-dir src/lib/dist --copy-files",
 
 [ File Added ] > babel.config.js
-
---Compile Production--
+----------------------------------------------------------------------------
+#### Compile Production ####
 
 [ Open Git Bash Terminal ( Choose from dropdown in VS Code ) ]
 
@@ -60,7 +60,9 @@ README.md (at ./lib)
 	|
 package.json (at ./lib)
 	|
-Publish @Latest
+Login
+	|
+cd src/lib/ > publish
 
 =============================
 react-windows-ui-boilerplace

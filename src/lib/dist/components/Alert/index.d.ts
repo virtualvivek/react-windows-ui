@@ -6,6 +6,7 @@ export interface AlertProps {
   message ?: string;
   isVisible ?: boolean;
   children ?: ReactNode;
+  backdropBlur ?: boolean;
   onBackdropPress ?: () => void;
 }
 declare const Alert: React.FC<AlertProps>;

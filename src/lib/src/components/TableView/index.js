@@ -1,20 +1,27 @@
 import React, { useState, useEffect } from "react";
 
-const TableView = (props) => {
+const TableView = ({
+  rows = [],
+  columns = [],
+  rowFontSize = 16,
+  headerFontSize = 18,
+  TableHeaderComponent,
+  TableFooterComponent
+}) => {
 
   const generateKey = () => { return `row_${Math.random()}`; }
 
-  const rows_data = props.rows;
+  const rows_data = rows;
   useEffect(() => {
     //console.log('rows data state changed from parent');
     setRows(rows_data);
   }, [rows_data]);
 
-  const [rows, setRows] = useState(rows_data);
+  const [_rows_, setRows] = useState(rows_data);
   const [tappedColumn, setTappedColumn] = useState(undefined);
 
   const alphaOrder = (col_header) => {
-    const myData = [].concat(rows).sort((a, b) => a[col_header] > b[col_header] ? 1 : -1);
+    const myData = [].concat(_rows_).sort((a, b) => a[col_header] > b[col_header] ? 1 : -1);
 
     if(tappedColumn === col_header) {
       setRows(rows_data);
@@ -27,15 +34,15 @@ const TableView = (props) => {
 
   return (
     <div className="ui-table-view-container">
-    {props.TableHeaderComponent}
+    {TableHeaderComponent}
     <table className="ui-table-view">
-      <thead style={{ fontSize: props.headerFontSize }}>
+      <thead style={{ fontSize: headerFontSize }}>
         <tr className="ui-table-tr">
-        {props.columns.map((item, index) => (
+        {columns.map((item, index) => (
           <th
             className={ item.sortable === false ? "no-sortable" : "sortable" }
             align="left"
-            key={index}
+            key={index+item}
             onClick={() => alphaOrder(index)}>
             { item.title } {
                 item.showSortIcon === false ? ""
@@ -47,11 +54,11 @@ const TableView = (props) => {
         ))}
         </tr>
       </thead>
-      <tbody style={{ fontSize: props.rowFontSize }}>
-        {rows.map((item) => (
+      <tbody style={{ fontSize: rowFontSize }}>
+        {_rows_.map((item) => (
           <tr key={generateKey()}>
             {item.map((item_, index) => (
-              <td key={index}>
+              <td key={index+item_}>
                 {item_}
               </td>
             ))}
@@ -59,16 +66,9 @@ const TableView = (props) => {
         ))}
       </tbody>
     </table>
-    {props.TableFooterComponent}
+    {TableFooterComponent}
     </div>
   )
-}
-
-TableView.defaultProps = {
-  rows: [],
-  columns: [],
-  rowFontSize: 16,
-  headerFontSize: 18
 }
 
 export default TableView;
